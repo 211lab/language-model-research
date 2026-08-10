@@ -1,0 +1,424 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "google/gemma-3-12b-it",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-final-quality-scores/docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 43.86,
+  "confidence": 0.944,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 79.7,
+      "penalties": 15.0,
+      "final_score": 64.7,
+      "confidence": 0.959,
+      "metrics": {
+        "fk_grade": 10.52,
+        "words": 651,
+        "sentences": 41,
+        "average_sentence_words": 15.88,
+        "sentence_length_stddev": 7.87,
+        "concrete_opening": false,
+        "action_signals": 2,
+        "framework_signals": 9,
+        "late_you_ratio": 0.18,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This isn't a failure of effort; it's a failure of structure."
+          ],
+          "reason": "The text reframes the problem from personal effort to structural deficiency, creating a clear shift in viewpoint."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Clear movement from problem identification to structural diagnosis, then to systematic solution and specific commitment. (evidence could not be verified)"
+        },
+        {
+          "id": "concrete_opening",
+          "score": 0.0,
+          "passed": false,
+          "confidence": 1.0,
+          "evidence": [
+            "The relentless pressure of modern life manifests as an overflowing to-do list, a constant feeling of being behind, and a gnawing anxiety that important things are slipping through the cracks."
+          ],
+          "reason": "Opening is entirely abstract; no concrete sensory image, object, or story. The coffee mug appears only at the end."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "a constant feeling of being behind, and a gnawing anxiety that important things are slipping through the cracks."
+          ],
+          "reason": "The text names and interprets internal states (feeling behind, gnawing anxiety), turning raw stress into a recognized psychological experience."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Delivers explicit, repeatable actions tied to a tangible framework. (evidence could not be verified)"
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "treating them like non-negotiable appointments."
+          ],
+          "reason": "Encapsulates a philosophy of time management\u2014treating self-scheduled tasks with the same seriousness as external commitments\u2014in a single crisp directive."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 72.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The Anvil represents the structure you build for growth. Without a stable surface, shaping is impossible."
+          ],
+          "reason": "Uses a metaphorical framework (the Anvil) to explain prioritization, adding conceptual weight beyond a simple tip."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 25.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This isn't about adding more to your plate; it's about working smarter on what matters most."
+          ],
+          "reason": "Only a superficial hedge; lacks genuine exploration of limits, exceptions, or contextual caveats."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The choice is yours: continue to struggle with an overflowing to-do list, constantly feeling behind and stressed, or take control of your time and prioritize what truly matters."
+          ],
+          "reason": "The concluding choice places full agency on the reader, refusing victim narratives and demanding personal ownership of the outcome."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Now, it represents not just a forgotten beverage, but the potential for focused effort, a reminder that a structured approach can transform chaos into clarity."
+          ],
+          "reason": "The coffee mug, initially a symbol of interruption, is deliberately reinterpreted as a symbol of potential, showing a progression from one perspective to another."
+        },
+        {
+          "id": "decision",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Choose one task from your current to-do list that you\u2019ve been consistently putting off."
+          ],
+          "reason": "Forces an immediate, concrete choice with a specific, delayed task."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Prescribes a complete, sequential seven-day protocol. (evidence could not be verified)"
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The coffee mug sits on the workbench, a silent testament to interrupted work."
+          ],
+          "reason": "Balances abstract metaphors (Anvil, STRUCTURE) with the tangible image of the coffee mug and specific Eisenhower Matrix steps."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "overflowing to-do list, a constant feeling of being behind, and a gnawing anxiety"
+          ],
+          "reason": "The text draws on universally recognizable feelings and situations\u2014an overflowing list, constant lateness, low-level anxiety\u2014rooted firmly in daily life."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your to-do list, when properly prioritized and scheduled, becomes that anvil \u2013 a solid foundation upon which you can forge progress."
+          ],
+          "reason": "Uses straightforward vocabulary and clear metaphor while maintaining a substantive conceptual scaffold."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The coffee mug sits on the workbench, a silent testament to interrupted work."
+          ],
+          "reason": "Short, declarative sentences like the coffee-mug image and 'No excuses. No delays.' create a varied rhythm that balances longer expository lines."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "No excuses. No delays."
+          ],
+          "reason": "The text uses brief, high-density phrases that convey maximum impact with minimum words, avoiding fluff and filler."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This isn't a failure of effort; it's a failure of structure."
+          ],
+          "reason": "Rejects the usual motivational call to 'try harder' in favour of a systemic diagnosis."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "No excuses. No delays."
+          ],
+          "reason": "The tone is brisk and directive, rejecting any therapeutic softening or validation of excuses, instead issuing a clear, uncompromising command."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 15.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The choice is yours: continue to struggle with an overflowing to-do list, constantly feeling behind and stressed, or take control of your time and prioritize what truly matters."
+          ],
+          "reason": "Ends with a classic motivational ultimatum and empty loss/gain framing, crossing into exhortation."
+        },
+        {
+          "id": "anti_guru",
+          "score": 75.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your to-do list, when properly prioritized and scheduled, becomes that anvil \u2013 a solid foundation upon which you can forge progress."
+          ],
+          "reason": "While the 'forge progress' metaphor flirts slightly with guru-style language, it remains grounded in the concrete practice of scheduling and prioritization, preventing full-blown mysticism."
+        },
+        {
+          "id": "closing_strength",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The choice is yours."
+          ],
+          "reason": "Ends with a stark binary that echoes the opening, giving the piece a decisive, resonant close."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 68.01,
+      "penalties": 45.0,
+      "final_score": 23.01,
+      "confidence": 0.929,
+      "metrics": {
+        "fk_grade": 9.86,
+        "words": 811,
+        "sentences": 61,
+        "average_sentence_words": 13.3,
+        "sentence_length_stddev": 5.14,
+        "concrete_opening": false,
+        "action_signals": 3,
+        "framework_signals": 9,
+        "late_you_ratio": 0.62,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 10.0,
+          "passed": false,
+          "confidence": 1.0,
+          "evidence": [],
+          "reason": "No material shift in perspective found. The closest is the collection instruction but it remains conventional."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your first step is to create a complete inventory of everything demanding your attention. Don't worry about order or importance yet; the goal is to capture *everything*."
+          ],
+          "reason": "Clear step-by-step logical flow from capturing tasks to triaging."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 70.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Offers insight into the fears behind delegation behavior. (evidence could not be verified)"
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 10.0,
+          "passed": false,
+          "confidence": 1.0,
+          "evidence": [],
+          "reason": "No philosophical stance emerges. Content is entirely tactical\u2014how-to steps with no grounding in a broader worldview, ethics, or principles beyond efficiency."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 10.0,
+          "passed": false,
+          "confidence": 1.0,
+          "evidence": [],
+          "reason": "Lacks profound or complex ideas; strictly practical productivity advice."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Be honest with yourself about what's truly important."
+          ],
+          "reason": "Direct demand for honest self-assessment places onus entirely on the individual."
+        },
+        {
+          "id": "framework_lands",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "categorize each item using the Eisenhower Matrix: Urgent/Important."
+          ],
+          "reason": "The Eisenhower Matrix is explicitly named and applied to task triage."
+        },
+        {
+          "id": "unique_action",
+          "score": 75.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Each step forms a letter-specific acronym (S, T, R, U, C, T, U) with a concrete action assigned. (evidence could not be verified)"
+        },
+        {
+          "id": "action_relevance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Frameworks directly lead to uniquely actionable calendar scheduling. (evidence could not be verified)"
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Eliminate distractions \u2013 turn off notifications, close unnecessary tabs, and create a dedicated workspace.",
+            "Keeping a simple log of your completed tasks and reflecting on what worked well and what could be improved."
+          ],
+          "reason": "The advice includes specific, observable behaviors (turn off notifications, log completed tasks) that can be executed in real-world settings."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Think of it as a brain dump \u2013 a full and unfiltered release of all your commitments, responsibilities, and desires."
+          ],
+          "reason": "Uses a simple metaphor to explain the initial step while staying serious about commitments."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Don't filter or judge; just get everything out of your head and onto paper (or a digital tool)."
+          ],
+          "reason": "Combination of short imperatives and moderate-length explanatory sentences creates readable rhythm."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 70.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Acronym headers are highly economical; some supporting paragraphs could be tighter but overall concise. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_motivational",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Focus on completing one task at a time, eliminating distractions and working with focused intensity."
+          ],
+          "reason": "Avoids hype and empty cheerleading; stays instructional and procedural."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Be ruthless in your assessment."
+          ],
+          "reason": "No validating, gentle, or therapeutic language; direct and unsentimental."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Recognize that you don't have to do everything yourself."
+          ],
+          "reason": "Instructional without moralizing or authoritative sermonizing."
+        },
+        {
+          "id": "anti_guru",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This is an ongoing process of learning and refinement."
+          ],
+          "reason": "No secret knowledge or mystical tone; framed as a learnable process."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.102922
+}

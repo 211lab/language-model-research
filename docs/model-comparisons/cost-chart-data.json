@@ -1,0 +1,221 @@
+{
+  "generated_at": "2026-08-10T03:17:37.747038+00:00",
+  "runs": [
+    {
+      "model": "openai/gpt-5.6-sol",
+      "company": "OpenAI",
+      "display_name": "GPT 5.6 Sol",
+      "case_study": "openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 0,
+      "total_cost": 0.0,
+      "text_cost": 0.0,
+      "image_cost": 0.0,
+      "costs_by_model": {},
+      "cost_source": "local"
+    },
+    {
+      "model": "openai/gpt-5.6-terra",
+      "company": "OpenAI",
+      "display_name": "GPT 5.6 Terra",
+      "case_study": "openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 0,
+      "total_cost": 0.0,
+      "text_cost": 0.0,
+      "image_cost": 0.0,
+      "costs_by_model": {},
+      "cost_source": "local"
+    },
+    {
+      "model": "openai/gpt-4.1",
+      "company": "OpenAI",
+      "display_name": "GPT-4.1",
+      "case_study": "openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 0.20966400000000002,
+      "text_cost": 0.184258,
+      "image_cost": 0.025406,
+      "costs_by_model": {
+        "openai/gpt-4.1": 0.184258,
+        "openai/gpt-5.4-image-2": 0.025406
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "openai/gpt-5.4",
+      "company": "OpenAI",
+      "display_name": "GPT-5.4",
+      "case_study": "openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 0.47066949999999996,
+      "text_cost": 0.4617575,
+      "image_cost": 0.008912,
+      "costs_by_model": {
+        "openai/gpt-5.4": 0.4617575,
+        "openai/gpt-5.4-image-2": 0.008912
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "openai/gpt-5.5",
+      "company": "OpenAI",
+      "display_name": "GPT-5.5",
+      "case_study": "openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 1.228162,
+      "text_cost": 1.21869,
+      "image_cost": 0.009472,
+      "costs_by_model": {
+        "openai/gpt-5.4-image-2": 0.009472,
+        "openai/gpt-5.5": 1.21869
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "openai/gpt-5.6-luna",
+      "company": "OpenAI",
+      "display_name": "GPT-5.6 Luna",
+      "case_study": "openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 0.035005949999999994,
+      "text_cost": 0.018589949999999994,
+      "image_cost": 0.016416,
+      "costs_by_model": {
+        "openai/gpt-5.4-image-2": 0.016416,
+        "openai/gpt-5.6-luna": 0.018589949999999997
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "google/gemma-3-12b-it",
+      "company": "Google",
+      "display_name": "Gemma 3 12B",
+      "case_study": "google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 0.02778005,
+      "text_cost": 0.003278050000000001,
+      "image_cost": 0.024502,
+      "costs_by_model": {
+        "google/gemma-3-12b-it": 0.00327805,
+        "openai/gpt-5.4-image-2": 0.024502
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "google/gemma-4-26b-a4b-it",
+      "company": "Google",
+      "display_name": "Gemma 4 26B A4B",
+      "case_study": "google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 0.014509939999999999,
+      "text_cost": 0.006909939999999999,
+      "image_cost": 0.0076,
+      "costs_by_model": {
+        "google/gemma-4-26b-a4b-it": 0.00690994,
+        "openai/gpt-5.4-image-2": 0.0076
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "google/gemma-4-31b-it",
+      "company": "Google",
+      "display_name": "Gemma 4 31B",
+      "case_study": "google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 0.01514341,
+      "text_cost": 0.007247409999999999,
+      "image_cost": 0.007896,
+      "costs_by_model": {
+        "google/gemma-4-31b-it": 0.00724741,
+        "openai/gpt-5.4-image-2": 0.007896
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "google/gemini-3.5-flash-lite",
+      "company": "Google",
+      "display_name": "Gemini 3.5 Flash Lite",
+      "case_study": "google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 0.0690146,
+      "text_cost": 0.0543086,
+      "image_cost": 0.014706,
+      "costs_by_model": {
+        "google/gemini-3.5-flash-lite": 0.0543086,
+        "openai/gpt-5.4-image-2": 0.014706
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "google/gemini-3.6-flash",
+      "company": "Google",
+      "display_name": "Gemini 3.6 Flash",
+      "case_study": "google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 0.486699,
+      "text_cost": 0.478587,
+      "image_cost": 0.008112,
+      "costs_by_model": {
+        "google/gemini-3.6-flash": 0.478587,
+        "openai/gpt-5.4-image-2": 0.008112
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "company": "DeepSeek",
+      "display_name": "DeepSeek V3.2",
+      "case_study": "deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 0.0225668532,
+      "text_cost": 0.0134708532,
+      "image_cost": 0.009096,
+      "costs_by_model": {
+        "deepseek/deepseek-v3.2": 0.013470853199999999,
+        "openai/gpt-5.4-image-2": 0.009096
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "company": "DeepSeek",
+      "display_name": "DeepSeek V4 Flash",
+      "case_study": "deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 0.01632161952,
+      "text_cost": 0.00812161952,
+      "image_cost": 0.0082,
+      "costs_by_model": {
+        "deepseek/deepseek-v4-flash": 0.00812161952,
+        "openai/gpt-5.4-image-2": 0.0082
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "deepseek/deepseek-v4-pro",
+      "company": "DeepSeek",
+      "display_name": "DeepSeek V4 Pro",
+      "case_study": "deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 11,
+      "total_cost": 0.024889054256,
+      "text_cost": 0.016049054256,
+      "image_cost": 0.00884,
+      "costs_by_model": {
+        "deepseek/deepseek-v4-pro": 0.016049054256,
+        "openai/gpt-5.4-image-2": 0.00884
+      },
+      "cost_source": "openrouter"
+    },
+    {
+      "model": "gemma-4-e4b-it",
+      "company": "Other",
+      "display_name": "Gemma 4 E4b",
+      "case_study": "local-models/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "calls": 0,
+      "total_cost": 0.0,
+      "text_cost": 0.0,
+      "image_cost": 0.0,
+      "costs_by_model": {},
+      "cost_source": "local"
+    }
+  ]
+}

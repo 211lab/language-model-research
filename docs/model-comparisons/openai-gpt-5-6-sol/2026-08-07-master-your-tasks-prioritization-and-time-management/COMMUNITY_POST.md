@@ -1,0 +1,8 @@
+## Post
+You know the feeling. The workbench in the corner of the garage. Scattered nails. Unopened envelopes. A half-finished box that’s been waiting for weeks. Your day looks exactly like that bench. You spend it clearing inboxes, answering pings, and checking off minor requests. You’re exhausted. But the real work sits untouched. The list grows. Tomorrow comes, and the cycle repeats.
+
+This isn’t a time problem. It’s a focus problem. You’re treating every task as equally important, so nothing truly moves forward. The fix isn’t longer hours. It’s triage. You have to choose your three highest-impact tasks, protect time for them, and stop letting minor noise run your day.
+
+That’s exactly what we’re tackling this week. The lesson and lecture will walk you through the mechanics of directing your attention so it actually builds something. But theory only lands when it’s put into practice. This week’s worksheet is your execution tool. It’s the practical artifact we’ll be working from, designed to turn that focus into a repeatable daily rhythm.
+
+You’ll need to run through the TRIAGE steps before our group conversation. We’re not going to talk about concepts in the session—we’re going to talk about what actually happened when you tried to protect your prime hours, how you handled the interruptions, and where the system held up or cracked. Bring your completed worksheet. Bring the real friction. We’ll figure out how to keep the draft steady and turn that scattered bench into finished work.

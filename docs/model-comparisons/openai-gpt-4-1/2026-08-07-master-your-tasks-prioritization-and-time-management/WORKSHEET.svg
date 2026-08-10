@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
+  <desc id="desc">Full-page worksheet on a white background with large title, introduction, and six fillable FILTER process sections for mastering task prioritization and time management, plus a closing reflection footer.</desc>
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS: PRIORITIZATION AND TIME MANAGEMENT</text>
+  <text class="sub" x="40" y="96">Apply the FILTER Model to Focus, Prioritize, and Finish What Matters</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <text class="label" x="720" y="58">FOCUS FIRST</text>
+  <text class="small" x="720" y="78">List every task on your mind—don’t filter or judge yet.</text>
+  <text class="small" x="720" y="94">Then mark your top 3 priorities for today.</text>
+
+  <text class="verb" x="444" y="142">FILTER</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <!-- FOCUS FIRST -->
+  <rect class="box" x="40" y="180" width="320" height="170"/>
+  <text class="letter" x="60" y="220">F</text>
+  <text class="label" x="105" y="204">FOCUS FIRST</text>
+  <text class="small" x="105" y="224">Brain dump: List every task, big or small, work or personal.</text>
+  <text class="tiny" x="105" y="242">Don’t filter—just write. Then star your top 3.</text>
+  <text class="tiny" x="60" y="262">1.</text><line class="fillline" x1="80" y1="262" x2="340" y2="262"/>
+  <text class="tiny" x="60" y="282">2.</text><line class="fillline" x1="80" y1="282" x2="340" y2="282"/>
+  <text class="tiny" x="60" y="302">3.</text><line class="fillline" x1="80" y1="302" x2="340" y2="302"/>
+  <text class="tiny" x="60" y="322">4.</text><line class="fillline" x1="80" y1="322" x2="340" y2="322"/>
+  <text class="tiny" x="60" y="342">5.</text><line class="fillline" x1="80" y1="342" x2="340" y2="342"/>
+  <text class="tiny" x="60" y="362">6.</text><line class="fillline" x1="80" y1="362" x2="340" y2="362"/>
+  <text class="tiny" x="60" y="382">7.</text><line class="fillline" x1="80" y1="382" x2="340" y2="382"/>
+
+  <!-- IDENTIFY IMPORTANCE -->
+  <rect class="box" x="390" y="180" width="320" height="170"/>
+  <text class="letter" x="410" y="220">I</text>
+  <text class="label" x="455" y="204">IDENTIFY IMPORTANCE</text>
+  <text class="small" x="455" y="224">Sort your list: What’s urgent? What’s important?</text>
+  <text class="tiny" x="455" y="242">Move the most meaningful tasks to the top.</text>
+  <text class="tiny" x="410" y="262">Top 3 Important Tasks:</text>
+  <text class="tiny" x="410" y="282">1.</text><line class="fillline" x1="430" y1="282" x2="690" y2="282"/>
+  <text class="tiny" x="410" y="302">2.</text><line class="fillline" x1="430" y1="302" x2="690" y2="302"/>
+  <text class="tiny" x="410" y="322">3.</text><line class="fillline" x1="430" y1="322" x2="690" y2="322"/>
+  <text class="tiny" x="410" y="342">Other Urgent/Not Important:</text>
+  <line class="fillline" x1="410" y1="362" x2="690" y2="362"/>
+
+  <!-- LOCK TIME -->
+  <rect class="box" x="740" y="180" width="320" height="170"/>
+  <text class="letter" x="760" y="220">L</text>
+  <text class="label" x="805" y="204">LOCK TIME</text>
+  <text class="small" x="805" y="224">Block calendar time for your top 3 tasks.</text>
+  <text class="tiny" x="805" y="242">Schedule them when your energy is highest.</text>
+  <text class="tiny" x="760" y="262">Task 1:</text><line class="fillline" x1="820" y1="262" x2="1040" y2="262"/>
+  <text class="tiny" x="760" y="282">Time:</text><line class="fillline" x1="820" y1="282" x2="1040" y2="282"/>
+  <text class="tiny" x="760" y="302">Task 2:</text><line class="fillline" x1="820" y1="302" x2="1040" y2="302"/>
+  <text class="tiny" x="760" y="322">Time:</text><line class="fillline" x1="820" y1="322" x2="1040" y2="322"/>
+  <text class="tiny" x="760" y="342">Task 3:</text><line class="fillline" x1="820" y1="342" x2="1040" y2="342"/>
+  <text class="tiny" x="760" y="362">Time:</text><line class="fillline" x1="820" y1="362" x2="1040" y2="362"/>
+
+  <!-- TUNE OUT DISTRACTIONS -->
+  <rect class="box" x="40" y="370" width="320" height="140"/>
+  <text class="letter" x="60" y="410">T</text>
+  <text class="label" x="105" y="394">TUNE OUT DISTRACTIONS</text>
+  <text class="small" x="105" y="414">List your main distractions and how you’ll block them.</text>
+  <text class="tiny" x="105" y="432">Set up your focus environment before you start.</text>
+  <text class="tiny" x="60" y="452">Distraction:</text><line class="fillline" x1="140" y1="452" x2="340" y2="452"/>
+  <text class="tiny" x="60" y="472">How to Block:</text><line class="fillline" x1="140" y1="472" x2="340" y2="472"/>
+  <text class="tiny" x="60" y="492">Distraction:</text><line class="fillline" x1="140" y1="492" x2="340" y2="492"/>
+  <text class="tiny" x="60" y="512">How to Block:</text><line class="fillline" x1="140" y1="512" x2="340" y2="512"/>
+
+  <!-- EXECUTE RELENTLESSLY -->
+  <rect class="box" x="390" y="370" width="320" height="140"/>
+  <text class="letter" x="410" y="410">E</text>
+  <text class="label" x="455" y="394">EXECUTE RELENTLESSLY</text>
+  <text class="small" x="455" y="414">Commit to working on your top tasks until done or time’s up.</text>
+  <text class="tiny" x="455" y="432">How will you handle resistance or interruptions?</text>
+  <text class="tiny" x="410" y="452">If distracted, I will:</text><line class="fillline" x1="520" y1="452" x2="690" y2="452"/>
+  <text class="tiny" x="410" y="472">If I want to quit early, I will:</text><line class="fillline" x1="560" y1="472" x2="690" y2="472"/>
+  <text class="tiny" x="410" y="492">Reward for finishing:</text><line class="fillline" x1="540" y1="492" x2="690" y2="492"/>
+
+  <!-- REVIEW AND REPRIORITIZE -->
+  <rect class="box" x="740" y="370" width="320" height="140"/>
+  <text class="letter" x="760" y="410">R</text>
+  <text class="label" x="805" y="394">REVIEW &amp; REPRIORITIZE</text>
+  <text class="small" x="805" y="414">Check off what you finished. Move or cut what’s left.</text>
+  <text class="tiny" x="805" y="432">Why did any tasks remain? What will you change?</text>
+  <text class="tiny" x="760" y="452">Completed:</text><line class="fillline" x1="840" y1="452" x2="1040" y2="452"/>
+  <text class="tiny" x="760" y="472">Unfinished:</text><line class="fillline" x1="840" y1="472" x2="1040" y2="472"/>
+  <text class="tiny" x="760" y="492">Keep, Cut, or Delegate?</text><line class="fillline" x1="900" y1="492" x2="1040" y2="492"/>
+  <text class="tiny" x="760" y="512">What I’ll do differently tomorrow:</text>
+  <line class="fillline" x1="900" y1="512" x2="1040" y2="512"/>
+
+  <!-- FINAL REFLECTION FOOTER -->
+  <rect class="mini" x="40" y="530" width="1020" height="90"/>
+  <text class="label" x="60" y="556">FINAL REFLECTION</text>
+  <text class="small" x="60" y="576">What did you learn about your priorities and focus today? What will you FILTER differently tomorrow?</text>
+  <line class="fillline" x1="60" y1="600" x2="1030" y2="600"/>
+  <line class="fillline" x1="60" y1="624" x2="1030" y2="624"/>
+
+  <!-- 3-STEP SUMMARY FOOTER -->
+  <rect class="mini" x="40" y="650" width="315" height="82"/>
+  <text class="num" x="60" y="685">1</text>
+  <text class="label" x="95" y="673">WRITE IT ALL DOWN</text>
+  <text class="tiny" x="95" y="693">Don’t trust your memory—list every task first.</text>
+  <text class="tiny" x="95" y="709">Clarity starts with a full inventory.</text>
+
+  <rect class="mini" x="392" y="650" width="315" height="82"/>
+  <text class="num" x="412" y="685">2</text>
+  <text class="label" x="447" y="673">DEFEND YOUR PRIORITIES</text>
+  <text class="tiny" x="447" y="693">Schedule and protect your top 3 tasks.</text>
+  <text class="tiny" x="447" y="709">Don’t let noise steal your best hours.</text>
+
+  <rect class="mini" x="745" y="650" width="315" height="82"/>
+  <text class="num" x="765" y="685">3</text>
+  <text class="label" x="800" y="673">REVIEW &amp; IMPROVE</text>
+  <text class="tiny" x="800" y="693">Check off wins, cut what doesn’t matter,</text>
+  <text class="tiny" x="800" y="709">and adjust for tomorrow’s real priorities.</text>
+</svg>

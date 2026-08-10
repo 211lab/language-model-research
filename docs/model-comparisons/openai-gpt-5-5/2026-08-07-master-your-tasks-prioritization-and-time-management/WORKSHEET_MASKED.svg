@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
+  <desc id="desc">Masked landscape worksheet preserving the original page layout and TRIAGE model markers.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+      .mask1 { fill: #e8e8e8; }
+      .mask2 { fill: #dddddd; }
+      .mask3 { fill: #f0f0f0; }
+      .mask4 { fill: #d6d6d6; }
+      .mask5 { fill: #e2e2e2; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="65">Master Your Tasks:</text>
+  <text class="title" x="40" y="96">Prioritization and Time Management</text>
+  <rect class="mask1" x="40" y="109" width="510" height="17" rx="3" ry="3"/>
+
+  <rect class="mini" x="700" y="34" width="360" height="94"/>
+  <rect class="mask2" x="720" y="49" width="234" height="13" rx="2" ry="2"/>
+  <rect class="mask1" x="720" y="70" width="274" height="11" rx="2" ry="2"/>
+  <rect class="mask3" x="720" y="86" width="242" height="11" rx="2" ry="2"/>
+  <rect class="mask4" x="720" y="105" width="188" height="10" rx="2" ry="2"/>
+
+  <text class="verb" x="430" y="156">TRIAGE</text>
+  <line class="line" x1="40" y1="168" x2="1060" y2="168"/>
+
+  <rect class="box" x="40" y="188" width="320" height="190"/>
+  <text class="letter" x="60" y="230">T</text>
+  <rect class="mask2" x="105" y="202" width="225" height="13" rx="2" ry="2"/>
+  <rect class="mask1" x="105" y="224" width="226" height="11" rx="2" ry="2"/>
+  <rect class="mask3" x="105" y="242" width="203" height="10" rx="2" ry="2"/>
+  <rect class="mask4" x="60" y="269" width="62" height="10" rx="2" ry="2"/><line class="fillline" x1="130" y1="277" x2="330" y2="277"/>
+  <rect class="mask5" x="60" y="296" width="10" height="10" rx="2" ry="2"/><line class="fillline" x1="78" y1="304" x2="330" y2="304"/>
+  <rect class="mask3" x="60" y="320" width="10" height="10" rx="2" ry="2"/><line class="fillline" x1="78" y1="328" x2="330" y2="328"/>
+  <rect class="mask2" x="60" y="344" width="10" height="10" rx="2" ry="2"/><line class="fillline" x1="78" y1="352" x2="330" y2="352"/>
+
+  <rect class="box" x="390" y="188" width="320" height="190"/>
+  <text class="letter" x="410" y="230">R</text>
+  <rect class="mask1" x="455" y="202" width="203" height="13" rx="2" ry="2"/>
+  <rect class="mask3" x="455" y="224" width="236" height="11" rx="2" ry="2"/>
+  <rect class="mask5" x="455" y="240" width="128" height="11" rx="2" ry="2"/>
+  <rect class="mask2" x="410" y="269" width="18" height="10" rx="2" ry="2"/><line class="fillline" x1="435" y1="277" x2="680" y2="277"/>
+  <rect class="mask3" x="410" y="293" width="18" height="10" rx="2" ry="2"/><line class="fillline" x1="435" y1="301" x2="680" y2="301"/>
+  <rect class="mask4" x="410" y="317" width="18" height="10" rx="2" ry="2"/><line class="fillline" x1="435" y1="325" x2="680" y2="325"/>
+  <rect class="mask1" x="410" y="341" width="68" height="10" rx="2" ry="2"/><line class="fillline" x1="485" y1="349" x2="680" y2="349"/>
+
+  <rect class="box" x="740" y="188" width="320" height="190"/>
+  <text class="letter" x="760" y="230">I</text>
+  <rect class="mask2" x="805" y="202" width="210" height="13" rx="2" ry="2"/>
+  <rect class="mask1" x="805" y="224" width="228" height="11" rx="2" ry="2"/>
+  <rect class="mask3" x="805" y="240" width="82" height="11" rx="2" ry="2"/>
+  <rect class="mask4" x="760" y="269" width="28" height="10" rx="2" ry="2"/><line class="fillline" x1="795" y1="277" x2="860" y2="277"/><rect class="mask5" x="870" y="269" width="24" height="10" rx="2" ry="2"/><line class="fillline" x1="900" y1="277" x2="1030" y2="277"/>
+  <rect class="mask1" x="760" y="297" width="28" height="10" rx="2" ry="2"/><line class="fillline" x1="795" y1="305" x2="860" y2="305"/><rect class="mask3" x="870" y="297" width="24" height="10" rx="2" ry="2"/><line class="fillline" x1="900" y1="305" x2="1030" y2="305"/>
+  <rect class="mask2" x="760" y="325" width="28" height="10" rx="2" ry="2"/><line class="fillline" x1="795" y1="333" x2="860" y2="333"/><rect class="mask4" x="870" y="325" width="24" height="10" rx="2" ry="2"/><line class="fillline" x1="900" y1="333" x2="1030" y2="333"/>
+  <rect class="mask5" x="760" y="350" width="82" height="10" rx="2" ry="2"/><line class="fillline" x1="850" y1="358" x2="1030" y2="358"/>
+
+  <rect class="box" x="40" y="408" width="320" height="190"/>
+  <text class="letter" x="60" y="450">A</text>
+  <rect class="mask1" x="105" y="422" width="218" height="13" rx="2" ry="2"/>
+  <rect class="mask3" x="105" y="444" width="230" height="11" rx="2" ry="2"/>
+  <rect class="mask5" x="105" y="462" width="236" height="10" rx="2" ry="2"/>
+  <rect class="mask2" x="60" y="490" width="38" height="10" rx="2" ry="2"/><line class="fillline" x1="105" y1="498" x2="330" y2="498"/>
+  <rect class="mask4" x="60" y="518" width="51" height="10" rx="2" ry="2"/><line class="fillline" x1="118" y1="526" x2="330" y2="526"/>
+  <rect class="mask1" x="60" y="546" width="51" height="10" rx="2" ry="2"/><line class="fillline" x1="118" y1="554" x2="330" y2="554"/>
+  <rect class="mask3" x="60" y="571" width="108" height="10" rx="2" ry="2"/><line class="fillline" x1="175" y1="579" x2="330" y2="579"/>
+
+  <rect class="box" x="390" y="408" width="320" height="190"/>
+  <text class="letter" x="410" y="450">G</text>
+  <rect class="mask2" x="455" y="422" width="182" height="13" rx="2" ry="2"/>
+  <rect class="mask1" x="455" y="444" width="240" height="11" rx="2" ry="2"/>
+  <rect class="mask3" x="455" y="462" width="232" height="10" rx="2" ry="2"/>
+  <rect class="mask4" x="410" y="490" width="68" height="10" rx="2" ry="2"/><line class="fillline" x1="485" y1="498" x2="680" y2="498"/>
+  <rect class="mask5" x="410" y="518" width="28" height="10" rx="2" ry="2"/><line class="fillline" x1="445" y1="526" x2="680" y2="526"/>
+  <rect class="mask2" x="410" y="546" width="61" height="10" rx="2" ry="2"/><line class="fillline" x1="478" y1="554" x2="680" y2="554"/>
+  <rect class="mask1" x="410" y="571" width="38" height="10" rx="2" ry="2"/><line class="fillline" x1="455" y1="579" x2="680" y2="579"/>
+
+  <rect class="box" x="740" y="408" width="320" height="190"/>
+  <text class="letter" x="760" y="450">E</text>
+  <rect class="mask1" x="805" y="422" width="196" height="13" rx="2" ry="2"/>
+  <rect class="mask3" x="805" y="444" width="228" height="11" rx="2" ry="2"/>
+  <rect class="mask5" x="805" y="460" width="224" height="11" rx="2" ry="2"/>
+  <rect class="mask2" x="760" y="490" width="72" height="10" rx="2" ry="2"/><line class="fillline" x1="838" y1="498" x2="1030" y2="498"/>
+  <rect class="mask4" x="760" y="518" width="128" height="10" rx="2" ry="2"/><line class="fillline" x1="895" y1="526" x2="1030" y2="526"/>
+  <rect class="mask1" x="760" y="546" width="61" height="10" rx="2" ry="2"/><line class="fillline" x1="828" y1="554" x2="1030" y2="554"/>
+  <rect class="mask3" x="760" y="571" width="81" height="10" rx="2" ry="2"/><line class="fillline" x1="848" y1="579" x2="1030" y2="579"/>
+
+  <rect class="mini" x="40" y="625" width="1020" height="82"/>
+  <rect class="mask2" x="60" y="640" width="136" height="13" rx="2" ry="2"/>
+  <rect class="mask1" x="60" y="665" width="244" height="12" rx="2" ry="2"/>
+  <line class="fillline" x1="310" y1="674" x2="1030" y2="674"/>
+  <rect class="mask3" x="60" y="687" width="264" height="12" rx="2" ry="2"/>
+  <line class="fillline" x1="330" y1="696" x2="1030" y2="696"/>
+
+  <rect class="mini" x="40" y="730" width="315" height="82"/>
+  <rect class="mask4" x="60" y="742" width="14" height="25" rx="2" ry="2"/>
+  <rect class="mask2" x="95" y="743" width="138" height="13" rx="2" ry="2"/>
+  <rect class="mask1" x="95" y="765" width="220" height="10" rx="2" ry="2"/>
+  <rect class="mask3" x="95" y="781" width="203" height="10" rx="2" ry="2"/>
+
+  <rect class="mini" x="392" y="730" width="315" height="82"/>
+  <rect class="mask5" x="412" y="742" width="14" height="25" rx="2" ry="2"/>
+  <rect class="mask1" x="447" y="743" width="140" height="13" rx="2" ry="2"/>
+  <rect class="mask3" x="447" y="765" width="205" height="10" rx="2" ry="2"/>
+  <rect class="mask2" x="447" y="781" width="218" height="10" rx="2" ry="2"/>
+
+  <rect class="mini" x="745" y="730" width="315" height="82"/>
+  <rect class="mask4" x="765" y="742" width="14" height="25" rx="2" ry="2"/>
+  <rect class="mask2" x="800" y="743" width="184" height="13" rx="2" ry="2"/>
+  <rect class="mask1" x="800" y="765" width="190" height="10" rx="2" ry="2"/>
+  <rect class="mask3" x="800" y="781" width="220" height="10" rx="2" ry="2"/>
+</svg>

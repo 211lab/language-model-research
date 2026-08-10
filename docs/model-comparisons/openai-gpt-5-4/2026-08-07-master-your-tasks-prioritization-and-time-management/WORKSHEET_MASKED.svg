@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the RANKED action model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .mask1 { fill: #e3e3e3; }
+      .mask2 { fill: #d7d7d7; }
+      .mask3 { fill: #ececec; }
+      .mask4 { fill: #cfcfcf; }
+      .mask5 { fill: #f1f1f1; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS: PRIORITIZATION AND TIME MANAGEMENT</text>
+  <rect class="mask2" x="40" y="83" width="610" height="16" rx="3" ry="3"/>
+
+  <rect class="mini" x="710" y="34" width="350" height="78"/>
+  <rect class="mask4" x="730" y="48" width="150" height="12" rx="3" ry="3"/>
+  <rect class="mask2" x="730" y="69" width="270" height="10" rx="3" ry="3"/>
+  <rect class="mask3" x="730" y="85" width="250" height="10" rx="3" ry="3"/>
+
+  <text class="verb" x="444" y="142">RANKED</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="330" height="255"/>
+  <text class="letter" x="60" y="222">R</text>
+  <rect class="mask4" x="105" y="194" width="170" height="12" rx="3" ry="3"/>
+  <rect class="mask2" x="105" y="216" width="210" height="10" rx="3" ry="3"/>
+  <rect class="mask3" x="105" y="235" width="225" height="8" rx="3" ry="3"/>
+  <rect class="mask1" x="58" y="263" width="282" height="11" rx="3" ry="3"/>
+  <rect class="mask2" x="58" y="287" width="282" height="11" rx="3" ry="3"/>
+  <rect class="mask3" x="58" y="311" width="282" height="11" rx="3" ry="3"/>
+  <rect class="mask4" x="58" y="335" width="282" height="11" rx="3" ry="3"/>
+  <rect class="mask5" x="58" y="359" width="282" height="11" rx="3" ry="3"/>
+  <rect class="mask2" x="58" y="383" width="282" height="11" rx="3" ry="3"/>
+  <rect class="mask3" x="58" y="407" width="282" height="11" rx="3" ry="3"/>
+
+  <rect class="box" x="385" y="180" width="330" height="255"/>
+  <text class="letter" x="405" y="222">A</text>
+  <rect class="mask4" x="450" y="194" width="120" height="12" rx="3" ry="3"/>
+  <rect class="mask2" x="450" y="216" width="210" height="10" rx="3" ry="3"/>
+  <rect class="mask3" x="450" y="235" width="190" height="8" rx="3" ry="3"/>
+  <rect class="mask1" x="405" y="265" width="135" height="9" rx="3" ry="3"/>
+  <rect class="mask2" x="405" y="283" width="145" height="9" rx="3" ry="3"/>
+  <rect class="mask3" x="405" y="301" width="120" height="9" rx="3" ry="3"/>
+  <rect class="mask4" x="405" y="319" width="190" height="9" rx="3" ry="3"/>
+  <line class="soft" x1="405" y1="338" x2="685" y2="338"/>
+  <rect class="mask2" x="405" y="353" width="280" height="11" rx="3" ry="3"/>
+  <rect class="mask3" x="405" y="379" width="280" height="11" rx="3" ry="3"/>
+  <rect class="mask1" x="405" y="405" width="280" height="11" rx="3" ry="3"/>
+
+  <rect class="box" x="730" y="180" width="330" height="255"/>
+  <text class="letter" x="750" y="222">N</text>
+  <rect class="mask4" x="795" y="194" width="130" height="12" rx="3" ry="3"/>
+  <rect class="mask2" x="795" y="216" width="205" height="10" rx="3" ry="3"/>
+  <rect class="mask3" x="795" y="235" width="190" height="8" rx="3" ry="3"/>
+  <rect class="mini" x="750" y="266" width="290" height="44"/>
+  <text class="num" x="765" y="294">1</text>
+  <rect class="mask2" x="805" y="284" width="215" height="11" rx="3" ry="3"/>
+  <rect class="mini" x="750" y="322" width="290" height="44"/>
+  <text class="num" x="765" y="350">2</text>
+  <rect class="mask3" x="805" y="340" width="215" height="11" rx="3" ry="3"/>
+  <rect class="mini" x="750" y="378" width="290" height="44"/>
+  <text class="num" x="765" y="406">3</text>
+  <rect class="mask1" x="805" y="396" width="215" height="11" rx="3" ry="3"/>
+
+  <rect class="box" x="40" y="455" width="500" height="220"/>
+  <text class="letter" x="60" y="497">K</text>
+  <rect class="mask4" x="105" y="469" width="205" height="12" rx="3" ry="3"/>
+  <rect class="mask2" x="105" y="491" width="290" height="10" rx="3" ry="3"/>
+  <rect class="mask3" x="105" y="510" width="275" height="8" rx="3" ry="3"/>
+  <line class="soft" x1="60" y1="536" x2="520" y2="536"/>
+  <rect class="mask4" x="60" y="551" width="34" height="9" rx="3" ry="3"/>
+  <rect class="mask2" x="165" y="551" width="62" height="9" rx="3" ry="3"/>
+  <rect class="mask2" x="60" y="567" width="85" height="11" rx="3" ry="3"/>
+  <rect class="mask3" x="165" y="567" width="345" height="11" rx="3" ry="3"/>
+  <rect class="mask1" x="60" y="595" width="85" height="11" rx="3" ry="3"/>
+  <rect class="mask4" x="165" y="595" width="345" height="11" rx="3" ry="3"/>
+  <rect class="mask3" x="60" y="623" width="85" height="11" rx="3" ry="3"/>
+  <rect class="mask2" x="165" y="623" width="345" height="11" rx="3" ry="3"/>
+  <rect class="mask5" x="60" y="651" width="85" height="11" rx="3" ry="3"/>
+  <rect class="mask1" x="165" y="651" width="345" height="11" rx="3" ry="3"/>
+
+  <rect class="box" x="560" y="455" width="500" height="220"/>
+  <text class="letter" x="580" y="497">E</text>
+  <rect class="mask4" x="625" y="469" width="155" height="12" rx="3" ry="3"/>
+  <rect class="mask2" x="625" y="491" width="255" height="10" rx="3" ry="3"/>
+  <rect class="mask3" x="625" y="510" width="295" height="8" rx="3" ry="3"/>
+  <rect class="mask2" x="580" y="541" width="450" height="11" rx="3" ry="3"/>
+  <rect class="mask3" x="580" y="569" width="450" height="11" rx="3" ry="3"/>
+  <rect class="mask1" x="580" y="601" width="450" height="11" rx="3" ry="3"/>
+  <rect class="mask4" x="580" y="629" width="450" height="11" rx="3" ry="3"/>
+
+  <rect class="mini" x="40" y="695" width="1020" height="64"/>
+  <text class="label" x="60" y="720">D — DECIDE DAILY</text>
+  <rect class="mask2" x="60" y="731" width="970" height="11" rx="3" ry="3"/>
+  <rect class="mask3" x="60" y="744" width="970" height="8" rx="3" ry="3"/>
+
+  <rect class="mini" x="40" y="775" width="315" height="58"/>
+  <text class="num" x="60" y="809">1</text>
+  <rect class="mask4" x="95" y="790" width="70" height="11" rx="3" ry="3"/>
+  <rect class="mask2" x="95" y="808" width="160" height="8" rx="3" ry="3"/>
+  <rect class="mask3" x="95" y="820" width="125" height="8" rx="3" ry="3"/>
+
+  <rect class="mini" x="392" y="775" width="315" height="58"/>
+  <text class="num" x="412" y="809">2</text>
+  <rect class="mask4" x="447" y="790" width="76" height="11" rx="3" ry="3"/>
+  <rect class="mask2" x="447" y="808" width="185" height="8" rx="3" ry="3"/>
+  <rect class="mask3" x="447" y="820" width="210" height="8" rx="3" ry="3"/>
+
+  <rect class="mini" x="745" y="775" width="315" height="58"/>
+  <text class="num" x="765" y="809">3</text>
+  <rect class="mask4" x="800" y="790" width="95" height="11" rx="3" ry="3"/>
+  <rect class="mask2" x="800" y="808" width="215" height="8" rx="3" ry="3"/>
+  <rect class="mask3" x="800" y="820" width="180" height="8" rx="3" ry="3"/>
+</svg>

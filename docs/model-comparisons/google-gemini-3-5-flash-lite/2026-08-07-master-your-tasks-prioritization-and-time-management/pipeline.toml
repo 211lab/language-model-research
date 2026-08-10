@@ -1,0 +1,318 @@
+[context]
+title = "Master Your Tasks: Prioritization and Time Management"
+slug = "master-your-tasks-prioritization-and-time-management"
+date = "2026-08-07"
+target_dir = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management"
+
+[providers.text]
+kind = "openai-compatible"
+providerUrl = "http://localhost:11434"
+model = "active"
+timeout_seconds = 300
+retry_attempts = 4
+retry_wait_seconds = 75
+
+[providers.image]
+kind = "openai-compatible"
+providerUrl = "http://localhost:11434"
+model = "unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m"
+timeout_seconds = 900
+retry_attempts = 4
+retry_wait_seconds = 75
+
+[providers.audio]
+kind = "openai-compatible"
+providerUrl = "http://localhost:11434"
+model = "AUDIO_MODEL_NAME"
+
+[variables]
+voice = "direct, pragmatic, masculine, concrete"
+audience = "men who need structure, ownership, and steady action"
+
+[tracks]
+promo_assets = false
+landing_page = false
+
+[[steps]]
+id = "lesson"
+format = "markdown"
+prompt_file = "automation/prompts/burn/lesson.md"
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+alias = "context"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md"
+alias = "seed"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md"
+alias = "draft_index"
+
+[[steps]]
+id = "instructions"
+format = "markdown"
+prompt_file = "automation/prompts/burn/instructions.md"
+depends_on = ["lesson"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md"
+
+[[steps.inputs]]
+step = "lesson"
+alias = "lesson"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+alias = "context"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md"
+alias = "seed"
+
+[[steps]]
+id = "gpt"
+format = "markdown"
+prompt_file = "automation/prompts/burn/gpt.md"
+depends_on = ["instructions"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md"
+
+[[steps.inputs]]
+step = "instructions"
+alias = "instructions"
+
+[[steps]]
+id = "worksheet"
+format = "svg"
+prompt_file = "automation/prompts/burn/worksheet-svg.md"
+depends_on = ["lesson", "instructions"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg"
+
+[[steps.inputs]]
+step = "instructions"
+alias = "instructions"
+
+[[steps]]
+id = "worksheet_masked"
+format = "svg"
+prompt_file = "automation/prompts/burn/worksheet-masked-svg.md"
+depends_on = ["worksheet"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg"
+
+[[steps.inputs]]
+step = "worksheet"
+alias = "worksheet"
+
+[[steps]]
+id = "promo"
+format = "markdown"
+prompt_file = "automation/prompts/burn/promo-image.md"
+depends_on = ["worksheet_masked", "index", "cover_image"]
+tracks = ["promo_assets"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/PROMO_PROMPT.md"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+alias = "context"
+
+[[steps.inputs]]
+step = "worksheet_masked"
+alias = "worksheet_masked"
+
+[[steps]]
+id = "promo_image"
+format = "png"
+modality = "image"
+prompt_file = "automation/prompts/burn/render-image.md"
+depends_on = ["promo"]
+tracks = ["promo_assets"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/promo.png"
+
+[[steps.inputs]]
+step = "promo"
+alias = "asset_prompt"
+
+[[steps]]
+id = "banner"
+format = "markdown"
+prompt_file = "automation/prompts/burn/banner-image.md"
+depends_on = ["worksheet_masked", "promo", "index", "cover_image"]
+tracks = ["promo_assets"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/BANNER_PROMPT.md"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+alias = "context"
+
+[[steps.inputs]]
+step = "worksheet_masked"
+alias = "worksheet_masked"
+
+[[steps.inputs]]
+step = "promo"
+alias = "promo"
+
+[[steps]]
+id = "banner_image"
+format = "png"
+modality = "image"
+prompt_file = "automation/prompts/burn/render-image.md"
+depends_on = ["banner"]
+tracks = ["promo_assets"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/banner.png"
+
+[[steps.inputs]]
+step = "banner"
+alias = "asset_prompt"
+
+[[steps]]
+id = "cover"
+format = "markdown"
+prompt_file = "automation/prompts/burn/cover-image.md"
+depends_on = ["index"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+alias = "context"
+
+[[steps.inputs]]
+step = "index"
+alias = "long_form"
+
+[[steps]]
+id = "cover_image"
+format = "png"
+modality = "image"
+prompt_file = "automation/prompts/burn/render-image.md"
+depends_on = ["cover"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png"
+
+[[steps.inputs]]
+step = "cover"
+alias = "asset_prompt"
+
+[[steps]]
+id = "page_copy"
+format = "markdown"
+prompt_file = "automation/prompts/burn/page-copy.md"
+depends_on = ["promo", "banner"]
+tracks = ["landing_page"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/PAGE_COPY.md"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+alias = "context"
+
+[[steps.inputs]]
+step = "promo"
+alias = "promo"
+
+[[steps.inputs]]
+step = "banner"
+alias = "banner"
+
+[[steps]]
+id = "landing_page"
+format = "html"
+prompt_file = "automation/prompts/burn/landing-page-html.md"
+depends_on = ["banner", "page_copy"]
+tracks = ["landing_page"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/LANDING_PAGE.html"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+alias = "context"
+
+[[steps.inputs]]
+step = "banner"
+alias = "banner"
+
+[[steps.inputs]]
+step = "page_copy"
+alias = "page_copy"
+
+[[steps]]
+id = "worksheet_page"
+format = "markdown"
+prompt_file = "automation/prompts/burn/worksheet-page-prototype.md"
+depends_on = ["promo", "page_copy"]
+tracks = ["landing_page"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_PAGE.md"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+alias = "context"
+
+[[steps.inputs]]
+step = "promo"
+alias = "promo"
+
+[[steps.inputs]]
+step = "page_copy"
+alias = "page_copy"
+
+[[steps]]
+id = "index"
+format = "markdown"
+prompt_file = "automation/prompts/burn/index.md"
+depends_on = ["lesson"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md"
+alias = "draft_index"
+
+[[steps.inputs]]
+step = "lesson"
+alias = "lesson"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+alias = "context"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md"
+alias = "seed"
+
+[[steps]]
+id = "newsletter_email"
+format = "markdown"
+prompt_file = "automation/prompts/burn/newsletter-email.md"
+depends_on = ["index", "lesson", "instructions", "gpt"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md"
+
+[[steps.inputs]]
+step = "index"
+alias = "index"
+
+[[steps.inputs]]
+step = "lesson"
+alias = "lesson"
+
+[[steps.inputs]]
+step = "instructions"
+alias = "instructions"
+
+[[steps.inputs]]
+step = "gpt"
+alias = "gpt"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+alias = "context"
+
+[[steps]]
+id = "community_post"
+format = "markdown"
+prompt_file = "automation/prompts/burn/community-post.md"
+depends_on = ["index"]
+output = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md"
+
+[[steps.inputs]]
+step = "index"
+alias = "index"
+
+[[steps.inputs]]
+path = "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+alias = "context"

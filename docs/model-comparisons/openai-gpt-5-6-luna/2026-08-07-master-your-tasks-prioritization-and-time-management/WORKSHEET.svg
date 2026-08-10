@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet for building a realistic daily priority plan using the FILTER process: find, identify, limit, time-block, execute, and review.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS</text>
+  <text class="sub" x="40" y="96">Prioritization and Time Management</text>
+
+  <rect class="mini" x="730" y="34" width="330" height="78"/>
+  <text class="label" x="750" y="58">TODAY'S AIM</text>
+  <text class="small" x="750" y="78">Choose three priorities, protect the first,</text>
+  <text class="small" x="750" y="94">and let the completed work set the order.</text>
+
+  <text class="verb" x="486" y="142">FILTER</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="320" height="185"/>
+  <text class="letter" x="60" y="222">F</text>
+  <text class="label" x="105" y="204">FIND EVERY TASK</text>
+  <text class="small" x="105" y="224">Capture every demand in one visible list.</text>
+  <text class="tiny" x="105" y="242">Write concrete actions; do not prioritize yet.</text>
+  <text class="tiny" x="60" y="270">1.</text><line class="fillline" x1="80" y1="270" x2="330" y2="270"/>
+  <text class="tiny" x="60" y="298">2.</text><line class="fillline" x1="80" y1="298" x2="330" y2="298"/>
+  <text class="tiny" x="60" y="326">3.</text><line class="fillline" x1="80" y1="326" x2="330" y2="326"/>
+  <text class="tiny" x="60" y="354">4.</text><line class="fillline" x1="80" y1="354" x2="330" y2="354"/>
+
+  <rect class="box" x="390" y="180" width="320" height="185"/>
+  <text class="letter" x="410" y="222">I</text>
+  <text class="label" x="455" y="204">IDENTIFY WHAT MATTERS</text>
+  <text class="small" x="455" y="224">Mark urgent, important, both, or neither.</text>
+  <text class="tiny" x="455" y="242">Choose the three actions with greatest useful result.</text>
+  <text class="tiny" x="410" y="270">1st big rock:</text><line class="fillline" x1="485" y1="270" x2="680" y2="270"/>
+  <text class="tiny" x="410" y="298">2nd big rock:</text><line class="fillline" x1="485" y1="298" x2="680" y2="298"/>
+  <text class="tiny" x="410" y="326">3rd big rock:</text><line class="fillline" x1="485" y1="326" x2="680" y2="326"/>
+  <text class="tiny" x="410" y="354">Why these lead today:</text><line class="fillline" x1="520" y1="354" x2="680" y2="354"/>
+
+  <rect class="box" x="740" y="180" width="320" height="185"/>
+  <text class="letter" x="760" y="222">L</text>
+  <text class="label" x="805" y="204">LIMIT TODAY'S LIST</text>
+  <text class="small" x="805" y="224">Decide what to delete, delay, delegate, or keep.</text>
+  <text class="tiny" x="805" y="242">Protect the three priorities from list expansion.</text>
+  <text class="tiny" x="760" y="270">Delete:</text><line class="fillline" x1="805" y1="270" x2="1030" y2="270"/>
+  <text class="tiny" x="760" y="298">Delay + review:</text><line class="fillline" x1="845" y1="298" x2="1030" y2="298"/>
+  <text class="tiny" x="760" y="326">Delegate + owner:</text><line class="fillline" x1="855" y1="326" x2="1030" y2="326"/>
+  <text class="tiny" x="760" y="354">Keep for later:</text><line class="fillline" x1="845" y1="354" x2="1030" y2="354"/>
+
+  <rect class="box" x="40" y="395" width="320" height="185"/>
+  <text class="letter" x="60" y="437">T</text>
+  <text class="label" x="105" y="419">TIME-BLOCK THE PRIORITIES</text>
+  <text class="small" x="105" y="439">Put each big rock on the clock.</text>
+  <text class="tiny" x="105" y="457">Name a start, stop, first action, and realistic result.</text>
+  <text class="tiny" x="60" y="485">1st time / result:</text><line class="fillline" x1="155" y1="485" x2="330" y2="485"/>
+  <text class="tiny" x="60" y="515">2nd time / result:</text><line class="fillline" x1="155" y1="515" x2="330" y2="515"/>
+  <text class="tiny" x="60" y="545">3rd time / result:</text><line class="fillline" x1="155" y1="545" x2="330" y2="545"/>
+
+  <rect class="box" x="390" y="395" width="320" height="185"/>
+  <text class="letter" x="410" y="437">E</text>
+  <text class="label" x="455" y="419">EXECUTE IN ORDER</text>
+  <text class="small" x="455" y="439">Start the first rock before minor work.</text>
+  <text class="tiny" x="455" y="457">Silence alerts; capture interruptions without obeying them.</text>
+  <text class="tiny" x="410" y="485">Started before messages?  □ Yes  □ No</text>
+  <text class="tiny" x="410" y="515">Completed / advanced:</text><line class="fillline" x1="525" y1="515" x2="680" y2="515"/>
+  <text class="tiny" x="410" y="545">Next action if unfinished:</text><line class="fillline" x1="545" y1="545" x2="680" y2="545"/>
+
+  <rect class="box" x="740" y="395" width="320" height="185"/>
+  <text class="letter" x="760" y="437">R</text>
+  <text class="label" x="805" y="419">REVIEW AND RESET</text>
+  <text class="small" x="805" y="439">Record results, causes, and tomorrow's first block.</text>
+  <text class="tiny" x="805" y="457">Reconsider unfinished work before carrying it forward.</text>
+  <text class="tiny" x="760" y="485">Finished / advanced:</text><line class="fillline" x1="875" y1="485" x2="1030" y2="485"/>
+  <text class="tiny" x="760" y="515">Delay cause / adjustment:</text><line class="fillline" x1="895" y1="515" x2="1030" y2="515"/>
+  <text class="tiny" x="760" y="545">Tomorrow first block:</text><line class="fillline" x1="875" y1="545" x2="1030" y2="545"/>
+
+  <rect class="mini" x="40" y="610" width="1020" height="88"/>
+  <text class="label" x="60" y="636">SEVEN-DAY PRACTICE CHECK</text>
+  <text class="small" x="60" y="660">Before lower-priority work, complete at least two big rocks. What will you protect first today?</text>
+  <line class="fillline" x1="60" y1="684" x2="1030" y2="684"/>
+
+  <rect class="mini" x="40" y="725" width="315" height="82"/>
+  <text class="num" x="60" y="760">1</text>
+  <text class="label" x="95" y="748">SEE IT</text>
+  <text class="tiny" x="95" y="768">Put every task in one complete list.</text>
+  <text class="tiny" x="95" y="784">Do not let memory set the agenda.</text>
+
+  <rect class="mini" x="392" y="725" width="315" height="82"/>
+  <text class="num" x="412" y="760">2</text>
+  <text class="label" x="447" y="748">RANK IT</text>
+  <text class="tiny" x="447" y="768">Choose three meaningful big rocks.</text>
+  <text class="tiny" x="447" y="784">Give them your best attention first.</text>
+
+  <rect class="mini" x="745" y="725" width="315" height="82"/>
+  <text class="num" x="765" y="760">3</text>
+  <text class="label" x="800" y="748">PROVE IT</text>
+  <text class="tiny" x="800" y="768">Put the first priority on the clock.</text>
+  <text class="tiny" x="800" y="784">Review the evidence and reset tomorrow.</text>
+</svg>

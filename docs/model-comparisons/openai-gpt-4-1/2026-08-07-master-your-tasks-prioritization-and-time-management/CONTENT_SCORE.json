@@ -1,0 +1,471 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "openai/gpt-4.1",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-final-quality-scores/docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 77.79,
+  "confidence": 0.982,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 90.1,
+      "penalties": 0.0,
+      "final_score": 90.1,
+      "confidence": 0.986,
+      "metrics": {
+        "fk_grade": 5.27,
+        "words": 1092,
+        "sentences": 109,
+        "average_sentence_words": 10.02,
+        "sentence_length_stddev": 5.95,
+        "concrete_opening": true,
+        "action_signals": 10,
+        "framework_signals": 6,
+        "late_you_ratio": 0.56,
+        "repeated_sentence_ratio": 0.012
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most men don\u2019t have a task problem. They have a prioritization problem."
+          ],
+          "reason": "Cuts through surface busyness to root cause, reframing the reader\u2019s understanding of the daily trap."
+        },
+        {
+          "id": "argument_progression",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most men don\u2019t have a task problem. They have a prioritization problem.",
+            "The Furnace Stack is the structure that channels pressure into productive action.",
+            "When you filter your tasks and defend your priorities, you end each day with real wins.",
+            "You are not here to be busy. You are here to win. Build your Stack. Filter your tasks. Defend your priorities."
+          ],
+          "reason": "The argument moves from a concrete opening problem (the hijacked day), through a clear diagnosis (prioritization, not effort), to a conceptual model (Furnace Stack), then a detailed system (FILTER), and finally a closing synthesis that connects effort to outcomes. Each stage builds on the last without relying on empty exhortation."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You wake up with a plan. By noon, your inbox is a war zone, your phone is buzzing, and your to-do list has mutated into a hydra\u2014cut off one head, two more appear."
+          ],
+          "reason": "Immersive, sensory, and specific scene that instantly illustrates the daily overwhelm without abstraction."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most men don\u2019t have a task problem. They have a prioritization problem.",
+            "That\u2019s the quiet theft happening every day: your time, your energy, your direction, all siphoned away by noise."
+          ],
+          "reason": "Interprets emotional/mental cost (theft, noise, misdiagnosis) without therapy jargon."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "silence your phone, close extra tabs, and let others know you\u2019re in focus mode. Use a timer\u201425 minutes on, 5 minutes off\u2014to stay sharp.",
+            "At day\u2019s end, check off what you finished. Move what\u2019s left to tomorrow\u2014if it\u2019s still important. If not, cut it."
+          ],
+          "reason": "The piece translates its abstract principles into precise, replicable actions: a timed 25/5 work rhythm, a concrete triple-filter for daily priorities, and explicit blocking of time. These are observable behaviors, not mere attitudes."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The Furnace Stack is the structure that channels pressure into productive action. Imagine a blast furnace: without a stack, the fire rages but the heat escapes."
+          ],
+          "reason": "A philosophical metaphor (the stack) directly paired with an actionable daily system (FILTER)."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Imagine a blast furnace: without a stack, the fire rages but the heat escapes. Nothing gets forged. The Stack gives pressure a path. It organizes your roles\u2014worker, parent, builder, friend\u2014so you know what matters and when."
+          ],
+          "reason": "The furnace metaphor introduces a non-obvious systems-thinking concept (channeling pressure via role-based filters) that deepens the guidance beyond typical to-do list advice."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Delegating, postponing, or cutting tasks is not weakness. It\u2019s discipline."
+          ],
+          "reason": "Acknowledges that strict filtering may feel like failure and reframes it as strength, adding subtlety to the otherwise hard stance on prioritization."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The responsibility is yours. No one will do it for you."
+          ],
+          "reason": "Directly places agency and ownership on the reader without softening or external blame."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most men don\u2019t have a task problem. They have a prioritization problem.",
+            "You\u2019re busy, but you\u2019re not moving forward. You\u2019re working hard, but you\u2019re not winning.",
+            "You are not here to be busy. You are here to win. Build your Stack. Filter your tasks. Defend your priorities."
+          ],
+          "reason": "The text deliberately shifts the reader\u2019s frame from \u2018how do I get more done?\u2019 to \u2018what deserves my focus?\u2019 The reframe is reinforced through the Stack metaphor and the FILTER steps, moving the reader from reactive busyness to intentional, role\u2011anchored execution. The closing recapitulation of \u2018winning\u2019 versus busyness seals the new perspective."
+        },
+        {
+          "id": "decision",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You have a choice: keep letting your day get hijacked, or build your Stack and filter for what matters."
+          ],
+          "reason": "The binary choice between owning or losing the day is framed plainly and forcefully, demanding a conscious stance."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "The text gives a fully specified daily sequence\u2014brain dump, filter to three, block time, defend the block, review\u2014along with a six\u2011step FILTER model that breaks the sequence into named, executable actions. Every verb is operative, and the steps do not depend on external tools or vague intention. (evidence could not be verified)"
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your to-do list has mutated into a hydra\u2014cut off one head, two more appear."
+          ],
+          "reason": "Switches between visceral metaphor (hydra) and clear, tactile actions (dump onto a page) without losing coherence."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You end the day exhausted, but the real work\u2014the work that actually matters\u2014remains untouched.",
+            "You\u2019re busy, but you\u2019re not moving forward. You\u2019re working hard, but you\u2019re not winning."
+          ],
+          "reason": "Captures a common, relatable experience of modern work life without exaggeration."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You don\u2019t need a complicated app or a color-coded planner. You need a system that cuts through the noise and puts you in control."
+          ],
+          "reason": "Simple language (FK 5.27) delivers nontrivial concepts (prioritization, role-based filtering) without dumbing down."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You wake up with a plan. By noon, your inbox is a war zone, your phone is buzzing, and your to-do list has mutated into a hydra\u2014cut off one head, two more appear."
+          ],
+          "reason": "Varies short punchy fragments with longer, descriptive clauses for a propulsive reading rhythm."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The difference between progress and stagnation is not effort\u2014it\u2019s focus."
+          ],
+          "reason": "Packs a foundational argument into a single, tight sentence with no wasted words."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You tell yourself you\u2019ll get to it tomorrow. But tomorrow is just another rerun."
+          ],
+          "reason": "Undermines feel-good deferral with a blunt, unsentimental diagnosis rather than offering hollow encouragement."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most men don\u2019t have a task problem. They have a prioritization problem."
+          ],
+          "reason": "Diagnoses the pattern clinically, not through emotional probing or self-help warmth; treats it as a correctable structural error."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You\u2019re not here to be a servant to other people\u2019s chaos. You\u2019re here to build, to move forward, to win."
+          ],
+          "reason": "Uses direct assertion about purpose rather than moralistic \u201cyou should\u201d language; the authority is built on clarity, not righteousness."
+        },
+        {
+          "id": "anti_guru",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The Furnace phase is about converting emotional pressure\u2014stress, urgency, the weight of responsibility\u2014into usable energy. But energy without direction is just heat. It burns, but it doesn\u2019t build."
+          ],
+          "reason": "Demystifies pressure as a raw resource that needs a system, not a mystical force; no secret knowledge or personality cult."
+        },
+        {
+          "id": "closing_strength",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You are not here to be busy. You are here to win. Build your Stack. Filter your tasks. Defend your priorities. Or accept that your day\u2014and your progress\u2014will always belong to someone else. The choice is yours."
+          ],
+          "reason": "Closes with a decisive, memorable ultimatum that ties together the entire argument and forces a final commitment."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 80.48,
+      "penalties": 15.0,
+      "final_score": 65.48,
+      "confidence": 0.978,
+      "metrics": {
+        "fk_grade": 7.88,
+        "words": 837,
+        "sentences": 66,
+        "average_sentence_words": 12.68,
+        "sentence_length_stddev": 4.69,
+        "concrete_opening": false,
+        "action_signals": 4,
+        "framework_signals": 4,
+        "late_you_ratio": 0.4,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Effective task management isn\u2019t about doing more\u2014it\u2019s about doing what matters most.",
+            "you don\u2019t have a task problem; you have a prioritization problem."
+          ],
+          "reason": "Directly reframes the reader\u2019s diagnosis from a task problem to a prioritization problem, shifting the entire mental model."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "R \u2013 Review and Reprioritize\n\nAt the end of the day, check off what you finished."
+          ],
+          "reason": "A clear sequential build from dumping tasks, sorting by importance, allocating time, eliminating interruptions, executing, and finally reviewing creates a complete logical arc."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 75.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "you don\u2019t have a task problem; you have a prioritization problem",
+            "If you\u2019re ending your days feeling busy but not accomplished, you\u2019re likely letting urgent distractions crowd out your real priorities"
+          ],
+          "reason": "The source directly interprets the reader\u2019s psychological state\u2014attributing dissatisfaction to cognitive misallocation rather than task volume\u2014and frames the issue as internal (prioritization) rather than external. This interpretive layer is present throughout, though it remains at a surface level."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Effective task management isn\u2019t about doing more\u2014it\u2019s about doing what matters most.",
+            "The FILTER model is your daily system for cutting through the noise, focusing your energy, and finishing each day with real wins."
+          ],
+          "reason": "Articulates a clear value statement ('doing what matters most') and an operating principle ('cutting through the noise') that guide the entire method."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 15.0,
+          "passed": false,
+          "confidence": 1.0,
+          "evidence": [
+            "Effective task management isn\u2019t about doing more\u2014it\u2019s about doing what matters most."
+          ],
+          "reason": "No original conceptual framework, philosophical depth, or rigorous reasoning beyond common-sense productivity tropes. The central idea is a truism presented without analysis, evidence, or layered exploration. The Eisenhower Matrix is referenced but not deepened. The work lacks any intellectual heft."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "you don\u2019t have a task problem; you have a prioritization problem",
+            "Use what you\u2019ve written to guide your actions tomorrow\u2014don\u2019t let your day get hijacked"
+          ],
+          "reason": "Places the locus of control squarely on the individual\u2019s choices and discipline, not external circumstances."
+        },
+        {
+          "id": "framework_lands",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The FILTER model is your daily system",
+            "F \u2013 Focus First",
+            "I \u2013 Identify Importance",
+            "L \u2013 Lock Time",
+            "T \u2013 Tune Out Distractions",
+            "E \u2013 Execute Relentlessly",
+            "R \u2013 Review and Reprioritize"
+          ],
+          "reason": "The FILTER acronym is introduced and then each component is fully unpacked with concrete instructions, making the framework land solidly."
+        },
+        {
+          "id": "unique_action",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Every letter maps to a concrete, non-overlapping behavioral step. The actions are distinct: a brain-dump for F, a priority matrix for I, calendar blocking for L, environmental lockdown plus Pomodoro for T, sustained effort for E, and deliberate daily review for R. The letter-specific actions are central to the artifact\u2019s design. (evidence could not be verified)"
+        },
+        {
+          "id": "action_relevance",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "you don\u2019t have a task problem; you have a prioritization problem",
+            "The FILTER model is your daily system for cutting through the noise",
+            "Use this worksheet to apply the FILTER process step by step, so you can take control of your to-do list"
+          ],
+          "reason": "A clear through-line: diagnostic argument (\u201cprioritization problem\u201d) \u2192 named framework (FILTER) \u2192 step-by-step actions. Each subsequent section flows directly from this sequence, maintaining tight linkage between the opening premise and the prescribed actions."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "Silence your phone, close unrelated tabs, and let others know you\u2019re in focus mode",
+            "Physically writing or typing your top three tasks into your calendar"
+          ],
+          "reason": "Recommendations are concrete, external behaviors anyone can execute. No vague appeals to mindset or attitude; everything is anchored to observable action in the environment."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "F \u2013 Focus First",
+            "I \u2013 Identify Importance",
+            "L \u2013 Lock Time",
+            "T \u2013 Tune Out Distractions",
+            "E \u2013 Execute Relentlessly",
+            "R \u2013 Review and Reprioritize"
+          ],
+          "reason": "The model is reduced to a memorable acronym with one short imperative per letter. Language is kept at a low reading level without collapsing into baby talk, and the structure itself enforces cognitive ease while still carrying a workable prioritization logic. Serious intent is preserved beneath the simple surface."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 75.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Effective task management isn\u2019t about doing more\u2014it\u2019s about doing what matters most.",
+            "Silence your phone, close unrelated tabs, and let others know you\u2019re in focus mode."
+          ],
+          "reason": "Variety emerges from alternating declarative statements and tight imperative sequences; standard deviation of 4.69 on 12.68-word average sentences indicates purposeful variation, not monotone cadence."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Cutting through the noise"
+          ],
+          "reason": "Phrases remain compact, avoiding padding; the avoid/better format eliminates editorializing while delivering precise contrast."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The FILTER process only works if you\u2019re ruthless about what matters and disciplined about defending your priorities.",
+            "Don\u2019t let less important chores or sudden requests steal your attention.",
+            "Push through resistance and finish what you started."
+          ],
+          "reason": "No hype, no aspirational slogans, no \u2018you can do it\u2019 cheerleading. The tone is direct, demanding, and refuses to offer empty encouragement. Even the harshest line\u2014\u201cthe FILTER process only works if you\u2019re ruthless\u201d\u2014places the burden squarely on the reader without softening it with motivation."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Push through resistance",
+            "don\u2019t let your day get hijacked",
+            "The FILTER process only works if you\u2019re ruthless about what matters"
+          ],
+          "reason": "No therapeutic language, no validation of feelings, no \u2018be kind to yourself\u2019 framing. The vocabulary (\u201cruthless,\u201d \u201cpush through,\u201d \u201chijacked\u201d) is adversarial and action-focused, avoiding the nurturing, exploratory tone characteristic of therapy voice."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use this worksheet to apply the FILTER process step by step"
+          ],
+          "reason": "Instructional imperative ('Use this worksheet') and pragmatic binary lists replace moralizing or 'should'-heavy pronouncements."
+        },
+        {
+          "id": "anti_guru",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use this worksheet to apply the FILTER process step by step",
+            "Finish your worksheet with honesty and specificity"
+          ],
+          "reason": "No mystical revelation, no claim of hidden truth; the authority is the worksheet and the reader's own application, not the persona of the writer."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.080555
+}

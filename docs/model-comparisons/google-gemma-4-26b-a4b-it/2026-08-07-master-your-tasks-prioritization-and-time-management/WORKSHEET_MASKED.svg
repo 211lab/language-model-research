@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the ORDER action model, and a summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+      .mask-block { fill: #e0e0e0; }
+      .mask-line { stroke: #d0d0d0; stroke-width: 1; fill: none; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS: PRIORITIZATION AND TIME MANAGEMENT</text>
+  <text class="sub" x="40" y="96">Move from reactive firefighter to proactive architect.</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <rect class="mask-block" x="720" y="48" width="100" height="10"/>
+  <rect class="mask-block" x="720" y="65" width="200" height="6"/>
+  <rect class="mask-block" x="720" y="78" width="250" height="6"/>
+
+  <text class="verb" x="444" y="142">ORDER</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <!-- Row 1: O and R -->
+  <rect class="box" x="40" y="180" width="500" height="200"/>
+  <text class="letter" x="60" y="222">O</text>
+  <rect class="mask-block" x="105" y="200" width="120" height="12"/>
+  <rect class="mask-block" x="105" y="220" width="150" height="8"/>
+  <rect class="mask-block" x="105" y="238" width="200" height="8"/>
+  <rect class="mask-line" x1="60" y1="260" x2="520" y2="260"/>
+  <rect class="mask-line" x1="60" y1="285" x2="520" y2="285"/>
+  <rect class="mask-line" x1="60" y1="310" x2="520" y2="310"/>
+  <rect class="mask-line" x1="60" y1="335" x2="520" y2="335"/>
+  <rect class="mask-line" x1="60" y1="360" x2="520" y2="360"/>
+
+  <rect class="box" x="540" y="180" width="520" height="200"/>
+  <text class="letter" x="560" y="222">R</text>
+  <rect class="mask-block" x="605" y="200" width="100" height="12"/>
+  <rect class="mask-block" x="605" y="220" width="150" height="8"/>
+  <rect class="mask-block" x="605" y="238" width="180" height="8"/>
+  <rect class="mask-block" x="560" y="263" width="20" height="10"/>
+  <rect class="mask-line" x1="580" y1="268" x2="1040" y2="268"/>
+  <rect class="mask-block" x="560" y="288" width="20" height="10"/>
+  <rect class="mask-line" x1="580" y1="292" x2="1040" y2="292"/>
+  <rect class="mask-block" x="560" y1="313" width="20" height="10"/>
+  <rect class="mask-line" x1="580" y1="316" x2="1040" y2="316"/>
+  <rect class="mask-block" x="560" y1="338" width="20" height="10"/>
+  <rect class="mask-line" x1="580" y1="340" x2="1040" y2="340"/>
+
+  <!-- Row 2: D and E -->
+  <rect class="box" x="40" y="395" width="500" height="200"/>
+  <text class="letter" x="60" y="437">D</text>
+  <rect class="mask-block" x="105" y="415" width="150" height="12"/>
+  <rect class="mask-block" x="105" y="435" width="150" height="8"/>
+  <rect class="mask-block" x="105" y="453" width="150" height="8"/>
+  <rect class="mask-block" x="60" y="480" width="40" height="10"/>
+  <rect class="mask-line" x1="110" y1="485" x2="520" y2="485"/>
+  <rect class="mask-block" x="60" y="510" width="40" height="10"/>
+  <rect class="mask-line" x1="110" y1="515" x2="520" y2="515"/>
+  <rect class="mask-block" x="60" y="540" width="40" height="10"/>
+  <rect class="mask-line" x1="110" y1="545" x2="520" y2="545"/>
+
+  <rect class="box" x="540" y="395" width="520" height="200"/>
+  <text class="letter" x="560" y="437">E</text>
+  <rect class="mask-block" x="605" y="415" width="150" height="12"/>
+  <rect class="mask-block" x="605" y="435" width="150" height="8"/>
+  <rect class="mask-block" x="605" y="453" width="150" height="8"/>
+  <rect class="mask-block" x="560" y="480" width="50" height="10"/>
+  <rect class="mask-line" x1="620" y1="485" x2="1040" y2="485"/>
+  <rect class="mask-block" x="560" y="510" width="50" height="10"/>
+  <rect class="mask-line" x1="620" y1="515" x2="1040" y2="515"/>
+  <rect class="mask-block" x="560" y="540" width="50" height="10"/>
+  <rect class="mask-line" x1="620" y1="545" x2="1040" y2="545"/>
+
+  <!-- Row 3: R (Sprints) and Footer -->
+  <rect class="box" x="40" y="610" width="1020" height="100"/>
+  <text class="letter" x="60" y="652">R</text>
+  <rect class="mask-block" x="105" y="630" width="80" height="12"/>
+  <rect class="mask-block" x="105" y="650" width="150" height="8"/>
+  <rect class="mask-block" x="105" y="668" width="150" height="8"/>
+  <rect class="mask-block" x="60" y="690" width="150" height="10"/>
+  <rect class="mask-line" x1="220" y1="695" x2="1040" y2="695"/>
+
+  <rect class="mini" x="40" y="730" width="330" height="100"/>
+  <rect class="mask-block" x="60" y="748" width="100" height="12"/>
+  <rect class="mask-block" x="60" y="768" width="200" height="8"/>
+  <rect class="mask-block" x="60" y="790" width="20" height="10"/>
+  <rect class="mask-line" x1="80" y1="795" x2="350" y2="795"/>
+  <rect class="mask-block" x="60" y="810" width="20" height="10"/>
+  <rect class="mask-line" x1="80" y1="815" x2="350" y2="815"/>
+
+  <rect class="mini" x="385" y="730" width="330" height="100"/>
+  <rect class="mask-block" x="405" y="748" width="120" height="12"/>
+  <rect class="mask-block" x="405" y="768" width="180" height="8"/>
+  <rect class="mask-line" x1="405" y1="795" x2="700" y2="795"/>
+  <rect class="mask-line" x1="405" y1="815" x2="700" y2="815"/>
+
+  <rect class="mini" x="730" y="730" width="330" height="100"/>
+  <rect class="mask-block" x="750" y="748" width="80" height="12"/>
+  <rect class="mask-block" x="750" y="768" width="120" height="8"/>
+  <rect class="mask-block" x="750" y="790" width="60" height="10"/>
+  <rect class="mask-block" x="750" y="810" width="60" height="10"/>
+</svg>
