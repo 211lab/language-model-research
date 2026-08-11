@@ -1,8 +1,17 @@
 ## Post
-You know the feeling. The workbench in the corner of the garage. Scattered nails. Unopened envelopes. A half-finished box that’s been waiting for weeks. Your day looks exactly like that bench. You spend it clearing inboxes, answering pings, and checking off minor requests. You’re exhausted. But the real work sits untouched. The list grows. Tomorrow comes, and the cycle repeats.
 
-This isn’t a time problem. It’s a focus problem. You’re treating every task as equally important, so nothing truly moves forward. The fix isn’t longer hours. It’s triage. You have to choose your three highest-impact tasks, protect time for them, and stop letting minor noise run your day.
+A task list can look organized while hiding the fact that no real choices have been made.
 
-That’s exactly what we’re tackling this week. The lesson and lecture will walk you through the mechanics of directing your attention so it actually builds something. But theory only lands when it’s put into practice. This week’s worksheet is your execution tool. It’s the practical artifact we’ll be working from, designed to turn that focus into a repeatable daily rhythm.
+The budget report sits beside an office supply order. The important call sits beside an email that could wait three days. Every task gets the same ink, so every task begins to feel equal.
 
-You’ll need to run through the TRIAGE steps before our group conversation. We’re not going to talk about concepts in the session—we’re going to talk about what actually happened when you tried to protect your prime hours, how you handled the interruptions, and where the system held up or cracked. Bring your completed worksheet. Bring the real friction. We’ll figure out how to keep the draft steady and turn that scattered bench into finished work.
+It isn’t.
+
+When the day starts without a clear ranking, the inbox ranks it for you. Easy replies, minor requests, and quick chores create the feeling of progress while the work that matters gets pushed into the evening—or into tomorrow again.
+
+This week is about making the decision before the noise begins: identifying the three results that matter most, protecting your best hours for them, and finishing them without stealing time from rest, breaks, or family duties.
+
+The worksheet is where that decision becomes concrete. You’ll use it to gather your open tasks, rank them by impact and urgency, define clear finish lines, and place your top three into real time blocks. The lesson and lecture will help you make those choices honestly and hold them when new requests arrive.
+
+Complete the worksheet before our group discussion and test it against a real day. Notice where your plan held, where busywork took over, and which unfinished task needs a better decision—not another move to tomorrow.
+
+Come ready to talk about the tradeoffs. What earned your strongest hour? What did you delay, delegate, or remove? And what became possible once your list stopped recording pressure and started recording priorities?

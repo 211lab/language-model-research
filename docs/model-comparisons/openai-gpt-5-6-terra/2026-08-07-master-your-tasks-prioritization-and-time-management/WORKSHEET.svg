@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
   <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
-  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the SEQUENCE action model, and a three step summary footer.</desc>
+  <desc id="desc">Landscape worksheet on a white background with a TRIAGE task prioritization process, six fillable action sections, a daily commitment, and an end-of-day reset.</desc>
 
   <defs>
     <style>
@@ -25,111 +25,102 @@
 
   <rect class="bg" x="0" y="0" width="1100" height="850"/>
 
-  <text class="tiny" x="40" y="34">SBXX</text>
-  <text class="title" x="40" y="70">MASTER YOUR TASKS</text>
-  <text class="sub" x="40" y="96">Prioritization and Time Management</text>
+  <text class="tiny" x="40" y="30">SBXX</text>
+  <text class="title" x="40" y="63">MASTER YOUR TASKS</text>
+  <text class="sub" x="40" y="91">Prioritization and Time Management</text>
 
-  <rect class="mini" x="700" y="34" width="360" height="78"/>
-  <text class="label" x="720" y="58">DUMP THE LIST</text>
-  <text class="small" x="720" y="78">Transfer every task, errand, and reminder to one place.</text>
-  <text class="tiny" x="720" y="94">Avoid categories. List exact actions only.</text>
+  <rect class="mini" x="690" y="30" width="370" height="82"/>
+  <text class="label" x="710" y="54">TRACK EVERY TASK</text>
+  <text class="small" x="710" y="75">Capture every demand in one trusted place before</text>
+  <text class="small" x="710" y="91">you decide what deserves your best time.</text>
 
-  <text class="verb" x="444" y="142">SEQUENCE</text>
-  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+  <text class="verb" x="478" y="143">TRIAGE</text>
+  <line class="line" x1="40" y1="155" x2="1060" y2="155"/>
 
-  <rect class="box" x="40" y="180" width="240" height="150"/>
-  <text class="letter" x="60" y="222">S</text>
-  <text class="label" x="105" y="204">SPILL THE LIST</text>
-  <text class="small" x="105" y="224">Transfer every task, errand, and reminder to one place.</text>
-  <text class="tiny" x="105" y="242">Avoid categories. List exact actions only.</text>
-  <line class="fillline" x1="60" y1="270" x2="260" y2="270"/>
-  <line class="fillline" x1="60" y1="300" x2="260" y2="300"/>
-  <line class="fillline" x1="60" y1="330" x2="260" y2="330"/>
+  <rect class="box" x="40" y="180" width="320" height="200"/>
+  <text class="letter" x="60" y="222">T</text>
+  <text class="label" x="105" y="204">TRACK EVERY TASK</text>
+  <text class="small" x="105" y="224">Empty your mental backlog into visible actions.</text>
+  <text class="tiny" x="105" y="242">Include work, home, calls, errands, and avoided tasks.</text>
+  <text class="tiny" x="60" y="268">1.</text><line class="fillline" x1="80" y1="268" x2="330" y2="268"/>
+  <text class="tiny" x="60" y="291">2.</text><line class="fillline" x1="80" y1="291" x2="330" y2="291"/>
+  <text class="tiny" x="60" y="314">3.</text><line class="fillline" x1="80" y1="314" x2="330" y2="314"/>
+  <text class="tiny" x="60" y="337">4.</text><line class="fillline" x1="80" y1="337" x2="330" y2="337"/>
+  <text class="tiny" x="60" y="360">5.</text><line class="fillline" x1="80" y1="360" x2="330" y2="360"/>
 
-  <rect class="box" x="300" y="180" width="240" height="150"/>
-  <text class="letter" x="320" y="222">E</text>
-  <text class="label" x="365" y="204">EVALUATE IMPACT</text>
-  <text class="small" x="365" y="224">Mark tasks that protect deadlines or move major goals.</text>
-  <text class="tiny" x="365" y="242">Distinguish motion from real progress.</text>
-  <line class="fillline" x1="320" y1="270" x2="520" y2="270"/>
-  <line class="fillline" x1="320" y1="300" x2="520" y2="300"/>
-  <line class="fillline" x1="320" y1="330" x2="520" y2="330"/>
+  <rect class="box" x="390" y="180" width="320" height="200"/>
+  <text class="letter" x="410" y="222">R</text>
+  <text class="label" x="455" y="204">RANK BY IMPACT</text>
+  <text class="small" x="455" y="224">Choose the three results that matter most today.</text>
+  <text class="tiny" x="455" y="242">Rank by consequence and progress, not convenience.</text>
+  <text class="tiny" x="410" y="270">A1:</text><line class="fillline" x1="435" y1="270" x2="680" y2="270"/>
+  <text class="tiny" x="410" y="296">Why:</text><line class="fillline" x1="440" y1="296" x2="680" y2="296"/>
+  <text class="tiny" x="410" y="323">A2:</text><line class="fillline" x1="435" y1="323" x2="680" y2="323"/>
+  <text class="tiny" x="410" y="349">A3:</text><line class="fillline" x1="435" y1="349" x2="680" y2="349"/>
 
-  <rect class="box" x="560" y="180" width="240" height="150"/>
-  <text class="letter" x="580" y="222">Q</text>
-  <text class="label" x="625" y="204">QUESTION URGENCY</text>
-  <text class="small" x="625" y="224">Separate true urgency from loud notifications.</text>
-  <text class="tiny" x="625" y="242">Assign status: today, week, delegate, delete.</text>
-  <text class="tiny" x="580" y="268">1.</text><line class="fillline" x1="600" y1="268" x2="780" y2="268"/>
-  <text class="tiny" x="580" y="292">2.</text><line class="fillline" x1="600" y1="292" x2="780" y2="292"/>
-  <text class="tiny" x="580" y="316">3.</text><line class="fillline" x1="600" y1="316" x2="780" y2="316"/>
-  <text class="tiny" x="580" y="340">4.</text><line class="fillline" x1="600" y1="340" x2="780" y2="340"/>
+  <rect class="box" x="740" y="180" width="320" height="200"/>
+  <text class="letter" x="760" y="222">I</text>
+  <text class="label" x="805" y="204">IDENTIFY THE URGENT TRAP</text>
+  <text class="small" x="805" y="224">Name demands that could pull you off A-level work.</text>
+  <text class="tiny" x="805" y="242">Decide: today, delay, delegate, decline, or batch.</text>
+  <text class="tiny" x="760" y="270">Trap:</text><line class="fillline" x1="792" y1="270" x2="1030" y2="270"/>
+  <text class="tiny" x="760" y="296">Decision:</text><line class="fillline" x1="805" y1="296" x2="1030" y2="296"/>
+  <text class="tiny" x="760" y="323">Trap:</text><line class="fillline" x1="792" y1="323" x2="1030" y2="323"/>
+  <text class="tiny" x="760" y="349">Boundary:</text><line class="fillline" x1="805" y1="349" x2="1030" y2="349"/>
 
-  <rect class="box" x="820" y="180" width="240" height="150"/>
-  <text class="letter" x="840" y="222">U</text>
-  <text class="label" x="885" y="204">THREE BIG ROCKS</text>
-  <text class="small" x="885" y="224">Pick exactly three A-level tasks for the day.</text>
-  <text class="tiny" x="885" y="242">Tie each to a major goal or hard deadline.</text>
-  <text class="tiny" x="840" y="268">1.</text><line class="fillline" x1="860" y1="268" x2="1040" y2="268"/>
-  <text class="tiny" x="840" y="292">2.</text><line class="fillline" x1="860" y1="292" x2="1040" y2="292"/>
-  <text class="tiny" x="840" y="316">3.</text><line class="fillline" x1="860" y1="316" x2="1040" y2="316"/>
+  <rect class="box" x="40" y="405" width="320" height="210"/>
+  <text class="letter" x="60" y="447">A</text>
+  <text class="label" x="105" y="429">ASSIGN PRIME TIME</text>
+  <text class="small" x="105" y="449">Give each A-level result a real calendar block.</text>
+  <text class="tiny" x="105" y="467">Include start, stop, and the first physical action.</text>
+  <text class="tiny" x="60" y="495">A1 time:</text><line class="fillline" x1="108" y1="495" x2="195" y2="495"/>
+  <text class="tiny" x="205" y="495">First action:</text><line class="fillline" x1="270" y1="495" x2="330" y2="495"/>
+  <text class="tiny" x="60" y="529">A2 time:</text><line class="fillline" x1="108" y1="529" x2="195" y2="529"/>
+  <text class="tiny" x="205" y="529">First action:</text><line class="fillline" x1="270" y1="529" x2="330" y2="529"/>
+  <text class="tiny" x="60" y="563">A3 time:</text><line class="fillline" x1="108" y1="563" x2="195" y2="563"/>
+  <text class="tiny" x="205" y="563">First action:</text><line class="fillline" x1="270" y1="563" x2="330" y2="563"/>
+  <text class="tiny" x="60" y="592">Best energy window:</text><line class="fillline" x1="155" y1="592" x2="330" y2="592"/>
 
-  <rect class="box" x="40" y="350" width="240" height="150"/>
-  <text class="letter" x="60" y="392">E</text>
-  <text class="label" x="105" y="374">ENTER PRIORITY BLOCKS</text>
-  <text class="small" x="105" y="394">Put each big rock on the calendar with start/end times.</text>
-  <text class="tiny" x="105" y="412">Match blocks to your peak focus hours.</text>
-  <text class="tiny" x="60" y="440">Block 1:</text><line class="fillline" x1="125" y1="440" x2="260" y2="440"/>
-  <text class="tiny" x="60" y="464">Block 2:</text><line class="fillline" x1="125" y1="464" x2="260" y2="464"/>
-  <text class="tiny" x="60" y="488">Block 3:</text><line class="fillline" x1="125" y1="488" x2="260" y2="488"/>
+  <rect class="box" x="390" y="405" width="320" height="210"/>
+  <text class="letter" x="410" y="447">G</text>
+  <text class="label" x="455" y="429">GUARD THE WORK BLOCK</text>
+  <text class="small" x="455" y="449">Remove the escape routes before focused work starts.</text>
+  <text class="tiny" x="455" y="467">Set a rule for messages, people, tools, and breaks.</text>
+  <text class="tiny" x="410" y="495">Phone / alerts:</text><line class="fillline" x1="480" y1="495" x2="680" y2="495"/>
+  <text class="tiny" x="410" y="523">Close / remove:</text><line class="fillline" x1="488" y1="523" x2="680" y2="523"/>
+  <text class="tiny" x="410" y="551">Focus sprint:</text><line class="fillline" x1="474" y1="551" x2="680" y2="551"/>
+  <text class="tiny" x="410" y="579">If interrupted:</text><line class="fillline" x1="483" y1="579" x2="680" y2="579"/>
 
-  <rect class="box" x="300" y="350" width="240" height="150"/>
-  <text class="letter" x="320" y="392">N</text>
-  <text class="label" x="365" y="374">NARROW ATTENTION</text>
-  <text class="small" x="365" y="394">Silence alerts and close unrelated tabs during blocks.</text>
-  <text class="tiny" x="365" y="412">List only the tools needed for the current rock.</text>
-  <line class="fillline" x1="320" y1="440" x2="520" y2="440"/>
-  <line class="fillline" x1="320" y1="464" x2="520" y2="464"/>
-  <line class="fillline" x1="320" y1="488" x2="520" y2="488"/>
+  <rect class="box" x="740" y="405" width="320" height="210"/>
+  <text class="letter" x="760" y="447">E</text>
+  <text class="label" x="805" y="429">EVALUATE AND RESET</text>
+  <text class="small" x="805" y="449">Review honestly; do not roll work forward blindly.</text>
+  <text class="tiny" x="805" y="467">Mark finished, moved, delegated, or removed.</text>
+  <text class="tiny" x="760" y="495">A-level result:</text><line class="fillline" x1="832" y1="495" x2="1030" y2="495"/>
+  <text class="tiny" x="760" y="523">Status:</text><line class="fillline" x1="800" y1="523" x2="1030" y2="523"/>
+  <text class="tiny" x="760" y="551">Real reason / lesson:</text><line class="fillline" x1="860" y1="551" x2="1030" y2="551"/>
+  <text class="tiny" x="760" y="579">Better next step:</text><line class="fillline" x1="850" y1="579" x2="1030" y2="579"/>
 
-  <rect class="box" x="560" y="350" width="240" height="150"/>
-  <text class="letter" x="580" y="392">C</text>
-  <text class="label" x="625" y="374">CONTAIN NOISE</text>
-  <text class="small" x="625" y="394">Batch emails, calls, and small errands into one window.</text>
-  <text class="tiny" x="625" y="412">Protect high-value time by isolating administrative tasks.</text>
-  <line class="fillline" x1="580" y1="440" x2="780" y2="440"/>
-  <line class="fillline" x1="580" y1="464" x2="780" y2="464"/>
-  <line class="fillline" x1="580" y1="488" x2="780" y2="488"/>
+  <rect class="mini" x="40" y="645" width="1020" height="68"/>
+  <text class="label" x="60" y="670">TODAY'S COMMAND</text>
+  <text class="small" x="60" y="691">The A-level task that gets my best attention first is:</text>
+  <line class="fillline" x1="375" y1="691" x2="1030" y2="691"/>
 
-  <rect class="box" x="820" y="350" width="240" height="150"/>
-  <text class="letter" x="840" y="392">E</text>
-  <text class="label" x="885" y="374">EVALUATE &amp; CARRY FORWARD</text>
-  <text class="small" x="885" y="394">Review completed work and decide the fate of unfinished items.</text>
-  <text class="tiny" x="885" y="412">Reprioritize, break down, delegate, or delete.</text>
-  <line class="fillline" x1="840" y1="440" x2="1040" y2="440"/>
-  <line class="fillline" x1="840" y1="464" x2="1040" y2="464"/>
-  <line class="fillline" x1="840" y1="488" x2="1040" y2="488"/>
+  <rect class="mini" x="40" y="738" width="315" height="70"/>
+  <text class="num" x="60" y="779">1</text>
+  <text class="label" x="95" y="764">CAPTURE IT</text>
+  <text class="tiny" x="95" y="783">Make every task visible and specific.</text>
+  <text class="tiny" x="95" y="797">Stop carrying the list in your head.</text>
 
-  <rect class="mini" x="40" y="530" width="1020" height="80"/>
-  <text class="label" x="60" y="556">DAILY EXECUTION CONTRACT</text>
-  <text class="small" x="60" y="580">The calendar is the contract. I will protect my focus blocks and execute my three rocks.</text>
-  <line class="fillline" x1="60" y1="604" x2="1030" y2="604"/>
+  <rect class="mini" x="392" y="738" width="315" height="70"/>
+  <text class="num" x="412" y="779">2</text>
+  <text class="label" x="447" y="764">PROTECT IT</text>
+  <text class="tiny" x="447" y="783">Put top work in prime time and defend it.</text>
+  <text class="tiny" x="447" y="797">Let minor demands wait their turn.</text>
 
-  <rect class="mini" x="40" y="630" width="315" height="82"/>
-  <text class="num" x="60" y="665">1</text>
-  <text class="label" x="95" y="653">GUARD THE BLOCKS</text>
-  <text class="tiny" x="95" y="673">Treat priority time as unmissable appointments.</text>
-  <text class="tiny" x="95" y="689">Silence distractions before starting.</text>
-
-  <rect class="mini" x="392" y="630" width="315" height="82"/>
-  <text class="num" x="412" y="665">2</text>
-  <text class="label" x="447" y="653">BATCH THE NOISE</text>
-  <text class="tiny" x="447" y="673">Group low-value tasks into a single later window.</text>
-  <text class="tiny" x="447" y="689">Prevent context switching from breaking flow.</text>
-
-  <rect class="mini" x="745" y="630" width="315" height="82"/>
-  <text class="num" x="765" y="665">3</text>
-  <text class="label" x="800" y="653">REVIEW WITHOUT JUDGMENT</text>
-  <text class="tiny" x="800" y="673">Move unfinished work only after deciding its fate.</text>
-  <text class="tiny" x="800" y="689">Keep tomorrow’s list lean and clear.</text>
+  <rect class="mini" x="745" y="738" width="315" height="70"/>
+  <text class="num" x="765" y="779">3</text>
+  <text class="label" x="800" y="764">RESET IT</text>
+  <text class="tiny" x="800" y="783">Learn from the result and plan tomorrow.</text>
+  <text class="tiny" x="800" y="797">Progress beats a crowded checklist.</text>
 </svg>

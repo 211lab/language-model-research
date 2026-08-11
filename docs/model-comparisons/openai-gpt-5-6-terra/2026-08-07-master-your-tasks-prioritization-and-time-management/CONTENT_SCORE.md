@@ -1,18 +1,18 @@
-# Content Score: 88.81
+# Content Score: 85.56
 
 - Model: openai/gpt-5.6-terra
-- Confidence: 0.976
+- Confidence: 0.919
 
 ## index.md
 
-- Score: 88.13
-- Base: 88.13
+- Score: 87.11
+- Base: 87.11
 - Penalties: 0.00
-- FK Grade: 3.92 (measurement; reference target <= 6)
+- FK Grade: 5.16 (measurement; reference target <= 6)
 
 ## INSTRUCTIONS.md
 
-- Score: 89.48
-- Base: 89.48
+- Score: 84.01
+- Base: 84.01
 - Penalties: 0.00
-- FK Grade: 6.31 (measurement; reference target <= 6)
+- FK Grade: 8.99 (measurement; reference target <= 6)

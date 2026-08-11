@@ -32,49 +32,49 @@
   <text class="axis-label" x="168.9" y="270.8" text-anchor="middle">Instructions: Sentence rhythm</text>
   <line class="spoke" x1="430" y1="390" x2="292.1" y2="175.5"/>
   <text class="axis-label" x="274.8" y="148.6" text-anchor="middle">Instructions: Semantic economy</text>
-  <polygon points="430.0,138.4 533.0,229.7 597.7,313.4 682.4,426.3 622.7,557.0 493.3,605.7 377.0,570.6 260.1,537.2 177.6,426.3 198.0,284.1 292.1,175.5" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-width="2.5"/>
+  <polygon points="430.0,138.4 534.4,227.5 597.7,313.4 682.4,426.3 622.7,557.0 493.3,605.7 372.5,585.9 260.1,537.2 177.6,426.3 198.0,284.1 292.1,175.5" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-width="2.5"/>
   <circle cx="760" cy="185" r="6" fill="#38bdf8"/>
   <text class="legend" x="776" y="190">GPT 5.5 — $1.228162</text>
-  <polygon points="430.0,135.0 549.5,204.0 662.0,284.1 678.4,425.7 617.4,552.4 498.2,622.1 358.2,634.7 237.3,557.0 216.0,420.8 203.6,286.6 295.5,180.6" fill="#f97316" fill-opacity="0.16" stroke="#f97316" stroke-width="2.5"/>
+  <polygon points="430.0,135.0 546.9,208.2 662.0,284.1 678.0,425.7 617.4,552.4 498.2,622.1 358.2,634.7 237.3,557.0 216.0,420.8 204.5,287.0 295.5,180.6" fill="#f97316" fill-opacity="0.16" stroke="#f97316" stroke-width="2.5"/>
   <circle cx="760" cy="227" r="6" fill="#f97316"/>
   <text class="legend" x="776" y="232">GPT 5.4 — $0.470669</text>
-  <polygon points="430.0,142.1 545.0,211.1 639.5,294.3 664.4,423.7 595.3,533.3 498.2,622.1 363.3,617.2 247.1,548.4 187.7,424.8 217.1,292.8 299.2,186.5" fill="#a78bfa" fill-opacity="0.16" stroke="#a78bfa" stroke-width="2.5"/>
+  <polygon points="430.0,142.1 541.3,216.8 639.5,294.3 662.4,423.4 595.3,533.3 498.2,622.1 362.4,620.1 247.1,548.4 187.7,424.8 211.9,290.4 299.2,186.5" fill="#a78bfa" fill-opacity="0.16" stroke="#a78bfa" stroke-width="2.5"/>
   <circle cx="760" cy="269" r="6" fill="#a78bfa"/>
   <text class="legend" x="776" y="274">Deepseek V4 Flash — $0.016322</text>
-  <polygon points="430.0,159.7 549.5,204.0 662.0,284.1 669.5,424.4 614.4,549.8 498.2,622.1 377.0,570.6 260.1,537.2 216.0,420.8 225.5,296.6 295.5,180.6" fill="#34d399" fill-opacity="0.16" stroke="#34d399" stroke-width="2.5"/>
+  <polygon points="430.0,150.2 546.9,208.2 662.0,284.1 668.1,424.2 614.4,549.8 498.2,622.1 372.5,585.9 260.1,537.2 216.0,420.8 220.5,294.3 295.5,180.6" fill="#34d399" fill-opacity="0.16" stroke="#34d399" stroke-width="2.5"/>
   <circle cx="760" cy="311" r="6" fill="#34d399"/>
   <text class="legend" x="776" y="316">GPT 5.6 Luna — $0.035006</text>
-  <polygon points="430.0,150.2 524.6,242.8 597.7,313.4 652.5,422.0 611.2,547.0 498.2,622.1 363.3,617.2 260.1,537.2 216.0,420.8 225.5,296.6 303.5,193.1" fill="#facc15" fill-opacity="0.16" stroke="#facc15" stroke-width="2.5"/>
+  <polygon points="430.0,146.0 559.2,189.0 648.1,290.4 640.5,420.3 599.9,537.2 486.3,581.8 372.5,585.9 260.1,537.2 216.0,420.8 244.2,305.2 308.4,200.9" fill="#facc15" fill-opacity="0.16" stroke="#facc15" stroke-width="2.5"/>
   <circle cx="760" cy="353" r="6" fill="#facc15"/>
-  <text class="legend" x="776" y="358">GPT 5.6 Terra — Unavailable</text>
-  <polygon points="430.0,146.0 560.1,187.6 648.1,290.4 637.4,419.8 599.9,537.2 486.3,581.8 377.0,570.6 260.1,537.2 216.0,420.8 248.2,307.0 308.4,200.9" fill="#fb7185" fill-opacity="0.16" stroke="#fb7185" stroke-width="2.5"/>
+  <text class="legend" x="776" y="358">Gemini 3.6 Flash — $0.486699</text>
+  <polygon points="430.0,154.8 525.6,241.3 569.4,326.4 662.4,423.4 604.0,540.8 486.3,581.8 378.1,566.9 260.1,537.2 238.8,417.5 244.2,305.2 308.4,200.9" fill="#fb7185" fill-opacity="0.16" stroke="#fb7185" stroke-width="2.5"/>
   <circle cx="760" cy="395" r="6" fill="#fb7185"/>
-  <text class="legend" x="776" y="400">Gemini 3.6 Flash — $0.486699</text>
-  <polygon points="430.0,154.8 539.6,219.5 569.4,326.4 601.7,414.7 604.0,540.8 486.3,581.8 363.3,617.2 314.2,490.3 200.0,423.1 209.9,289.5 303.5,193.1" fill="#22c55e" fill-opacity="0.16" stroke="#22c55e" stroke-width="2.5"/>
+  <text class="legend" x="776" y="400">GPT 5.6 Sol — $1.158257</text>
+  <polygon points="430.0,171.2 525.6,241.3 569.4,326.4 603.2,414.9 611.2,547.0 486.3,581.8 386.8,537.0 260.1,537.2 238.8,417.5 231.0,299.1 314.4,210.2" fill="#22c55e" fill-opacity="0.16" stroke="#22c55e" stroke-width="2.5"/>
   <circle cx="760" cy="437" r="6" fill="#22c55e"/>
-  <text class="legend" x="776" y="442">GPT 5.6 Sol — Unavailable</text>
-  <polygon points="430.0,185.8 567.9,175.5 662.0,284.1 664.4,423.7 584.3,523.7 486.3,581.8 360.5,626.7 237.3,557.0 200.0,423.1 290.6,326.4 303.5,193.1" fill="#e879f9" fill-opacity="0.16" stroke="#e879f9" stroke-width="2.5"/>
+  <text class="legend" x="776" y="442">GPT 5.6 Terra — $0.189846</text>
+  <polygon points="430.0,185.8 567.9,175.5 662.0,284.1 662.4,423.4 584.3,523.7 486.3,581.8 360.2,627.9 237.3,557.0 200.0,423.1 290.6,326.4 303.5,193.1" fill="#e879f9" fill-opacity="0.16" stroke="#e879f9" stroke-width="2.5"/>
   <circle cx="760" cy="479" r="6" fill="#e879f9"/>
   <text class="legend" x="776" y="484">Gemini 3.5 Flash Lite — $0.069015</text>
-  <polygon points="430.0,171.2 565.5,179.2 662.0,284.1 674.1,425.1 620.1,554.7 501.8,634.7 360.5,626.7 237.3,557.0 216.0,420.8 248.2,307.0 303.5,193.1" fill="#f43f5e" fill-opacity="0.16" stroke="#f43f5e" stroke-width="2.5"/>
+  <polygon points="430.0,165.2 565.2,179.6 662.0,284.1 673.3,425.0 620.1,554.7 501.8,634.7 360.2,627.9 237.3,557.0 216.0,420.8 244.2,305.2 303.5,193.1" fill="#f43f5e" fill-opacity="0.16" stroke="#f43f5e" stroke-width="2.5"/>
   <circle cx="760" cy="521" r="6" fill="#f43f5e"/>
   <text class="legend" x="776" y="526">Deepseek V4 Pro — $0.024889</text>
-  <polygon points="430.0,205.6 562.9,183.2 655.5,287.0 645.5,421.0 577.5,517.8 498.2,622.1 363.3,617.2 237.3,557.0 238.8,417.5 248.2,307.0 308.4,200.9" fill="#60a5fa" fill-opacity="0.16" stroke="#60a5fa" stroke-width="2.5"/>
+  <polygon points="430.0,205.6 562.4,184.0 655.5,287.0 648.8,421.5 577.5,517.8 498.2,622.1 362.4,620.1 237.3,557.0 238.8,417.5 244.2,305.2 308.4,200.9" fill="#60a5fa" fill-opacity="0.16" stroke="#60a5fa" stroke-width="2.5"/>
   <circle cx="760" cy="563" r="6" fill="#60a5fa"/>
   <text class="legend" x="776" y="568">Deepseek V3.2 — $0.022567</text>
-  <polygon points="430.0,194.8 556.9,192.5 662.0,284.1 627.9,418.4 590.2,528.8 486.3,581.8 377.0,570.6 247.1,548.4 216.0,420.8 290.6,326.4 314.4,210.2" fill="#f59e0b" fill-opacity="0.16" stroke="#f59e0b" stroke-width="2.5"/>
+  <polygon points="430.0,194.8 555.6,194.6 662.0,284.1 630.6,418.8 590.2,528.8 486.3,581.8 372.5,585.9 247.1,548.4 216.0,420.8 290.6,326.4 314.4,210.2" fill="#f59e0b" fill-opacity="0.16" stroke="#f59e0b" stroke-width="2.5"/>
   <circle cx="760" cy="605" r="6" fill="#f59e0b"/>
   <text class="legend" x="776" y="610">GPT 4.1 — $0.209664</text>
-  <polygon points="430.0,178.0 560.1,187.6 629.0,299.1 658.8,422.9 545.8,490.3 473.2,537.0 371.0,591.0 314.2,490.3 278.4,411.8 265.1,314.7 321.9,221.8" fill="#2dd4bf" fill-opacity="0.16" stroke="#2dd4bf" stroke-width="2.5"/>
+  <polygon points="430.0,178.0 559.2,189.0 629.0,299.1 656.0,422.5 545.8,490.3 473.2,537.0 368.4,599.9 314.2,490.3 278.4,411.8 262.3,313.4 321.9,221.8" fill="#2dd4bf" fill-opacity="0.16" stroke="#2dd4bf" stroke-width="2.5"/>
   <circle cx="760" cy="647" r="6" fill="#2dd4bf"/>
   <text class="legend" x="776" y="652">Gemma 4 31B — $0.015143</text>
-  <polygon points="430.0,165.2 533.0,229.7 615.8,305.2 664.4,423.7 607.8,544.1 498.2,622.1 377.0,570.6 278.9,520.9 216.0,420.8 235.6,301.2 347.2,261.1" fill="#c084fc" fill-opacity="0.16" stroke="#c084fc" stroke-width="2.5"/>
+  <polygon points="430.0,159.7 534.4,227.5 615.8,305.2 662.4,423.4 607.8,544.1 498.2,622.1 372.5,585.9 278.9,520.9 216.0,420.8 231.0,299.1 347.2,261.1" fill="#c084fc" fill-opacity="0.16" stroke="#c084fc" stroke-width="2.5"/>
   <circle cx="760" cy="689" r="6" fill="#c084fc"/>
   <text class="legend" x="776" y="694">Local model (Gemma 4 E4B) — $0.000000 local baseline</text>
-  <polygon points="430.0,219.0 553.5,197.9 639.5,294.3 616.3,416.8 569.4,510.8 493.3,605.7 366.7,605.7 260.1,537.2 216.0,420.8 225.5,296.6 303.5,193.1" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-width="2.5"/>
+  <polygon points="430.0,219.0 551.6,200.9 639.5,294.3 618.6,417.1 569.4,510.8 493.3,605.7 365.1,611.0 260.1,537.2 216.0,420.8 220.5,294.3 303.5,193.1" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-width="2.5"/>
   <circle cx="760" cy="731" r="6" fill="#38bdf8"/>
   <text class="legend" x="776" y="736">Gemma 4 26B A4B — $0.014510</text>
-  <polygon points="430.0,236.8 512.8,261.1 662.0,284.1 581.6,411.8 559.2,502.0 486.3,581.8 386.8,537.0 260.1,537.2 238.8,417.5 265.1,314.7 332.0,237.5" fill="#f97316" fill-opacity="0.16" stroke="#f97316" stroke-width="2.5"/>
+  <polygon points="430.0,236.8 512.8,261.1 662.0,284.1 581.6,411.8 559.2,502.0 486.3,581.8 378.1,566.9 260.1,537.2 238.8,417.5 262.3,313.4 332.0,237.5" fill="#f97316" fill-opacity="0.16" stroke="#f97316" stroke-width="2.5"/>
   <circle cx="760" cy="773" r="6" fill="#f97316"/>
   <text class="legend" x="776" y="778">Gemma 3 12B — $0.027780</text>
   <text class="note" x="48" y="708">Cost burden is relative: the local baseline is 0 and the most expensive recorded bundle is 100.</text>

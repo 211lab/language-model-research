@@ -2,446 +2,194 @@
   "schema_version": "content-score-v4",
   "rubric_version": "steadyburn-v1",
   "model": "openai/gpt-5.6-terra",
-  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com/docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management",
-  "content_score": 88.81,
-  "confidence": 0.976,
+  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 85.56,
+  "confidence": 0.919,
   "artifacts": {
     "index.md": {
       "artifact": "index.md",
-      "base_score": 88.13,
+      "base_score": 87.11,
       "penalties": 0.0,
-      "final_score": 88.13,
-      "confidence": 1.0,
+      "final_score": 87.11,
+      "confidence": 0.93,
       "metrics": {
-        "fk_grade": 3.92,
-        "words": 1044,
-        "sentences": 135,
-        "average_sentence_words": 7.73,
-        "sentence_length_stddev": 4.43,
+        "fk_grade": 5.16,
+        "words": 2853,
+        "sentences": 303,
+        "average_sentence_words": 9.42,
+        "sentence_length_stddev": 5.19,
         "concrete_opening": true,
-        "action_signals": 13,
-        "framework_signals": 0,
-        "late_you_ratio": 0.33,
-        "repeated_sentence_ratio": 0.013
-      },
-      "criteria": [
-        {
-          "id": "perspective_shift",
-          "score": 85.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "A coffee mug sits on a workbench. The coffee is cold. A phone buzzes against the wood. A stack of papers leans against a half-finished project. The day starts with good intentions."
-          ],
-          "reason": "The artifact opens from the protagonist's frustrated 'busy but not building' perspective and systematically pivots to a structured 'container for effort' framing, reframing the problem from willpower to sequence."
-        },
-        {
-          "id": "argument_progression",
-          "score": 88.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "The truth is simple. Your day will be hijacked unless you decide the order of your work before the world decides it for you.",
-            "It is not a willpower problem. It is a structure problem.",
-            "You do not need more hours. You do not need a new app. You need a sequence."
-          ],
-          "reason": "The argument moves logically from diagnosing the noise hijack claim, through the psychological structure insight, to the concrete sequence solution, building each step on the prior insight rather than listing disconnected tips."
-        },
-        {
-          "id": "concrete_opening",
-          "score": 95.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "A coffee mug sits on a workbench. The coffee is cold. A phone buzzes against the wood. A stack of papers leans against a half-finished project.",
-            "By evening, you are tired. You have moved a hundred small things. You have moved nothing that actually builds your life."
-          ],
-          "reason": "The opening paragraph anchors the argument in vivid, sensorily specific objects (cold mug, buzzing phone, leaning papers) and a relatable daily scenario before any abstract claim."
-        },
-        {
-          "id": "psychological_interpretation",
-          "score": 85.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "the mind follows the easiest path. Small tasks are easy. They give fast completion. Big tasks are unclear. They ask for real focus. So the brain quietly chooses the easy road. It mistakes motion for progress."
-          ],
-          "reason": "Offers a clear psychological mechanism\u2014the brain's preference for easy, fast-completing tasks and its conflation of motion with progress\u2014as the driver of the daily hijack."
-        },
-        {
-          "id": "behavioral_grounding",
-          "score": 82.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "Pick three big rocks.",
-            "Put those three on your calendar during your strongest hours.",
-            "Give each task a start time and a time limit.",
-            "When the block starts, you silence alerts. You close extra tabs."
-          ],
-          "reason": "The 'pick three, block time, silence alerts' sequence provides specific observable actions the reader can execute immediately, not just principles to ponder."
-        },
-        {
-          "id": "practical_philosophy",
-          "score": 88.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "At the end of the day, you check what was completed. You move unfinished work to tomorrow only after deciding whether it still deserves priority, needs a smaller next step, or should be cut."
-          ],
-          "reason": "The text offers a practical, procedural method ('The Hidden Pattern') that doubles as a philosophy for directing effort and attention in daily life, not just an abstract idea."
-        },
-        {
-          "id": "intellectual_depth",
-          "score": 78.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "Repetition builds identity. When you protect your focus, you stop letting the loudest voice dictate your path.",
-            "You become the kind of person who finishes what matters. Who does not break under pressure."
-          ],
-          "reason": "Connects the simple task-blocking practice to identity formation and structural integrity, elevating the discussion beyond surface-level time-management advice."
-        },
-        {
-          "id": "qualification_nuance",
-          "score": 75.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "I want to be careful here. It is not a willpower problem. It is a structure problem."
-          ],
-          "reason": "The artifact explicitly pauses to clarify willpower versus structure and poses the choice as a deliberate distinction, avoiding one-size-fits-all claims."
-        },
-        {
-          "id": "personal_responsibility",
-          "score": 95.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "Your day will be hijacked unless you decide the order of your work before the world decides it for you.",
-            "The choice is yours. Act or stay stuck. Your call.",
-            "You decide what matters."
-          ],
-          "reason": "The narrative places the burden of decision squarely on the reader, insisting they must preemptively 'decide the order' and repeatedly presenting an uncompromising choice to act or remain passive."
-        },
-        {
-          "id": "perspective_progression",
-          "score": 90.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "What I've started noticing is that the mind follows the easiest path. Small tasks are easy. They give fast completion. Big tasks are unclear. They ask for real focus. So the brain quietly chooses the easy road. It mistakes motion for progress. This is where things become strange. We feel productive because we are moving, but we are not moving forward. The obvious question becomes why we keep doing this. I want to be careful here. It is not a willpower problem. It is a structure problem.",
-            "The smaller claim is actually more interesting. You do not need more hours. You do not need a new app. You need a sequence.",
-            "This sequence is the container that keeps your effort from scattering. It places your daily work inside the Forge, where raw time becomes skill and identity."
-          ],
-          "reason": "Rigorous progression demonstrated. The text moves from a concrete anecdote (ordinary moment) to a diagnostic observation (hidden pattern: brain mistakes motion for progress), distinguishes willpower from structure, and explicitly reframes the argument from a surface solution to a deeper identity framework (Forge). The progression develops insight through structured reasoning."
-        },
-        {
-          "id": "decision",
-          "score": 90.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "Act or stay stuck. Your call."
-          ],
-          "reason": "The text presents a binary, actionable decision point multiple times, forcing a choice between passive reaction and the prescribed active sequence."
-        },
-        {
-          "id": "prescribed_action",
-          "score": 92.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "First, sort the list. Put every task in one place and identify the three items with the biggest impact.",
-            "Second, block the rocks. Schedule your top three tasks during your best hours and treat the blocks like appointments.",
-            "Third, guard the order. Keep small tasks, messages, and requests outside focus blocks."
-          ],
-          "reason": "The 'Work Ahead' section provides clear, direct, step-by-step instructions ('First... Second... Third...'), leaving no ambiguity about the immediate actions required."
-        },
-        {
-          "id": "concrete_abstract_balance",
-          "score": 88.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "A stack of papers leans against a half-finished project."
-          ],
-          "reason": "The source balances highly concrete, sensory openings ('coffee mug... cold. A phone buzzes') with abstract conceptual frames like 'Heat without structure wastes energy' and 'Integrity is structural,' connecting the tangible to the idea."
-        },
-        {
-          "id": "everyday_realism",
-          "score": 88.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "A coworker drops a request. A family member needs something handled. You answer them because they are loud. Because they are right in front of you.",
-            "By evening, you are tired. You have moved a hundred small things. You have moved nothing that actually builds your life."
-          ],
-          "reason": "Grounds the problem in universally recognizable moments\u2014coworker requests, family needs, the end-of-day fatigue of many small tasks done\u2014without resorting to exaggerated crises."
-        },
-        {
-          "id": "intellectual_simplicity",
-          "score": 95.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "A coffee mug sits on a workbench. The coffee is cold. A phone buzzes against the wood. A stack of papers leans against a half-finished project. The day starts with good intentions. You mean to work on the thing that matters. But the inbox fills before the coffee cools.",
-            "First, sort the list. Put every task in one place and identify the three items with the biggest impact. Do not rank them while writing. Just get them out of your head and onto the page. Second, block the rocks. Schedule your top three tasks during your best hours and treat the blocks like appointments."
-          ],
-          "reason": "The text maintains serious thought using strictly short, concrete sentences. It communicates discipline and structural pressure without jargon, maintaining a low reading level (FK 3.92 avg words/sentence 7.73). Concrete imagery (cold coffee, buzzing phone) and executable steps avoid shallow repetition."
-        },
-        {
-          "id": "sentence_rhythm",
-          "score": 90.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "You mean to work on the thing that matters. But the inbox fills before the coffee cools.",
-            "You have moved a hundred small things. You have moved nothing that actually builds your life.",
-            "Heat without structure wastes energy. The fire burns out or turns inward."
-          ],
-          "reason": "The text employs deliberate, rhythmic variation between short, punchy declarative sentences and slightly longer ones, creating a controlled, compelling cadence."
-        },
-        {
-          "id": "semantic_economy",
-          "score": 90.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "You burn energy on noise instead of building a container for your effort.",
-            "The Furnace builds the fire. The Forge shapes the metal. The Forms apply the blade to the world."
-          ],
-          "reason": "Complex ideas are compressed into tight, metaphor-rich phrases ('heat without structure wastes energy', 'Furnace... Forge... Forms') that pack significant meaning into few words."
-        },
-        {
-          "id": "anti_motivational",
-          "score": 90.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "This is not a productivity hack. It is a daily discipline.",
-            "People rarely need more motivation. They need environments that protect motivation."
-          ],
-          "reason": "Explicitly rejects the hack and motivation framing in favor of discipline and environmental design, subverting the genre expectation of rah-rah energy."
-        },
-        {
-          "id": "anti_therapy",
-          "score": 93.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "The truth is simple. Your day will be hijacked unless you decide the order of your work before the world decides it for you.",
-            "Repetition builds identity. When you protect your focus, you stop letting the loudest voice dictate your path. You take control of the swing."
-          ],
-          "reason": "Zero therapy voice or empty motivation detected. The tone rejects internal dysfunction (It is not a willpower problem. It is a structure problem) and replaces it with direct behavioral commands and blunt accountability. Language is stark ('strike', 'act or stay stuck'), not therapeutic or comforting."
-        },
-        {
-          "id": "anti_preacher",
-          "score": 88.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "You decide what matters.",
-            "Act or stay stuck. Your call."
-          ],
-          "reason": "Closes with a stark, unadorned choice rather than moralizing about the good life or righteous discipline; the reader is left to judge themselves."
-        },
-        {
-          "id": "anti_guru",
-          "score": 85.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "I think we have all stood at that bench. The truth is simple.",
-            "The smaller claim is actually more interesting."
-          ],
-          "reason": "Uses communal framing ('we have all stood') and downplays secret knowledge ('smaller claim is actually more interesting') without positioning the author as an elevated expert."
-        },
-        {
-          "id": "closing_strength",
-          "score": 90.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "I look back at that coffee mug on the workbench. It is no longer just a cup of cold coffee. It is a marker of a day that slipped away. It is a reminder of what happens when we let noise set the pace. The mug sits there, waiting for you to decide what gets filled next. You hold the cup. You hold the day. You decide what matters."
-          ],
-          "reason": "Strong narrative closing. The text bookends by returning to the opening image (coffee mug) and charging it with significance, transforming a static object into a metaphor for agency. The final short sentences fade into a decisive call to action without preaching or summarizing."
-        }
-      ]
-    },
-    "INSTRUCTIONS.md": {
-      "artifact": "INSTRUCTIONS.md",
-      "base_score": 89.48,
-      "penalties": 0.0,
-      "final_score": 89.48,
-      "confidence": 0.951,
-      "metrics": {
-        "fk_grade": 6.31,
-        "words": 1221,
-        "sentences": 123,
-        "average_sentence_words": 9.93,
-        "sentence_length_stddev": 5.65,
-        "concrete_opening": false,
-        "action_signals": 15,
+        "action_signals": 22,
         "framework_signals": 2,
-        "late_you_ratio": 0.26,
+        "late_you_ratio": 0.55,
         "repeated_sentence_ratio": 0.0
       },
       "criteria": [
         {
           "id": "perspective_shift",
-          "score": 92.0,
+          "score": 90.0,
           "passed": true,
-          "confidence": 0.94,
+          "confidence": 0.95,
           "evidence": [
-            "Your day will be hijacked unless you decide the order of your work before the world decides it for you.",
-            "You are busy, but you are not building."
+            "But the work that mattered most was still there."
           ],
-          "reason": "The artifact explicitly reframes the reader's situation from 'busy' to 'not building' and introduces the core mechanic of preemptively deciding work order versus being hijacked by external demands. This constitutes a genuine, not merely named, perspective shift."
+          "reason": "The source presents a shift from activity to priority, contrasting motion with direction."
         },
         {
           "id": "argument_progression",
-          "score": 87.0,
-          "passed": true,
-          "confidence": 0.9,
-          "evidence": [
-            "You spend your day reacting. The inbox fills before you finish your coffee. Messages ping. A coworker drops a request. A family member needs something handled.",
-            "This worksheet walks you through the SEQUENCE model to stop the leak and turn scattered effort into directed force.",
-            "S \u2014 Spill every task onto one list.",
-            "E \u2014 Evaluate impact.",
-            "Q \u2014 Question false urgency.",
-            "U \u2014 Use three big rocks.",
-            "E \u2014 Enter priority blocks.",
-            "N \u2014 Narrow your attention.",
-            "C \u2014 Contain lower-value work.",
-            "E \u2014 Evaluate and carry forward."
-          ],
-          "reason": "The argument progresses logically from a vivid problem statement to a structured eight-step model, each step building on the previous. The sequence moves from capturing all tasks through prioritizing, time-blocking, focus, and review, forming a coherent, easy-to-follow arc."
-        },
-        {
-          "id": "psychological_interpretation",
           "score": 88.0,
           "passed": true,
           "confidence": 1.0,
           "evidence": [
-            "You answer them because they are loud, because they are right in front of you, because checking them off gives a quick hit of relief."
+            "This is where things become strange. A man can have a clear goal and still spend his day moving away from it."
           ],
-          "reason": "The text interprets behavior through a psychological lens, identifying the 'quick hit of relief' and the reactivity to 'loud' stimuli as drivers of unproductive action. It goes beyond surface level."
+          "reason": "The argument progresses from concrete observation to paradox, then to analysis of causes and solutions."
         },
         {
-          "id": "practical_philosophy",
-          "score": 82.0,
+          "id": "concrete_opening",
+          "score": 100.0,
           "passed": true,
-          "confidence": 0.85,
+          "confidence": 1.0,
           "evidence": [
-            "Your day will be hijacked unless you decide the order of your work before the world decides it for you.",
-            "You do not need more hours. You do not need a new app. You need a sequence.",
-            "Motion feels like work. Progress moves the needle.",
-            "Loudness is not importance. A ping does not equal a priority.",
-            "Distraction is a choice. Focus is a discipline."
+            "There was a coffee mug on my desk one morning that had gone cold before I noticed it."
           ],
-          "reason": "The worksheet embodies a clear practical philosophy of proactive self-leadership and sequence-based productivity. It moves beyond surface tips by repeatedly reinforcing a mindset of intentional prioritization, guarding attention, and ruthless evaluation of urgency and impact."
+          "reason": "The text opens with a specific, physical object (a cold coffee mug) and a sensory detail (thin brown line). This is not an abstract claim or motivational opener."
         },
         {
-          "id": "intellectual_depth",
+          "id": "psychological_interpretation",
           "score": 78.0,
           "passed": true,
-          "confidence": 0.88,
-          "evidence": [
-            "Force yourself to distinguish between motion and progress.",
-            "Separate tasks that are truly urgent from tasks that only feel urgent because someone sent a message.",
-            "Ask whether the task needs action today, can wait, can be handed off, or does not need doing.",
-            "Tie the impact to real outcomes like \u201cprevents client churn,\u201d \u201cunlocks next phase of project,\u201d or \u201csecures weekly family time.\u201d",
-            "At day\u2019s end, check what was completed. Move unfinished work to tomorrow only after deciding whether it still deserves priority, needs a smaller next step, or should be cut."
-          ],
-          "reason": "Despite simple sentence structure (FK grade 6.31), the content engages serious thought: distinguishing urgent from important, linking tasks to concrete consequences, and learning to self-audit progress without guilt. The thinking is stretched, not shallow, through explicit exercises in judgment and reflection."
-        },
-        {
-          "id": "personal_responsibility",
-          "score": 96.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "Your day will be hijacked unless you decide the order of your work before the world decides it for you.",
-            "Act or stay stuck. Your call."
-          ],
-          "reason": "The entire artifact is grounded in personal agency. The blame for a hijacked day and the solution of a disciplined sequence are squarely placed on the reader. The final line epitomizes this by framing action as a stark, personal choice."
-        },
-        {
-          "id": "framework_lands",
-          "score": 96.0,
-          "passed": true,
-          "confidence": 0.97,
-          "evidence": [
-            "The system does not replace the lesson. It holds the lesson. It makes the lesson executable."
-          ],
-          "reason": "The SEQUENCE model is a clear, named framework. The artifact not only names it but explicitly states its purpose and mechanism: it is a systematic worksheet designed to 'hold the lesson' and make it 'executable.' The framework lands as a tangible tool, not just an abstract idea."
-        },
-        {
-          "id": "unique_action",
-          "score": 92.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "N \u2014 Narrow your attention."
-          ],
-          "reason": "The action for 'N' is specific to the framework's phase. It goes beyond generic 'focus' by prescribing a precise, executable ritual: silencing alerts, sprinting, listing sole tools, and defining output before a timer ends."
-        },
-        {
-          "id": "action_relevance",
-          "score": 93.0,
-          "passed": true,
-          "confidence": 0.96,
-          "evidence": [
-            "The system does not replace the lesson. It holds the lesson. It makes the lesson executable."
-          ],
-          "reason": "The connection from argument to framework to action is explicit and integral. The argument is for a 'sequence,' the framework is the SEQUENCE model, and each action step directly instantiates the framework's logic (e.g., the argument for 'priority' becomes the 'E \u2014 Enter priority blocks' action)."
+          "confidence": 0.6649999999999999,
+          "evidence": [],
+          "reason": "Provides explanation of internal mental negotiation, not merely naming emotional states. Materially present. (evidence could not be verified)"
         },
         {
           "id": "behavioral_grounding",
-          "score": 84.0,
+          "score": 80.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "I had given my best morning hours to whatever appeared first."
+          ],
+          "reason": "Directly links an observable behavior (answering whatever appeared first) to the psychological concept. Grounded in action."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A task can be real without being first."
+          ],
+          "reason": "This is a distilled, actionable principle about order and value, not abstract theory. It implies a method of judgment (rank before urgency)."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "not everything deserves your strongest hour."
+          ],
+          "reason": "The text resists simple maxims. It makes a counterintuitive claim: the smaller claim (not everything deserves your strongest hour) is more interesting than the obvious statement (urgent \u2260 important). This is genuine nuance."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 75.0,
           "passed": true,
           "confidence": 0.85,
           "evidence": [
-            "Turn on do-not-disturb mode.",
-            "Write them as concrete deliverables like \u201cfinish slide deck for board meeting,\u201d \u201ccomplete 45-minute strength workout,\u201d or \u201cfinalize lease agreement.\u201d"
+            "That does not mean every failure is a personal flaw. Life interrupts. Children get sick. Work changes."
           ],
-          "reason": "The 'Work better by' sections strongly ground the framework in precise, observable, and concrete behaviors. The actions are specified at a granular level ('Turn on do-not-disturb mode'), with tangible examples of deliverables, making the philosophy physically executable."
+          "reason": "Explicitly limits its own claims, acknowledges exceptions and external factors. Present as preferred."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "It begins in deciding what must not be left until the day is tired."
+          ],
+          "reason": "Responsibility is defined as the concrete decision to protect specific tasks, not as a vague appeal to willpower or attitude. It is structural, not therapeutic."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.644,
+          "evidence": [],
+          "reason": "Moves from initial observation through escalating complexity to a later-stage test. Traceable arc required. (evidence could not be verified)"
+        },
+        {
+          "id": "decision",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "if only three things get done today, which three make the biggest positive difference?"
+          ],
+          "reason": "This is a specific, operational decision framework (the 'three task' question), not a generic call to 'decide priorities.' It gives a concrete test."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "Night, gather every task in one trusted place. Do not leave half of your workload in open tabs, loose notes, and memory. Then look at the list without pretending it is all equal."
+          ],
+          "reason": "Gives a concrete, sequential action instruction, not vague advice. Materially present."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "A paper page is enough. A simple note is enough. The tool matters less than the trust."
+          ],
+          "reason": "Concrete tool example paired with abstract principle of trust."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "The cold coffee was not the problem. It was evidence."
+          ],
+          "reason": "Uses mundane detail as diagnostic, not metaphor."
         },
         {
           "id": "intellectual_simplicity",
           "score": 90.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "Your day will be hijacked unless you decide the order of your work before the world decides it for you.",
-            "Motion feels like work. Progress moves the needle.",
-            "Loudness is not importance."
+            "Not a complicated dashboard. Not a system that takes an hour to maintain. Not twelve colors, five apps, and a new set of rules every Monday."
           ],
-          "reason": "FK grade 6.31 is met, but critically, the short, declarative sentences do not reduce complex ideas into platitudes. 'Motion feels like work. Progress moves the needle' is a low-reading-level sentence that captures a sophisticated operational distinction without dumbing it down."
+          "reason": "Actively strips away complexity, keeps thinking grounded."
         },
         {
           "id": "sentence_rhythm",
-          "score": 85.0,
+          "score": 72.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.85,
           "evidence": [
-            "You spend your day reacting. The inbox fills before you finish your coffee. Messages ping. A coworker drops a request.",
-            "You are tired. You have moved a hundred small things. You have moved nothing that matters.",
-            "The calendar is the contract."
+            "You did things. But did you move anything that mattered?"
           ],
-          "reason": "Average sentence length of 9.93 words with a stddev of 5.65 indicates deliberate variation between short, percussive fragments ('Messages ping.') and slightly longer compound sentences. The rhythm is controlled, not monotonous, creating urgency through staccato bursts."
+          "reason": "Contrasting short declarative and short interrogative create a rhythmic pivot. Rhythm is materially present."
         },
         {
           "id": "semantic_economy",
           "score": 90.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "You answer them because they are loud, because they are right in front of you, because checking them off gives a quick hit of relief.",
-            "The work does not wait. Act or stay stuck. Your call."
+            "Being busy is not the same as making progress."
           ],
-          "reason": "The artifact avoids redundant phrasing; each sentence introduces new information or sharpens the prior point. The closing line 'Act or stay stuck. Your call.' functions as a compressed summary of the entire ultimatum\u2014no wasted words, no padding."
+          "reason": "Distinction in few words, no fluff."
         },
         {
           "id": "anti_motivational",
@@ -449,46 +197,266 @@
           "passed": true,
           "confidence": 1.0,
           "evidence": [
-            "You are busy, but you are not building.",
-            "Act or stay stuck. Your call."
+            "There will always be another message. Another minor request. Another task that can be completed quickly and used as proof that you were busy."
           ],
-          "reason": "The artifact refuses uplift: it bluntly states the reader is 'not building' and ends with the binary 'Act or stay stuck.' There are no affirmations, no 'you've got this' cheerleading, only cold consequence."
+          "reason": "The text does not offer a 'you can do it!' message. Instead, it describes the problem as persistent ('there will always be another...'), rejecting hype and false hope."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "If a task keeps rolling forward day after day, do not keep calling it important without asking why it is not being done."
+          ],
+          "reason": "The text does not validate the reader's feelings or offer sympathetic understanding. It asks a structural, diagnostic question, rejecting therapeutic reassurance."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "No planning method can make a person fully in control of his day."
+          ],
+          "reason": "The author limits the authority of his own prescription. He does not preach a perfect system or moralize about failure. The tone is declarative, not exhortative."
+        },
+        {
+          "id": "anti_guru",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "The tool matters less than the trust."
+          ],
+          "reason": "De-prioritizes systems and gurus, centers on conduct."
+        },
+        {
+          "id": "closing_strength",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "Either you let alerts, requests, and easy chores decide the order of your day, or you give your best hours to work that carries real weight."
+          ],
+          "reason": "Final sentence provides a clear, choice-based resolution without repetition or hype. Strong and earned."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 84.01,
+      "penalties": 0.0,
+      "final_score": 84.01,
+      "confidence": 0.908,
+      "metrics": {
+        "fk_grade": 8.99,
+        "words": 2159,
+        "sentences": 142,
+        "average_sentence_words": 15.2,
+        "sentence_length_stddev": 14.84,
+        "concrete_opening": true,
+        "action_signals": 23,
+        "framework_signals": 1,
+        "late_you_ratio": 0.49,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "If you do not decide what deserves your best time, the loudest request will decide for you."
+          ],
+          "reason": "The source explicitly shifts the reader's perspective from reactive (letting loudest demands decide) to proactive (deciding what deserves best time). This is materially present, not merely named."
+        },
+        {
+          "id": "argument_progression",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "T \u2014 Track Every Task",
+            "R \u2014 Rank by Impact",
+            "I \u2014 Identify the Urgent Trap",
+            "A \u2014 Assign Prime Time",
+            "G \u2014 Guard the Work Block",
+            "E \u2014 Evaluate and Reset"
+          ],
+          "reason": "The argument progresses clearly through a structured T-R-I-A-G-E sequence, each step building on the previous. Logical, sequential, non-repetitive."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 70.0,
+          "passed": true,
+          "confidence": 0.85,
+          "evidence": [
+            "A task that stays in your head will keep interrupting your focus because your brain is trying not to forget it."
+          ],
+          "reason": "Provides a psychological explanation of why capturing tasks reduces cognitive load (brain's attempt not to forget). Not just surface advice."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "Capture it once, in one trusted place, so you can evaluate it instead of repeatedly remembering it.",
+            "A priority without a time block is only an intention.",
+            "Write the first physical action for each A-level block. This removes hesitation when the time arrives."
+          ],
+          "reason": "Offers actionable principles (e.g., externalize memory, schedule intentions, define first action) that are directly applicable to daily work management without abstraction."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 75.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "Your aim is not to complete every task. Your aim is to identify the three tasks that would create the biggest positive difference, give them real time, protect that time, and make honest decisions about everything else."
+          ],
+          "reason": "Moves beyond productivity clich\u00e9s to a substantive distinction between busyness and progress, and between completion and impact. Serious thought present."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "Your responsibility is to stop giving every demand equal weight. Choose the work that matters most, place it on the calendar, and give it your full attention."
+          ],
+          "reason": "Consistently places decision-making and accountability on the reader. Avoids blaming others or external circumstances. 'Write what you will actually do.'"
+        },
+        {
+          "id": "framework_lands",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use the TRIAGE process with direct, specific answers."
+          ],
+          "reason": "TRIAGE is explicitly named, used as the structure for the entire artifact, and consistently applied through all five steps. Not a mere label."
+        },
+        {
+          "id": "unique_action",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "Use the worksheet to empty your mental backlog.",
+            "Write tasks as visible actions whenever possible.",
+            "Schedule the hardest or most demanding A-level task during your strongest energy window."
+          ],
+          "reason": "Provides letter-specific actions (T: empty backlog, R: rank by impact, I: identify trap, A: assign time blocks, G: guard block, E: evaluate). Each step has concrete do-this actions beyond generic advice."
+        },
+        {
+          "id": "action_relevance",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.92,
+          "evidence": [
+            "Use the TRIAGE process with direct, specific answers.",
+            "Mark those three tasks as A-level priorities.",
+            "Put your three A-level tasks into real calendar blocks."
+          ],
+          "reason": "Every step of the TRIAGE framework directly maps to a concrete action (track, rank, block, guard, evaluate). No abstract stage lacks a behavioral output."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 75.0,
+          "passed": true,
+          "confidence": 0.595,
+          "evidence": [],
+          "reason": "Emphasizes specific, observable behaviors (first physical action, time blocks, silencing phone). Grounded in what the reader will actually do, not hypothetical. (evidence could not be verified)"
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "A task does not become important because it takes only five minutes.",
+            "Do not write what sounds responsible. Write what you will actually do."
+          ],
+          "reason": "Complex ideas (time management, prioritization, psychological resistance) are expressed in direct, plain statements. No jargon, no inflated abstraction. Low reading level preserves serious thought."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.88,
+          "evidence": [
+            "A crowded task list creates a dangerous illusion",
+            "If you do not decide what deserves your best time, the loudest request will decide for you.",
+            "Capture it once, in one trusted place, so you can evaluate it instead of repeatedly remembering it."
+          ],
+          "reason": "Varied sentence lengths (short punchy declarations and longer explanatory clauses) create rhythm. The standard deviation of 14.84 supports this. Opening sentence is short and assertive."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 0.85,
+          "evidence": [
+            "Track Every Task",
+            "Rank by Impact",
+            "Identify the Urgent Trap",
+            "Assign Prime Time",
+            "Guard the Work Block",
+            "Evaluate and Reset"
+          ],
+          "reason": "Every section title is a short, concrete verb phrase. Explanations avoid wordiness. 'Project is not a task. Draft the introduction... is a task.' Concise and deliberate."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "Do not write what sounds responsible. Write what you will actually do.",
+            "A day with one completed A-level task can be more meaningful than a day spent clearing twenty C-level chores.",
+            "Your responsibility is to stop giving every demand equal weight."
+          ],
+          "reason": "Consistently rejects feel-good language. Emphasizes honest self-assessment over aspirational phrases. No 'you can do it' or 'believe in yourself' statements. Tone is blunt and diagnostic."
         },
         {
           "id": "anti_therapy",
           "score": 92.0,
           "passed": true,
-          "confidence": 0.94,
+          "confidence": 1.0,
           "evidence": [
-            "Do not polish your answers.",
-            "Write what you actually do, what you actually avoid, and what you will actually change."
+            "Mark each task as finished, moved, delegated, or removed.",
+            "Identify the real reason."
           ],
-          "reason": "The tone is anti-therapy. It directly rejects introspection for its own sake ('Do not polish your answers') and reframes the worksheet as a tool for behavioral reporting and commitment ('what you will actually change'), not emotional exploration or healing."
+          "reason": "No emotional validation, no 'it's okay to feel overwhelmed.' Focused on structural analysis and corrective action. Therapy voice absent."
         },
         {
           "id": "anti_preacher",
           "score": 90.0,
           "passed": true,
-          "confidence": 0.91,
+          "confidence": 0.95,
           "evidence": [
-            "Review without judgment. Adjust without guilt.",
-            "Your call."
+            "Do not write what sounds responsible. Write what you will actually do.",
+            "Your task list will keep growing. That is normal.",
+            "Mark B-level tasks as important but secondary."
           ],
-          "reason": "The artifact avoids a preacher tone by refusing to moralize. It explicitly bans guilt and judgment from its core review process ('without judgment... without guilt') and places the final imperative on a neutral, personal decision ('Your call') rather than a moral 'thou shalt.'"
+          "reason": "Tone is direct, non-judgmental, and devoid of preaching, hype, or empty motivation. No guru language or therapy voice. Gives practical instruction without moralizing."
         },
         {
           "id": "anti_guru",
-          "score": 96.0,
+          "score": 95.0,
           "passed": true,
           "confidence": 0.97,
           "evidence": [
-            "The system does not replace the lesson. It holds the lesson. It makes the lesson executable.",
-            "Close the document. Execute the sequence."
+            "Use the TRIAGE process with direct, specific answers.",
+            "The method is not magic; its value is that it gives your attention a clear agreement."
           ],
-          "reason": "The artifact is self-consciously anti-guru. It reduces its own framework ('the system') to a holding container for a 'lesson,' deflating any mystique. It ends by commanding the user to 'Close the document' and act, explicitly pushing away from the source itself and toward the user's own execution."
+          "reason": "Explicitly deflates the 'magic' of productivity techniques. No exclusive language, no promises of transformation, no secret knowledge claimed. The framework is presented as a tool, not a revelation."
         }
       ]
     }
   },
-  "evaluator_cost": 0.083926
+  "evaluator_cost": 0.004705
 }

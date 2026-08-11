@@ -2,81 +2,81 @@
 Finish What Matters Before Busywork Takes Over
 
 ## Subtitle
-Choose your three highest-impact tasks, protect time for them, and stop letting minor requests run your day.
+Tame your task list, protect your best hours, and complete your highest-impact work first.
 
 ## Promise
-Complete your top three priority tasks on at least 5 of the next 7 days without extending your workday, skipping breaks, or dropping family commitments.
+Complete your top three priority tasks on at least 5 of the next 7 days without working late, skipping breaks, or dropping family duties.
 
 ## Motivations
-- Finish work that moves your biggest goals forward.
-- Know which task deserves your attention first.
-- Complete key duties before small requests take over.
-- Keep personal and work commitments from falling through the cracks.
-- End each day with clear proof of useful progress.
+- Finish work that moves key goals forward.
+- Know what to do first each morning.
+- Meet deadlines without last-minute rushes.
+- Keep small requests from taking over the day.
+- End the day with clear proof of progress.
 
 ## Challenges & Sacrifices
-- A long task list makes every item appear equally important.
-- Emails, calls, and messages interrupt planned work.
-- Urgent requests push high-impact projects into tomorrow.
-- Extra hours are used to finish work that should have been done earlier.
-- Too many commitments make it hard to say no, delay, or delegate.
+- New emails and requests keep changing the plan.
+- A long task list makes every item look important.
+- Easy chores use up time meant for major work.
+- Saying yes to every request leaves no room for priorities.
+- Important tasks get pushed into evenings and weekends.
 
 ## Frustrations
-- You stay busy all day but leave the main task unfinished.
-- You keep moving the same important task to tomorrow.
-- You react to whoever asks for something most recently.
-- You forget small duties because they are stored in different places.
-- You finish easy tasks first and run out of time for difficult work.
+- Feeling busy all day but having little to show for it.
+- Reaching the end of the day with key tasks untouched.
+- Second-guessing which task deserves attention first.
+- Losing focus each time a message or alert appears.
+- Moving the same unfinished task to tomorrow again and again.
 
 ## Transformations
-- From ending busy days with unfinished priorities to completing three high-impact tasks first.
-- From carrying tasks forward each day to giving each task a clear decision.
-- From reacting to every request to following a ranked plan.
-- From tracking duties in several places to using one trusted task list.
-- From spending prime hours on easy work to using them for demanding work.
+- From constant motion with little progress to completing three meaningful tasks each day.
+- From untouched priorities to protected time for the work that matters most.
+- From second-guessing every choice to using a clear ranking system.
+- From frequent distractions to focused work during planned sprints.
+- From carrying tasks forward without thought to cutting, breaking down, or rescheduling them with purpose.
 
 ## Choice
-You can keep treating every task as urgent, answering each new request, and using extra hours to catch up. That is the hard way because the list keeps growing while important work stays unfinished. Or you can TRIAGE your list, choose the three tasks that matter most, and protect time to complete them before lesser work takes control.
+You can keep reacting to the loudest request, working through a crowded list, and pushing important work into tomorrow. That is the hard way because your time gets spent before you decide where it should go. Or you can sort your tasks, choose your top three, and protect time to complete them first. Start by taking control of one day, then repeat the process until priority work becomes your normal way of working.
 
 ## Actionable VERB
-TRIAGE
+**TRIAGE**
 
 ## Model
-### T — Take Inventory
-Capture every open task in one place. Include work projects, calls, errands, follow-ups, and personal duties. Do not rank them while writing. The goal is to see the full load instead of trying to remember it throughout the day.
+### T — Transfer Every Task
+Move every task out of your head and into one trusted list. Include work projects, calls, errands, follow-ups, and personal duties. Use paper, a planner, or one digital tool. Do not rank tasks while collecting them. The goal is to create one complete view so nothing gets lost.
 
-### R — Rank by Impact
-Review each task using two questions: “Is it important?” and “Is it urgent?” Mark high-impact tasks as A, useful but less critical tasks as B, and minor tasks as C. Delegate, delay, or delete anything that does not deserve your time today.
+### R — Rank by Impact and Urgency
+Review each task and ask two questions: “Is this important?” and “Is this urgent?” Do urgent and important work first. Schedule important work that is not urgent. Delegate urgent work that does not require you. Delete or delay work that adds little value. Then mark the three tasks that would create the biggest positive result today.
 
-### I — Identify the Big Three
-Choose the three A-level tasks that will create the most useful result today. Make each one clear enough to finish or measure. Replace “work on report” with “write and send the first report draft.”
+### I — Install Priorities in Your Schedule
+Place each top-three task into a real time block. Give your hardest task the part of the day when your energy is strongest. Write a clear finish line for each block, such as “send the report” instead of “work on report.” Treat these blocks like appointments you cannot miss.
 
-### A — Assign Protected Time
-Place each of the Big Three into a real time block. Use your best energy for the hardest task. Treat these blocks like firm appointments. If needed, work in 25-minute focus rounds followed by 5-minute breaks.
+### A — Attack One Task at a Time
+Start with the highest-ranked task. Silence alerts, close unrelated tabs, and remove your phone from reach. Work in a focused sprint, such as 25 minutes of work followed by a 5-minute break. Do not switch tasks unless a true emergency requires it.
 
-### G — Guard Focus and Group Small Work
-Silence alerts, close unrelated tabs, and keep your phone out of reach during priority blocks. Batch email, calls, forms, and other small tasks into one later block. Do not trade a planned priority for a new request unless the new task is both urgent and important.
+### G — Group, Give Away, or Get Rid Of
+Batch similar low-level tasks into one later block. Handle calls together, answer routine messages together, and run errands in one trip. Delegate work that another person can complete well. Say no to requests that do not support your duties or goals. Remove tasks that no longer need to be done.
 
 ### E — Evaluate and Reset
-At the end of the day, record which of the Big Three you completed. Review unfinished work instead of moving it forward without thought. Break down tasks that were too large, reschedule tasks that still matter, and remove tasks that no longer deserve space. Then choose tomorrow’s priorities.
+At the end of the day, record which top-three tasks were completed. Review unfinished work instead of moving it forward without thought. Cut it if it no longer matters, delegate it if someone else should own it, or break it into a smaller next step. Use what you learn to build a sharper list for tomorrow.
 
 ## Action Steps Summary
-1. **Capture and Cut:** Put every task in one place, rank it, and remove work that should be delayed, delegated, or deleted.
-2. **Choose and Schedule:** Select your three highest-impact tasks and give each one a protected time block.
-3. **Guard and Review:** Block distractions, batch minor work, and use the day’s results to improve tomorrow’s list.
+1. **Capture and Rank:** Put every task in one place, sort by impact and urgency, and choose the three that matter most.
+2. **Block and Attack:** Reserve your best hours for priority work and complete one focused sprint at a time.
+3. **Group and Reset:** Batch, delegate, or remove lesser tasks, then review results and prepare tomorrow’s list.
 
 ## FAQ
-### Why do I stay busy but still miss important work?
-You are likely choosing tasks by urgency, ease, or noise instead of impact. Rank the full list and complete your Big Three before minor work.
+### Why am I busy all day but still behind?
+You may be finishing easy or urgent tasks before important ones. Choose three high-impact tasks before the day begins and do them first.
 
-### What if everything on my list seems urgent?
-Test each task against real consequences and deadlines. If delaying it one day causes little harm, it is not your highest priority.
+### Why does my to-do list keep getting longer?
+You may be adding tasks without removing, delegating, or scheduling anything. Every task needs a decision, not just a place on the list.
 
-### How do I handle constant emails and messages?
-Check them during set windows unless your role requires live response. Keep alerts off during protected priority blocks.
+### How do I know which task should come first?
+Choose the task with the greatest cost if delayed or the greatest benefit if completed. If two tasks are equal, start with the harder one during your best energy.
 
-### What should I do when I cannot finish a top task?
-Define a smaller result you can complete in the available block. “Finish the project” may become “complete the outline and first section.”
+### What should I do when people keep interrupting me?
+Set a visible focus period, silence alerts, and give people a clear time when you will respond. True emergencies can still reach you, but routine requests can wait.
 
-### Is saying no part of time management?
-Yes. Every new yes takes time from an existing duty. Decline, delegate, or delay work that ranks below your current priorities.
+### Why do I keep moving the same task to tomorrow?
+The task may be unclear, too large, or less important than you claim. Define the next physical action, schedule it, delegate it, or remove it.

@@ -1,44 +1,39 @@
 # Asset
-Title: Master Your Tasks: Prioritization and Time Management
-Format: PNG or JPEG
-Dimensions: 1536px x 1152px
-Aspect Ratio: 4:3
+Master Your Tasks: Prioritization and Time Management
+1536px x 1152px
+Editorial article cover image, rendered as PNG or JPEG, aspect ratio 4:3.
 
 # Image Prompt
-A clean, object-centered vintage pulp illustration in the style of 1940s-1950s magazine covers, comic books, and illustrated advertisements. The scene captures a decisive moment of prioritization: a simple, readable hand firmly turning a heavy, solid brass time-block gear on a clean wooden workbench, locking it into place to represent the SEQUENCE action. The composition follows a simple triangular arrangement between the brass gear, the hand, and the workbench surface. The brightest glow and highest contrast are centered directly on the gear's teeth and central hub. The background is a plain, solid muted beige with minimal detail. Lighting prioritizes bright, readable illustration lighting over mood, keeping one clear center of brightness and most of the image in midtones while ensuring the subject remains fully visible. The style features visible halftone dot patterns for a printed look, bold black linework with thick prominent outlines, cross-hatching and ink-based shading for depth, and a limited, muted, slightly desaturated palette using earthy browns, beiges, faded blues, warm grays, ochres, and restrained reds. The image conveys tension, movement, and impact, emphasizing invention, action, readiness, pressure, and visual clarity. Rendered as a high-quality editorial cover asset with no words, no captions, no typography, no labels, no signage, and no readable marks.
+Create a clean, object-centered vintage pulp illustration for an editorial cover image about taking control of the day before alerts and easy chores consume the best hours.
+
+Show one decisive central action: a focused worker in simple rolled-up sleeves is firmly swinging shut the heavy door of a compact iron furnace, sealing out a chaotic burst of small stylized interruption symbols—ringing telephone bell shapes, tiny envelope silhouettes, and abstract alert flashes—without any readable marks, labels, screens, or text. Inside the furnace, three bright, glowing steel ingots are arranged neatly on a forge tray, representing the three highest-impact tasks receiving protected attention. The furnace door, glowing ingots, and the worker’s decisive arm form a simple triangular composition: central furnace as dominant focal point, strong arm and closing door as the primary force, sturdy forge surface as the support base.
+
+Make the exact moment of shutting the furnace door unmistakable: interruptions are visibly being kept outside while the three glowing ingots are protected at the center. The image should communicate triage, readiness, pressure contained and turned into useful work, and meaningful priorities chosen before noise takes over.
+
+Use a bright central glow from the furnace opening and the three ingots as the highest-contrast area. Keep the worker fully subordinate to the action, simple and readable, with a determined posture rather than detailed facial expression. Strong subject separation, immediate thumbnail readability, one dominant focal point.
+
+Background: plain muted faded blue or warm gray solid-color field, minimally detailed, with only a few simplified stylized motion lines and small interruption shapes at the outer edge. No realistic workshop, no scenic setting, no clutter, no elaborate tools. Keep most colors in readable midtones with bright illustration lighting and no deep shadow.
+
+Style: clean, object-centered vintage pulp illustration inspired by pulp magazines, comic books, and illustrated advertisements from the 1940s–1950s. Visible halftone dot pattern for a printed look. Bold black linework with thick, prominent outlines. Cross-hatching and ink-based shading for depth. Limited muted, slightly desaturated palette of earthy browns, beiges, faded blues, warm grays, ochres, and restrained brick red. Aged printed, hand-illustrated, nostalgic feeling. Dynamic composition with tension, movement, and impact. No photography, no modern photorealism.
 
 # Negative Prompt
-photography, photorealism, modern digital art, neon, cyberpunk, solarpunk, heavy noir, intricate engraving, gloomy atmosphere, realistic environments, UI mockups, worksheets, paper artifacts, pages, documents, blueprints, floating forms, cluttered backgrounds, elaborate settings, scenic vistas, complex background storytelling, crowded environments, excessive props, visual noise, competing focal points, smoke, heat, clouds, environmental effects, words, text, typography, captions, labels, signage, readable marks, signatures, watermarks, modern lighting, 3D render, vector art, flat design
+No words, captions, typography, labels, signage, readable marks, numbers, logos, or symbols that resemble readable text. No worksheet, paper artifact, page, document, planner page, notebook page, blueprint sheet, floating form layout, masked worksheet render, spreadsheet, calendar page, task list, sticky notes, or document-like centerpiece. No UI mockups, app interfaces, computer dashboards, phone screens, email screens, browser tabs, or visible digital displays.
+
+No photography, photorealism, modern corporate stock-art style, glossy 3D rendering, neon cyberpunk aesthetics, explicit solarpunk influences, heavy noir mood, gloomy atmosphere, intricate engraving effects, dense crosshatching that obscures readability, dark dramatic shadows, realistic environments, cluttered workshops, decorative architecture, scenic vistas, crowded rooms, excessive props, multiple competing focal points, or complex background storytelling. No CTA framing, download language, promotional badges, or poster-like text areas.
 
 # Required On-Image Copy
-There should be absolutely no on-image copy at all. No words, no typography, no labels, no signage, and no readable marks of any kind.
+No on-image copy at all. Do not include words, captions, typography, labels, signage, or readable marks.
 
 # Visual Checklist
-- [ ] Aspect ratio explicitly set to 4:3
-- [ ] Dimensions set to 1536px x 1152px
-- [ ] Clean, object-centered vintage pulp illustration style (1940s-1950s reference)
-- [ ] Visible halftone dot pattern for a printed look
-- [ ] Bold black linework with thick, prominent outlines
-- [ ] Cross-hatching and ink-based shading for depth
-- [ ] Limited, muted, slightly desaturated palette (earthy browns, beiges, faded blues, warm grays, ochres, restrained reds)
-- [ ] Aged, printed, hand-illustrated, nostalgic feeling
-- [ ] Dynamic composition with tension, movement, and impact
-- [ ] No photography, no modern photorealism, no neon cyberpunk, no solarpunk, no heavy noir, no intricate engraving, no gloomy atmosphere, no realistic environments, no UI mockups
-- [ ] Single readable central scene (hand turning brass gear on workbench)
-- [ ] No worksheet, paper artifact, page, document, form layout, or document-like object as centerpiece
-- [ ] Person figure simple, readable, and fully subordinate to the central action
-- [ ] Exact decisive moment clearly shown
-- [ ] Emphasis on invention, action, readiness, pressure, and visual clarity
-- [ ] Simple triangular arrangement between main subject, primary tool/force, and support surface
-- [ ] Brightest glow or highest-contrast area placed at the center of the composition
-- [ ] Background plain, solid-color, and minimally detailed
-- [ ] No elaborate settings, scenic vistas, cluttered workshops, decorative architecture, or complex background storytelling
-- [ ] No crowded environments, excessive props, or visual noise
-- [ ] Background secondary and free of competing focal points
-- [ ] Environmental effects simplified and stylized
-- [ ] Bright, readable illustration lighting prioritized over mood
-- [ ] One clear center of brightness maintained
-- [ ] Most of the image kept in midtones rather than deep shadow
-- [ ] Subject remains fully visible
-- [ ] No words, captions, typography, labels, signage, or readable marks
-- [ ] Output format is PNG or JPEG
+- Aspect ratio is exactly 4:3.
+- Dimensions are 1536px x 1152px.
+- One dominant focal point: the glowing furnace protecting three ingots.
+- The decisive action is clear: a worker shuts the furnace door against incoming interruptions.
+- The composition forms a simple triangle between furnace, closing door/arm, and forge surface.
+- The brightest glow and highest contrast sit at the center.
+- The three ingots visibly suggest three chosen priorities without using numbers or text.
+- Background is plain, solid-color, and secondary.
+- Interruptions are stylized, sparse, and pushed outside the protected center.
+- Vintage 1940s–1950s pulp illustration treatment includes halftone dots, bold black outlines, cross-hatching, muted earthy color, and aged print texture.
+- Image is bright, readable, and clear at thumbnail size.
+- No paper, worksheet, document, UI, screen, or text appears anywhere.

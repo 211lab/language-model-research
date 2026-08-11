@@ -2,52 +2,49 @@
   "schema_version": "content-score-v4",
   "rubric_version": "steadyburn-v1",
   "model": "openai/gpt-5.6-sol",
-  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com/docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management",
-  "content_score": 88.0,
-  "confidence": 0.998,
+  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 87.62,
+  "confidence": 0.942,
   "artifacts": {
     "index.md": {
       "artifact": "index.md",
-      "base_score": 88.53,
+      "base_score": 87.69,
       "penalties": 0.0,
-      "final_score": 88.53,
-      "confidence": 0.996,
+      "final_score": 87.69,
+      "confidence": 0.939,
       "metrics": {
-        "fk_grade": 5.16,
-        "words": 997,
-        "sentences": 116,
-        "average_sentence_words": 8.59,
-        "sentence_length_stddev": 4.95,
-        "concrete_opening": true,
-        "action_signals": 10,
-        "framework_signals": 4,
-        "late_you_ratio": 0.52,
+        "fk_grade": 5.57,
+        "words": 2148,
+        "sentences": 219,
+        "average_sentence_words": 9.81,
+        "sentence_length_stddev": 5.08,
+        "concrete_opening": false,
+        "action_signals": 15,
+        "framework_signals": 2,
+        "late_you_ratio": 0.45,
         "repeated_sentence_ratio": 0.0
       },
       "criteria": [
         {
           "id": "perspective_shift",
-          "score": 92.0,
+          "score": 90.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "This is not a time problem. It is a focus problem.",
-            "You do not manage time. You manage attention."
+            "The list looks organized. Nothing has been forgotten. Yet no real choice has been made."
           ],
-          "reason": "The artifact provides explicit reframes that shift the reader's core understanding from 'time management' to 'attention management' and from 'busyness' to 'focus'. These are substantively presented, not just named."
+          "reason": "The text shifts from viewing a to-do list as a sign of organization to recognizing it as a lack of real decision-making."
         },
         {
           "id": "argument_progression",
           "score": 85.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "Here is the interesting part.",
-            "Before going further, notice how often you confuse motion with progress.",
-            "This is where things become strange.",
-            "The obvious question becomes how to stop the leak."
+            "By noon, several tasks are complete. There is proof of activity. Yet the budget report remains untouched.",
+            "A task list becomes useful when each item receives a decision. It must be done, scheduled, given away, delayed, or removed."
           ],
-          "reason": "The piece uses explicit transition prompts to guide the reader through a logical sequence: identifying the problem, establishing a reframe, diagnosing a hidden pattern, proposing a solution, and offering a choice. This creates a coherent argument, not a list of points."
+          "reason": "The text progresses from identifying the problem (motion vs. work), to proposing a solution (decisions on tasks), to describing a method (triage)."
         },
         {
           "id": "concrete_opening",
@@ -55,21 +52,19 @@
           "passed": true,
           "confidence": 1.0,
           "evidence": [
-            "the workbench in the corner of the garage. It holds a half-finished wooden box, a handful of scattered nails, and a cooling coffee mug. Beside it sits a stack of unopened envelopes."
+            "A yellow legal pad sits beside the keyboard. Twenty-three tasks fill the page."
           ],
-          "reason": "Source opens with a detailed, sensory-specific scene of a workbench with tangible objects (box, nails, mug, envelopes), meeting the requirement for being materially present, not merely named."
+          "reason": "Opens with a concrete physical scene: a specific object (yellow legal pad, keyboard, page with 23 tasks). Not abstract or motivational."
         },
         {
           "id": "psychological_interpretation",
-          "score": 90.0,
+          "score": 85.0,
           "passed": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "evidence": [
-            "We tell ourselves we will tackle it tomorrow. Tomorrow comes, and the cycle repeats.",
-            "Busywork feels like progress because it is easy to finish. It gives you a quick hit of relief.",
-            "The human mind does not naturally sort pressure. It reacts to what is loud, what is new, and what is easy."
+            "Identity quietly keeps score. Not by reading your goals, but by watching your actions. If you choose a priority and abandon it whenever work becomes dull, your actions teach one lesson."
           ],
-          "reason": "Required criterion passed. The text interprets observable behavior through a psychological lens, explaining procrastination cycles, the deceptive relief of busywork, and the mind's natural reactivity."
+          "reason": "Interprets repeated action as shaping identity and self-belief, not just productivity. Connects behavioral patterns to internal psychological stakes."
         },
         {
           "id": "behavioral_grounding",
@@ -77,232 +72,221 @@
           "passed": true,
           "confidence": 1.0,
           "evidence": [
-            "We spend the day answering pings, clearing inboxes, and finishing minor requests.",
-            "You react to whoever asks for something most recently.",
-            "You finish easy tasks first and run out of time for difficult work."
+            "If you choose a priority and abandon it whenever work becomes dull, your actions teach one lesson. If you protect the block and complete the stated result, they teach another."
           ],
-          "reason": "The editorial grounds its concepts in specific, observable daily behaviors (answering pings, clearing inboxes, reacting to recent requests, finishing easy tasks first). This anchors the abstract advice in lived reality."
+          "reason": "Grounded in observable behavior (abandoning priority, protecting block) rather than internal states or feelings. Uses specific actions as evidence."
         },
         {
           "id": "practical_philosophy",
           "score": 85.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "You can keep treating every task as urgent, answering each new request, and using extra hours to catch up.",
-            "Or you can triage your list, choose the three tasks that matter most, and protect time to complete them before lesser work takes control."
+            "Fire without containment spreads and fades.",
+            "The furnace is the structure that preserves the heat.",
+            "You do not become focused by calling yourself focused. You become focused by returning to one task when another tab, message, or chore offers relief."
           ],
-          "reason": "Source presents clear, opposing philosophies of action ('reacting to urgency' vs. 'triage and protect time') and traces their practical consequences, providing usable guidance without empty motivation."
+          "reason": "Derives actionable principles (structure preserves effort, identity follows repeated action, priority is shown by order not labels) from concrete observation."
         },
         {
           "id": "intellectual_depth",
           "score": 80.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "Fire represents direction. Furnace represents containment, systems, and structure. Forge represents useful transformation expressed into the world."
+            "The cost of poor planning is rarely paid only at work.",
+            "Every careless yes spends time already owed to something else."
           ],
-          "reason": "The fire/furnace/forge metaphor constructs a layered conceptual model that distinguishes between raw energy, structured systems, and productive output, showing analytical rigor beyond surface advice."
+          "reason": "The text examines the hidden costs of poor planning, extending beyond work to personal life and relationships."
         },
         {
           "id": "qualification_nuance",
-          "score": 85.0,
+          "score": 80.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.9,
           "evidence": [
-            "I'm not convinced this explains everything, but it points to the right direction.",
-            "I want to be careful here.",
-            "The smaller claim is actually more interesting."
+            "Some days contain real emergencies. A sick child, a broken machine, or a sudden loss can change the plan. Discipline is not the refusal to respond to reality.",
+            "But most changes are not emergencies. A new email is not an emergency because it is new."
           ],
-          "reason": "Injects epistemic humility and narrows its thesis to avoid overclaiming."
+          "reason": "Acknowledges exceptions (emergencies) while firmly distinguishing them from routine distractions. Avoids absolutism."
         },
         {
           "id": "personal_responsibility",
           "score": 90.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "when you let urgent requests push high-impact projects into tomorrow, you are trading your future for your comfort.",
-            "You cannot control the noise, but you control the draft.",
-            "The choice is yours. You can keep letting the noise run your day, or you can build the furnace and forge the work. The fire waits for your direction. You decide what gets built."
+            "What they lack is an environment that protects the decision once the day begins.",
+            "A good structure makes the right task easier to enter and the wrong tasks harder to reach."
           ],
-          "reason": "Centers agency and the consequences of personal choice starkly."
+          "reason": "The text places responsibility on the reader to create a protective environment, not on external forces."
         },
         {
           "id": "perspective_progression",
-          "score": 88.0,
+          "score": 85.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.9,
           "evidence": [
-            "I think there is a distinction worth making about",
-            "Here is the interesting part.",
-            "The smaller claim is actually more interesting.",
-            "This is where things become strange.",
-            "The obvious question becomes how to stop the leak.",
-            "I'm not convinced this explains everything, but it points to the right direction."
+            "Each evening, you review what happened. Did the top three get done? Did you use your strong hours well?",
+            "Identity quietly keeps score. Not by reading your goals, but by watching your actions."
           ],
-          "reason": "The author's thinking is shown forming on the page. The piece moves from 'a distinction worth making' to finding something 'interesting', refining it as 'strange', and concluding with a qualified position. This demonstrates the evolution of perspective, not a static broadcast."
+          "reason": "The perspective shifts from daily tactics to the long-term impact on identity and self-belief."
         },
         {
           "id": "decision",
-          "score": 91.0,
+          "score": 90.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "Pick your three. Guard the time. Do the work. Then decide if you will keep reacting, or start building."
+            "If it has a block from 8:00 to 9:30, the needed files are ready, alerts are off, and the inbox stays closed, the choice has already been made.",
+            "That moment is where priority becomes real."
           ],
-          "reason": "The artifact presents a clear, explicit fork in the road that demands a decision. It contrasts the path of continued reaction with the path of deliberate triage and concludes with a stark, action-oriented choice ('Pick your three... Then decide')."
+          "reason": "Frames priority as a concrete, pre-executed decision about time allocation, not as a feeling or intention. Decision is structurally embedded."
         },
         {
           "id": "prescribed_action",
-          "score": 93.0,
+          "score": 95.0,
           "passed": true,
           "confidence": 1.0,
           "evidence": [
-            "You must choose your three highest-impact tasks, protect time for them, and stop letting minor noise run your day."
+            "Install those tasks in the schedule. Give each one a start time and a finish line. Place the hardest one inside your strongest hours. When the block begins, attack one task at a time. Silence alerts. Close unrelated tabs. Put the phone away."
           ],
-          "reason": "The artifact provides a specific, multi-step, actionable protocol ('capture and cut', 'choose and schedule', 'guard and review') with clear sub-operations for each. It's a concrete prescription, not just a vague principle."
+          "reason": "Provides specific, executable actions (install, give start time, silence alerts, close tabs, put phone away). Not vague advice."
         },
         {
           "id": "concrete_abstract_balance",
-          "score": 90.0,
+          "score": 85.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.9,
           "evidence": [
-            "the workbench in the corner of the garage. It holds a half-finished wooden box, a handful of scattered nails, and a cooling coffee mug.",
-            "Fire represents direction. Furnace represents containment, systems, and structure. Forge represents useful transformation expressed into the world."
+            "The list now records decisions rather than pressure."
           ],
-          "reason": "Source moves fluidly between a concrete, sensory opening (the workbench) and a sustained abstract metaphor (fire/furnace/forge), then returns to the concrete workbench in closing, balancing both modes effectively."
+          "reason": "The text balances the concrete (legal pad, tasks) with the abstract (decisions vs. pressure, identity, structure)."
         },
         {
           "id": "everyday_realism",
-          "score": 86.0,
+          "score": 85.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.9,
           "evidence": [
-            "a half-finished wooden box, a handful of scattered nails, and a cooling coffee mug. Beside it sits a stack of unopened envelopes.",
-            "We spend the day answering pings, clearing inboxes, and finishing minor requests."
+            "Routine email can wait. Calls can be grouped. Paperwork can be handled together."
           ],
-          "reason": "The piece is grounded in mundane, relatable realities: half-finished home projects (wooden box, nails), digital noise (pings, inboxes), and cluttered immediate environment (coffee mug, envelopes). It avoids extraordinary or hypothetical scenarios."
+          "reason": "The text uses realistic, everyday examples (email, calls, paperwork) to illustrate its points."
         },
         {
           "id": "intellectual_simplicity",
           "score": 90.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "This is not a time problem. It is a focus problem.",
-            "You do not manage time. You manage attention."
+            "Attention follows the easiest path. A good structure makes the right task easier to enter and the wrong tasks harder to reach."
           ],
-          "reason": "Complex ideas about productivity and cognitive limits are distilled into short, declarative sentences with simple vocabulary, achieving a low reading level while preserving intellectual weight."
+          "reason": "The text presents complex ideas (decision fatigue, priority) in simple, clear language."
         },
         {
           "id": "sentence_rhythm",
-          "score": 90.0,
+          "score": 80.0,
           "passed": true,
-          "confidence": 0.96,
+          "confidence": 0.9,
           "evidence": [
-            "The nails are not sorted. The envelopes are not opened. The box sits waiting.",
-            "Pick your three. Guard the time. Do the work."
+            "A task list becomes useful when each item receives a decision. It must be done, scheduled, given away, delayed, or removed."
           ],
-          "reason": "Required criterion passed. The text employs deliberate rhythmic devices like staccato repetition and parallel structure to create momentum and emphasis, as seen in these short, declarative groupings."
+          "reason": "Sentences are varied in length and structure, creating a natural rhythm for reading."
         },
         {
           "id": "semantic_economy",
-          "score": 80.0,
+          "score": 90.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.9,
           "evidence": [
-            "Triag",
-            "containment",
-            "direction"
+            "Priority becomes visible through order.",
+            "That is the forge. The furnace contains the effort. Repeated action shapes it."
           ],
-          "reason": "The mechanism and metaphor are carried on a small set of precise, load-bearing words ('triage', 'containment', 'direction', 'draft') rather than sprawling explanation, demonstrating semantic economy."
+          "reason": "Each sentence carries one idea. No redundant phrasing. Metaphors (forge, furnace) are deployed briefly and not overexplained."
         },
         {
           "id": "anti_motivational",
-          "score": 93.0,
+          "score": 95.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "But relief is not results.",
-            "you are trading your future for your comfort.",
-            "The list will always grow. The requests will never stop.",
-            "Feed the furnace with intent, or watch it die in the ash of minor tasks."
+            "Mastery is not hidden inside intention. It becomes visible in completed work."
           ],
-          "reason": "The text directly undercuts a feel-good, motivational approach. It contrasts 'relief' with 'results', frames unproductivity as trading 'future for comfort', and offers a grim, stoic binary ('feed the furnace' vs. 'die in the ash'). The tone is unsparing and unsentimental."
+          "reason": "Rejects intention as worthless without execution. Acknowledges difficulty honestly without encouragement. No 'you can do it' language."
         },
         {
           "id": "anti_therapy",
           "score": 95.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "The fix is not working longer hours. The fix is triage.",
-            "This is not about working harder. It is about directing the airflow so the heat actually builds something."
+            "What they lack is an environment that protects the decision once the day begins.",
+            "Discipline is not the refusal to respond to reality."
           ],
-          "reason": "The artifact rejects therapeutic framings like self-care or working harder/longer. It reframes the problem as an engineering or logistical one ('triage', 'directing the airflow') focused on mechanics and output, not emotional well-being or effort."
+          "reason": "No validation of feelings, no emotional affirmation, no trauma framing. Problem is structural (environment, decision process) rather than emotional."
         },
         {
           "id": "anti_preacher",
-          "score": 90.0,
+          "score": 95.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "These are not new ideas. They are the mechanics of a steady burn."
+            "You do not become focused by calling yourself focused. You become focused by returning to one task when another tab, message, or chore offers relief."
           ],
-          "reason": "The author explicitly denies presenting a revelation, stating 'These are not new ideas.' This undercuts a preacherly or prophetic tone, framing the advice instead as established mechanics or engineering principles ('mechanics of a steady burn')."
+          "reason": "No moralizing, no appeals to virtue. Uses cause-effect logic ('you become focused by returning') rather than exhortation."
         },
         {
           "id": "anti_guru",
-          "score": 92.0,
+          "score": 95.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "I'm not convinced this explains everything, but it points to the right direction."
+            "The furnace does not do the work for you. It keeps your energy from being spent somewhere else.",
+            "A task does not become important because it has been copied to five pages."
           ],
-          "reason": "The author directly undermines any semblance of guru-like omniscience by qualifying their own belief: 'I'm not convinced this explains everything'. This signals a fallible, critical guide rather than an infallible master."
+          "reason": "No secret wisdom, no proprietary system, no personality cult language. Method (TRIAGE, block-attack-group) is presented as simple and unoriginal."
         },
         {
           "id": "closing_strength",
-          "score": 90.0,
+          "score": 85.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.9,
           "evidence": [
-            "The box sits finished on the shelf. It did not happen because you worked longer. It happened because you directed the heat. The choice is yours. You can keep letting the noise run your day, or you can build the furnace and forge the work. The fire waits for your direction. You decide what gets built."
+            "Tomorrow\u2019s page can do the same, but only if the choices are made before the inbox, alerts, and requests begin.",
+            "You can shape the page before the day begins, or let the loudest demand shape it for you."
           ],
-          "reason": "Concludes with a clear, resonant resolution of the opening scene that reinforces agency."
+          "reason": "Closes with a clear binary choice and restates the opening image (the legal pad) transformed from a record of pressure into a record of decisions."
         }
       ]
     },
     "INSTRUCTIONS.md": {
       "artifact": "INSTRUCTIONS.md",
-      "base_score": 87.46,
+      "base_score": 87.56,
       "penalties": 0.0,
-      "final_score": 87.46,
-      "confidence": 1.0,
+      "final_score": 87.56,
+      "confidence": 0.944,
       "metrics": {
-        "fk_grade": 6.73,
-        "words": 1048,
-        "sentences": 87,
-        "average_sentence_words": 12.05,
-        "sentence_length_stddev": 5.87,
+        "fk_grade": 8.02,
+        "words": 3212,
+        "sentences": 285,
+        "average_sentence_words": 11.27,
+        "sentence_length_stddev": 4.7,
         "concrete_opening": false,
-        "action_signals": 17,
-        "framework_signals": 1,
-        "late_you_ratio": 0.38,
+        "action_signals": 24,
+        "framework_signals": 0,
+        "late_you_ratio": 0.51,
         "repeated_sentence_ratio": 0.0
       },
       "criteria": [
         {
           "id": "perspective_shift",
-          "score": 90.0,
+          "score": 85.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "This is not a time problem. It is a focus problem."
+            "A long task list can create the appearance of control while leaving the real decision untouched: what deserves your time first?"
           ],
-          "reason": "The artifact directly reframes the reader's understood problem (overwork, lack of time) into a distinct and actionable lens (mismanaged focus). The source quote is a clean, material demonstration of this shift."
+          "reason": "The source shifts the reader's view from task accumulation to decision-making about time allocation, explicitly stating that lists can give a false sense of control."
         },
         {
           "id": "argument_progression",
@@ -310,71 +294,67 @@
           "passed": true,
           "confidence": 1.0,
           "evidence": [
-            "The fix is not working longer hours. The fix is triage."
+            "Routine messages consume your best hours. Easy chores provide quick satisfaction."
           ],
-          "reason": "The argument moves from problem diagnosis ('treating every task as equally important') to the specific intervention of 'triage,' and then proceeds to detail the TRIAGE steps. The quoted line explicitly rejects the obvious (but wrong) solution before presenting the correct one, showing logical progression."
+          "reason": "Establishes a problem (time spent without deliberate choice) then progresses through a structured solution (TRIAGE)."
         },
         {
           "id": "psychological_interpretation",
-          "score": 95.0,
+          "score": 85.0,
           "passed": true,
           "confidence": 1.0,
           "evidence": [
-            "Busywork feels like progress because it is easy to finish, but it gives you relief, not results."
+            "A visible task can be judged. A hidden task can only create pressure and interrupt your attention later."
           ],
-          "reason": "The artifact provides a crisp interpretation of the psychological reward of busywork ('relief') and contrasts it with the absence of substantive outcome ('not results'). This is a material observation about internal state, not a named condition."
+          "reason": "Identifies the psychological cost of hidden tasks: invisible pressure and attention drain."
         },
         {
           "id": "practical_philosophy",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your goal is to create a stable daily structure that protects your highest-impact responsibilities before busywork takes over."
+          ],
+          "reason": "Offers a practical, non-aspirational philosophy: structure protects priority against incidental demands."
+        },
+        {
+          "id": "intellectual_depth",
           "score": 80.0,
           "passed": true,
           "confidence": 1.0,
           "evidence": [
-            "The difference between busywork and real progress is not more hours. It is better triage.",
-            "You cannot control the noise, but you control the draft."
+            "Every task needs to be completed, scheduled, delegated, delayed, or removed."
           ],
-          "reason": "The artifact distills a principle for conduct ('better triage') from a diagnosed condition ('focus problem'). The philosophy is practical, concise, and devoid of academic abstraction or systemic moralizing, evidenced by lines that give the user a rule for action."
-        },
-        {
-          "id": "intellectual_depth",
-          "score": 75.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "The list will always grow. The requests will never stop."
-          ],
-          "reason": "Beyond surface-level advice, the artifact touches on an inexhaustible, systemic condition ('The list will always grow') that the user must operate within, rather than solve. This demonstrates a depth that accepts perpetual constraints, moving past simple optimization."
+          "reason": "Reduces the complexity of task management to a finite set of actionable categories."
         },
         {
           "id": "personal_responsibility",
           "score": 90.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "You cannot control the noise, but you control the draft."
+            "Do not write what an ideal person would do with an imaginary day. Record your actual commitments, actual limits, strongest working hours, likely interruptions, and concrete finish lines."
           ],
-          "reason": "The artifact places the locus of control squarely on the reader's action ('you control the draft') while acknowledging external forces ('the noise') without making them an excuse. This is a clear statement of personal agency."
+          "reason": "Directly demands honesty with one's own constraints and obligations rather than aspirational fantasy."
         },
         {
           "id": "framework_lands",
-          "score": 80.0,
+          "score": 100.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.95,
           "evidence": [
-            "This worksheet walks you through the TRIAGE model step by step."
+            "Use **TRIAGE** to complete this worksheet."
           ],
-          "reason": "The 'TRIAGE' acronym is explicitly named as a model, and the entire artifact is structured around its concrete, bullet-listed implementation. The framework is materially present as the operating system of the advice, not just a mentioned concept."
+          "reason": "The acronym TRIAGE is named, defined letter by letter (Transfer, Rank, Install, Attack, Group, Evaluate), and the entire worksheet is structured around executing those steps in sequence. The framework is materially present as the organizing principle of the artifact."
         },
         {
           "id": "unique_action",
-          "score": 95.0,
+          "score": 100.0,
           "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "T \u2014 Take Inventory",
-            "A \u2014 Assign Protected Time"
-          ],
-          "reason": "Each letter of the framework maps to a specific, named action verb (Take, Rank, Identify, Assign, Guard, Evaluate) that is unique to the model and directly tied to its structure."
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "The artifact specifies a unique, non-obvious letter-specific action for T: 'Move every task out of your head and into one trusted list.' This action is not a generic platitude; it is a concrete behavioral instruction exclusive to this step. (evidence could not be verified)"
         },
         {
           "id": "action_relevance",
@@ -382,98 +362,92 @@
           "passed": true,
           "confidence": 1.0,
           "evidence": [
-            "The fix is not working longer hours. The fix is triage.",
-            "T \u2014 Take Inventory"
+            "Your task list should make decisions visible. Transfer every commitment, rank what matters, install it in the schedule, attack one task at a time, control lesser work, and evaluate the result."
           ],
-          "reason": "The central argument ('The fix is triage') is perfectly echoed by the framework ('TRIAGE model'), and the actions under each letter (e.g., 'Capture every open task') are a direct execution of that argument. The chain from problem to model to step is unbroken."
+          "reason": "Every step of the framework directly connects to a concrete action item."
         },
         {
           "id": "behavioral_grounding",
-          "score": 90.0,
+          "score": 85.0,
           "passed": true,
-          "confidence": 1.0,
+          "confidence": 0.85,
           "evidence": [
-            "Schedule a 4:00 PM to 5:00 PM block to process all emails, return calls, and handle forms."
+            "Work in a focused sprint, such as 25 minutes of work followed by a 5-minute break."
           ],
-          "reason": "The advice is consistently translated into precise, observable behaviors, including specific times and environmental control (phone placement, app settings), moving far beyond general intent."
+          "reason": "The source grounds its advice in a concrete, specific behavioral technique (Pomodoro-style sprint), providing an exact time ratio. This moves beyond abstract advice to a directly executable procedure, which is the strength of behavioral grounding."
         },
         {
           "id": "intellectual_simplicity",
-          "score": 95.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "The difference between busywork and real progress is not more hours. It is better triage.",
-            "Pick your three. Guard the time. Do the work.",
-            "The list will always grow. The requests will never stop."
-          ],
-          "reason": "Complex ideas (systemic noise, triage-based prioritization) are expressed with high syntactic simplicity. The Flesch-Kincaid grade level is 6.73, and the artifact uses short, declarative sentences and high-utility, plain words to convey serious strategic thought without dumbing it down."
-        },
-        {
-          "id": "sentence_rhythm",
-          "score": 90.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "Pick your three. Guard the time. Do the work."
-          ],
-          "reason": "The artifact uses highly controlled, staccato sentences for emphasis, particularly in the conclusion. The quoted seven-word, three-sentence sequence demonstrates deliberate, impactful rhythmic variation."
-        },
-        {
-          "id": "semantic_economy",
-          "score": 90.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "The fix is triage.",
-            "Pick your three. Guard the time. Do the work."
-          ],
-          "reason": "The text achieves high idea-density with few words. Complex operational programs are reduced to four-word core principles without loss of meaning."
-        },
-        {
-          "id": "anti_motivational",
-          "score": 95.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "The list will always grow. The requests will never stop.",
-            "Fill it out with brutal honesty and specific details. Vague answers produce vague results."
-          ],
-          "reason": "The tone rejects cheerleading in favor of stating unvarnished, permanent constraints ('never stop'). It pairs the requirement with a stern, conditional directive ('brutal honesty') rather than a warm, encouraging prompt."
-        },
-        {
-          "id": "anti_therapy",
           "score": 85.0,
           "passed": true,
           "confidence": 1.0,
           "evidence": [
-            "Fill it out with brutal honesty and specific details."
+            "Do not begin ranking while you are still collecting."
           ],
-          "reason": "The directive is cold, demanding, and operational ('brutal honesty'). It frames the introspection as a functional requirement for system performance, not an exercise in emotional self-exploration or validation."
+          "reason": "Issues a single, simple, sensible rule that prevents a common cognitive error."
         },
         {
-          "id": "anti_preacher",
-          "score": 90.0,
-          "passed": true,
-          "confidence": 1.0,
-          "evidence": [
-            "The fix is not working longer hours. The fix is triage.",
-            "Do this now, and you will stop reacting to the loudest voice and start following a ranked plan."
-          ],
-          "reason": "The artifact relies on a cold, diagnostic cause-and-effect logic ('The fix is triage') and operational instructions ('ranked plan') rather than appeals to righteousness, moral virtue, or a higher calling."
-        },
-        {
-          "id": "anti_guru",
+          "id": "sentence_rhythm",
           "score": 80.0,
           "passed": true,
           "confidence": 1.0,
           "evidence": [
-            "The list will always grow. The requests will never stop."
+            "Easy chores provide quick satisfaction."
           ],
-          "reason": "The advice is framed around implementing a specific, user-executed system and accepting permanent external constraints ('never stop'), not around the author's special insight, transcendence, or a revolutionary promise of a new world. The system is concrete, not mystical."
+          "reason": "Short, declarative sentence with parallel stress ('quick satisfaction') establishes a clear rhythm."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "Judge importance by consequences, duties, and meaningful results."
+          ],
+          "reason": "Three tightly defined criteria replace verbose explanations, using minimal words for maximum meaning."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "When reports, errands, messages, projects, and personal duties all sit on the same list, they begin to look equally important. They are not."
+          ],
+          "reason": "Flatly contradicts motivational false equivalence; no cheerleading, just blunt realism."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "Do not write what an ideal person would do with an imaginary day."
+          ],
+          "reason": "Rejects therapeutic self-indulgence or idealization, demanding grounded specificity."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "Your time is often spent before you deliberately decide where it should go."
+          ],
+          "reason": "States a factual observation without moralizing or lecturing about virtue."
+        },
+        {
+          "id": "anti_guru",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "Focus is not a feeling you wait to experience. It is a working condition you deliberately create and protect."
+          ],
+          "reason": "Demystifies focus as a mechanical condition, not a mystical state, countering guru language."
         }
       ]
     }
   },
-  "evaluator_cost": 0.044264
+  "evaluator_cost": 0.004675
 }

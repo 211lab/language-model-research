@@ -1,73 +1,82 @@
 ## Title
-Finish What Matters Before Your Day Gets Hijacked
+Get Your Most Important Tasks Done First
 
 ## Subtitle
-Use a simple task order to complete your biggest work before messages, errands, and small demands take over.
+Turn a crowded to-do list into a clear daily plan that protects your time and moves your real priorities forward.
 
 ## Promise
-Complete your top three priority tasks on at least five of the next seven days without working later, adding extra hours, or skipping family time.
+Complete your three highest-impact tasks on five of the next seven days without working later, skipping breaks, or using a complicated app.
 
 ## Motivations
-- Finish key work projects before deadlines become emergencies.
-- Leave work with fewer important tasks hanging over tomorrow.
-- Make steady progress on career, health, home, or financial goals.
-- Stop losing prime morning hours to email, texts, and small requests.
-- Know exactly what to do next when the day gets busy.
+1. Finish key work projects before deadlines become emergencies.
+2. Make steady progress on goals that matter outside of daily chores.
+3. Stop losing prime work hours to messages, errands, and small requests.
+4. Know exactly what to do when the day begins.
+5. End more days with completed priority tasks instead of a longer list.
 
 ## Challenges & Sacrifices
-- Your inbox fills with requests before you start the project that matters most.
-- Meetings split your day into small pieces and leave no clear focus time.
-- Coworkers, clients, or family members bring urgent requests that are not yours to solve.
-- Your task list mixes major projects with small errands, so everything looks equally important.
-- You spend time answering messages, organizing files, or doing quick chores while major work stays unfinished.
+1. Your inbox, chat alerts, and phone calls keep pulling you away from planned work.
+2. You start the day answering easy requests and leave hard tasks until late.
+3. Your to-do list mixes major projects with minor errands, so everything looks equally urgent.
+4. You agree to extra tasks even when your current work is already full.
+5. Unfinished tasks roll over day after day because they were never given a real time block.
 
 ## Frustrations
-- You stay busy all day but cannot name one important thing you finished.
-- You check off easy tasks while the biggest task keeps moving to tomorrow.
-- You start the day with a plan, then let calls, alerts, and other people change it.
-- Your task list grows faster than you can clear it.
-- You end the week wondering why your main goals did not move forward.
+- You stay busy all day but cannot point to one important thing you finished.
+- The loudest request wins, even when it does not help your goals.
+- You keep checking your list because you do not know where to start.
+- Important work gets pushed into the evening after your best energy is gone.
+- You feel behind before the day has even started.
 
 ## Transformations
-- From ending the day with only small tasks checked off to finishing the work that moves your goals.
-- From reacting to every alert to choosing when messages get your attention.
-- From a long, messy task list to a clear top-three list for the day.
-- From carrying major work into every tomorrow to breaking it into scheduled next actions.
-- From saying yes to every request to delaying, delegating, or declining low-value work.
+1. From ending busy days with little to show to completing three clear priority tasks.
+2. From reacting to every alert to choosing what deserves your attention first.
+3. From staring at a messy list to working from a ranked plan.
+4. From giving away your best hours to protecting them for meaningful work.
+5. From carrying the same unfinished tasks forward to finishing, delegating, or removing them.
 
 ## Choice
-You can keep letting the loudest task run your day, then carry the important work into another tomorrow. That path feels busy, but it leaves your biggest goals untouched. Or you can choose a task order that protects your top three priorities first. Start with one list, one clear ranking, and one protected work block.
+You can keep letting alerts, requests, and easy chores choose your day for you. That path keeps important work at the bottom of the list and turns every deadline into a rush. Or you can take control of the order: capture every task, choose the few that matter most, and give them protected time. The likely result is simple: your most important work gets done before smaller demands take over.
 
 ## Actionable VERB
-SEQUENCE
+TRIAGE
 
 ## Model
-- **S — Spill every task onto one list.** Write down work tasks, errands, calls, projects, and loose reminders in one place. Do not rank tasks while writing. Your goal is to stop carrying the list in your head.
-- **E — Evaluate impact.** Look at each task and ask, “What happens if this gets done today?” Mark the tasks that protect a deadline, move a major goal, prevent a real problem, or serve a key duty.
-- **Q — Question false urgency.** Separate tasks that are truly urgent from tasks that only feel urgent because someone sent a message. Ask whether the task needs action today, can wait, can be handed off, or does not need doing.
-- **U — Use three big rocks.** Choose no more than three A-level tasks for the day. Pick the tasks with the largest real payoff, not the easiest tasks to check off.
-- **E — Enter priority blocks.** Put each big rock on your calendar, preferably during your strongest hours. Give each task a clear start time and a time limit.
-- **N — Narrow your attention.** When a priority block starts, silence alerts, close extra tabs, and keep only the tools needed for that task open. Work in focused sprints until the block ends.
-- **C — Contain lower-value work.** Batch email, calls, forms, and small errands into one later block. Do not let these tasks enter the time reserved for your big rocks.
-- **E — Evaluate and carry forward.** At day’s end, check what was completed. Move unfinished work to tomorrow only after deciding whether it still deserves priority, needs a smaller next step, or should be cut.
+### T — Track Every Task
+Write every task in one place before you decide what to do. Include work, home, calls, errands, follow-ups, and tasks you have been avoiding. Use one paper list, planner, or digital tool. Do not trust your memory to hold your workload.
+
+### R — Rank by Impact
+Look at the full list and ask: “If I only finish three things today, what will make the biggest positive difference?” Mark those three tasks as A-level priorities. Mark important but less urgent tasks as B-level. Mark small chores and low-value requests as C-level.
+
+### I — Identify the Urgent Trap
+Check each task for urgency and importance. A task can be loud and urgent without being important. Handle true emergencies, but do not let every message become an emergency. Delay, delegate, or decline tasks that do not need your direct attention today.
+
+### A — Assign Prime Time
+Put your three A-level tasks into real blocks on your calendar. Schedule the hardest task during your strongest energy window, often early in the day. Give it a clear start and stop time. Treat that block like an appointment you cannot casually move.
+
+### G — Guard the Work Block
+When the priority block starts, remove interruptions. Silence your phone, close extra tabs, pause notifications, and keep only the materials needed for the task. Work in focused sprints, such as 25 minutes of work followed by a 5-minute break, until the task is complete or the block ends.
+
+### E — Evaluate and Reset
+At the end of the day, check what was finished, moved, delegated, or removed. If an A-level task was not done, decide why. Break it into a smaller next step, give it a better time block, or admit it is not a true priority. Build tomorrow’s top three before the next day begins.
 
 ## Action Steps Summary
-1. **Sort the List** — Put every task in one place and identify the three items with the biggest impact.
-2. **Block the Rocks** — Schedule your top three tasks during your best hours and treat the blocks like appointments.
-3. **Guard the Order** — Keep small tasks, messages, and requests outside focus blocks, then review the list each day.
+1. **Rank Hard** — Capture every task, then choose the three that create the biggest result today.
+2. **Block First** — Put those three tasks into protected time before filling your day with smaller work.
+3. **Review Clean** — End the day by checking results, moving unfinished work with purpose, and cutting what does not matter.
 
 ## FAQ
-### Why do I keep doing small tasks first?
-Small tasks give fast completion, while major tasks can feel unclear or hard. Choose your top three before opening email or messages.
+### Why do I still feel behind when I finish many tasks?
+You may be finishing C-level chores instead of A-level work. Count completed priority tasks, not total checkmarks.
 
 ### What if everything on my list feels urgent?
-Most tasks are not due today. Check the real deadline, the real result of delay, and who truly owns the task before giving it priority time.
+Most items are not urgent today. Ask what has a real deadline, real consequence, or major impact if left undone. Rank those first.
 
-### What if someone interrupts my priority work?
-Unless it is a real emergency, write down the request and return to it after your focus block. A request does not automatically deserve immediate action.
+### What if my boss or family interrupts my plan?
+Handle true urgent needs, then return to your next priority block. If interruptions happen often, tell people when you are unavailable for focused work.
 
-### What if I cannot finish a big task in one day?
-Define the next visible step, such as drafting the outline, making five calls, or reviewing one section. Schedule that step as a big rock.
+### Should I make a list with more than three tasks?
+Yes. Keep a full task list, but choose only three A-level tasks for the day. The rest are options, not equal priorities.
 
-### Should I use paper or a task app?
-Use the tool you will check every day. The tool matters less than keeping one full list, choosing three priorities, and reviewing them daily.
+### What if I do not finish a priority task?
+Do not blindly copy it to tomorrow. Decide whether to break it into a smaller action, schedule more time, delegate part of it, or remove it from the list.

@@ -1,10 +1,25 @@
 ## Post
-A coffee mug sits on a workbench. The coffee is cold. The phone buzzes against the wood. A stack of papers leans against a half-finished project. You mean to work on the thing that matters, but the inbox fills before the coffee cools. By evening, you are tired. You have moved a hundred small things. You have moved nothing that actually builds your life. The work that matters is still sitting there. You are busy, but you are not building.
 
-Your day will be hijacked unless you decide the order of your work before the world decides it for you. This week, we are tackling prioritization and time management. Not with another app or a longer to-do list, but with a sequence that stops the leak and turns scattered effort into directed force.
+There is a particular kind of tired that comes from moving all day and still knowing the work that mattered most is waiting for you.
 
-The worksheet arriving in your inbox this morning is the execution tool for this week’s lesson and lecture. The teaching will give you the framework, but the worksheet is where you actually build the container. It forces you to spill every task onto one list, separate real deadlines from loud messages, and lock in your three big rocks before the day starts. You will schedule the blocks, silence the noise, and guard the order.
+The inbox is lighter. A few messages are answered. Small errands are handled. The calendar has been adjusted. But the report, the difficult call, the family decision, or the project that could make next week easier is still sitting there—quiet, untouched, and now competing with whatever energy remains.
 
-This is how the week’s transformation takes shape. You move from reacting to every alert to choosing when messages get your attention. You move from a long, messy list to a clear top-three ranking. The worksheet is the practical artifact the group will be working from. Do the work before the discussion. Bring your completed blocks, your cut tasks, and the moments you had to say no to the noise. The conversation will only go as deep as the work you put into the sheet.
+That is the tension we are stepping into this week.
 
-We will be breaking down exactly how you protected your focus, where the structure held, and where the old habits tried to creep back in. The lesson and lecture are here to support you in using the worksheet well, but the real shift happens when you sit with the results and compare notes. Your call. Act or stay stuck. I will see you in the discussion with your sheet filled out and your top three locked in.
+A crowded list makes everything look equal. It gives a small request the same visual weight as a meaningful deadline. It lets the loudest thing feel like the most important thing. Before long, your best hours belong to alerts, easy wins, and other people’s urgency.
+
+The lesson and lecture will help you see the difference between being busy and making progress. But the worksheet is where that distinction becomes real.
+
+Before our group conversation, use the worksheet to get every task out of your head and into one trusted place. Then make the harder call: choose the three tasks that would create the biggest positive difference if they were finished.
+
+Not the easiest three.
+
+Not the three most likely to earn a quick reply.
+
+The three that should not be left until the day is tired.
+
+You will also give those priorities actual space on the calendar. That matters. A task called important but never given a time block is usually just a hope wearing a serious name.
+
+Bring your honest results into the discussion: what kept trying to steal your prime time, what you marked as important, and where your plan held—or broke—when the day got noisy.
+
+The worksheet is not another list to maintain. It is the working page for taking back the order of your day before smaller demands take it from you.
