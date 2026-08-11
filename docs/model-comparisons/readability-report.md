@@ -8,6 +8,8 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 
 | Model | Words | Sentences | Avg words/sentence | Flesch ease | FK grade | Fog | Coleman-Liau | ARI | SMOG | Lexical diversity |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| anthropic/claude-opus-5 | 6585 | 587 | 11.22 | 77.99 | 5.17 | 8.14 | 6.69 | 4.31 | 8.91 | 0.17 |
+| anthropic/claude-sonnet-5 | 3126 | 249 | 12.55 | 73.15 | 6.18 | 8.80 | 8.00 | 5.80 | 9.35 | 0.23 |
 | deepseek/deepseek-v3.2 | 3552 | 331 | 10.73 | 72.09 | 5.87 | 8.93 | 8.16 | 5.34 | 9.50 | 0.19 |
 | deepseek/deepseek-v4-flash | 4736 | 470 | 10.08 | 76.03 | 5.16 | 8.17 | 7.31 | 4.47 | 8.96 | 0.17 |
 | deepseek/deepseek-v4-pro | 5458 | 371 | 14.71 | 68.13 | 7.41 | 10.39 | 8.55 | 7.04 | 10.48 | 0.18 |
@@ -17,17 +19,30 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | google/gemma-4-26b-a4b-it | 2559 | 187 | 13.68 | 63.28 | 7.83 | 11.18 | 9.62 | 7.51 | 11.11 | 0.26 |
 | google/gemma-4-31b-it | 2475 | 170 | 14.56 | 64.18 | 7.92 | 10.98 | 9.02 | 7.36 | 10.95 | 0.28 |
 | gemma-4-e4b-it | 2366 | 152 | 15.57 | 57.99 | 9.04 | 12.16 | 9.78 | 8.37 | 11.81 | 0.26 |
+| nvidia/nemotron-3-ultra-550b-a55b | 4110 | 458 | 8.97 | 67.35 | 6.09 | 8.76 | 9.03 | 5.59 | 9.28 | 0.23 |
 | openai/gpt-4.1 | 2687 | 260 | 10.33 | 70.66 | 5.97 | 9.06 | 8.89 | 5.81 | 9.57 | 0.22 |
 | openai/gpt-5.4 | 6852 | 757 | 9.05 | 79.18 | 4.46 | 7.13 | 6.99 | 3.97 | 8.22 | 0.17 |
 | openai/gpt-5.5 | 8510 | 1004 | 8.48 | 80.78 | 4.10 | 6.78 | 6.34 | 3.34 | 7.97 | 0.15 |
 | openai/gpt-5.6-luna | 6319 | 590 | 10.71 | 65.15 | 6.83 | 9.66 | 9.17 | 6.14 | 9.99 | 0.17 |
-| openai/gpt-5.6-sol | 2978 | 311 | 9.58 | 73.85 | 5.34 | 8.03 | 8.32 | 5.15 | 8.86 | 0.24 |
-| openai/gpt-5.6-terra | 3152 | 360 | 8.76 | 74.91 | 4.99 | 7.56 | 7.92 | 4.66 | 8.52 | 0.23 |
+| openai/gpt-5.6-sol | 7255 | 705 | 10.29 | 65.79 | 6.64 | 9.59 | 9.15 | 6.01 | 9.91 | 0.17 |
+| openai/gpt-5.6-terra | 6451 | 596 | 10.82 | 69.27 | 6.29 | 9.15 | 8.40 | 5.56 | 9.65 | 0.18 |
+| qwen/qwen3.7-plus | 2582 | 212 | 12.18 | 72.19 | 6.22 | 9.04 | 8.29 | 5.90 | 9.56 | 0.23 |
+| qwen/qwen3.8-max | 6786 | 802 | 8.46 | 80.17 | 4.18 | 6.87 | 6.69 | 3.62 | 8.04 | 0.14 |
+| stepfun/step-3.7-flash | 5932 | 308 | 19.26 | 68.39 | 8.51 | 11.39 | 7.72 | 8.27 | 10.74 | 0.14 |
+| tencent/hy3 | 2396 | 263 | 9.11 | 80.04 | 4.36 | 6.80 | 6.70 | 3.75 | 7.97 | 0.28 |
+| x-ai/grok-4.3 | 1456 | 94 | 15.49 | 66.25 | 7.87 | 10.18 | 9.07 | 7.77 | 10.22 | 0.32 |
+| x-ai/grok-4.5 | 4923 | 396 | 12.43 | 76.14 | 5.73 | 8.30 | 7.49 | 5.35 | 8.93 | 0.18 |
 
 ## Per-document measurements
 
 | Model | Document | Words | Sentences | Paragraphs | Avg words/sentence | Flesch ease | FK grade | Fog |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| anthropic/claude-opus-5 | LESSON.md | 2234 | 212 | 39 | 10.54 | 79.09 | 4.85 | 7.83 |
+| anthropic/claude-opus-5 | index.md | 2049 | 205 | 52 | 10.00 | 80.30 | 4.54 | 7.63 |
+| anthropic/claude-opus-5 | INSTRUCTIONS.md | 2302 | 170 | 52 | 13.54 | 74.28 | 6.26 | 9.12 |
+| anthropic/claude-sonnet-5 | LESSON.md | 1087 | 97 | 23 | 11.21 | 76.54 | 5.37 | 8.20 |
+| anthropic/claude-sonnet-5 | index.md | 1056 | 92 | 24 | 11.48 | 73.73 | 5.83 | 8.49 |
+| anthropic/claude-sonnet-5 | INSTRUCTIONS.md | 983 | 60 | 9 | 16.38 | 67.57 | 7.91 | 10.26 |
 | deepseek/deepseek-v3.2 | LESSON.md | 1315 | 131 | 22 | 10.04 | 76.15 | 5.13 | 8.15 |
 | deepseek/deepseek-v3.2 | index.md | 1305 | 131 | 23 | 9.96 | 76.40 | 5.08 | 8.09 |
 | deepseek/deepseek-v3.2 | INSTRUCTIONS.md | 932 | 69 | 9 | 13.51 | 59.60 | 8.30 | 11.50 |
@@ -55,6 +70,9 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | gemma-4-e4b-it | LESSON.md | 714 | 46 | 7 | 15.52 | 56.36 | 9.25 | 12.32 |
 | gemma-4-e4b-it | index.md | 897 | 63 | 16 | 14.24 | 61.85 | 8.17 | 11.36 |
 | gemma-4-e4b-it | INSTRUCTIONS.md | 755 | 43 | 8 | 17.56 | 54.55 | 10.01 | 13.12 |
+| nvidia/nemotron-3-ultra-550b-a55b | LESSON.md | 1070 | 127 | 19 | 8.43 | 68.22 | 5.84 | 8.68 |
+| nvidia/nemotron-3-ultra-550b-a55b | index.md | 927 | 125 | 21 | 7.42 | 68.35 | 5.57 | 8.32 |
+| nvidia/nemotron-3-ultra-550b-a55b | INSTRUCTIONS.md | 2113 | 206 | 64 | 10.26 | 66.14 | 6.58 | 9.12 |
 | openai/gpt-4.1 | LESSON.md | 758 | 85 | 20 | 8.92 | 74.01 | 5.15 | 8.26 |
 | openai/gpt-4.1 | index.md | 1092 | 109 | 22 | 10.02 | 75.11 | 5.27 | 8.51 |
 | openai/gpt-4.1 | INSTRUCTIONS.md | 837 | 66 | 27 | 12.68 | 61.15 | 7.88 | 10.76 |
@@ -67,12 +85,30 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | openai/gpt-5.6-luna | LESSON.md | 1412 | 138 | 36 | 10.23 | 72.67 | 5.67 | 8.29 |
 | openai/gpt-5.6-luna | index.md | 2215 | 235 | 69 | 9.43 | 70.85 | 5.72 | 8.56 |
 | openai/gpt-5.6-luna | INSTRUCTIONS.md | 2692 | 217 | 54 | 12.41 | 56.12 | 8.51 | 11.46 |
-| openai/gpt-5.6-sol | LESSON.md | 933 | 108 | 9 | 8.64 | 79.83 | 4.27 | 7.10 |
-| openai/gpt-5.6-sol | index.md | 997 | 116 | 7 | 8.59 | 73.38 | 5.16 | 8.09 |
-| openai/gpt-5.6-sol | INSTRUCTIONS.md | 1048 | 87 | 3 | 12.05 | 68.27 | 6.73 | 9.09 |
-| openai/gpt-5.6-terra | LESSON.md | 887 | 102 | 9 | 8.70 | 77.83 | 4.56 | 7.31 |
-| openai/gpt-5.6-terra | index.md | 1044 | 135 | 7 | 7.73 | 80.76 | 3.92 | 6.69 |
-| openai/gpt-5.6-terra | INSTRUCTIONS.md | 1221 | 123 | 11 | 9.93 | 67.54 | 6.31 | 8.59 |
+| openai/gpt-5.6-sol | LESSON.md | 1895 | 201 | 54 | 9.43 | 71.68 | 5.60 | 8.46 |
+| openai/gpt-5.6-sol | index.md | 2148 | 219 | 66 | 9.81 | 72.58 | 5.57 | 8.24 |
+| openai/gpt-5.6-sol | INSTRUCTIONS.md | 3212 | 285 | 57 | 11.27 | 57.62 | 8.02 | 11.21 |
+| openai/gpt-5.6-terra | LESSON.md | 1439 | 151 | 41 | 9.53 | 73.17 | 5.42 | 8.09 |
+| openai/gpt-5.6-terra | index.md | 2853 | 303 | 108 | 9.42 | 74.81 | 5.16 | 8.13 |
+| openai/gpt-5.6-terra | INSTRUCTIONS.md | 2159 | 142 | 45 | 15.20 | 57.66 | 8.99 | 11.86 |
+| qwen/qwen3.7-plus | LESSON.md | 725 | 67 | 10 | 10.82 | 77.30 | 5.17 | 8.25 |
+| qwen/qwen3.7-plus | index.md | 812 | 86 | 17 | 9.44 | 75.87 | 5.02 | 7.91 |
+| qwen/qwen3.7-plus | INSTRUCTIONS.md | 1045 | 59 | 10 | 17.71 | 63.29 | 8.83 | 11.45 |
+| qwen/qwen3.8-max | LESSON.md | 2413 | 305 | 53 | 7.91 | 81.98 | 3.79 | 6.48 |
+| qwen/qwen3.8-max | index.md | 2326 | 285 | 40 | 8.16 | 81.54 | 3.91 | 6.69 |
+| qwen/qwen3.8-max | INSTRUCTIONS.md | 2047 | 212 | 39 | 9.66 | 76.27 | 5.02 | 7.63 |
+| stepfun/step-3.7-flash | LESSON.md | 1696 | 96 | 1 | 17.67 | 70.88 | 7.76 | 10.72 |
+| stepfun/step-3.7-flash | index.md | 2536 | 155 | 8 | 16.36 | 71.83 | 7.30 | 10.38 |
+| stepfun/step-3.7-flash | INSTRUCTIONS.md | 1700 | 57 | 6 | 29.82 | 56.03 | 12.85 | 15.44 |
+| tencent/hy3 | LESSON.md | 827 | 100 | 14 | 8.27 | 85.71 | 3.36 | 5.77 |
+| tencent/hy3 | index.md | 678 | 93 | 17 | 7.29 | 82.27 | 3.60 | 6.04 |
+| tencent/hy3 | INSTRUCTIONS.md | 891 | 70 | 8 | 12.73 | 71.62 | 6.43 | 8.91 |
+| x-ai/grok-4.3 | LESSON.md | 369 | 28 | 7 | 13.18 | 72.18 | 6.47 | 8.52 |
+| x-ai/grok-4.3 | index.md | 485 | 33 | 8 | 14.70 | 66.33 | 7.66 | 10.17 |
+| x-ai/grok-4.3 | INSTRUCTIONS.md | 602 | 33 | 9 | 18.24 | 61.84 | 9.17 | 11.48 |
+| x-ai/grok-4.5 | LESSON.md | 1331 | 136 | 23 | 9.79 | 82.30 | 4.21 | 6.77 |
+| x-ai/grok-4.5 | index.md | 1660 | 166 | 29 | 10.00 | 79.21 | 4.69 | 7.35 |
+| x-ai/grok-4.5 | INSTRUCTIONS.md | 1932 | 94 | 49 | 20.55 | 64.99 | 9.30 | 11.84 |
 
 ## Metric notes
 

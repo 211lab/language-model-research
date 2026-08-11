@@ -33,19 +33,24 @@ uv run python analyze_readability.py
 
 The generated [readability report](readability-report.md) has bundle and
 per-document tables. The matching JSON file preserves all raw measurements for
-further comparison or charting.
+further comparison or charting. The current report covers 24 completed model
+runs, with the same 19 bundle metrics for every model. The local model has the
+same readability measurements; its cost is the only unavailable field because
+it is not a paid provider run.
 
 ## Refresh after a new case study
 
-After adding a completed case study to a PR, run the generators from this directory before opening
-or updating that PR:
+After adding a completed case study to a PR, run these generators from the
+repository root before opening or updating that PR:
 
 ~~~
-cd docs/model-comparisons
-uv run python analyze_readability.py
-uv run python generate_cost_charts.py
-uv run python generate_model_comparison.py
+python docs/model-comparisons/analyze_readability.py
+python scripts/build_radar.py
 ~~~
+
+`build_radar.py` rebuilds the root static dashboard and the mirrored
+`docs/model-comparisons` interactive report from the refreshed readability and
+quality data.
 
 The chart generator uses each OpenRouter usage log and adds the local baseline
 at `$0.000000`. It writes [cost-chart-data.json](cost-chart-data.json) plus the
@@ -66,10 +71,11 @@ The dashboard has three radar views:
 - Every bundle-total readability metric from the readability report.
 - A grouped overview for quick comparison.
 
-Readability is min–max normalized only inside the radar so metrics with
-different units can share a chart; the JSON remains the source of truth for raw
-values. Cost is shown as **cost burden**: the local model is exactly `0`, and
-the most expensive recorded bundle is exactly `100`.
+Readability is converted to an ordinal within-dimension rank only inside the
+radar so metrics with different units can share a chart; the JSON and README
+report remain the source of truth for raw values. Cost is shown as **cost
+burden**: OpenRouter rows use provider-reported bundle cost, while the local
+model is displayed as a zero-cost baseline rather than an invented paid cost.
 
 Runs without `CONTENT_SCORE.json` remain visibly marked as awaiting LLM quality
 scoring and are never assigned inferred editorial values. They still appear in
