@@ -64,8 +64,9 @@ def company_for(model: str) -> str:
     return {"openai": "OpenAI", "google": "Google", "deepseek": "DeepSeek"}.get(model.split("/", 1)[0], "Local / other")
 
 
-def display_name(model: str) -> str:
-    return model.split("/", 1)[-1].replace("-it", "").replace("-", " ").title().replace("Gpt", "GPT")
+def display_name(model: str, case_study: str | None = None) -> str:
+    name = model.split("/", 1)[-1].replace("-it", "").replace("-", " ").title().replace("Gpt", "GPT")
+    return f"Local model ({name})" if case_study and case_study.startswith("local-models/") else name
 
 
 def paid_cost(usage_path: Path) -> float | None:
@@ -188,8 +189,8 @@ def compile_comparison(root: Path) -> dict[str, Any]:
         } if report else {}
         models.append({
             "model": model,
-            "display_name": display_name(model),
-            "company": company_for(model),
+            "display_name": display_name(model, case_study),
+            "company": "Local" if case_study.startswith("local-models/") else company_for(model),
             "case_study": case_study,
             "content_score": float(report["content_score"]) if report else None,
             "confidence": float(report["confidence"]) if report else None,
