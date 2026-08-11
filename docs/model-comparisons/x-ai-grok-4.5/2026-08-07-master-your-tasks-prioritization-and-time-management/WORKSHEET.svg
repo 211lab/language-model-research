@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the FILTER action model, and a closing summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="28">SBXX</text>
+  <text class="title" x="40" y="58">MASTER YOUR TASKS: PRIORITIZATION AND TIME MANAGEMENT</text>
+  <text class="sub" x="40" y="82">Rank Three. Block Them First. Guard the Pour.</text>
+
+  <rect class="mini" x="700" y="24" width="360" height="66"/>
+  <text class="label" x="720" y="46">ORDER PROBLEM</text>
+  <text class="small" x="720" y="64">Busy is not finished. Choose the top three before</text>
+  <text class="small" x="720" y="78">the day chooses loud work for you.</text>
+
+  <text class="verb" x="470" y="118">FILTER</text>
+  <line class="line" x1="40" y1="128" x2="1060" y2="128"/>
+
+  <!-- F: Fill the full list -->
+  <rect class="box" x="40" y="142" width="340" height="248"/>
+  <text class="letter" x="56" y="178">F</text>
+  <text class="label" x="100" y="164">FILL THE FULL LIST</text>
+  <text class="small" x="100" y="182">Dump every task on your mind—one action per line.</text>
+  <text class="tiny" x="100" y="198">Work, home, errands, favors, carryovers. No ranking yet.</text>
+  <text class="tiny" x="56" y="220">1.</text><line class="fillline" x1="74" y1="220" x2="360" y2="220"/>
+  <text class="tiny" x="56" y="242">2.</text><line class="fillline" x1="74" y1="242" x2="360" y2="242"/>
+  <text class="tiny" x="56" y="264">3.</text><line class="fillline" x1="74" y1="264" x2="360" y2="264"/>
+  <text class="tiny" x="56" y="286">4.</text><line class="fillline" x1="74" y1="286" x2="360" y2="286"/>
+  <text class="tiny" x="56" y="308">5.</text><line class="fillline" x1="74" y1="308" x2="360" y2="308"/>
+  <text class="tiny" x="56" y="330">6.</text><line class="fillline" x1="74" y1="330" x2="360" y2="330"/>
+  <text class="tiny" x="56" y="352">7.</text><line class="fillline" x1="74" y1="352" x2="360" y2="352"/>
+  <text class="tiny" x="56" y="374">8.</text><line class="fillline" x1="74" y1="374" x2="360" y2="374"/>
+
+  <!-- I: Isolate the big rocks -->
+  <rect class="box" x="400" y="142" width="340" height="248"/>
+  <text class="letter" x="416" y="178">I</text>
+  <text class="label" x="460" y="164">ISOLATE THE BIG ROCKS</text>
+  <text class="small" x="460" y="182">If only three finish today, which three matter most?</text>
+  <text class="tiny" x="460" y="198">Exactly three A-tasks. Name the positive result beside each.</text>
+  <text class="tiny" x="416" y="224">A1</text><line class="fillline" x1="442" y1="224" x2="720" y2="224"/>
+  <text class="tiny" x="416" y="244">Result:</text><line class="fillline" x1="458" y1="244" x2="720" y2="244"/>
+  <text class="tiny" x="416" y="272">A2</text><line class="fillline" x1="442" y1="272" x2="720" y2="272"/>
+  <text class="tiny" x="416" y="292">Result:</text><line class="fillline" x1="458" y1="292" x2="720" y2="292"/>
+  <text class="tiny" x="416" y="320">A3</text><line class="fillline" x1="442" y1="320" x2="720" y2="320"/>
+  <text class="tiny" x="416" y="340">Result:</text><line class="fillline" x1="458" y1="340" x2="720" y2="340"/>
+  <text class="tiny" x="416" y="368">Force three. Not five. Not “three plus extras.”</text>
+
+  <!-- L: Label the rest A/B/C -->
+  <rect class="box" x="760" y="142" width="300" height="248"/>
+  <text class="letter" x="776" y="178">L</text>
+  <text class="label" x="820" y="164">LABEL THE REST A/B/C</text>
+  <text class="small" x="820" y="182">A = three rocks only. B waits. C is noise.</text>
+  <text class="tiny" x="820" y="198">Note delay, drop, or hand off in plain language.</text>
+  <text class="tiny" x="776" y="224">B items (matter, after A moves)</text>
+  <line class="fillline" x1="776" y1="242" x2="1040" y2="242"/>
+  <line class="fillline" x1="776" y1="262" x2="1040" y2="262"/>
+  <line class="fillline" x1="776" y1="282" x2="1040" y2="282"/>
+  <text class="tiny" x="776" y="304">C / delay / drop / hand off</text>
+  <line class="fillline" x1="776" y1="322" x2="1040" y2="322"/>
+  <line class="fillline" x1="776" y1="342" x2="1040" y2="342"/>
+  <line class="fillline" x1="776" y1="362" x2="1040" y2="362"/>
+  <text class="tiny" x="776" y="380">You will not do everything today.</text>
+
+  <!-- T: Time-block the A-tasks first -->
+  <rect class="box" x="40" y="406" width="510" height="200"/>
+  <text class="letter" x="56" y="442">T</text>
+  <text class="label" x="100" y="428">TIME-BLOCK THE A-TASKS FIRST</text>
+  <text class="small" x="100" y="446">Put each rock in best-energy hours with start and end times.</text>
+  <text class="tiny" x="100" y="462">Batch B/C later. A-blocks get first claim on the calendar.</text>
+  <text class="tiny" x="56" y="488">A1 block:</text><line class="fillline" x1="112" y1="488" x2="300" y2="488"/>
+  <text class="tiny" x="310" y="488">Task:</text><line class="fillline" x1="344" y1="488" x2="530" y2="488"/>
+  <text class="tiny" x="56" y="514">A2 block:</text><line class="fillline" x1="112" y1="514" x2="300" y2="514"/>
+  <text class="tiny" x="310" y="514">Task:</text><line class="fillline" x1="344" y1="514" x2="530" y2="514"/>
+  <text class="tiny" x="56" y="540">A3 block:</text><line class="fillline" x1="112" y1="540" x2="300" y2="540"/>
+  <text class="tiny" x="310" y="540">Task:</text><line class="fillline" x1="344" y1="540" x2="530" y2="540"/>
+  <text class="tiny" x="56" y="566">B/C batch window:</text><line class="fillline" x1="160" y1="566" x2="350" y2="566"/>
+  <text class="tiny" x="360" y="566">What batches:</text><line class="fillline" x1="438" y1="566" x2="530" y2="566"/>
+  <text class="tiny" x="56" y="588">If it is not on the schedule, it is still a wish.</text>
+
+  <!-- E: Eliminate noise and execute -->
+  <rect class="box" x="570" y="406" width="490" height="200"/>
+  <text class="letter" x="586" y="442">E</text>
+  <text class="label" x="630" y="428">ELIMINATE NOISE AND EXECUTE</text>
+  <text class="small" x="630" y="446">Remove interference. Run one A-task per block.</text>
+  <text class="tiny" x="630" y="462">Name distractions, rules, sprint pattern, and switch budget.</text>
+  <text class="tiny" x="586" y="488">Setup (phone, tabs, focus cue):</text><line class="fillline" x1="748" y1="488" x2="1040" y2="488"/>
+  <text class="tiny" x="586" y="512">Sprint pattern / done-for-block:</text><line class="fillline" x1="748" y1="512" x2="1040" y2="512"/>
+  <text class="tiny" x="586" y="536">Usual distractions I will block:</text><line class="fillline" x1="748" y1="536" x2="1040" y2="536"/>
+  <text class="tiny" x="586" y="560">Rule + switch budget (&lt;2):</text><line class="fillline" x1="728" y1="560" x2="1040" y2="560"/>
+  <text class="tiny" x="586" y="584">Stray-thought capture line:</text><line class="fillline" x1="728" y1="584" x2="1040" y2="584"/>
+
+  <!-- R: Review, check off, and reset -->
+  <rect class="box" x="40" y="622" width="700" height="120"/>
+  <text class="letter" x="56" y="656">R</text>
+  <text class="label" x="100" y="644">REVIEW, CHECK OFF, AND RESET</text>
+  <text class="small" x="100" y="662">Check finished work. Move remains. Rank tomorrow’s top three.</text>
+  <text class="tiny" x="56" y="686">Finished today (A/B/C count):</text><line class="fillline" x1="210" y1="686" x2="400" y2="686"/>
+  <text class="tiny" x="410" y="686">Stuck item fix (cut / hand off / smaller step):</text><line class="fillline" x1="640" y1="686" x2="720" y2="686"/>
+  <text class="tiny" x="56" y="710">Tomorrow A1–A3:</text><line class="fillline" x1="150" y1="710" x2="720" y2="710"/>
+  <text class="tiny" x="56" y="730">Where noise broke an A-block (tighten Eliminate):</text><line class="fillline" x1="300" y1="730" x2="720" y2="730"/>
+
+  <!-- Close / standard -->
+  <rect class="mini" x="760" y="622" width="300" height="120"/>
+  <text class="label" x="780" y="648">CLOSE THE RUN</text>
+  <text class="tiny" x="780" y="668">7-day standard: written A/B/C each morning,</text>
+  <text class="tiny" x="780" y="684">top three in protected blocks before noon,</text>
+  <text class="tiny" x="780" y="700">&lt;2 unplanned switches per priority block.</text>
+  <text class="tiny" x="780" y="720">Days hit this week:</text><line class="fillline" x1="880" y1="720" x2="1040" y2="720"/>
+
+  <!-- Footer summary -->
+  <rect class="mini" x="40" y="758" width="330" height="70"/>
+  <text class="num" x="56" y="790">1</text>
+  <text class="label" x="90" y="780">RANK THREE</text>
+  <text class="tiny" x="90" y="798">Fill the list. Isolate three rocks. Label B/C.</text>
+  <text class="tiny" x="90" y="814">Sharp labels stop reaction mode.</text>
+
+  <rect class="mini" x="385" y="758" width="330" height="70"/>
+  <text class="num" x="401" y="790">2</text>
+  <text class="label" x="435" y="780">BLOCK FIRST</text>
+  <text class="tiny" x="435" y="798">Schedule A-tasks in prime hours with real times.</text>
+  <text class="tiny" x="435" y="814">Batch B/C around the pour, not through it.</text>
+
+  <rect class="mini" x="730" y="758" width="330" height="70"/>
+  <text class="num" x="746" y="790">3</text>
+  <text class="label" x="780" y="780">GUARD AND RESET</text>
+  <text class="tiny" x="780" y="798">Eliminate noise, execute one task, review at close.</text>
+  <text class="tiny" x="780" y="814">Protect the pour. Check them off. Restart clean.</text>
+</svg>

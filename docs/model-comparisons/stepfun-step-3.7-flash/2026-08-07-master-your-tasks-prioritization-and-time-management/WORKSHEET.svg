@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the CONQUER action model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS: PRIORITIZATION AND TIME MANAGEMENT</text>
+  <text class="sub" x="40" y="96">Build Your Anvil, Stop Spinning Your Wheels</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <text class="label" x="720" y="58">CHOICE</text>
+  <text class="small" x="720" y="78">Keep spinning on unstructured busyness and</text>
+  <text class="small" x="720" y="94">exhausted evenings, or build your Anvil</text>
+  <text class="small" x="720" y="110">with CONQUER for real results tomorrow.</text>
+
+  <text class="verb" x="444" y="142">CONQUER</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="320" height="185"/>
+  <text class="letter" x="60" y="222">C</text>
+  <text class="label" x="105" y="204">CAPTURE</text>
+  <text class="small" x="105" y="224">Dump every task from your head to your list, no sorting, no judgment.</text>
+  <text class="tiny" x="105" y="242">Include work, personal, and tiny errands. Keep it raw.</text>
+  <line class="fillline" x1="60" y1="270" x2="330" y2="270"/>
+  <line class="fillline" x1="60" y1="300" x2="330" y2="300"/>
+  <line class="fillline" x1="60" y1="330" x2="330" y2="330"/>
+
+  <rect class="box" x="390" y="180" width="320" height="185"/>
+  <text class="letter" x="410" y="222">O</text>
+  <text class="label" x="455" y="204">ORGANIZE</text>
+  <text class="small" x="455" y="224">Sort your raw list into A, B, C tiers by impact and urgency.</text>
+  <text class="tiny" x="455" y="242">A = 2-3 must-win tasks. B = important but can wait. C = low-priority, can cut/delegate.</text>
+  <text class="tiny" x="410" y="268">A-Level (2-3 must-win tasks):</text><line class="fillline" x1="410" y1="268" x2="690" y2="268"/>
+  <text class="tiny" x="410" y="292">B-Level (important, can wait):</text><line class="fillline" x1="410" y1="292" x2="690" y2="292"/>
+  <text class="tiny" x="410" y="316">C-Level (low-priority, cut/delegate):</text><line class="fillline" x1="410" y1="316" x2="690" y2="316"/>
+
+  <rect class="box" x="740" y="180" width="320" height="185"/>
+  <text class="letter" x="760" y="222">N</text>
+  <text class="label" x="805" y="204">NARROW</text>
+  <text class="small" x="805" y="224">Cut to only your top 2-3 A-level tasks that move the needle most.</text>
+  <text class="tiny" x="805" y="242">Drop lower-priority requests. Keep A tasks at the top of your list.</text>
+  <line class="fillline" x1="760" y1="270" x2="1030" y2="270"/>
+  <line class="fillline" x1="760" y1="300" x2="1030" y2="300"/>
+  <line class="fillline" x1="760" y1="330" x2="1030" y2="330"/>
+
+  <rect class="box" x="40" y="395" width="320" height="185"/>
+  <text class="letter" x="60" y="437">Q</text>
+  <text class="label" x="105" y="419">QUEUE</text>
+  <text class="small" x="105" y="439">Block your A tasks into your highest-energy time slots first.</text>
+  <text class="tiny" x="105" y="457">Schedule A tasks before email, meetings, or low-value work. Batch B/C tasks later.</text>
+  <text class="tiny" x="60" y="485">A-Block 1 (top energy slot):</text><line class="fillline" x1="180" y1="485" x2="330" y2="485"/>
+  <text class="tiny" x="60" y="515">A-Block 2 (next energy slot):</text><line class="fillline" x1="180" y1="515" x2="330" y2="515"/>
+  <text class="tiny" x="60" y="545">B/C Batch (lower energy, e.g., 2 p.m.):</text><line class="fillline" x1="60" y1="545" x2="330" y2="545"/>
+
+  <rect class="box" x="390" y="395" width="320" height="185"/>
+  <text class="letter" x="410" y="437">U</text>
+  <text class="label" x="455" y="419">UNPLUG</text>
+  <text class="small" x="455" y="439">Clear distractions around your A blocks to protect focused work.</text>
+  <text class="tiny" x="455" y="457">Silence phone, close unrelated tabs, alert your team you're in focus mode.</text>
+  <text class="tiny" x="410" y="485">Phone:</text><line class="fillline" x1="460" y1="485" x2="680" y2="485"/>
+  <text class="tiny" x="410" y="515">Browser/Apps:</text><line class="fillline" x1="490" y1="515" x2="680" y2="515"/>
+  <text class="tiny" x="410" y="545">Team/Family Alert:</text><line class="fillline" x1="510" y1="545" x2="680" y2="545"/>
+
+  <rect class="box" x="740" y="395" width="320" height="185"/>
+  <text class="letter" x="760" y="437">E</text>
+  <text class="label" x="805" y="419">EXECUTE</text>
+  <text class="small" x="805" y="439">Use focused Pomodoro bursts to finish A tasks without burnout.</text>
+  <text class="tiny" x="805" y="457">25 min work, 5 min break. Break big tasks into 10-min steps.</text>
+  <text class="tiny" x="760" y="485">A Task 1 First Step:</text><line class="fillline" x1="900" y1="485" x2="1030" y2="485"/>
+  <text class="tiny" x="760" y="515">Break Activity:</text><line class="fillline" x1="840" y1="515" x2="1030" y2="515"/>
+  <text class="tiny" x="760" y="545">If Stuck, Next Micro-Step:</text><line class="fillline" x1="900" y1="545" x2="1030" y2="545"/>
+
+  <rect class="box" x="40" y="610" width="1020" height="88"/>
+  <text class="letter" x="60" y="652">R</text>
+  <text class="label" x="105" y="634">REVIEW</text>
+  <text class="small" x="105" y="654">Check your progress at the end of the day and adjust your Anvil for tomorrow.</text>
+  <text class="tiny" x="105" y="672">Check off completed tasks. Move unfinished A tasks to the top of tomorrow's list. Cut tasks stuck for 3+ days.</text>
+  <text class="tiny" x="60" y="700">Completed Tasks (check off):</text><line class="fillline" x1="240" y1="700" x2="330" y2="700"/>
+  <text class="tiny" x="60" y="724">Unfinished A Tasks (move to tomorrow):</text><line class="fillline" x1="60" y1="724" x2="330" y2="724"/>
+  <text class="tiny" x="400" y="700">Stuck Tasks (cut or break down):</text><line class="fillline" x1="400" y1="700" x2="680" y2="700"/>
+  <text class="tiny" x="400" y="724">What Stopped You Today (plan fix):</text><line class="fillline" x1="400" y1="724" x2="680" y2="724"/>
+
+  <rect class="mini" x="40" y="730" width="1020" height="60"/>
+  <text class="label" x="60" y="756">FINAL COMMAND</text>
+  <text class="small" x="60" y="776">Your Anvil is built. Tomorrow, protect your A-level time like a meeting with your CEO—because it is.</text>
+  <line class="fillline" x1="60" y1="790" x2="1030" y2="790"/>
+
+  <rect class="mini" x="40" y="810" width="315" height="40"/>
+  <text class="num" x="60" y="835">1</text>
+  <text class="label" x="95" y="825">CAPTURE EVERYTHING</text>
+  <text class="tiny" x="95" y="840">No task too small. Dump raw, no sort.</text>
+
+  <rect class="mini" x="392" y="810" width="315" height="40"/>
+  <text class="num" x="412" y="835">2</text>
+  <text class="label" x="447" y="825">PROTECT A BLOCKS</text>
+  <text class="tiny" x="447" y="840">Schedule top tasks first. Defend them.</text>
+
+  <rect class="mini" x="745" y="810" width="315" height="40"/>
+  <text class="num" x="765" y="835">3</text>
+  <text class="label" x="800" y="825">REVIEW & ADJUST</text>
+  <text class="tiny" x="800" y="840">2-min daily check. Strengthen your Anvil.</text>
+</svg>

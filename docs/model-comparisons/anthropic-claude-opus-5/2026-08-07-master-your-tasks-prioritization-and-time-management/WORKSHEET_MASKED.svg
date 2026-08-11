@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks (masked)</title>
+  <desc id="desc">Masked landscape worksheet on a white background with large readable title, model letters preserved, and all instructional copy replaced by light grayscale censor blocks following the original geometry.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .m1 { fill: #e9e9e9; }
+      .m2 { fill: #dedede; }
+      .m3 { fill: #d3d3d3; }
+      .m4 { fill: #c8c8c8; }
+      .m5 { fill: #bdbdbd; }
+      .m6 { fill: #eeeeee; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <rect class="m3" x="40" y="26" width="34" height="10" rx="3"/>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS</text>
+  <rect class="m2" x="40" y="85" width="288" height="14" rx="4"/>
+
+  <rect class="mini" x="660" y="30" width="400" height="82"/>
+  <rect class="m5" x="678" y="42" width="272" height="13" rx="3"/>
+  <rect class="m2" x="678" y="61" width="346" height="11" rx="3"/>
+  <rect class="m2" x="678" y="77" width="358" height="11" rx="3"/>
+  <rect class="m3" x="678" y="96" width="86" height="9" rx="3"/>
+  <line class="fillline" x1="770" y1="104" x2="880" y2="104"/>
+  <rect class="m3" x="890" y="96" width="89" height="9" rx="3"/>
+  <line class="fillline" x1="985" y1="104" x2="1040" y2="104"/>
+
+  <rect class="m5" x="440" y="118" width="150" height="26" rx="4"/>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="172" width="490" height="196"/>
+  <text class="letter" x="60" y="214">T</text>
+  <rect class="m5" x="104" y="185" width="212" height="13" rx="3"/>
+  <rect class="m2" x="104" y="205" width="330" height="11" rx="3"/>
+  <rect class="m1" x="104" y="224" width="366" height="9" rx="3"/>
+  <rect class="m3" x="60" y="251" width="14" height="8" rx="2"/><line class="fillline" x1="80" y1="258" x2="285" y2="258"/>
+  <rect class="m3" x="300" y="251" width="14" height="8" rx="2"/><line class="fillline" x1="320" y1="258" x2="512" y2="258"/>
+  <rect class="m3" x="60" y="275" width="14" height="8" rx="2"/><line class="fillline" x1="80" y1="282" x2="285" y2="282"/>
+  <rect class="m3" x="300" y="275" width="14" height="8" rx="2"/><line class="fillline" x1="320" y1="282" x2="512" y2="282"/>
+  <rect class="m3" x="60" y="299" width="14" height="8" rx="2"/><line class="fillline" x1="80" y1="306" x2="285" y2="306"/>
+  <rect class="m3" x="300" y="299" width="14" height="8" rx="2"/><line class="fillline" x1="320" y1="306" x2="512" y2="306"/>
+  <rect class="m3" x="60" y="323" width="14" height="8" rx="2"/><line class="fillline" x1="80" y1="330" x2="285" y2="330"/>
+  <rect class="m3" x="298" y="323" width="18" height="8" rx="2"/><line class="fillline" x1="322" y1="330" x2="512" y2="330"/>
+  <rect class="m3" x="60" y="347" width="14" height="8" rx="2"/><line class="fillline" x1="80" y1="354" x2="285" y2="354"/>
+  <rect class="m3" x="298" y="347" width="18" height="8" rx="2"/><line class="fillline" x1="322" y1="354" x2="512" y2="354"/>
+
+  <rect class="box" x="550" y="172" width="510" height="196"/>
+  <text class="letter" x="570" y="214">R</text>
+  <rect class="m5" x="614" y="185" width="264" height="13" rx="3"/>
+  <rect class="m2" x="614" y="205" width="396" height="11" rx="3"/>
+  <rect class="m1" x="614" y="224" width="358" height="9" rx="3"/>
+  <rect class="m4" x="570" y="251" width="22" height="8" rx="2"/><line class="fillline" x1="596" y1="258" x2="1040" y2="258"/>
+  <rect class="m4" x="570" y="275" width="22" height="8" rx="2"/><line class="fillline" x1="596" y1="282" x2="1040" y2="282"/>
+  <rect class="m4" x="570" y="299" width="22" height="8" rx="2"/><line class="fillline" x1="596" y1="306" x2="1040" y2="306"/>
+  <rect class="m4" x="570" y="325" width="44" height="8" rx="2"/><line class="fillline" x1="618" y1="332" x2="1040" y2="332"/>
+  <rect class="m4" x="570" y="349" width="66" height="8" rx="2"/><line class="fillline" x1="640" y1="356" x2="1040" y2="356"/>
+
+  <rect class="box" x="40" y="382" width="490" height="196"/>
+  <text class="letter" x="60" y="424">I</text>
+  <rect class="m5" x="104" y="395" width="248" height="13" rx="3"/>
+  <rect class="m2" x="104" y="415" width="312" height="11" rx="3"/>
+  <rect class="m1" x="104" y="434" width="402" height="9" rx="3"/>
+  <rect class="m4" x="60" y="461" width="106" height="8" rx="2"/><line class="fillline" x1="172" y1="468" x2="512" y2="468"/>
+  <rect class="m4" x="60" y="485" width="106" height="8" rx="2"/><line class="fillline" x1="172" y1="492" x2="512" y2="492"/>
+  <rect class="m4" x="60" y="509" width="106" height="8" rx="2"/><line class="fillline" x1="172" y1="516" x2="512" y2="516"/>
+  <rect class="m4" x="60" y="533" width="140" height="8" rx="2"/><line class="fillline" x1="206" y1="540" x2="512" y2="540"/>
+  <rect class="m4" x="60" y="557" width="186" height="8" rx="2"/><line class="fillline" x1="252" y1="564" x2="512" y2="564"/>
+
+  <rect class="box" x="550" y="382" width="510" height="196"/>
+  <text class="letter" x="570" y="424">A</text>
+  <rect class="m5" x="614" y="395" width="298" height="13" rx="3"/>
+  <rect class="m2" x="614" y="415" width="418" height="11" rx="3"/>
+  <rect class="m1" x="614" y="434" width="350" height="9" rx="3"/>
+  <rect class="m4" x="570" y="461" width="50" height="8" rx="2"/><line class="fillline" x1="626" y1="468" x2="1040" y2="468"/>
+  <rect class="m4" x="570" y="485" width="50" height="8" rx="2"/><line class="fillline" x1="626" y1="492" x2="1040" y2="492"/>
+  <rect class="m4" x="570" y="509" width="50" height="8" rx="2"/><line class="fillline" x1="626" y1="516" x2="1040" y2="516"/>
+  <rect class="m4" x="570" y="533" width="50" height="8" rx="2"/><line class="fillline" x1="626" y1="540" x2="795" y2="540"/>
+  <rect class="m4" x="806" y="533" width="38" height="8" rx="2"/><line class="fillline" x1="848" y1="540" x2="1040" y2="540"/>
+  <rect class="m4" x="570" y="557" width="80" height="8" rx="2"/><line class="fillline" x1="656" y1="564" x2="795" y2="564"/>
+  <rect class="m4" x="806" y="557" width="66" height="8" rx="2"/><line class="fillline" x1="878" y1="564" x2="1040" y2="564"/>
+
+  <rect class="box" x="40" y="592" width="490" height="150"/>
+  <text class="letter" x="60" y="634">G</text>
+  <rect class="m5" x="104" y="605" width="160" height="13" rx="3"/>
+  <rect class="m2" x="104" y="625" width="376" height="11" rx="3"/>
+  <rect class="m4" x="60" y="655" width="60" height="8" rx="2"/><line class="fillline" x1="126" y1="662" x2="512" y2="662"/>
+  <rect class="m4" x="60" y="679" width="166" height="8" rx="2"/><line class="fillline" x1="232" y1="686" x2="512" y2="686"/>
+  <rect class="m4" x="60" y="703" width="98" height="8" rx="2"/><line class="fillline" x1="164" y1="710" x2="512" y2="710"/>
+  <rect class="m4" x="60" y="727" width="138" height="8" rx="2"/><line class="fillline" x1="204" y1="734" x2="440" y2="734"/>
+  <rect class="mini" x="452" y="720" width="20" height="18"/>
+  <rect class="mini" x="478" y="720" width="20" height="18"/>
+  <rect class="m3" x="452" y="705" width="98" height="8" rx="2"/>
+
+  <rect class="box" x="550" y="592" width="510" height="150"/>
+  <text class="letter" x="570" y="634">E</text>
+  <rect class="m5" x="614" y="605" width="320" height="13" rx="3"/>
+  <rect class="m2" x="614" y="625" width="304" height="11" rx="3"/>
+  <rect class="m4" x="570" y="655" width="102" height="8" rx="2"/><line class="fillline" x1="678" y1="662" x2="1040" y2="662"/>
+  <rect class="m4" x="570" y="679" width="132" height="8" rx="2"/><line class="fillline" x1="708" y1="686" x2="1040" y2="686"/>
+  <rect class="m4" x="570" y="703" width="208" height="8" rx="2"/><line class="fillline" x1="784" y1="710" x2="1040" y2="710"/>
+  <rect class="m4" x="570" y="727" width="124" height="8" rx="2"/><line class="fillline" x1="700" y1="734" x2="1040" y2="734"/>
+
+  <rect class="mini" x="40" y="756" width="1020" height="62"/>
+  <rect class="m5" x="60" y="768" width="142" height="13" rx="3"/>
+  <rect class="m2" x="60" y="787" width="628" height="11" rx="3"/>
+  <line class="fillline" x1="700" y1="796" x2="860" y2="796"/>
+  <rect class="m3" x="872" y="789" width="132" height="9" rx="3"/>
+  <line class="fillline" x1="1010" y1="796" x2="1040" y2="796"/>
+  <rect class="m6" x="60" y="805" width="330" height="9" rx="3"/>
+  <rect class="m1" x="400" y="805" width="330" height="9" rx="3"/>
+  <rect class="m6" x="740" y="805" width="284" height="9" rx="3"/>
+</svg>

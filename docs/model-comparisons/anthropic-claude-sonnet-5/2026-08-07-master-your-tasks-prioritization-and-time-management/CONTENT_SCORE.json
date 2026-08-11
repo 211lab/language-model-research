@@ -1,0 +1,368 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "anthropic/claude-sonnet-5",
+  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/anthropic-claude-sonnet-5/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 74.8,
+  "confidence": 0.655,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 87.84,
+      "penalties": 15.0,
+      "final_score": 72.84,
+      "confidence": 0.644,
+      "metrics": {
+        "fk_grade": 5.83,
+        "words": 1056,
+        "sentences": 92,
+        "average_sentence_words": 11.48,
+        "sentence_length_stddev": 7.34,
+        "concrete_opening": true,
+        "action_signals": 4,
+        "framework_signals": 0,
+        "late_you_ratio": 0.62,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.6789999999999999,
+          "evidence": [],
+          "reason": "Clear reframing from motivation/discipline to sorting/surface/structure. (evidence could not be verified)"
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.6649999999999999,
+          "evidence": [],
+          "reason": "Moves from anecdote to diagnosis to framework to practice in a coherent sequence. (evidence could not be verified)"
+        },
+        {
+          "id": "concrete_opening",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Strong specific image and lived routine immediately establish the subject. (evidence could not be verified)"
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.6579999999999999,
+          "evidence": [],
+          "reason": "Explains behavior via misframing, pressure, and energy without reducing it to clich\u00e9. (evidence could not be verified)"
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Concrete sequence of actions is explicit and operational. (evidence could not be verified)"
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.6789999999999999,
+          "evidence": [],
+          "reason": "Turns a practical problem into a usable working philosophy. (evidence could not be verified)"
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.637,
+          "evidence": [],
+          "reason": "Uses layered metaphor to distinguish energy, structure, and execution; moderate but real depth. (evidence could not be verified)"
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.651,
+          "evidence": [],
+          "reason": "Includes caution and self-correction rather than absolute overclaiming. (evidence could not be verified)"
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Assigns responsibility directly to the reader without outsourcing agency. (evidence could not be verified)"
+        },
+        {
+          "id": "perspective_progression",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.6719999999999999,
+          "evidence": [],
+          "reason": "The piece steadily reorients the reader from frustration to diagnosis to decisive stance. (evidence could not be verified)"
+        },
+        {
+          "id": "decision",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "A clean binary decision is stated explicitly and memorably. (evidence could not be verified)"
+        },
+        {
+          "id": "prescribed_action",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Specific, time-bound, repeatable instructions are clearly prescribed. (evidence could not be verified)"
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.6719999999999999,
+          "evidence": [],
+          "reason": "Balances lived detail with concept and analogy effectively. (evidence could not be verified)"
+        },
+        {
+          "id": "everyday_realism",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Anchors the essay in ordinary workday experience with credible fatigue and clutter. (evidence could not be verified)"
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 0.0,
+          "passed": false,
+          "confidence": 0.0,
+          "evidence": [],
+          "reason": "Missing evaluator result"
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.644,
+          "evidence": [],
+          "reason": "Varied cadence and sentence length create momentum and emphasis. (evidence could not be verified)"
+        },
+        {
+          "id": "semantic_economy",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.63,
+          "evidence": [],
+          "reason": "Repetition exists but mostly serves contrast and emphasis rather than padding. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_motivational",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Avoids cheerleading and replaces uplift with diagnosis and procedure. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_therapy",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "No therapeutic language or emotional processing frame; it stays practical. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_preacher",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "No moralizing sermon; the voice remains observational and directive. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_guru",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Shows self-correction and avoids mystique or elevated authority. (evidence could not be verified)"
+        },
+        {
+          "id": "closing_strength",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.6789999999999999,
+          "evidence": [],
+          "reason": "Ends with a crisp decision and immediate action cue, giving the piece a firm finish. (evidence could not be verified)"
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 91.75,
+      "penalties": 15.0,
+      "final_score": 76.75,
+      "confidence": 0.665,
+      "metrics": {
+        "fk_grade": 7.91,
+        "words": 983,
+        "sentences": 60,
+        "average_sentence_words": 16.38,
+        "sentence_length_stddev": 7.23,
+        "concrete_opening": true,
+        "action_signals": 7,
+        "framework_signals": 1,
+        "late_you_ratio": 0.48,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Clear reframing from discipline to sorting, with a concrete before/after perspective. (evidence could not be verified)"
+        },
+        {
+          "id": "argument_progression",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "The piece advances stepwise from diagnosis to a lettered process to closure. (evidence could not be verified)"
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "It interprets task avoidance and attention drain in operational psychological terms. (evidence could not be verified)"
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Offers a usable view of work, time, and revision rather than abstract advice. (evidence could not be verified)"
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.6649999999999999,
+          "evidence": [],
+          "reason": "Shows causal reasoning about attention, priority, and changing context, though within a simple framework. (evidence could not be verified)"
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 99.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Places responsibility squarely on the reader\u2019s choices and follow-through. (evidence could not be verified)"
+        },
+        {
+          "id": "framework_lands",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "The model is explicitly named and fully mapped into concrete sections. (evidence could not be verified)"
+        },
+        {
+          "id": "unique_action",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Contains letter-specific, worksheet-specific actions beyond generic advice. (evidence could not be verified)"
+        },
+        {
+          "id": "action_relevance",
+          "score": 99.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "The argument clearly converts diagnosis into prioritization, scheduling, protection, and review. (evidence could not be verified)"
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "\"Phone in the drawer, Slack status set to Focus Mode 9\u201310am, tabs closed except the doc I'm working in.\"",
+            "\"25 min work / 5 min break x2 to finish this task.\""
+          ],
+          "reason": "Behavior is specified in concrete, observable terms throughout."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 0.0,
+          "passed": false,
+          "confidence": 0.0,
+          "evidence": [],
+          "reason": "Missing evaluator result"
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.6579999999999999,
+          "evidence": [],
+          "reason": "Varied sentence lengths and punchy cadences create effective rhythm without drifting into style-first writing. (evidence could not be verified)"
+        },
+        {
+          "id": "semantic_economy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Language is lean and directive, with little wasted abstraction. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_motivational",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "The tone is corrective and procedural, not inspirational or hype-driven. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_therapy",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "It avoids therapeutic framing and keeps the focus on decisions and outcomes. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_preacher",
+          "score": 99.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Directive, not moralizing; it issues commands without sermonizing. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_guru",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "The authority comes from a named process and concrete steps, not mystique or personal lore. (evidence could not be verified)"
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.086736
+}

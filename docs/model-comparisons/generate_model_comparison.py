@@ -61,7 +61,17 @@ def money(value: float | None) -> str:
 
 
 def company_for(model: str) -> str:
-    return {"openai": "OpenAI", "google": "Google", "deepseek": "DeepSeek"}.get(model.split("/", 1)[0], "Local / other")
+    return {
+        "anthropic": "Anthropic",
+        "deepseek": "DeepSeek",
+        "google": "Google",
+        "nvidia": "NVIDIA",
+        "openai": "OpenAI",
+        "qwen": "Qwen",
+        "stepfun": "StepFun",
+        "tencent": "Tencent",
+        "x-ai": "xAI",
+    }.get(model.split("/", 1)[0], "Local / other")
 
 
 def display_name(model: str, case_study: str | None = None) -> str:

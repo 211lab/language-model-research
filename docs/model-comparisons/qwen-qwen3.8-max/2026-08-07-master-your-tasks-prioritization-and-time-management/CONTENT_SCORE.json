@@ -1,0 +1,406 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "qwen/qwen3.8-max",
+  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/qwen-qwen3.8-max/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 74.77,
+  "confidence": 0.722,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 89.38,
+      "penalties": 15.0,
+      "final_score": 74.38,
+      "confidence": 0.785,
+      "metrics": {
+        "fk_grade": 3.91,
+        "words": 2326,
+        "sentences": 285,
+        "average_sentence_words": 8.16,
+        "sentence_length_stddev": 4.97,
+        "concrete_opening": true,
+        "action_signals": 17,
+        "framework_signals": 1,
+        "late_you_ratio": 0.86,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "This is a targeting problem, not an effort problem.",
+            "Urgency is volume. Importance is weight.",
+            "The choice is not between working hard and working less. The choice is between swinging at random and swinging at a target."
+          ],
+          "reason": "Clear reframe from effort/laziness to target/structure, with sustained reframing throughout."
+        },
+        {
+          "id": "argument_progression",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Clear movement from example to diagnosis to mechanism to steps to conclusion. (evidence could not be verified)"
+        },
+        {
+          "id": "concrete_opening",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Immediate, specific scene with objects, time, and physical detail. (evidence could not be verified)"
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "The small task gives a quick sense of completion.",
+            "Your brain registers a small reward.",
+            "Attention moves toward whatever shouts loudest. That is how the mind works by default."
+          ],
+          "reason": "Goes beyond description to explain reward, attention, and default mental behavior."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "They answered messages. They attended meetings. They handled requests.",
+            "You sort what is truly urgent from what merely feels urgent.",
+            "You silence alerts. You close extra tabs. You work on the first task until the timer rings."
+          ],
+          "reason": "Behavior is concretely rendered in ordinary actions and specific work habits."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "This is a targeting problem, not an effort problem.",
+            "The choice is not between working hard and working less. The choice is between swinging at random and swinging at a target.",
+            "Energy without direction is not progress. It is exhaust."
+          ],
+          "reason": "Abstract principle is tied to action and consequences, not slogan-level advice."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "Urgency and importance are not the same thing.",
+            "Urgency is volume. Importance is weight.",
+            "The gap is not caused by a lack of knowledge. It is caused by a lack of structure."
+          ],
+          "reason": "Shows real analytic distinction, causal explanation, and systems framing."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.637,
+          "evidence": [],
+          "reason": "Includes caution and distinction-making, though nuance stays limited and quickly resolves into a firm thesis. (evidence could not be verified)"
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Assigns agency clearly to the reader and to choice, without drifting into blame-heavy language. (evidence could not be verified)"
+        },
+        {
+          "id": "perspective_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.6719999999999999,
+          "evidence": [],
+          "reason": "Moves from surface observation to reframing to alternative path and closing implication. (evidence could not be verified)"
+        },
+        {
+          "id": "decision",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "The piece centers a decisive either/or and ends on a direct choice. (evidence could not be verified)"
+        },
+        {
+          "id": "prescribed_action",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Explicit step-by-step instructions are materially present. (evidence could not be verified)"
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.6789999999999999,
+          "evidence": [],
+          "reason": "Concrete scene is sustained and used to carry abstract explanation effectively. (evidence could not be verified)"
+        },
+        {
+          "id": "everyday_realism",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Strong ordinary-life examples grounded in common work and home distractions. (evidence could not be verified)"
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 0.0,
+          "passed": false,
+          "confidence": 0.0,
+          "evidence": [],
+          "reason": "Missing evaluator result"
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "The mug goes cold. The list gets longer.",
+            "The heat was real. The direction was missing.",
+            "The furnace stayed hot all day. The hammer kept moving. But nothing took shape."
+          ],
+          "reason": "Varied cadence, including short declaratives and longer explanatory sequences."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "This is a targeting problem, not an effort problem.",
+            "Pressure without a container just scatters.",
+            "Energy without direction is not progress. It is exhaust."
+          ],
+          "reason": "Mostly economical; a few metaphors recur, but they carry meaning rather than padding."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The choice is not between working hard and working less.",
+            "The choice is between swinging at random and swinging at a target.",
+            "Do this for five days."
+          ],
+          "reason": "No hype or inspiration-fog; tone is functional and unsentimental."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "No therapeutic framing; diagnosis stays behavioral and structural. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_preacher",
+          "score": 99.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "I want to be careful here, because that diagnosis is wrong.",
+            "This is not about doing more tasks.",
+            "The practical sequence looks like this."
+          ],
+          "reason": "No moral lecturing; corrective but not sermon-like."
+        },
+        {
+          "id": "anti_guru",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Directive but not mystical; authority comes from procedure rather than guru posture. (evidence could not be verified)"
+        },
+        {
+          "id": "closing_strength",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The hammer is in your hand. The metal is waiting.",
+            "The only question left is where you will strike."
+          ],
+          "reason": "Ending is crisp, pointed, and leaves a clear final choice."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 90.15,
+      "penalties": 15.0,
+      "final_score": 75.15,
+      "confidence": 0.659,
+      "metrics": {
+        "fk_grade": 5.02,
+        "words": 2047,
+        "sentences": 212,
+        "average_sentence_words": 9.66,
+        "sentence_length_stddev": 5.76,
+        "concrete_opening": false,
+        "action_signals": 25,
+        "framework_signals": 4,
+        "late_you_ratio": 0.34,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Strong reframe from laziness/discipline to targeting and structure. The shift is explicit and sustained. (evidence could not be verified)"
+        },
+        {
+          "id": "argument_progression",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Clear stepwise argument from problem to system to numbered process to closure. Progression is materially present and coherent. (evidence could not be verified)"
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.6789999999999999,
+          "evidence": [],
+          "reason": "Offers a concrete account of attention, overload, guilt, and distrust. Not clinical, but psychologically interprets behavior well. (evidence could not be verified)"
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Turns abstract priorities into a usable life rule: structure, selection, protected time, review. Clearly practical philosophy. (evidence could not be verified)"
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.6649999999999999,
+          "evidence": [],
+          "reason": "Contains compact distinctions and systems thinking rather than shallow advice. Depth is present, though not highly layered. (evidence could not be verified)"
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.6789999999999999,
+          "evidence": [],
+          "reason": "Places responsibility on the reader's actions and choices without excuse-making. Strong agency tone. (evidence could not be verified)"
+        },
+        {
+          "id": "framework_lands",
+          "score": 99.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "The model is explicit, memorable, and fully landed through the whole piece. (evidence could not be verified)"
+        },
+        {
+          "id": "unique_action",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.651,
+          "evidence": [],
+          "reason": "Contains several letter-specific actions that are concrete and distinct, not generic advice. (evidence could not be verified)"
+        },
+        {
+          "id": "action_relevance",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "The argument clearly converts into tasking, scheduling, sequencing, and review. Strong alignment from principle to action. (evidence could not be verified)"
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Behavioral steps are specific, observable, and easy to enact. Strong grounding. (evidence could not be verified)"
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 0.0,
+          "passed": false,
+          "confidence": 0.0,
+          "evidence": [],
+          "reason": "Missing evaluator result"
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.644,
+          "evidence": [],
+          "reason": "Varied cadence, short emphatic lines, and longer argument sentences create usable rhythm. Some repetition, but controlled. (evidence could not be verified)"
+        },
+        {
+          "id": "semantic_economy",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.6789999999999999,
+          "evidence": [],
+          "reason": "Frequent compressed aphoristic lines carry substantial meaning with little waste. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_motivational",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Rejects pep-talk framing and replaces it with constraints, structure, and limits. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_therapy",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "\"Does this still matter?\""
+          ],
+          "reason": "No therapeutic framing; it analyzes behavior and system failure plainly."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.693,
+          "evidence": [],
+          "reason": "Directive but not moralizing; no preaching voice. Commands are procedural, not sermonizing. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_guru",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Framework is presented plainly and operationally, without mystique or cultish language. (evidence could not be verified)"
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.090064
+}

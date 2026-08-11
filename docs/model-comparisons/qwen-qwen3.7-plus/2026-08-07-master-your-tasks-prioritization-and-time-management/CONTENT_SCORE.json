@@ -1,0 +1,492 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "qwen/qwen3.7-plus",
+  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/qwen-qwen3.7-plus/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 82.51,
+  "confidence": 0.897,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 90.92,
+      "penalties": 0.0,
+      "final_score": 90.92,
+      "confidence": 0.881,
+      "metrics": {
+        "fk_grade": 5.02,
+        "words": 812,
+        "sentences": 86,
+        "average_sentence_words": 9.44,
+        "sentence_length_stddev": 4.7,
+        "concrete_opening": true,
+        "action_signals": 16,
+        "framework_signals": 0,
+        "late_you_ratio": 0.49,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "I think we often confuse motion with progress.",
+            "What I've started noticing is that the problem is rarely a lack of effort. The problem is a lack of direction."
+          ],
+          "reason": "Clear reframing from effort to direction, with a substantive shift in how the problem is understood."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "This is not about working harder. You are already working hard. This is about building a structure that protects your focus.",
+            "Now the obvious question becomes: how do we turn scattered effort into finished work?",
+            "Here is how you apply the structure."
+          ],
+          "reason": "Moves from diagnosis to explanation to methodical application in a coherent sequence."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 99.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A cold cup of coffee sits next to a stack of unsorted mail on the kitchen table.",
+            "It is six in the evening.",
+            "The house is quiet."
+          ],
+          "reason": "Immediate scene, tangible objects, and time stamp establish a concrete opening."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "You treat every notification like a command.",
+            "Fear exaggerates the difficulty of the big projects.",
+            "The mind quietly assumes the easy tasks are more urgent."
+          ],
+          "reason": "Explains behavior through attention, fear, and mistaken urgency rather than merely listing actions."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "Clear, specific actions are central and repeated; the piece ends with concrete execution steps. (evidence could not be verified)"
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You have to stop treating your time like a public utility and start treating it like a limited resource.",
+            "You can filter out the noise, protect your time, and do the work that actually matters.",
+            "The choice is yours."
+          ],
+          "reason": "The essay advances a usable philosophy of time, attention, and priority, not abstract moralizing."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "The furnace represents containment. It holds the heat so it can actually do work.",
+            "Identity becomes believable through repeated action.",
+            "Progress compounds when you stop tapping and start swinging."
+          ],
+          "reason": "Uses extended metaphor and causal reasoning to connect focus, identity, and compounding progress."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.92,
+          "evidence": [
+            "Before going further, I want to be careful here.",
+            "This is not about working harder. You are already working hard."
+          ],
+          "reason": "The text qualifies its claim and avoids a crude blame frame."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You have to stop treating your time like a public utility and start treating it like a limited resource.",
+            "You have a choice to make right now."
+          ],
+          "reason": "Responsibility is placed on the reader's choices and management of time."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.6789999999999999,
+          "evidence": [],
+          "reason": "The argument moves from diagnosis to metaphor to application in a visible sequence, not just a static point. (evidence could not be verified)"
+        },
+        {
+          "id": "decision",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You have a choice to make right now.",
+            "You can keep letting other people's emergencies run your life.",
+            "Or, you can take control."
+          ],
+          "reason": "A direct decision point is explicit and central."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "First, filter the noise.",
+            "Second, lock the time.",
+            "Third, execute the work."
+          ],
+          "reason": "Strong, ordered prescriptions are plainly stated and easy to follow."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "A cold cup of coffee sits next to a stack of unsorted mail on the kitchen table.",
+            "The furnace represents containment. It holds the heat so it can actually do work.",
+            "Write down every single thing you need to do."
+          ],
+          "reason": "Balances scene, metaphor, and action without drifting too far into either pure abstraction or pure anecdote."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You spent the last eight hours answering messages, attending meetings, and putting out small fires.",
+            "You treat every notification like a command.",
+            "Put your phone in another room."
+          ],
+          "reason": "Reflects ordinary work-life pressures and practical constraints convincingly."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.6579999999999999,
+          "evidence": [],
+          "reason": "The language is plain and readable, while still carrying an argument. Some metaphorical framing adds complexity, but it remains controlled. (evidence could not be verified)"
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "You are moving constantly, but you are going nowhere.",
+            "A fire that burns in every direction provides no useful heat. It just burns out.",
+            "The hammer only works if you swing it."
+          ],
+          "reason": "Short declaratives and periodic emphasis create varied but controlled rhythm."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 83.0,
+          "passed": true,
+          "confidence": 0.651,
+          "evidence": [],
+          "reason": "The piece is somewhat repetitive, but most sentences carry distinct work and avoid filler. It stays relatively lean for the length. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_motivational",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "This is not about working harder. You are already working hard.",
+            "People rarely need more motivation. They need environments that protect their motivation."
+          ],
+          "reason": "Rejects inspiration-talk and replaces it with structure and environment."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "Before going further, I want to be careful here.",
+            "This is not about working harder. You are already working hard."
+          ],
+          "reason": "No therapy framing; the piece avoids emotional processing language and keeps to practical diagnosis."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 77.0,
+          "passed": true,
+          "confidence": 0.63,
+          "evidence": [],
+          "reason": "The tone is directive, but it mostly reads as instruction rather than moralizing or sermonizing. There is some command language, though not overt preaching. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_guru",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Here is how you apply the structure.",
+            "First, filter the noise.",
+            "Second, lock the time."
+          ],
+          "reason": "It gives steps plainly and avoids mystique or insider posture."
+        },
+        {
+          "id": "closing_strength",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.6649999999999999,
+          "evidence": [],
+          "reason": "The ending returns to the opening scene and lands on a firm final line. It is not especially surprising, but it is clean and decisive. (evidence could not be verified)"
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 89.1,
+      "penalties": 15.0,
+      "final_score": 74.1,
+      "confidence": 0.914,
+      "metrics": {
+        "fk_grade": 8.83,
+        "words": 1045,
+        "sentences": 59,
+        "average_sentence_words": 17.71,
+        "sentence_length_stddev": 10.21,
+        "concrete_opening": true,
+        "action_signals": 14,
+        "framework_signals": 0,
+        "late_you_ratio": 0.47,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You feel busy and productive, but when you look at the big projects that actually advance your career, nothing got done.",
+            "The problem is not a lack of effort. The problem is a lack of direction.",
+            "You can keep letting other people's emergencies run your life, working late, feeling behind, and missing out on your own goals. Or you can take control."
+          ],
+          "reason": "Clear reframing from effort to direction, with a concrete before/after view of the reader's situation."
+        },
+        {
+          "id": "argument_progression",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "F - Find",
+            "I - Isolate",
+            "L - Lock",
+            "T - Tame",
+            "E - Execute",
+            "R - Review"
+          ],
+          "reason": "The piece moves in a clean sequence from capture to prioritization to scheduling to distraction control to execution to review."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "You let other people's emergencies control your day and treat every notification like a command.",
+            "The problem is not a lack of effort. The problem is a lack of direction.",
+            "You feel busy and productive, but when you look at the big projects that actually advance your career, nothing got done."
+          ],
+          "reason": "Explains the hidden behavior pattern: reactivity to interruptions and false productivity."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You cannot do everything, and the moment you accept that, you gain control.",
+            "You need to find the three heavy tasks that actually matter, block out the time to do them, and ignore the rest.",
+            "Write down every single thing you need to do."
+          ],
+          "reason": "Abstract claim is tied directly to operational advice and a repeatable method."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "You let other people's emergencies control your day and treat every notification like a command.",
+            "You cannot do everything, and the moment you accept that, you gain control.",
+            "Move unfinished tasks to tomorrow, and pick your new top 3 tasks for the next day."
+          ],
+          "reason": "Moderate depth: identifies incentive and attention problems, but stays within a simple productivity frame."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You cannot do everything, and the moment you accept that, you gain control.",
+            "You need to find the three heavy tasks that actually matter, block out the time to do them, and ignore the rest.",
+            "Decide what your top three tasks are, and do not let anything stand in your way."
+          ],
+          "reason": "Strong ownership language; responsibility is placed on the reader's choices and boundaries."
+        },
+        {
+          "id": "framework_lands",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "F - Find",
+            "I - Isolate",
+            "L - Lock",
+            "T - Tame",
+            "E - Execute",
+            "R - Review"
+          ],
+          "reason": "The named framework is fully instantiated with meaningful steps and instructions under each step."
+        },
+        {
+          "id": "unique_action",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Physically putting your phone in a drawer in another room, closing every browser tab except the one you need, using a website blocker, and explicitly messaging your team that you are in focus mode until a specific time.",
+            "Setting a timer for 50 minutes, working on nothing but the isolated task until the timer rings, taking a strict 10-minute break away from your screen, and repeating until the task is completely finished.",
+            "Physically check off the tasks you completed."
+          ],
+          "reason": "Contains letter-specific, concrete actions that go beyond generic productivity advice."
+        },
+        {
+          "id": "action_relevance",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Block out time on your calendar for these 3 tasks.",
+            "Work in focused sprints of 25 to 50 minutes."
+          ],
+          "reason": "The actions follow logically from the argument: identify the few priorities, protect time, then execute in constrained sprints."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Put your phone in another room, close extra browser tabs, and tell your team you are in focus mode.",
+            "Setting a timer for 50 minutes, working on nothing but the isolated task until the timer rings, taking a strict 10-minute break away from your screen, and repeating until the task is completely finished.",
+            "Physically check off the tasks you completed."
+          ],
+          "reason": "Behavior is specified in observable, executable terms rather than abstract intent."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 0.0,
+          "passed": false,
+          "confidence": 0.0,
+          "evidence": [],
+          "reason": "Missing evaluator result"
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "You feel busy and productive, but when you look at the big projects that actually advance your career, nothing got done.",
+            "You are sweating and moving your legs, but you are going nowhere.",
+            "You can keep letting other people's emergencies run your life, working late, feeling behind, and missing out on your own goals. Or you can take control."
+          ],
+          "reason": "Alternates longer diagnostic sentences with shorter imperative lines, creating workable cadence without monotony."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "The problem is not a lack of effort.",
+            "Do the work.",
+            "The Hammer only works if you swing it."
+          ],
+          "reason": "Mostly lean phrasing with some repetition, but still controlled and not bloated."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "Do the work.",
+            "The Hammer only works if you swing it.",
+            "Decide what your top three tasks are, and do not let anything stand in your way."
+          ],
+          "reason": "The tone is directive rather than inspiring or emotionally hyped; it presses action without cheerleading."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The problem is not a lack of effort. The problem is a lack of direction.",
+            "You can keep letting other people's emergencies run your life, working late, feeling behind, and missing out on your own goals. Or you can take control."
+          ],
+          "reason": "No therapeutic framing, validation language, or emotional processing; it stays task- and behavior-oriented."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You need to find the three heavy tasks that actually matter, block out the time to do them, and ignore the rest.",
+            "Fill out this worksheet completely, set your boundaries, and do the work that actually matters.",
+            "Decide what your top three tasks are, and do not let anything stand in your way."
+          ],
+          "reason": "The voice is admonishing but not moralizing or sermon-like; it gives instructions instead of virtue claims."
+        },
+        {
+          "id": "anti_guru",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "The problem is not a lack of effort. The problem is a lack of direction.",
+            "Use this worksheet to direct your energy into a single point of impact.",
+            "The Hammer only works if you swing it."
+          ],
+          "reason": "The language avoids mystical authority and special insight claims; it presents a simple system, not guru posturing."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.236897
+}
