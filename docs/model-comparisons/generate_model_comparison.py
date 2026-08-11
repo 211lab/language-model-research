@@ -249,6 +249,33 @@ d3.select('#mode').on('change',event=>{{mode=event.target.value;draw()}});d3.sel
 </script></main></body></html>"""
 
 
+def dashboard_html_v2(data: dict[str, Any]) -> str:
+    embedded = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+    title = "SteadyBurn model comparison"
+    return f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{html.escape(title)}</title><script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<style>
+body{{margin:0;background:#0b1020;color:#e5e7eb;font:16px system-ui,sans-serif}}main{{max-width:1200px;margin:auto;padding:32px}}h1{{margin-bottom:6px}}h2{{margin-top:32px;margin-bottom:6px}}.muted{{color:#a5b4c7}}#controls{{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}}label{{background:#18243a;border-radius:999px;padding:8px 12px;cursor:pointer}}input{{margin-right:6px}}select{{background:#18243a;color:#e5e7eb;border:1px solid #41506d;border-radius:8px;padding:8px}}svg{{width:100%;max-width:760px;background:#111a2d;border-radius:16px}}.axis{{stroke:#41506d;fill:none}}.label{{fill:#cbd5e1;font-size:12px}}.legend{{display:flex;gap:14px;flex-wrap:wrap;margin:12px 0}}.swatch{{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}}table{{width:100%;border-collapse:collapse;margin-top:30px}}th,td{{padding:10px;text-align:left;border-bottom:1px solid #24324b}}th{{color:#a5b4c7}}.warning{{padding:12px;background:#3a2b12;border-radius:8px}}
+</style></head><body><main><h1>{html.escape(title)}</h1><p class="muted">Quality and readability are shown in separate charts. Each axis uses its own ordinal 15–100 rank scale; bundle price is kept in the summary below both charts.</p>
+<p><label for="mode">Quality radar view</label> <select id="mode"><option value="quality">LLM quality standards</option><option value="overview">Grouped overview</option></select></p><div id="controls"></div>
+<h2>Quality comparison</h2><div id="legend" class="legend"></div><svg id="radar" viewBox="0 0 760 620" role="img" aria-label="Model quality radar chart"></svg>
+<h2>Readability comparison</h2><p class="muted">The readability radar separates words, sentence structure, grade level, and other readability measurements from the price summary.</p><div id="readability-legend" class="legend"></div><svg id="readability-radar" viewBox="0 0 760 620" role="img" aria-label="Model readability radar chart"></svg>
+<h2>Model and price summary</h2><div id="table"></div><div id="awaiting"></div>
+<script>const comparison={embedded};
+const axisSets=comparison.axis_sets, models=comparison.models, selected=new Set(models.map(m=>m.model)); let mode='quality';
+const colors={json.dumps(COLORS)}, logTicks={json.dumps(RADAR_LOG_TICKS)}; const cx=380, cy=310, radius=220, svg=d3.select('#radar'), readabilitySvg=d3.select('#readability-radar');
+function point(i,value,axes){{const angle=2*Math.PI*i/axes.length-Math.PI/2, bounded=Math.max(0,Math.min(100,value)), r=radius*Math.log1p(bounded)/Math.log1p(100);return [cx+r*Math.cos(angle),cy+r*Math.sin(angle)]}}
+function complete(model,axes,modeName){{return axes.every(axis=>model.radar[modeName][axis.id] !== undefined && model.radar[modeName][axis.id] !== null)}}
+function drawRadar(target,axes,modeName,legendTarget){{const visible=models.filter(m=>selected.has(m.model)&&complete(m,axes,modeName));target.selectAll('*').remove();for(const v of logTicks){{target.append('path').attr('class','axis').attr('d','M'+axes.map((_,i)=>point(i,v,axes).join(',')).join('L')+'Z')}}axes.forEach((axis,i)=>{{const end=point(i,100,axes), angle=2*Math.PI*i/axes.length-Math.PI/2, label=[cx+(radius+28)*Math.cos(angle),cy+(radius+28)*Math.sin(angle)];target.append('line').attr('class','axis').attr('x1',cx).attr('y1',cy).attr('x2',end[0]).attr('y2',end[1]);target.append('text').attr('class','label').attr('x',label[0]).attr('y',label[1]).attr('text-anchor','middle').text(axis.label)}});visible.forEach((model,index)=>{{const values=axes.map(axis=>model.radar[modeName][axis.id]);const d='M'+values.map((v,i)=>point(i,v,axes).join(',')).join('L')+'Z';target.append('path').attr('d',d).attr('fill',colors[index%colors.length]).attr('fill-opacity',.16).attr('stroke',colors[index%colors.length]).attr('stroke-width',2.5)}});d3.select(legendTarget).html(visible.map((m,i)=>`<span><i class="swatch" style="background:${{colors[i%colors.length]}}"></i>${{m.display_name}}</span>`).join('') || '<span class="muted">No selected model has all values for this view.</span>')}}
+function draw(){{drawRadar(svg,axisSets[mode],mode,'#legend');drawRadar(readabilitySvg,axisSets.readability.filter(axis=>axis.id!=='cost_burden'),'readability','#readability-legend');const rows=models.map(m=>`<tr><td>${{m.display_name}}</td><td>${{m.company}}</td><td>${{m.content_score===null?'Awaiting score':m.content_score.toFixed(2)}}</td><td>${{m.cost_source==='local'?'$0.000000 local baseline':'$'+m.cost_usd.toFixed(6)}}</td><td>${{m.confidence===null?'—':m.confidence.toFixed(3)}}</td></tr>`).join('');d3.select('#table').html(`<table><thead><tr><th>Model</th><th>Provider</th><th>Content score</th><th>Bundle cost</th><th>Confidence</th></tr></thead><tbody>${{rows}}</tbody></table>`)}}
+d3.select('#mode').on('change',event=>{{mode=event.target.value;draw()}});d3.select('#controls').selectAll('label').data(models).join('label').html(m=>`<input type="checkbox" ${{selected.has(m.model)?'checked':''}}> ${{m.display_name}}`).on('change',(event,m)=>{{event.target.checked?selected.add(m.model):selected.delete(m.model);draw()}});if(comparison.awaiting_score.length)d3.select('#awaiting').html(`<p class="warning">Awaiting LLM quality score: ${{comparison.awaiting_score.length}} run(s).</p>`);draw();
+</script></main></body></html>"""
+
+
+dashboard_html = dashboard_html_v2
+
+
 def radar_svg(data: dict[str, Any]) -> str:
     """Render a Markdown-embeddable snapshot of the interactive radar chart."""
     axes = data["axis_sets"]["overview"]
