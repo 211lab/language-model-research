@@ -12,7 +12,8 @@ The scoring cache and telemetry provide the following coverage:
 
 | Record group | Evaluator evidence | Evaluator judge / tie-break | Complete source snapshots | Notes |
 | --- | --- | --- | ---: | --- |
-| Earlier editorial scoring | DeepSeek V4 Flash | DeepSeek V4 Flash or V4 Pro | 2 | Sol and Terra have complete DeepSeek-backed artifact records; an earlier Claude Opus DeepSeek attempt is incomplete. |
+| DeepSeek-backed editorial scoring | DeepSeek V4 Flash | DeepSeek V4 Flash or V4 Pro | 2 | Sol and Terra have published DeepSeek-backed scores. Their evaluator stacks are not identical. |
+| Other earlier editorial scoring | GPT-5.4-mini | GPT-5.4-mini | Several | These records are also historical evaluator runs, but they are not evidence about DeepSeek versus Luna. |
 | Local editorial cross-run | GPT-5.6 Luna | GPT-5.6 Luna | 8 | Cydonia, Dolphin, Gemma 12B, Gemma E4B, Qwen 27B, Qwen 35B, and both Unsloth variants. |
 | Exact same source under both stacks | — | DeepSeek and Luna | 0 | No complete same-content pair is currently available. |
 
