@@ -1,0 +1,511 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s",
+  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 53.86,
+  "confidence": 0.968,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 81.13,
+      "penalties": 36.0,
+      "final_score": 45.13,
+      "confidence": 0.969,
+      "metrics": {
+        "fk_grade": 4.02,
+        "words": 1664,
+        "sentences": 197,
+        "average_sentence_words": 8.45,
+        "sentence_length_stddev": 4.94,
+        "concrete_opening": true,
+        "action_signals": 20,
+        "framework_signals": 13,
+        "late_you_ratio": 0.58,
+        "repeated_sentence_ratio": 0.107
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You were no longer the architect of your day. You were a servant to the loudest voice in the room.",
+            "You are not a receiver of demands. You are a director of action."
+          ],
+          "reason": "Clearly reframes the reader from passive responder to deliberate director of attention and action."
+        },
+        {
+          "id": "argument_progression",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "The problem is not that you lack time. The problem is that you lack priority.",
+            "To restore the Blower System, you must stop relying on willpower.",
+            "This is where prioritization comes in."
+          ],
+          "reason": "Moves coherently from concrete problem to diagnosis, model, principle, and action. Repeated passages materially weaken the progression."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "There is a coffee mug sitting on the edge of the workbench. It is cold.",
+            "The coffee inside has been sitting there since six in the morning."
+          ],
+          "reason": "The opening begins with a specific, sensory, ordinary object and situation."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "We get a hit of dopamine from checking off small boxes.",
+            "We feel productive because we are moving. But this is a trap."
+          ],
+          "reason": "It explains why low-value activity feels rewarding and how that feeling distorts judgments of progress."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You answer the easy email before you start the hard project.",
+            "You can attend every meeting. You can feel busy."
+          ],
+          "reason": "The argument is repeatedly grounded in recognizable actions rather than remaining abstract."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "You must accept that most things do not matter.",
+            "Mastery requires saying no. Mastery requires containment."
+          ],
+          "reason": "Offers a usable philosophy of limits, prioritization, and selective commitment."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 76.0,
+          "passed": true,
+          "confidence": 0.91,
+          "evidence": [
+            "The real enemy is attention. Attention is the fuel.",
+            "The hidden pattern is that you are confusing motion with progress."
+          ],
+          "reason": "Distinguishes time from attention and motion from progress, though the analysis remains somewhat familiar and simplified."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 74.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "I want to be careful here. I am not convinced that most men fail because they are lazy.",
+            "The smaller claim is actually more interesting."
+          ],
+          "reason": "Includes a meaningful qualification and narrows its claim instead of relying entirely on a simplistic moral diagnosis."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You must take command of your attention before the world takes it from you.",
+            "You decide what gets done. You decide what gets ignored."
+          ],
+          "reason": "Responsibility and agency are central and materially developed through choices about attention and task selection."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "It represents the time you lost before you even began.",
+            "This is where prioritization comes in.",
+            "Here is your challenge for the next seven days."
+          ],
+          "reason": "Progresses from symbolic interpretation to conceptual method to personal implementation."
+        },
+        {
+          "id": "decision",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Now you must act.",
+            "You cannot do everything."
+          ],
+          "reason": "The piece makes the central decision explicit: select what matters and reject competing demands."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Tomorrow morning, before you touch your phone, before you check email, before you speak to anyone, you will sit down.",
+            "You will set a timer for 25 minutes.",
+            "At the end of the day, you will review your list."
+          ],
+          "reason": "Provides specific, sequenced, measurable actions with timing and environmental instructions."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Your task list is your metal. Your attention is your hammer.",
+            "It is the alignment of your actions with your stated values.",
+            "You will write down the three most critical tasks for the day."
+          ],
+          "reason": "Connects abstract claims about integrity and attention to physical imagery and specific daily behaviors."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You woke up, checked your phone, and saw three emails, two messages, and a notification from a news app you do not even care about.",
+            "You will close your browser tabs.",
+            "You will tell your family or colleagues you are in focus mode."
+          ],
+          "reason": "Uses credible details from ordinary work and domestic life, including interruptions and social constraints."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "There is a difference between being busy and being effective. Being busy is noise. Effectiveness is signal.",
+            "Motivation is a spark. Discipline is the blower."
+          ],
+          "reason": "The central distinctions are easy to grasp without eliminating the underlying idea. Repeated restatement slightly reduces control."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You swing the hammer. You make noise. You make sparks. But you do not make a blade.",
+            "No switching. No checking. Just work."
+          ],
+          "reason": "Short sentences, controlled fragments, and varied cadence create strong emphasis without becoming difficult to read."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 52.0,
+          "passed": false,
+          "confidence": 0.96,
+          "evidence": [
+            "There is a difference between being busy and being effective. Being busy is noise. Effectiveness is signal.",
+            "The problem is not that you lack time. The problem is that you lack priority.",
+            "To change this, you must stop reacting. You must start leading.",
+            "When you prioritize, you are not just choosing what to do. You are choosing what to ignore."
+          ],
+          "reason": "The prose is generally clear and uses short sentences, but it repeats major claims and examples nearly verbatim. The busy/effective distinction, priority argument, and stop-reacting instruction recur in separate sections. The extended fire, blower, forge, and metal metaphors also restate the same prioritization point rather than advancing it."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "This is not about working harder. It is about working with precision.",
+            "You must accept that most things do not matter."
+          ],
+          "reason": "Rejects generic effort rhetoric and emphasizes selection and structure, though the repeated imperatives and mastery language retain some motivational force."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You must stop relying on willpower. Willpower is a finite resource. You must rely on structure.",
+            "You must create a system that forces you to blow the bellows every day, even when you don\u2019t feel like it."
+          ],
+          "reason": "The piece treats the problem as behavioral and structural rather than inviting emotional processing or therapeutic self-soothing."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 31.0,
+          "passed": false,
+          "confidence": 0.97,
+          "evidence": [
+            "You must take command of your attention before the world takes it from you.",
+            "You must accept that most things do not matter.",
+            "Mastery requires saying no. Mastery requires containment.",
+            "You must build a structure that protects your focus."
+          ],
+          "reason": "The artifact frequently speaks in commands and makes broad claims about how men live and what mastery requires. The qualification is useful\u2014\u201cI am not convinced that most men fail because they are lazy\u201d\u2014but it does not offset the dominant corrective, moralizing voice."
+        },
+        {
+          "id": "anti_guru",
+          "score": 47.0,
+          "passed": false,
+          "confidence": 0.94,
+          "evidence": [
+            "I think there is a distinction worth making here.",
+            "Time is neutral. It passes whether you use it or not.",
+            "The smaller claim is actually more interesting.",
+            "You are not a receiver of demands. You are a director of action."
+          ],
+          "reason": "The first-person qualifications and modest framing reduce guru posturing. However, the piece still presents a branded system as authoritative and delivers confident identity prescriptions and universal-sounding rules, including \u201cYou are not a receiver of demands.\u201d It avoids overt guru self-promotion but does not consistently avoid guru-like certainty."
+        },
+        {
+          "id": "closing_strength",
+          "score": 34.0,
+          "passed": false,
+          "confidence": 0.99,
+          "evidence": [
+            "You have the lesson. You have the system. You have the component. Now you must act.",
+            "Here is your challenge for the next seven days.",
+            "This is your contract with yourself.",
+            "At the end of the day, you will review your list."
+          ],
+          "reason": "The close gives a concrete seven-day protocol and a clear immediate action, which provides practical force. But the supplied source ends mid-instruction\u2014\u201cCheck off what you\u201d\u2014so it lacks a completed final cadence, synthesis, or earned last line. The repeated \u201cYou have\u201d sequence also feels declarative rather than conclusive."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 77.58,
+      "penalties": 15.0,
+      "final_score": 62.58,
+      "confidence": 0.966,
+      "metrics": {
+        "fk_grade": 3.6,
+        "words": 1597,
+        "sentences": 203,
+        "average_sentence_words": 7.87,
+        "sentence_length_stddev": 4.48,
+        "concrete_opening": true,
+        "action_signals": 28,
+        "framework_signals": 17,
+        "late_you_ratio": 0.41,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You are no longer the architect of your day; you are a servant to the loudest voice in the room.",
+            "You are not a receiver of demands. You are a director of action."
+          ],
+          "reason": "Clearly reframes the reader from reactive task-consumer to deliberate director of attention and action."
+        },
+        {
+          "id": "argument_progression",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The problem is not that you lack time. The problem is that you lack priority.",
+            "To restore the Blower System, you must stop relying on willpower.",
+            "This is where prioritization comes in."
+          ],
+          "reason": "It moves coherently from diagnosis, to identity shift, to framework, to a concrete prioritization process."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 74.0,
+          "passed": true,
+          "confidence": 0.92,
+          "evidence": [
+            "Your brain is already in reaction mode.",
+            "When your Blower System is broken, your energy leaks."
+          ],
+          "reason": "It interprets distraction, motivation, inconsistency, and energy through a usable behavioral model, though some claims are metaphorical rather than psychologically rigorous."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "You are not here to be busy. You are here to be effective.",
+            "You are not here to react. You are here to lead."
+          ],
+          "reason": "It states a practical governing principle and translates it into decisions about attention, priority, and action."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 58.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "There is a difference between being busy and being effective.",
+            "The problem is not that you lack time. The problem is that you lack priority.",
+            "When you prioritize, you are not just choosing what to do. You are choosing what to ignore.",
+            "To restore the Blower System, you must stop relying on willpower. Willpower is a finite resource. You must rely on structure."
+          ],
+          "reason": "The piece presents a clear causal model: unfiltered demands produce reactive work; prioritization and environmental structure redirect attention toward higher-value tasks. It also distinguishes activity from effectiveness and explains tradeoffs. However, the reasoning is simplified, repeatedly expressed through an extended fire-and-forge metaphor, and makes broad psychological claims without much examination. The intellectual depth is material but moderate."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You decide what gets done. You decide what gets ignored.",
+            "This is your contract with yourself.",
+            "The choice is yours."
+          ],
+          "reason": "Responsibility is explicitly assigned to the reader and tied to concrete choices and follow-through."
+        },
+        {
+          "id": "framework_lands",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The 3F system is a framework for building a life of strength, skill, and impact.",
+            "The component we are focusing on today is **The Blower System**.",
+            "This worksheet is designed to install the **PRIORITIZE** model into your daily routine."
+          ],
+          "reason": "The Blower System and PRIORITIZE model are introduced, explained, and translated into sequenced steps."
+        },
+        {
+          "id": "unique_action",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "Tomorrow morning, before you touch your phone, before you check email, before you speak to anyone, you will sit down.",
+            "You will write down the three most critical tasks for the day.",
+            "Do this for seven days."
+          ],
+          "reason": "The morning lock, three Big Rocks, focus block, and seven-day repetition form a concrete action sequence. The underlying technique is familiar, so uniqueness is moderate rather than exceptional."
+        },
+        {
+          "id": "action_relevance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Prioritization is not just a list. It is the regulation of your airflow.",
+            "It ensures that the air goes to the hottest part of the fire, not to the cold spots.",
+            "This is how you refine the Blower System."
+          ],
+          "reason": "The action directly operationalizes the argument: protect attention, direct effort toward high-value work, and sustain consistent output."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You will set a timer for 25 minutes. You will silence your phone. You will close your browser tabs.",
+            "At the end of the day, you will review your list.",
+            "Do this for seven days."
+          ],
+          "reason": "The instructions specify timing, environment, sequence, review, and duration."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Being busy is noise. Effectiveness is signal.",
+            "A spark fades. A blower sustains."
+          ],
+          "reason": "The central distinctions are compressed into accessible contrasts without becoming entirely empty slogans. Some metaphor repetition reduces precision slightly."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You are not here to be busy. You are here to be effective.",
+            "You are not here to react. You are here to lead."
+          ],
+          "reason": "Short declarative sentences, parallel structures, and imperative sequences create strong, controlled rhythm."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 73.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "A spark fades. A blower sustains.",
+            "If you swing randomly, you make noise. If you swing with precision, you make a blade."
+          ],
+          "reason": "Many lines are compact and memorable, but the source repeatedly restates the same reaction-versus-priority and fire-versus-air ideas."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 18.0,
+          "passed": false,
+          "confidence": 0.99,
+          "evidence": [
+            "You must take command of your attention before the world takes it from you.",
+            "You will feel resistance. You will want to check your phone. You will want to do something easy. Ignore it.",
+            "If you do this, you will see a change. You will feel less stressed. You will feel more in control.",
+            "The fire is in you. The Blower System is your discipline. Use it.",
+            "Do the work."
+          ],
+          "reason": "The dominant tone is exhortational and motivational. It uses commands, identity pressure, emotional promises, and a heroic fire metaphor rather than maintaining a restrained, analytical tone."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 76.0,
+          "passed": true,
+          "confidence": 0.91,
+          "evidence": [
+            "This is not busywork. This is data.",
+            "Was it too big? Break it down. Was it not important? Cut it."
+          ],
+          "reason": "The piece does not adopt a therapeutic voice, diagnose the reader, or frame the worksheet as emotional healing. It treats reflection as operational feedback. Some claims about stress, energy, and motivation are psychologically casual, but they do not substantially turn the piece into therapy language."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 21.0,
+          "passed": false,
+          "confidence": 0.99,
+          "evidence": [
+            "You must stop reacting. You must start leading.",
+            "You must rely on structure.",
+            "Do not let the wind die.",
+            "The choice is yours.",
+            "You are not here to react. You are here to lead."
+          ],
+          "reason": "The text repeatedly instructs, admonishes, and frames compliance as a matter of personal resolve and leadership. Its imperative moral posture is materially preacher-like, even when the advice is practical."
+        },
+        {
+          "id": "anti_guru",
+          "score": 35.0,
+          "passed": false,
+          "confidence": 0.97,
+          "evidence": [
+            "The 3F system is a framework for building a life of strength, skill, and impact.",
+            "The component we are focusing on today is **The Blower System**.",
+            "This worksheet is designed to install the **PRIORITIZE** model into your daily routine.",
+            "This is your contract with yourself."
+          ],
+          "reason": "The piece avoids an explicit personal guru persona, but it presents a branded life system with proprietary terminology, sweeping claims, and authoritative commands. Phrases such as \u201cinstall the PRIORITIZE model\u201d and \u201cbuilding a life of strength, skill, and impact\u201d give it a packaged self-mastery and guru-program quality."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.012189
+}

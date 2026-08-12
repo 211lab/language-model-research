@@ -1,0 +1,522 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "qwen3.6-27b-heretic-neo-code",
+  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/qwen3-6-27b-heretic-neo-code/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 78.93,
+  "confidence": 0.972,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 89.46,
+      "penalties": 0.0,
+      "final_score": 89.46,
+      "confidence": 0.977,
+      "metrics": {
+        "fk_grade": 5.08,
+        "words": 1322,
+        "sentences": 156,
+        "average_sentence_words": 8.47,
+        "sentence_length_stddev": 4.79,
+        "concrete_opening": true,
+        "action_signals": 12,
+        "framework_signals": 5,
+        "late_you_ratio": 0.31,
+        "repeated_sentence_ratio": 0.017
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You are not busy. You are scattered.",
+            "Most people think the problem is motivation. It\u2019s not."
+          ],
+          "reason": "Reframes the problem from workload and motivation to scattered attention and poor structure."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Here is the lesson, plain and direct:",
+            "This is where things become strange.",
+            "You have two choices:",
+            "For the next 7 days, you will run your day using a clean Furnace Stack.",
+            "Let\u2019s make this concrete."
+          ],
+          "reason": "The argument moves from a concrete problem, to diagnosis, to interpretation, to choice, prescription, application, and reflection."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "There is a coffee mug sitting on the edge of a workbench.",
+            "It\u2019s chipped on one side, stained from use, and it hasn\u2019t moved all morning."
+          ],
+          "reason": "It opens with a specific, visual object and uses it to establish the reader\u2019s situation."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "That pressure doesn\u2019t disappear. It becomes:",
+            "Anxiety.",
+            "Procrastination.",
+            "Random busywork.",
+            "Late-night catch-up."
+          ],
+          "reason": "The piece interprets how unmanaged pressure becomes recognizable emotional and behavioral patterns."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You answer. You switch tabs. You check email.",
+            "Silence notifications.",
+            "Close unrelated tabs.",
+            "Tell others you\u2019re in focus mode."
+          ],
+          "reason": "The analysis is grounded in observable distraction behaviors and specific corrective actions."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "If you do not choose what matters, everything will pretend to matter\u2014and you will lose.",
+            "You need a simple one, run consistently."
+          ],
+          "reason": "Presents a usable principle about choice, priority, and consistency rather than abstract inspiration."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "Your mind is not a to-do list. It is a furnace.",
+            "If you give your pressure a clear path\u2014roles, priorities, boundaries\u2014it becomes focused energy."
+          ],
+          "reason": "The furnace metaphor gives the productivity advice a coherent model of pressure, structure, and directed effort. The analysis remains accessible rather than highly developed."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 63.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "At first, this sounds like a clich\u00e9. But if you look closely, it\u2019s not.",
+            "You don\u2019t need a complicated system. You need a simple one, run consistently."
+          ],
+          "reason": "Includes limited qualification and avoids presenting complexity as necessary, though it makes few meaningful exceptions or caveats."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "If you do not choose what matters, everything will pretend to matter\u2014and you will lose.",
+            "Decide now."
+          ],
+          "reason": "It clearly assigns agency to the reader\u2019s choices and daily behavior."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "That\u2019s the shape of your day.",
+            "Here is the lesson, plain and direct:",
+            "This is how you turn emotional pressure into usable energy."
+          ],
+          "reason": "The perspective develops from recognizing scattered days, to understanding their cause, to adopting a new operating model."
+        },
+        {
+          "id": "decision",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You have two choices:",
+            "Keep reacting to whatever pops up, feeling rushed and behind.",
+            "Or lead your day with a clear Stack, focused on what actually matters."
+          ],
+          "reason": "States the competing paths plainly and makes the decision explicit."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "For the next 7 days, you will run your day using a clean Furnace Stack.",
+            "Capture and classify (5 minutes)",
+            "Pick and schedule your big rocks (5 minutes)",
+            "Protect and execute",
+            "Review (3 minutes)"
+          ],
+          "reason": "The piece gives a time-bounded protocol with ordered steps, durations, rules, and execution behaviors."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "There is a coffee mug sitting on the edge of a workbench.",
+            "The Furnace Stack is how you organize your roles and responsibilities so your effort has a direction instead of leaking everywhere."
+          ],
+          "reason": "Concrete scenes and examples are consistently connected to abstract claims about attention, responsibility, and structure."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "A coworker asks for \u201ca quick thing.\u201d",
+            "A client sends an \u201curgent\u201d note.",
+            "You check email."
+          ],
+          "reason": "Uses recognizable workplace interruptions and realistic attention failures."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Your task list is not the enemy. A bad Stack is.",
+            "You need a simple one, run consistently."
+          ],
+          "reason": "The writing reduces the issue to a clear distinction without removing the main causal logic or practical detail."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You answer. You switch tabs. You check email. You feel productive.",
+            "You do a lot, but not what moves you forward.",
+            "You lose trust in your own system."
+          ],
+          "reason": "Short sentences, lists, and occasional longer explanatory lines create controlled momentum and emphasis."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "You are not busy. You are scattered.",
+            "Your task list is not the enemy. A bad Stack is.",
+            "No day without 2\u20133 big rocks.",
+            "No big rocks without scheduled time.",
+            "No scheduled time without protected focus.",
+            "Three simple steps:",
+            "You have two choices:",
+            "Or lead your day with a clear Stack, focused on what actually matters."
+          ],
+          "reason": "The piece is generally economical: it uses short sentences, concrete labels, direct contrasts, and compact rules to move from problem to method to action. Its meaning is easy to follow without hype or therapeutic language. However, it loses economy by repeating the same choice, Stack concept, and three-step method in both the main action section and Final Steps. The closing also restates earlier material rather than adding a necessary refinement."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "People rarely need more motivation; they need environments that protect motivation."
+          ],
+          "reason": "It rejects motivational hype and emphasizes systems, constraints, and execution."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The problem is motivation. It\u2019s not.",
+            "The Furnace doesn\u2019t care how busy you are. It cares about structure."
+          ],
+          "reason": "The piece does not adopt a therapeutic voice or invite emotional processing as its solution; it interprets feelings in service of action."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "Let\u2019s be honest about what\u2019s happening.",
+            "Answer these honestly:"
+          ],
+          "reason": "The tone is direct and demanding but remains practical rather than moralizing or sermon-like."
+        },
+        {
+          "id": "anti_guru",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "They don\u2019t have a magical system.",
+            "You don\u2019t need a complicated system. You need a simple one, run consistently."
+          ],
+          "reason": "It rejects special-system mystique and presents an ordinary, repeatable practice instead."
+        },
+        {
+          "id": "closing_strength",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Return to the coffee mug on the workbench.",
+            "Your day should be the same.",
+            "Decide now."
+          ],
+          "reason": "The closing returns to the opening image, restates the central contrast, and ends with a clear decision. Its force is slightly reduced by repeating earlier material."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 83.4,
+      "penalties": 15.0,
+      "final_score": 68.4,
+      "confidence": 0.968,
+      "metrics": {
+        "fk_grade": 6.18,
+        "words": 951,
+        "sentences": 91,
+        "average_sentence_words": 10.45,
+        "sentence_length_stddev": 5.85,
+        "concrete_opening": false,
+        "action_signals": 13,
+        "framework_signals": 1,
+        "late_you_ratio": 0.56,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You are not busy. You are scattered.",
+            "You react to noise instead of leading your work."
+          ],
+          "reason": "Reframes the problem from lack of time to disorganized attention and reactive behavior."
+        },
+        {
+          "id": "argument_progression",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Capture and classify your tasks.",
+            "Pick 2\u20133 big rocks.",
+            "Schedule them.",
+            "Protect your focus."
+          ],
+          "reason": "The piece moves coherently from collection to prioritization, selection, scheduling, protection, and review."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "You treat every task like it\u2019s equally important, so nothing important gets done.",
+            "You fill your schedule with motion, not progress.",
+            "Anything you feel guilty about not doing"
+          ],
+          "reason": "It identifies guilt, noise, false busyness, and indiscriminate urgency as drivers of behavior, though the interpretation remains compact rather than deeply developed."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Prioritize your list by impact, not noise.",
+            "Put that work first.",
+            "Protect it like your job depends on it."
+          ],
+          "reason": "States a usable philosophy: importance should govern attention, and important work must receive protected time."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 70.0,
+          "passed": true,
+          "confidence": 0.92,
+          "evidence": [
+            "If I only finish 3 things today, which ones would make the biggest difference?",
+            "Letting \u201curgent\u201d override \u201cimportant\u201d without checking."
+          ],
+          "reason": "The distinction between impact and noise, and urgent versus important, gives the artifact real conceptual content, though the analysis remains introductory."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "This worksheet is only useful if you act on what you write.",
+            "Decide now. Fill out this worksheet. Then lead your day."
+          ],
+          "reason": "Places results on the reader\u2019s decisions and follow-through rather than on the tool itself."
+        },
+        {
+          "id": "framework_lands",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You will move through the FOCUS model, one letter at a time.",
+            "F \u2013 Find your real tasks",
+            "O \u2013 Order by impact",
+            "C \u2013 Choose your big rocks",
+            "U \u2013 Use time blocks",
+            "S \u2013 Shield your attention"
+          ],
+          "reason": "FOCUS is not merely named; each letter maps to a distinct worksheet operation and the closing restates the sequence."
+        },
+        {
+          "id": "unique_action",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "During priority blocks, I silence notifications, close unrelated tabs, and work in 25-minute sprints.",
+            "A visible cue: \u201cDo not disturb\u201d status"
+          ],
+          "reason": "Provides a specific, repeatable attention-protection routine rather than generic advice to focus."
+        },
+        {
+          "id": "action_relevance",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Each section tells you exactly what to write in the corresponding part of the worksheet.",
+            "No day without big rocks.",
+            "No big rocks without scheduled time.",
+            "No scheduled time without protected focus."
+          ],
+          "reason": "The actions directly enact the argument that scattered work is solved through capture, prioritization, scheduling, and protected attention."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Choose specific time slots.",
+            "What you will silence (phone, notifications, email).",
+            "What you will close (unrelated tabs, apps, documents).",
+            "How you will signal to others you\u2019re in focus mode"
+          ],
+          "reason": "The guidance is strongly behaviorally specified, with observable actions, timing, environmental changes, and review."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Be specific. Be honest.",
+            "If your answers are vague, your day will be vague.",
+            "If I only finish 3 things today, which ones would make the biggest difference?"
+          ],
+          "reason": "The writing reduces a broad productivity problem to clear distinctions and decisions without flattening the central idea."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "No day without big rocks.",
+            "No big rocks without scheduled time.",
+            "No scheduled time without protected focus."
+          ],
+          "reason": "Short sentences, parallel structure, and controlled variation create a clear, memorable cadence."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "Everything else is secondary.",
+            "Do not organize yet. Do not judge. Just get it out of your head.",
+            "A short, focused list: 2\u20133 items you are committed to finishing."
+          ],
+          "reason": "The language is direct and operational, with little abstraction or redundant explanation."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 38.0,
+          "passed": false,
+          "confidence": 0.96,
+          "evidence": [
+            "You are not busy. You are scattered.",
+            "Because it does.",
+            "Decide now. Fill out this worksheet. Then lead your day."
+          ],
+          "reason": "The opening uses a sharp corrective frame, but the piece shifts into directive productivity motivation and includes outcome promises: \u201cComplete more,\u201d \u201cReduce time,\u201d and \u201cFinish your workday earlier.\u201d Its closing exhortation is motivational rather than distinctly anti-motivational."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "Prioritize your list by impact, not noise.",
+            "Choose specific time slots.",
+            "What you will silence (phone, notifications, email)."
+          ],
+          "reason": "The source stays focused on task classification, scheduling, and attention controls. It does not adopt a therapeutic voice or present emotional processing as the solution. The limited references to guilt and stress are practical task examples, not therapy framing."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 46.0,
+          "passed": false,
+          "confidence": 0.95,
+          "evidence": [
+            "Treat these blocks as non-negotiable.",
+            "This worksheet is only useful if you act on what you write.",
+            "Decide now. Fill out this worksheet. Then lead your day."
+          ],
+          "reason": "The material is practical, but its repeated imperatives, moral pressure, and command language make it substantially preachy. \u201cNon-negotiable\u201d and \u201cDecide now\u201d instruct and exhort rather than simply explain a usable method."
+        },
+        {
+          "id": "anti_guru",
+          "score": 63.0,
+          "passed": false,
+          "confidence": 0.92,
+          "evidence": [
+            "You will move through the FOCUS model, one letter at a time.",
+            "Use this worksheet daily for the next 7 days.",
+            "If you do this for 7 days, you will:"
+          ],
+          "reason": "There is no explicit guru persona or claim of special authority, and the method is concrete. However, the branded \u201cFOCUS model,\u201d prescriptive seven-day usage, and promised results create a mild self-help-program posture rather than a clearly anti-guru stance."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.010002
+}

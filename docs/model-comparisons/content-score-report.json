@@ -1,1477 +1,493 @@
 {
-  "run_id": "30626dc4ba404083b7602078798ef4f5",
-  "evaluator_cost": 0.031752,
+  "run_id": "f1edf9d1f84c400ea0d0ca87b54362a7",
+  "evaluator_cost": 0.009845,
   "reports": [
     {
       "schema_version": "content-score-v4",
       "rubric_version": "steadyburn-v1",
-      "model": "gemma-4-e4b-it",
-      "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/gemma-4-e4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
-      "content_score": 84.52,
-      "confidence": 0.967,
+      "model": "gemma-4-12b-obliterated",
+      "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/gemma-4-12b-obliterated/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "content_score": 43.73,
+      "confidence": 0.922,
       "artifacts": {
         "index.md": {
           "artifact": "index.md",
-          "base_score": 82.71,
-          "penalties": 0.0,
-          "final_score": 82.71,
-          "confidence": 0.966,
+          "base_score": 75.08,
+          "penalties": 51.0,
+          "final_score": 24.08,
+          "confidence": 0.871,
           "metrics": {
-            "fk_grade": 7.26,
-            "words": 782,
-            "sentences": 57,
-            "average_sentence_words": 13.72,
-            "sentence_length_stddev": 7.36,
-            "concrete_opening": true,
-            "action_signals": 6,
-            "framework_signals": 5,
-            "late_you_ratio": 0.86,
+            "fk_grade": 10.61,
+            "words": 837,
+            "sentences": 47,
+            "average_sentence_words": 17.81,
+            "sentence_length_stddev": 7.11,
+            "concrete_opening": false,
+            "action_signals": 1,
+            "framework_signals": 9,
+            "late_you_ratio": 0.0,
             "repeated_sentence_ratio": 0.0
           },
           "criteria": [
             {
               "id": "perspective_shift",
+              "score": 82.0,
+              "passed": true,
+              "confidence": 0.98,
+              "evidence": [
+                "To master tasks, one must move from a reactive posture to a proactive one.",
+                "This requires a shift from reacting to requests to enforcing a hierarchy of work."
+              ],
+              "reason": "The artifact clearly reframes task management from reactive response to deliberate prioritization."
+            },
+            {
+              "id": "argument_progression",
+              "score": 84.0,
+              "passed": true,
+              "confidence": 0.98,
+              "evidence": [
+                "When every task on a list is treated as equally important, the list becomes a source of chaos rather than a roadmap for progress.",
+                "To move toward this, one must first sort and categorize",
+                "The choice is between continuing to struggle with a disorganized to-do list where every task seems equally urgent, or mastering task prioritization"
+              ],
+              "reason": "It moves coherently from problem, to interpretation, to framework, to choice, and finally to implementation."
+            },
+            {
+              "id": "concrete_opening",
+              "score": 58.0,
+              "passed": false,
+              "confidence": 0.94,
+              "evidence": [
+                "A list of tasks can be viewed as a construction project.",
+                "the foundation must be poured before the roof can be installed"
+              ],
+              "reason": "The opening uses tangible construction details, but it begins with an abstract analogy rather than a concrete lived moment, scene, or immediately recognizable task situation. The deterministic concrete-opening signal is false."
+            },
+            {
+              "id": "psychological_interpretation",
               "score": 86.0,
               "passed": true,
               "confidence": 0.98,
               "evidence": [
-                "We mistake motion for progress.",
-                "The problem is not a lack of time. The problem is a lack of a filter."
+                "constant context switching, which is the mental tax of jumping between different types of tasks",
+                "This constant switching exhausts the worker and fragments their focus"
               ],
-              "reason": "Clearly reframes productivity from activity and time management toward attention and selection."
-            },
-            {
-              "id": "argument_progression",
-              "score": 83.0,
-              "passed": true,
-              "confidence": 0.97,
-              "evidence": [
-                "What I've started noticing is the difference between being busy and being effective.",
-                "This is where the Furnace comes in.",
-                "That mechanism is the Tongs.",
-                "The choice is simple, though difficult"
-              ],
-              "reason": "Moves coherently from problem, to interpretation, to framework, to decision, though the metaphor system becomes somewhat elaborate."
-            },
-            {
-              "id": "concrete_opening",
-              "score": 96.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "A pair of heavy-duty work boots sits by the door.",
-                "They are scuffed and worn, built for a specific kind of ground."
-              ],
-              "reason": "Opens with a specific, physical scene before introducing abstraction."
-            },
-            {
-              "id": "psychological_interpretation",
-              "score": 78.0,
-              "passed": true,
-              "confidence": 0.93,
-              "evidence": [
-                "the anxiety, the demands, the drive",
-                "If you allow that pressure to spill out into the general noise of the day, it just becomes stress.",
-                "a state of constant overwhelm"
-              ],
-              "reason": "Explains how pressure becomes stress and overwhelm through unfiltered demands, though the psychological account remains fairly broad."
+              "reason": "It explains the cognitive cost and attentional mechanism behind disorganized work rather than merely naming distraction."
             },
             {
               "id": "behavioral_grounding",
-              "score": 74.0,
+              "score": 86.0,
               "passed": true,
-              "confidence": 0.96,
+              "confidence": 0.98,
               "evidence": [
-                "We are constantly responding\u2014to the email ping, the meeting request, the small, immediate demand.",
-                "The Tongs force us to identify the \"big rocks\"\u2014the few tasks that, if completed, make the entire day a success.",
-                "It is the discipline of saying \"no\" to the good things so you can say \"yes\" to the great things."
+                "Select the top three most critical tasks",
+                "Protect these time blocks by removing all distractions",
+                "Verify that high-priority tasks are completed before moving on to lower-priority items."
               ],
-              "reason": "Behavior is materially grounded in recognizable work situations and includes observable actions: pausing, assessing, selecting, identifying priority tasks, and declining lower-value demands. The score is limited because the piece does not explain how to perform these actions in a repeatable way; the Furnace, Forge, and Tongs remain largely metaphorical."
+              "reason": "The framework is translated into observable actions and sequencing."
             },
             {
               "id": "practical_philosophy",
-              "score": 85.0,
-              "passed": true,
-              "confidence": 0.97,
-              "evidence": [
-                "mastery is not about doing more; it is about choosing better.",
-                "The Tongs force us to identify the \"big rocks\""
-              ],
-              "reason": "Presents a usable principle about prioritization and links it to action."
-            },
-            {
-              "id": "intellectual_depth",
-              "score": 70.0,
+              "score": 81.0,
               "passed": true,
               "confidence": 0.94,
               "evidence": [
-                "the problem is not a lack of time. The problem is a lack of a filter.",
-                "This isn't about managing time better; it's about managing attention better.",
-                "The system that protects your energy is the system that forces you to prioritize.",
-                "It is not just about having good intentions; it is about having a structure that protects those intentions."
+                "The ability to prioritize is not just a technical skill; it is a structural requirement.",
+                "The choice to prioritize means choosing to protect the most critical projects from the noise of the everyday."
               ],
-              "reason": "The piece makes a coherent conceptual distinction between time and attention, urgency and importance, intention and structure, and connects prioritization to integrity. That is substantive thought rather than empty motivation. Depth is constrained by repeated assertion and limited examination of tradeoffs, exceptions, or how the proposed structure works under competing priorities."
+              "reason": "It presents prioritization as a governing principle for directing limited effort, not merely as a productivity trick."
+            },
+            {
+              "id": "intellectual_depth",
+              "score": 73.0,
+              "passed": true,
+              "confidence": 0.94,
+              "evidence": [
+                "Without a clear hierarchy, effort is wasted on trivialities, and the ability to execute is diluted.",
+                "If no choice is made, the urgent will always win."
+              ],
+              "reason": "The artifact identifies hierarchy, urgency, attention, and execution as related causes. The insight is sound but remains fairly familiar and lightly developed."
             },
             {
               "id": "qualification_nuance",
-              "score": 76.0,
+              "score": 68.0,
               "passed": true,
-              "confidence": 0.96,
+              "confidence": 0.94,
               "evidence": [
-                "The smaller claim is actually more interesting",
-                "Before going further, I want to be careful here.",
-                "The choice is simple, though difficult"
+                "When a task is urgent, it demands attention. When a task is important, it requires a choice.",
+                "It means recognizing that some tasks are merely distractions, even if they are urgent."
               ],
-              "reason": "Includes qualification and acknowledges difficulty, though it offers limited counterexamples or boundary conditions."
+              "reason": "It distinguishes urgency from importance and acknowledges that urgent work may not be strategically important. The treatment lacks exceptions or boundary conditions."
             },
             {
               "id": "personal_responsibility",
-              "score": 88.0,
+              "score": 87.0,
               "passed": true,
-              "confidence": 0.99,
+              "confidence": 0.97,
               "evidence": [
-                "You can choose to implement the Tongs.",
-                "You can choose to build the structure that preserves your energy"
+                "If no choice is made, the urgent will always win."
               ],
-              "reason": "Places responsibility for changing the system with the reader without claiming total control over circumstances."
+              "reason": "The outcome is assigned to deliberate choices and protected commitments rather than external conditions."
             },
             {
               "id": "perspective_progression",
               "score": 83.0,
               "passed": true,
-              "confidence": 0.95,
+              "confidence": 0.94,
               "evidence": [
-                "The boots by the door are ready to move, but they must be pointed somewhere.",
-                "They must be directed."
+                "In many daily workflows, however, the construction project is replaced by a constant exercise in firefighting.",
+                "This is where the Blower System becomes relevant.",
+                "This requires a shift from reacting to requests to enforcing a hierarchy of work."
               ],
-              "reason": "Develops the opening image from movement to purposeful direction."
+              "reason": "The perspective develops from an orderly external analogy, to the lived problem of firefighting, to a deliberate operating model."
             },
             {
               "id": "decision",
-              "score": 92.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "The choice is simple, though difficult: You can continue to live in a state of constant overwhelm",
-                "Or, you can choose to implement the Tongs."
-              ],
-              "reason": "Presents a clear alternative and makes the central decision explicit."
-            },
-            {
-              "id": "prescribed_action",
-              "score": 78.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "choose to implement the Tongs.",
-                "build the structure that preserves your energy and directs your effort"
-              ],
-              "reason": "Prescribes choosing and building a prioritization structure, though it does not provide a detailed implementation sequence."
-            },
-            {
-              "id": "concrete_abstract_balance",
               "score": 88.0,
               "passed": true,
               "confidence": 0.99,
               "evidence": [
-                "A pair of heavy-duty work boots sits by the door.",
-                "The system that protects your energy is the system that forces you to prioritize."
+                "The choice is between continuing to struggle with a disorganized to-do list where every task seems equally urgent, or mastering task prioritization"
               ],
-              "reason": "Balances physical imagery with abstract claims about attention, effort, and structure."
+              "reason": "The central decision is explicit and consequential: accept reactive disorder or impose a hierarchy."
             },
             {
-              "id": "everyday_realism",
-              "score": 92.0,
+              "id": "prescribed_action",
+              "score": 94.0,
               "passed": true,
               "confidence": 0.99,
               "evidence": [
-                "the email ping, the meeting request, the small, immediate demand",
-                "a quick reply, a minor chore, a colleague's immediate crisis"
+                "Sort and Categorize",
+                "Target the Big Rocks",
+                "Route the Schedule",
+                "Isolate and Execute",
+                "Validate Completion"
               ],
-              "reason": "Uses ordinary, credible pressures rather than inflated scenarios."
+              "reason": "It gives a clear five-step procedure with concrete implementation instructions."
+            },
+            {
+              "id": "concrete_abstract_balance",
+              "score": 82.0,
+              "passed": true,
+              "confidence": 0.97,
+              "evidence": [
+                "The choice to prioritize means choosing to protect the most critical projects from the noise of the everyday.",
+                "When a forge is managed correctly, it ensures that metal is transformed into useful tools rather than being melted into useless scrap."
+              ],
+              "reason": "Concrete construction, furnace, forge, scheduling, and task examples support abstract claims about hierarchy and purposeful effort."
+            },
+            {
+              "id": "everyday_realism",
+              "score": 76.0,
+              "passed": true,
+              "confidence": 0.96,
+              "evidence": [
+                "minor errands and distractions",
+                "the distractions that would otherwise fragment the focus",
+                "a disorganized to-do list where every task seems equally urgent"
+              ],
+              "reason": "It recognizes common work pressures and the ordinary experience of competing tasks, though it does not depict a particularly specific real-life situation."
             },
             {
               "id": "intellectual_simplicity",
-              "score": 89.0,
+              "score": 70.0,
               "passed": true,
-              "confidence": 0.98,
+              "confidence": 0.88,
               "evidence": [
-                "The problem is not a lack of time. The problem is a lack of a filter."
+                "identifying the \"Big Rocks\"\u2014the high-impact tasks that drive the most progress",
+                "Identify \"A-level\" tasks as those providing the most significant impact and \"C-level\" tasks as minor errands."
               ],
-              "reason": "Reduces the central idea to a clear contrast without flattening it."
+              "reason": "The central idea is made usable through hierarchy, labels, and a short sequence. Clarity is weakened by multiple overlapping metaphors and system terms."
             },
             {
               "id": "sentence_rhythm",
-              "score": 86.0,
+              "score": 78.0,
               "passed": true,
-              "confidence": 0.98,
+              "confidence": 0.96,
               "evidence": [
-                "We are constantly responding\u2014to the email ping, the meeting request, the small, immediate demand.",
-                "We are always moving. We are always catching up."
+                "Then, one must target the Big Rocks, selecting the top three most critical tasks and treating them as non-negotiable appointments. Finally, one must isolate and execute"
               ],
-              "reason": "Varies sentence lengths and uses parallel short sentences effectively. The repeated cadence occasionally becomes formulaic."
+              "reason": "The prose has useful variation and list rhythm, though repeated \"one must\" constructions make portions mechanically uniform."
             },
             {
               "id": "semantic_economy",
-              "score": 72.0,
-              "passed": true,
-              "confidence": 0.95,
+              "score": 55.0,
+              "passed": false,
+              "confidence": 0.93,
               "evidence": [
-                "This matters because mastery is not about doing more; it is about choosing better."
+                "The Blower System is the practice of choosing the most important tasks and executing them without interruption.",
+                "The choice to prioritize means choosing to protect the most critical projects from the noise of the everyday.",
+                "The choice is to master the Blower System."
               ],
-              "reason": "Contains concise formulations, but several passages restate the same prioritization claim through Furnace, Forge, Tongs, Fire, and boots imagery."
+              "reason": "The piece is structurally clear and provides a usable five-step process, but it spends substantial space restating the same prioritization idea through construction, furnace, forge, and blower metaphors. The conclusion also repeats the branded framework without adding meaning."
             },
             {
               "id": "anti_motivational",
-              "score": 84.0,
+              "score": 88.0,
               "passed": true,
-              "confidence": 0.98,
+              "confidence": 0.96,
               "evidence": [
-                "We become highly efficient machines for doing busywork, but terrible operators for building anything meaningful.",
-                "a state of constant overwhelm"
+                "If no choice is made, the urgent will always win.",
+                "Verify that high-priority tasks are completed before moving on to lower-priority items."
               ],
-              "reason": "Uses sober diagnosis rather than inflated inspiration or empty encouragement."
+              "reason": "The tone is operational and unsentimental, with no inflated promises or emotional encouragement."
             },
             {
               "id": "anti_therapy",
-              "score": 82.0,
+              "score": 91.0,
               "passed": true,
-              "confidence": 0.95,
+              "confidence": 0.98,
               "evidence": [
-                "This isn't about managing time better; it's about managing attention better.",
-                "The Furnace demands that we stop reacting and start directing."
+                "This constant switching exhausts the worker and fragments their focus.",
+                "Protect these time blocks by removing all distractions."
               ],
-              "reason": "Focuses on attention, structure, and conduct rather than emotional soothing or therapeutic validation."
+              "reason": "It discusses cognitive load behaviorally without therapeutic framing, emotional processing, or validation language."
             },
             {
               "id": "anti_preacher",
-              "score": 84.0,
-              "passed": true,
-              "confidence": 0.94,
-              "evidence": [
-                "I think this is where the trap lies.",
-                "Before going further, I want to be careful here."
-              ],
-              "reason": "Uses a measured, self-limiting voice instead of moralizing or issuing broad commandments."
+              "score": 0.0,
+              "passed": false,
+              "confidence": 0.0,
+              "evidence": [],
+              "reason": "Missing evaluator result"
             },
             {
               "id": "anti_guru",
-              "score": 86.0,
-              "passed": true,
-              "confidence": 0.95,
-              "evidence": [
-                "The smaller claim is actually more interesting",
-                "The choice is simple, though difficult"
-              ],
-              "reason": "Avoids claims of special authority and presents the framework as an argument rather than revelation."
+              "score": 0.0,
+              "passed": false,
+              "confidence": 0.0,
+              "evidence": [],
+              "reason": "Missing evaluator result"
             },
             {
               "id": "closing_strength",
-              "score": 68.0,
-              "passed": true,
-              "confidence": 0.94,
+              "score": 55.0,
+              "passed": false,
+              "confidence": 0.96,
               "evidence": [
-                "The boots need a clear path. They need a target"
+                "The choice is to master the Blower System."
               ],
-              "reason": "Returns to the opening image and reinforces direction, but the ending is abrupt and the final sentence lacks a concluding elaboration."
+              "reason": "The closing is clear but weak: it repeats the branded concept rather than delivering a sharper final insight, consequence, or memorable practical instruction."
             }
           ]
         },
         "INSTRUCTIONS.md": {
           "artifact": "INSTRUCTIONS.md",
-          "base_score": 86.33,
-          "penalties": 0.0,
-          "final_score": 86.33,
-          "confidence": 0.968,
+          "base_score": 78.38,
+          "penalties": 15.0,
+          "final_score": 63.38,
+          "confidence": 0.974,
           "metrics": {
-            "fk_grade": 7.96,
-            "words": 799,
-            "sentences": 59,
-            "average_sentence_words": 13.54,
-            "sentence_length_stddev": 7.21,
-            "concrete_opening": true,
-            "action_signals": 3,
-            "framework_signals": 4,
+            "fk_grade": 11.57,
+            "words": 643,
+            "sentences": 32,
+            "average_sentence_words": 20.09,
+            "sentence_length_stddev": 5.63,
+            "concrete_opening": false,
+            "action_signals": 2,
+            "framework_signals": 1,
             "late_you_ratio": 0.33,
             "repeated_sentence_ratio": 0.0
           },
           "criteria": [
             {
               "id": "perspective_shift",
-              "score": 88.0,
+              "score": 82.0,
               "passed": true,
-              "confidence": 0.99,
+              "confidence": 0.98,
               "evidence": [
-                "The truth is that mastery is not about doing more; it is about choosing better.",
-                "We are going to stop treating your to-do list as a simple dump of obligations and start treating it as a strategic weapon."
+                "To move from a reactive posture to a proactive one",
+                "not just busy, but productive"
               ],
-              "reason": "The piece clearly reframes productivity from activity volume to selective, high-impact choice."
+              "reason": "The artifact clearly reframes work from reactive urgency toward deliberate, high-impact execution."
             },
             {
               "id": "argument_progression",
+              "score": 92.0,
+              "passed": true,
+              "confidence": 0.99,
+              "evidence": [
+                "Sort and Categorize",
+                "Target the Big Rocks",
+                "Route the Schedule",
+                "Isolate and Execute",
+                "Validate Completion",
+                "Evaluate and Adjust"
+              ],
+              "reason": "The argument advances in a coherent sequence from classification through prioritization, scheduling, execution, verification, and review."
+            },
+            {
+              "id": "psychological_interpretation",
+              "score": 78.0,
+              "passed": true,
+              "confidence": 0.96,
+              "evidence": [
+                "urgent but less critical tasks consume the energy needed for high-impact projects",
+                "your time from being hijacked by lower-priority items"
+              ],
+              "reason": "It explains how urgency, interruption, and lower-value work displace important work, though the psychological account remains operational rather than deeply interpretive."
+            },
+            {
+              "id": "practical_philosophy",
+              "score": 80.0,
+              "passed": true,
+              "confidence": 0.97,
+              "evidence": [
+                "Knowing what to do is not the same as knowing what to do first.",
+                "not just busy, but productive"
+              ],
+              "reason": "The piece articulates a usable principle: effectiveness depends on hierarchy and sequencing, not activity alone."
+            },
+            {
+              "id": "intellectual_depth",
+              "score": 64.0,
+              "passed": true,
+              "confidence": 0.96,
+              "evidence": [
+                "Knowing what to do is not the same as knowing what to do first.",
+                "urgent but less critical tasks consume the energy needed for high-impact projects",
+                "Determine if certain tasks should be removed, delegated, or broken down into smaller, more manageable steps"
+              ],
+              "reason": "The artifact makes a meaningful distinction between urgency and importance and includes prioritization, execution, validation, and adjustment. Its reasoning remains practical and familiar rather than deeply analytical."
+            },
+            {
+              "id": "personal_responsibility",
+              "score": 83.0,
+              "passed": true,
+              "confidence": 0.98,
+              "evidence": [
+                "you are not allowing minor errands to distract you from your primary goals"
+              ],
+              "reason": "Responsibility for prioritization, protection of time, and execution is placed directly on the reader."
+            },
+            {
+              "id": "framework_lands",
+              "score": 92.0,
+              "passed": true,
+              "confidence": 0.99,
+              "evidence": [
+                "identify the top three most critical tasks",
+                "Selecting exactly three critical tasks",
+                "Assigning specific time slots (e.g., 9:00 AM to 11:00 AM)"
+              ],
+              "reason": "The Big Rocks model is concrete, limited, sequenced, and operationalized through scheduling and completion checks."
+            },
+            {
+              "id": "unique_action",
+              "score": 0.0,
+              "passed": false,
+              "confidence": 0.99,
+              "evidence": [],
+              "reason": "No letter-specific action or distinctive action tied to a particular letter appears in the source. The workflow is a generic task-prioritization method."
+            },
+            {
+              "id": "action_relevance",
+              "score": 91.0,
+              "passed": true,
+              "confidence": 0.99,
+              "evidence": [
+                "treating that block as a fixed commitment"
+              ],
+              "reason": "The action directly follows the argument that hierarchy must be protected from urgency and interruption."
+            },
+            {
+              "id": "behavioral_grounding",
+              "score": 93.0,
+              "passed": true,
+              "confidence": 0.99,
+              "evidence": [
+                "listing every known task and grouping them by importance",
+                "Selecting exactly three critical tasks",
+                "Assigning specific time slots (e.g., 9:00 AM to 11:00 AM)",
+                "Checking off the \"Big Rocks\" first"
+              ],
+              "reason": "The guidance is operationalized through observable actions, constraints, time blocks, distraction controls, completion checks, and review."
+            },
+            {
+              "id": "intellectual_simplicity",
+              "score": 88.0,
+              "passed": true,
+              "confidence": 0.98,
+              "evidence": [
+                "Selecting exactly three critical tasks",
+                "A-level",
+                "C-level"
+              ],
+              "reason": "The three-task limit and simple category labels reduce cognitive load while preserving the central prioritization argument."
+            },
+            {
+              "id": "sentence_rhythm",
               "score": 84.0,
               "passed": true,
               "confidence": 0.97,
               "evidence": [
-                "You are reacting to demands\u2014demands from colleagues, demands from your inbox, demands from your own anxiety\u2014and these demands are almost always small, immediate, and unimportant.",
-                "Identifying the big rocks is useless if you don't protect the time needed to complete them.",
-                "A plan is a living document."
+                "Sort and Categorize",
+                "Target the Big Rocks",
+                "Route the Schedule",
+                "Isolate and Execute"
               ],
-              "reason": "The argument moves coherently from diagnosing reactive work to selecting priorities, protecting them, pruning, organizing, reviewing, and reducing distraction."
-            },
-            {
-              "id": "psychological_interpretation",
-              "score": 70.0,
-              "passed": true,
-              "confidence": 0.93,
-              "evidence": [
-                "This is the trap of the urgent.",
-                "these demands are almost always small, immediate, and unimportant.",
-                "demands from your own anxiety"
-              ],
-              "reason": "It interprets urgency as a behavioral and psychological trap, especially anxiety-driven reactivity. The interpretation is useful but relatively brief and not deeply developed."
-            },
-            {
-              "id": "practical_philosophy",
-              "score": 90.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "The goal is efficiency, not obligation fulfillment."
-              ],
-              "reason": "States a usable philosophy of selection, omission, and tradeoffs rather than merely offering productivity tips."
-            },
-            {
-              "id": "intellectual_depth",
-              "score": 72.0,
-              "passed": true,
-              "confidence": 0.91,
-              "evidence": [
-                "identify the 2-3 tasks that, if completed, will create the most irreversible positive change in your life or goals.",
-                "these are your growth drivers.",
-                "Categorizing tasks into quadrants"
-              ],
-              "reason": "The distinction between activity, impact, urgency, and growth gives the piece real conceptual substance. Depth is limited by its familiar productivity framework and brief treatment of competing values."
-            },
-            {
-              "id": "personal_responsibility",
-              "score": 87.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "This step requires you to actively prune your list.",
-                "feeling calm and in charge of your own time"
-              ],
-              "reason": "Places responsibility on the reader to choose, protect, remove, review, and adapt tasks."
-            },
-            {
-              "id": "framework_lands",
-              "score": 96.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "P: Plan the day's big rocks.",
-                "R: Reserve deep focus time.",
-                "I: Identify what to drop.",
-                "O: Organize tasks by impact.",
-                "R: Review and adjust daily.",
-                "I: Implement focus techniques.",
-                "T: Track progress and celebrate."
-              ],
-              "reason": "The PRIORIT framework is explicit, sequential, and operationalized with avoid, better, and worksheet actions."
-            },
-            {
-              "id": "unique_action",
-              "score": 91.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "For each of your top three \"big rocks,\" assign a specific, protected time block in your schedule.",
-                "For your highest priority task, list three specific, concrete actions you will take to eliminate distractions during your scheduled focus block."
-              ],
-              "reason": "Provides concrete actions tied to the letter-specific steps, especially time protection and distraction removal."
-            },
-            {
-              "id": "action_relevance",
-              "score": 94.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "Identifying the big rocks is useless if you don't protect the time needed to complete them.",
-                "Apply a matrix (like the Eisenhower Matrix) to your remaining tasks."
-              ],
-              "reason": "The actions directly implement the central argument: select high-impact work, protect it, classify the remainder, and remove friction."
-            },
-            {
-              "id": "behavioral_grounding",
-              "score": 94.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "Phone on silent, in another room",
-                "Close all tabs except the project document",
-                "write down why they weren't completed and decide if they need to be moved, broken down, or eliminated."
-              ],
-              "reason": "Grounds the framework in observable behaviors and review decisions rather than abstract intention."
-            },
-            {
-              "id": "intellectual_simplicity",
-              "score": 86.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "identify the 2-3 tasks",
-                "The goal is efficiency, not obligation fulfillment."
-              ],
-              "reason": "It reduces a broad productivity problem to a manageable number of decisions without erasing the underlying distinction between urgency, impact, and obligation."
-            },
-            {
-              "id": "sentence_rhythm",
-              "score": 83.0,
-              "passed": true,
-              "confidence": 0.97,
-              "evidence": [
-                "small, immediate, and unimportant",
-                "postponed, delegated, or eliminated entirely"
-              ],
-              "reason": "Parallel phrasing, contrasts, and compact lists create readable variation across the instructional prose."
+              "reason": "Parallel section headings and repeated avoid/work-better contrasts create clear instructional rhythm."
             },
             {
               "id": "semantic_economy",
-              "score": 78.0,
+              "score": 73.0,
               "passed": true,
               "confidence": 0.94,
               "evidence": [
-                "The goal is efficiency, not obligation fulfillment.",
-                "A plan is a living document.",
-                "What works better:"
+                "Big Rocks",
+                "fixed commitment",
+                "primary targets"
               ],
-              "reason": "Most sentences carry clear instructional value, but the artifact repeats the avoid/better/action structure and restates familiar productivity advice across sections."
+              "reason": "Several compact terms carry the framework efficiently, though the piece repeats the same priority message across multiple sections."
             },
             {
               "id": "anti_motivational",
-              "score": 81.0,
+              "score": 86.0,
               "passed": true,
-              "confidence": 0.93,
+              "confidence": 0.95,
               "evidence": [
-                "The goal is efficiency, not obligation fulfillment.",
-                "Feeling guilty about dropping a task."
+                "Without a clear hierarchy, your daily work becomes a constant exercise in firefighting",
+                "Complete the worksheet to move from a reactive state to a proactive, structured execution model."
               ],
-              "reason": "The piece is predominantly operational rather than inspirational. \u201cstrategic weapon,\u201d \u201cirreversible positive change,\u201d and \u201ccelebrate\u201d introduce limited motivational or hype-adjacent language."
+              "reason": "The piece is primarily procedural and does not rely on praise, emotional uplift, or empty encouragement. Some performance-oriented language such as \"high-impact\" and \"productive\" is present but does not dominate the tone."
             },
             {
               "id": "anti_therapy",
-              "score": 91.0,
+              "score": 99.0,
               "passed": true,
-              "confidence": 0.98,
+              "confidence": 0.99,
               "evidence": [
-                "The goal is efficiency, not obligation fulfillment.",
-                "Objectively assessing the task's impact"
+                "Review your daily progress to identify recurring issues in your workflow.",
+                "Identifying specific tasks that are consistently neglected and deciding whether they should be removed from the list entirely or broken down into smaller steps."
               ],
-              "reason": "The piece treats emotional states as practical obstacles and does not adopt a therapeutic, soothing, or introspective voice."
+              "reason": "The source addresses workflow behavior and task management without diagnosing emotions, offering emotional healing, or using therapeutic framing."
             },
             {
               "id": "anti_preacher",
-              "score": 87.0,
-              "passed": true,
-              "confidence": 0.97,
-              "evidence": [
-                "Life happens, and the plan must adapt."
-              ],
-              "reason": "It gives direct instruction without moral condemnation and acknowledges that plans must respond to reality."
-            },
-            {
-              "id": "anti_guru",
-              "score": 91.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "Assuming the plan will work perfectly. Life happens, and the plan must adapt.",
-                "A plan is a living document."
-              ],
-              "reason": "The artifact presents a repeatable process rather than personal authority, secret knowledge, or claims of guaranteed transformation."
-            }
-          ]
-        }
-      },
-      "evaluator_cost": 0.031752
-    },
-    {
-      "schema_version": "content-score-v4",
-      "rubric_version": "steadyburn-v1",
-      "model": "cydonia-24b-v4.3",
-      "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/cydonia-24b-v4-3/2026-08-07-master-your-tasks-prioritization-and-time-management",
-      "content_score": 73.72,
-      "confidence": 0.953,
-      "artifacts": {
-        "index.md": {
-          "artifact": "index.md",
-          "base_score": 83.08,
-          "penalties": 21.0,
-          "final_score": 62.08,
-          "confidence": 0.944,
-          "metrics": {
-            "fk_grade": 7.82,
-            "words": 1579,
-            "sentences": 121,
-            "average_sentence_words": 13.05,
-            "sentence_length_stddev": 8.75,
-            "concrete_opening": true,
-            "action_signals": 13,
-            "framework_signals": 9,
-            "late_you_ratio": 0.53,
-            "repeated_sentence_ratio": 0.0
-          },
-          "criteria": [
-            {
-              "id": "perspective_shift",
-              "score": 90.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "Most people think they have a time management problem. They don't. They have a prioritization problem."
-              ],
-              "reason": "The artifact clearly replaces a familiar diagnosis with a sharper one: the central issue is choice and prioritization, not available hours."
-            },
-            {
-              "id": "argument_progression",
-              "score": 86.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "## The Problem Isn't Time",
-                "## The Brutal Truth",
-                "## The System: C L E A R",
-                "## The Furnace, The Forge, and The Anvil"
-              ],
-              "reason": "It moves from concrete problem, to diagnosis, to hard constraint, to method, then to a broader structural metaphor. The final section is less integrated and appears unfinished."
-            },
-            {
-              "id": "concrete_opening",
-              "score": 98.0,
-              "passed": true,
-              "confidence": 1.0,
-              "evidence": [
-                "There's a coffee mug sitting on my workbench. It's not special\u2014just a plain ceramic mug with a chip on the rim."
-              ],
-              "reason": "The opening begins with a specific object, setting, time, and observable behavior before introducing the abstract claim."
-            },
-            {
-              "id": "psychological_interpretation",
-              "score": 86.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "I keep making more coffee because I feel like I need the energy, but the truth is I'm avoiding the project that actually matters."
-              ],
-              "reason": "It interprets avoidance beneath apparently productive behavior and explains why low-value tasks feel productive."
-            },
-            {
-              "id": "behavioral_grounding",
-              "score": 94.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "checking emails, organizing my desk, researching \"optimization strategies\" that are really just procrastination in disguise."
-              ],
-              "reason": "The psychological claims are anchored in recognizable actions rather than abstract personality labels."
-            },
-            {
-              "id": "practical_philosophy",
-              "score": 88.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "The question isn't whether you'll have to say no to something\u2014it's whether you'll say no to the right things."
-              ],
-              "reason": "The piece develops a practical principle about tradeoffs and applies it to daily choices."
-            },
-            {
-              "id": "intellectual_depth",
               "score": 76.0,
               "passed": true,
-              "confidence": 0.95,
-              "evidence": [
-                "The difference between people who get ahead and people who spin their wheels isn't how many hours they work\u2014it's what they choose to work on."
-              ],
-              "reason": "It offers a meaningful distinction between effort and value, though the argument remains fairly familiar and does not examine many exceptions."
-            },
-            {
-              "id": "qualification_nuance",
-              "score": 56.0,
-              "passed": true,
-              "confidence": 0.644,
-              "evidence": [],
-              "reason": "The piece includes several meaningful qualifiers and acknowledges variation in method and circumstances. However, its central claims are often broad and categorical, such as \u201cMost people think they have a time management problem. They don't,\u201d and it presents the system as broadly necessary rather than identifying clear limits, exceptions, or contexts where it may not apply. (evidence could not be verified)"
-            },
-            {
-              "id": "personal_responsibility",
-              "score": 91.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "It requires one thing: the discipline to follow it, even when it's uncomfortable.",
-                "This is where you practice saying \"no\" to yourself."
-              ],
-              "reason": "The system assigns responsibility to the reader's choices and follow-through without outsourcing change to tools or circumstances."
-            },
-            {
-              "id": "perspective_progression",
-              "score": 84.0,
-              "passed": true,
-              "confidence": 0.97,
-              "evidence": [
-                "I'm busy, but I'm not productive. There's a difference, and I think I've finally figured out why.",
-                "The C L E A R system is the mechanism that builds and maintains this structure."
-              ],
-              "reason": "The perspective develops from personal confusion, to a general diagnosis, to a behavioral system, and finally to a model of stable structure."
-            },
-            {
-              "id": "decision",
-              "score": 93.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "label each task with one letter:",
-                "By forcing yourself to choose only 3 A-tasks per day"
-              ],
-              "reason": "The artifact requires explicit prioritization decisions and limits the reader to three top tasks."
-            },
-            {
-              "id": "prescribed_action",
-              "score": 96.0,
-              "passed": true,
-              "confidence": 1.0,
-              "evidence": [
-                "Set a timer for 5 minutes and write without stopping.",
-                "Schedule your A-tasks first. Block time in your calendar for each one"
-              ],
-              "reason": "It gives specific, observable actions with timing, sequencing, and execution instructions."
-            },
-            {
-              "id": "concrete_abstract_balance",
-              "score": 92.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "There's a coffee mug sitting on my workbench.",
-                "Your mind is for thinking, not storing."
-              ],
-              "reason": "Concrete scenes and behaviors consistently support abstract claims about attention, prioritization, and mental load."
-            },
-            {
-              "id": "everyday_realism",
-              "score": 94.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "We respond to emails immediately because the notification demands attention.",
-                "We attend meetings that could have been emails because saying no feels uncomfortable."
-              ],
-              "reason": "The piece recognizes ordinary workplace pressures and the social discomfort behind them."
-            },
-            {
-              "id": "intellectual_simplicity",
-              "score": 86.0,
-              "passed": true,
-              "confidence": 0.95,
-              "evidence": [
-                "What you need is simple, brutal, and repeatable.",
-                "It stands for Capture, Label, Execute, Adjust, and Release."
-              ],
-              "reason": "The central model is easy to remember and its steps are plainly explained. Repetition and the later Furnace/Forge/Anvil terminology reduce control somewhat."
-            },
-            {
-              "id": "sentence_rhythm",
-              "score": 90.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "You cannot do everything. You cannot respond to every email the moment it arrives. You cannot attend every meeting. You cannot complete every task on your list."
-              ],
-              "reason": "Short repeated sentences create emphasis, while longer explanatory sentences provide variation and forward motion."
-            },
-            {
-              "id": "semantic_economy",
-              "score": 70.0,
-              "passed": true,
-              "confidence": 0.94,
-              "evidence": [
-                "I'm busy, but I'm not productive.",
-                "If everything is important, nothing is important."
-              ],
-              "reason": "The prose contains memorable compression, but it repeats the big-rocks, unfinished-tasks, and busy-versus-productive points several times."
-            },
-            {
-              "id": "anti_motivational",
-              "score": 84.0,
-              "passed": true,
-              "confidence": 0.96,
-              "evidence": [
-                "you cannot do everything",
-                "some tasks won't get done today, and that's okay."
-              ],
-              "reason": "It rejects unlimited-performance rhetoric and frames limitation as a practical fact rather than a challenge to overcome through enthusiasm."
-            },
-            {
-              "id": "anti_therapy",
-              "score": 82.0,
-              "passed": true,
-              "confidence": 0.92,
-              "evidence": [
-                "that's not a failure\u2014it's reality.",
-                "Release guilt about unfinished C-tasks."
-              ],
-              "reason": "The tone is practical rather than therapeutic, though it occasionally uses emotional-regulation language such as \u201canxiety,\u201d \u201cguilt,\u201d and \u201cpeace of mind.\u201d"
-            },
-            {
-              "id": "anti_preacher",
-              "score": 31.0,
-              "passed": false,
-              "confidence": 0.6789999999999999,
-              "evidence": [],
-              "reason": "The source contains a few anti-guru signals, including \u201cI'm not going to give you a complicated methodology with expensive apps and complex rules,\u201d but its dominant voice is prescriptive and moralizing. It repeatedly tells the reader what they \u201ccannot\u201d do, frames noncompliance as a discipline problem, and labels a day \u201cfailed,\u201d which creates a preaching tone rather than an observational or collaborative one. (evidence could not be verified)"
-            },
-            {
-              "id": "anti_guru",
-              "score": 73.0,
-              "passed": true,
-              "confidence": 0.92,
-              "evidence": [
-                "Those don't work because they require too much maintenance.",
-                "It doesn't require expensive apps or complex methodologies."
-              ],
-              "reason": "It rejects dependence on elaborate tools and authority. The branded CLEAR framework and claims about \u201cpeople who get ahead\u201d create some guru-adjacent positioning, but not enough to dominate the tone."
-            },
-            {
-              "id": "closing_strength",
-              "score": 18.0,
-              "passed": false,
-              "confidence": 0.99,
-              "evidence": [
-                "This isn't just a to-do list"
-              ],
-              "reason": "The supplied source ends mid-thought and provides no completed conclusion, final synthesis, or strong closing instruction."
-            }
-          ]
-        },
-        "INSTRUCTIONS.md": {
-          "artifact": "INSTRUCTIONS.md",
-          "base_score": 85.36,
-          "penalties": 0.0,
-          "final_score": 85.36,
-          "confidence": 0.962,
-          "metrics": {
-            "fk_grade": 9.64,
-            "words": 1531,
-            "sentences": 88,
-            "average_sentence_words": 17.4,
-            "sentence_length_stddev": 24.14,
-            "concrete_opening": true,
-            "action_signals": 16,
-            "framework_signals": 4,
-            "late_you_ratio": 0.42,
-            "repeated_sentence_ratio": 0.0
-          },
-          "criteria": [
-            {
-              "id": "perspective_shift",
-              "score": 91.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "This isn't a time management problem. It's a prioritization problem.",
-                "The difference is what you choose to do with them."
-              ],
-              "reason": "Clearly reframes the problem from time scarcity to deliberate prioritization."
-            },
-            {
-              "id": "argument_progression",
-              "score": 88.0,
-              "passed": true,
-              "confidence": 0.96,
-              "evidence": [
-                "The people who get ahead aren't necessarily smarter or work harder. They're better at choosing what to work on.",
-                "The system is called **C L E A R**. It stands for Capture, Label, Execute, Adjust, and Release.",
-                "At the end of each day, review what you accomplished."
-              ],
-              "reason": "Moves coherently from problem, to principle, to model, to implementation and review."
-            },
-            {
-              "id": "psychological_interpretation",
-              "score": 78.0,
-              "passed": true,
               "confidence": 0.93,
               "evidence": [
-                "You'll have to resist the urge to tackle easy tasks first.",
-                "the \"urgency bias\" of emails and messages",
-                "Your brain is not meant to hold a to-do list. It's meant to think."
+                "you must master the ability to identify and execute the \"Big Rocks.\"",
+                "These blocks must be treated as non-negotiable appointments."
               ],
-              "reason": "Explains avoidance, urgency bias, cognitive load, and the attraction of easy tasks. Some claims are simplified rather than deeply developed."
-            },
-            {
-              "id": "practical_philosophy",
-              "score": 87.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "The question isn't whether you'll have to say no to something\u2014it's whether you'll say no to the right things.",
-                "Not every task deserves your best hours.",
-                "The goal isn't perfection\u2014it's progress and learning."
-              ],
-              "reason": "Presents practical principles about limits, allocation, tradeoffs, and imperfect execution."
-            },
-            {
-              "id": "intellectual_depth",
-              "score": 72.0,
-              "passed": true,
-              "confidence": 0.9,
-              "evidence": [
-                "Not every task deserves your best hours.",
-                "By externalizing everything, you free up cognitive resources for actual work instead of constantly trying to remember what you forgot.",
-                "If something consistently isn't getting done, it might not be as important as you thought\u2014reconsider its label."
-              ],
-              "reason": "Contains real distinctions between urgency, importance, attention, and avoidance. Depth is limited by the mostly familiar productivity framing."
-            },
-            {
-              "id": "personal_responsibility",
-              "score": 91.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "It requires one thing: the discipline to follow it, even when it's uncomfortable.",
-                "This is where you practice saying \"no\" to yourself."
-              ],
-              "reason": "Directly assigns responsibility for choices, avoidance, discipline, and review without making external circumstances the sole explanation."
-            },
-            {
-              "id": "framework_lands",
-              "score": 94.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "The system is called **C L E A R**. It stands for Capture, Label, Execute, Adjust, and Release.",
-                "Start each morning (or the night before) with a brain dump.",
-                "Schedule your A-tasks first."
-              ],
-              "reason": "The named framework is complete, memorable, and operationalized through concrete steps."
-            },
-            {
-              "id": "unique_action",
-              "score": 84.0,
-              "passed": true,
-              "confidence": 0.97,
-              "evidence": [
-                "If I could only accomplish 3 things today, which ones would create the most positive impact?",
-                "Label each task with one letter:"
-              ],
-              "reason": "The daily top-three filter and A\u2013E labeling create a distinctive action rather than generic productivity advice."
-            },
-            {
-              "id": "action_relevance",
-              "score": 93.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "Not every task deserves your best hours.",
-                "Schedule your A-tasks first.",
-                "During these blocks, practice deep focus: silence your phone, close unnecessary tabs, and work on one A-task until it's complete or your time block ends."
-              ],
-              "reason": "The actions directly enact the argument: identify what matters, protect peak attention, and refuse interruption."
-            },
-            {
-              "id": "behavioral_grounding",
-              "score": 91.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "Setting a timer for 5 minutes and writing without stopping",
-                "Using website blockers or apps to eliminate digital distractions",
-                "Spending just 5 minutes on this review"
-              ],
-              "reason": "Provides observable behaviors, time limits, environmental controls, and review practices."
-            },
-            {
-              "id": "intellectual_simplicity",
-              "score": 89.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "It's not complicated. It doesn't require expensive apps or complex methodologies.",
-                "Write down every single task, idea, and commitment floating in your head\u2014work projects, personal errands, emails to send, calls to make, everything."
-              ],
-              "reason": "Uses a simple structure without collapsing the argument into empty slogans; the steps remain understandable and substantive."
-            },
-            {
-              "id": "sentence_rhythm",
-              "score": 81.0,
-              "passed": true,
-              "confidence": 0.95,
-              "evidence": [
-                "Release guilt about unfinished C-tasks. Release the need to respond immediately to every notification. Release the idea that busy equals productive.",
-                "The truth is brutal: you cannot do everything."
-              ],
-              "reason": "Uses effective short sentences, parallelism, and varied pacing, though the many instructional lists create some mechanical rhythm."
-            },
-            {
-              "id": "semantic_economy",
-              "score": 73.0,
-              "passed": true,
-              "confidence": 0.94,
-              "evidence": [
-                "The truth is brutal: you cannot do everything.",
-                "Completing one A-task before moving to the next"
-              ],
-              "reason": "Several lines are sharp and economical, but the artifact repeats the same prioritization, focus, and unfinished-task ideas across sections and lists."
-            },
-            {
-              "id": "anti_motivational",
-              "score": 82.0,
-              "passed": true,
-              "confidence": 0.97,
-              "evidence": [
-                "The truth is brutal: you cannot do everything.",
-                "It won't make your to-do list shorter.",
-                "you'll have to say no to good opportunities that aren't your top priorities.",
-                "some tasks won't get done today, and that's okay."
-              ],
-              "reason": "The instruction directly rejects unlimited productivity and acknowledges tradeoffs, unfinished work, and the need to refuse worthwhile opportunities. This is materially anti-motivational rather than merely naming realism. The score is reduced because the source also uses outcome promises and motivational framing, including \u201cYou will complete your top 3 most important tasks every day\u201d and \u201cYou\u2019ll build momentum.\u201d"
-            },
-            {
-              "id": "anti_therapy",
-              "score": 88.0,
-              "passed": true,
-              "confidence": 0.96,
-              "evidence": [
-                "What got in the way of completing this task? Was it time, energy, clarity, or motivation?",
-                "Release attachment to getting everything done."
-              ],
-              "reason": "Uses self-observation in service of planning and behavior, not therapeutic processing or emotional dependence."
-            },
-            {
-              "id": "anti_preacher",
-              "score": 82.0,
-              "passed": true,
-              "confidence": 0.94,
-              "evidence": [
-                "The choice is yours.",
-                "The goal isn't perfection\u2014it's progress and learning."
-              ],
-              "reason": "The instructional imperatives are firm but generally practical rather than moralizing; the explicit choice language preserves reader agency."
+              "reason": "The tone is directive and occasionally forceful, but it does not moralize, sermonize, or claim superior virtue. The commands serve the procedure rather than a broader doctrine."
             },
             {
               "id": "anti_guru",
-              "score": 75.0,
+              "score": 99.0,
               "passed": true,
-              "confidence": 0.95,
+              "confidence": 0.99,
               "evidence": [
-                "It's not complicated. It doesn't require expensive apps or complex methodologies.",
-                "The goal isn't perfection\u2014it's progress and learning.",
-                "If something consistently isn't getting done, it might not be as important as you thought\u2014reconsider its label.",
-                "You can adjust your plan while maintaining the structure."
+                "This exercise will guide you through the process of establishing a structured workflow",
+                "Using techniques like Pomodoro to maintain deep concentration"
               ],
-              "reason": "The source presents a simple, revisable process rather than secret knowledge, personal authority, or dependence on a guru. It permits adjustment based on reality and explicitly avoids expensive or complex systems. The score is reduced for branded framework language, highly prescriptive commands, and overconfident promises such as \u201cBy the end of this week, you will complete your top 3 most important tasks every day\u201d and \u201cYour weekly task backlog will shrink by at least 40%.\u201d"
+              "reason": "The source makes no claims of special authority, secret knowledge, personal mastery, or guaranteed transformation. It presents a straightforward workflow and names a common technique."
             }
           ]
         }
       },
-      "evaluator_cost": 0.011186
-    },
-    {
-      "schema_version": "content-score-v4",
-      "rubric_version": "steadyburn-v1",
-      "model": "dolphin-mistral-24b-venice",
-      "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/dolphin-mistral-24b-venice/2026-08-07-master-your-tasks-prioritization-and-time-management",
-      "content_score": 31.54,
-      "confidence": 0.964,
-      "artifacts": {
-        "index.md": {
-          "artifact": "index.md",
-          "base_score": 73.67,
-          "penalties": 51.0,
-          "final_score": 22.67,
-          "confidence": 0.961,
-          "metrics": {
-            "fk_grade": 7.45,
-            "words": 530,
-            "sentences": 34,
-            "average_sentence_words": 15.59,
-            "sentence_length_stddev": 5.42,
-            "concrete_opening": true,
-            "action_signals": 4,
-            "framework_signals": 0,
-            "late_you_ratio": 0.3,
-            "repeated_sentence_ratio": 0.0
-          },
-          "criteria": [
-            {
-              "id": "perspective_shift",
-              "score": 84.0,
-              "passed": true,
-              "confidence": 0.97,
-              "evidence": [
-                "Instead of diving into the chaos, you pause.",
-                "prioritizing these tasks wasn't just about getting things done; it was about creating a structure that turned pressure into productivity."
-              ],
-              "reason": "The piece shifts prioritization from task management to deliberate control of attention and daily direction."
-            },
-            {
-              "id": "argument_progression",
-              "score": 82.0,
-              "passed": true,
-              "confidence": 0.96,
-              "evidence": [
-                "One morning, you notice something different.",
-                "As you focus on these three tasks, something interesting happens.",
-                "Prioritization is more than just a to-do list; it's a way of giving direction to your energy.",
-                "To master your tasks and time, start with these three simple steps:"
-              ],
-              "reason": "It moves from ordinary scene, to changed behavior, to observed result, to principle, choice, and method."
-            },
-            {
-              "id": "concrete_opening",
-              "score": 96.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "Imagine a simple coffee mug sitting on your desk.",
-                "you glance at the stack of papers beside it\u2014reports, emails, and tasks that seem to multiply overnight."
-              ],
-              "reason": "The opening is immediately physical, ordinary, and recognizable."
-            },
-            {
-              "id": "psychological_interpretation",
-              "score": 72.0,
-              "passed": true,
-              "confidence": 0.93,
-              "evidence": [
-                "The day doesn't feel as overwhelming.",
-                "it was about creating a structure that turned pressure into productivity."
-              ],
-              "reason": "The piece connects prioritization to perceived overwhelm, pressure, attention, and a felt shift toward control. The interpretation is materially present, though it remains broad and overly linear."
-            },
-            {
-              "id": "behavioral_grounding",
-              "score": 90.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "You grab a pen and write them down: finish the quarterly report, call the client about the project update, and review the team's progress.",
-                "Work on these tasks until they're done."
-              ],
-              "reason": "The central idea is grounded in observable workplace behaviors."
-            },
-            {
-              "id": "practical_philosophy",
-              "score": 79.0,
-              "passed": true,
-              "confidence": 0.95,
-              "evidence": [
-                "When you prioritize, you're not just organizing tasks\u2014you're organizing your life.",
-                "You're deciding what matters most and aligning your actions with those decisions."
-              ],
-              "reason": "It connects a practical routine to a broader view of choice, priorities, and alignment."
-            },
-            {
-              "id": "intellectual_depth",
-              "score": 48.0,
-              "passed": false,
-              "confidence": 0.94,
-              "evidence": [
-                "This alignment creates a furnace, a contained space where your efforts don't leak out but are channeled into meaningful results."
-              ],
-              "reason": "The piece has a useful central distinction, but its abstract claims are mostly asserted rather than developed. The furnace metaphor adds imagery more than intellectual depth."
-            },
-            {
-              "id": "qualification_nuance",
-              "score": 44.0,
-              "passed": false,
-              "confidence": 0.94,
-              "evidence": [
-                "These should be the tasks that, if completed, will make the biggest difference in your goals or responsibilities.",
-                "especially during your most productive hours."
-              ],
-              "reason": "There is limited qualification around task selection and timing, but the broader claims are presented as near-universal. The piece does not address competing priorities, interruptions, uncertainty, or cases where the method may not work."
-            },
-            {
-              "id": "personal_responsibility",
-              "score": 87.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "today, you decide to change that.",
-                "Every morning, you have a choice.",
-                "you can dictate your tasks for the day."
-              ],
-              "reason": "The reader is presented as responsible for setting priorities and directing the day."
-            },
-            {
-              "id": "perspective_progression",
-              "score": 82.0,
-              "passed": true,
-              "confidence": 0.97,
-              "evidence": [
-                "The first path leads to chaos and stress; the second leads to clarity and accomplishment.",
-                "transform from overwhelming chaos into a path of focused productivity."
-              ],
-              "reason": "The perspective develops from reactive disorder to intentional direction and then to a repeatable practice."
-            },
-            {
-              "id": "decision",
-              "score": 89.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "You can either let the day dictate your tasks, or you can dictate your tasks for the day."
-              ],
-              "reason": "The core decision is explicit, intelligible, and tied to the surrounding example."
-            },
-            {
-              "id": "prescribed_action",
-              "score": 96.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "Identify Your Top 3",
-                "Schedule Your Prime Time",
-                "Complete Before Moving On"
-              ],
-              "reason": "The article gives three named, ordered actions with operational explanations."
-            },
-            {
-              "id": "concrete_abstract_balance",
-              "score": 82.0,
-              "passed": true,
-              "confidence": 0.95,
-              "evidence": [
-                "The coffee mug on your desk is a reminder of this choice.",
-                "it's a symbol of the structure you can create in your life."
-              ],
-              "reason": "Concrete workplace details carry the abstract claims, though the symbol is repeated heavily."
-            },
-            {
-              "id": "everyday_realism",
-              "score": 92.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "reports, emails, and tasks that seem to multiply overnight.",
-                "finish the quarterly report, call the client about the project update, and review the team's progress."
-              ],
-              "reason": "The setting, work examples, and routine are credible and familiar."
-            },
-            {
-              "id": "intellectual_simplicity",
-              "score": 86.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "To master your tasks and time, start with these three simple steps:"
-              ],
-              "reason": "The structure is easy to follow and the prose generally preserves the basic idea without unnecessary complexity."
-            },
-            {
-              "id": "sentence_rhythm",
-              "score": 82.0,
-              "passed": true,
-              "confidence": 0.95,
-              "evidence": [
-                "This mug, this desk, this routine\u2014it's the quiet beginning of a day that could go in countless directions."
-              ],
-              "reason": "The piece uses varied sentence lengths, parallel structure, and occasional cadence without becoming difficult to read."
-            },
-            {
-              "id": "semantic_economy",
-              "score": 43.0,
-              "passed": false,
-              "confidence": 0.97,
-              "evidence": [
-                "The coffee mug on your desk is a reminder of this choice.",
-                "The coffee mug on your desk is more than just an object; it's a reminder of the structure you can create in your life.",
-                "It's a symbol of the choice you make every day to prioritize what matters most."
-              ],
-              "reason": "The central mug, choice, structure, and chaos-to-productivity ideas are repeated without enough development. Several sentences restate the same conclusion in slightly different language."
-            },
-            {
-              "id": "anti_motivational",
-              "score": 12.0,
-              "passed": false,
-              "confidence": 0.98,
-              "evidence": [
-                "Make that choice, and watch as your tasks transform from overwhelming chaos into a path of focused productivity.",
-                "Treat this time as sacred and protect it from distractions."
-              ],
-              "reason": "The closing promise uses motivational transformation language, while the imperative framing and elevated language push the piece toward exhortation rather than restrained analysis."
-            },
-            {
-              "id": "anti_therapy",
-              "score": 79.0,
-              "passed": true,
-              "confidence": 0.91,
-              "evidence": [
-                "You take a deep breath and ask yourself, \"What are the three most important things I need to accomplish today?\""
-              ],
-              "reason": "The brief calming instruction is embedded in a practical planning scene; the piece does not adopt a therapy voice or frame ordinary workload as a clinical issue."
-            },
-            {
-              "id": "anti_preacher",
-              "score": 18.0,
-              "passed": false,
-              "confidence": 0.98,
-              "evidence": [
-                "Every morning, you have a choice.",
-                "You can either let the day dictate your tasks, or you can dictate your tasks for the day.",
-                "Only then should you move on to lesser priorities."
-              ],
-              "reason": "The piece presents a morally charged binary between self-direction and chaos, then issues behavioral commands. This creates a preaching tone rather than an observational or analytical one."
-            },
-            {
-              "id": "anti_guru",
-              "score": 34.0,
-              "passed": false,
-              "confidence": 0.94,
-              "evidence": [
-                "To master your tasks and time, start with these three simple steps:",
-                "This discipline ensures that your most important work gets the attention it deserves."
-              ],
-              "reason": "There is no explicit personal guru authority or claim of privileged wisdom, but the title's mastery framing and confident three-step prescription imitate formulaic self-help guidance. The certainty is stronger than the evidence supplied by the text."
-            },
-            {
-              "id": "closing_strength",
-              "score": 62.0,
-              "passed": true,
-              "confidence": 0.9,
-              "evidence": [
-                "Make that choice, and watch as your tasks transform from overwhelming chaos into a path of focused productivity."
-              ],
-              "reason": "The closing returns to the central choice and action, but its inflated transformation claim and repeated mug symbolism reduce its force."
-            }
-          ]
-        },
-        "INSTRUCTIONS.md": {
-          "artifact": "INSTRUCTIONS.md",
-          "base_score": 70.41,
-          "penalties": 30.0,
-          "final_score": 40.41,
-          "confidence": 0.966,
-          "metrics": {
-            "fk_grade": 10.13,
-            "words": 815,
-            "sentences": 55,
-            "average_sentence_words": 14.82,
-            "sentence_length_stddev": 5.27,
-            "concrete_opening": false,
-            "action_signals": 2,
-            "framework_signals": 2,
-            "late_you_ratio": 0.54,
-            "repeated_sentence_ratio": 0.0
-          },
-          "criteria": [
-            {
-              "id": "perspective_shift",
-              "score": 56.0,
-              "passed": true,
-              "confidence": 0.96,
-              "evidence": [
-                "By following this process, you'll transform your task management from chaotic to controlled.",
-                "This is your path to mastering your tasks and taking control of your time."
-              ],
-              "reason": "The piece reframes task management as a controllable system, but the shift is stated more than developed."
-            },
-            {
-              "id": "argument_progression",
-              "score": 84.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "Begin by writing down everything you need to do.",
-                "Use the Eisenhower Matrix to rank your tasks.",
-                "Group similar tasks to save time and reduce switching costs.",
-                "Evaluate your progress daily and adjust as needed."
-              ],
-              "reason": "The sequence moves coherently from capture to ranking, batching, scheduling, protection, maintenance, and review."
-            },
-            {
-              "id": "psychological_interpretation",
-              "score": 52.0,
-              "passed": true,
-              "confidence": 0.94,
-              "evidence": [
-                "save time and reduce switching costs",
-                "This is when you're most alert and focused",
-                "This reflection helps you understand what's working and what's not"
-              ],
-              "reason": "It includes useful behavioral observations, but offers limited interpretation of why people avoid priorities, switch tasks, or fail to review."
-            },
-            {
-              "id": "practical_philosophy",
-              "score": 69.0,
-              "passed": true,
-              "confidence": 0.96,
-              "evidence": [
-                "Choosing one system that works for you and using it consistently.",
-                "Treat these blocks as non-negotiable appointments with yourself."
-              ],
-              "reason": "The artifact advances practical principles of consistency, commitment, and protection of attention, though mostly as productivity rules."
-            },
-            {
-              "id": "intellectual_depth",
-              "score": 35.0,
-              "passed": false,
-              "confidence": 0.98,
-              "evidence": [],
-              "reason": "The material is operational and familiar. It does not examine tradeoffs, competing values, uncertainty, or the limits of the proposed system."
-            },
-            {
-              "id": "personal_responsibility",
-              "score": 79.0,
-              "passed": true,
-              "confidence": 0.96,
-              "evidence": [
-                "Protecting your prime time for tasks that require the most focus and energy.",
-                "commit to completing them before anything else",
-                "Communicating your schedule clearly and politely declining meetings or tasks that conflict with your priority time."
-              ],
-              "reason": "The reader is assigned concrete control over priorities, boundaries, distractions, and follow-through without blaming external conditions."
-            },
-            {
-              "id": "framework_lands",
-              "score": 86.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "Organize",
-                "Rank",
-                "Group",
-                "Allocate",
-                "Never",
-                "Invest",
-                "Zealously",
-                "Evaluate",
-                "Use the Eisenhower Matrix to rank your tasks."
-              ],
-              "reason": "The ORG... framework is explicit, memorable, and operationalized with examples under each step. The framework is more mnemonic than conceptually original, but it lands."
-            },
-            {
-              "id": "unique_action",
-              "score": 63.0,
-              "passed": true,
-              "confidence": 0.93,
-              "evidence": [
-                "Start each day by identifying your top 3 priority tasks, schedule them for your prime time, and commit to completing them before anything else."
-              ],
-              "reason": "The top-three/prime-time commitment is concrete and usable, but it is a conventional productivity action rather than a distinctly letter-specific action."
-            },
-            {
-              "id": "action_relevance",
-              "score": 83.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "Allocate your prime time for your top 3 priority tasks.",
-                "Zealously protect your priority time blocks.",
-                "Start each day by identifying your top 3 priority tasks, schedule them for your prime time, and commit to completing them before anything else."
-              ],
-              "reason": "The final action directly applies the organizing, ranking, and allocation framework rather than introducing an unrelated exercise."
-            },
-            {
-              "id": "behavioral_grounding",
-              "score": 84.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "Putting your phone on silent and using a website blocker to avoid distractions.",
-                "Scheduling a \"do not disturb\" period in your calendar and communicating this to your team.",
-                "Spending 10 minutes at the end of each day to reflect on your progress and plan for tomorrow."
-              ],
-              "reason": "The source repeatedly translates principles into observable behaviors, tools, time blocks, and review routines."
-            },
-            {
-              "id": "intellectual_simplicity",
-              "score": 87.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "Specific tasks like \"Complete project report section 3.\"",
-                "Categorizing tasks into urgent/important, important/not urgent, urgent/not important, and not urgent/not important."
-              ],
-              "reason": "The distinctions are concrete and easy to apply without flattening the basic task-management logic."
-            },
-            {
-              "id": "sentence_rhythm",
-              "score": 72.0,
-              "passed": true,
-              "confidence": 0.95,
-              "evidence": [
-                "Organize",
-                "Rank",
-                "Group",
-                "Allocate",
-                "Never",
-                "Invest",
-                "Zealously",
-                "Evaluate"
-              ],
-              "reason": "The short imperative headings create a clear cadence, and the prose varies sentence length moderately, though the repeated section template becomes predictable."
-            },
-            {
-              "id": "semantic_economy",
-              "score": 66.0,
-              "passed": true,
-              "confidence": 0.97,
-              "evidence": [
-                "schedule them for your prime time",
-                "commit to completing them before anything else"
-              ],
-              "reason": "The central action is concise, but repeated 'What to avoid' and 'What works better' explanations, examples, and motivational framing add substantial redundancy."
-            },
-            {
-              "id": "anti_motivational",
-              "score": 22.0,
-              "passed": false,
-              "confidence": 0.99,
-              "evidence": [
-                "doubling your productivity and reducing stress.",
-                "This is the power of mastering your tasks through prioritization and time management.",
-                "the key to success is consistency."
-              ],
-              "reason": "The introduction and closing use productivity promises and success language. The instructional core is practical, but the overall piece is not anti-motivational in tone."
-            },
-            {
-              "id": "anti_therapy",
-              "score": 91.0,
-              "passed": true,
-              "confidence": 0.98,
-              "evidence": [
-                "Spending 10 minutes at the end of each day to reflect on your progress and plan for tomorrow."
-              ],
-              "reason": "The reflection language is procedural rather than therapeutic; the piece does not use emotional processing, healing, or clinical self-help language."
-            },
-            {
-              "id": "anti_preacher",
-              "score": 72.0,
-              "passed": true,
-              "confidence": 0.9,
-              "evidence": [
-                "Never let distractions interrupt your focused work time.",
-                "Treat these blocks as non-negotiable appointments with yourself."
-              ],
-              "reason": "The imperatives are forceful and occasionally absolute, but the article does not moralize or sermonize."
-            },
-            {
-              "id": "anti_guru",
-              "score": 94.0,
-              "passed": true,
-              "confidence": 0.99,
-              "evidence": [
-                "Choosing one system that works for you and using it consistently."
-              ],
-              "reason": "The voice is instructional but does not claim special authority, personal enlightenment, secret knowledge, or guru status."
-            }
-          ]
-        }
-      },
-      "evaluator_cost": 0.02238
+      "evaluator_cost": 0.009845
     }
   ]
 }

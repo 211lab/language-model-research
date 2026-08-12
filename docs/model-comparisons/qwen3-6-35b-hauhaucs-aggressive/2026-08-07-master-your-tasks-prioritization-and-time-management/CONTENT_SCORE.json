@@ -1,0 +1,520 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "qwen3.6-35b-hauhaucs-aggressive",
+  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/qwen3-6-35b-hauhaucs-aggressive/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 86.13,
+  "confidence": 0.972,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 85.18,
+      "penalties": 0.0,
+      "final_score": 85.18,
+      "confidence": 0.975,
+      "metrics": {
+        "fk_grade": 4.12,
+        "words": 1653,
+        "sentences": 196,
+        "average_sentence_words": 8.43,
+        "sentence_length_stddev": 4.47,
+        "concrete_opening": true,
+        "action_signals": 25,
+        "framework_signals": 1,
+        "late_you_ratio": 0.59,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "But now, you see it differently.",
+            "It is no longer a distraction. It is a reminder."
+          ],
+          "reason": "The closing materially reinterprets the opening coffee mug, turning it from an interruption into evidence of chosen priorities."
+        },
+        {
+          "id": "argument_progression",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "There is a coffee mug sitting on the edge of the workbench.",
+            "The problem is not a lack of time. The problem is a lack of selection.",
+            "The Anvil is the structure for growth.",
+            "The choice is simple.",
+            "To build your Anvil, you must follow a simple rhythm.",
+            "But now, you see it differently."
+          ],
+          "reason": "The piece moves clearly from concrete example, to diagnosis, to framework, to decision, to prescribed process, and finally to a changed interpretation of the opening image. The progression is materially present, though the Anvil metaphor and core claim are repeated more than necessary."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "There is a coffee mug sitting on the edge of the workbench.",
+            "It has been there for three days."
+          ],
+          "reason": "It opens with specific physical detail and immediate behavior rather than abstraction."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "It is because we fear missing out.",
+            "We fear that if we say no to the request, we will look lazy."
+          ],
+          "reason": "The article explains why people preserve distraction and avoid selection, rather than merely instructing them to prioritize."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Turn off phone notifications, close unrelated browser tabs, and tell others you are in focus mode.",
+            "Do not switch tasks."
+          ],
+          "reason": "The central argument is translated into observable actions, environmental changes, and sequencing rules."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "This is not about doing more. It is about doing less, but doing it better.",
+            "It is the discipline of saying \"no\" to the good so you can say \"yes\" to the great."
+          ],
+          "reason": "It presents a usable principle about choosing limits, then connects that principle to daily conduct."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 68.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "The obvious question becomes: why do we struggle to select?",
+            "It is because we fear missing out.",
+            "The truth is that failure is usually structural and traceable.",
+            "It is because you lacked containment.",
+            "This matters because your identity is built on what you protect."
+          ],
+          "reason": "The article goes beyond generic time-management advice by distinguishing effort from structure, identifying fear as a cause of poor selection, and connecting attention to behavior. Depth is limited by broad, largely unsupported claims such as \u201cfailure is usually structural\u201d and the rapid conversion of priorities into identity."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 57.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "I think there is a distinction worth making between being busy and being in control.",
+            "I want to be careful here.",
+            "This is not about doing more. It is about doing less, but doing it better.",
+            "But the smaller claim is actually more interesting."
+          ],
+          "reason": "The source includes explicit qualification and narrows one claim rather than presenting only a slogan. However, most claims remain categorical, and the argument gives little attention to exceptions such as genuinely urgent work, care obligations, or contexts where three priorities are insufficient."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You must select your priorities.",
+            "You have taken back your evening."
+          ],
+          "reason": "The reader is treated as responsible for selecting, protecting, and reviewing commitments rather than waiting for circumstances to improve."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "When you stop reacting and start leading, your day changes.",
+            "You stop swinging randomly. You start shaping your life."
+          ],
+          "reason": "The perspective develops from reactive busyness to deliberate control, with the metaphor and behavior reinforcing the change."
+        },
+        {
+          "id": "decision",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The choice is simple. You can keep letting the loudest demands dictate your day, burning out while achieving little. Or you can choose to lead your time by tackling your top three priorities first, securing your success before the world gets noisy.",
+            "First, sort the noise.",
+            "Schedule these three tasks in your calendar as non-negotiable appointments."
+          ],
+          "reason": "The article presents a clear decision and translates it into a concrete operating procedure: select three priorities, remove distractions, schedule the work, execute, and review. The decision is explicit rather than implied."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "First, sort the noise.",
+            "Schedule these three tasks in your calendar as non-negotiable appointments.",
+            "Finally, check and carry over."
+          ],
+          "reason": "The article provides a complete, ordered procedure with concrete implementation details and review."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The Anvil is your prioritized list.",
+            "You create a stable surface where your effort can actually change your life."
+          ],
+          "reason": "Concrete routines and objects support abstract ideas about structure, attention, and agency. The balance is effective, though the forge metaphor is used heavily."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You realize at 5 PM that you forgot the one thing that was actually important."
+          ],
+          "reason": "The situations are familiar, plausible, and grounded in ordinary workday behavior."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 83.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The problem is not a lack of time. The problem is a lack of selection.",
+            "The rest is noise.",
+            "The Anvil is your prioritized list.",
+            "It is the commitment to a specific order of operations."
+          ],
+          "reason": "The central distinction is simple, memorable, and intelligible at a low reading level. The piece preserves a usable causal model instead of merely simplifying vocabulary. Control weakens somewhat because the Furnace, Forge, Forms, and Anvil terminology adds conceptual packaging to a straightforward prioritization method."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The world will always shout. Emails will ping. Colleagues will ask. Your phone will buzz.",
+            "Let them shout."
+          ],
+          "reason": "Short declarative sentences, parallelism, and controlled fragments create strong pace and emphasis."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 72.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "This is not magic. It is mechanics.",
+            "The rest is noise.",
+            "Do not switch tasks."
+          ],
+          "reason": "Many sentences are direct and carry clear operational meaning. However, the source repeatedly restates selection, focus, noise, and the Anvil, and several metaphorical passages duplicate the same point. It is economical at the sentence level but less economical across the full article."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 77.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "This is not about doing more. It is about doing less, but doing it better.",
+            "This is not magic. It is mechanics.",
+            "Do not add new tasks to tomorrow\u2019s list until you have reviewed today\u2019s."
+          ],
+          "reason": "The dominant tone is procedural and rejects unlimited productivity. It gives behavioral constraints rather than relying on inspiration. Some motivational residue remains in phrases such as \u201csecuring your success,\u201d \u201cYou have taken back your evening,\u201d and \u201cExecute.\u201d"
+        },
+        {
+          "id": "anti_therapy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Turn off phone notifications, close unrelated browser tabs, and tell others you are in focus mode.",
+            "Do not switch tasks.",
+            "If an A-task is unfinished, ask why. Was it too big? Break it down.",
+            "Do not add new tasks to tomorrow\u2019s list until you have reviewed today\u2019s."
+          ],
+          "reason": "The source treats the problem as an organization and execution problem, then supplies concrete actions and review questions. It does not use therapeutic processing, emotional validation, diagnosis, or healing language. A brief phrase such as \u201cInside that container, you are safe\u201d does not materially change the overall tone."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "I think there is a distinction worth making between being busy and being in control.",
+            "I want to be careful here.",
+            "The obvious question becomes: why do we struggle to select?",
+            "The choice is simple."
+          ],
+          "reason": "The piece generally explains a method rather than invoking moral authority or demanding belief in the author. First-person qualification helps. The score is not higher because repeated \u201cmust\u201d language, \u201cMost men\u201d generalizations, and imperatives such as \u201cExecute\u201d create occasional sermon-like pressure."
+        },
+        {
+          "id": "anti_guru",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "This is not magic. It is mechanics.",
+            "The problem is not a lack of time. The problem is a lack of selection.",
+            "The Anvil is your prioritized list.",
+            "Schedule these three tasks in your calendar as non-negotiable appointments."
+          ],
+          "reason": "The source demystifies its method and grounds it in ordinary scheduling behavior rather than special access, charisma, or personal revelation. The branded \u201cFire Furnace Forge system,\u201d identity claims, and title \u201cMaster Your Tasks\u201d introduce some authority and self-mastery framing, but they do not dominate the piece."
+        },
+        {
+          "id": "closing_strength",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "You have three tasks. You have your Anvil. You have your focus.",
+            "Execute."
+          ],
+          "reason": "The ending returns to the opening image, compresses the method into three elements, and ends with decisive action. Its imperative finish is forceful but slightly slogan-like."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 87.08,
+      "penalties": 0.0,
+      "final_score": 87.08,
+      "confidence": 0.969,
+      "metrics": {
+        "fk_grade": 5.83,
+        "words": 1156,
+        "sentences": 109,
+        "average_sentence_words": 10.61,
+        "sentence_length_stddev": 5.56,
+        "concrete_opening": true,
+        "action_signals": 19,
+        "framework_signals": 1,
+        "late_you_ratio": 0.59,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The problem is not a lack of time. The problem is a lack of selection.",
+            "They were busy, but they were not effective."
+          ],
+          "reason": "The piece clearly reframes poor productivity as a problem of selection and prioritization rather than time scarcity."
+        },
+        {
+          "id": "argument_progression",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You cannot do everything.",
+            "He identifies the three tasks that move his life forward and executes them with precision.",
+            "The rest is noise."
+          ],
+          "reason": "Moves clearly from diagnosis, to principle, to a structured solution, then through sequential implementation and review."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 79.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "This step removes the anxiety of forgetting something and creates a clear hierarchy.",
+            "This creates decision fatigue.",
+            "Switching costs focus."
+          ],
+          "reason": "The source explains why the behaviors work psychologically, though the interpretation remains practical rather than deeply analytical."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The difference between a man who is overwhelmed and a man who is in control is simple: the man in control chooses his battles.",
+            "Once the top three are done, you are free."
+          ],
+          "reason": "It presents a usable philosophy of constraint, deliberate choice, and earned disengagement rather than merely giving tips."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 70.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "The problem is not a lack of time. The problem is a lack of selection.",
+            "Time blocking turns intention into action."
+          ],
+          "reason": "Contains a meaningful causal argument, though the intellectual treatment remains intentionally accessible and operational rather than highly layered."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Be honest. Be specific.",
+            "If you don\u2019t schedule them, they will get pushed aside by urgent but unimportant tasks.",
+            "If an A-task is unfinished, ask why."
+          ],
+          "reason": "The reader is made responsible for naming priorities, scheduling them, protecting them, and diagnosing failure."
+        },
+        {
+          "id": "framework_lands",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "This worksheet guides you through the **SELECT** model.",
+            "S - Sort the Noise",
+            "E - Eliminate the Distractions",
+            "L - Lock in the Time",
+            "E - Execute with Focus",
+            "C - Check and Carry Over",
+            "T - Take Back Your Evening"
+          ],
+          "reason": "The SELECT model is explicit, memorable, sequential, and fully operationalized through the body of the piece."
+        },
+        {
+          "id": "unique_action",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Move it to tomorrow\u2019s top three.",
+            "Writing down exactly why a task failed (e.g., \"Interrupted by client call\") to adjust tomorrow\u2019s plan.",
+            "Staying completely disconnected until you start your next morning\u2019s routine."
+          ],
+          "reason": "The letter-specific actions are concrete and distinctive, especially carrying unfinished A-tasks forward with a recorded failure cause and protecting the evening."
+        },
+        {
+          "id": "action_relevance",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "He identifies the three tasks that move his life forward and executes them with precision.",
+            "Protect your energy for these three tasks only.",
+            "Once the top three are done, you are free."
+          ],
+          "reason": "The actions directly enact the argument: select fewer meaningful tasks, protect focus, and use completion to define the end of work."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Turn off phone notifications, close unrelated browser tabs, and tell others you are in focus mode.",
+            "Putting the phone in another room or turning on \"Do Not Disturb\" mode.",
+            "Putting \"Big Rock 1: 8:00 AM - 9:30 AM\" directly into your digital or paper calendar."
+          ],
+          "reason": "The guidance is operational and observable, with concrete environmental changes, scheduling instructions, and examples."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "sort them into three buckets: A (Must do today), B (Should do if time allows), and C (Can wait or delegate).",
+            "Identify the top three. These are your \"Big Rocks.\""
+          ],
+          "reason": "The source reduces a diffuse workload into a small number of usable distinctions without losing the core reasoning."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The world will always shout. Emails will ping. Colleagues will ask. Your phone will buzz.",
+            "Let them shout.",
+            "Execute."
+          ],
+          "reason": "Uses short declarative sentences, contrast, lists, and controlled fragments to create varied momentum without losing clarity."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "The problem is not a lack of time. The problem is a lack of selection.",
+            "The rest is noise.",
+            "Do not switch tasks. Switching costs focus."
+          ],
+          "reason": "States core claims compactly and repeats key terms with functional reinforcement rather than redundant explanation."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 72.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "You cannot do everything.",
+            "If you try to do everything, you will do nothing well.",
+            "The rest is noise.",
+            "Once the top three are done, you are free."
+          ],
+          "reason": "The core tone limits scope, rejects total achievement, and gives concrete operating rules instead of promising transformation. However, the closing section adds motivational pressure: \u201cDo this today. Do it tomorrow. Keep doing it until it becomes your nature.\u201d and \u201cExecute.\u201d"
+        },
+        {
+          "id": "anti_therapy",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "If an A-task is unfinished, ask why.",
+            "Was it too big? Break it down.",
+            "Was it interrupted? Move it to tomorrow\u2019s top three.",
+            "Writing down exactly why a task failed (e.g., \"Interrupted by client call\") to adjust tomorrow\u2019s plan."
+          ],
+          "reason": "The artifact treats difficulty as a planning or execution problem and supplies corrective actions. It does not use a therapeutic voice or invite emotional disclosure. Minor deductions apply to psychological language such as \u201cThis step removes the anxiety of forgetting something\u201d and \u201cThis reward reinforces the habit.\u201d"
+        },
+        {
+          "id": "anti_preacher",
+          "score": 70.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "If you don\u2019t schedule them, they will get pushed aside by urgent but unimportant tasks."
+          ],
+          "reason": "Most directives are tied to specific examples and observable actions rather than moral instruction. The tone becomes somewhat commanding in lines such as \u201cDo not skip steps,\u201d \u201cTreat them like a meeting with your boss,\u201d and \u201cLet them shout,\u201d but it remains primarily instructional."
+        },
+        {
+          "id": "anti_guru",
+          "score": 61.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "This worksheet guides you through the **SELECT** model.",
+            "It is designed to build your Anvil\u2014the stable surface where the hammer strikes.",
+            "With it, you shape your life.",
+            "Time blocking turns intention into action."
+          ],
+          "reason": "The piece does not claim special authority, secret knowledge, or personal access to truth; it presents a usable worksheet and familiar techniques. Still, the branded \u201cSELECT\u201d model, \u201cAnvil\u201d metaphor, and broad claim \u201cyou shape your life\u201d introduce some guru-style framing, so the anti-guru tone is only moderate rather than strong."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.021932
+}

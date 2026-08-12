@@ -15,6 +15,7 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | deepseek/deepseek-v4-flash | 4736 | 470 | 10.08 | 76.03 | 5.16 | 8.17 | 7.31 | 4.47 | 8.96 | 0.17 |
 | deepseek/deepseek-v4-pro | 5458 | 371 | 14.71 | 68.13 | 7.41 | 10.39 | 8.55 | 7.04 | 10.48 | 0.18 |
 | dolphin-mistral-24b-venice | 1781 | 116 | 15.35 | 57.06 | 9.11 | 12.77 | 11.42 | 9.60 | 12.24 | 0.29 |
+| gemma-4-12b-obliterated | 2084 | 111 | 18.77 | 49.31 | 11.05 | 14.92 | 11.85 | 11.37 | 13.78 | 0.22 |
 | gemma-4-e4b-it | 2266 | 163 | 13.90 | 64.33 | 7.74 | 11.12 | 9.33 | 7.36 | 11.07 | 0.27 |
 | google/gemini-3.5-flash-lite | 3351 | 208 | 16.11 | 60.31 | 8.85 | 11.57 | 10.41 | 9.09 | 11.33 | 0.21 |
 | google/gemini-3.6-flash | 3681 | 239 | 15.40 | 51.10 | 9.96 | 13.08 | 12.33 | 10.34 | 12.46 | 0.29 |
@@ -31,8 +32,12 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | openai/gpt-5.6-terra | 6451 | 596 | 10.82 | 69.27 | 6.29 | 9.15 | 8.40 | 5.56 | 9.65 | 0.18 |
 | qwen/qwen3.7-plus | 2582 | 212 | 12.18 | 72.19 | 6.22 | 9.04 | 8.29 | 5.90 | 9.56 | 0.23 |
 | qwen/qwen3.8-max | 6786 | 802 | 8.46 | 80.17 | 4.18 | 6.87 | 6.69 | 3.62 | 8.04 | 0.14 |
+| qwen3.6-27b-heretic-neo-code | 3323 | 370 | 8.98 | 72.28 | 5.41 | 8.46 | 8.17 | 4.90 | 9.10 | 0.19 |
+| qwen3.6-35b-hauhaucs-aggressive | 3518 | 395 | 8.91 | 77.58 | 4.65 | 7.53 | 6.79 | 3.78 | 8.50 | 0.19 |
 | stepfun/step-3.7-flash | 5932 | 308 | 19.26 | 68.39 | 8.51 | 11.39 | 7.72 | 8.27 | 10.74 | 0.14 |
 | tencent/hy3 | 2396 | 263 | 9.11 | 80.04 | 4.36 | 6.80 | 6.70 | 3.75 | 7.97 | 0.28 |
+| unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl | 3914 | 466 | 8.40 | 78.67 | 4.37 | 7.59 | 6.34 | 3.33 | 8.51 | 0.19 |
+| unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s | 4611 | 577 | 7.99 | 83.15 | 3.65 | 6.55 | 5.90 | 2.92 | 7.81 | 0.14 |
 | x-ai/grok-4.3 | 1456 | 94 | 15.49 | 66.25 | 7.87 | 10.18 | 9.07 | 7.77 | 10.22 | 0.32 |
 | x-ai/grok-4.5 | 4923 | 396 | 12.43 | 76.14 | 5.73 | 8.30 | 7.49 | 5.35 | 8.93 | 0.18 |
 
@@ -61,6 +66,9 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | dolphin-mistral-24b-venice | LESSON.md | 436 | 28 | 7 | 15.57 | 57.92 | 9.05 | 13.20 |
 | dolphin-mistral-24b-venice | index.md | 530 | 33 | 8 | 16.06 | 68.90 | 7.64 | 11.18 |
 | dolphin-mistral-24b-venice | INSTRUCTIONS.md | 815 | 55 | 11 | 14.82 | 48.86 | 10.13 | 13.58 |
+| gemma-4-12b-obliterated | LESSON.md | 604 | 34 | 8 | 17.76 | 49.86 | 10.72 | 14.39 |
+| gemma-4-12b-obliterated | index.md | 837 | 46 | 14 | 18.20 | 50.30 | 10.76 | 14.88 |
+| gemma-4-12b-obliterated | INSTRUCTIONS.md | 643 | 32 | 3 | 20.09 | 47.90 | 11.57 | 15.32 |
 | gemma-4-e4b-it | LESSON.md | 685 | 48 | 13 | 14.27 | 63.66 | 7.93 | 11.08 |
 | gemma-4-e4b-it | index.md | 782 | 57 | 18 | 13.72 | 67.42 | 7.26 | 10.55 |
 | gemma-4-e4b-it | INSTRUCTIONS.md | 799 | 59 | 9 | 13.54 | 62.11 | 7.96 | 11.62 |
@@ -109,12 +117,24 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | qwen/qwen3.8-max | LESSON.md | 2413 | 305 | 53 | 7.91 | 81.98 | 3.79 | 6.48 |
 | qwen/qwen3.8-max | index.md | 2326 | 285 | 40 | 8.16 | 81.54 | 3.91 | 6.69 |
 | qwen/qwen3.8-max | INSTRUCTIONS.md | 2047 | 212 | 39 | 9.66 | 76.27 | 5.02 | 7.63 |
+| qwen3.6-27b-heretic-neo-code | LESSON.md | 1050 | 123 | 37 | 8.54 | 72.88 | 5.21 | 8.33 |
+| qwen3.6-27b-heretic-neo-code | index.md | 1322 | 156 | 58 | 8.47 | 73.70 | 5.08 | 8.29 |
+| qwen3.6-27b-heretic-neo-code | INSTRUCTIONS.md | 951 | 91 | 39 | 10.45 | 69.37 | 6.18 | 8.93 |
+| qwen3.6-35b-hauhaucs-aggressive | LESSON.md | 709 | 90 | 22 | 7.88 | 78.92 | 4.21 | 7.16 |
+| qwen3.6-35b-hauhaucs-aggressive | index.md | 1653 | 196 | 46 | 8.43 | 80.51 | 4.12 | 7.05 |
+| qwen3.6-35b-hauhaucs-aggressive | INSTRUCTIONS.md | 1156 | 109 | 17 | 10.61 | 72.17 | 5.83 | 8.60 |
 | stepfun/step-3.7-flash | LESSON.md | 1696 | 96 | 1 | 17.67 | 70.88 | 7.76 | 10.72 |
 | stepfun/step-3.7-flash | index.md | 2536 | 155 | 8 | 16.36 | 71.83 | 7.30 | 10.38 |
 | stepfun/step-3.7-flash | INSTRUCTIONS.md | 1700 | 57 | 6 | 29.82 | 56.03 | 12.85 | 15.44 |
 | tencent/hy3 | LESSON.md | 827 | 100 | 14 | 8.27 | 85.71 | 3.36 | 5.77 |
 | tencent/hy3 | index.md | 678 | 93 | 17 | 7.29 | 82.27 | 3.60 | 6.04 |
 | tencent/hy3 | INSTRUCTIONS.md | 891 | 70 | 8 | 12.73 | 71.62 | 6.43 | 8.91 |
+| unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl | LESSON.md | 1325 | 155 | 30 | 8.55 | 80.10 | 4.21 | 7.49 |
+| unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl | index.md | 1453 | 188 | 32 | 7.73 | 81.20 | 3.85 | 6.95 |
+| unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl | INSTRUCTIONS.md | 1136 | 123 | 31 | 9.24 | 73.61 | 5.29 | 8.59 |
+| unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s | LESSON.md | 1350 | 178 | 39 | 7.58 | 85.33 | 3.24 | 6.26 |
+| unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s | index.md | 1664 | 197 | 42 | 8.45 | 81.28 | 4.02 | 6.79 |
+| unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s | INSTRUCTIONS.md | 1597 | 203 | 41 | 7.87 | 83.26 | 3.60 | 6.55 |
 | x-ai/grok-4.3 | LESSON.md | 369 | 28 | 7 | 13.18 | 72.18 | 6.47 | 8.52 |
 | x-ai/grok-4.3 | index.md | 485 | 33 | 8 | 14.70 | 66.33 | 7.66 | 10.17 |
 | x-ai/grok-4.3 | INSTRUCTIONS.md | 602 | 33 | 9 | 18.24 | 61.84 | 9.17 | 11.48 |

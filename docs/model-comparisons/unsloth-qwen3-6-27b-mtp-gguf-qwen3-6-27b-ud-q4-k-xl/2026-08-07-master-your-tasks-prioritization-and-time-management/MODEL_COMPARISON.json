@@ -1,0 +1,8 @@
+{
+  "model": "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl",
+  "provider": "local llama-swap",
+  "endpoint": "http://titan:11434",
+  "text_model": "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl",
+  "image_model": "fixed local image model",
+  "source": "fixed-seed editorial cross-run"
+}

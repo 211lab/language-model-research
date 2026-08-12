@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the PRIORITIZE action model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS</text>
+  <text class="sub" x="40" y="96">Prioritization and Time Management</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <text class="label" x="720" y="58">BLower SYSTEM</text>
+  <text class="small" x="720" y="78">Restore the steady rhythm of effort. Stop</text>
+  <text class="small" x="720" y="94">relying on motivation. Start relying on structure.</text>
+
+  <text class="verb" x="400" y="142">PRIORITIZE</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="320" height="185"/>
+  <text class="letter" x="60" y="222">P</text>
+  <text class="label" x="105" y="204">PICK YOUR BIG ROCKS</text>
+  <text class="small" x="105" y="224">Identify the 2-3 tasks that make the rest irrelevant.</text>
+  <text class="tiny" x="105" y="242">No vague goals. Specific outcomes only.</text>
+  <text class="tiny" x="60" y="268">1.</text><line class="fillline" x1="80" y1="268" x2="330" y2="268"/>
+  <text class="tiny" x="60" y="292">2.</text><line class="fillline" x1="80" y1="292" x2="330" y2="292"/>
+  <text class="tiny" x="60" y="316">3.</text><line class="fillline" x1="80" y1="316" x2="330" y2="316"/>
+
+  <rect class="box" x="390" y="180" width="320" height="185"/>
+  <text class="letter" x="410" y="222">R</text>
+  <text class="label" x="455" y="204">REMOVE THE NOISE</text>
+  <text class="small" x="455" y="224">List the distractions you will neutralize today.</text>
+  <text class="tiny" x="455" y="242">Phone, tabs, people, environment.</text>
+  <text class="tiny" x="410" y="268">1.</text><line class="fillline" x1="430" y1="268" x2="680" y2="268"/>
+  <text class="tiny" x="410" y="292">2.</text><line class="fillline" x1="430" y1="292" x2="680" y2="292"/>
+  <text class="tiny" x="410" y="316">3.</text><line class="fillline" x1="430" y1="316" x2="680" y2="316"/>
+
+  <rect class="box" x="740" y="180" width="320" height="185"/>
+  <text class="letter" x="760" y="222">I</text>
+  <text class="label" x="805" y="204">INSTALL THE BLOCK</text>
+  <text class="small" x="805" y="224">Schedule the 25-minute Deep Work session.</text>
+  <text class="tiny" x="805" y="242">Set the timer. Silence the device.</text>
+  <line class="fillline" x1="760" y1="270" x2="1030" y2="270"/>
+  <line class="fillline" x1="760" y1="300" x2="1030" y2="300"/>
+  <line class="fillline" x1="760" y1="330" x2="1030" y2="330"/>
+
+  <rect class="box" x="40" y="395" width="320" height="185"/>
+  <text class="letter" x="60" y="437">O</text>
+  <text class="label" x="105" y="419">ORDER THE AIRFLOW</text>
+  <text class="small" x="105" y="439">Assign the Big Rocks to the highest energy times.</text>
+  <text class="tiny" x="105" y="457">Do not let urgent tasks steal the air.</text>
+  <line class="fillline" x1="60" y1="485" x2="330" y2="485"/>
+  <line class="fillline" x1="60" y1="515"

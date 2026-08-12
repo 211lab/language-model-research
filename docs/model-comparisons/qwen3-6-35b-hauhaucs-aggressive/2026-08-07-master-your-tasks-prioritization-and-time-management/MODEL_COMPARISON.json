@@ -1,0 +1,8 @@
+{
+  "model": "qwen3.6-35b-hauhaucs-aggressive",
+  "provider": "local llama-swap",
+  "endpoint": "http://titan:11434",
+  "text_model": "qwen3.6-35b-hauhaucs-aggressive",
+  "image_model": "fixed local image model",
+  "source": "fixed-seed editorial cross-run"
+}

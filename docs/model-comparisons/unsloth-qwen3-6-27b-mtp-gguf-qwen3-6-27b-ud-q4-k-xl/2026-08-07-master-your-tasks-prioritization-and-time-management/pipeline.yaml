@@ -1,0 +1,268 @@
+context:
+  title: Master_Your_Tasks_Prioritization_and_Time_Management
+  slug: master-your-tasks-prioritization-and-time-management
+  date: '2026-08-07'
+  target_dir: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management
+providers:
+  text:
+    kind: openai-compatible
+    providerUrl: http://titan:11434
+    model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+    timeout_seconds: 900
+    retry_attempts: 3
+    retry_wait_seconds: 10
+  image:
+    kind: openai-compatible
+    providerUrl: http://titan:11434
+    model: unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m
+    timeout_seconds: 900
+    retry_attempts: 3
+    retry_wait_seconds: 10
+  audio:
+    kind: openai-compatible
+    providerUrl: http://localhost:11434
+    model: AUDIO_MODEL_NAME
+variables:
+  voice: direct, pragmatic, masculine, concrete
+  audience: men who need structure, ownership, and steady action
+tracks:
+  promo_assets: false
+  landing_page: false
+steps:
+- id: lesson
+  format: markdown
+  prompt_file: automation/prompts/burn/lesson.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md
+  inputs:
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+    alias: context
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md
+    alias: seed
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md
+    alias: draft_index
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: instructions
+  format: markdown
+  prompt_file: automation/prompts/burn/instructions.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md
+  depends_on:
+  - lesson
+  inputs:
+  - step: lesson
+    alias: lesson
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+    alias: context
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md
+    alias: seed
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: gpt
+  format: markdown
+  prompt_file: automation/prompts/burn/gpt.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md
+  depends_on:
+  - instructions
+  inputs:
+  - step: instructions
+    alias: instructions
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: worksheet
+  format: svg
+  prompt_file: automation/prompts/burn/worksheet-svg.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg
+  depends_on:
+  - lesson
+  - instructions
+  inputs:
+  - step: instructions
+    alias: instructions
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: worksheet_masked
+  format: svg
+  prompt_file: automation/prompts/burn/worksheet-masked-svg.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg
+  depends_on:
+  - worksheet
+  inputs:
+  - step: worksheet
+    alias: worksheet
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: promo
+  format: markdown
+  prompt_file: automation/prompts/burn/promo-image.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/PROMO_PROMPT.md
+  depends_on:
+  - worksheet_masked
+  - index
+  - cover_image
+  tracks:
+  - promo_assets
+  inputs:
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+    alias: context
+  - step: worksheet_masked
+    alias: worksheet_masked
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: promo_image
+  format: png
+  prompt_file: automation/prompts/burn/render-image.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/promo.png
+  modality: image
+  depends_on:
+  - promo
+  tracks:
+  - promo_assets
+  inputs:
+  - step: promo
+    alias: asset_prompt
+  model: unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m
+- id: banner
+  format: markdown
+  prompt_file: automation/prompts/burn/banner-image.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/BANNER_PROMPT.md
+  depends_on:
+  - worksheet_masked
+  - promo
+  - index
+  - cover_image
+  tracks:
+  - promo_assets
+  inputs:
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+    alias: context
+  - step: worksheet_masked
+    alias: worksheet_masked
+  - step: promo
+    alias: promo
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: banner_image
+  format: png
+  prompt_file: automation/prompts/burn/render-image.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/banner.png
+  modality: image
+  depends_on:
+  - banner
+  tracks:
+  - promo_assets
+  inputs:
+  - step: banner
+    alias: asset_prompt
+  model: unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m
+- id: cover
+  format: markdown
+  prompt_file: automation/prompts/burn/cover-image.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md
+  depends_on:
+  - index
+  inputs:
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+    alias: context
+  - step: index
+    alias: long_form
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: cover_image
+  format: png
+  prompt_file: automation/prompts/burn/render-image.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png
+  modality: image
+  depends_on:
+  - cover
+  inputs:
+  - step: cover
+    alias: asset_prompt
+  model: unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m
+- id: page_copy
+  format: markdown
+  prompt_file: automation/prompts/burn/page-copy.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/PAGE_COPY.md
+  depends_on:
+  - promo
+  - banner
+  tracks:
+  - landing_page
+  inputs:
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+    alias: context
+  - step: promo
+    alias: promo
+  - step: banner
+    alias: banner
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: landing_page
+  format: html
+  prompt_file: automation/prompts/burn/landing-page-html.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/LANDING_PAGE.html
+  depends_on:
+  - banner
+  - page_copy
+  tracks:
+  - landing_page
+  inputs:
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+    alias: context
+  - step: banner
+    alias: banner
+  - step: page_copy
+    alias: page_copy
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: worksheet_page
+  format: markdown
+  prompt_file: automation/prompts/burn/worksheet-page-prototype.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_PAGE.md
+  depends_on:
+  - promo
+  - page_copy
+  tracks:
+  - landing_page
+  inputs:
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+    alias: context
+  - step: promo
+    alias: promo
+  - step: page_copy
+    alias: page_copy
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: index
+  format: markdown
+  prompt_file: automation/prompts/burn/index.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md
+  depends_on:
+  - lesson
+  inputs:
+  - step: lesson
+    alias: lesson
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+    alias: context
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: newsletter_email
+  format: markdown
+  prompt_file: automation/prompts/burn/newsletter-email.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md
+  depends_on:
+  - index
+  - lesson
+  - instructions
+  - gpt
+  inputs:
+  - step: index
+    alias: index
+  - step: lesson
+    alias: lesson
+  - step: instructions
+    alias: instructions
+  - step: gpt
+    alias: gpt
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+    alias: context
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl
+- id: community_post
+  format: markdown
+  prompt_file: automation/prompts/burn/community-post.md
+  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md
+  depends_on:
+  - index
+  inputs:
+  - step: index
+    alias: index
+  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+    alias: context
+  model: unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl

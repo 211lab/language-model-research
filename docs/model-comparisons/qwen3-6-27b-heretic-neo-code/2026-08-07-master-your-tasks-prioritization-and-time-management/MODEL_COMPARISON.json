@@ -1,0 +1,8 @@
+{
+  "model": "qwen3.6-27b-heretic-neo-code",
+  "provider": "local llama-swap",
+  "endpoint": "http://titan:11434",
+  "text_model": "qwen3.6-27b-heretic-neo-code",
+  "image_model": "fixed local image model",
+  "source": "fixed-seed editorial cross-run"
+}

@@ -1,0 +1,485 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl",
+  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 65.32,
+  "confidence": 0.952,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 82.5,
+      "penalties": 21.0,
+      "final_score": 61.5,
+      "confidence": 0.933,
+      "metrics": {
+        "fk_grade": 3.84,
+        "words": 1453,
+        "sentences": 189,
+        "average_sentence_words": 7.69,
+        "sentence_length_stddev": 3.94,
+        "concrete_opening": true,
+        "action_signals": 27,
+        "framework_signals": 10,
+        "late_you_ratio": 0.51,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The mug was not the problem. The lack of direction was.",
+            "It is not just a mug. It is a symbol of a day that was not finished."
+          ],
+          "reason": "The artifact clearly reframes a neglected mug as evidence of disordered attention and unfinished priorities."
+        },
+        {
+          "id": "argument_progression",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "We mistake motion for progress.",
+            "This is not a problem of time. You have the same twenty-four hours as everyone else. This is a problem of structure.",
+            "You need to stop trying to do everything. You need to start doing the right things."
+          ],
+          "reason": "The piece moves coherently from clutter, to scattered behavior, to structural diagnosis, to prioritization and a usable process."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "There is a coffee mug sitting on the corner of a workbench.",
+            "There is a ring of dried coffee at the bottom. It has been there for three days."
+          ],
+          "reason": "The opening is specific, physical, and immediately observable."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "The mind quietly assumes that if we do everything, we are safe.",
+            "Identity quietly keeps score.",
+            "It is the feeling of knowing you have a mountain of work waiting for tomorrow."
+          ],
+          "reason": "The piece interprets reactivity, overcommitment, identity, anxiety, and guilt rather than merely prescribing time-management tactics."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "An email pings, so you answer it. A coworker asks a question, so you stop what you are doing.",
+            "When you spend your day on small, reactive tasks, you teach yourself that you are a person who reacts."
+          ],
+          "reason": "The psychological claims are tied to observable workplace and daily behaviors."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "Busy means you are moving toward a destination. Scattered means you are moving in every direction at once.",
+            "It is about direction."
+          ],
+          "reason": "The piece offers a usable distinction about how to judge activity, then applies it to daily choices."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "Motivation is a spark. It is not a system. Motivation fades. Structure remains.",
+            "Integrity is structural.",
+            "Multitasking is a lie. It is just rapid switching. And every switch costs energy."
+          ],
+          "reason": "It offers several useful conceptual distinctions and causal explanations, though some claims are compressed into slogans and are not deeply qualified."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "This is not about perfection. It is about direction.",
+            "You will still have interruptions. You will still have emergencies. But you will not let them dictate your entire day.",
+            "This is not a character flaw. It is a structural failure."
+          ],
+          "reason": "The argument recognizes exceptions and avoids treating imperfect execution as total failure, though some later claims become absolute."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You need to work with intent.",
+            "You need to start doing the right things.",
+            "You can choose to take control."
+          ],
+          "reason": "The reader is given agency and specific control over priorities, attention, and task selection."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "But now you see it differently.",
+            "It is a reminder that motion is not progress."
+          ],
+          "reason": "The mug returns after the conceptual argument with an altered meaning, creating a clear progression in how the reader is meant to see it."
+        },
+        {
+          "id": "decision",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You have two choices.",
+            "Or, you can choose to take control."
+          ],
+          "reason": "The piece presents a clear decision between reactive activity and deliberate prioritization."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Tonight, write down all your tasks. Pick only the top three that matter most for tomorrow.",
+            "Turn off all notifications. Work for 25 minutes. Take a 5-minute break.",
+            "Complete your big tasks before touching small chores."
+          ],
+          "reason": "It gives specific, sequenced, time-bound actions, including a seven-day implementation plan."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The fire gets hot, but it burns out quickly.",
+            "Heat without structure wastes energy.",
+            "This model restores the Blower System. It stops the leaks. It directs the air to the fire."
+          ],
+          "reason": "Concrete objects and actions support abstract ideas about structure, energy, attention, and direction."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "It happens in offices, in garages, and in home offices every single day.",
+            "A coworker asks a question, so you stop what you are doing."
+          ],
+          "reason": "The examples are ordinary, recognizable, and situated in real work and home environments."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "This is not about perfection. It is about direction.",
+            "You do not need to work harder. You need to work with intent."
+          ],
+          "reason": "The language is accessible and the central distinction remains easy to follow without becoming entirely empty. Some slogans oversimplify."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You can leave it there. You can keep running. Or you can pick it up. You can wash it. You can put it away. You can clear the bench. You can start fresh."
+          ],
+          "reason": "Short sentences, controlled repetition, and variation create strong oral rhythm. The article occasionally overuses emphatic fragments."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 77.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "Exhaustion is not a measure of value. It is often just a measure of friction.",
+            "Motivation is a spark. It is not a system."
+          ],
+          "reason": "Several lines compress useful distinctions efficiently, but the Furnace, fire, Blower, mastery, and direction ideas are repeated across sections."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 46.0,
+          "passed": false,
+          "confidence": 0.96,
+          "evidence": [
+            "Every time you choose distraction, you choose mediocrity. Every time you choose focus, you choose mastery.",
+            "The choice is yours. But know this: your fire is waiting. Feed it."
+          ],
+          "reason": "The article critiques dependence on motivation, but its overall rhetoric includes binary self-improvement framing, pressure, and motivational exhortation."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "This is not a character flaw. It is a structural failure.",
+            "Your environment is designed to distract you. Your habits are designed to scatter you."
+          ],
+          "reason": "It discusses mental patterns without adopting a therapeutic persona, diagnosing the reader, or inviting emotional dependence."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 18.0,
+          "passed": false,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "The piece uses a directive, moralizing voice that frames productivity choices as personal virtue or failure. Its repeated commands and stark opposition between \"mediocrity\" and \"mastery\" create a preaching tone rather than an observational or self-questioning one. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_guru",
+          "score": 16.0,
+          "passed": false,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "The article presents branded metaphors and a named model as an authoritative system, using confident claims and mastery language. It does not sufficiently qualify the framework or avoid positioning the narrator as the source of a definitive solution. (evidence could not be verified)"
+        },
+        {
+          "id": "closing_strength",
+          "score": 52.0,
+          "passed": false,
+          "confidence": 0.6649999999999999,
+          "evidence": [],
+          "reason": "The ending provides a concrete seven-day action sequence and returns to the fire metaphor, giving it structural closure. However, the final line is generic and hype-driven, and the closing does not add a fresh insight or resolve the opening mug image with enough specificity. (evidence could not be verified)"
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 84.14,
+      "penalties": 15.0,
+      "final_score": 69.14,
+      "confidence": 0.971,
+      "metrics": {
+        "fk_grade": 5.29,
+        "words": 1136,
+        "sentences": 123,
+        "average_sentence_words": 9.24,
+        "sentence_length_stddev": 4.98,
+        "concrete_opening": false,
+        "action_signals": 27,
+        "framework_signals": 4,
+        "late_you_ratio": 0.31,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You are not busy. You are scattered."
+          ],
+          "reason": "It sharply reframes the problem from time scarcity to scattered attention."
+        },
+        {
+          "id": "argument_progression",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You are reacting to noise instead of creating signal.",
+            "To change this, you must stop trying to do everything. You must start doing the right things.",
+            "The following worksheet guides you through the **FOCUS** model."
+          ],
+          "reason": "It moves coherently from diagnosis, to cause, to principle, to a structured intervention."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "A small, easy task appears, so you do it to feel productive.",
+            "You feel like you ran a marathon, but when you look at the map, you are still standing at the starting line."
+          ],
+          "reason": "It interprets the emotional reward of easy work and the distorted sense of progress created by scattered activity."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "Saying \"no\" to the urgent is the only way to say \"yes\" to the important.",
+            "It is about taking back control of your day, one decision at a time."
+          ],
+          "reason": "The argument offers a usable principle about choosing importance over urgency, then operationalizes it."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 73.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "Busy means you are moving. Scattered means you are moving in every direction at once, burning energy but going nowhere.",
+            "Multitasking is a lie. It is just rapid switching, and it kills your momentum."
+          ],
+          "reason": "The distinctions are clear and useful, but the analysis remains fairly familiar and sometimes rhetorically absolute."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You are letting the loudest voice in the room dictate your day.",
+            "Choose to take control. Prioritize ruthlessly."
+          ],
+          "reason": "The argument locates agency in the reader's choices and behaviors rather than in external conditions."
+        },
+        {
+          "id": "framework_lands",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The following worksheet guides you through the **FOCUS** model.",
+            "Follow each letter precisely. Do not skip steps."
+          ],
+          "reason": "The FOCUS acronym is fully developed into five distinct, actionable stages."
+        },
+        {
+          "id": "unique_action",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Putting your phone in another room or in a drawer.",
+            "Setting an auto-responder or status message: \"In focus mode until 11:00 AM. Will respond then.\""
+          ],
+          "reason": "The letter-specific sections produce concrete actions beyond generic advice to focus."
+        },
+        {
+          "id": "action_relevance",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Identify your top three distractions. Write them down. Then, write down the specific action you will take to eliminate each one during your focus blocks."
+          ],
+          "reason": "The actions directly implement the essay's diagnosis of scattered attention and its FOCUS framework."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Blocking 90\u2013120 minutes for each A-task during your peak energy window.",
+            "1:00 PM \u2013 2:00 PM: Email and Slack.",
+            "3:00 PM \u2013 3:30 PM: Phone calls."
+          ],
+          "reason": "The guidance repeatedly specifies observable behaviors, time blocks, environmental changes, and review practices."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "If I only do three things today, which ones will make the biggest difference?",
+            "Exactly three A-tasks that align with your highest priorities."
+          ],
+          "reason": "The three-task constraint simplifies prioritization without erasing the underlying reasoning."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Do not organize yet. Just get it out of your head and onto the page.",
+            "Stop reacting. Start finishing."
+          ],
+          "reason": "Short commands, contrasts, and varied sentence lengths create a crisp operational rhythm."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "You are not busy. You are scattered.",
+            "This is not about working harder. It is about working with intent."
+          ],
+          "reason": "The central distinctions are compressed effectively, though the repeated avoid/works-better sections add some bulk."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 38.0,
+          "passed": false,
+          "confidence": 0.97,
+          "evidence": [
+            "This is not about working harder. It is about working with intent.",
+            "Do not let the loudest, most urgent demands dictate your day.",
+            "Every time you choose distraction, you choose mediocrity.",
+            "Your fire is waiting. Feed it."
+          ],
+          "reason": "The practical rejection of working harder is materially present, but the piece ends in overt motivational framing and uses success, mastery, urgency, and inspirational commands. The anti-motivational tone is therefore inconsistent and not dominant."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "This is the mechanical process for controlling your attention and restoring your Blower System.",
+            "Identify your top three distractions. Write them down.",
+            "If an A-task wasn\u2019t done, ask why. Was it too big? Break it down. Was it not important? Drop it."
+          ],
+          "reason": "The source treats the problem as observable behavior and task mechanics rather than offering emotional reassurance, diagnosis, or therapeutic interpretation. Its limited references to feeling or stress do not change the dominant operational tone."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 42.0,
+          "passed": false,
+          "confidence": 0.98,
+          "evidence": [
+            "You must choose to be selective.",
+            "Do not let the loudest, most urgent demands dictate your day.",
+            "Choose to take control. Prioritize ruthlessly."
+          ],
+          "reason": "The text repeatedly uses moralizing imperatives and commands, which gives it a preaching voice."
+        },
+        {
+          "id": "anti_guru",
+          "score": 67.0,
+          "passed": true,
+          "confidence": 0.91,
+          "evidence": [
+            "You have the same twenty-four hours as everyone else.",
+            "The following worksheet guides you through the **FOCUS** model.",
+            "Follow each letter precisely. Do not skip steps.",
+            "Your fire is waiting. Feed it."
+          ],
+          "reason": "The piece does not claim special authority, secret knowledge, or personal guru status. However, its branded model, absolute instructions, and elevated closing language create some self-help authority and guru-adjacent framing, so the score is reduced."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.011392
+}

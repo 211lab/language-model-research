@@ -1,0 +1,8 @@
+{
+  "model": "gemma-4-12b-obliterated",
+  "provider": "local llama-swap",
+  "endpoint": "http://titan:11434",
+  "text_model": "gemma-4-12b-obliterated",
+  "image_model": "fixed local image model",
+  "source": "fixed-seed editorial cross-run"
+}

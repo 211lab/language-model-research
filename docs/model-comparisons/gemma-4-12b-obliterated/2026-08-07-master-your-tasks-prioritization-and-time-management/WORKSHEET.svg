@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">Master Your Tasks Prioritization and Time Management</title>
+  <desc>Landscape worksheet on a white background with large title, introduction, fillable sections built around the prioritization and time management model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">Master Your Tasks Prioritization and Time Management</text>
+  <text class="sub" x="40" y="96">Build a High-Impact Workflow</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <text class="label" x="720" y="58">PROCESS GOAL</text>
+  <text class="small" x="720" y="78">Move from a reactive posture to a proactive one by identifying and executing "Big Rocks."</text>
+
+  <text class="verb" x="444" y="142">MASTER</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="320" height="185"/>
+  <text class="letter" x="60" y="222">S</text>
+  <text class="label" x="105" y="204">SORT &amp; CATEGORIZE</text>
+  <text class="small" x="105" y="224">Group tasks by importance, not by arrival or urgency.</text>
+  <text class="tiny" x="105" y="242">Avoid: Mixing email checks with critical system fixes.</text>
+  <line class="fillline" x1="60" y1="270" x2="330" y2="270"/>
+  <line class="fillline" x1="60" y1="300" x2="330" y2="300"/>
+  <line class="fillline" x1="60" y1="330" x2="330" y2="330"/>
+
+  <rect class="box" x="390" y="180" width="320" height="185"/>
+  <text class="letter" x="410" y="222">T</text>
+  <text class="label" x="455" y="204">TARGET THE BIG ROCKS</text>
+  <text class="small" x="455" y="224">Identify the top 3 most critical tasks from the high-priority group.</text>
+  <text class="tiny" x="455" y="242">These must be addressed before any other work.</text>
+  <line class="fillline" x1="410" y1="270" x2="680" y2="270"/>
+  <line class="fillline" x1="410" y1="300" x2="680" y2="300"/>
+  <line class="fillline" x1="410" y1="330" x2="680" y2="330"/>
+
+  <rect class="box" x="740" y="180" width="320" height="185"/>
+  <text class="letter" x="760" y="222">R</text>
+  <text class="label" x="805" y="204">ROUTE THE SCHEDULE</text>
+  <text class="small" x="805" y="224">Map out specific time blocks for Big Rocks.</text>
+  <text class="tiny" x="805" y="242">Treat these as non-negotiable appointments.</text>
+  <line class="fillline" x1="760" y1="270" x2="1030" y2="270"/>
+  <line class="fillline" x1="760" y1="300" x2="1030" y2="300"/>
+  <line class="fillline" x1="760" y1="330" x2="1030" y2="330"/>
+
+  <rect class="box" x="40" y="395" width="320" height="185"/>
+  <text class="letter" x="60" y="437">I</text>
+  <text class="label" x="105" y="419">ISOLATE &amp; EXECUTE</text>
+  <text class="small" x="105" y="439">Remove all distractions during high-priority blocks.</text>
+  <text class="tiny" x="105" y="457">No email, no messages, no switching tasks.</text>
+  <line class="fillline" x1="60" y1="485" x2="330" y2="485"/>
+  <line class="fillline" x1="60" y1="515" x2="330" y2="515"/>
+  <line class="fillline" x1="60" y1="545" x2="330" y2="545"/>
+
+  <rect class="box" x="390" y="395" width="320" height="185"/>
+  <text class="letter" x="410" y="437
