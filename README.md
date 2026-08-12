@@ -18,6 +18,15 @@ and are excluded from the priced frontier.
 The source bundle lives in [`docs/model-comparisons`](docs/model-comparisons).
 The generated JSON and SVG snapshot are also available at the repository root.
 
+## Personal-assistant benchmark
+
+The [personal-assistant comparison](assistant-benchmark.html) adds nine local
+GGUF models tested on 21 synthetic information-worker tasks, plus cold-load and
+OpenClaw-style latency measurements. Its score is kept separate from the
+SteadyBurn editorial-content score because the two suites measure different
+capabilities. Source data and methodology live in
+[`docs/assistant-benchmark`](docs/assistant-benchmark).
+
 ## Rebuild
 
 From the repository root, run:
