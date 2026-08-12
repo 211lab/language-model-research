@@ -1,17 +1,19 @@
 # Personal-assistant benchmark
 
-This dataset compares nine local GGUF chat models from the perspective of a
-tool-using personal assistant and information worker. It is intentionally
-separate from the repository's SteadyBurn editorial-content score: the two
-scores measure different work and must not be merged or treated as equivalent.
+This dataset compares 32 models from the perspective of a tool-using personal
+assistant and information worker: nine local GGUF models and 23 OpenRouter
+models. It is intentionally separate from the repository's SteadyBurn
+editorial-content score: the two scores measure different work and must not be
+merged or treated as equivalent.
 
 ## Protocol
 
 - Run date: 2026-08-02
-- Runtime: llama.cpp behind llama-swap on one local host
-- Models: nine chat models; the discovered image-only model was excluded
+- Runtime: local models used llama.cpp behind llama-swap; OpenRouter models
+  used the recorded OpenRouter run
+- Models: 32 chat models; the discovered image-only model was excluded
 - Workload: 21 synthetic project, calendar, email, research, data, English,
-  safety, judgment, and multi-source tasks per model (189 task runs total)
+  safety, judgment, and multi-source tasks per model (672 task slots total)
 - Isolation: one model loaded and one request active at a time
 - Lifecycle: explicit unload, 10 seconds with no model resident, warm one model,
   run every task with a fresh fixture and conversation, then unload
@@ -43,7 +45,8 @@ python scripts/build_radar.py
 ```
 
 The build writes the compiled JSON, dashboard, and four SVG snapshots both here
-and at the repository root. `model-results.csv` is the source of truth.
+and at the repository root. `assistant-model-results.csv` is the combined
+published source. `model-results.csv` is the local-round input.
 
 ## Next local round
 
