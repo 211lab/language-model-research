@@ -189,7 +189,10 @@ def tradeoff_svg(data: dict[str, Any]) -> str:
 
 
 def latency_svg(data: dict[str, Any]) -> str:
-    models = sorted(data["models"], key=lambda item: item["latency_total_seconds"])
+    models = sorted(
+        (item for item in data["models"] if item["latency_total_seconds"] > 0),
+        key=lambda item: item["latency_total_seconds"],
+    )
     width, height, left, top, plot_width, row_height = 1240, 690, 360, 115, 790, 55
     maximum = 130.0
     body: list[str] = []
@@ -203,7 +206,7 @@ def latency_svg(data: dict[str, Any]) -> str:
         warm = plot_width * model["openclaw_seconds"] / maximum
         attr = model_attr(model)
         body += [f'<text class="label"{attr} x="{left-16}" y="{yy+18}" text-anchor="end">{esc(plot_name(model))}</text>', f'<rect{attr} x="{left}" y="{yy}" width="{cold:.2f}" height="26" fill="#3b82f6"/>', f'<rect{attr} x="{left+cold:.2f}" y="{yy}" width="{warm:.2f}" height="26" fill="#f59e0b"/>', f'<text class="value"{attr} x="{left+cold+warm+9:.1f}" y="{yy+19}">{model["latency_total_seconds"]:.1f}s</text>']
-    return svg_shell("Cold-load and OpenClaw latency", "One model resident and one request active; 10-second unloaded buffer between models.", width, height, body)
+    return svg_shell("Cold-load and OpenClaw latency", "Only cohorts with recorded latency telemetry are plotted; unavailable provider timing is omitted.", width, height, body)
 
 
 def heatmap_svg(data: dict[str, Any]) -> str:
@@ -226,8 +229,11 @@ def heatmap_svg(data: dict[str, Any]) -> str:
 def dashboard_html(
     data: dict[str, Any], charts: dict[str, str], source_prefix: str, editorial_href: str, home_href: str, methodology_href: str
 ) -> str:
+    def seconds(value: float) -> str:
+        return f"{value:.2f}s" if value > 0 else "—"
+
     rows = "".join(
-        f'<tr{model_attr(model)}><td>{esc(model["display_name"])}</td><td>{model["assistant_score"]:.2f}</td><td>{model["tasks_passed"]}/{model["tasks_total"]}</td><td>{model["tool_call_success_rate"]:.1f}%</td><td>{model["median_task_seconds"]:.2f}s</td><td>{model["cold_start_seconds"]:.2f}s</td><td>{model["openclaw_seconds"]:.2f}s</td><td>{esc(model["run_status"])}</td></tr>'
+        f'<tr{model_attr(model)}><td>{esc(model["display_name"])}</td><td>{model["assistant_score"]:.2f}</td><td>{model["tasks_passed"]}/{model["tasks_total"]}</td><td>{model["tool_call_success_rate"]:.1f}%</td><td>{seconds(model["median_task_seconds"])}</td><td>{seconds(model["cold_start_seconds"])}</td><td>{seconds(model["openclaw_seconds"])}</td><td>{esc(model["run_status"])}</td></tr>'
         for model in data["models"]
     )
     by_id = {model["model"]: model for model in data["models"]}
@@ -268,23 +274,33 @@ body{{margin:0;background:#070b16;color:#e5e7eb;font:16px/1.55 system-ui,sans-se
 def build(root: Path, repo_root: Path) -> dict[str, Any]:
     data = load_dataset(root)
     charts = {"score": score_svg(data), "tradeoff": tradeoff_svg(data), "latency": latency_svg(data), "heatmap": heatmap_svg(data)}
+    dataset_fields = sorted({key for model in data["models"] for key in model})
+    dataset_csv = []
+    dataset_csv.append(",".join(dataset_fields))
+    for model in data["models"]:
+        dataset_csv.append(",".join('"' + str(model.get(field, "")).replace('"', '""') + '"' for field in dataset_fields))
     outputs = {
         "assistant-benchmark.json": json.dumps(data, indent=2) + "\n",
         "assistant-benchmark-score.svg": charts["score"],
         "assistant-benchmark-speed-quality.svg": charts["tradeoff"],
         "assistant-benchmark-latency.svg": charts["latency"],
         "assistant-benchmark-categories.svg": charts["heatmap"],
+        "assistant-model-results.csv": "\n".join(dataset_csv) + "\n",
     }
     for directory in (root, repo_root):
         for name, content in outputs.items():
             (directory / name).write_text(content, encoding="utf-8")
-    (root / "assistant-benchmark.html").write_text(
-        dashboard_html(data, charts, "", "../model-comparisons/model-comparison.html", "../../index.html", "../../methodology.html"), encoding="utf-8"
-    )
-    (repo_root / "assistant-benchmark.html").write_text(
-        dashboard_html(data, charts, "docs/assistant-benchmark/", "index.html", "index.html", "methodology.html"), encoding="utf-8"
-    )
-    (repo_root / "methodology.html").write_text(methodology_html(data), encoding="utf-8")
+    cohort_text = f'{data["model_count"]} models across local and OpenRouter cohorts'
+    root_dashboard = dashboard_html(data, charts, "", "../model-comparisons/model-comparison.html", "../../index.html", "../../methodology.html")
+    repo_dashboard = dashboard_html(data, charts, "docs/assistant-benchmark/", "index.html", "index.html", "methodology.html")
+    root_dashboard = root_dashboard.replace('href="model-results.csv"', 'href="assistant-model-results.csv"')
+    repo_dashboard = repo_dashboard.replace('href="docs/assistant-benchmark/model-results.csv"', 'href="docs/assistant-benchmark/assistant-model-results.csv"')
+    root_dashboard = root_dashboard.replace("Nine local GGUF models", cohort_text)
+    repo_dashboard = repo_dashboard.replace("Nine local GGUF models", cohort_text)
+    methodology = methodology_html(data).replace(f'{data["model_count"]} local GGUF models served through llama.cpp via llama-swap', cohort_text)
+    (root / "assistant-benchmark.html").write_text(root_dashboard, encoding="utf-8")
+    (repo_root / "assistant-benchmark.html").write_text(repo_dashboard, encoding="utf-8")
+    (repo_root / "methodology.html").write_text(methodology, encoding="utf-8")
     return data
 
 

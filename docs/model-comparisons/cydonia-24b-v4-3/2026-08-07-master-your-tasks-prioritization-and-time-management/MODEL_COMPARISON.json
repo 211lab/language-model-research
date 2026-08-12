@@ -1,0 +1,8 @@
+{
+  "model": "cydonia-24b-v4.3",
+  "provider": "local llama-swap",
+  "endpoint": "http://127.0.0.1:11436",
+  "text_model": "cydonia-24b-v4.3",
+  "image_model": "fixed local image model",
+  "source": "fixed-seed editorial cross-run"
+}

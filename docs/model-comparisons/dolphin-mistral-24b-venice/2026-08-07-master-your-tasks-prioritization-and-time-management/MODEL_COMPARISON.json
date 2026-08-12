@@ -1,0 +1,8 @@
+{
+  "model": "dolphin-mistral-24b-venice",
+  "provider": "local llama-swap",
+  "endpoint": "http://127.0.0.1:11436",
+  "text_model": "dolphin-mistral-24b-venice",
+  "image_model": "fixed local image model",
+  "source": "fixed-seed editorial cross-run"
+}

@@ -1,0 +1,494 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "gemma-4-e4b-it",
+  "case_study": "C:/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/gemma-4-e4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 84.52,
+  "confidence": 0.967,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 82.71,
+      "penalties": 0.0,
+      "final_score": 82.71,
+      "confidence": 0.966,
+      "metrics": {
+        "fk_grade": 7.26,
+        "words": 782,
+        "sentences": 57,
+        "average_sentence_words": 13.72,
+        "sentence_length_stddev": 7.36,
+        "concrete_opening": true,
+        "action_signals": 6,
+        "framework_signals": 5,
+        "late_you_ratio": 0.86,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "We mistake motion for progress.",
+            "The problem is not a lack of time. The problem is a lack of a filter."
+          ],
+          "reason": "Clearly reframes productivity from activity and time management toward attention and selection."
+        },
+        {
+          "id": "argument_progression",
+          "score": 83.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "What I've started noticing is the difference between being busy and being effective.",
+            "This is where the Furnace comes in.",
+            "That mechanism is the Tongs.",
+            "The choice is simple, though difficult"
+          ],
+          "reason": "Moves coherently from problem, to interpretation, to framework, to decision, though the metaphor system becomes somewhat elaborate."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "A pair of heavy-duty work boots sits by the door.",
+            "They are scuffed and worn, built for a specific kind of ground."
+          ],
+          "reason": "Opens with a specific, physical scene before introducing abstraction."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "the anxiety, the demands, the drive",
+            "If you allow that pressure to spill out into the general noise of the day, it just becomes stress.",
+            "a state of constant overwhelm"
+          ],
+          "reason": "Explains how pressure becomes stress and overwhelm through unfiltered demands, though the psychological account remains fairly broad."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 74.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "We are constantly responding\u2014to the email ping, the meeting request, the small, immediate demand.",
+            "The Tongs force us to identify the \"big rocks\"\u2014the few tasks that, if completed, make the entire day a success.",
+            "It is the discipline of saying \"no\" to the good things so you can say \"yes\" to the great things."
+          ],
+          "reason": "Behavior is materially grounded in recognizable work situations and includes observable actions: pausing, assessing, selecting, identifying priority tasks, and declining lower-value demands. The score is limited because the piece does not explain how to perform these actions in a repeatable way; the Furnace, Forge, and Tongs remain largely metaphorical."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "mastery is not about doing more; it is about choosing better.",
+            "The Tongs force us to identify the \"big rocks\""
+          ],
+          "reason": "Presents a usable principle about prioritization and links it to action."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 70.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "the problem is not a lack of time. The problem is a lack of a filter.",
+            "This isn't about managing time better; it's about managing attention better.",
+            "The system that protects your energy is the system that forces you to prioritize.",
+            "It is not just about having good intentions; it is about having a structure that protects those intentions."
+          ],
+          "reason": "The piece makes a coherent conceptual distinction between time and attention, urgency and importance, intention and structure, and connects prioritization to integrity. That is substantive thought rather than empty motivation. Depth is constrained by repeated assertion and limited examination of tradeoffs, exceptions, or how the proposed structure works under competing priorities."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 76.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "The smaller claim is actually more interesting",
+            "Before going further, I want to be careful here.",
+            "The choice is simple, though difficult"
+          ],
+          "reason": "Includes qualification and acknowledges difficulty, though it offers limited counterexamples or boundary conditions."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You can choose to implement the Tongs.",
+            "You can choose to build the structure that preserves your energy"
+          ],
+          "reason": "Places responsibility for changing the system with the reader without claiming total control over circumstances."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 83.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "The boots by the door are ready to move, but they must be pointed somewhere.",
+            "They must be directed."
+          ],
+          "reason": "Develops the opening image from movement to purposeful direction."
+        },
+        {
+          "id": "decision",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The choice is simple, though difficult: You can continue to live in a state of constant overwhelm",
+            "Or, you can choose to implement the Tongs."
+          ],
+          "reason": "Presents a clear alternative and makes the central decision explicit."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "choose to implement the Tongs.",
+            "build the structure that preserves your energy and directs your effort"
+          ],
+          "reason": "Prescribes choosing and building a prioritization structure, though it does not provide a detailed implementation sequence."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "A pair of heavy-duty work boots sits by the door.",
+            "The system that protects your energy is the system that forces you to prioritize."
+          ],
+          "reason": "Balances physical imagery with abstract claims about attention, effort, and structure."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "the email ping, the meeting request, the small, immediate demand",
+            "a quick reply, a minor chore, a colleague's immediate crisis"
+          ],
+          "reason": "Uses ordinary, credible pressures rather than inflated scenarios."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The problem is not a lack of time. The problem is a lack of a filter."
+          ],
+          "reason": "Reduces the central idea to a clear contrast without flattening it."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "We are constantly responding\u2014to the email ping, the meeting request, the small, immediate demand.",
+            "We are always moving. We are always catching up."
+          ],
+          "reason": "Varies sentence lengths and uses parallel short sentences effectively. The repeated cadence occasionally becomes formulaic."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 72.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "This matters because mastery is not about doing more; it is about choosing better."
+          ],
+          "reason": "Contains concise formulations, but several passages restate the same prioritization claim through Furnace, Forge, Tongs, Fire, and boots imagery."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "We become highly efficient machines for doing busywork, but terrible operators for building anything meaningful.",
+            "a state of constant overwhelm"
+          ],
+          "reason": "Uses sober diagnosis rather than inflated inspiration or empty encouragement."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "This isn't about managing time better; it's about managing attention better.",
+            "The Furnace demands that we stop reacting and start directing."
+          ],
+          "reason": "Focuses on attention, structure, and conduct rather than emotional soothing or therapeutic validation."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "I think this is where the trap lies.",
+            "Before going further, I want to be careful here."
+          ],
+          "reason": "Uses a measured, self-limiting voice instead of moralizing or issuing broad commandments."
+        },
+        {
+          "id": "anti_guru",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "The smaller claim is actually more interesting",
+            "The choice is simple, though difficult"
+          ],
+          "reason": "Avoids claims of special authority and presents the framework as an argument rather than revelation."
+        },
+        {
+          "id": "closing_strength",
+          "score": 68.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "The boots need a clear path. They need a target"
+          ],
+          "reason": "Returns to the opening image and reinforces direction, but the ending is abrupt and the final sentence lacks a concluding elaboration."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 86.33,
+      "penalties": 0.0,
+      "final_score": 86.33,
+      "confidence": 0.968,
+      "metrics": {
+        "fk_grade": 7.96,
+        "words": 799,
+        "sentences": 59,
+        "average_sentence_words": 13.54,
+        "sentence_length_stddev": 7.21,
+        "concrete_opening": true,
+        "action_signals": 3,
+        "framework_signals": 4,
+        "late_you_ratio": 0.33,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The truth is that mastery is not about doing more; it is about choosing better.",
+            "We are going to stop treating your to-do list as a simple dump of obligations and start treating it as a strategic weapon."
+          ],
+          "reason": "The piece clearly reframes productivity from activity volume to selective, high-impact choice."
+        },
+        {
+          "id": "argument_progression",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "You are reacting to demands\u2014demands from colleagues, demands from your inbox, demands from your own anxiety\u2014and these demands are almost always small, immediate, and unimportant.",
+            "Identifying the big rocks is useless if you don't protect the time needed to complete them.",
+            "A plan is a living document."
+          ],
+          "reason": "The argument moves coherently from diagnosing reactive work to selecting priorities, protecting them, pruning, organizing, reviewing, and reducing distraction."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 70.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "This is the trap of the urgent.",
+            "these demands are almost always small, immediate, and unimportant.",
+            "demands from your own anxiety"
+          ],
+          "reason": "It interprets urgency as a behavioral and psychological trap, especially anxiety-driven reactivity. The interpretation is useful but relatively brief and not deeply developed."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The goal is efficiency, not obligation fulfillment."
+          ],
+          "reason": "States a usable philosophy of selection, omission, and tradeoffs rather than merely offering productivity tips."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 72.0,
+          "passed": true,
+          "confidence": 0.91,
+          "evidence": [
+            "identify the 2-3 tasks that, if completed, will create the most irreversible positive change in your life or goals.",
+            "these are your growth drivers.",
+            "Categorizing tasks into quadrants"
+          ],
+          "reason": "The distinction between activity, impact, urgency, and growth gives the piece real conceptual substance. Depth is limited by its familiar productivity framework and brief treatment of competing values."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "This step requires you to actively prune your list.",
+            "feeling calm and in charge of your own time"
+          ],
+          "reason": "Places responsibility on the reader to choose, protect, remove, review, and adapt tasks."
+        },
+        {
+          "id": "framework_lands",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "P: Plan the day's big rocks.",
+            "R: Reserve deep focus time.",
+            "I: Identify what to drop.",
+            "O: Organize tasks by impact.",
+            "R: Review and adjust daily.",
+            "I: Implement focus techniques.",
+            "T: Track progress and celebrate."
+          ],
+          "reason": "The PRIORIT framework is explicit, sequential, and operationalized with avoid, better, and worksheet actions."
+        },
+        {
+          "id": "unique_action",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "For each of your top three \"big rocks,\" assign a specific, protected time block in your schedule.",
+            "For your highest priority task, list three specific, concrete actions you will take to eliminate distractions during your scheduled focus block."
+          ],
+          "reason": "Provides concrete actions tied to the letter-specific steps, especially time protection and distraction removal."
+        },
+        {
+          "id": "action_relevance",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Identifying the big rocks is useless if you don't protect the time needed to complete them.",
+            "Apply a matrix (like the Eisenhower Matrix) to your remaining tasks."
+          ],
+          "reason": "The actions directly implement the central argument: select high-impact work, protect it, classify the remainder, and remove friction."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Phone on silent, in another room",
+            "Close all tabs except the project document",
+            "write down why they weren't completed and decide if they need to be moved, broken down, or eliminated."
+          ],
+          "reason": "Grounds the framework in observable behaviors and review decisions rather than abstract intention."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "identify the 2-3 tasks",
+            "The goal is efficiency, not obligation fulfillment."
+          ],
+          "reason": "It reduces a broad productivity problem to a manageable number of decisions without erasing the underlying distinction between urgency, impact, and obligation."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 83.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "small, immediate, and unimportant",
+            "postponed, delegated, or eliminated entirely"
+          ],
+          "reason": "Parallel phrasing, contrasts, and compact lists create readable variation across the instructional prose."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "The goal is efficiency, not obligation fulfillment.",
+            "A plan is a living document.",
+            "What works better:"
+          ],
+          "reason": "Most sentences carry clear instructional value, but the artifact repeats the avoid/better/action structure and restates familiar productivity advice across sections."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 81.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "The goal is efficiency, not obligation fulfillment.",
+            "Feeling guilty about dropping a task."
+          ],
+          "reason": "The piece is predominantly operational rather than inspirational. \u201cstrategic weapon,\u201d \u201cirreversible positive change,\u201d and \u201ccelebrate\u201d introduce limited motivational or hype-adjacent language."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The goal is efficiency, not obligation fulfillment.",
+            "Objectively assessing the task's impact"
+          ],
+          "reason": "The piece treats emotional states as practical obstacles and does not adopt a therapeutic, soothing, or introspective voice."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "Life happens, and the plan must adapt."
+          ],
+          "reason": "It gives direct instruction without moral condemnation and acknowledges that plans must respond to reality."
+        },
+        {
+          "id": "anti_guru",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Assuming the plan will work perfectly. Life happens, and the plan must adapt.",
+            "A plan is a living document."
+          ],
+          "reason": "The artifact presents a repeatable process rather than personal authority, secret knowledge, or claims of guaranteed transformation."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.031752
+}

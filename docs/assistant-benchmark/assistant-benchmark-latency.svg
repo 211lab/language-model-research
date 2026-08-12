@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1240" height="690" viewBox="0 0 1240 690" role="img" aria-labelledby="title desc">
-<title id="title">Cold-load and OpenClaw latency</title><desc id="desc">One model resident and one request active; 10-second unloaded buffer between models.</desc>
+<title id="title">Cold-load and OpenClaw latency</title><desc id="desc">Only cohorts with recorded latency telemetry are plotted; unavailable provider timing is omitted.</desc>
 <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 27px Arial,sans-serif}.sub,.tick{fill:#94a3b8;font:14px Arial,sans-serif}.label{fill:#e2e8f0;font:15px Arial,sans-serif}.value{fill:#f8fafc;font:700 15px Arial,sans-serif}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.5}</style>
 <rect class="bg" width="1240" height="690" rx="18"/>
 <text class="title" x="32" y="46">Cold-load and OpenClaw latency</text>
-<text class="sub" x="32" y="72">One model resident and one request active; 10-second unloaded buffer between models.</text>
+<text class="sub" x="32" y="72">Only cohorts with recorded latency telemetry are plotted; unavailable provider timing is omitted.</text>
 <line class="grid" x1="360.0" y1="100" x2="360.0" y2="648"/>
 <text class="tick" x="360.0" y="672" text-anchor="middle">0s</text>
 <line class="grid" x1="511.9" y1="100" x2="511.9" y2="648"/>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the CLEAR action model, and a summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS PRIORITIZATION AND TIME MANAGEMENT</text>
+  <text class="sub" x="40" y="96">Stop Drowning, Start Doing</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <text class="label" x="720" y="58">CHOICE</text>
+  <text class="small" x="720" y="78">Keep reacting to urgent distractions, or implement a system that</text>
+  <text class="small" x="720" y="94">forces you to complete your most important work first.</text>
+
+  <text class="verb" x="444" y="142">C L E A R</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="320" height="220"/>
+  <text class="letter" x="60" y="222">C</text>
+  <text class="label" x="105" y="204">CAPTURE: Clear Your Mental Clutter</text>
+  <text class="small" x="105" y="224">Write every task, idea, and commitment floating in your head.</text>
+  <text class="tiny" x="105" y="242">Don't judge or organize yet. Just get it all out.</text>
+  <text class="tiny" x="60" y="270">TODAY'S TASKS:</text>
+  <line class="fillline" x1="60" y1="290" x2="330" y2="290"/>
+  <line class="fillline" x1="60" y1="310" x2="330" y2="310"/>
+  <line class="fillline" x1="60" y1="330" x2="330" y2="330"/>
+  <line class="fillline" x1="60" y1="350" x2="330" y2="350"/>
+  <line class="fillline" x1="60" y1="370" x2="330" y2="370"/>
+
+  <rect class="box" x="390" y="180" width="320" height="220"/>
+  <text class="letter" x="410" y="222">L</text>
+  <text class="label" x="455" y="204">LABEL: Force Brutal Honesty</text>
+  <text class="small" x="455" y="224">Label each task: A (Top 3 priorities), B (Important), C (Minor), D (Wait), E (Delegate/Eliminate)</text>
+  <text class="tiny" x="455" y="242">Be honest. Not everything is an A-priority.</text>
+  <text class="tiny" x="410" y="270">A-TASKS (Top 3):</text>
+  <line class="fillline" x1="455" y1="270" x2="680" y2="270"/>
+  <line class="fillline" x1="455" y1="295" x2="680" y2="295"/>
+  <line class="fillline" x1="455" y1="320" x2="680" y2="320"/>
+  <text class="tiny" x="410" y="350">B-TASKS:</text>
+  <line class="fillline" x1="455" y1="350" x2="680" y2="350"/>
+  <text class="tiny" x="410" y="375">C-TASKS:</text>
+  <line class="fillline" x1="455" y1="375" x2="680" y2="375"/>
+
+  <rect class="box" x="740" y="180" width="320" height="220"/>
+  <text class="letter" x="760" y="222">E</text>
+  <text class="label" x="805" y="204">EXECUTE: Do the Work</text>
+  <text class="small" x="805" y="224">Schedule and complete your A-tasks first during focused blocks.</text>
+  <text class="tiny" x="805" y="242">Silence distractions. Work on one task until complete.</text>
+  <text class="tiny" x="760" y="270">MORNING FOCUS BLOCK (9-11 AM):</text>
+  <line class="fillline" x1="780" y1="270" x2="1030" y2="270"/>
+  <text class="tiny" x="760" y="295">TASK COMPLETED:</text>
+  <line class="fillline" x1="780" y1="295" x2="1030" y2="295"/>
+  <text class="tiny" x="760" y

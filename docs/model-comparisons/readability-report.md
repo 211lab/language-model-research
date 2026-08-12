@@ -10,9 +10,12 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | anthropic/claude-opus-5 | 6585 | 587 | 11.22 | 77.99 | 5.17 | 8.14 | 6.69 | 4.31 | 8.91 | 0.17 |
 | anthropic/claude-sonnet-5 | 3126 | 249 | 12.55 | 73.15 | 6.18 | 8.80 | 8.00 | 5.80 | 9.35 | 0.23 |
+| cydonia-24b-v4.3 | 4673 | 341 | 13.70 | 60.39 | 8.24 | 11.40 | 10.21 | 7.98 | 11.26 | 0.18 |
 | deepseek/deepseek-v3.2 | 3552 | 331 | 10.73 | 72.09 | 5.87 | 8.93 | 8.16 | 5.34 | 9.50 | 0.19 |
 | deepseek/deepseek-v4-flash | 4736 | 470 | 10.08 | 76.03 | 5.16 | 8.17 | 7.31 | 4.47 | 8.96 | 0.17 |
 | deepseek/deepseek-v4-pro | 5458 | 371 | 14.71 | 68.13 | 7.41 | 10.39 | 8.55 | 7.04 | 10.48 | 0.18 |
+| dolphin-mistral-24b-venice | 1781 | 116 | 15.35 | 57.06 | 9.11 | 12.77 | 11.42 | 9.60 | 12.24 | 0.29 |
+| gemma-4-e4b-it | 2266 | 163 | 13.90 | 64.33 | 7.74 | 11.12 | 9.33 | 7.36 | 11.07 | 0.27 |
 | google/gemini-3.5-flash-lite | 3351 | 208 | 16.11 | 60.31 | 8.85 | 11.57 | 10.41 | 9.09 | 11.33 | 0.21 |
 | google/gemini-3.6-flash | 3681 | 239 | 15.40 | 51.10 | 9.96 | 13.08 | 12.33 | 10.34 | 12.46 | 0.29 |
 | google/gemma-3-12b-it | 1995 | 136 | 14.67 | 48.19 | 10.18 | 13.71 | 12.60 | 10.27 | 12.82 | 0.27 |
@@ -43,6 +46,9 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | anthropic/claude-sonnet-5 | LESSON.md | 1087 | 97 | 23 | 11.21 | 76.54 | 5.37 | 8.20 |
 | anthropic/claude-sonnet-5 | index.md | 1056 | 92 | 24 | 11.48 | 73.73 | 5.83 | 8.49 |
 | anthropic/claude-sonnet-5 | INSTRUCTIONS.md | 983 | 60 | 9 | 16.38 | 67.57 | 7.91 | 10.26 |
+| cydonia-24b-v4.3 | LESSON.md | 1563 | 134 | 41 | 11.66 | 60.98 | 7.65 | 10.65 |
+| cydonia-24b-v4.3 | index.md | 1579 | 121 | 30 | 13.05 | 62.22 | 7.82 | 10.94 |
+| cydonia-24b-v4.3 | INSTRUCTIONS.md | 1531 | 88 | 37 | 17.40 | 56.94 | 9.64 | 12.99 |
 | deepseek/deepseek-v3.2 | LESSON.md | 1315 | 131 | 22 | 10.04 | 76.15 | 5.13 | 8.15 |
 | deepseek/deepseek-v3.2 | index.md | 1305 | 131 | 23 | 9.96 | 76.40 | 5.08 | 8.09 |
 | deepseek/deepseek-v3.2 | INSTRUCTIONS.md | 932 | 69 | 9 | 13.51 | 59.60 | 8.30 | 11.50 |
@@ -52,6 +58,12 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | deepseek/deepseek-v4-pro | LESSON.md | 1408 | 108 | 14 | 13.04 | 70.91 | 6.61 | 9.79 |
 | deepseek/deepseek-v4-pro | index.md | 1407 | 108 | 14 | 13.03 | 70.89 | 6.61 | 9.79 |
 | deepseek/deepseek-v4-pro | INSTRUCTIONS.md | 2643 | 155 | 35 | 17.05 | 64.63 | 8.48 | 11.26 |
+| dolphin-mistral-24b-venice | LESSON.md | 436 | 28 | 7 | 15.57 | 57.92 | 9.05 | 13.20 |
+| dolphin-mistral-24b-venice | index.md | 530 | 33 | 8 | 16.06 | 68.90 | 7.64 | 11.18 |
+| dolphin-mistral-24b-venice | INSTRUCTIONS.md | 815 | 55 | 11 | 14.82 | 48.86 | 10.13 | 13.58 |
+| gemma-4-e4b-it | LESSON.md | 685 | 48 | 13 | 14.27 | 63.66 | 7.93 | 11.08 |
+| gemma-4-e4b-it | index.md | 782 | 57 | 18 | 13.72 | 67.42 | 7.26 | 10.55 |
+| gemma-4-e4b-it | INSTRUCTIONS.md | 799 | 59 | 9 | 13.54 | 62.11 | 7.96 | 11.62 |
 | google/gemini-3.5-flash-lite | LESSON.md | 1341 | 85 | 24 | 15.78 | 62.75 | 8.43 | 11.02 |
 | google/gemini-3.5-flash-lite | index.md | 1289 | 82 | 29 | 15.72 | 62.31 | 8.47 | 11.04 |
 | google/gemini-3.5-flash-lite | INSTRUCTIONS.md | 721 | 41 | 15 | 17.59 | 52.05 | 10.37 | 13.58 |

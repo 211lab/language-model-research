@@ -11,139 +11,484 @@
 <text class="tick" x="859.0" y="107" text-anchor="middle">English</text>
 <text class="tick" x="971.0" y="107" text-anchor="middle">Safety</text>
 <text class="tick" x="1083.0" y="107" text-anchor="middle">Efficiency</text>
-<text class="label" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="339" y="156" text-anchor="end">Unsloth Qwen 27B</text>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="355" y="125" width="108" height="40" rx="4" fill="hsl(73.6 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="409.0" y="151" text-anchor="middle">61.3</text>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="467" y="125" width="108" height="40" rx="4" fill="hsl(100.8 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="521.0" y="151" text-anchor="middle">84.0</text>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="579" y="125" width="108" height="40" rx="4" fill="hsl(78.9 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="633.0" y="151" text-anchor="middle">65.8</text>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="691" y="125" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="745.0" y="151" text-anchor="middle">63.8</text>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="803" y="125" width="108" height="40" rx="4" fill="hsl(100.3 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="857.0" y="151" text-anchor="middle">83.6</text>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="915" y="125" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="969.0" y="151" text-anchor="middle">100.0</text>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="1027" y="125" width="108" height="40" rx="4" fill="hsl(94.3 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="1081.0" y="151" text-anchor="middle">78.6</text>
-<text class="label" data-model="qwen3.6-27b-heretic-neo-code" x="339" y="211" text-anchor="end">Qwen 27B Heretic</text>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="355" y="180" width="108" height="40" rx="4" fill="hsl(52.8 64% 38%)"/>
-<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="409.0" y="206" text-anchor="middle">44.0</text>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="467" y="180" width="108" height="40" rx="4" fill="hsl(98.2 64% 38%)"/>
-<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="521.0" y="206" text-anchor="middle">81.8</text>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="579" y="180" width="108" height="40" rx="4" fill="hsl(69.1 64% 38%)"/>
-<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="633.0" y="206" text-anchor="middle">57.6</text>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="691" y="180" width="108" height="40" rx="4" fill="hsl(96.8 64% 38%)"/>
-<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="745.0" y="206" text-anchor="middle">80.7</text>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="803" y="180" width="108" height="40" rx="4" fill="hsl(100.3 64% 38%)"/>
-<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="857.0" y="206" text-anchor="middle">83.6</text>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="915" y="180" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
-<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="969.0" y="206" text-anchor="middle">94.9</text>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="1027" y="180" width="108" height="40" rx="4" fill="hsl(94.3 64% 38%)"/>
-<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="1081.0" y="206" text-anchor="middle">78.6</text>
-<text class="label" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="339" y="266" text-anchor="end">Unsloth Qwen 35B A3B</text>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="355" y="235" width="108" height="40" rx="4" fill="hsl(50.2 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="409.0" y="261" text-anchor="middle">41.9</text>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="467" y="235" width="108" height="40" rx="4" fill="hsl(102.5 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="521.0" y="261" text-anchor="middle">85.4</text>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="579" y="235" width="108" height="40" rx="4" fill="hsl(72.4 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="633.0" y="261" text-anchor="middle">60.3</text>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="691" y="235" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="745.0" y="261" text-anchor="middle">63.8</text>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="803" y="235" width="108" height="40" rx="4" fill="hsl(97.9 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="857.0" y="261" text-anchor="middle">81.6</text>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="915" y="235" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="969.0" y="261" text-anchor="middle">94.9</text>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="1027" y="235" width="108" height="40" rx="4" fill="hsl(91.4 64% 38%)"/>
-<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="1081.0" y="261" text-anchor="middle">76.2</text>
-<text class="label" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="339" y="321" text-anchor="end">Qwythos 9B</text>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="355" y="290" width="108" height="40" rx="4" fill="hsl(45.4 64% 38%)"/>
-<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="409.0" y="316" text-anchor="middle">37.8</text>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="467" y="290" width="108" height="40" rx="4" fill="hsl(102.5 64% 38%)"/>
-<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="521.0" y="316" text-anchor="middle">85.4</text>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="579" y="290" width="108" height="40" rx="4" fill="hsl(59.3 64% 38%)"/>
-<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="633.0" y="316" text-anchor="middle">49.5</text>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="691" y="290" width="108" height="40" rx="4" fill="hsl(70.7 64% 38%)"/>
-<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="745.0" y="316" text-anchor="middle">58.9</text>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="803" y="290" width="108" height="40" rx="4" fill="hsl(100.3 64% 38%)"/>
-<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="857.0" y="316" text-anchor="middle">83.6</text>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="915" y="290" width="108" height="40" rx="4" fill="hsl(108.8 64% 38%)"/>
-<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="969.0" y="316" text-anchor="middle">90.7</text>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="1027" y="290" width="108" height="40" rx="4" fill="hsl(94.3 64% 38%)"/>
-<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="1081.0" y="316" text-anchor="middle">78.6</text>
-<text class="label" data-model="qwen3.6-35b-hauhaucs-aggressive" x="339" y="376" text-anchor="end">Qwen 35B HauhauCS</text>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="355" y="345" width="108" height="40" rx="4" fill="hsl(52.8 64% 38%)"/>
-<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="409.0" y="371" text-anchor="middle">44.0</text>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="467" y="345" width="108" height="40" rx="4" fill="hsl(102.5 64% 38%)"/>
-<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="521.0" y="371" text-anchor="middle">85.4</text>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="579" y="345" width="108" height="40" rx="4" fill="hsl(46.3 64% 38%)"/>
-<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="633.0" y="371" text-anchor="middle">38.6</text>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="691" y="345" width="108" height="40" rx="4" fill="hsl(59.1 64% 38%)"/>
-<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="745.0" y="371" text-anchor="middle">49.3</text>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="803" y="345" width="108" height="40" rx="4" fill="hsl(95.4 64% 38%)"/>
-<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="857.0" y="371" text-anchor="middle">79.5</text>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="915" y="345" width="108" height="40" rx="4" fill="hsl(102.0 64% 38%)"/>
-<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="969.0" y="371" text-anchor="middle">85.0</text>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="1027" y="345" width="108" height="40" rx="4" fill="hsl(77.1 64% 38%)"/>
-<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="1081.0" y="371" text-anchor="middle">64.3</text>
-<text class="label" data-model="gemma-4-e4b-it" x="339" y="431" text-anchor="end">Gemma E4B</text>
-<rect data-model="gemma-4-e4b-it" x="355" y="400" width="108" height="40" rx="4" fill="hsl(40.8 64% 38%)"/>
-<text class="value" data-model="gemma-4-e4b-it" x="409.0" y="426" text-anchor="middle">34.0</text>
-<rect data-model="gemma-4-e4b-it" x="467" y="400" width="108" height="40" rx="4" fill="hsl(77.5 64% 38%)"/>
-<text class="value" data-model="gemma-4-e4b-it" x="521.0" y="426" text-anchor="middle">64.6</text>
-<rect data-model="gemma-4-e4b-it" x="579" y="400" width="108" height="40" rx="4" fill="hsl(56.1 64% 38%)"/>
-<text class="value" data-model="gemma-4-e4b-it" x="633.0" y="426" text-anchor="middle">46.7</text>
-<rect data-model="gemma-4-e4b-it" x="691" y="400" width="108" height="40" rx="4" fill="hsl(82.3 64% 38%)"/>
-<text class="value" data-model="gemma-4-e4b-it" x="745.0" y="426" text-anchor="middle">68.6</text>
-<rect data-model="gemma-4-e4b-it" x="803" y="400" width="108" height="40" rx="4" fill="hsl(110.2 64% 38%)"/>
-<text class="value" data-model="gemma-4-e4b-it" x="857.0" y="426" text-anchor="middle">91.8</text>
-<rect data-model="gemma-4-e4b-it" x="915" y="400" width="108" height="40" rx="4" fill="hsl(116.6 64% 38%)"/>
-<text class="value" data-model="gemma-4-e4b-it" x="969.0" y="426" text-anchor="middle">97.2</text>
-<rect data-model="gemma-4-e4b-it" x="1027" y="400" width="108" height="40" rx="4" fill="hsl(108.6 64% 38%)"/>
-<text class="value" data-model="gemma-4-e4b-it" x="1081.0" y="426" text-anchor="middle">90.5</text>
-<text class="label" data-model="gemma-4-12b-obliterated" x="339" y="486" text-anchor="end">Gemma 12B</text>
-<rect data-model="gemma-4-12b-obliterated" x="355" y="455" width="108" height="40" rx="4" fill="hsl(22.1 64% 38%)"/>
-<text class="value" data-model="gemma-4-12b-obliterated" x="409.0" y="481" text-anchor="middle">18.4</text>
-<rect data-model="gemma-4-12b-obliterated" x="467" y="455" width="108" height="40" rx="4" fill="hsl(81.8 64% 38%)"/>
-<text class="value" data-model="gemma-4-12b-obliterated" x="521.0" y="481" text-anchor="middle">68.2</text>
-<rect data-model="gemma-4-12b-obliterated" x="579" y="455" width="108" height="40" rx="4" fill="hsl(43.0 64% 38%)"/>
-<text class="value" data-model="gemma-4-12b-obliterated" x="633.0" y="481" text-anchor="middle">35.9</text>
-<rect data-model="gemma-4-12b-obliterated" x="691" y="455" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
-<text class="value" data-model="gemma-4-12b-obliterated" x="745.0" y="481" text-anchor="middle">39.6</text>
-<rect data-model="gemma-4-12b-obliterated" x="803" y="455" width="108" height="40" rx="4" fill="hsl(70.8 64% 38%)"/>
-<text class="value" data-model="gemma-4-12b-obliterated" x="857.0" y="481" text-anchor="middle">59.0</text>
-<rect data-model="gemma-4-12b-obliterated" x="915" y="455" width="108" height="40" rx="4" fill="hsl(116.6 64% 38%)"/>
-<text class="value" data-model="gemma-4-12b-obliterated" x="969.0" y="481" text-anchor="middle">97.2</text>
-<rect data-model="gemma-4-12b-obliterated" x="1027" y="455" width="108" height="40" rx="4" fill="hsl(105.7 64% 38%)"/>
-<text class="value" data-model="gemma-4-12b-obliterated" x="1081.0" y="481" text-anchor="middle">88.1</text>
-<text class="label" data-model="cydonia-24b-v4.3" x="339" y="541" text-anchor="end">Cydonia 24B</text>
-<rect data-model="cydonia-24b-v4.3" x="355" y="510" width="108" height="40" rx="4" fill="hsl(20.3 64% 38%)"/>
-<text class="value" data-model="cydonia-24b-v4.3" x="409.0" y="536" text-anchor="middle">16.9</text>
-<rect data-model="cydonia-24b-v4.3" x="467" y="510" width="108" height="40" rx="4" fill="hsl(13.1 64% 38%)"/>
-<text class="value" data-model="cydonia-24b-v4.3" x="521.0" y="536" text-anchor="middle">10.9</text>
-<rect data-model="cydonia-24b-v4.3" x="579" y="510" width="108" height="40" rx="4" fill="hsl(33.3 64% 38%)"/>
-<text class="value" data-model="cydonia-24b-v4.3" x="633.0" y="536" text-anchor="middle">27.7</text>
-<rect data-model="cydonia-24b-v4.3" x="691" y="510" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
-<text class="value" data-model="cydonia-24b-v4.3" x="745.0" y="536" text-anchor="middle">39.6</text>
-<rect data-model="cydonia-24b-v4.3" x="803" y="510" width="108" height="40" rx="4" fill="hsl(100.3 64% 38%)"/>
-<text class="value" data-model="cydonia-24b-v4.3" x="857.0" y="536" text-anchor="middle">83.6</text>
-<rect data-model="cydonia-24b-v4.3" x="915" y="510" width="108" height="40" rx="4" fill="hsl(111.5 64% 38%)"/>
-<text class="value" data-model="cydonia-24b-v4.3" x="969.0" y="536" text-anchor="middle">92.9</text>
-<rect data-model="cydonia-24b-v4.3" x="1027" y="510" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
-<text class="value" data-model="cydonia-24b-v4.3" x="1081.0" y="536" text-anchor="middle">100.0</text>
-<text class="label" data-model="dolphin-mistral-24b-venice" x="339" y="596" text-anchor="end">Dolphin Mistral 24B</text>
-<rect data-model="dolphin-mistral-24b-venice" x="355" y="565" width="108" height="40" rx="4" fill="hsl(16.5 64% 38%)"/>
-<text class="value" data-model="dolphin-mistral-24b-venice" x="409.0" y="591" text-anchor="middle">13.7</text>
-<rect data-model="dolphin-mistral-24b-venice" x="467" y="565" width="108" height="40" rx="4" fill="hsl(13.1 64% 38%)"/>
-<text class="value" data-model="dolphin-mistral-24b-venice" x="521.0" y="591" text-anchor="middle">10.9</text>
-<rect data-model="dolphin-mistral-24b-venice" x="579" y="565" width="108" height="40" rx="4" fill="hsl(23.5 64% 38%)"/>
-<text class="value" data-model="dolphin-mistral-24b-venice" x="633.0" y="591" text-anchor="middle">19.6</text>
-<rect data-model="dolphin-mistral-24b-venice" x="691" y="565" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
-<text class="value" data-model="dolphin-mistral-24b-venice" x="745.0" y="591" text-anchor="middle">39.6</text>
-<rect data-model="dolphin-mistral-24b-venice" x="803" y="565" width="108" height="40" rx="4" fill="hsl(105.2 64% 38%)"/>
-<text class="value" data-model="dolphin-mistral-24b-venice" x="857.0" y="591" text-anchor="middle">87.7</text>
-<rect data-model="dolphin-mistral-24b-venice" x="915" y="565" width="108" height="40" rx="4" fill="hsl(111.5 64% 38%)"/>
-<text class="value" data-model="dolphin-mistral-24b-venice" x="969.0" y="591" text-anchor="middle">92.9</text>
-<rect data-model="dolphin-mistral-24b-venice" x="1027" y="565" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
-<text class="value" data-model="dolphin-mistral-24b-venice" x="1081.0" y="591" text-anchor="middle">100.0</text>
+<text class="label" data-model="openai/gpt-5.6-terra" x="339" y="156" text-anchor="end">OpenAI: GPT-5.6 Terra</text>
+<rect data-model="openai/gpt-5.6-terra" x="355" y="125" width="108" height="40" rx="4" fill="hsl(87.5 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-terra" x="409.0" y="151" text-anchor="middle">72.9</text>
+<rect data-model="openai/gpt-5.6-terra" x="467" y="125" width="108" height="40" rx="4" fill="hsl(97.0 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-terra" x="521.0" y="151" text-anchor="middle">80.8</text>
+<rect data-model="openai/gpt-5.6-terra" x="579" y="125" width="108" height="40" rx="4" fill="hsl(82.2 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-terra" x="633.0" y="151" text-anchor="middle">68.5</text>
+<rect data-model="openai/gpt-5.6-terra" x="691" y="125" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-terra" x="745.0" y="151" text-anchor="middle">63.8</text>
+<rect data-model="openai/gpt-5.6-terra" x="803" y="125" width="108" height="40" rx="4" fill="hsl(115.1 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-terra" x="857.0" y="151" text-anchor="middle">95.9</text>
+<rect data-model="openai/gpt-5.6-terra" x="915" y="125" width="108" height="40" rx="4" fill="hsl(114.9 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-terra" x="969.0" y="151" text-anchor="middle">95.8</text>
+<rect data-model="openai/gpt-5.6-terra" x="1027" y="125" width="108" height="40" rx="4" fill="hsl(100.0 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-terra" x="1081.0" y="151" text-anchor="middle">83.3</text>
+<text class="label" data-model="openai/gpt-5.4" x="339" y="211" text-anchor="end">OpenAI: GPT-5.4</text>
+<rect data-model="openai/gpt-5.4" x="355" y="180" width="108" height="40" rx="4" fill="hsl(86.3 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.4" x="409.0" y="206" text-anchor="middle">71.9</text>
+<rect data-model="openai/gpt-5.4" x="467" y="180" width="108" height="40" rx="4" fill="hsl(95.2 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.4" x="521.0" y="206" text-anchor="middle">79.4</text>
+<rect data-model="openai/gpt-5.4" x="579" y="180" width="108" height="40" rx="4" fill="hsl(56.1 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.4" x="633.0" y="206" text-anchor="middle">46.7</text>
+<rect data-model="openai/gpt-5.4" x="691" y="180" width="108" height="40" rx="4" fill="hsl(99.7 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.4" x="745.0" y="206" text-anchor="middle">83.1</text>
+<rect data-model="openai/gpt-5.4" x="803" y="180" width="108" height="40" rx="4" fill="hsl(110.2 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.4" x="857.0" y="206" text-anchor="middle">91.8</text>
+<rect data-model="openai/gpt-5.4" x="915" y="180" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.4" x="969.0" y="206" text-anchor="middle">100.0</text>
+<rect data-model="openai/gpt-5.4" x="1027" y="180" width="108" height="40" rx="4" fill="hsl(97.1 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.4" x="1081.0" y="206" text-anchor="middle">81.0</text>
+<text class="label" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="339" y="266" text-anchor="end">Unsloth Qwen 27B</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="355" y="235" width="108" height="40" rx="4" fill="hsl(73.6 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="409.0" y="261" text-anchor="middle">61.3</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="467" y="235" width="108" height="40" rx="4" fill="hsl(100.8 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="521.0" y="261" text-anchor="middle">84.0</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="579" y="235" width="108" height="40" rx="4" fill="hsl(78.9 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="633.0" y="261" text-anchor="middle">65.8</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="691" y="235" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="745.0" y="261" text-anchor="middle">63.8</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="803" y="235" width="108" height="40" rx="4" fill="hsl(100.3 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="857.0" y="261" text-anchor="middle">83.6</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="915" y="235" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="969.0" y="261" text-anchor="middle">100.0</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="1027" y="235" width="108" height="40" rx="4" fill="hsl(94.3 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="1081.0" y="261" text-anchor="middle">78.6</text>
+<text class="label" data-model="anthropic/claude-opus-5" x="339" y="321" text-anchor="end">Claude Opus 5</text>
+<rect data-model="anthropic/claude-opus-5" x="355" y="290" width="108" height="40" rx="4" fill="hsl(64.2 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-opus-5" x="409.0" y="316" text-anchor="middle">53.5</text>
+<rect data-model="anthropic/claude-opus-5" x="467" y="290" width="108" height="40" rx="4" fill="hsl(112.1 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-opus-5" x="521.0" y="316" text-anchor="middle">93.4</text>
+<rect data-model="anthropic/claude-opus-5" x="579" y="290" width="108" height="40" rx="4" fill="hsl(88.7 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-opus-5" x="633.0" y="316" text-anchor="middle">73.9</text>
+<rect data-model="anthropic/claude-opus-5" x="691" y="290" width="108" height="40" rx="4" fill="hsl(96.8 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-opus-5" x="745.0" y="316" text-anchor="middle">80.7</text>
+<rect data-model="anthropic/claude-opus-5" x="803" y="290" width="108" height="40" rx="4" fill="hsl(73.3 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-opus-5" x="857.0" y="316" text-anchor="middle">61.1</text>
+<rect data-model="anthropic/claude-opus-5" x="915" y="290" width="108" height="40" rx="4" fill="hsl(110.5 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-opus-5" x="969.0" y="316" text-anchor="middle">92.1</text>
+<rect data-model="anthropic/claude-opus-5" x="1027" y="290" width="108" height="40" rx="4" fill="hsl(82.9 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-opus-5" x="1081.0" y="316" text-anchor="middle">69.0</text>
+<text class="label" data-model="openai/gpt-5.5" x="339" y="376" text-anchor="end">OpenAI: GPT-5.5</text>
+<rect data-model="openai/gpt-5.5" x="355" y="345" width="108" height="40" rx="4" fill="hsl(74.8 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.5" x="409.0" y="371" text-anchor="middle">62.4</text>
+<rect data-model="openai/gpt-5.5" x="467" y="345" width="108" height="40" rx="4" fill="hsl(97.0 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.5" x="521.0" y="371" text-anchor="middle">80.8</text>
+<rect data-model="openai/gpt-5.5" x="579" y="345" width="108" height="40" rx="4" fill="hsl(75.7 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.5" x="633.0" y="371" text-anchor="middle">63.0</text>
+<rect data-model="openai/gpt-5.5" x="691" y="345" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.5" x="745.0" y="371" text-anchor="middle">63.8</text>
+<rect data-model="openai/gpt-5.5" x="803" y="345" width="108" height="40" rx="4" fill="hsl(107.7 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.5" x="857.0" y="371" text-anchor="middle">89.8</text>
+<rect data-model="openai/gpt-5.5" x="915" y="345" width="108" height="40" rx="4" fill="hsl(114.9 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.5" x="969.0" y="371" text-anchor="middle">95.8</text>
+<rect data-model="openai/gpt-5.5" x="1027" y="345" width="108" height="40" rx="4" fill="hsl(91.4 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.5" x="1081.0" y="371" text-anchor="middle">76.2</text>
+<text class="label" data-model="deepseek/deepseek-v4-flash" x="339" y="431" text-anchor="end">DeepSeek: DeepSeek V4 Fl…</text>
+<rect data-model="deepseek/deepseek-v4-flash" x="355" y="400" width="108" height="40" rx="4" fill="hsl(68.8 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-flash" x="409.0" y="426" text-anchor="middle">57.3</text>
+<rect data-model="deepseek/deepseek-v4-flash" x="467" y="400" width="108" height="40" rx="4" fill="hsl(104.3 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-flash" x="521.0" y="426" text-anchor="middle">86.9</text>
+<rect data-model="deepseek/deepseek-v4-flash" x="579" y="400" width="108" height="40" rx="4" fill="hsl(75.7 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-flash" x="633.0" y="426" text-anchor="middle">63.0</text>
+<rect data-model="deepseek/deepseek-v4-flash" x="691" y="400" width="108" height="40" rx="4" fill="hsl(96.8 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-flash" x="745.0" y="426" text-anchor="middle">80.7</text>
+<rect data-model="deepseek/deepseek-v4-flash" x="803" y="400" width="108" height="40" rx="4" fill="hsl(88.0 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-flash" x="857.0" y="426" text-anchor="middle">73.4</text>
+<rect data-model="deepseek/deepseek-v4-flash" x="915" y="400" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-flash" x="969.0" y="426" text-anchor="middle">94.9</text>
+<rect data-model="deepseek/deepseek-v4-flash" x="1027" y="400" width="108" height="40" rx="4" fill="hsl(68.6 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-flash" x="1081.0" y="426" text-anchor="middle">57.1</text>
+<text class="label" data-model="openai/gpt-5.6-luna" x="339" y="486" text-anchor="end">OpenAI: GPT-5.6 Luna</text>
+<rect data-model="openai/gpt-5.6-luna" x="355" y="455" width="108" height="40" rx="4" fill="hsl(75.6 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-luna" x="409.0" y="481" text-anchor="middle">63.0</text>
+<rect data-model="openai/gpt-5.6-luna" x="467" y="455" width="108" height="40" rx="4" fill="hsl(94.1 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-luna" x="521.0" y="481" text-anchor="middle">78.4</text>
+<rect data-model="openai/gpt-5.6-luna" x="579" y="455" width="108" height="40" rx="4" fill="hsl(65.9 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-luna" x="633.0" y="481" text-anchor="middle">54.9</text>
+<rect data-model="openai/gpt-5.6-luna" x="691" y="455" width="108" height="40" rx="4" fill="hsl(67.8 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-luna" x="745.0" y="481" text-anchor="middle">56.5</text>
+<rect data-model="openai/gpt-5.6-luna" x="803" y="455" width="108" height="40" rx="4" fill="hsl(112.6 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-luna" x="857.0" y="481" text-anchor="middle">93.9</text>
+<rect data-model="openai/gpt-5.6-luna" x="915" y="455" width="108" height="40" rx="4" fill="hsl(116.6 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-luna" x="969.0" y="481" text-anchor="middle">97.2</text>
+<rect data-model="openai/gpt-5.6-luna" x="1027" y="455" width="108" height="40" rx="4" fill="hsl(102.9 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-luna" x="1081.0" y="481" text-anchor="middle">85.7</text>
+<text class="label" data-model="google/gemma-4-31b-it" x="339" y="541" text-anchor="end">Google: Gemma 4 31B</text>
+<rect data-model="google/gemma-4-31b-it" x="355" y="510" width="108" height="40" rx="4" fill="hsl(68.5 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-31b-it" x="409.0" y="536" text-anchor="middle">57.1</text>
+<rect data-model="google/gemma-4-31b-it" x="467" y="510" width="108" height="40" rx="4" fill="hsl(101.9 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-31b-it" x="521.0" y="536" text-anchor="middle">85.0</text>
+<rect data-model="google/gemma-4-31b-it" x="579" y="510" width="108" height="40" rx="4" fill="hsl(72.4 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-31b-it" x="633.0" y="536" text-anchor="middle">60.3</text>
+<rect data-model="google/gemma-4-31b-it" x="691" y="510" width="108" height="40" rx="4" fill="hsl(59.1 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-31b-it" x="745.0" y="536" text-anchor="middle">49.3</text>
+<rect data-model="google/gemma-4-31b-it" x="803" y="510" width="108" height="40" rx="4" fill="hsl(110.2 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-31b-it" x="857.0" y="536" text-anchor="middle">91.8</text>
+<rect data-model="google/gemma-4-31b-it" x="915" y="510" width="108" height="40" rx="4" fill="hsl(108.1 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-31b-it" x="969.0" y="536" text-anchor="middle">90.1</text>
+<rect data-model="google/gemma-4-31b-it" x="1027" y="510" width="108" height="40" rx="4" fill="hsl(97.1 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-31b-it" x="1081.0" y="536" text-anchor="middle">81.0</text>
+<text class="label" data-model="x-ai/grok-4.5" x="339" y="596" text-anchor="end">SpaceXAI: Grok 4.5</text>
+<rect data-model="x-ai/grok-4.5" x="355" y="565" width="108" height="40" rx="4" fill="hsl(64.2 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.5" x="409.0" y="591" text-anchor="middle">53.5</text>
+<rect data-model="x-ai/grok-4.5" x="467" y="565" width="108" height="40" rx="4" fill="hsl(104.3 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.5" x="521.0" y="591" text-anchor="middle">86.9</text>
+<rect data-model="x-ai/grok-4.5" x="579" y="565" width="108" height="40" rx="4" fill="hsl(75.7 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.5" x="633.0" y="591" text-anchor="middle">63.0</text>
+<rect data-model="x-ai/grok-4.5" x="691" y="565" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.5" x="745.0" y="591" text-anchor="middle">63.8</text>
+<rect data-model="x-ai/grok-4.5" x="803" y="565" width="108" height="40" rx="4" fill="hsl(97.9 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.5" x="857.0" y="591" text-anchor="middle">81.6</text>
+<rect data-model="x-ai/grok-4.5" x="915" y="565" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.5" x="969.0" y="591" text-anchor="middle">100.0</text>
+<rect data-model="x-ai/grok-4.5" x="1027" y="565" width="108" height="40" rx="4" fill="hsl(74.3 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.5" x="1081.0" y="591" text-anchor="middle">61.9</text>
+<text class="label" data-model="anthropic/claude-sonnet-5" x="339" y="651" text-anchor="end">Anthropic: Claude Sonnet…</text>
+<rect data-model="anthropic/claude-sonnet-5" x="355" y="620" width="108" height="40" rx="4" fill="hsl(64.2 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-sonnet-5" x="409.0" y="646" text-anchor="middle">53.5</text>
+<rect data-model="anthropic/claude-sonnet-5" x="467" y="620" width="108" height="40" rx="4" fill="hsl(102.5 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-sonnet-5" x="521.0" y="646" text-anchor="middle">85.4</text>
+<rect data-model="anthropic/claude-sonnet-5" x="579" y="620" width="108" height="40" rx="4" fill="hsl(72.4 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-sonnet-5" x="633.0" y="646" text-anchor="middle">60.3</text>
+<rect data-model="anthropic/claude-sonnet-5" x="691" y="620" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-sonnet-5" x="745.0" y="646" text-anchor="middle">63.8</text>
+<rect data-model="anthropic/claude-sonnet-5" x="803" y="620" width="108" height="40" rx="4" fill="hsl(88.0 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-sonnet-5" x="857.0" y="646" text-anchor="middle">73.4</text>
+<rect data-model="anthropic/claude-sonnet-5" x="915" y="620" width="108" height="40" rx="4" fill="hsl(116.6 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-sonnet-5" x="969.0" y="646" text-anchor="middle">97.2</text>
+<rect data-model="anthropic/claude-sonnet-5" x="1027" y="620" width="108" height="40" rx="4" fill="hsl(97.1 64% 38%)"/>
+<text class="value" data-model="anthropic/claude-sonnet-5" x="1081.0" y="646" text-anchor="middle">81.0</text>
+<text class="label" data-model="tencent/hy3" x="339" y="706" text-anchor="end">Tencent: Hy3</text>
+<rect data-model="tencent/hy3" x="355" y="675" width="108" height="40" rx="4" fill="hsl(64.2 64% 38%)"/>
+<text class="value" data-model="tencent/hy3" x="409.0" y="701" text-anchor="middle">53.5</text>
+<rect data-model="tencent/hy3" x="467" y="675" width="108" height="40" rx="4" fill="hsl(106.3 64% 38%)"/>
+<text class="value" data-model="tencent/hy3" x="521.0" y="701" text-anchor="middle">88.6</text>
+<rect data-model="tencent/hy3" x="579" y="675" width="108" height="40" rx="4" fill="hsl(69.1 64% 38%)"/>
+<text class="value" data-model="tencent/hy3" x="633.0" y="701" text-anchor="middle">57.6</text>
+<rect data-model="tencent/hy3" x="691" y="675" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="tencent/hy3" x="745.0" y="701" text-anchor="middle">63.8</text>
+<rect data-model="tencent/hy3" x="803" y="675" width="108" height="40" rx="4" fill="hsl(83.1 64% 38%)"/>
+<text class="value" data-model="tencent/hy3" x="857.0" y="701" text-anchor="middle">69.3</text>
+<rect data-model="tencent/hy3" x="915" y="675" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
+<text class="value" data-model="tencent/hy3" x="969.0" y="701" text-anchor="middle">94.9</text>
+<rect data-model="tencent/hy3" x="1027" y="675" width="108" height="40" rx="4" fill="hsl(82.9 64% 38%)"/>
+<text class="value" data-model="tencent/hy3" x="1081.0" y="701" text-anchor="middle">69.0</text>
+<text class="label" data-model="qwen3.6-27b-heretic-neo-code" x="339" y="761" text-anchor="end">Qwen 27B Heretic</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="355" y="730" width="108" height="40" rx="4" fill="hsl(52.8 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="409.0" y="756" text-anchor="middle">44.0</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="467" y="730" width="108" height="40" rx="4" fill="hsl(98.2 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="521.0" y="756" text-anchor="middle">81.8</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="579" y="730" width="108" height="40" rx="4" fill="hsl(69.1 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="633.0" y="756" text-anchor="middle">57.6</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="691" y="730" width="108" height="40" rx="4" fill="hsl(96.8 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="745.0" y="756" text-anchor="middle">80.7</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="803" y="730" width="108" height="40" rx="4" fill="hsl(100.3 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="857.0" y="756" text-anchor="middle">83.6</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="915" y="730" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="969.0" y="756" text-anchor="middle">94.9</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="1027" y="730" width="108" height="40" rx="4" fill="hsl(94.3 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="1081.0" y="756" text-anchor="middle">78.6</text>
+<text class="label" data-model="qwen/qwen3.8-max" x="339" y="816" text-anchor="end">Qwen: Qwen3.8 Max</text>
+<rect data-model="qwen/qwen3.8-max" x="355" y="785" width="108" height="40" rx="4" fill="hsl(47.7 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.8-max" x="409.0" y="811" text-anchor="middle">39.7</text>
+<rect data-model="qwen/qwen3.8-max" x="467" y="785" width="108" height="40" rx="4" fill="hsl(104.3 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.8-max" x="521.0" y="811" text-anchor="middle">86.9</text>
+<rect data-model="qwen/qwen3.8-max" x="579" y="785" width="108" height="40" rx="4" fill="hsl(62.6 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.8-max" x="633.0" y="811" text-anchor="middle">52.2</text>
+<rect data-model="qwen/qwen3.8-max" x="691" y="785" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.8-max" x="745.0" y="811" text-anchor="middle">100.0</text>
+<rect data-model="qwen/qwen3.8-max" x="803" y="785" width="108" height="40" rx="4" fill="hsl(88.0 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.8-max" x="857.0" y="811" text-anchor="middle">73.4</text>
+<rect data-model="qwen/qwen3.8-max" x="915" y="785" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.8-max" x="969.0" y="811" text-anchor="middle">94.9</text>
+<rect data-model="qwen/qwen3.8-max" x="1027" y="785" width="108" height="40" rx="4" fill="hsl(85.7 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.8-max" x="1081.0" y="811" text-anchor="middle">71.4</text>
+<text class="label" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="339" y="871" text-anchor="end">Unsloth Qwen 35B A3B</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="355" y="840" width="108" height="40" rx="4" fill="hsl(50.2 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="409.0" y="866" text-anchor="middle">41.9</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="467" y="840" width="108" height="40" rx="4" fill="hsl(102.5 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="521.0" y="866" text-anchor="middle">85.4</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="579" y="840" width="108" height="40" rx="4" fill="hsl(72.4 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="633.0" y="866" text-anchor="middle">60.3</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="691" y="840" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="745.0" y="866" text-anchor="middle">63.8</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="803" y="840" width="108" height="40" rx="4" fill="hsl(97.9 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="857.0" y="866" text-anchor="middle">81.6</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="915" y="840" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="969.0" y="866" text-anchor="middle">94.9</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="1027" y="840" width="108" height="40" rx="4" fill="hsl(91.4 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="1081.0" y="866" text-anchor="middle">76.2</text>
+<text class="label" data-model="google/gemma-4-26b-a4b-it" x="339" y="926" text-anchor="end">Google: Gemma 4 26B A4B </text>
+<rect data-model="google/gemma-4-26b-a4b-it" x="355" y="895" width="108" height="40" rx="4" fill="hsl(64.9 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-26b-a4b-it" x="409.0" y="921" text-anchor="middle">54.1</text>
+<rect data-model="google/gemma-4-26b-a4b-it" x="467" y="895" width="108" height="40" rx="4" fill="hsl(101.1 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-26b-a4b-it" x="521.0" y="921" text-anchor="middle">84.2</text>
+<rect data-model="google/gemma-4-26b-a4b-it" x="579" y="895" width="108" height="40" rx="4" fill="hsl(46.3 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-26b-a4b-it" x="633.0" y="921" text-anchor="middle">38.6</text>
+<rect data-model="google/gemma-4-26b-a4b-it" x="691" y="895" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-26b-a4b-it" x="745.0" y="921" text-anchor="middle">63.8</text>
+<rect data-model="google/gemma-4-26b-a4b-it" x="803" y="895" width="108" height="40" rx="4" fill="hsl(88.0 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-26b-a4b-it" x="857.0" y="921" text-anchor="middle">73.4</text>
+<rect data-model="google/gemma-4-26b-a4b-it" x="915" y="895" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-26b-a4b-it" x="969.0" y="921" text-anchor="middle">94.9</text>
+<rect data-model="google/gemma-4-26b-a4b-it" x="1027" y="895" width="108" height="40" rx="4" fill="hsl(88.6 64% 38%)"/>
+<text class="value" data-model="google/gemma-4-26b-a4b-it" x="1081.0" y="921" text-anchor="middle">73.8</text>
+<text class="label" data-model="deepseek/deepseek-v4-pro" x="339" y="981" text-anchor="end">DeepSeek: DeepSeek V4 Pro</text>
+<rect data-model="deepseek/deepseek-v4-pro" x="355" y="950" width="108" height="40" rx="4" fill="hsl(54.0 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-pro" x="409.0" y="976" text-anchor="middle">45.0</text>
+<rect data-model="deepseek/deepseek-v4-pro" x="467" y="950" width="108" height="40" rx="4" fill="hsl(106.3 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-pro" x="521.0" y="976" text-anchor="middle">88.6</text>
+<rect data-model="deepseek/deepseek-v4-pro" x="579" y="950" width="108" height="40" rx="4" fill="hsl(69.1 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-pro" x="633.0" y="976" text-anchor="middle">57.6</text>
+<rect data-model="deepseek/deepseek-v4-pro" x="691" y="950" width="108" height="40" rx="4" fill="hsl(64.9 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-pro" x="745.0" y="976" text-anchor="middle">54.1</text>
+<rect data-model="deepseek/deepseek-v4-pro" x="803" y="950" width="108" height="40" rx="4" fill="hsl(88.0 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-pro" x="857.0" y="976" text-anchor="middle">73.4</text>
+<rect data-model="deepseek/deepseek-v4-pro" x="915" y="950" width="108" height="40" rx="4" fill="hsl(107.1 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-pro" x="969.0" y="976" text-anchor="middle">89.2</text>
+<rect data-model="deepseek/deepseek-v4-pro" x="1027" y="950" width="108" height="40" rx="4" fill="hsl(71.4 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v4-pro" x="1081.0" y="976" text-anchor="middle">59.5</text>
+<text class="label" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="339" y="1036" text-anchor="end">Qwythos 9B</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="355" y="1005" width="108" height="40" rx="4" fill="hsl(45.4 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="409.0" y="1031" text-anchor="middle">37.8</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="467" y="1005" width="108" height="40" rx="4" fill="hsl(102.5 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="521.0" y="1031" text-anchor="middle">85.4</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="579" y="1005" width="108" height="40" rx="4" fill="hsl(59.3 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="633.0" y="1031" text-anchor="middle">49.5</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="691" y="1005" width="108" height="40" rx="4" fill="hsl(70.7 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="745.0" y="1031" text-anchor="middle">58.9</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="803" y="1005" width="108" height="40" rx="4" fill="hsl(100.3 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="857.0" y="1031" text-anchor="middle">83.6</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="915" y="1005" width="108" height="40" rx="4" fill="hsl(108.8 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="969.0" y="1031" text-anchor="middle">90.7</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="1027" y="1005" width="108" height="40" rx="4" fill="hsl(94.3 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="1081.0" y="1031" text-anchor="middle">78.6</text>
+<text class="label" data-model="qwen/qwen3.7-plus" x="339" y="1091" text-anchor="end">Qwen: Qwen3.7 Plus</text>
+<rect data-model="qwen/qwen3.7-plus" x="355" y="1060" width="108" height="40" rx="4" fill="hsl(39.6 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.7-plus" x="409.0" y="1086" text-anchor="middle">33.0</text>
+<rect data-model="qwen/qwen3.7-plus" x="467" y="1060" width="108" height="40" rx="4" fill="hsl(102.5 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.7-plus" x="521.0" y="1086" text-anchor="middle">85.4</text>
+<rect data-model="qwen/qwen3.7-plus" x="579" y="1060" width="108" height="40" rx="4" fill="hsl(75.7 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.7-plus" x="633.0" y="1086" text-anchor="middle">63.0</text>
+<rect data-model="qwen/qwen3.7-plus" x="691" y="1060" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.7-plus" x="745.0" y="1086" text-anchor="middle">63.8</text>
+<rect data-model="qwen/qwen3.7-plus" x="803" y="1060" width="108" height="40" rx="4" fill="hsl(83.1 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.7-plus" x="857.0" y="1086" text-anchor="middle">69.3</text>
+<rect data-model="qwen/qwen3.7-plus" x="915" y="1060" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.7-plus" x="969.0" y="1086" text-anchor="middle">94.9</text>
+<rect data-model="qwen/qwen3.7-plus" x="1027" y="1060" width="108" height="40" rx="4" fill="hsl(88.6 64% 38%)"/>
+<text class="value" data-model="qwen/qwen3.7-plus" x="1081.0" y="1086" text-anchor="middle">73.8</text>
+<text class="label" data-model="x-ai/grok-4.3" x="339" y="1146" text-anchor="end">SpaceXAI: Grok 4.3</text>
+<rect data-model="x-ai/grok-4.3" x="355" y="1115" width="108" height="40" rx="4" fill="hsl(44.7 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.3" x="409.0" y="1141" text-anchor="middle">37.2</text>
+<rect data-model="x-ai/grok-4.3" x="467" y="1115" width="108" height="40" rx="4" fill="hsl(91.5 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.3" x="521.0" y="1141" text-anchor="middle">76.2</text>
+<rect data-model="x-ai/grok-4.3" x="579" y="1115" width="108" height="40" rx="4" fill="hsl(46.3 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.3" x="633.0" y="1141" text-anchor="middle">38.6</text>
+<rect data-model="x-ai/grok-4.3" x="691" y="1115" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.3" x="745.0" y="1141" text-anchor="middle">63.8</text>
+<rect data-model="x-ai/grok-4.3" x="803" y="1115" width="108" height="40" rx="4" fill="hsl(110.2 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.3" x="857.0" y="1141" text-anchor="middle">91.8</text>
+<rect data-model="x-ai/grok-4.3" x="915" y="1115" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.3" x="969.0" y="1141" text-anchor="middle">100.0</text>
+<rect data-model="x-ai/grok-4.3" x="1027" y="1115" width="108" height="40" rx="4" fill="hsl(100.0 64% 38%)"/>
+<text class="value" data-model="x-ai/grok-4.3" x="1081.0" y="1141" text-anchor="middle">83.3</text>
+<text class="label" data-model="qwen3.6-35b-hauhaucs-aggressive" x="339" y="1201" text-anchor="end">Qwen 35B HauhauCS</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="355" y="1170" width="108" height="40" rx="4" fill="hsl(52.8 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="409.0" y="1196" text-anchor="middle">44.0</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="467" y="1170" width="108" height="40" rx="4" fill="hsl(102.5 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="521.0" y="1196" text-anchor="middle">85.4</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="579" y="1170" width="108" height="40" rx="4" fill="hsl(46.3 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="633.0" y="1196" text-anchor="middle">38.6</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="691" y="1170" width="108" height="40" rx="4" fill="hsl(59.1 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="745.0" y="1196" text-anchor="middle">49.3</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="803" y="1170" width="108" height="40" rx="4" fill="hsl(95.4 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="857.0" y="1196" text-anchor="middle">79.5</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="915" y="1170" width="108" height="40" rx="4" fill="hsl(102.0 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="969.0" y="1196" text-anchor="middle">85.0</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="1027" y="1170" width="108" height="40" rx="4" fill="hsl(77.1 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="1081.0" y="1196" text-anchor="middle">64.3</text>
+<text class="label" data-model="stepfun/step-3.7-flash" x="339" y="1256" text-anchor="end">StepFun: Step 3.7 Flash</text>
+<rect data-model="stepfun/step-3.7-flash" x="355" y="1225" width="108" height="40" rx="4" fill="hsl(45.2 64% 38%)"/>
+<text class="value" data-model="stepfun/step-3.7-flash" x="409.0" y="1251" text-anchor="middle">37.6</text>
+<rect data-model="stepfun/step-3.7-flash" x="467" y="1225" width="108" height="40" rx="4" fill="hsl(101.4 64% 38%)"/>
+<text class="value" data-model="stepfun/step-3.7-flash" x="521.0" y="1251" text-anchor="middle">84.5</text>
+<rect data-model="stepfun/step-3.7-flash" x="579" y="1225" width="108" height="40" rx="4" fill="hsl(56.1 64% 38%)"/>
+<text class="value" data-model="stepfun/step-3.7-flash" x="633.0" y="1251" text-anchor="middle">46.7</text>
+<rect data-model="stepfun/step-3.7-flash" x="691" y="1225" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
+<text class="value" data-model="stepfun/step-3.7-flash" x="745.0" y="1251" text-anchor="middle">39.6</text>
+<rect data-model="stepfun/step-3.7-flash" x="803" y="1225" width="108" height="40" rx="4" fill="hsl(88.0 64% 38%)"/>
+<text class="value" data-model="stepfun/step-3.7-flash" x="857.0" y="1251" text-anchor="middle">73.4</text>
+<rect data-model="stepfun/step-3.7-flash" x="915" y="1225" width="108" height="40" rx="4" fill="hsl(116.6 64% 38%)"/>
+<text class="value" data-model="stepfun/step-3.7-flash" x="969.0" y="1251" text-anchor="middle">97.2</text>
+<rect data-model="stepfun/step-3.7-flash" x="1027" y="1225" width="108" height="40" rx="4" fill="hsl(100.0 64% 38%)"/>
+<text class="value" data-model="stepfun/step-3.7-flash" x="1081.0" y="1251" text-anchor="middle">83.3</text>
+<text class="label" data-model="gemma-4-e4b-it" x="339" y="1311" text-anchor="end">Gemma E4B</text>
+<rect data-model="gemma-4-e4b-it" x="355" y="1280" width="108" height="40" rx="4" fill="hsl(40.8 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="409.0" y="1306" text-anchor="middle">34.0</text>
+<rect data-model="gemma-4-e4b-it" x="467" y="1280" width="108" height="40" rx="4" fill="hsl(77.5 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="521.0" y="1306" text-anchor="middle">64.6</text>
+<rect data-model="gemma-4-e4b-it" x="579" y="1280" width="108" height="40" rx="4" fill="hsl(56.1 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="633.0" y="1306" text-anchor="middle">46.7</text>
+<rect data-model="gemma-4-e4b-it" x="691" y="1280" width="108" height="40" rx="4" fill="hsl(82.3 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="745.0" y="1306" text-anchor="middle">68.6</text>
+<rect data-model="gemma-4-e4b-it" x="803" y="1280" width="108" height="40" rx="4" fill="hsl(110.2 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="857.0" y="1306" text-anchor="middle">91.8</text>
+<rect data-model="gemma-4-e4b-it" x="915" y="1280" width="108" height="40" rx="4" fill="hsl(116.6 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="969.0" y="1306" text-anchor="middle">97.2</text>
+<rect data-model="gemma-4-e4b-it" x="1027" y="1280" width="108" height="40" rx="4" fill="hsl(108.6 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="1081.0" y="1306" text-anchor="middle">90.5</text>
+<text class="label" data-model="nvidia/nemotron-3-ultra-550b-a55b" x="339" y="1366" text-anchor="end">NVIDIA: Nemotron 3 Ultra</text>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="355" y="1335" width="108" height="40" rx="4" fill="hsl(53.0 64% 38%)"/>
+<text class="value" data-model="nvidia/nemotron-3-ultra-550b-a55b" x="409.0" y="1361" text-anchor="middle">44.2</text>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="467" y="1335" width="108" height="40" rx="4" fill="hsl(101.9 64% 38%)"/>
+<text class="value" data-model="nvidia/nemotron-3-ultra-550b-a55b" x="521.0" y="1361" text-anchor="middle">85.0</text>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="579" y="1335" width="108" height="40" rx="4" fill="hsl(33.3 64% 38%)"/>
+<text class="value" data-model="nvidia/nemotron-3-ultra-550b-a55b" x="633.0" y="1361" text-anchor="middle">27.7</text>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="691" y="1335" width="108" height="40" rx="4" fill="hsl(62.0 64% 38%)"/>
+<text class="value" data-model="nvidia/nemotron-3-ultra-550b-a55b" x="745.0" y="1361" text-anchor="middle">51.7</text>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="803" y="1335" width="108" height="40" rx="4" fill="hsl(78.2 64% 38%)"/>
+<text class="value" data-model="nvidia/nemotron-3-ultra-550b-a55b" x="857.0" y="1361" text-anchor="middle">65.2</text>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="915" y="1335" width="108" height="40" rx="4" fill="hsl(116.6 64% 38%)"/>
+<text class="value" data-model="nvidia/nemotron-3-ultra-550b-a55b" x="969.0" y="1361" text-anchor="middle">97.2</text>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="1027" y="1335" width="108" height="40" rx="4" fill="hsl(82.9 64% 38%)"/>
+<text class="value" data-model="nvidia/nemotron-3-ultra-550b-a55b" x="1081.0" y="1361" text-anchor="middle">69.0</text>
+<text class="label" data-model="google/gemini-3.5-flash-lite" x="339" y="1421" text-anchor="end">Google: Gemini 3.5 Flash…</text>
+<rect data-model="google/gemini-3.5-flash-lite" x="355" y="1390" width="108" height="40" rx="4" fill="hsl(57.3 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.5-flash-lite" x="409.0" y="1416" text-anchor="middle">47.8</text>
+<rect data-model="google/gemini-3.5-flash-lite" x="467" y="1390" width="108" height="40" rx="4" fill="hsl(83.0 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.5-flash-lite" x="521.0" y="1416" text-anchor="middle">69.2</text>
+<rect data-model="google/gemini-3.5-flash-lite" x="579" y="1390" width="108" height="40" rx="4" fill="hsl(48.9 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.5-flash-lite" x="633.0" y="1416" text-anchor="middle">40.8</text>
+<rect data-model="google/gemini-3.5-flash-lite" x="691" y="1390" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.5-flash-lite" x="745.0" y="1416" text-anchor="middle">39.6</text>
+<rect data-model="google/gemini-3.5-flash-lite" x="803" y="1390" width="108" height="40" rx="4" fill="hsl(75.7 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.5-flash-lite" x="857.0" y="1416" text-anchor="middle">63.1</text>
+<rect data-model="google/gemini-3.5-flash-lite" x="915" y="1390" width="108" height="40" rx="4" fill="hsl(110.5 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.5-flash-lite" x="969.0" y="1416" text-anchor="middle">92.1</text>
+<rect data-model="google/gemini-3.5-flash-lite" x="1027" y="1390" width="108" height="40" rx="4" fill="hsl(114.3 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.5-flash-lite" x="1081.0" y="1416" text-anchor="middle">95.2</text>
+<text class="label" data-model="google/gemini-3.6-flash" x="339" y="1476" text-anchor="end">Google: Gemini 3.6 Flash</text>
+<rect data-model="google/gemini-3.6-flash" x="355" y="1445" width="108" height="40" rx="4" fill="hsl(35.8 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.6-flash" x="409.0" y="1471" text-anchor="middle">29.8</text>
+<rect data-model="google/gemini-3.6-flash" x="467" y="1445" width="108" height="40" rx="4" fill="hsl(103.4 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.6-flash" x="521.0" y="1471" text-anchor="middle">86.2</text>
+<rect data-model="google/gemini-3.6-flash" x="579" y="1445" width="108" height="40" rx="4" fill="hsl(52.8 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.6-flash" x="633.0" y="1471" text-anchor="middle">44.0</text>
+<rect data-model="google/gemini-3.6-flash" x="691" y="1445" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.6-flash" x="745.0" y="1471" text-anchor="middle">39.6</text>
+<rect data-model="google/gemini-3.6-flash" x="803" y="1445" width="108" height="40" rx="4" fill="hsl(83.1 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.6-flash" x="857.0" y="1471" text-anchor="middle">69.3</text>
+<rect data-model="google/gemini-3.6-flash" x="915" y="1445" width="108" height="40" rx="4" fill="hsl(110.5 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.6-flash" x="969.0" y="1471" text-anchor="middle">92.1</text>
+<rect data-model="google/gemini-3.6-flash" x="1027" y="1445" width="108" height="40" rx="4" fill="hsl(88.6 64% 38%)"/>
+<text class="value" data-model="google/gemini-3.6-flash" x="1081.0" y="1471" text-anchor="middle">73.8</text>
+<text class="label" data-model="openai/gpt-4.1" x="339" y="1531" text-anchor="end">OpenAI: GPT-4.1</text>
+<rect data-model="openai/gpt-4.1" x="355" y="1500" width="108" height="40" rx="4" fill="hsl(34.0 64% 38%)"/>
+<text class="value" data-model="openai/gpt-4.1" x="409.0" y="1526" text-anchor="middle">28.3</text>
+<rect data-model="openai/gpt-4.1" x="467" y="1500" width="108" height="40" rx="4" fill="hsl(81.3 64% 38%)"/>
+<text class="value" data-model="openai/gpt-4.1" x="521.0" y="1526" text-anchor="middle">67.7</text>
+<rect data-model="openai/gpt-4.1" x="579" y="1500" width="108" height="40" rx="4" fill="hsl(33.3 64% 38%)"/>
+<text class="value" data-model="openai/gpt-4.1" x="633.0" y="1526" text-anchor="middle">27.7</text>
+<rect data-model="openai/gpt-4.1" x="691" y="1500" width="108" height="40" rx="4" fill="hsl(62.0 64% 38%)"/>
+<text class="value" data-model="openai/gpt-4.1" x="745.0" y="1526" text-anchor="middle">51.7</text>
+<rect data-model="openai/gpt-4.1" x="803" y="1500" width="108" height="40" rx="4" fill="hsl(112.6 64% 38%)"/>
+<text class="value" data-model="openai/gpt-4.1" x="857.0" y="1526" text-anchor="middle">93.9</text>
+<rect data-model="openai/gpt-4.1" x="915" y="1500" width="108" height="40" rx="4" fill="hsl(111.5 64% 38%)"/>
+<text class="value" data-model="openai/gpt-4.1" x="969.0" y="1526" text-anchor="middle">92.9</text>
+<rect data-model="openai/gpt-4.1" x="1027" y="1500" width="108" height="40" rx="4" fill="hsl(102.9 64% 38%)"/>
+<text class="value" data-model="openai/gpt-4.1" x="1081.0" y="1526" text-anchor="middle">85.7</text>
+<text class="label" data-model="deepseek/deepseek-v3.2" x="339" y="1586" text-anchor="end">DeepSeek: DeepSeek V3.2</text>
+<rect data-model="deepseek/deepseek-v3.2" x="355" y="1555" width="108" height="40" rx="4" fill="hsl(43.4 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v3.2" x="409.0" y="1581" text-anchor="middle">36.2</text>
+<rect data-model="deepseek/deepseek-v3.2" x="467" y="1555" width="108" height="40" rx="4" fill="hsl(98.2 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v3.2" x="521.0" y="1581" text-anchor="middle">81.8</text>
+<rect data-model="deepseek/deepseek-v3.2" x="579" y="1555" width="108" height="40" rx="4" fill="hsl(22.8 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v3.2" x="633.0" y="1581" text-anchor="middle">19.0</text>
+<rect data-model="deepseek/deepseek-v3.2" x="691" y="1555" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v3.2" x="745.0" y="1581" text-anchor="middle">63.8</text>
+<rect data-model="deepseek/deepseek-v3.2" x="803" y="1555" width="108" height="40" rx="4" fill="hsl(56.1 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v3.2" x="857.0" y="1581" text-anchor="middle">46.7</text>
+<rect data-model="deepseek/deepseek-v3.2" x="915" y="1555" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v3.2" x="969.0" y="1581" text-anchor="middle">100.0</text>
+<rect data-model="deepseek/deepseek-v3.2" x="1027" y="1555" width="108" height="40" rx="4" fill="hsl(68.6 64% 38%)"/>
+<text class="value" data-model="deepseek/deepseek-v3.2" x="1081.0" y="1581" text-anchor="middle">57.1</text>
+<text class="label" data-model="gemma-4-12b-obliterated" x="339" y="1641" text-anchor="end">Gemma 12B</text>
+<rect data-model="gemma-4-12b-obliterated" x="355" y="1610" width="108" height="40" rx="4" fill="hsl(22.1 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="409.0" y="1636" text-anchor="middle">18.4</text>
+<rect data-model="gemma-4-12b-obliterated" x="467" y="1610" width="108" height="40" rx="4" fill="hsl(81.8 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="521.0" y="1636" text-anchor="middle">68.2</text>
+<rect data-model="gemma-4-12b-obliterated" x="579" y="1610" width="108" height="40" rx="4" fill="hsl(43.0 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="633.0" y="1636" text-anchor="middle">35.9</text>
+<rect data-model="gemma-4-12b-obliterated" x="691" y="1610" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="745.0" y="1636" text-anchor="middle">39.6</text>
+<rect data-model="gemma-4-12b-obliterated" x="803" y="1610" width="108" height="40" rx="4" fill="hsl(70.8 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="857.0" y="1636" text-anchor="middle">59.0</text>
+<rect data-model="gemma-4-12b-obliterated" x="915" y="1610" width="108" height="40" rx="4" fill="hsl(116.6 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="969.0" y="1636" text-anchor="middle">97.2</text>
+<rect data-model="gemma-4-12b-obliterated" x="1027" y="1610" width="108" height="40" rx="4" fill="hsl(105.7 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="1081.0" y="1636" text-anchor="middle">88.1</text>
+<text class="label" data-model="cydonia-24b-v4.3" x="339" y="1696" text-anchor="end">Cydonia 24B</text>
+<rect data-model="cydonia-24b-v4.3" x="355" y="1665" width="108" height="40" rx="4" fill="hsl(20.3 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="409.0" y="1691" text-anchor="middle">16.9</text>
+<rect data-model="cydonia-24b-v4.3" x="467" y="1665" width="108" height="40" rx="4" fill="hsl(13.1 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="521.0" y="1691" text-anchor="middle">10.9</text>
+<rect data-model="cydonia-24b-v4.3" x="579" y="1665" width="108" height="40" rx="4" fill="hsl(33.3 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="633.0" y="1691" text-anchor="middle">27.7</text>
+<rect data-model="cydonia-24b-v4.3" x="691" y="1665" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="745.0" y="1691" text-anchor="middle">39.6</text>
+<rect data-model="cydonia-24b-v4.3" x="803" y="1665" width="108" height="40" rx="4" fill="hsl(100.3 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="857.0" y="1691" text-anchor="middle">83.6</text>
+<rect data-model="cydonia-24b-v4.3" x="915" y="1665" width="108" height="40" rx="4" fill="hsl(111.5 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="969.0" y="1691" text-anchor="middle">92.9</text>
+<rect data-model="cydonia-24b-v4.3" x="1027" y="1665" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="1081.0" y="1691" text-anchor="middle">100.0</text>
+<text class="label" data-model="dolphin-mistral-24b-venice" x="339" y="1751" text-anchor="end">Dolphin Mistral 24B</text>
+<rect data-model="dolphin-mistral-24b-venice" x="355" y="1720" width="108" height="40" rx="4" fill="hsl(16.5 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="409.0" y="1746" text-anchor="middle">13.7</text>
+<rect data-model="dolphin-mistral-24b-venice" x="467" y="1720" width="108" height="40" rx="4" fill="hsl(13.1 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="521.0" y="1746" text-anchor="middle">10.9</text>
+<rect data-model="dolphin-mistral-24b-venice" x="579" y="1720" width="108" height="40" rx="4" fill="hsl(23.5 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="633.0" y="1746" text-anchor="middle">19.6</text>
+<rect data-model="dolphin-mistral-24b-venice" x="691" y="1720" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="745.0" y="1746" text-anchor="middle">39.6</text>
+<rect data-model="dolphin-mistral-24b-venice" x="803" y="1720" width="108" height="40" rx="4" fill="hsl(105.2 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="857.0" y="1746" text-anchor="middle">87.7</text>
+<rect data-model="dolphin-mistral-24b-venice" x="915" y="1720" width="108" height="40" rx="4" fill="hsl(111.5 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="969.0" y="1746" text-anchor="middle">92.9</text>
+<rect data-model="dolphin-mistral-24b-venice" x="1027" y="1720" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="1081.0" y="1746" text-anchor="middle">100.0</text>
+<text class="label" data-model="google/gemma-3-12b-it" x="339" y="1806" text-anchor="end">Google: Gemma 3 12B</text>
+<rect data-model="google/gemma-3-12b-it" x="355" y="1775" width="108" height="40" rx="4" fill="hsl(11.4 64% 38%)"/>
+<text class="value" data-model="google/gemma-3-12b-it" x="409.0" y="1801" text-anchor="middle">9.5</text>
+<rect data-model="google/gemma-3-12b-it" x="467" y="1775" width="108" height="40" rx="4" fill="hsl(13.1 64% 38%)"/>
+<text class="value" data-model="google/gemma-3-12b-it" x="521.0" y="1801" text-anchor="middle">10.9</text>
+<rect data-model="google/gemma-3-12b-it" x="579" y="1775" width="108" height="40" rx="4" fill="hsl(23.5 64% 38%)"/>
+<text class="value" data-model="google/gemma-3-12b-it" x="633.0" y="1801" text-anchor="middle">19.6</text>
+<rect data-model="google/gemma-3-12b-it" x="691" y="1775" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
+<text class="value" data-model="google/gemma-3-12b-it" x="745.0" y="1801" text-anchor="middle">39.6</text>
+<rect data-model="google/gemma-3-12b-it" x="803" y="1775" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="google/gemma-3-12b-it" x="857.0" y="1801" text-anchor="middle">100.0</text>
+<rect data-model="google/gemma-3-12b-it" x="915" y="1775" width="108" height="40" rx="4" fill="hsl(105.4 64% 38%)"/>
+<text class="value" data-model="google/gemma-3-12b-it" x="969.0" y="1801" text-anchor="middle">87.8</text>
+<rect data-model="google/gemma-3-12b-it" x="1027" y="1775" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="google/gemma-3-12b-it" x="1081.0" y="1801" text-anchor="middle">100.0</text>
+<text class="label" data-model="openai/gpt-5.6-sol" x="339" y="1861" text-anchor="end">OpenAI: GPT-5.6 Sol</text>
+<rect data-model="openai/gpt-5.6-sol" x="355" y="1830" width="108" height="40" rx="4" fill="hsl(18.3 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-sol" x="409.0" y="1856" text-anchor="middle">15.2</text>
+<rect data-model="openai/gpt-5.6-sol" x="467" y="1830" width="108" height="40" rx="4" fill="hsl(17.2 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-sol" x="521.0" y="1856" text-anchor="middle">14.3</text>
+<rect data-model="openai/gpt-5.6-sol" x="579" y="1830" width="108" height="40" rx="4" fill="hsl(42.4 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-sol" x="633.0" y="1856" text-anchor="middle">35.3</text>
+<rect data-model="openai/gpt-5.6-sol" x="691" y="1830" width="108" height="40" rx="4" fill="hsl(0.0 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-sol" x="745.0" y="1856" text-anchor="middle">0.0</text>
+<rect data-model="openai/gpt-5.6-sol" x="803" y="1830" width="108" height="40" rx="4" fill="hsl(14.8 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-sol" x="857.0" y="1856" text-anchor="middle">12.3</text>
+<rect data-model="openai/gpt-5.6-sol" x="915" y="1830" width="108" height="40" rx="4" fill="hsl(15.0 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-sol" x="969.0" y="1856" text-anchor="middle">12.5</text>
+<rect data-model="openai/gpt-5.6-sol" x="1027" y="1830" width="108" height="40" rx="4" fill="hsl(11.4 64% 38%)"/>
+<text class="value" data-model="openai/gpt-5.6-sol" x="1081.0" y="1856" text-anchor="middle">9.5</text>
 </svg>

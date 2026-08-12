@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "cohort": "openrouter",
+  "seed": 42,
+  "model_count": 23,
+  "task_count_per_model": 21,
+  "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+  "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+  "source_run": "C:\\Users\\Dave\\Documents\\Codex\\2026-08-02\\i-want-to-run-a-benchmark\\results\\assistant-openrouter-20260812-real-win\\results.json",
+  "max_tokens": 768,
+  "timeout_seconds": 120
+}
