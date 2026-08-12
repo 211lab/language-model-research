@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="700" viewBox="0 0 1240 700" role="img" aria-labelledby="title desc">
+<title id="title">Assistant capability heatmap</title><desc id="desc">Hard 0–100 category scores; green is higher and red is lower.</desc>
+<style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 27px Arial,sans-serif}.sub,.tick{fill:#94a3b8;font:14px Arial,sans-serif}.label{fill:#e2e8f0;font:15px Arial,sans-serif}.value{fill:#f8fafc;font:700 15px Arial,sans-serif}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.5}</style>
+<rect class="bg" width="1240" height="700" rx="18"/>
+<text class="title" x="32" y="46">Assistant capability heatmap</text>
+<text class="sub" x="32" y="72">Hard 0–100 category scores; green is higher and red is lower.</text>
+<text class="tick" x="411.0" y="107" text-anchor="middle">Outcome</text>
+<text class="tick" x="523.0" y="107" text-anchor="middle">Tool use</text>
+<text class="tick" x="635.0" y="107" text-anchor="middle">Grounding</text>
+<text class="tick" x="747.0" y="107" text-anchor="middle">State</text>
+<text class="tick" x="859.0" y="107" text-anchor="middle">English</text>
+<text class="tick" x="971.0" y="107" text-anchor="middle">Safety</text>
+<text class="tick" x="1083.0" y="107" text-anchor="middle">Efficiency</text>
+<text class="label" x="339" y="156" text-anchor="end">Unsloth Qwen 27B</text>
+<rect x="355" y="125" width="108" height="40" rx="4" fill="hsl(75.6 64% 38%)"/>
+<text class="value" x="409.0" y="151" text-anchor="middle">63.0</text>
+<rect x="467" y="125" width="108" height="40" rx="4" fill="hsl(98.4 64% 38%)"/>
+<text class="value" x="521.0" y="151" text-anchor="middle">82.0</text>
+<rect x="579" y="125" width="108" height="40" rx="4" fill="hsl(56.1 64% 38%)"/>
+<text class="value" x="633.0" y="151" text-anchor="middle">46.7</text>
+<rect x="691" y="125" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" x="745.0" y="151" text-anchor="middle">63.8</text>
+<rect x="803" y="125" width="108" height="40" rx="4" fill="hsl(95.4 64% 38%)"/>
+<text class="value" x="857.0" y="151" text-anchor="middle">79.5</text>
+<rect x="915" y="125" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
+<text class="value" x="969.0" y="151" text-anchor="middle">94.9</text>
+<rect x="1027" y="125" width="108" height="40" rx="4" fill="hsl(100.0 64% 38%)"/>
+<text class="value" x="1081.0" y="151" text-anchor="middle">83.3</text>
+<text class="label" x="339" y="211" text-anchor="end">Qwen 27B Heretic</text>
+<rect x="355" y="180" width="108" height="40" rx="4" fill="hsl(57.8 64% 38%)"/>
+<text class="value" x="409.0" y="206" text-anchor="middle">48.2</text>
+<rect x="467" y="180" width="108" height="40" rx="4" fill="hsl(104.3 64% 38%)"/>
+<text class="value" x="521.0" y="206" text-anchor="middle">86.9</text>
+<rect x="579" y="180" width="108" height="40" rx="4" fill="hsl(69.1 64% 38%)"/>
+<text class="value" x="633.0" y="206" text-anchor="middle">57.6</text>
+<rect x="691" y="180" width="108" height="40" rx="4" fill="hsl(64.9 64% 38%)"/>
+<text class="value" x="745.0" y="206" text-anchor="middle">54.1</text>
+<rect x="803" y="180" width="108" height="40" rx="4" fill="hsl(93.0 64% 38%)"/>
+<text class="value" x="857.0" y="206" text-anchor="middle">77.5</text>
+<rect x="915" y="180" width="108" height="40" rx="4" fill="hsl(107.1 64% 38%)"/>
+<text class="value" x="969.0" y="206" text-anchor="middle">89.2</text>
+<rect x="1027" y="180" width="108" height="40" rx="4" fill="hsl(97.1 64% 38%)"/>
+<text class="value" x="1081.0" y="206" text-anchor="middle">81.0</text>
+<text class="label" x="339" y="266" text-anchor="end">Unsloth Qwen 35B A3B</text>
+<rect x="355" y="235" width="108" height="40" rx="4" fill="hsl(60.4 64% 38%)"/>
+<text class="value" x="409.0" y="261" text-anchor="middle">50.3</text>
+<rect x="467" y="235" width="108" height="40" rx="4" fill="hsl(102.8 64% 38%)"/>
+<text class="value" x="521.0" y="261" text-anchor="middle">85.7</text>
+<rect x="579" y="235" width="108" height="40" rx="4" fill="hsl(49.6 64% 38%)"/>
+<text class="value" x="633.0" y="261" text-anchor="middle">41.3</text>
+<rect x="691" y="235" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" x="745.0" y="261" text-anchor="middle">63.8</text>
+<rect x="803" y="235" width="108" height="40" rx="4" fill="hsl(88.0 64% 38%)"/>
+<text class="value" x="857.0" y="261" text-anchor="middle">73.4</text>
+<rect x="915" y="235" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" x="969.0" y="261" text-anchor="middle">100.0</text>
+<rect x="1027" y="235" width="108" height="40" rx="4" fill="hsl(82.9 64% 38%)"/>
+<text class="value" x="1081.0" y="261" text-anchor="middle">69.0</text>
+<text class="label" x="339" y="321" text-anchor="end">Gemma E4B</text>
+<rect x="355" y="290" width="108" height="40" rx="4" fill="hsl(49.0 64% 38%)"/>
+<text class="value" x="409.0" y="316" text-anchor="middle">40.8</text>
+<rect x="467" y="290" width="108" height="40" rx="4" fill="hsl(91.7 64% 38%)"/>
+<text class="value" x="521.0" y="316" text-anchor="middle">76.5</text>
+<rect x="579" y="290" width="108" height="40" rx="4" fill="hsl(45.7 64% 38%)"/>
+<text class="value" x="633.0" y="316" text-anchor="middle">38.0</text>
+<rect x="691" y="290" width="108" height="40" rx="4" fill="hsl(96.8 64% 38%)"/>
+<text class="value" x="745.0" y="316" text-anchor="middle">80.7</text>
+<rect x="803" y="290" width="108" height="40" rx="4" fill="hsl(115.1 64% 38%)"/>
+<text class="value" x="857.0" y="316" text-anchor="middle">95.9</text>
+<rect x="915" y="290" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
+<text class="value" x="969.0" y="316" text-anchor="middle">94.9</text>
+<rect x="1027" y="290" width="108" height="40" rx="4" fill="hsl(114.3 64% 38%)"/>
+<text class="value" x="1081.0" y="316" text-anchor="middle">95.2</text>
+<text class="label" x="339" y="376" text-anchor="end">Qwen 35B HauhauCS</text>
+<rect x="355" y="345" width="108" height="40" rx="4" fill="hsl(36.5 64% 38%)"/>
+<text class="value" x="409.0" y="371" text-anchor="middle">30.4</text>
+<rect x="467" y="345" width="108" height="40" rx="4" fill="hsl(100.8 64% 38%)"/>
+<text class="value" x="521.0" y="371" text-anchor="middle">84.0</text>
+<rect x="579" y="345" width="108" height="40" rx="4" fill="hsl(49.6 64% 38%)"/>
+<text class="value" x="633.0" y="371" text-anchor="middle">41.3</text>
+<rect x="691" y="345" width="108" height="40" rx="4" fill="hsl(79.4 64% 38%)"/>
+<text class="value" x="745.0" y="371" text-anchor="middle">66.2</text>
+<rect x="803" y="345" width="108" height="40" rx="4" fill="hsl(93.0 64% 38%)"/>
+<text class="value" x="857.0" y="371" text-anchor="middle">77.5</text>
+<rect x="915" y="345" width="108" height="40" rx="4" fill="hsl(102.0 64% 38%)"/>
+<text class="value" x="969.0" y="371" text-anchor="middle">85.0</text>
+<rect x="1027" y="345" width="108" height="40" rx="4" fill="hsl(80.0 64% 38%)"/>
+<text class="value" x="1081.0" y="371" text-anchor="middle">66.7</text>
+<text class="label" x="339" y="431" text-anchor="end">Gemma 12B</text>
+<rect x="355" y="400" width="108" height="40" rx="4" fill="hsl(18.3 64% 38%)"/>
+<text class="value" x="409.0" y="426" text-anchor="middle">15.2</text>
+<rect x="467" y="400" width="108" height="40" rx="4" fill="hsl(75.7 64% 38%)"/>
+<text class="value" x="521.0" y="426" text-anchor="middle">63.1</text>
+<rect x="579" y="400" width="108" height="40" rx="4" fill="hsl(56.1 64% 38%)"/>
+<text class="value" x="633.0" y="426" text-anchor="middle">46.7</text>
+<rect x="691" y="400" width="108" height="40" rx="4" fill="hsl(35.9 64% 38%)"/>
+<text class="value" x="745.0" y="426" text-anchor="middle">30.0</text>
+<rect x="803" y="400" width="108" height="40" rx="4" fill="hsl(75.7 64% 38%)"/>
+<text class="value" x="857.0" y="426" text-anchor="middle">63.1</text>
+<rect x="915" y="400" width="108" height="40" rx="4" fill="hsl(103.7 64% 38%)"/>
+<text class="value" x="969.0" y="426" text-anchor="middle">86.4</text>
+<rect x="1027" y="400" width="108" height="40" rx="4" fill="hsl(100.0 64% 38%)"/>
+<text class="value" x="1081.0" y="426" text-anchor="middle">83.3</text>
+<text class="label" x="339" y="486" text-anchor="end">Cydonia 24B</text>
+<rect x="355" y="455" width="108" height="40" rx="4" fill="hsl(20.3 64% 38%)"/>
+<text class="value" x="409.0" y="481" text-anchor="middle">16.9</text>
+<rect x="467" y="455" width="108" height="40" rx="4" fill="hsl(13.1 64% 38%)"/>
+<text class="value" x="521.0" y="481" text-anchor="middle">10.9</text>
+<rect x="579" y="455" width="108" height="40" rx="4" fill="hsl(23.5 64% 38%)"/>
+<text class="value" x="633.0" y="481" text-anchor="middle">19.6</text>
+<rect x="691" y="455" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
+<text class="value" x="745.0" y="481" text-anchor="middle">39.6</text>
+<rect x="803" y="455" width="108" height="40" rx="4" fill="hsl(102.8 64% 38%)"/>
+<text class="value" x="857.0" y="481" text-anchor="middle">85.7</text>
+<rect x="915" y="455" width="108" height="40" rx="4" fill="hsl(111.5 64% 38%)"/>
+<text class="value" x="969.0" y="481" text-anchor="middle">92.9</text>
+<rect x="1027" y="455" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" x="1081.0" y="481" text-anchor="middle">100.0</text>
+<text class="label" x="339" y="541" text-anchor="end">Dolphin Mistral 24B</text>
+<rect x="355" y="510" width="108" height="40" rx="4" fill="hsl(15.2 64% 38%)"/>
+<text class="value" x="409.0" y="536" text-anchor="middle">12.7</text>
+<rect x="467" y="510" width="108" height="40" rx="4" fill="hsl(13.1 64% 38%)"/>
+<text class="value" x="521.0" y="536" text-anchor="middle">10.9</text>
+<rect x="579" y="510" width="108" height="40" rx="4" fill="hsl(23.5 64% 38%)"/>
+<text class="value" x="633.0" y="536" text-anchor="middle">19.6</text>
+<rect x="691" y="510" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
+<text class="value" x="745.0" y="536" text-anchor="middle">39.6</text>
+<rect x="803" y="510" width="108" height="40" rx="4" fill="hsl(105.2 64% 38%)"/>
+<text class="value" x="857.0" y="536" text-anchor="middle">87.7</text>
+<rect x="915" y="510" width="108" height="40" rx="4" fill="hsl(111.5 64% 38%)"/>
+<text class="value" x="969.0" y="536" text-anchor="middle">92.9</text>
+<rect x="1027" y="510" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" x="1081.0" y="536" text-anchor="middle">100.0</text>
+<text class="label" x="339" y="596" text-anchor="end">Qwythos 9B</text>
+<rect x="355" y="565" width="108" height="40" rx="4" fill="hsl(10.7 64% 38%)"/>
+<text class="value" x="409.0" y="591" text-anchor="middle">8.9</text>
+<rect x="467" y="565" width="108" height="40" rx="4" fill="hsl(49.2 64% 38%)"/>
+<text class="value" x="521.0" y="591" text-anchor="middle">41.0</text>
+<rect x="579" y="565" width="108" height="40" rx="4" fill="hsl(0.0 64% 38%)"/>
+<text class="value" x="633.0" y="591" text-anchor="middle">0.0</text>
+<rect x="691" y="565" width="108" height="40" rx="4" fill="hsl(52.2 64% 38%)"/>
+<text class="value" x="745.0" y="591" text-anchor="middle">43.5</text>
+<rect x="803" y="565" width="108" height="40" rx="4" fill="hsl(32.0 64% 38%)"/>
+<text class="value" x="857.0" y="591" text-anchor="middle">26.6</text>
+<rect x="915" y="565" width="108" height="40" rx="4" fill="hsl(51.7 64% 38%)"/>
+<text class="value" x="969.0" y="591" text-anchor="middle">43.1</text>
+<rect x="1027" y="565" width="108" height="40" rx="4" fill="hsl(42.9 64% 38%)"/>
+<text class="value" x="1081.0" y="591" text-anchor="middle">35.7</text>
+</svg>

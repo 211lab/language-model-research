@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "docs/model-comparisons/**"
+      - "docs/assistant-benchmark/**"
       - "automation/content_scoring/rubrics/**"
       - "scripts/build_radar.py"
       - ".github/workflows/pages.yml"
