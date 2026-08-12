@@ -44,3 +44,19 @@ python scripts/build_radar.py
 
 The build writes the compiled JSON, dashboard, and four SVG snapshots both here
 and at the repository root. `model-results.csv` is the source of truth.
+
+## Next local round
+
+Run the managed local round from WSL:
+
+```bash
+bash scripts/run_local_assistant_round.sh
+```
+
+It runs the latency companion and assistant workload serially against
+`http://titan:11434` by default (override with `LOCAL_AI_BASE_URL`). Both use
+seed 42 and a 10-second unloaded buffer between models. After every switch, the
+latency test sends its fixed tiny primer and the assistant test sends `READY`
+before its 21-task workload. The processing step rejects mismatched model sets
+or seeds, writes `latest-round.json`, updates `model-results.csv`, and rebuilds
+the published dashboard only after validation succeeds.
