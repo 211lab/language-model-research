@@ -40,6 +40,12 @@ PLOT_NAMES = {
     "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl": "Unsloth Qwen 27B",
     "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s": "Unsloth Qwen 35B A3B",
 }
+PROVIDERS = (
+    ("Google", ("gemma-4-12b-obliterated", "gemma-4-e4b-it")),
+    ("Qwen fine-tunes", ("qwen3.6-27b-heretic-neo-code", "qwen3.6-35b-hauhaucs-aggressive")),
+    ("Unsloth", ("unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl", "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s")),
+    ("Community publishers", ("cydonia-24b-v4.3", "dolphin-mistral-24b-venice", "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m")),
+)
 
 
 def load_dataset(root: Path) -> dict[str, Any]:
@@ -84,6 +90,10 @@ def plot_name(model: dict[str, Any]) -> str:
     return PLOT_NAMES.get(model["model"], short_name(model["display_name"], 25))
 
 
+def model_attr(model: dict[str, Any]) -> str:
+    return f' data-model="{esc(model["model"])}"'
+
+
 def svg_shell(title: str, description: str, width: int, height: int, body: list[str]) -> str:
     return "\n".join([
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
@@ -110,14 +120,15 @@ def score_svg(data: dict[str, Any]) -> str:
         legend_x += 145
     for index, model in enumerate(models):
         y = top + index * row_height
-        body.append(f'<text class="label" x="{left-16}" y="{y+18}" text-anchor="end">{esc(plot_name(model))}</text>')
+        attr = model_attr(model)
+        body.append(f'<text class="label"{attr} x="{left-16}" y="{y+18}" text-anchor="end">{esc(plot_name(model))}</text>')
         cursor = left
         for key, _label, weight, color in DIMENSIONS:
             contribution = model[key] * weight / 100
             segment = plot_width * contribution / 100
-            body.append(f'<rect x="{cursor:.2f}" y="{y}" width="{segment:.2f}" height="26" fill="{color}"/>')
+            body.append(f'<rect{attr} x="{cursor:.2f}" y="{y}" width="{segment:.2f}" height="26" fill="{color}"/>')
             cursor += segment
-        body.append(f'<text class="value" x="{cursor+9:.1f}" y="{y+19}">{model["assistant_score"]:.1f}</text>')
+        body.append(f'<text class="value"{attr} x="{cursor+9:.1f}" y="{y+19}">{model["assistant_score"]:.1f}</text>')
     return svg_shell("Personal-assistant intelligence", "Weighted score; higher is better. Timing is excluded from this score.", width, height, body)
 
 
@@ -151,7 +162,8 @@ def tradeoff_svg(data: dict[str, Any]) -> str:
         xx, yy = x(model["median_task_seconds"]), y(model["assistant_score"])
         dx, dy = offsets[model["model"]]
         anchor = "end" if dx < 0 else "start"
-        body += [f'<circle cx="{xx:.1f}" cy="{yy:.1f}" r="7" fill="#38bdf8"><title>{esc(model["display_name"])}: {model["assistant_score"]:.2f}, {model["median_task_seconds"]:.2f}s median</title></circle>', f'<text class="label" x="{xx+dx:.1f}" y="{yy+dy:.1f}" text-anchor="{anchor}">{esc(plot_name(model))}</text>']
+        attr = model_attr(model)
+        body += [f'<circle{attr} cx="{xx:.1f}" cy="{yy:.1f}" r="7" fill="#38bdf8"><title>{esc(model["display_name"])}: {model["assistant_score"]:.2f}, {model["median_task_seconds"]:.2f}s median</title></circle>', f'<text class="label"{attr} x="{xx+dx:.1f}" y="{yy+dy:.1f}" text-anchor="{anchor}">{esc(plot_name(model))}</text>']
     body.append(f'<text class="sub" x="{left}" y="{height-4}">Qwythos is omitted: 12 HTTP 502 errors make its recorded median task time invalid.</text>')
     return svg_shell("Assistant quality versus task speed", "Upper-left is better: higher intelligence with lower median task time.", width, height, body)
 
@@ -169,7 +181,8 @@ def latency_svg(data: dict[str, Any]) -> str:
         yy = top + index * row_height
         cold = plot_width * model["cold_start_seconds"] / maximum
         warm = plot_width * model["openclaw_seconds"] / maximum
-        body += [f'<text class="label" x="{left-16}" y="{yy+18}" text-anchor="end">{esc(plot_name(model))}</text>', f'<rect x="{left}" y="{yy}" width="{cold:.2f}" height="26" fill="#3b82f6"/>', f'<rect x="{left+cold:.2f}" y="{yy}" width="{warm:.2f}" height="26" fill="#f59e0b"/>', f'<text class="value" x="{left+cold+warm+9:.1f}" y="{yy+19}">{model["latency_total_seconds"]:.1f}s</text>']
+        attr = model_attr(model)
+        body += [f'<text class="label"{attr} x="{left-16}" y="{yy+18}" text-anchor="end">{esc(plot_name(model))}</text>', f'<rect{attr} x="{left}" y="{yy}" width="{cold:.2f}" height="26" fill="#3b82f6"/>', f'<rect{attr} x="{left+cold:.2f}" y="{yy}" width="{warm:.2f}" height="26" fill="#f59e0b"/>', f'<text class="value"{attr} x="{left+cold+warm+9:.1f}" y="{yy+19}">{model["latency_total_seconds"]:.1f}s</text>']
     return svg_shell("Cold-load and OpenClaw latency", "One model resident and one request active; 10-second unloaded buffer between models.", width, height, body)
 
 
@@ -181,30 +194,52 @@ def heatmap_svg(data: dict[str, Any]) -> str:
         body.append(f'<text class="tick" x="{left+col*cell_w+cell_w/2}" y="{top-18}" text-anchor="middle">{esc(label)}</text>')
     for row, model in enumerate(models):
         yy = top + row * cell_h
-        body.append(f'<text class="label" x="{left-16}" y="{yy+31}" text-anchor="end">{esc(plot_name(model))}</text>')
+        attr = model_attr(model)
+        body.append(f'<text class="label"{attr} x="{left-16}" y="{yy+31}" text-anchor="end">{esc(plot_name(model))}</text>')
         for col, (key, _label, _weight, _color) in enumerate(DIMENSIONS):
             value = model[key]
             hue = 120 * value / 100
-            body += [f'<rect x="{left+col*cell_w}" y="{yy}" width="{cell_w-4}" height="40" rx="4" fill="hsl({hue:.1f} 64% 38%)"/>', f'<text class="value" x="{left+col*cell_w+(cell_w-4)/2:.1f}" y="{yy+26}" text-anchor="middle">{value:.1f}</text>']
+            body += [f'<rect{attr} x="{left+col*cell_w}" y="{yy}" width="{cell_w-4}" height="40" rx="4" fill="hsl({hue:.1f} 64% 38%)"/>', f'<text class="value"{attr} x="{left+col*cell_w+(cell_w-4)/2:.1f}" y="{yy+26}" text-anchor="middle">{value:.1f}</text>']
     return svg_shell("Assistant capability heatmap", "Hard 0–100 category scores; green is higher and red is lower.", width, height, body)
 
 
 def dashboard_html(
-    data: dict[str, Any], charts: dict[str, str], source_prefix: str, editorial_href: str
+    data: dict[str, Any], charts: dict[str, str], source_prefix: str, editorial_href: str, home_href: str, methodology_href: str
 ) -> str:
     rows = "".join(
-        f'<tr><td>{esc(model["display_name"])}</td><td>{model["assistant_score"]:.2f}</td><td>{model["tasks_passed"]}/{model["tasks_total"]}</td><td>{model["tool_call_success_rate"]:.1f}%</td><td>{model["median_task_seconds"]:.2f}s</td><td>{model["cold_start_seconds"]:.2f}s</td><td>{model["openclaw_seconds"]:.2f}s</td><td>{esc(model["run_status"])}</td></tr>'
+        f'<tr{model_attr(model)}><td>{esc(model["display_name"])}</td><td>{model["assistant_score"]:.2f}</td><td>{model["tasks_passed"]}/{model["tasks_total"]}</td><td>{model["tool_call_success_rate"]:.1f}%</td><td>{model["median_task_seconds"]:.2f}s</td><td>{model["cold_start_seconds"]:.2f}s</td><td>{model["openclaw_seconds"]:.2f}s</td><td>{esc(model["run_status"])}</td></tr>'
         for model in data["models"]
     )
+    by_id = {model["model"]: model for model in data["models"]}
+    groups = "".join(
+        '<section class="provider-group"><label class="provider-toggle"><input type="checkbox" data-provider="{name}" checked> {name}</label>{items}</section>'.format(
+            name=esc(name),
+            items="".join(
+                f'<label><input type="checkbox" data-model-control="{esc(model_id)}" data-provider-name="{esc(name)}" checked> {esc(plot_name(by_id[model_id]))}</label>'
+                for model_id in model_ids
+            ),
+        )
+        for name, model_ids in PROVIDERS
+    )
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Personal-assistant model benchmark</title><style>
-body{{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}}main{{max-width:1280px;margin:auto;padding:28px}}a{{color:#7dd3fc}}h1{{margin-bottom:6px}}h2{{margin-top:38px}}.muted{{color:#a5b4c7;max-width:900px}}.chart{{overflow-x:auto;margin:14px 0}}.chart svg{{display:block;width:100%;height:auto;min-width:820px}}table{{width:100%;border-collapse:collapse}}th,td{{padding:10px;border-bottom:1px solid #263349;text-align:right}}th:first-child,td:first-child{{text-align:left}}th{{color:#a5b4c7}}code{{font-size:.85em}}
-</style></head><body><main><nav><a href="{editorial_href}">Editorial content research</a></nav><h1>Personal-assistant model benchmark</h1><p class="muted">Nine local GGUF models, 21 synthetic information-worker tasks each, temperature 0 and seed 42. Intelligence and timing remain separate measurements. A <code>partial</code> run hit a tool-turn ceiling or API error; all scheduled tasks remain represented.</p>
+body{{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}}main{{max-width:1280px;margin:auto;padding:28px}}a{{color:#7dd3fc}}h1{{margin-bottom:6px}}h2{{margin-top:38px}}.muted{{color:#a5b4c7;max-width:900px}}.chart{{overflow-x:auto;margin:14px 0}}.chart svg{{display:block;width:100%;height:auto;min-width:820px}}table{{width:100%;border-collapse:collapse}}th,td{{padding:10px;border-bottom:1px solid #263349;text-align:right}}th:first-child,td:first-child{{text-align:left}}th{{color:#a5b4c7}}code{{font-size:.85em}}.site-nav{{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}}.site-brand{{color:#f8fafc;text-decoration:none;font-weight:750}}.menu-button{{margin-left:auto;border:1px solid #38506f;background:#111a2d;color:#e5e7eb;border-radius:8px;padding:8px 11px;font:inherit;cursor:pointer}}.menu-links{{display:flex;gap:14px;align-items:center}}.menu-links a{{text-decoration:none}}.model-selector{{margin:24px 0;padding:14px 16px;border:1px solid #263349;border-radius:12px;background:#0d1424}}.model-selector summary{{cursor:pointer;font-weight:700}}.model-selector[open] summary{{margin-bottom:14px}}.selection-actions{{display:flex;gap:10px;margin:0 0 14px}}.selection-actions button{{border:1px solid #38506f;background:#18243a;color:#e5e7eb;border-radius:7px;padding:6px 10px;cursor:pointer}}.provider-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}}.provider-group{{border-left:2px solid #38bdf8;padding-left:10px;display:grid;gap:7px}}.provider-group label{{cursor:pointer}}.provider-toggle{{font-weight:700}}@media(max-width:680px){{main{{padding:18px}}.site-nav{{position:relative}}.menu-links{{display:none;position:absolute;right:0;top:42px;z-index:10;min-width:230px;flex-direction:column;align-items:stretch;padding:12px;border:1px solid #263349;border-radius:10px;background:#111a2d;box-shadow:0 12px 28px #0008}}.menu-links.is-open{{display:flex}}.menu-links a{{padding:7px}}}}@media(min-width:681px){{.menu-button{{display:none}}}}
+</style></head><body><main><nav class="site-nav" aria-label="Primary"><a class="site-brand" href="{home_href}">Language model research</a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu">Menu ☰</button><div class="menu-links" id="site-menu"><a href="{home_href}">Editorial research</a><a href="{editorial_href}">Model comparison</a><a href="{methodology_href}">Methodology</a></div></nav><h1>Personal-assistant model benchmark</h1><p class="muted">Nine local GGUF models, 21 synthetic information-worker tasks each, temperature 0 and seed 42. Intelligence and timing remain separate measurements. A <code>partial</code> run hit a tool-turn ceiling or API error; all scheduled tasks remain represented.</p>
+<details class="model-selector"><summary>Choose models by provider</summary><div class="selection-actions"><button type="button" data-selection="all">Select all</button><button type="button" data-selection="none">Clear all</button></div><div class="provider-grid">{groups}</div></details>
 <h2>Weighted assistant intelligence</h2><div class="chart">{charts["score"]}</div>
 <h2>Speed–quality decision view</h2><div class="chart">{charts["tradeoff"]}</div>
 <h2>Cold-load and agent latency</h2><div class="chart">{charts["latency"]}</div>
 <h2>Capability dimensions</h2><div class="chart">{charts["heatmap"]}</div>
 <h2>Hard values</h2><div style="overflow-x:auto"><table><thead><tr><th>Model</th><th>Score</th><th>Passed</th><th>Tool success</th><th>Median task</th><th>Cold load</th><th>OpenClaw request</th><th>Status</th></tr></thead><tbody>{rows}</tbody></table></div>
-<p class="muted">Source: <a href="{source_prefix}model-results.csv">model-results.csv</a>. Method and caveats: <a href="{source_prefix}README.md">benchmark notes</a>.</p></main></body></html>'''
+<p class="muted">Source: <a href="{source_prefix}model-results.csv">model-results.csv</a>. Method and caveats: <a href="{methodology_href}">published methodology</a> and <a href="{source_prefix}README.md">benchmark notes</a>.</p><script>const controls=[...document.querySelectorAll('[data-model-control]')];function applySelection(){{controls.forEach(control=>document.querySelectorAll('[data-model="'+control.dataset.modelControl+'"]').forEach(item=>item.style.display=control.checked?'':'none'));document.querySelectorAll('[data-provider]').forEach(provider=>{{const related=controls.filter(control=>control.dataset.providerName===provider.dataset.provider);provider.checked=related.every(control=>control.checked);provider.indeterminate=related.some(control=>control.checked)&&!provider.checked}})}}controls.forEach(control=>control.addEventListener('change',applySelection));document.querySelectorAll('[data-provider]').forEach(provider=>provider.addEventListener('change',()=>{{controls.filter(control=>control.dataset.providerName===provider.dataset.provider).forEach(control=>control.checked=provider.checked);applySelection()}}));document.querySelectorAll('[data-selection]').forEach(button=>button.addEventListener('click',()=>{{controls.forEach(control=>control.checked=button.dataset.selection==='all');applySelection()}}));const menuButton=document.querySelector('.menu-button'),menu=document.querySelector('.menu-links');menuButton.addEventListener('click',()=>{{const open=menu.classList.toggle('is-open');menuButton.setAttribute('aria-expanded',String(open))}});applySelection();</script></main></body></html>'''
+
+
+def methodology_html(data: dict[str, Any]) -> str:
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research methodology</title><style>
+body{{margin:0;background:#070b16;color:#e5e7eb;font:16px/1.55 system-ui,sans-serif}}main{{max-width:900px;margin:auto;padding:28px}}a{{color:#7dd3fc}}h1{{margin-bottom:6px}}h2{{margin-top:36px}}.muted{{color:#a5b4c7}}.site-nav{{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}}.site-brand{{color:#f8fafc;text-decoration:none;font-weight:750}}.menu-button{{margin-left:auto;border:1px solid #38506f;background:#111a2d;color:#e5e7eb;border-radius:8px;padding:8px 11px;font:inherit;cursor:pointer}}.menu-links{{display:flex;gap:14px;align-items:center}}.menu-links a{{text-decoration:none}}.card{{background:#0d1424;border:1px solid #263349;border-radius:12px;padding:18px;margin:16px 0}}li{{margin:7px 0}}@media(max-width:680px){{main{{padding:18px}}.site-nav{{position:relative}}.menu-links{{display:none;position:absolute;right:0;top:42px;z-index:10;min-width:230px;flex-direction:column;align-items:stretch;padding:12px;border:1px solid #263349;border-radius:10px;background:#111a2d;box-shadow:0 12px 28px #0008}}.menu-links.is-open{{display:flex}}.menu-links a{{padding:7px}}}}@media(min-width:681px){{.menu-button{{display:none}}}}
+</style></head><body><main><nav class="site-nav" aria-label="Primary"><a class="site-brand" href="index.html">Language model research</a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu">Menu ☰</button><div class="menu-links" id="site-menu"><a href="index.html">Editorial research</a><a href="assistant-benchmark.html">Assistant benchmark</a><a href="methodology.html">Methodology</a></div></nav><h1>Research methodology</h1><p class="muted">A transparent record of what these comparisons measure, what they do not, and how to reproduce the inputs.</p>
+<section class="card"><h2>Personal-assistant benchmark</h2><p>The assistant evaluation uses {data["model_count"]} local GGUF models served through llama.cpp via llama-swap. Each model receives the same 21 fresh synthetic fixtures covering project work, information retrieval, structured tool calls, state tracking, English communication, and safe handling of requests.</p><ul><li>Temperature 0, seed 42, with up to 768 tokens per turn.</li><li>Only one model is loaded and one request is active at a time. The model is unloaded and a 10-second buffer elapses before the next model.</li><li>Intelligence is a weighted 0–100 score: outcome 30%, tool use 25%, grounding 15%, state 10%, English 10%, safety 5%, efficiency 5%.</li><li>Latency is reported separately: cold load plus first response, warm OpenClaw-style request, and their total. It is never folded into the intelligence score.</li><li>A <code>partial</code> result means a tool-turn ceiling or API error affected the run. Its scheduled tasks remain in the report; it is not comparable to a clean <code>ok</code> run without that caveat.</li></ul><p>Exact scores, timings, run status, and source fixtures are retained in the <a href="docs/assistant-benchmark/model-results.csv">published dataset</a> and <a href="docs/assistant-benchmark/README.md">benchmark notes</a>.</p></section>
+<section class="card"><h2>Editorial content research</h2><p>The editorial comparison uses the published case-study output for each model, a fixed rubric, readability measurements, and recorded OpenRouter bundle prices when available. The dashboard keeps quality, readability, and price as separate fields so a lower cost is not mistaken for higher quality.</p><ul><li>Content scores are rubric-based rather than a general intelligence claim.</li><li>Charts retain hard values and report unavailable prices explicitly.</li><li>The local model is shown as a zero-cost baseline only for the recorded bundle comparison; hardware and electricity costs are outside that axis.</li></ul><p>Detailed rubric definitions, source artifacts, and per-model evidence live with the <a href="docs/model-comparisons/README.md">model-comparison research</a>.</p></section>
+<h2>Interpretation limits</h2><p>These results are directional evidence for the stated workflows and runtime. They do not establish broad model capability, reliability across unseen data, provider service quality, or cost on another machine. Model versions, quantization, hardware, prompts, and tool schemas can materially change outcomes.</p><script>const button=document.querySelector('.menu-button'),menu=document.querySelector('.menu-links');button.addEventListener('click',()=>{{const open=menu.classList.toggle('is-open');button.setAttribute('aria-expanded',String(open))}});</script></main></body></html>'''
 
 
 def build(root: Path, repo_root: Path) -> dict[str, Any]:
@@ -221,11 +256,12 @@ def build(root: Path, repo_root: Path) -> dict[str, Any]:
         for name, content in outputs.items():
             (directory / name).write_text(content, encoding="utf-8")
     (root / "assistant-benchmark.html").write_text(
-        dashboard_html(data, charts, "", "../model-comparisons/model-comparison.html"), encoding="utf-8"
+        dashboard_html(data, charts, "", "../model-comparisons/model-comparison.html", "../../index.html", "../../methodology.html"), encoding="utf-8"
     )
     (repo_root / "assistant-benchmark.html").write_text(
-        dashboard_html(data, charts, "docs/assistant-benchmark/", "index.html"), encoding="utf-8"
+        dashboard_html(data, charts, "docs/assistant-benchmark/", "index.html", "index.html", "methodology.html"), encoding="utf-8"
     )
+    (repo_root / "methodology.html").write_text(methodology_html(data), encoding="utf-8")
     return data
 
 

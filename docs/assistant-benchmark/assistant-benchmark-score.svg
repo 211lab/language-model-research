@@ -28,85 +28,85 @@
 <text class="tick" x="775" y="107">Safety (5%)</text>
 <rect x="902" y="96" width="12" height="12" rx="2" fill="#64748b"/>
 <text class="tick" x="920" y="107">Efficiency (5%)</text>
-<text class="label" x="344" y="146" text-anchor="end">Unsloth Qwen 27B</text>
-<rect x="360.00" y="128" width="149.31" height="26" fill="#22c55e"/>
-<rect x="509.31" y="128" width="162.03" height="26" fill="#3b82f6"/>
-<rect x="671.34" y="128" width="55.39" height="26" fill="#8b5cf6"/>
-<rect x="726.73" y="128" width="50.38" height="26" fill="#06b6d4"/>
-<rect x="777.10" y="128" width="62.81" height="26" fill="#f59e0b"/>
-<rect x="839.92" y="128" width="37.49" height="26" fill="#ef4444"/>
-<rect x="877.40" y="128" width="32.92" height="26" fill="#64748b"/>
-<text class="value" x="919.3" y="147">69.7</text>
-<text class="label" x="344" y="201" text-anchor="end">Qwen 27B Heretic</text>
-<rect x="360.00" y="183" width="114.24" height="26" fill="#22c55e"/>
-<rect x="474.24" y="183" width="171.61" height="26" fill="#3b82f6"/>
-<rect x="645.85" y="183" width="68.27" height="26" fill="#8b5cf6"/>
-<rect x="714.12" y="183" width="42.74" height="26" fill="#06b6d4"/>
-<rect x="756.87" y="183" width="61.19" height="26" fill="#f59e0b"/>
-<rect x="818.06" y="183" width="35.25" height="26" fill="#ef4444"/>
-<rect x="853.31" y="183" width="31.98" height="26" fill="#64748b"/>
-<text class="value" x="894.3" y="202">66.5</text>
-<text class="label" x="344" y="256" text-anchor="end">Unsloth Qwen 35B A3B</text>
-<rect x="360.00" y="238" width="119.25" height="26" fill="#22c55e"/>
-<rect x="479.25" y="238" width="169.22" height="26" fill="#3b82f6"/>
-<rect x="648.47" y="238" width="48.95" height="26" fill="#8b5cf6"/>
-<rect x="697.41" y="238" width="50.38" height="26" fill="#06b6d4"/>
-<rect x="747.79" y="238" width="57.96" height="26" fill="#f59e0b"/>
-<rect x="805.75" y="238" width="39.50" height="26" fill="#ef4444"/>
-<rect x="845.25" y="238" width="27.27" height="26" fill="#64748b"/>
-<text class="value" x="881.5" y="257">64.9</text>
-<text class="label" x="344" y="311" text-anchor="end">Gemma E4B</text>
-<rect x="360.00" y="293" width="96.70" height="26" fill="#22c55e"/>
-<rect x="456.70" y="293" width="151.00" height="26" fill="#3b82f6"/>
-<rect x="607.70" y="293" width="45.08" height="26" fill="#8b5cf6"/>
-<rect x="652.78" y="293" width="63.73" height="26" fill="#06b6d4"/>
-<rect x="716.52" y="293" width="75.76" height="26" fill="#f59e0b"/>
-<rect x="792.28" y="293" width="37.49" height="26" fill="#ef4444"/>
-<rect x="829.77" y="293" width="37.62" height="26" fill="#64748b"/>
-<text class="value" x="876.4" y="312">64.2</text>
-<text class="label" x="344" y="366" text-anchor="end">Qwen 35B HauhauCS</text>
-<rect x="360.00" y="348" width="72.15" height="26" fill="#22c55e"/>
-<rect x="432.15" y="348" width="165.86" height="26" fill="#3b82f6"/>
-<rect x="598.01" y="348" width="48.95" height="26" fill="#8b5cf6"/>
-<rect x="646.96" y="348" width="52.29" height="26" fill="#06b6d4"/>
-<rect x="699.25" y="348" width="61.19" height="26" fill="#f59e0b"/>
-<rect x="760.44" y="348" width="33.57" height="26" fill="#ef4444"/>
-<rect x="794.01" y="348" width="26.33" height="26" fill="#64748b"/>
-<text class="value" x="829.3" y="367">58.3</text>
-<text class="label" x="344" y="421" text-anchor="end">Gemma 12B</text>
-<rect x="360.00" y="403" width="36.08" height="26" fill="#22c55e"/>
-<rect x="396.08" y="403" width="124.64" height="26" fill="#3b82f6"/>
-<rect x="520.71" y="403" width="55.39" height="26" fill="#8b5cf6"/>
-<rect x="576.10" y="403" width="23.66" height="26" fill="#06b6d4"/>
-<rect x="599.76" y="403" width="49.86" height="26" fill="#f59e0b"/>
-<rect x="649.62" y="403" width="34.13" height="26" fill="#ef4444"/>
-<rect x="683.75" y="403" width="32.92" height="26" fill="#64748b"/>
-<text class="value" x="725.7" y="422">45.1</text>
-<text class="label" x="344" y="476" text-anchor="end">Cydonia 24B</text>
-<rect x="360.00" y="458" width="40.08" height="26" fill="#22c55e"/>
-<rect x="400.08" y="458" width="21.57" height="26" fill="#3b82f6"/>
-<rect x="421.65" y="458" width="23.18" height="26" fill="#8b5cf6"/>
-<rect x="444.84" y="458" width="31.30" height="26" fill="#06b6d4"/>
-<rect x="476.13" y="458" width="67.67" height="26" fill="#f59e0b"/>
-<rect x="543.80" y="458" width="36.70" height="26" fill="#ef4444"/>
-<rect x="580.51" y="458" width="39.50" height="26" fill="#64748b"/>
-<text class="value" x="629.0" y="477">32.9</text>
-<text class="label" x="344" y="531" text-anchor="end">Dolphin Mistral 24B</text>
-<rect x="360.00" y="513" width="30.06" height="26" fill="#22c55e"/>
-<rect x="390.06" y="513" width="21.57" height="26" fill="#3b82f6"/>
-<rect x="411.63" y="513" width="23.18" height="26" fill="#8b5cf6"/>
-<rect x="434.82" y="513" width="31.30" height="26" fill="#06b6d4"/>
-<rect x="466.11" y="513" width="69.29" height="26" fill="#f59e0b"/>
-<rect x="535.40" y="513" width="36.70" height="26" fill="#ef4444"/>
-<rect x="572.10" y="513" width="39.50" height="26" fill="#64748b"/>
-<text class="value" x="620.6" y="532">31.8</text>
-<text class="label" x="344" y="586" text-anchor="end">Qwythos 9B</text>
-<rect x="360.00" y="568" width="21.04" height="26" fill="#22c55e"/>
-<rect x="381.04" y="568" width="81.01" height="26" fill="#3b82f6"/>
-<rect x="462.06" y="568" width="0.00" height="26" fill="#8b5cf6"/>
-<rect x="462.06" y="568" width="34.35" height="26" fill="#06b6d4"/>
-<rect x="496.40" y="568" width="21.04" height="26" fill="#f59e0b"/>
-<rect x="517.45" y="568" width="17.01" height="26" fill="#ef4444"/>
-<rect x="534.46" y="568" width="14.11" height="26" fill="#64748b"/>
-<text class="value" x="557.6" y="587">23.9</text>
+<text class="label" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="344" y="146" text-anchor="end">Unsloth Qwen 27B</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="360.00" y="128" width="149.31" height="26" fill="#22c55e"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="509.31" y="128" width="162.03" height="26" fill="#3b82f6"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="671.34" y="128" width="55.39" height="26" fill="#8b5cf6"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="726.73" y="128" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="777.10" y="128" width="62.81" height="26" fill="#f59e0b"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="839.92" y="128" width="37.49" height="26" fill="#ef4444"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="877.40" y="128" width="32.92" height="26" fill="#64748b"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="919.3" y="147">69.7</text>
+<text class="label" data-model="qwen3.6-27b-heretic-neo-code" x="344" y="201" text-anchor="end">Qwen 27B Heretic</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="360.00" y="183" width="114.24" height="26" fill="#22c55e"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="474.24" y="183" width="171.61" height="26" fill="#3b82f6"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="645.85" y="183" width="68.27" height="26" fill="#8b5cf6"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="714.12" y="183" width="42.74" height="26" fill="#06b6d4"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="756.87" y="183" width="61.19" height="26" fill="#f59e0b"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="818.06" y="183" width="35.25" height="26" fill="#ef4444"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="853.31" y="183" width="31.98" height="26" fill="#64748b"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="894.3" y="202">66.5</text>
+<text class="label" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="344" y="256" text-anchor="end">Unsloth Qwen 35B A3B</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="360.00" y="238" width="119.25" height="26" fill="#22c55e"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="479.25" y="238" width="169.22" height="26" fill="#3b82f6"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="648.47" y="238" width="48.95" height="26" fill="#8b5cf6"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="697.41" y="238" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="747.79" y="238" width="57.96" height="26" fill="#f59e0b"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="805.75" y="238" width="39.50" height="26" fill="#ef4444"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="845.25" y="238" width="27.27" height="26" fill="#64748b"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="881.5" y="257">64.9</text>
+<text class="label" data-model="gemma-4-e4b-it" x="344" y="311" text-anchor="end">Gemma E4B</text>
+<rect data-model="gemma-4-e4b-it" x="360.00" y="293" width="96.70" height="26" fill="#22c55e"/>
+<rect data-model="gemma-4-e4b-it" x="456.70" y="293" width="151.00" height="26" fill="#3b82f6"/>
+<rect data-model="gemma-4-e4b-it" x="607.70" y="293" width="45.08" height="26" fill="#8b5cf6"/>
+<rect data-model="gemma-4-e4b-it" x="652.78" y="293" width="63.73" height="26" fill="#06b6d4"/>
+<rect data-model="gemma-4-e4b-it" x="716.52" y="293" width="75.76" height="26" fill="#f59e0b"/>
+<rect data-model="gemma-4-e4b-it" x="792.28" y="293" width="37.49" height="26" fill="#ef4444"/>
+<rect data-model="gemma-4-e4b-it" x="829.77" y="293" width="37.62" height="26" fill="#64748b"/>
+<text class="value" data-model="gemma-4-e4b-it" x="876.4" y="312">64.2</text>
+<text class="label" data-model="qwen3.6-35b-hauhaucs-aggressive" x="344" y="366" text-anchor="end">Qwen 35B HauhauCS</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="360.00" y="348" width="72.15" height="26" fill="#22c55e"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="432.15" y="348" width="165.86" height="26" fill="#3b82f6"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="598.01" y="348" width="48.95" height="26" fill="#8b5cf6"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="646.96" y="348" width="52.29" height="26" fill="#06b6d4"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="699.25" y="348" width="61.19" height="26" fill="#f59e0b"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="760.44" y="348" width="33.57" height="26" fill="#ef4444"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="794.01" y="348" width="26.33" height="26" fill="#64748b"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="829.3" y="367">58.3</text>
+<text class="label" data-model="gemma-4-12b-obliterated" x="344" y="421" text-anchor="end">Gemma 12B</text>
+<rect data-model="gemma-4-12b-obliterated" x="360.00" y="403" width="36.08" height="26" fill="#22c55e"/>
+<rect data-model="gemma-4-12b-obliterated" x="396.08" y="403" width="124.64" height="26" fill="#3b82f6"/>
+<rect data-model="gemma-4-12b-obliterated" x="520.71" y="403" width="55.39" height="26" fill="#8b5cf6"/>
+<rect data-model="gemma-4-12b-obliterated" x="576.10" y="403" width="23.66" height="26" fill="#06b6d4"/>
+<rect data-model="gemma-4-12b-obliterated" x="599.76" y="403" width="49.86" height="26" fill="#f59e0b"/>
+<rect data-model="gemma-4-12b-obliterated" x="649.62" y="403" width="34.13" height="26" fill="#ef4444"/>
+<rect data-model="gemma-4-12b-obliterated" x="683.75" y="403" width="32.92" height="26" fill="#64748b"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="725.7" y="422">45.1</text>
+<text class="label" data-model="cydonia-24b-v4.3" x="344" y="476" text-anchor="end">Cydonia 24B</text>
+<rect data-model="cydonia-24b-v4.3" x="360.00" y="458" width="40.08" height="26" fill="#22c55e"/>
+<rect data-model="cydonia-24b-v4.3" x="400.08" y="458" width="21.57" height="26" fill="#3b82f6"/>
+<rect data-model="cydonia-24b-v4.3" x="421.65" y="458" width="23.18" height="26" fill="#8b5cf6"/>
+<rect data-model="cydonia-24b-v4.3" x="444.84" y="458" width="31.30" height="26" fill="#06b6d4"/>
+<rect data-model="cydonia-24b-v4.3" x="476.13" y="458" width="67.67" height="26" fill="#f59e0b"/>
+<rect data-model="cydonia-24b-v4.3" x="543.80" y="458" width="36.70" height="26" fill="#ef4444"/>
+<rect data-model="cydonia-24b-v4.3" x="580.51" y="458" width="39.50" height="26" fill="#64748b"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="629.0" y="477">32.9</text>
+<text class="label" data-model="dolphin-mistral-24b-venice" x="344" y="531" text-anchor="end">Dolphin Mistral 24B</text>
+<rect data-model="dolphin-mistral-24b-venice" x="360.00" y="513" width="30.06" height="26" fill="#22c55e"/>
+<rect data-model="dolphin-mistral-24b-venice" x="390.06" y="513" width="21.57" height="26" fill="#3b82f6"/>
+<rect data-model="dolphin-mistral-24b-venice" x="411.63" y="513" width="23.18" height="26" fill="#8b5cf6"/>
+<rect data-model="dolphin-mistral-24b-venice" x="434.82" y="513" width="31.30" height="26" fill="#06b6d4"/>
+<rect data-model="dolphin-mistral-24b-venice" x="466.11" y="513" width="69.29" height="26" fill="#f59e0b"/>
+<rect data-model="dolphin-mistral-24b-venice" x="535.40" y="513" width="36.70" height="26" fill="#ef4444"/>
+<rect data-model="dolphin-mistral-24b-venice" x="572.10" y="513" width="39.50" height="26" fill="#64748b"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="620.6" y="532">31.8</text>
+<text class="label" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="344" y="586" text-anchor="end">Qwythos 9B</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="360.00" y="568" width="21.04" height="26" fill="#22c55e"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="381.04" y="568" width="81.01" height="26" fill="#3b82f6"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="462.06" y="568" width="0.00" height="26" fill="#8b5cf6"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="462.06" y="568" width="34.35" height="26" fill="#06b6d4"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="496.40" y="568" width="21.04" height="26" fill="#f59e0b"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="517.45" y="568" width="17.01" height="26" fill="#ef4444"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="534.46" y="568" width="14.11" height="26" fill="#64748b"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="557.6" y="587">23.9</text>
 </svg>

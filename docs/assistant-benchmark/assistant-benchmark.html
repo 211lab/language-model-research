@@ -1,6 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Personal-assistant model benchmark</title><style>
-body{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:28px}a{color:#7dd3fc}h1{margin-bottom:6px}h2{margin-top:38px}.muted{color:#a5b4c7;max-width:900px}.chart{overflow-x:auto;margin:14px 0}.chart svg{display:block;width:100%;height:auto;min-width:820px}table{width:100%;border-collapse:collapse}th,td{padding:10px;border-bottom:1px solid #263349;text-align:right}th:first-child,td:first-child{text-align:left}th{color:#a5b4c7}code{font-size:.85em}
-</style></head><body><main><nav><a href="../model-comparisons/model-comparison.html">Editorial content research</a></nav><h1>Personal-assistant model benchmark</h1><p class="muted">Nine local GGUF models, 21 synthetic information-worker tasks each, temperature 0 and seed 42. Intelligence and timing remain separate measurements. A <code>partial</code> run hit a tool-turn ceiling or API error; all scheduled tasks remain represented.</p>
+body{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:28px}a{color:#7dd3fc}h1{margin-bottom:6px}h2{margin-top:38px}.muted{color:#a5b4c7;max-width:900px}.chart{overflow-x:auto;margin:14px 0}.chart svg{display:block;width:100%;height:auto;min-width:820px}table{width:100%;border-collapse:collapse}th,td{padding:10px;border-bottom:1px solid #263349;text-align:right}th:first-child,td:first-child{text-align:left}th{color:#a5b4c7}code{font-size:.85em}.site-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}.site-brand{color:#f8fafc;text-decoration:none;font-weight:750}.menu-button{margin-left:auto;border:1px solid #38506f;background:#111a2d;color:#e5e7eb;border-radius:8px;padding:8px 11px;font:inherit;cursor:pointer}.menu-links{display:flex;gap:14px;align-items:center}.menu-links a{text-decoration:none}.model-selector{margin:24px 0;padding:14px 16px;border:1px solid #263349;border-radius:12px;background:#0d1424}.model-selector summary{cursor:pointer;font-weight:700}.model-selector[open] summary{margin-bottom:14px}.selection-actions{display:flex;gap:10px;margin:0 0 14px}.selection-actions button{border:1px solid #38506f;background:#18243a;color:#e5e7eb;border-radius:7px;padding:6px 10px;cursor:pointer}.provider-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}.provider-group{border-left:2px solid #38bdf8;padding-left:10px;display:grid;gap:7px}.provider-group label{cursor:pointer}.provider-toggle{font-weight:700}@media(max-width:680px){main{padding:18px}.site-nav{position:relative}.menu-links{display:none;position:absolute;right:0;top:42px;z-index:10;min-width:230px;flex-direction:column;align-items:stretch;padding:12px;border:1px solid #263349;border-radius:10px;background:#111a2d;box-shadow:0 12px 28px #0008}.menu-links.is-open{display:flex}.menu-links a{padding:7px}}@media(min-width:681px){.menu-button{display:none}}
+</style></head><body><main><nav class="site-nav" aria-label="Primary"><a class="site-brand" href="../../index.html">Language model research</a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu">Menu ☰</button><div class="menu-links" id="site-menu"><a href="../../index.html">Editorial research</a><a href="../model-comparisons/model-comparison.html">Model comparison</a><a href="../../methodology.html">Methodology</a></div></nav><h1>Personal-assistant model benchmark</h1><p class="muted">Nine local GGUF models, 21 synthetic information-worker tasks each, temperature 0 and seed 42. Intelligence and timing remain separate measurements. A <code>partial</code> run hit a tool-turn ceiling or API error; all scheduled tasks remain represented.</p>
+<details class="model-selector"><summary>Choose models by provider</summary><div class="selection-actions"><button type="button" data-selection="all">Select all</button><button type="button" data-selection="none">Clear all</button></div><div class="provider-grid"><section class="provider-group"><label class="provider-toggle"><input type="checkbox" data-provider="Google" checked> Google</label><label><input type="checkbox" data-model-control="gemma-4-12b-obliterated" data-provider-name="Google" checked> Gemma 12B</label><label><input type="checkbox" data-model-control="gemma-4-e4b-it" data-provider-name="Google" checked> Gemma E4B</label></section><section class="provider-group"><label class="provider-toggle"><input type="checkbox" data-provider="Qwen fine-tunes" checked> Qwen fine-tunes</label><label><input type="checkbox" data-model-control="qwen3.6-27b-heretic-neo-code" data-provider-name="Qwen fine-tunes" checked> Qwen 27B Heretic</label><label><input type="checkbox" data-model-control="qwen3.6-35b-hauhaucs-aggressive" data-provider-name="Qwen fine-tunes" checked> Qwen 35B HauhauCS</label></section><section class="provider-group"><label class="provider-toggle"><input type="checkbox" data-provider="Unsloth" checked> Unsloth</label><label><input type="checkbox" data-model-control="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" data-provider-name="Unsloth" checked> Unsloth Qwen 27B</label><label><input type="checkbox" data-model-control="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" data-provider-name="Unsloth" checked> Unsloth Qwen 35B A3B</label></section><section class="provider-group"><label class="provider-toggle"><input type="checkbox" data-provider="Community publishers" checked> Community publishers</label><label><input type="checkbox" data-model-control="cydonia-24b-v4.3" data-provider-name="Community publishers" checked> Cydonia 24B</label><label><input type="checkbox" data-model-control="dolphin-mistral-24b-venice" data-provider-name="Community publishers" checked> Dolphin Mistral 24B</label><label><input type="checkbox" data-model-control="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" data-provider-name="Community publishers" checked> Qwythos 9B</label></section></div></details>
 <h2>Weighted assistant intelligence</h2><div class="chart"><svg xmlns="http://www.w3.org/2000/svg" width="1240" height="690" viewBox="0 0 1240 690" role="img" aria-labelledby="title desc">
 <title id="title">Personal-assistant intelligence</title><desc id="desc">Weighted score; higher is better. Timing is excluded from this score.</desc>
 <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 27px Arial,sans-serif}.sub,.tick{fill:#94a3b8;font:14px Arial,sans-serif}.label{fill:#e2e8f0;font:15px Arial,sans-serif}.value{fill:#f8fafc;font:700 15px Arial,sans-serif}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.5}</style>
@@ -31,87 +32,87 @@ body{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}ma
 <text class="tick" x="775" y="107">Safety (5%)</text>
 <rect x="902" y="96" width="12" height="12" rx="2" fill="#64748b"/>
 <text class="tick" x="920" y="107">Efficiency (5%)</text>
-<text class="label" x="344" y="146" text-anchor="end">Unsloth Qwen 27B</text>
-<rect x="360.00" y="128" width="149.31" height="26" fill="#22c55e"/>
-<rect x="509.31" y="128" width="162.03" height="26" fill="#3b82f6"/>
-<rect x="671.34" y="128" width="55.39" height="26" fill="#8b5cf6"/>
-<rect x="726.73" y="128" width="50.38" height="26" fill="#06b6d4"/>
-<rect x="777.10" y="128" width="62.81" height="26" fill="#f59e0b"/>
-<rect x="839.92" y="128" width="37.49" height="26" fill="#ef4444"/>
-<rect x="877.40" y="128" width="32.92" height="26" fill="#64748b"/>
-<text class="value" x="919.3" y="147">69.7</text>
-<text class="label" x="344" y="201" text-anchor="end">Qwen 27B Heretic</text>
-<rect x="360.00" y="183" width="114.24" height="26" fill="#22c55e"/>
-<rect x="474.24" y="183" width="171.61" height="26" fill="#3b82f6"/>
-<rect x="645.85" y="183" width="68.27" height="26" fill="#8b5cf6"/>
-<rect x="714.12" y="183" width="42.74" height="26" fill="#06b6d4"/>
-<rect x="756.87" y="183" width="61.19" height="26" fill="#f59e0b"/>
-<rect x="818.06" y="183" width="35.25" height="26" fill="#ef4444"/>
-<rect x="853.31" y="183" width="31.98" height="26" fill="#64748b"/>
-<text class="value" x="894.3" y="202">66.5</text>
-<text class="label" x="344" y="256" text-anchor="end">Unsloth Qwen 35B A3B</text>
-<rect x="360.00" y="238" width="119.25" height="26" fill="#22c55e"/>
-<rect x="479.25" y="238" width="169.22" height="26" fill="#3b82f6"/>
-<rect x="648.47" y="238" width="48.95" height="26" fill="#8b5cf6"/>
-<rect x="697.41" y="238" width="50.38" height="26" fill="#06b6d4"/>
-<rect x="747.79" y="238" width="57.96" height="26" fill="#f59e0b"/>
-<rect x="805.75" y="238" width="39.50" height="26" fill="#ef4444"/>
-<rect x="845.25" y="238" width="27.27" height="26" fill="#64748b"/>
-<text class="value" x="881.5" y="257">64.9</text>
-<text class="label" x="344" y="311" text-anchor="end">Gemma E4B</text>
-<rect x="360.00" y="293" width="96.70" height="26" fill="#22c55e"/>
-<rect x="456.70" y="293" width="151.00" height="26" fill="#3b82f6"/>
-<rect x="607.70" y="293" width="45.08" height="26" fill="#8b5cf6"/>
-<rect x="652.78" y="293" width="63.73" height="26" fill="#06b6d4"/>
-<rect x="716.52" y="293" width="75.76" height="26" fill="#f59e0b"/>
-<rect x="792.28" y="293" width="37.49" height="26" fill="#ef4444"/>
-<rect x="829.77" y="293" width="37.62" height="26" fill="#64748b"/>
-<text class="value" x="876.4" y="312">64.2</text>
-<text class="label" x="344" y="366" text-anchor="end">Qwen 35B HauhauCS</text>
-<rect x="360.00" y="348" width="72.15" height="26" fill="#22c55e"/>
-<rect x="432.15" y="348" width="165.86" height="26" fill="#3b82f6"/>
-<rect x="598.01" y="348" width="48.95" height="26" fill="#8b5cf6"/>
-<rect x="646.96" y="348" width="52.29" height="26" fill="#06b6d4"/>
-<rect x="699.25" y="348" width="61.19" height="26" fill="#f59e0b"/>
-<rect x="760.44" y="348" width="33.57" height="26" fill="#ef4444"/>
-<rect x="794.01" y="348" width="26.33" height="26" fill="#64748b"/>
-<text class="value" x="829.3" y="367">58.3</text>
-<text class="label" x="344" y="421" text-anchor="end">Gemma 12B</text>
-<rect x="360.00" y="403" width="36.08" height="26" fill="#22c55e"/>
-<rect x="396.08" y="403" width="124.64" height="26" fill="#3b82f6"/>
-<rect x="520.71" y="403" width="55.39" height="26" fill="#8b5cf6"/>
-<rect x="576.10" y="403" width="23.66" height="26" fill="#06b6d4"/>
-<rect x="599.76" y="403" width="49.86" height="26" fill="#f59e0b"/>
-<rect x="649.62" y="403" width="34.13" height="26" fill="#ef4444"/>
-<rect x="683.75" y="403" width="32.92" height="26" fill="#64748b"/>
-<text class="value" x="725.7" y="422">45.1</text>
-<text class="label" x="344" y="476" text-anchor="end">Cydonia 24B</text>
-<rect x="360.00" y="458" width="40.08" height="26" fill="#22c55e"/>
-<rect x="400.08" y="458" width="21.57" height="26" fill="#3b82f6"/>
-<rect x="421.65" y="458" width="23.18" height="26" fill="#8b5cf6"/>
-<rect x="444.84" y="458" width="31.30" height="26" fill="#06b6d4"/>
-<rect x="476.13" y="458" width="67.67" height="26" fill="#f59e0b"/>
-<rect x="543.80" y="458" width="36.70" height="26" fill="#ef4444"/>
-<rect x="580.51" y="458" width="39.50" height="26" fill="#64748b"/>
-<text class="value" x="629.0" y="477">32.9</text>
-<text class="label" x="344" y="531" text-anchor="end">Dolphin Mistral 24B</text>
-<rect x="360.00" y="513" width="30.06" height="26" fill="#22c55e"/>
-<rect x="390.06" y="513" width="21.57" height="26" fill="#3b82f6"/>
-<rect x="411.63" y="513" width="23.18" height="26" fill="#8b5cf6"/>
-<rect x="434.82" y="513" width="31.30" height="26" fill="#06b6d4"/>
-<rect x="466.11" y="513" width="69.29" height="26" fill="#f59e0b"/>
-<rect x="535.40" y="513" width="36.70" height="26" fill="#ef4444"/>
-<rect x="572.10" y="513" width="39.50" height="26" fill="#64748b"/>
-<text class="value" x="620.6" y="532">31.8</text>
-<text class="label" x="344" y="586" text-anchor="end">Qwythos 9B</text>
-<rect x="360.00" y="568" width="21.04" height="26" fill="#22c55e"/>
-<rect x="381.04" y="568" width="81.01" height="26" fill="#3b82f6"/>
-<rect x="462.06" y="568" width="0.00" height="26" fill="#8b5cf6"/>
-<rect x="462.06" y="568" width="34.35" height="26" fill="#06b6d4"/>
-<rect x="496.40" y="568" width="21.04" height="26" fill="#f59e0b"/>
-<rect x="517.45" y="568" width="17.01" height="26" fill="#ef4444"/>
-<rect x="534.46" y="568" width="14.11" height="26" fill="#64748b"/>
-<text class="value" x="557.6" y="587">23.9</text>
+<text class="label" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="344" y="146" text-anchor="end">Unsloth Qwen 27B</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="360.00" y="128" width="149.31" height="26" fill="#22c55e"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="509.31" y="128" width="162.03" height="26" fill="#3b82f6"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="671.34" y="128" width="55.39" height="26" fill="#8b5cf6"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="726.73" y="128" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="777.10" y="128" width="62.81" height="26" fill="#f59e0b"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="839.92" y="128" width="37.49" height="26" fill="#ef4444"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="877.40" y="128" width="32.92" height="26" fill="#64748b"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="919.3" y="147">69.7</text>
+<text class="label" data-model="qwen3.6-27b-heretic-neo-code" x="344" y="201" text-anchor="end">Qwen 27B Heretic</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="360.00" y="183" width="114.24" height="26" fill="#22c55e"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="474.24" y="183" width="171.61" height="26" fill="#3b82f6"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="645.85" y="183" width="68.27" height="26" fill="#8b5cf6"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="714.12" y="183" width="42.74" height="26" fill="#06b6d4"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="756.87" y="183" width="61.19" height="26" fill="#f59e0b"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="818.06" y="183" width="35.25" height="26" fill="#ef4444"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="853.31" y="183" width="31.98" height="26" fill="#64748b"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="894.3" y="202">66.5</text>
+<text class="label" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="344" y="256" text-anchor="end">Unsloth Qwen 35B A3B</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="360.00" y="238" width="119.25" height="26" fill="#22c55e"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="479.25" y="238" width="169.22" height="26" fill="#3b82f6"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="648.47" y="238" width="48.95" height="26" fill="#8b5cf6"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="697.41" y="238" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="747.79" y="238" width="57.96" height="26" fill="#f59e0b"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="805.75" y="238" width="39.50" height="26" fill="#ef4444"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="845.25" y="238" width="27.27" height="26" fill="#64748b"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="881.5" y="257">64.9</text>
+<text class="label" data-model="gemma-4-e4b-it" x="344" y="311" text-anchor="end">Gemma E4B</text>
+<rect data-model="gemma-4-e4b-it" x="360.00" y="293" width="96.70" height="26" fill="#22c55e"/>
+<rect data-model="gemma-4-e4b-it" x="456.70" y="293" width="151.00" height="26" fill="#3b82f6"/>
+<rect data-model="gemma-4-e4b-it" x="607.70" y="293" width="45.08" height="26" fill="#8b5cf6"/>
+<rect data-model="gemma-4-e4b-it" x="652.78" y="293" width="63.73" height="26" fill="#06b6d4"/>
+<rect data-model="gemma-4-e4b-it" x="716.52" y="293" width="75.76" height="26" fill="#f59e0b"/>
+<rect data-model="gemma-4-e4b-it" x="792.28" y="293" width="37.49" height="26" fill="#ef4444"/>
+<rect data-model="gemma-4-e4b-it" x="829.77" y="293" width="37.62" height="26" fill="#64748b"/>
+<text class="value" data-model="gemma-4-e4b-it" x="876.4" y="312">64.2</text>
+<text class="label" data-model="qwen3.6-35b-hauhaucs-aggressive" x="344" y="366" text-anchor="end">Qwen 35B HauhauCS</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="360.00" y="348" width="72.15" height="26" fill="#22c55e"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="432.15" y="348" width="165.86" height="26" fill="#3b82f6"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="598.01" y="348" width="48.95" height="26" fill="#8b5cf6"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="646.96" y="348" width="52.29" height="26" fill="#06b6d4"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="699.25" y="348" width="61.19" height="26" fill="#f59e0b"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="760.44" y="348" width="33.57" height="26" fill="#ef4444"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="794.01" y="348" width="26.33" height="26" fill="#64748b"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="829.3" y="367">58.3</text>
+<text class="label" data-model="gemma-4-12b-obliterated" x="344" y="421" text-anchor="end">Gemma 12B</text>
+<rect data-model="gemma-4-12b-obliterated" x="360.00" y="403" width="36.08" height="26" fill="#22c55e"/>
+<rect data-model="gemma-4-12b-obliterated" x="396.08" y="403" width="124.64" height="26" fill="#3b82f6"/>
+<rect data-model="gemma-4-12b-obliterated" x="520.71" y="403" width="55.39" height="26" fill="#8b5cf6"/>
+<rect data-model="gemma-4-12b-obliterated" x="576.10" y="403" width="23.66" height="26" fill="#06b6d4"/>
+<rect data-model="gemma-4-12b-obliterated" x="599.76" y="403" width="49.86" height="26" fill="#f59e0b"/>
+<rect data-model="gemma-4-12b-obliterated" x="649.62" y="403" width="34.13" height="26" fill="#ef4444"/>
+<rect data-model="gemma-4-12b-obliterated" x="683.75" y="403" width="32.92" height="26" fill="#64748b"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="725.7" y="422">45.1</text>
+<text class="label" data-model="cydonia-24b-v4.3" x="344" y="476" text-anchor="end">Cydonia 24B</text>
+<rect data-model="cydonia-24b-v4.3" x="360.00" y="458" width="40.08" height="26" fill="#22c55e"/>
+<rect data-model="cydonia-24b-v4.3" x="400.08" y="458" width="21.57" height="26" fill="#3b82f6"/>
+<rect data-model="cydonia-24b-v4.3" x="421.65" y="458" width="23.18" height="26" fill="#8b5cf6"/>
+<rect data-model="cydonia-24b-v4.3" x="444.84" y="458" width="31.30" height="26" fill="#06b6d4"/>
+<rect data-model="cydonia-24b-v4.3" x="476.13" y="458" width="67.67" height="26" fill="#f59e0b"/>
+<rect data-model="cydonia-24b-v4.3" x="543.80" y="458" width="36.70" height="26" fill="#ef4444"/>
+<rect data-model="cydonia-24b-v4.3" x="580.51" y="458" width="39.50" height="26" fill="#64748b"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="629.0" y="477">32.9</text>
+<text class="label" data-model="dolphin-mistral-24b-venice" x="344" y="531" text-anchor="end">Dolphin Mistral 24B</text>
+<rect data-model="dolphin-mistral-24b-venice" x="360.00" y="513" width="30.06" height="26" fill="#22c55e"/>
+<rect data-model="dolphin-mistral-24b-venice" x="390.06" y="513" width="21.57" height="26" fill="#3b82f6"/>
+<rect data-model="dolphin-mistral-24b-venice" x="411.63" y="513" width="23.18" height="26" fill="#8b5cf6"/>
+<rect data-model="dolphin-mistral-24b-venice" x="434.82" y="513" width="31.30" height="26" fill="#06b6d4"/>
+<rect data-model="dolphin-mistral-24b-venice" x="466.11" y="513" width="69.29" height="26" fill="#f59e0b"/>
+<rect data-model="dolphin-mistral-24b-venice" x="535.40" y="513" width="36.70" height="26" fill="#ef4444"/>
+<rect data-model="dolphin-mistral-24b-venice" x="572.10" y="513" width="39.50" height="26" fill="#64748b"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="620.6" y="532">31.8</text>
+<text class="label" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="344" y="586" text-anchor="end">Qwythos 9B</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="360.00" y="568" width="21.04" height="26" fill="#22c55e"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="381.04" y="568" width="81.01" height="26" fill="#3b82f6"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="462.06" y="568" width="0.00" height="26" fill="#8b5cf6"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="462.06" y="568" width="34.35" height="26" fill="#06b6d4"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="496.40" y="568" width="21.04" height="26" fill="#f59e0b"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="517.45" y="568" width="17.01" height="26" fill="#ef4444"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="534.46" y="568" width="14.11" height="26" fill="#64748b"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="557.6" y="587">23.9</text>
 </svg>
 </div>
 <h2>Speed–quality decision view</h2><div class="chart"><svg xmlns="http://www.w3.org/2000/svg" width="1240" height="650" viewBox="0 0 1240 650" role="img" aria-labelledby="title desc">
@@ -146,22 +147,22 @@ body{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}ma
 <text class="tick" x="80" y="110.0" text-anchor="end">100</text>
 <text class="tick" x="636.0" y="628" text-anchor="middle">Median task time (log scale; lower is better)</text>
 <text class="tick" transform="translate(24 332.5) rotate(-90)" text-anchor="middle">Assistant score (higher is better)</text>
-<circle cx="1158.0" cy="243.0" r="7" fill="#38bdf8"><title>Qwen3.6-27B-UD-Q4_K_XL: 69.66, 267.31s median</title></circle>
-<text class="label" x="1148.0" y="231.0" text-anchor="end">Unsloth Qwen 27B</text>
-<circle cx="1094.8" cy="257.5" r="7" fill="#38bdf8"><title>Qwen3.6 27B Heretic NEO CODE Q4_K_M: 66.49, 191.95s median</title></circle>
-<text class="label" x="1084.8" y="275.5" text-anchor="end">Qwen 27B Heretic</text>
-<circle cx="635.4" cy="264.8" r="7" fill="#38bdf8"><title>Qwen3.6-35B-A3B-UD-Q4_K_S: 64.88, 17.27s median</title></circle>
-<text class="label" x="645.4" y="252.8" text-anchor="start">Unsloth Qwen 35B A3B</text>
-<circle cx="451.9" cy="267.8" r="7" fill="#38bdf8"><title>Gemma 4 E4B IT UD-Q4_K_XL: 64.23, 6.60s median</title></circle>
-<text class="label" x="461.9" y="255.8" text-anchor="start">Gemma E4B</text>
-<circle cx="605.7" cy="294.9" r="7" fill="#38bdf8"><title>Qwen3.6 35B A3B Uncensored HauhauCS Aggressive Q4_K_M: 58.27, 14.78s median</title></circle>
-<text class="label" x="615.7" y="312.9" text-anchor="start">Qwen 35B HauhauCS</text>
-<circle cx="580.1" cy="354.6" r="7" fill="#38bdf8"><title>Gemma 4 12B Obliterated Q4_K_M: 45.15, 12.92s median</title></circle>
-<text class="label" x="570.1" y="372.6" text-anchor="end">Gemma 12B</text>
-<circle cx="648.7" cy="410.3" r="7" fill="#38bdf8"><title>Cydonia 24B v4.3 Q4_K_M: 32.91, 18.51s median</title></circle>
-<text class="label" x="658.7" y="428.3" text-anchor="start">Cydonia 24B</text>
-<circle cx="249.5" cy="415.1" r="7" fill="#38bdf8"><title>Dolphin Mistral 24B Venice Edition Q4_K_M: 31.85, 2.28s median</title></circle>
-<text class="label" x="239.5" y="403.1" text-anchor="end">Dolphin Mistral 24B</text>
+<circle data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" cx="1158.0" cy="243.0" r="7" fill="#38bdf8"><title>Qwen3.6-27B-UD-Q4_K_XL: 69.66, 267.31s median</title></circle>
+<text class="label" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="1148.0" y="231.0" text-anchor="end">Unsloth Qwen 27B</text>
+<circle data-model="qwen3.6-27b-heretic-neo-code" cx="1094.8" cy="257.5" r="7" fill="#38bdf8"><title>Qwen3.6 27B Heretic NEO CODE Q4_K_M: 66.49, 191.95s median</title></circle>
+<text class="label" data-model="qwen3.6-27b-heretic-neo-code" x="1084.8" y="275.5" text-anchor="end">Qwen 27B Heretic</text>
+<circle data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" cx="635.4" cy="264.8" r="7" fill="#38bdf8"><title>Qwen3.6-35B-A3B-UD-Q4_K_S: 64.88, 17.27s median</title></circle>
+<text class="label" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="645.4" y="252.8" text-anchor="start">Unsloth Qwen 35B A3B</text>
+<circle data-model="gemma-4-e4b-it" cx="451.9" cy="267.8" r="7" fill="#38bdf8"><title>Gemma 4 E4B IT UD-Q4_K_XL: 64.23, 6.60s median</title></circle>
+<text class="label" data-model="gemma-4-e4b-it" x="461.9" y="255.8" text-anchor="start">Gemma E4B</text>
+<circle data-model="qwen3.6-35b-hauhaucs-aggressive" cx="605.7" cy="294.9" r="7" fill="#38bdf8"><title>Qwen3.6 35B A3B Uncensored HauhauCS Aggressive Q4_K_M: 58.27, 14.78s median</title></circle>
+<text class="label" data-model="qwen3.6-35b-hauhaucs-aggressive" x="615.7" y="312.9" text-anchor="start">Qwen 35B HauhauCS</text>
+<circle data-model="gemma-4-12b-obliterated" cx="580.1" cy="354.6" r="7" fill="#38bdf8"><title>Gemma 4 12B Obliterated Q4_K_M: 45.15, 12.92s median</title></circle>
+<text class="label" data-model="gemma-4-12b-obliterated" x="570.1" y="372.6" text-anchor="end">Gemma 12B</text>
+<circle data-model="cydonia-24b-v4.3" cx="648.7" cy="410.3" r="7" fill="#38bdf8"><title>Cydonia 24B v4.3 Q4_K_M: 32.91, 18.51s median</title></circle>
+<text class="label" data-model="cydonia-24b-v4.3" x="658.7" y="428.3" text-anchor="start">Cydonia 24B</text>
+<circle data-model="dolphin-mistral-24b-venice" cx="249.5" cy="415.1" r="7" fill="#38bdf8"><title>Dolphin Mistral 24B Venice Edition Q4_K_M: 31.85, 2.28s median</title></circle>
+<text class="label" data-model="dolphin-mistral-24b-venice" x="239.5" y="403.1" text-anchor="end">Dolphin Mistral 24B</text>
 <text class="sub" x="92" y="646">Qwythos is omitted: 12 HTTP 502 errors make its recorded median task time invalid.</text>
 </svg>
 </div>
@@ -185,42 +186,42 @@ body{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}ma
 <text class="tick" x="1119.6" y="672" text-anchor="middle">125s</text>
 <rect x="32" y="88" width="12" height="12" rx="2" fill="#3b82f6"/><text class="tick" x="50" y="99">Cold load + first response</text>
 <rect x="244" y="88" width="12" height="12" rx="2" fill="#f59e0b"/><text class="tick" x="262" y="99">Warm OpenClaw-style request</text>
-<text class="label" x="344" y="133" text-anchor="end">Gemma E4B</text>
-<rect x="360" y="115" width="65.28" height="26" fill="#3b82f6"/>
-<rect x="425.28" y="115" width="7.02" height="26" fill="#f59e0b"/>
-<text class="value" x="441.3" y="134">11.9s</text>
-<text class="label" x="344" y="188" text-anchor="end">Gemma 12B</text>
-<rect x="360" y="170" width="71.11" height="26" fill="#3b82f6"/>
-<rect x="431.11" y="170" width="12.45" height="26" fill="#f59e0b"/>
-<text class="value" x="452.6" y="189">13.7s</text>
-<text class="label" x="344" y="243" text-anchor="end">Dolphin Mistral 24B</text>
-<rect x="360" y="225" width="113.35" height="26" fill="#3b82f6"/>
-<rect x="473.35" y="225" width="3.76" height="26" fill="#f59e0b"/>
-<text class="value" x="486.1" y="244">19.3s</text>
-<text class="label" x="344" y="298" text-anchor="end">Qwen 35B HauhauCS</text>
-<rect x="360" y="280" width="202.04" height="26" fill="#3b82f6"/>
-<rect x="562.04" y="280" width="11.06" height="26" fill="#f59e0b"/>
-<text class="value" x="582.1" y="299">35.1s</text>
-<text class="label" x="344" y="353" text-anchor="end">Unsloth Qwen 35B A3B</text>
-<rect x="360" y="335" width="201.19" height="26" fill="#3b82f6"/>
-<rect x="561.19" y="335" width="12.81" height="26" fill="#f59e0b"/>
-<text class="value" x="583.0" y="354">35.2s</text>
-<text class="label" x="344" y="408" text-anchor="end">Cydonia 24B</text>
-<rect x="360" y="390" width="369.23" height="26" fill="#3b82f6"/>
-<rect x="729.23" y="390" width="101.26" height="26" fill="#f59e0b"/>
-<text class="value" x="839.5" y="409">77.4s</text>
-<text class="label" x="344" y="463" text-anchor="end">Qwen 27B Heretic</text>
-<rect x="360" y="445" width="450.76" height="26" fill="#3b82f6"/>
-<rect x="810.76" y="445" width="125.36" height="26" fill="#f59e0b"/>
-<text class="value" x="945.1" y="464">94.8s</text>
-<text class="label" x="344" y="518" text-anchor="end">Unsloth Qwen 27B</text>
-<rect x="360" y="500" width="493.14" height="26" fill="#3b82f6"/>
-<rect x="853.14" y="500" width="139.35" height="26" fill="#f59e0b"/>
-<text class="value" x="1001.5" y="519">104.1s</text>
-<text class="label" x="344" y="573" text-anchor="end">Qwythos 9B</text>
-<rect x="360" y="555" width="663.10" height="26" fill="#3b82f6"/>
-<rect x="1023.10" y="555" width="96.80" height="26" fill="#f59e0b"/>
-<text class="value" x="1128.9" y="574">125.0s</text>
+<text class="label" data-model="gemma-4-e4b-it" x="344" y="133" text-anchor="end">Gemma E4B</text>
+<rect data-model="gemma-4-e4b-it" x="360" y="115" width="65.28" height="26" fill="#3b82f6"/>
+<rect data-model="gemma-4-e4b-it" x="425.28" y="115" width="7.02" height="26" fill="#f59e0b"/>
+<text class="value" data-model="gemma-4-e4b-it" x="441.3" y="134">11.9s</text>
+<text class="label" data-model="gemma-4-12b-obliterated" x="344" y="188" text-anchor="end">Gemma 12B</text>
+<rect data-model="gemma-4-12b-obliterated" x="360" y="170" width="71.11" height="26" fill="#3b82f6"/>
+<rect data-model="gemma-4-12b-obliterated" x="431.11" y="170" width="12.45" height="26" fill="#f59e0b"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="452.6" y="189">13.7s</text>
+<text class="label" data-model="dolphin-mistral-24b-venice" x="344" y="243" text-anchor="end">Dolphin Mistral 24B</text>
+<rect data-model="dolphin-mistral-24b-venice" x="360" y="225" width="113.35" height="26" fill="#3b82f6"/>
+<rect data-model="dolphin-mistral-24b-venice" x="473.35" y="225" width="3.76" height="26" fill="#f59e0b"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="486.1" y="244">19.3s</text>
+<text class="label" data-model="qwen3.6-35b-hauhaucs-aggressive" x="344" y="298" text-anchor="end">Qwen 35B HauhauCS</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="360" y="280" width="202.04" height="26" fill="#3b82f6"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="562.04" y="280" width="11.06" height="26" fill="#f59e0b"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="582.1" y="299">35.1s</text>
+<text class="label" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="344" y="353" text-anchor="end">Unsloth Qwen 35B A3B</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="360" y="335" width="201.19" height="26" fill="#3b82f6"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="561.19" y="335" width="12.81" height="26" fill="#f59e0b"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="583.0" y="354">35.2s</text>
+<text class="label" data-model="cydonia-24b-v4.3" x="344" y="408" text-anchor="end">Cydonia 24B</text>
+<rect data-model="cydonia-24b-v4.3" x="360" y="390" width="369.23" height="26" fill="#3b82f6"/>
+<rect data-model="cydonia-24b-v4.3" x="729.23" y="390" width="101.26" height="26" fill="#f59e0b"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="839.5" y="409">77.4s</text>
+<text class="label" data-model="qwen3.6-27b-heretic-neo-code" x="344" y="463" text-anchor="end">Qwen 27B Heretic</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="360" y="445" width="450.76" height="26" fill="#3b82f6"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="810.76" y="445" width="125.36" height="26" fill="#f59e0b"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="945.1" y="464">94.8s</text>
+<text class="label" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="344" y="518" text-anchor="end">Unsloth Qwen 27B</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="360" y="500" width="493.14" height="26" fill="#3b82f6"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="853.14" y="500" width="139.35" height="26" fill="#f59e0b"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="1001.5" y="519">104.1s</text>
+<text class="label" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="344" y="573" text-anchor="end">Qwythos 9B</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="360" y="555" width="663.10" height="26" fill="#3b82f6"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="1023.10" y="555" width="96.80" height="26" fill="#f59e0b"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="1128.9" y="574">125.0s</text>
 </svg>
 </div>
 <h2>Capability dimensions</h2><div class="chart"><svg xmlns="http://www.w3.org/2000/svg" width="1240" height="700" viewBox="0 0 1240 700" role="img" aria-labelledby="title desc">
@@ -236,142 +237,142 @@ body{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}ma
 <text class="tick" x="859.0" y="107" text-anchor="middle">English</text>
 <text class="tick" x="971.0" y="107" text-anchor="middle">Safety</text>
 <text class="tick" x="1083.0" y="107" text-anchor="middle">Efficiency</text>
-<text class="label" x="339" y="156" text-anchor="end">Unsloth Qwen 27B</text>
-<rect x="355" y="125" width="108" height="40" rx="4" fill="hsl(75.6 64% 38%)"/>
-<text class="value" x="409.0" y="151" text-anchor="middle">63.0</text>
-<rect x="467" y="125" width="108" height="40" rx="4" fill="hsl(98.4 64% 38%)"/>
-<text class="value" x="521.0" y="151" text-anchor="middle">82.0</text>
-<rect x="579" y="125" width="108" height="40" rx="4" fill="hsl(56.1 64% 38%)"/>
-<text class="value" x="633.0" y="151" text-anchor="middle">46.7</text>
-<rect x="691" y="125" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
-<text class="value" x="745.0" y="151" text-anchor="middle">63.8</text>
-<rect x="803" y="125" width="108" height="40" rx="4" fill="hsl(95.4 64% 38%)"/>
-<text class="value" x="857.0" y="151" text-anchor="middle">79.5</text>
-<rect x="915" y="125" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
-<text class="value" x="969.0" y="151" text-anchor="middle">94.9</text>
-<rect x="1027" y="125" width="108" height="40" rx="4" fill="hsl(100.0 64% 38%)"/>
-<text class="value" x="1081.0" y="151" text-anchor="middle">83.3</text>
-<text class="label" x="339" y="211" text-anchor="end">Qwen 27B Heretic</text>
-<rect x="355" y="180" width="108" height="40" rx="4" fill="hsl(57.8 64% 38%)"/>
-<text class="value" x="409.0" y="206" text-anchor="middle">48.2</text>
-<rect x="467" y="180" width="108" height="40" rx="4" fill="hsl(104.3 64% 38%)"/>
-<text class="value" x="521.0" y="206" text-anchor="middle">86.9</text>
-<rect x="579" y="180" width="108" height="40" rx="4" fill="hsl(69.1 64% 38%)"/>
-<text class="value" x="633.0" y="206" text-anchor="middle">57.6</text>
-<rect x="691" y="180" width="108" height="40" rx="4" fill="hsl(64.9 64% 38%)"/>
-<text class="value" x="745.0" y="206" text-anchor="middle">54.1</text>
-<rect x="803" y="180" width="108" height="40" rx="4" fill="hsl(93.0 64% 38%)"/>
-<text class="value" x="857.0" y="206" text-anchor="middle">77.5</text>
-<rect x="915" y="180" width="108" height="40" rx="4" fill="hsl(107.1 64% 38%)"/>
-<text class="value" x="969.0" y="206" text-anchor="middle">89.2</text>
-<rect x="1027" y="180" width="108" height="40" rx="4" fill="hsl(97.1 64% 38%)"/>
-<text class="value" x="1081.0" y="206" text-anchor="middle">81.0</text>
-<text class="label" x="339" y="266" text-anchor="end">Unsloth Qwen 35B A3B</text>
-<rect x="355" y="235" width="108" height="40" rx="4" fill="hsl(60.4 64% 38%)"/>
-<text class="value" x="409.0" y="261" text-anchor="middle">50.3</text>
-<rect x="467" y="235" width="108" height="40" rx="4" fill="hsl(102.8 64% 38%)"/>
-<text class="value" x="521.0" y="261" text-anchor="middle">85.7</text>
-<rect x="579" y="235" width="108" height="40" rx="4" fill="hsl(49.6 64% 38%)"/>
-<text class="value" x="633.0" y="261" text-anchor="middle">41.3</text>
-<rect x="691" y="235" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
-<text class="value" x="745.0" y="261" text-anchor="middle">63.8</text>
-<rect x="803" y="235" width="108" height="40" rx="4" fill="hsl(88.0 64% 38%)"/>
-<text class="value" x="857.0" y="261" text-anchor="middle">73.4</text>
-<rect x="915" y="235" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
-<text class="value" x="969.0" y="261" text-anchor="middle">100.0</text>
-<rect x="1027" y="235" width="108" height="40" rx="4" fill="hsl(82.9 64% 38%)"/>
-<text class="value" x="1081.0" y="261" text-anchor="middle">69.0</text>
-<text class="label" x="339" y="321" text-anchor="end">Gemma E4B</text>
-<rect x="355" y="290" width="108" height="40" rx="4" fill="hsl(49.0 64% 38%)"/>
-<text class="value" x="409.0" y="316" text-anchor="middle">40.8</text>
-<rect x="467" y="290" width="108" height="40" rx="4" fill="hsl(91.7 64% 38%)"/>
-<text class="value" x="521.0" y="316" text-anchor="middle">76.5</text>
-<rect x="579" y="290" width="108" height="40" rx="4" fill="hsl(45.7 64% 38%)"/>
-<text class="value" x="633.0" y="316" text-anchor="middle">38.0</text>
-<rect x="691" y="290" width="108" height="40" rx="4" fill="hsl(96.8 64% 38%)"/>
-<text class="value" x="745.0" y="316" text-anchor="middle">80.7</text>
-<rect x="803" y="290" width="108" height="40" rx="4" fill="hsl(115.1 64% 38%)"/>
-<text class="value" x="857.0" y="316" text-anchor="middle">95.9</text>
-<rect x="915" y="290" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
-<text class="value" x="969.0" y="316" text-anchor="middle">94.9</text>
-<rect x="1027" y="290" width="108" height="40" rx="4" fill="hsl(114.3 64% 38%)"/>
-<text class="value" x="1081.0" y="316" text-anchor="middle">95.2</text>
-<text class="label" x="339" y="376" text-anchor="end">Qwen 35B HauhauCS</text>
-<rect x="355" y="345" width="108" height="40" rx="4" fill="hsl(36.5 64% 38%)"/>
-<text class="value" x="409.0" y="371" text-anchor="middle">30.4</text>
-<rect x="467" y="345" width="108" height="40" rx="4" fill="hsl(100.8 64% 38%)"/>
-<text class="value" x="521.0" y="371" text-anchor="middle">84.0</text>
-<rect x="579" y="345" width="108" height="40" rx="4" fill="hsl(49.6 64% 38%)"/>
-<text class="value" x="633.0" y="371" text-anchor="middle">41.3</text>
-<rect x="691" y="345" width="108" height="40" rx="4" fill="hsl(79.4 64% 38%)"/>
-<text class="value" x="745.0" y="371" text-anchor="middle">66.2</text>
-<rect x="803" y="345" width="108" height="40" rx="4" fill="hsl(93.0 64% 38%)"/>
-<text class="value" x="857.0" y="371" text-anchor="middle">77.5</text>
-<rect x="915" y="345" width="108" height="40" rx="4" fill="hsl(102.0 64% 38%)"/>
-<text class="value" x="969.0" y="371" text-anchor="middle">85.0</text>
-<rect x="1027" y="345" width="108" height="40" rx="4" fill="hsl(80.0 64% 38%)"/>
-<text class="value" x="1081.0" y="371" text-anchor="middle">66.7</text>
-<text class="label" x="339" y="431" text-anchor="end">Gemma 12B</text>
-<rect x="355" y="400" width="108" height="40" rx="4" fill="hsl(18.3 64% 38%)"/>
-<text class="value" x="409.0" y="426" text-anchor="middle">15.2</text>
-<rect x="467" y="400" width="108" height="40" rx="4" fill="hsl(75.7 64% 38%)"/>
-<text class="value" x="521.0" y="426" text-anchor="middle">63.1</text>
-<rect x="579" y="400" width="108" height="40" rx="4" fill="hsl(56.1 64% 38%)"/>
-<text class="value" x="633.0" y="426" text-anchor="middle">46.7</text>
-<rect x="691" y="400" width="108" height="40" rx="4" fill="hsl(35.9 64% 38%)"/>
-<text class="value" x="745.0" y="426" text-anchor="middle">30.0</text>
-<rect x="803" y="400" width="108" height="40" rx="4" fill="hsl(75.7 64% 38%)"/>
-<text class="value" x="857.0" y="426" text-anchor="middle">63.1</text>
-<rect x="915" y="400" width="108" height="40" rx="4" fill="hsl(103.7 64% 38%)"/>
-<text class="value" x="969.0" y="426" text-anchor="middle">86.4</text>
-<rect x="1027" y="400" width="108" height="40" rx="4" fill="hsl(100.0 64% 38%)"/>
-<text class="value" x="1081.0" y="426" text-anchor="middle">83.3</text>
-<text class="label" x="339" y="486" text-anchor="end">Cydonia 24B</text>
-<rect x="355" y="455" width="108" height="40" rx="4" fill="hsl(20.3 64% 38%)"/>
-<text class="value" x="409.0" y="481" text-anchor="middle">16.9</text>
-<rect x="467" y="455" width="108" height="40" rx="4" fill="hsl(13.1 64% 38%)"/>
-<text class="value" x="521.0" y="481" text-anchor="middle">10.9</text>
-<rect x="579" y="455" width="108" height="40" rx="4" fill="hsl(23.5 64% 38%)"/>
-<text class="value" x="633.0" y="481" text-anchor="middle">19.6</text>
-<rect x="691" y="455" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
-<text class="value" x="745.0" y="481" text-anchor="middle">39.6</text>
-<rect x="803" y="455" width="108" height="40" rx="4" fill="hsl(102.8 64% 38%)"/>
-<text class="value" x="857.0" y="481" text-anchor="middle">85.7</text>
-<rect x="915" y="455" width="108" height="40" rx="4" fill="hsl(111.5 64% 38%)"/>
-<text class="value" x="969.0" y="481" text-anchor="middle">92.9</text>
-<rect x="1027" y="455" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
-<text class="value" x="1081.0" y="481" text-anchor="middle">100.0</text>
-<text class="label" x="339" y="541" text-anchor="end">Dolphin Mistral 24B</text>
-<rect x="355" y="510" width="108" height="40" rx="4" fill="hsl(15.2 64% 38%)"/>
-<text class="value" x="409.0" y="536" text-anchor="middle">12.7</text>
-<rect x="467" y="510" width="108" height="40" rx="4" fill="hsl(13.1 64% 38%)"/>
-<text class="value" x="521.0" y="536" text-anchor="middle">10.9</text>
-<rect x="579" y="510" width="108" height="40" rx="4" fill="hsl(23.5 64% 38%)"/>
-<text class="value" x="633.0" y="536" text-anchor="middle">19.6</text>
-<rect x="691" y="510" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
-<text class="value" x="745.0" y="536" text-anchor="middle">39.6</text>
-<rect x="803" y="510" width="108" height="40" rx="4" fill="hsl(105.2 64% 38%)"/>
-<text class="value" x="857.0" y="536" text-anchor="middle">87.7</text>
-<rect x="915" y="510" width="108" height="40" rx="4" fill="hsl(111.5 64% 38%)"/>
-<text class="value" x="969.0" y="536" text-anchor="middle">92.9</text>
-<rect x="1027" y="510" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
-<text class="value" x="1081.0" y="536" text-anchor="middle">100.0</text>
-<text class="label" x="339" y="596" text-anchor="end">Qwythos 9B</text>
-<rect x="355" y="565" width="108" height="40" rx="4" fill="hsl(10.7 64% 38%)"/>
-<text class="value" x="409.0" y="591" text-anchor="middle">8.9</text>
-<rect x="467" y="565" width="108" height="40" rx="4" fill="hsl(49.2 64% 38%)"/>
-<text class="value" x="521.0" y="591" text-anchor="middle">41.0</text>
-<rect x="579" y="565" width="108" height="40" rx="4" fill="hsl(0.0 64% 38%)"/>
-<text class="value" x="633.0" y="591" text-anchor="middle">0.0</text>
-<rect x="691" y="565" width="108" height="40" rx="4" fill="hsl(52.2 64% 38%)"/>
-<text class="value" x="745.0" y="591" text-anchor="middle">43.5</text>
-<rect x="803" y="565" width="108" height="40" rx="4" fill="hsl(32.0 64% 38%)"/>
-<text class="value" x="857.0" y="591" text-anchor="middle">26.6</text>
-<rect x="915" y="565" width="108" height="40" rx="4" fill="hsl(51.7 64% 38%)"/>
-<text class="value" x="969.0" y="591" text-anchor="middle">43.1</text>
-<rect x="1027" y="565" width="108" height="40" rx="4" fill="hsl(42.9 64% 38%)"/>
-<text class="value" x="1081.0" y="591" text-anchor="middle">35.7</text>
+<text class="label" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="339" y="156" text-anchor="end">Unsloth Qwen 27B</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="355" y="125" width="108" height="40" rx="4" fill="hsl(75.6 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="409.0" y="151" text-anchor="middle">63.0</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="467" y="125" width="108" height="40" rx="4" fill="hsl(98.4 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="521.0" y="151" text-anchor="middle">82.0</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="579" y="125" width="108" height="40" rx="4" fill="hsl(56.1 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="633.0" y="151" text-anchor="middle">46.7</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="691" y="125" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="745.0" y="151" text-anchor="middle">63.8</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="803" y="125" width="108" height="40" rx="4" fill="hsl(95.4 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="857.0" y="151" text-anchor="middle">79.5</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="915" y="125" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="969.0" y="151" text-anchor="middle">94.9</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="1027" y="125" width="108" height="40" rx="4" fill="hsl(100.0 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="1081.0" y="151" text-anchor="middle">83.3</text>
+<text class="label" data-model="qwen3.6-27b-heretic-neo-code" x="339" y="211" text-anchor="end">Qwen 27B Heretic</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="355" y="180" width="108" height="40" rx="4" fill="hsl(57.8 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="409.0" y="206" text-anchor="middle">48.2</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="467" y="180" width="108" height="40" rx="4" fill="hsl(104.3 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="521.0" y="206" text-anchor="middle">86.9</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="579" y="180" width="108" height="40" rx="4" fill="hsl(69.1 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="633.0" y="206" text-anchor="middle">57.6</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="691" y="180" width="108" height="40" rx="4" fill="hsl(64.9 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="745.0" y="206" text-anchor="middle">54.1</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="803" y="180" width="108" height="40" rx="4" fill="hsl(93.0 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="857.0" y="206" text-anchor="middle">77.5</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="915" y="180" width="108" height="40" rx="4" fill="hsl(107.1 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="969.0" y="206" text-anchor="middle">89.2</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" x="1027" y="180" width="108" height="40" rx="4" fill="hsl(97.1 64% 38%)"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="1081.0" y="206" text-anchor="middle">81.0</text>
+<text class="label" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="339" y="266" text-anchor="end">Unsloth Qwen 35B A3B</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="355" y="235" width="108" height="40" rx="4" fill="hsl(60.4 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="409.0" y="261" text-anchor="middle">50.3</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="467" y="235" width="108" height="40" rx="4" fill="hsl(102.8 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="521.0" y="261" text-anchor="middle">85.7</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="579" y="235" width="108" height="40" rx="4" fill="hsl(49.6 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="633.0" y="261" text-anchor="middle">41.3</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="691" y="235" width="108" height="40" rx="4" fill="hsl(76.5 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="745.0" y="261" text-anchor="middle">63.8</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="803" y="235" width="108" height="40" rx="4" fill="hsl(88.0 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="857.0" y="261" text-anchor="middle">73.4</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="915" y="235" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="969.0" y="261" text-anchor="middle">100.0</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="1027" y="235" width="108" height="40" rx="4" fill="hsl(82.9 64% 38%)"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="1081.0" y="261" text-anchor="middle">69.0</text>
+<text class="label" data-model="gemma-4-e4b-it" x="339" y="321" text-anchor="end">Gemma E4B</text>
+<rect data-model="gemma-4-e4b-it" x="355" y="290" width="108" height="40" rx="4" fill="hsl(49.0 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="409.0" y="316" text-anchor="middle">40.8</text>
+<rect data-model="gemma-4-e4b-it" x="467" y="290" width="108" height="40" rx="4" fill="hsl(91.7 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="521.0" y="316" text-anchor="middle">76.5</text>
+<rect data-model="gemma-4-e4b-it" x="579" y="290" width="108" height="40" rx="4" fill="hsl(45.7 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="633.0" y="316" text-anchor="middle">38.0</text>
+<rect data-model="gemma-4-e4b-it" x="691" y="290" width="108" height="40" rx="4" fill="hsl(96.8 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="745.0" y="316" text-anchor="middle">80.7</text>
+<rect data-model="gemma-4-e4b-it" x="803" y="290" width="108" height="40" rx="4" fill="hsl(115.1 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="857.0" y="316" text-anchor="middle">95.9</text>
+<rect data-model="gemma-4-e4b-it" x="915" y="290" width="108" height="40" rx="4" fill="hsl(113.9 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="969.0" y="316" text-anchor="middle">94.9</text>
+<rect data-model="gemma-4-e4b-it" x="1027" y="290" width="108" height="40" rx="4" fill="hsl(114.3 64% 38%)"/>
+<text class="value" data-model="gemma-4-e4b-it" x="1081.0" y="316" text-anchor="middle">95.2</text>
+<text class="label" data-model="qwen3.6-35b-hauhaucs-aggressive" x="339" y="376" text-anchor="end">Qwen 35B HauhauCS</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="355" y="345" width="108" height="40" rx="4" fill="hsl(36.5 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="409.0" y="371" text-anchor="middle">30.4</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="467" y="345" width="108" height="40" rx="4" fill="hsl(100.8 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="521.0" y="371" text-anchor="middle">84.0</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="579" y="345" width="108" height="40" rx="4" fill="hsl(49.6 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="633.0" y="371" text-anchor="middle">41.3</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="691" y="345" width="108" height="40" rx="4" fill="hsl(79.4 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="745.0" y="371" text-anchor="middle">66.2</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="803" y="345" width="108" height="40" rx="4" fill="hsl(93.0 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="857.0" y="371" text-anchor="middle">77.5</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="915" y="345" width="108" height="40" rx="4" fill="hsl(102.0 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="969.0" y="371" text-anchor="middle">85.0</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="1027" y="345" width="108" height="40" rx="4" fill="hsl(80.0 64% 38%)"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="1081.0" y="371" text-anchor="middle">66.7</text>
+<text class="label" data-model="gemma-4-12b-obliterated" x="339" y="431" text-anchor="end">Gemma 12B</text>
+<rect data-model="gemma-4-12b-obliterated" x="355" y="400" width="108" height="40" rx="4" fill="hsl(18.3 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="409.0" y="426" text-anchor="middle">15.2</text>
+<rect data-model="gemma-4-12b-obliterated" x="467" y="400" width="108" height="40" rx="4" fill="hsl(75.7 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="521.0" y="426" text-anchor="middle">63.1</text>
+<rect data-model="gemma-4-12b-obliterated" x="579" y="400" width="108" height="40" rx="4" fill="hsl(56.1 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="633.0" y="426" text-anchor="middle">46.7</text>
+<rect data-model="gemma-4-12b-obliterated" x="691" y="400" width="108" height="40" rx="4" fill="hsl(35.9 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="745.0" y="426" text-anchor="middle">30.0</text>
+<rect data-model="gemma-4-12b-obliterated" x="803" y="400" width="108" height="40" rx="4" fill="hsl(75.7 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="857.0" y="426" text-anchor="middle">63.1</text>
+<rect data-model="gemma-4-12b-obliterated" x="915" y="400" width="108" height="40" rx="4" fill="hsl(103.7 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="969.0" y="426" text-anchor="middle">86.4</text>
+<rect data-model="gemma-4-12b-obliterated" x="1027" y="400" width="108" height="40" rx="4" fill="hsl(100.0 64% 38%)"/>
+<text class="value" data-model="gemma-4-12b-obliterated" x="1081.0" y="426" text-anchor="middle">83.3</text>
+<text class="label" data-model="cydonia-24b-v4.3" x="339" y="486" text-anchor="end">Cydonia 24B</text>
+<rect data-model="cydonia-24b-v4.3" x="355" y="455" width="108" height="40" rx="4" fill="hsl(20.3 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="409.0" y="481" text-anchor="middle">16.9</text>
+<rect data-model="cydonia-24b-v4.3" x="467" y="455" width="108" height="40" rx="4" fill="hsl(13.1 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="521.0" y="481" text-anchor="middle">10.9</text>
+<rect data-model="cydonia-24b-v4.3" x="579" y="455" width="108" height="40" rx="4" fill="hsl(23.5 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="633.0" y="481" text-anchor="middle">19.6</text>
+<rect data-model="cydonia-24b-v4.3" x="691" y="455" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="745.0" y="481" text-anchor="middle">39.6</text>
+<rect data-model="cydonia-24b-v4.3" x="803" y="455" width="108" height="40" rx="4" fill="hsl(102.8 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="857.0" y="481" text-anchor="middle">85.7</text>
+<rect data-model="cydonia-24b-v4.3" x="915" y="455" width="108" height="40" rx="4" fill="hsl(111.5 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="969.0" y="481" text-anchor="middle">92.9</text>
+<rect data-model="cydonia-24b-v4.3" x="1027" y="455" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="cydonia-24b-v4.3" x="1081.0" y="481" text-anchor="middle">100.0</text>
+<text class="label" data-model="dolphin-mistral-24b-venice" x="339" y="541" text-anchor="end">Dolphin Mistral 24B</text>
+<rect data-model="dolphin-mistral-24b-venice" x="355" y="510" width="108" height="40" rx="4" fill="hsl(15.2 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="409.0" y="536" text-anchor="middle">12.7</text>
+<rect data-model="dolphin-mistral-24b-venice" x="467" y="510" width="108" height="40" rx="4" fill="hsl(13.1 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="521.0" y="536" text-anchor="middle">10.9</text>
+<rect data-model="dolphin-mistral-24b-venice" x="579" y="510" width="108" height="40" rx="4" fill="hsl(23.5 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="633.0" y="536" text-anchor="middle">19.6</text>
+<rect data-model="dolphin-mistral-24b-venice" x="691" y="510" width="108" height="40" rx="4" fill="hsl(47.5 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="745.0" y="536" text-anchor="middle">39.6</text>
+<rect data-model="dolphin-mistral-24b-venice" x="803" y="510" width="108" height="40" rx="4" fill="hsl(105.2 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="857.0" y="536" text-anchor="middle">87.7</text>
+<rect data-model="dolphin-mistral-24b-venice" x="915" y="510" width="108" height="40" rx="4" fill="hsl(111.5 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="969.0" y="536" text-anchor="middle">92.9</text>
+<rect data-model="dolphin-mistral-24b-venice" x="1027" y="510" width="108" height="40" rx="4" fill="hsl(120.0 64% 38%)"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" x="1081.0" y="536" text-anchor="middle">100.0</text>
+<text class="label" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="339" y="596" text-anchor="end">Qwythos 9B</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="355" y="565" width="108" height="40" rx="4" fill="hsl(10.7 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="409.0" y="591" text-anchor="middle">8.9</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="467" y="565" width="108" height="40" rx="4" fill="hsl(49.2 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="521.0" y="591" text-anchor="middle">41.0</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="579" y="565" width="108" height="40" rx="4" fill="hsl(0.0 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="633.0" y="591" text-anchor="middle">0.0</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="691" y="565" width="108" height="40" rx="4" fill="hsl(52.2 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="745.0" y="591" text-anchor="middle">43.5</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="803" y="565" width="108" height="40" rx="4" fill="hsl(32.0 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="857.0" y="591" text-anchor="middle">26.6</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="915" y="565" width="108" height="40" rx="4" fill="hsl(51.7 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="969.0" y="591" text-anchor="middle">43.1</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="1027" y="565" width="108" height="40" rx="4" fill="hsl(42.9 64% 38%)"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="1081.0" y="591" text-anchor="middle">35.7</text>
 </svg>
 </div>
-<h2>Hard values</h2><div style="overflow-x:auto"><table><thead><tr><th>Model</th><th>Score</th><th>Passed</th><th>Tool success</th><th>Median task</th><th>Cold load</th><th>OpenClaw request</th><th>Status</th></tr></thead><tbody><tr><td>Qwen3.6-27B-UD-Q4_K_XL</td><td>69.66</td><td>13/21</td><td>95.5%</td><td>267.31s</td><td>81.15s</td><td>22.93s</td><td>partial</td></tr><tr><td>Qwen3.6 27B Heretic NEO CODE Q4_K_M</td><td>66.49</td><td>11/21</td><td>97.8%</td><td>191.95s</td><td>74.18s</td><td>20.63s</td><td>partial</td></tr><tr><td>Qwen3.6-35B-A3B-UD-Q4_K_S</td><td>64.88</td><td>12/21</td><td>94.1%</td><td>17.27s</td><td>33.11s</td><td>2.11s</td><td>partial</td></tr><tr><td>Gemma 4 E4B IT UD-Q4_K_XL</td><td>64.23</td><td>12/21</td><td>100.0%</td><td>6.60s</td><td>10.74s</td><td>1.15s</td><td>ok</td></tr><tr><td>Qwen3.6 35B A3B Uncensored HauhauCS Aggressive Q4_K_M</td><td>58.27</td><td>9/21</td><td>97.3%</td><td>14.78s</td><td>33.25s</td><td>1.82s</td><td>partial</td></tr><tr><td>Gemma 4 12B Obliterated Q4_K_M</td><td>45.15</td><td>4/21</td><td>87.5%</td><td>12.92s</td><td>11.70s</td><td>2.05s</td><td>ok</td></tr><tr><td>Cydonia 24B v4.3 Q4_K_M</td><td>32.91</td><td>2/21</td><td>100.0%</td><td>18.51s</td><td>60.76s</td><td>16.66s</td><td>ok</td></tr><tr><td>Dolphin Mistral 24B Venice Edition Q4_K_M</td><td>31.85</td><td>2/21</td><td>100.0%</td><td>2.28s</td><td>18.65s</td><td>0.62s</td><td>ok</td></tr><tr><td>Qwythos-9B-Claude-Mythos-5-1M-MTP-Q4_K_M</td><td>23.87</td><td>4/21</td><td>100.0%</td><td>0.00s</td><td>109.12s</td><td>15.93s</td><td>partial</td></tr></tbody></table></div>
-<p class="muted">Source: <a href="model-results.csv">model-results.csv</a>. Method and caveats: <a href="README.md">benchmark notes</a>.</p></main></body></html>
+<h2>Hard values</h2><div style="overflow-x:auto"><table><thead><tr><th>Model</th><th>Score</th><th>Passed</th><th>Tool success</th><th>Median task</th><th>Cold load</th><th>OpenClaw request</th><th>Status</th></tr></thead><tbody><tr data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl"><td>Qwen3.6-27B-UD-Q4_K_XL</td><td>69.66</td><td>13/21</td><td>95.5%</td><td>267.31s</td><td>81.15s</td><td>22.93s</td><td>partial</td></tr><tr data-model="qwen3.6-27b-heretic-neo-code"><td>Qwen3.6 27B Heretic NEO CODE Q4_K_M</td><td>66.49</td><td>11/21</td><td>97.8%</td><td>191.95s</td><td>74.18s</td><td>20.63s</td><td>partial</td></tr><tr data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s"><td>Qwen3.6-35B-A3B-UD-Q4_K_S</td><td>64.88</td><td>12/21</td><td>94.1%</td><td>17.27s</td><td>33.11s</td><td>2.11s</td><td>partial</td></tr><tr data-model="gemma-4-e4b-it"><td>Gemma 4 E4B IT UD-Q4_K_XL</td><td>64.23</td><td>12/21</td><td>100.0%</td><td>6.60s</td><td>10.74s</td><td>1.15s</td><td>ok</td></tr><tr data-model="qwen3.6-35b-hauhaucs-aggressive"><td>Qwen3.6 35B A3B Uncensored HauhauCS Aggressive Q4_K_M</td><td>58.27</td><td>9/21</td><td>97.3%</td><td>14.78s</td><td>33.25s</td><td>1.82s</td><td>partial</td></tr><tr data-model="gemma-4-12b-obliterated"><td>Gemma 4 12B Obliterated Q4_K_M</td><td>45.15</td><td>4/21</td><td>87.5%</td><td>12.92s</td><td>11.70s</td><td>2.05s</td><td>ok</td></tr><tr data-model="cydonia-24b-v4.3"><td>Cydonia 24B v4.3 Q4_K_M</td><td>32.91</td><td>2/21</td><td>100.0%</td><td>18.51s</td><td>60.76s</td><td>16.66s</td><td>ok</td></tr><tr data-model="dolphin-mistral-24b-venice"><td>Dolphin Mistral 24B Venice Edition Q4_K_M</td><td>31.85</td><td>2/21</td><td>100.0%</td><td>2.28s</td><td>18.65s</td><td>0.62s</td><td>ok</td></tr><tr data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m"><td>Qwythos-9B-Claude-Mythos-5-1M-MTP-Q4_K_M</td><td>23.87</td><td>4/21</td><td>100.0%</td><td>0.00s</td><td>109.12s</td><td>15.93s</td><td>partial</td></tr></tbody></table></div>
+<p class="muted">Source: <a href="model-results.csv">model-results.csv</a>. Method and caveats: <a href="../../methodology.html">published methodology</a> and <a href="README.md">benchmark notes</a>.</p><script>const controls=[...document.querySelectorAll('[data-model-control]')];function applySelection(){controls.forEach(control=>document.querySelectorAll('[data-model="'+control.dataset.modelControl+'"]').forEach(item=>item.style.display=control.checked?'':'none'));document.querySelectorAll('[data-provider]').forEach(provider=>{const related=controls.filter(control=>control.dataset.providerName===provider.dataset.provider);provider.checked=related.every(control=>control.checked);provider.indeterminate=related.some(control=>control.checked)&&!provider.checked})}controls.forEach(control=>control.addEventListener('change',applySelection));document.querySelectorAll('[data-provider]').forEach(provider=>provider.addEventListener('change',()=>{controls.filter(control=>control.dataset.providerName===provider.dataset.provider).forEach(control=>control.checked=provider.checked);applySelection()}));document.querySelectorAll('[data-selection]').forEach(button=>button.addEventListener('click',()=>{controls.forEach(control=>control.checked=button.dataset.selection==='all');applySelection()}));const menuButton=document.querySelector('.menu-button'),menu=document.querySelector('.menu-links');menuButton.addEventListener('click',()=>{const open=menu.classList.toggle('is-open');menuButton.setAttribute('aria-expanded',String(open))});applySelection();</script></main></body></html>

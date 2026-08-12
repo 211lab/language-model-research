@@ -30,21 +30,21 @@
 <text class="tick" x="80" y="110.0" text-anchor="end">100</text>
 <text class="tick" x="636.0" y="628" text-anchor="middle">Median task time (log scale; lower is better)</text>
 <text class="tick" transform="translate(24 332.5) rotate(-90)" text-anchor="middle">Assistant score (higher is better)</text>
-<circle cx="1158.0" cy="243.0" r="7" fill="#38bdf8"><title>Qwen3.6-27B-UD-Q4_K_XL: 69.66, 267.31s median</title></circle>
-<text class="label" x="1148.0" y="231.0" text-anchor="end">Unsloth Qwen 27B</text>
-<circle cx="1094.8" cy="257.5" r="7" fill="#38bdf8"><title>Qwen3.6 27B Heretic NEO CODE Q4_K_M: 66.49, 191.95s median</title></circle>
-<text class="label" x="1084.8" y="275.5" text-anchor="end">Qwen 27B Heretic</text>
-<circle cx="635.4" cy="264.8" r="7" fill="#38bdf8"><title>Qwen3.6-35B-A3B-UD-Q4_K_S: 64.88, 17.27s median</title></circle>
-<text class="label" x="645.4" y="252.8" text-anchor="start">Unsloth Qwen 35B A3B</text>
-<circle cx="451.9" cy="267.8" r="7" fill="#38bdf8"><title>Gemma 4 E4B IT UD-Q4_K_XL: 64.23, 6.60s median</title></circle>
-<text class="label" x="461.9" y="255.8" text-anchor="start">Gemma E4B</text>
-<circle cx="605.7" cy="294.9" r="7" fill="#38bdf8"><title>Qwen3.6 35B A3B Uncensored HauhauCS Aggressive Q4_K_M: 58.27, 14.78s median</title></circle>
-<text class="label" x="615.7" y="312.9" text-anchor="start">Qwen 35B HauhauCS</text>
-<circle cx="580.1" cy="354.6" r="7" fill="#38bdf8"><title>Gemma 4 12B Obliterated Q4_K_M: 45.15, 12.92s median</title></circle>
-<text class="label" x="570.1" y="372.6" text-anchor="end">Gemma 12B</text>
-<circle cx="648.7" cy="410.3" r="7" fill="#38bdf8"><title>Cydonia 24B v4.3 Q4_K_M: 32.91, 18.51s median</title></circle>
-<text class="label" x="658.7" y="428.3" text-anchor="start">Cydonia 24B</text>
-<circle cx="249.5" cy="415.1" r="7" fill="#38bdf8"><title>Dolphin Mistral 24B Venice Edition Q4_K_M: 31.85, 2.28s median</title></circle>
-<text class="label" x="239.5" y="403.1" text-anchor="end">Dolphin Mistral 24B</text>
+<circle data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" cx="1158.0" cy="243.0" r="7" fill="#38bdf8"><title>Qwen3.6-27B-UD-Q4_K_XL: 69.66, 267.31s median</title></circle>
+<text class="label" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="1148.0" y="231.0" text-anchor="end">Unsloth Qwen 27B</text>
+<circle data-model="qwen3.6-27b-heretic-neo-code" cx="1094.8" cy="257.5" r="7" fill="#38bdf8"><title>Qwen3.6 27B Heretic NEO CODE Q4_K_M: 66.49, 191.95s median</title></circle>
+<text class="label" data-model="qwen3.6-27b-heretic-neo-code" x="1084.8" y="275.5" text-anchor="end">Qwen 27B Heretic</text>
+<circle data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" cx="635.4" cy="264.8" r="7" fill="#38bdf8"><title>Qwen3.6-35B-A3B-UD-Q4_K_S: 64.88, 17.27s median</title></circle>
+<text class="label" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="645.4" y="252.8" text-anchor="start">Unsloth Qwen 35B A3B</text>
+<circle data-model="gemma-4-e4b-it" cx="451.9" cy="267.8" r="7" fill="#38bdf8"><title>Gemma 4 E4B IT UD-Q4_K_XL: 64.23, 6.60s median</title></circle>
+<text class="label" data-model="gemma-4-e4b-it" x="461.9" y="255.8" text-anchor="start">Gemma E4B</text>
+<circle data-model="qwen3.6-35b-hauhaucs-aggressive" cx="605.7" cy="294.9" r="7" fill="#38bdf8"><title>Qwen3.6 35B A3B Uncensored HauhauCS Aggressive Q4_K_M: 58.27, 14.78s median</title></circle>
+<text class="label" data-model="qwen3.6-35b-hauhaucs-aggressive" x="615.7" y="312.9" text-anchor="start">Qwen 35B HauhauCS</text>
+<circle data-model="gemma-4-12b-obliterated" cx="580.1" cy="354.6" r="7" fill="#38bdf8"><title>Gemma 4 12B Obliterated Q4_K_M: 45.15, 12.92s median</title></circle>
+<text class="label" data-model="gemma-4-12b-obliterated" x="570.1" y="372.6" text-anchor="end">Gemma 12B</text>
+<circle data-model="cydonia-24b-v4.3" cx="648.7" cy="410.3" r="7" fill="#38bdf8"><title>Cydonia 24B v4.3 Q4_K_M: 32.91, 18.51s median</title></circle>
+<text class="label" data-model="cydonia-24b-v4.3" x="658.7" y="428.3" text-anchor="start">Cydonia 24B</text>
+<circle data-model="dolphin-mistral-24b-venice" cx="249.5" cy="415.1" r="7" fill="#38bdf8"><title>Dolphin Mistral 24B Venice Edition Q4_K_M: 31.85, 2.28s median</title></circle>
+<text class="label" data-model="dolphin-mistral-24b-venice" x="239.5" y="403.1" text-anchor="end">Dolphin Mistral 24B</text>
 <text class="sub" x="92" y="646">Qwythos is omitted: 12 HTTP 502 errors make its recorded median task time invalid.</text>
 </svg>
