@@ -126,7 +126,8 @@ def svg_shell(title: str, description: str, width: int, height: int, body: list[
 
 def score_svg(data: dict[str, Any]) -> str:
     models = data["models"]
-    width, height, left, top, plot_width, row_height = 1240, 690, 360, 128, 790, 55
+    width, left, top, plot_width, row_height = 1240, 360, 128, 790, 55
+    height = top + max(1, len(models)) * row_height + 48
     body: list[str] = []
     for tick in (0, 25, 50, 75, 100):
         x = left + plot_width * tick / 100
@@ -137,7 +138,7 @@ def score_svg(data: dict[str, Any]) -> str:
         legend_x += 145
     for index, model in enumerate(models):
         y = top + index * row_height
-        attr = model_attr(model)
+        attr = model_attr(model) + f' data-row="{index}"'
         body.append(f'<text class="label"{attr} x="{left-16}" y="{y+18}" text-anchor="end">{esc(plot_name(model))}</text>')
         cursor = left
         for key, _label, weight, color in DIMENSIONS:
@@ -146,7 +147,7 @@ def score_svg(data: dict[str, Any]) -> str:
             body.append(f'<rect{attr} x="{cursor:.2f}" y="{y}" width="{segment:.2f}" height="26" fill="{color}"/>')
             cursor += segment
         body.append(f'<text class="value"{attr} x="{cursor+9:.1f}" y="{y+19}">{model["assistant_score"]:.1f}</text>')
-    return svg_shell("Personal-assistant intelligence", "Weighted score; higher is better. Timing is excluded from this score.", width, height, body)
+    return svg_shell("Personal-assistant intelligence", "Weighted score; higher is better. Timing is excluded from this score.", width, height, body).replace("<svg ", '<svg id="assistant-score" ', 1)
 
 
 def tradeoff_svg(data: dict[str, Any]) -> str:
@@ -211,19 +212,20 @@ def latency_svg(data: dict[str, Any]) -> str:
 
 def heatmap_svg(data: dict[str, Any]) -> str:
     models = data["models"]
-    width, height, left, top, cell_w, cell_h = 1240, 700, 355, 125, 112, 55
+    width, left, top, cell_w, cell_h = 1240, 355, 125, 112, 55
+    height = top + max(1, len(models)) * cell_h + 48
     body: list[str] = []
     for col, (_key, label, _weight, _color) in enumerate(DIMENSIONS):
         body.append(f'<text class="tick" x="{left+col*cell_w+cell_w/2}" y="{top-18}" text-anchor="middle">{esc(label)}</text>')
     for row, model in enumerate(models):
         yy = top + row * cell_h
-        attr = model_attr(model)
+        attr = model_attr(model) + f' data-row="{row}"'
         body.append(f'<text class="label"{attr} x="{left-16}" y="{yy+31}" text-anchor="end">{esc(plot_name(model))}</text>')
         for col, (key, _label, _weight, _color) in enumerate(DIMENSIONS):
             value = model[key]
             hue = 120 * value / 100
             body += [f'<rect{attr} x="{left+col*cell_w}" y="{yy}" width="{cell_w-4}" height="40" rx="4" fill="hsl({hue:.1f} 64% 38%)"/>', f'<text class="value"{attr} x="{left+col*cell_w+(cell_w-4)/2:.1f}" y="{yy+26}" text-anchor="middle">{value:.1f}</text>']
-    return svg_shell("Assistant capability heatmap", "Hard 0–100 category scores; green is higher and red is lower.", width, height, body)
+    return svg_shell("Assistant capability heatmap", "Hard 0–100 category scores; green is higher and red is lower.", width, height, body).replace("<svg ", '<svg id="assistant-heatmap" ', 1)
 
 
 def dashboard_html(
@@ -259,7 +261,7 @@ body{{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}}
 <h2>Cold-load and agent latency</h2><div class="chart">{charts["latency"]}</div>
 <h2>Capability dimensions</h2><div class="chart">{charts["heatmap"]}</div>
 <h2>Hard values</h2><div style="overflow-x:auto"><table><thead><tr><th>Model</th><th>Score</th><th>Passed</th><th>Tool success</th><th>Median task</th><th>Cold load</th><th>OpenClaw request</th><th>Status</th></tr></thead><tbody>{rows}</tbody></table></div>
-<p class="muted">Source: <a href="{source_prefix}model-results.csv">model-results.csv</a>. Method and caveats: <a href="{methodology_href}">published methodology</a> and <a href="{source_prefix}README.md">benchmark notes</a>.</p><script>const controls=[...document.querySelectorAll('[data-model-control]')];function applySelection(){{controls.forEach(control=>document.querySelectorAll('[data-model="'+control.dataset.modelControl+'"]').forEach(item=>item.style.display=control.checked?'':'none'));document.querySelectorAll('[data-provider]').forEach(provider=>{{const related=controls.filter(control=>control.dataset.providerName===provider.dataset.provider);provider.checked=related.every(control=>control.checked);provider.indeterminate=related.some(control=>control.checked)&&!provider.checked}})}}controls.forEach(control=>control.addEventListener('change',applySelection));document.querySelectorAll('[data-provider]').forEach(provider=>provider.addEventListener('change',()=>{{controls.filter(control=>control.dataset.providerName===provider.dataset.provider).forEach(control=>control.checked=provider.checked);applySelection()}}));document.querySelectorAll('[data-selection]').forEach(button=>button.addEventListener('click',()=>{{controls.forEach(control=>control.checked=button.dataset.selection==='all');applySelection()}}));const menuButton=document.querySelector('.menu-button'),menu=document.querySelector('.menu-links');menuButton.addEventListener('click',()=>{{const open=menu.classList.toggle('is-open');menuButton.setAttribute('aria-expanded',String(open))}});applySelection();</script></main></body></html>'''
+<p class="muted">Source: <a href="{source_prefix}model-results.csv">model-results.csv</a>. Method and caveats: <a href="{methodology_href}">published methodology</a> and <a href="{source_prefix}README.md">benchmark notes</a>.</p><script>const controls=[...document.querySelectorAll('[data-model-control]')];function resizeRowCharts(){{const selected=controls.filter(control=>control.checked).map(control=>control.dataset.modelControl);const count=Math.max(1,selected.length);[['assistant-score',128,55,48],['assistant-heatmap',125,55,48]].forEach(([id,top,rowHeight,bottom])=>{{const svg=document.getElementById(id);if(!svg)return;const rows=[...svg.querySelectorAll('[data-row]')];const originalRows=new Map();rows.forEach(item=>{{const model=item.dataset.model;if(!originalRows.has(model))originalRows.set(model,Number(item.dataset.row))}});const visible=selected.filter(model=>originalRows.has(model)).sort((a,b)=>originalRows.get(a)-originalRows.get(b));visible.forEach((model,index)=>{{const shift=(index-originalRows.get(model))*rowHeight;svg.querySelectorAll('[data-model="'+model+'"]').forEach(item=>item.setAttribute('transform','translate(0 '+shift+')'))}});const height=top+count*rowHeight+bottom;svg.setAttribute('viewBox','0 0 1240 '+height);svg.setAttribute('height',height)}})}}function applySelection(){{controls.forEach(control=>document.querySelectorAll('[data-model="'+control.dataset.modelControl+'"]').forEach(item=>item.style.display=control.checked?'':'none'));document.querySelectorAll('[data-provider]').forEach(provider=>{{const related=controls.filter(control=>control.dataset.providerName===provider.dataset.provider);provider.checked=related.every(control=>control.checked);provider.indeterminate=related.some(control=>control.checked)&&!provider.checked}});resizeRowCharts()}}controls.forEach(control=>control.addEventListener('change',applySelection));document.querySelectorAll('[data-provider]').forEach(provider=>provider.addEventListener('change',()=>{{controls.filter(control=>control.dataset.providerName===provider.dataset.provider).forEach(control=>control.checked=provider.checked);applySelection()}}));document.querySelectorAll('[data-selection]').forEach(button=>button.addEventListener('click',()=>{{controls.forEach(control=>control.checked=button.dataset.selection==='all');applySelection()}}));const menuButton=document.querySelector('.menu-button'),menu=document.querySelector('.menu-links');menuButton.addEventListener('click',()=>{{const open=menu.classList.toggle('is-open');menuButton.setAttribute('aria-expanded',String(open))}});applySelection();</script></main></body></html>'''
 
 
 def methodology_html(data: dict[str, Any]) -> str:

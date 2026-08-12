@@ -1,19 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="690" viewBox="0 0 1240 690" role="img" aria-labelledby="title desc">
+<svg id="assistant-score" xmlns="http://www.w3.org/2000/svg" width="1240" height="1936" viewBox="0 0 1240 1936" role="img" aria-labelledby="title desc">
 <title id="title">Personal-assistant intelligence</title><desc id="desc">Weighted score; higher is better. Timing is excluded from this score.</desc>
 <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 27px Arial,sans-serif}.sub,.tick{fill:#94a3b8;font:14px Arial,sans-serif}.label{fill:#e2e8f0;font:15px Arial,sans-serif}.value{fill:#f8fafc;font:700 15px Arial,sans-serif}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.5}</style>
-<rect class="bg" width="1240" height="690" rx="18"/>
+<rect class="bg" width="1240" height="1936" rx="18"/>
 <text class="title" x="32" y="46">Personal-assistant intelligence</text>
 <text class="sub" x="32" y="72">Weighted score; higher is better. Timing is excluded from this score.</text>
-<line class="grid" x1="360.0" y1="112" x2="360.0" y2="648"/>
-<text class="tick" x="360.0" y="672" text-anchor="middle">0</text>
-<line class="grid" x1="557.5" y1="112" x2="557.5" y2="648"/>
-<text class="tick" x="557.5" y="672" text-anchor="middle">25</text>
-<line class="grid" x1="755.0" y1="112" x2="755.0" y2="648"/>
-<text class="tick" x="755.0" y="672" text-anchor="middle">50</text>
-<line class="grid" x1="952.5" y1="112" x2="952.5" y2="648"/>
-<text class="tick" x="952.5" y="672" text-anchor="middle">75</text>
-<line class="grid" x1="1150.0" y1="112" x2="1150.0" y2="648"/>
-<text class="tick" x="1150.0" y="672" text-anchor="middle">100</text>
+<line class="grid" x1="360.0" y1="112" x2="360.0" y2="1894"/>
+<text class="tick" x="360.0" y="1918" text-anchor="middle">0</text>
+<line class="grid" x1="557.5" y1="112" x2="557.5" y2="1894"/>
+<text class="tick" x="557.5" y="1918" text-anchor="middle">25</text>
+<line class="grid" x1="755.0" y1="112" x2="755.0" y2="1894"/>
+<text class="tick" x="755.0" y="1918" text-anchor="middle">50</text>
+<line class="grid" x1="952.5" y1="112" x2="952.5" y2="1894"/>
+<text class="tick" x="952.5" y="1918" text-anchor="middle">75</text>
+<line class="grid" x1="1150.0" y1="112" x2="1150.0" y2="1894"/>
+<text class="tick" x="1150.0" y="1918" text-anchor="middle">100</text>
 <rect x="32" y="96" width="12" height="12" rx="2" fill="#22c55e"/>
 <text class="tick" x="50" y="107">Outcome (30%)</text>
 <rect x="177" y="96" width="12" height="12" rx="2" fill="#3b82f6"/>
@@ -28,292 +28,292 @@
 <text class="tick" x="775" y="107">Safety (5%)</text>
 <rect x="902" y="96" width="12" height="12" rx="2" fill="#64748b"/>
 <text class="tick" x="920" y="107">Efficiency (5%)</text>
-<text class="label" data-model="openai/gpt-5.6-terra" x="344" y="146" text-anchor="end">OpenAI: GPT-5.6 Terra</text>
-<rect data-model="openai/gpt-5.6-terra" x="360.00" y="128" width="172.87" height="26" fill="#22c55e"/>
-<rect data-model="openai/gpt-5.6-terra" x="532.87" y="128" width="159.63" height="26" fill="#3b82f6"/>
-<rect data-model="openai/gpt-5.6-terra" x="692.49" y="128" width="81.15" height="26" fill="#8b5cf6"/>
-<rect data-model="openai/gpt-5.6-terra" x="773.64" y="128" width="50.38" height="26" fill="#06b6d4"/>
-<rect data-model="openai/gpt-5.6-terra" x="824.02" y="128" width="75.76" height="26" fill="#f59e0b"/>
-<rect data-model="openai/gpt-5.6-terra" x="899.78" y="128" width="37.82" height="26" fill="#ef4444"/>
-<rect data-model="openai/gpt-5.6-terra" x="937.60" y="128" width="32.92" height="26" fill="#64748b"/>
-<text class="value" data-model="openai/gpt-5.6-terra" x="979.5" y="147">77.3</text>
-<text class="label" data-model="openai/gpt-5.4" x="344" y="201" text-anchor="end">OpenAI: GPT-5.4</text>
-<rect data-model="openai/gpt-5.4" x="360.00" y="183" width="170.36" height="26" fill="#22c55e"/>
-<rect data-model="openai/gpt-5.4" x="530.36" y="183" width="156.75" height="26" fill="#3b82f6"/>
-<rect data-model="openai/gpt-5.4" x="687.11" y="183" width="55.39" height="26" fill="#8b5cf6"/>
-<rect data-model="openai/gpt-5.4" x="742.50" y="183" width="65.64" height="26" fill="#06b6d4"/>
-<rect data-model="openai/gpt-5.4" x="808.14" y="183" width="72.52" height="26" fill="#f59e0b"/>
-<rect data-model="openai/gpt-5.4" x="880.67" y="183" width="39.50" height="26" fill="#ef4444"/>
-<rect data-model="openai/gpt-5.4" x="920.17" y="183" width="31.98" height="26" fill="#64748b"/>
-<text class="value" data-model="openai/gpt-5.4" x="961.1" y="202">75.0</text>
-<text class="label" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="344" y="256" text-anchor="end">Unsloth Qwen 27B</text>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="360.00" y="238" width="145.31" height="26" fill="#22c55e"/>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="505.31" y="238" width="165.86" height="26" fill="#3b82f6"/>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="671.17" y="238" width="77.93" height="26" fill="#8b5cf6"/>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="749.10" y="238" width="50.38" height="26" fill="#06b6d4"/>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="799.47" y="238" width="66.05" height="26" fill="#f59e0b"/>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="865.52" y="238" width="39.50" height="26" fill="#ef4444"/>
-<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="905.02" y="238" width="31.04" height="26" fill="#64748b"/>
-<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" x="945.1" y="257">72.9</text>
-<text class="label" data-model="anthropic/claude-opus-5" x="344" y="311" text-anchor="end">Claude Opus 5</text>
-<rect data-model="anthropic/claude-opus-5" x="360.00" y="293" width="126.77" height="26" fill="#22c55e"/>
-<rect data-model="anthropic/claude-opus-5" x="486.77" y="293" width="184.56" height="26" fill="#3b82f6"/>
-<rect data-model="anthropic/claude-opus-5" x="671.32" y="293" width="87.59" height="26" fill="#8b5cf6"/>
-<rect data-model="anthropic/claude-opus-5" x="758.91" y="293" width="63.73" height="26" fill="#06b6d4"/>
-<rect data-model="anthropic/claude-opus-5" x="822.65" y="293" width="48.24" height="26" fill="#f59e0b"/>
-<rect data-model="anthropic/claude-opus-5" x="870.89" y="293" width="36.37" height="26" fill="#ef4444"/>
-<rect data-model="anthropic/claude-opus-5" x="907.25" y="293" width="27.27" height="26" fill="#64748b"/>
-<text class="value" data-model="anthropic/claude-opus-5" x="943.5" y="312">72.7</text>
-<text class="label" data-model="openai/gpt-5.5" x="344" y="366" text-anchor="end">OpenAI: GPT-5.5</text>
-<rect data-model="openai/gpt-5.5" x="360.00" y="348" width="147.81" height="26" fill="#22c55e"/>
-<rect data-model="openai/gpt-5.5" x="507.81" y="348" width="159.63" height="26" fill="#3b82f6"/>
-<rect data-model="openai/gpt-5.5" x="667.44" y="348" width="74.71" height="26" fill="#8b5cf6"/>
-<rect data-model="openai/gpt-5.5" x="742.15" y="348" width="50.38" height="26" fill="#06b6d4"/>
-<rect data-model="openai/gpt-5.5" x="792.52" y="348" width="70.91" height="26" fill="#f59e0b"/>
-<rect data-model="openai/gpt-5.5" x="863.43" y="348" width="37.82" height="26" fill="#ef4444"/>
-<rect data-model="openai/gpt-5.5" x="901.25" y="348" width="30.10" height="26" fill="#64748b"/>
-<text class="value" data-model="openai/gpt-5.5" x="940.3" y="367">72.3</text>
-<text class="label" data-model="deepseek/deepseek-v4-flash" x="344" y="421" text-anchor="end">DeepSeek: DeepSeek V4 Fl…</text>
-<rect data-model="deepseek/deepseek-v4-flash" x="360.00" y="403" width="135.79" height="26" fill="#22c55e"/>
-<rect data-model="deepseek/deepseek-v4-flash" x="495.79" y="403" width="171.61" height="26" fill="#3b82f6"/>
-<rect data-model="deepseek/deepseek-v4-flash" x="667.40" y="403" width="74.71" height="26" fill="#8b5cf6"/>
-<rect data-model="deepseek/deepseek-v4-flash" x="742.11" y="403" width="63.73" height="26" fill="#06b6d4"/>
-<rect data-model="deepseek/deepseek-v4-flash" x="805.84" y="403" width="57.96" height="26" fill="#f59e0b"/>
-<rect data-model="deepseek/deepseek-v4-flash" x="863.80" y="403" width="37.49" height="26" fill="#ef4444"/>
-<rect data-model="deepseek/deepseek-v4-flash" x="901.28" y="403" width="22.57" height="26" fill="#64748b"/>
-<text class="value" data-model="deepseek/deepseek-v4-flash" x="932.9" y="422">71.4</text>
-<text class="label" data-model="openai/gpt-5.6-luna" x="344" y="476" text-anchor="end">OpenAI: GPT-5.6 Luna</text>
-<rect data-model="openai/gpt-5.6-luna" x="360.00" y="458" width="149.31" height="26" fill="#22c55e"/>
-<rect data-model="openai/gpt-5.6-luna" x="509.31" y="458" width="154.84" height="26" fill="#3b82f6"/>
-<rect data-model="openai/gpt-5.6-luna" x="664.15" y="458" width="65.05" height="26" fill="#8b5cf6"/>
-<rect data-model="openai/gpt-5.6-luna" x="729.20" y="458" width="44.65" height="26" fill="#06b6d4"/>
-<rect data-model="openai/gpt-5.6-luna" x="773.85" y="458" width="74.14" height="26" fill="#f59e0b"/>
-<rect data-model="openai/gpt-5.6-luna" x="847.99" y="458" width="38.38" height="26" fill="#ef4444"/>
-<rect data-model="openai/gpt-5.6-luna" x="886.37" y="458" width="33.86" height="26" fill="#64748b"/>
-<text class="value" data-model="openai/gpt-5.6-luna" x="929.2" y="477">70.9</text>
-<text class="label" data-model="google/gemma-4-31b-it" x="344" y="531" text-anchor="end">Google: Gemma 4 31B</text>
-<rect data-model="google/gemma-4-31b-it" x="360.00" y="513" width="135.28" height="26" fill="#22c55e"/>
-<rect data-model="google/gemma-4-31b-it" x="495.28" y="513" width="167.78" height="26" fill="#3b82f6"/>
-<rect data-model="google/gemma-4-31b-it" x="663.06" y="513" width="71.49" height="26" fill="#8b5cf6"/>
-<rect data-model="google/gemma-4-31b-it" x="734.55" y="513" width="38.93" height="26" fill="#06b6d4"/>
-<rect data-model="google/gemma-4-31b-it" x="773.48" y="513" width="72.52" height="26" fill="#f59e0b"/>
-<rect data-model="google/gemma-4-31b-it" x="846.00" y="513" width="35.58" height="26" fill="#ef4444"/>
-<rect data-model="google/gemma-4-31b-it" x="881.58" y="513" width="31.98" height="26" fill="#64748b"/>
-<text class="value" data-model="google/gemma-4-31b-it" x="922.6" y="532">70.1</text>
-<text class="label" data-model="x-ai/grok-4.5" x="344" y="586" text-anchor="end">SpaceXAI: Grok 4.5</text>
-<rect data-model="x-ai/grok-4.5" x="360.00" y="568" width="126.77" height="26" fill="#22c55e"/>
-<rect data-model="x-ai/grok-4.5" x="486.77" y="568" width="171.61" height="26" fill="#3b82f6"/>
-<rect data-model="x-ai/grok-4.5" x="658.38" y="568" width="74.71" height="26" fill="#8b5cf6"/>
-<rect data-model="x-ai/grok-4.5" x="733.09" y="568" width="50.38" height="26" fill="#06b6d4"/>
-<rect data-model="x-ai/grok-4.5" x="783.46" y="568" width="64.43" height="26" fill="#f59e0b"/>
-<rect data-model="x-ai/grok-4.5" x="847.89" y="568" width="39.50" height="26" fill="#ef4444"/>
-<rect data-model="x-ai/grok-4.5" x="887.39" y="568" width="24.45" height="26" fill="#64748b"/>
-<text class="value" data-model="x-ai/grok-4.5" x="920.8" y="587">69.9</text>
-<text class="label" data-model="anthropic/claude-sonnet-5" x="344" y="641" text-anchor="end">Anthropic: Claude Sonnet…</text>
-<rect data-model="anthropic/claude-sonnet-5" x="360.00" y="623" width="126.77" height="26" fill="#22c55e"/>
-<rect data-model="anthropic/claude-sonnet-5" x="486.77" y="623" width="168.74" height="26" fill="#3b82f6"/>
-<rect data-model="anthropic/claude-sonnet-5" x="655.50" y="623" width="71.49" height="26" fill="#8b5cf6"/>
-<rect data-model="anthropic/claude-sonnet-5" x="726.99" y="623" width="50.38" height="26" fill="#06b6d4"/>
-<rect data-model="anthropic/claude-sonnet-5" x="777.37" y="623" width="57.96" height="26" fill="#f59e0b"/>
-<rect data-model="anthropic/claude-sonnet-5" x="835.32" y="623" width="38.38" height="26" fill="#ef4444"/>
-<rect data-model="anthropic/claude-sonnet-5" x="873.70" y="623" width="31.98" height="26" fill="#64748b"/>
-<text class="value" data-model="anthropic/claude-sonnet-5" x="914.7" y="642">69.1</text>
-<text class="label" data-model="tencent/hy3" x="344" y="696" text-anchor="end">Tencent: Hy3</text>
-<rect data-model="tencent/hy3" x="360.00" y="678" width="126.77" height="26" fill="#22c55e"/>
-<rect data-model="tencent/hy3" x="486.77" y="678" width="174.97" height="26" fill="#3b82f6"/>
-<rect data-model="tencent/hy3" x="661.74" y="678" width="68.27" height="26" fill="#8b5cf6"/>
-<rect data-model="tencent/hy3" x="730.00" y="678" width="50.38" height="26" fill="#06b6d4"/>
-<rect data-model="tencent/hy3" x="780.38" y="678" width="54.72" height="26" fill="#f59e0b"/>
-<rect data-model="tencent/hy3" x="835.10" y="678" width="37.49" height="26" fill="#ef4444"/>
-<rect data-model="tencent/hy3" x="872.58" y="678" width="27.27" height="26" fill="#64748b"/>
-<text class="value" data-model="tencent/hy3" x="908.9" y="697">68.3</text>
-<text class="label" data-model="qwen3.6-27b-heretic-neo-code" x="344" y="751" text-anchor="end">Qwen 27B Heretic</text>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="360.00" y="733" width="104.22" height="26" fill="#22c55e"/>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="464.22" y="733" width="161.55" height="26" fill="#3b82f6"/>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="625.77" y="733" width="68.27" height="26" fill="#8b5cf6"/>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="694.03" y="733" width="63.73" height="26" fill="#06b6d4"/>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="757.77" y="733" width="66.05" height="26" fill="#f59e0b"/>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="823.82" y="733" width="37.49" height="26" fill="#ef4444"/>
-<rect data-model="qwen3.6-27b-heretic-neo-code" x="861.30" y="733" width="31.04" height="26" fill="#64748b"/>
-<text class="value" data-model="qwen3.6-27b-heretic-neo-code" x="901.3" y="752">67.4</text>
-<text class="label" data-model="qwen/qwen3.8-max" x="344" y="806" text-anchor="end">Qwen: Qwen3.8 Max</text>
-<rect data-model="qwen/qwen3.8-max" x="360.00" y="788" width="94.20" height="26" fill="#22c55e"/>
-<rect data-model="qwen/qwen3.8-max" x="454.20" y="788" width="171.61" height="26" fill="#3b82f6"/>
-<rect data-model="qwen/qwen3.8-max" x="625.81" y="788" width="61.83" height="26" fill="#8b5cf6"/>
-<rect data-model="qwen/qwen3.8-max" x="687.64" y="788" width="79.00" height="26" fill="#06b6d4"/>
-<rect data-model="qwen/qwen3.8-max" x="766.64" y="788" width="57.96" height="26" fill="#f59e0b"/>
-<rect data-model="qwen/qwen3.8-max" x="824.59" y="788" width="37.49" height="26" fill="#ef4444"/>
-<rect data-model="qwen/qwen3.8-max" x="862.08" y="788" width="28.21" height="26" fill="#64748b"/>
-<text class="value" data-model="qwen/qwen3.8-max" x="899.3" y="807">67.1</text>
-<text class="label" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="344" y="861" text-anchor="end">Unsloth Qwen 35B A3B</text>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="360.00" y="843" width="99.21" height="26" fill="#22c55e"/>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="459.21" y="843" width="168.74" height="26" fill="#3b82f6"/>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="627.95" y="843" width="71.49" height="26" fill="#8b5cf6"/>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="699.43" y="843" width="50.38" height="26" fill="#06b6d4"/>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="749.81" y="843" width="64.43" height="26" fill="#f59e0b"/>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="814.24" y="843" width="37.49" height="26" fill="#ef4444"/>
-<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="851.73" y="843" width="30.10" height="26" fill="#64748b"/>
-<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" x="890.8" y="862">66.1</text>
-<text class="label" data-model="google/gemma-4-26b-a4b-it" x="344" y="916" text-anchor="end">Google: Gemma 4 26B A4B </text>
-<rect data-model="google/gemma-4-26b-a4b-it" x="360.00" y="898" width="128.27" height="26" fill="#22c55e"/>
-<rect data-model="google/gemma-4-26b-a4b-it" x="488.27" y="898" width="166.34" height="26" fill="#3b82f6"/>
-<rect data-model="google/gemma-4-26b-a4b-it" x="654.61" y="898" width="45.73" height="26" fill="#8b5cf6"/>
-<rect data-model="google/gemma-4-26b-a4b-it" x="700.34" y="898" width="50.38" height="26" fill="#06b6d4"/>
-<rect data-model="google/gemma-4-26b-a4b-it" x="750.71" y="898" width="57.96" height="26" fill="#f59e0b"/>
-<rect data-model="google/gemma-4-26b-a4b-it" x="808.67" y="898" width="37.49" height="26" fill="#ef4444"/>
-<rect data-model="google/gemma-4-26b-a4b-it" x="846.16" y="898" width="29.15" height="26" fill="#64748b"/>
-<text class="value" data-model="google/gemma-4-26b-a4b-it" x="884.3" y="917">65.2</text>
-<text class="label" data-model="deepseek/deepseek-v4-pro" x="344" y="971" text-anchor="end">DeepSeek: DeepSeek V4 Pro</text>
-<rect data-model="deepseek/deepseek-v4-pro" x="360.00" y="953" width="106.73" height="26" fill="#22c55e"/>
-<rect data-model="deepseek/deepseek-v4-pro" x="466.73" y="953" width="174.97" height="26" fill="#3b82f6"/>
-<rect data-model="deepseek/deepseek-v4-pro" x="641.70" y="953" width="68.27" height="26" fill="#8b5cf6"/>
-<rect data-model="deepseek/deepseek-v4-pro" x="709.96" y="953" width="42.74" height="26" fill="#06b6d4"/>
-<rect data-model="deepseek/deepseek-v4-pro" x="752.71" y="953" width="57.96" height="26" fill="#f59e0b"/>
-<rect data-model="deepseek/deepseek-v4-pro" x="810.66" y="953" width="35.25" height="26" fill="#ef4444"/>
-<rect data-model="deepseek/deepseek-v4-pro" x="845.91" y="953" width="23.51" height="26" fill="#64748b"/>
-<text class="value" data-model="deepseek/deepseek-v4-pro" x="878.4" y="972">64.5</text>
-<text class="label" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="344" y="1026" text-anchor="end">Qwythos 9B</text>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="360.00" y="1008" width="89.69" height="26" fill="#22c55e"/>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="449.69" y="1008" width="168.74" height="26" fill="#3b82f6"/>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="618.43" y="1008" width="58.61" height="26" fill="#8b5cf6"/>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="677.03" y="1008" width="46.56" height="26" fill="#06b6d4"/>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="723.60" y="1008" width="66.05" height="26" fill="#f59e0b"/>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="789.64" y="1008" width="35.81" height="26" fill="#ef4444"/>
-<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="825.45" y="1008" width="31.04" height="26" fill="#64748b"/>
-<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" x="865.5" y="1027">62.8</text>
-<text class="label" data-model="qwen/qwen3.7-plus" x="344" y="1081" text-anchor="end">Qwen: Qwen3.7 Plus</text>
-<rect data-model="qwen/qwen3.7-plus" x="360.00" y="1063" width="78.16" height="26" fill="#22c55e"/>
-<rect data-model="qwen/qwen3.7-plus" x="438.16" y="1063" width="168.74" height="26" fill="#3b82f6"/>
-<rect data-model="qwen/qwen3.7-plus" x="606.90" y="1063" width="74.71" height="26" fill="#8b5cf6"/>
-<rect data-model="qwen/qwen3.7-plus" x="681.61" y="1063" width="50.38" height="26" fill="#06b6d4"/>
-<rect data-model="qwen/qwen3.7-plus" x="731.99" y="1063" width="54.72" height="26" fill="#f59e0b"/>
-<rect data-model="qwen/qwen3.7-plus" x="786.70" y="1063" width="37.49" height="26" fill="#ef4444"/>
-<rect data-model="qwen/qwen3.7-plus" x="824.19" y="1063" width="29.15" height="26" fill="#64748b"/>
-<text class="value" data-model="qwen/qwen3.7-plus" x="862.3" y="1082">62.4</text>
-<text class="label" data-model="x-ai/grok-4.3" x="344" y="1136" text-anchor="end">SpaceXAI: Grok 4.3</text>
-<rect data-model="x-ai/grok-4.3" x="360.00" y="1118" width="88.19" height="26" fill="#22c55e"/>
-<rect data-model="x-ai/grok-4.3" x="448.19" y="1118" width="150.52" height="26" fill="#3b82f6"/>
-<rect data-model="x-ai/grok-4.3" x="598.71" y="1118" width="45.73" height="26" fill="#8b5cf6"/>
-<rect data-model="x-ai/grok-4.3" x="644.43" y="1118" width="50.38" height="26" fill="#06b6d4"/>
-<rect data-model="x-ai/grok-4.3" x="694.81" y="1118" width="72.52" height="26" fill="#f59e0b"/>
-<rect data-model="x-ai/grok-4.3" x="767.33" y="1118" width="39.50" height="26" fill="#ef4444"/>
-<rect data-model="x-ai/grok-4.3" x="806.83" y="1118" width="32.92" height="26" fill="#64748b"/>
-<text class="value" data-model="x-ai/grok-4.3" x="848.8" y="1137">60.7</text>
-<text class="label" data-model="qwen3.6-35b-hauhaucs-aggressive" x="344" y="1191" text-anchor="end">Qwen 35B HauhauCS</text>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="360.00" y="1173" width="104.22" height="26" fill="#22c55e"/>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="464.22" y="1173" width="168.74" height="26" fill="#3b82f6"/>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="632.96" y="1173" width="45.73" height="26" fill="#8b5cf6"/>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="678.68" y="1173" width="38.93" height="26" fill="#06b6d4"/>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="717.61" y="1173" width="62.81" height="26" fill="#f59e0b"/>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="780.42" y="1173" width="33.57" height="26" fill="#ef4444"/>
-<rect data-model="qwen3.6-35b-hauhaucs-aggressive" x="813.99" y="1173" width="25.39" height="26" fill="#64748b"/>
-<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" x="848.4" y="1192">60.7</text>
-<text class="label" data-model="stepfun/step-3.7-flash" x="344" y="1246" text-anchor="end">StepFun: Step 3.7 Flash</text>
-<rect data-model="stepfun/step-3.7-flash" x="360.00" y="1228" width="89.19" height="26" fill="#22c55e"/>
-<rect data-model="stepfun/step-3.7-flash" x="449.19" y="1228" width="166.82" height="26" fill="#3b82f6"/>
-<rect data-model="stepfun/step-3.7-flash" x="616.01" y="1228" width="55.39" height="26" fill="#8b5cf6"/>
-<rect data-model="stepfun/step-3.7-flash" x="671.39" y="1228" width="31.30" height="26" fill="#06b6d4"/>
-<rect data-model="stepfun/step-3.7-flash" x="702.69" y="1228" width="57.96" height="26" fill="#f59e0b"/>
-<rect data-model="stepfun/step-3.7-flash" x="760.64" y="1228" width="38.38" height="26" fill="#ef4444"/>
-<rect data-model="stepfun/step-3.7-flash" x="799.03" y="1228" width="32.92" height="26" fill="#64748b"/>
-<text class="value" data-model="stepfun/step-3.7-flash" x="840.9" y="1247">59.7</text>
-<text class="label" data-model="gemma-4-e4b-it" x="344" y="1301" text-anchor="end">Gemma E4B</text>
-<rect data-model="gemma-4-e4b-it" x="360.00" y="1283" width="80.67" height="26" fill="#22c55e"/>
-<rect data-model="gemma-4-e4b-it" x="440.67" y="1283" width="127.51" height="26" fill="#3b82f6"/>
-<rect data-model="gemma-4-e4b-it" x="568.18" y="1283" width="55.39" height="26" fill="#8b5cf6"/>
-<rect data-model="gemma-4-e4b-it" x="623.57" y="1283" width="54.19" height="26" fill="#06b6d4"/>
-<rect data-model="gemma-4-e4b-it" x="677.76" y="1283" width="72.52" height="26" fill="#f59e0b"/>
-<rect data-model="gemma-4-e4b-it" x="750.29" y="1283" width="38.38" height="26" fill="#ef4444"/>
-<rect data-model="gemma-4-e4b-it" x="788.67" y="1283" width="35.74" height="26" fill="#64748b"/>
-<text class="value" data-model="gemma-4-e4b-it" x="833.4" y="1302">58.8</text>
-<text class="label" data-model="nvidia/nemotron-3-ultra-550b-a55b" x="344" y="1356" text-anchor="end">NVIDIA: Nemotron 3 Ultra</text>
-<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="360.00" y="1338" width="104.72" height="26" fill="#22c55e"/>
-<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="464.72" y="1338" width="167.78" height="26" fill="#3b82f6"/>
-<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="632.50" y="1338" width="32.84" height="26" fill="#8b5cf6"/>
-<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="665.34" y="1338" width="40.84" height="26" fill="#06b6d4"/>
-<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="706.18" y="1338" width="51.48" height="26" fill="#f59e0b"/>
-<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="757.66" y="1338" width="38.38" height="26" fill="#ef4444"/>
-<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" x="796.04" y="1338" width="27.27" height="26" fill="#64748b"/>
-<text class="value" data-model="nvidia/nemotron-3-ultra-550b-a55b" x="832.3" y="1357">58.6</text>
-<text class="label" data-model="google/gemini-3.5-flash-lite" x="344" y="1411" text-anchor="end">Google: Gemini 3.5 Flash…</text>
-<rect data-model="google/gemini-3.5-flash-lite" x="360.00" y="1393" width="113.24" height="26" fill="#22c55e"/>
-<rect data-model="google/gemini-3.5-flash-lite" x="473.24" y="1393" width="136.62" height="26" fill="#3b82f6"/>
-<rect data-model="google/gemini-3.5-flash-lite" x="609.86" y="1393" width="48.30" height="26" fill="#8b5cf6"/>
-<rect data-model="google/gemini-3.5-flash-lite" x="658.16" y="1393" width="31.30" height="26" fill="#06b6d4"/>
-<rect data-model="google/gemini-3.5-flash-lite" x="689.46" y="1393" width="49.86" height="26" fill="#f59e0b"/>
-<rect data-model="google/gemini-3.5-flash-lite" x="739.32" y="1393" width="36.37" height="26" fill="#ef4444"/>
-<rect data-model="google/gemini-3.5-flash-lite" x="775.68" y="1393" width="37.62" height="26" fill="#64748b"/>
-<text class="value" data-model="google/gemini-3.5-flash-lite" x="822.3" y="1412">57.4</text>
-<text class="label" data-model="google/gemini-3.6-flash" x="344" y="1466" text-anchor="end">Google: Gemini 3.6 Flash</text>
-<rect data-model="google/gemini-3.6-flash" x="360.00" y="1448" width="70.65" height="26" fill="#22c55e"/>
-<rect data-model="google/gemini-3.6-flash" x="430.65" y="1448" width="170.18" height="26" fill="#3b82f6"/>
-<rect data-model="google/gemini-3.6-flash" x="600.83" y="1448" width="52.17" height="26" fill="#8b5cf6"/>
-<rect data-model="google/gemini-3.6-flash" x="652.99" y="1448" width="31.30" height="26" fill="#06b6d4"/>
-<rect data-model="google/gemini-3.6-flash" x="684.29" y="1448" width="54.72" height="26" fill="#f59e0b"/>
-<rect data-model="google/gemini-3.6-flash" x="739.00" y="1448" width="36.37" height="26" fill="#ef4444"/>
-<rect data-model="google/gemini-3.6-flash" x="775.37" y="1448" width="29.15" height="26" fill="#64748b"/>
-<text class="value" data-model="google/gemini-3.6-flash" x="813.5" y="1467">56.3</text>
-<text class="label" data-model="openai/gpt-4.1" x="344" y="1521" text-anchor="end">OpenAI: GPT-4.1</text>
-<rect data-model="openai/gpt-4.1" x="360.00" y="1503" width="67.14" height="26" fill="#22c55e"/>
-<rect data-model="openai/gpt-4.1" x="427.14" y="1503" width="133.74" height="26" fill="#3b82f6"/>
-<rect data-model="openai/gpt-4.1" x="560.89" y="1503" width="32.84" height="26" fill="#8b5cf6"/>
-<rect data-model="openai/gpt-4.1" x="593.73" y="1503" width="40.84" height="26" fill="#06b6d4"/>
-<rect data-model="openai/gpt-4.1" x="634.57" y="1503" width="74.14" height="26" fill="#f59e0b"/>
-<rect data-model="openai/gpt-4.1" x="708.71" y="1503" width="36.70" height="26" fill="#ef4444"/>
-<rect data-model="openai/gpt-4.1" x="745.41" y="1503" width="33.86" height="26" fill="#64748b"/>
-<text class="value" data-model="openai/gpt-4.1" x="788.3" y="1522">53.1</text>
-<text class="label" data-model="deepseek/deepseek-v3.2" x="344" y="1576" text-anchor="end">DeepSeek: DeepSeek V3.2</text>
-<rect data-model="deepseek/deepseek-v3.2" x="360.00" y="1558" width="85.68" height="26" fill="#22c55e"/>
-<rect data-model="deepseek/deepseek-v3.2" x="445.68" y="1558" width="161.55" height="26" fill="#3b82f6"/>
-<rect data-model="deepseek/deepseek-v3.2" x="607.23" y="1558" width="22.54" height="26" fill="#8b5cf6"/>
-<rect data-model="deepseek/deepseek-v3.2" x="629.77" y="1558" width="50.38" height="26" fill="#06b6d4"/>
-<rect data-model="deepseek/deepseek-v3.2" x="680.15" y="1558" width="36.91" height="26" fill="#f59e0b"/>
-<rect data-model="deepseek/deepseek-v3.2" x="717.05" y="1558" width="39.50" height="26" fill="#ef4444"/>
-<rect data-model="deepseek/deepseek-v3.2" x="756.55" y="1558" width="22.57" height="26" fill="#64748b"/>
-<text class="value" data-model="deepseek/deepseek-v3.2" x="788.1" y="1577">53.1</text>
-<text class="label" data-model="gemma-4-12b-obliterated" x="344" y="1631" text-anchor="end">Gemma 12B</text>
-<rect data-model="gemma-4-12b-obliterated" x="360.00" y="1613" width="43.59" height="26" fill="#22c55e"/>
-<rect data-model="gemma-4-12b-obliterated" x="403.59" y="1613" width="134.70" height="26" fill="#3b82f6"/>
-<rect data-model="gemma-4-12b-obliterated" x="538.29" y="1613" width="42.51" height="26" fill="#8b5cf6"/>
-<rect data-model="gemma-4-12b-obliterated" x="580.80" y="1613" width="31.30" height="26" fill="#06b6d4"/>
-<rect data-model="gemma-4-12b-obliterated" x="612.10" y="1613" width="46.62" height="26" fill="#f59e0b"/>
-<rect data-model="gemma-4-12b-obliterated" x="658.72" y="1613" width="38.38" height="26" fill="#ef4444"/>
-<rect data-model="gemma-4-12b-obliterated" x="697.10" y="1613" width="34.80" height="26" fill="#64748b"/>
-<text class="value" data-model="gemma-4-12b-obliterated" x="740.9" y="1632">47.1</text>
-<text class="label" data-model="cydonia-24b-v4.3" x="344" y="1686" text-anchor="end">Cydonia 24B</text>
-<rect data-model="cydonia-24b-v4.3" x="360.00" y="1668" width="40.08" height="26" fill="#22c55e"/>
-<rect data-model="cydonia-24b-v4.3" x="400.08" y="1668" width="21.57" height="26" fill="#3b82f6"/>
-<rect data-model="cydonia-24b-v4.3" x="421.65" y="1668" width="32.84" height="26" fill="#8b5cf6"/>
-<rect data-model="cydonia-24b-v4.3" x="454.50" y="1668" width="31.30" height="26" fill="#06b6d4"/>
-<rect data-model="cydonia-24b-v4.3" x="485.79" y="1668" width="66.05" height="26" fill="#f59e0b"/>
-<rect data-model="cydonia-24b-v4.3" x="551.84" y="1668" width="36.70" height="26" fill="#ef4444"/>
-<rect data-model="cydonia-24b-v4.3" x="588.55" y="1668" width="39.50" height="26" fill="#64748b"/>
-<text class="value" data-model="cydonia-24b-v4.3" x="637.0" y="1687">33.9</text>
-<text class="label" data-model="dolphin-mistral-24b-venice" x="344" y="1741" text-anchor="end">Dolphin Mistral 24B</text>
-<rect data-model="dolphin-mistral-24b-venice" x="360.00" y="1723" width="32.57" height="26" fill="#22c55e"/>
-<rect data-model="dolphin-mistral-24b-venice" x="392.57" y="1723" width="21.57" height="26" fill="#3b82f6"/>
-<rect data-model="dolphin-mistral-24b-venice" x="414.14" y="1723" width="23.18" height="26" fill="#8b5cf6"/>
-<rect data-model="dolphin-mistral-24b-venice" x="437.32" y="1723" width="31.30" height="26" fill="#06b6d4"/>
-<rect data-model="dolphin-mistral-24b-venice" x="468.62" y="1723" width="69.29" height="26" fill="#f59e0b"/>
-<rect data-model="dolphin-mistral-24b-venice" x="537.91" y="1723" width="36.70" height="26" fill="#ef4444"/>
-<rect data-model="dolphin-mistral-24b-venice" x="574.61" y="1723" width="39.50" height="26" fill="#64748b"/>
-<text class="value" data-model="dolphin-mistral-24b-venice" x="623.1" y="1742">32.2</text>
-<text class="label" data-model="google/gemma-3-12b-it" x="344" y="1796" text-anchor="end">Google: Gemma 3 12B</text>
-<rect data-model="google/gemma-3-12b-it" x="360.00" y="1778" width="22.55" height="26" fill="#22c55e"/>
-<rect data-model="google/gemma-3-12b-it" x="382.55" y="1778" width="21.57" height="26" fill="#3b82f6"/>
-<rect data-model="google/gemma-3-12b-it" x="404.12" y="1778" width="23.18" height="26" fill="#8b5cf6"/>
-<rect data-model="google/gemma-3-12b-it" x="427.30" y="1778" width="31.30" height="26" fill="#06b6d4"/>
-<rect data-model="google/gemma-3-12b-it" x="458.60" y="1778" width="79.00" height="26" fill="#f59e0b"/>
-<rect data-model="google/gemma-3-12b-it" x="537.60" y="1778" width="34.69" height="26" fill="#ef4444"/>
-<rect data-model="google/gemma-3-12b-it" x="572.29" y="1778" width="39.50" height="26" fill="#64748b"/>
-<text class="value" data-model="google/gemma-3-12b-it" x="620.8" y="1797">31.9</text>
-<text class="label" data-model="openai/gpt-5.6-sol" x="344" y="1851" text-anchor="end">OpenAI: GPT-5.6 Sol</text>
-<rect data-model="openai/gpt-5.6-sol" x="360.00" y="1833" width="36.08" height="26" fill="#22c55e"/>
-<rect data-model="openai/gpt-5.6-sol" x="396.08" y="1833" width="28.28" height="26" fill="#3b82f6"/>
-<rect data-model="openai/gpt-5.6-sol" x="424.36" y="1833" width="41.86" height="26" fill="#8b5cf6"/>
-<rect data-model="openai/gpt-5.6-sol" x="466.22" y="1833" width="0.00" height="26" fill="#06b6d4"/>
-<rect data-model="openai/gpt-5.6-sol" x="466.22" y="1833" width="9.71" height="26" fill="#f59e0b"/>
-<rect data-model="openai/gpt-5.6-sol" x="475.93" y="1833" width="4.92" height="26" fill="#ef4444"/>
-<rect data-model="openai/gpt-5.6-sol" x="480.86" y="1833" width="3.76" height="26" fill="#64748b"/>
-<text class="value" data-model="openai/gpt-5.6-sol" x="493.6" y="1852">15.8</text>
+<text class="label" data-model="openai/gpt-5.6-terra" data-row="0" x="344" y="146" text-anchor="end">OpenAI: GPT-5.6 Terra</text>
+<rect data-model="openai/gpt-5.6-terra" data-row="0" x="360.00" y="128" width="172.87" height="26" fill="#22c55e"/>
+<rect data-model="openai/gpt-5.6-terra" data-row="0" x="532.87" y="128" width="159.63" height="26" fill="#3b82f6"/>
+<rect data-model="openai/gpt-5.6-terra" data-row="0" x="692.49" y="128" width="81.15" height="26" fill="#8b5cf6"/>
+<rect data-model="openai/gpt-5.6-terra" data-row="0" x="773.64" y="128" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="openai/gpt-5.6-terra" data-row="0" x="824.02" y="128" width="75.76" height="26" fill="#f59e0b"/>
+<rect data-model="openai/gpt-5.6-terra" data-row="0" x="899.78" y="128" width="37.82" height="26" fill="#ef4444"/>
+<rect data-model="openai/gpt-5.6-terra" data-row="0" x="937.60" y="128" width="32.92" height="26" fill="#64748b"/>
+<text class="value" data-model="openai/gpt-5.6-terra" data-row="0" x="979.5" y="147">77.3</text>
+<text class="label" data-model="openai/gpt-5.4" data-row="1" x="344" y="201" text-anchor="end">OpenAI: GPT-5.4</text>
+<rect data-model="openai/gpt-5.4" data-row="1" x="360.00" y="183" width="170.36" height="26" fill="#22c55e"/>
+<rect data-model="openai/gpt-5.4" data-row="1" x="530.36" y="183" width="156.75" height="26" fill="#3b82f6"/>
+<rect data-model="openai/gpt-5.4" data-row="1" x="687.11" y="183" width="55.39" height="26" fill="#8b5cf6"/>
+<rect data-model="openai/gpt-5.4" data-row="1" x="742.50" y="183" width="65.64" height="26" fill="#06b6d4"/>
+<rect data-model="openai/gpt-5.4" data-row="1" x="808.14" y="183" width="72.52" height="26" fill="#f59e0b"/>
+<rect data-model="openai/gpt-5.4" data-row="1" x="880.67" y="183" width="39.50" height="26" fill="#ef4444"/>
+<rect data-model="openai/gpt-5.4" data-row="1" x="920.17" y="183" width="31.98" height="26" fill="#64748b"/>
+<text class="value" data-model="openai/gpt-5.4" data-row="1" x="961.1" y="202">75.0</text>
+<text class="label" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" data-row="2" x="344" y="256" text-anchor="end">Unsloth Qwen 27B</text>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" data-row="2" x="360.00" y="238" width="145.31" height="26" fill="#22c55e"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" data-row="2" x="505.31" y="238" width="165.86" height="26" fill="#3b82f6"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" data-row="2" x="671.17" y="238" width="77.93" height="26" fill="#8b5cf6"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" data-row="2" x="749.10" y="238" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" data-row="2" x="799.47" y="238" width="66.05" height="26" fill="#f59e0b"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" data-row="2" x="865.52" y="238" width="39.50" height="26" fill="#ef4444"/>
+<rect data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" data-row="2" x="905.02" y="238" width="31.04" height="26" fill="#64748b"/>
+<text class="value" data-model="unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl" data-row="2" x="945.1" y="257">72.9</text>
+<text class="label" data-model="anthropic/claude-opus-5" data-row="3" x="344" y="311" text-anchor="end">Claude Opus 5</text>
+<rect data-model="anthropic/claude-opus-5" data-row="3" x="360.00" y="293" width="126.77" height="26" fill="#22c55e"/>
+<rect data-model="anthropic/claude-opus-5" data-row="3" x="486.77" y="293" width="184.56" height="26" fill="#3b82f6"/>
+<rect data-model="anthropic/claude-opus-5" data-row="3" x="671.32" y="293" width="87.59" height="26" fill="#8b5cf6"/>
+<rect data-model="anthropic/claude-opus-5" data-row="3" x="758.91" y="293" width="63.73" height="26" fill="#06b6d4"/>
+<rect data-model="anthropic/claude-opus-5" data-row="3" x="822.65" y="293" width="48.24" height="26" fill="#f59e0b"/>
+<rect data-model="anthropic/claude-opus-5" data-row="3" x="870.89" y="293" width="36.37" height="26" fill="#ef4444"/>
+<rect data-model="anthropic/claude-opus-5" data-row="3" x="907.25" y="293" width="27.27" height="26" fill="#64748b"/>
+<text class="value" data-model="anthropic/claude-opus-5" data-row="3" x="943.5" y="312">72.7</text>
+<text class="label" data-model="openai/gpt-5.5" data-row="4" x="344" y="366" text-anchor="end">OpenAI: GPT-5.5</text>
+<rect data-model="openai/gpt-5.5" data-row="4" x="360.00" y="348" width="147.81" height="26" fill="#22c55e"/>
+<rect data-model="openai/gpt-5.5" data-row="4" x="507.81" y="348" width="159.63" height="26" fill="#3b82f6"/>
+<rect data-model="openai/gpt-5.5" data-row="4" x="667.44" y="348" width="74.71" height="26" fill="#8b5cf6"/>
+<rect data-model="openai/gpt-5.5" data-row="4" x="742.15" y="348" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="openai/gpt-5.5" data-row="4" x="792.52" y="348" width="70.91" height="26" fill="#f59e0b"/>
+<rect data-model="openai/gpt-5.5" data-row="4" x="863.43" y="348" width="37.82" height="26" fill="#ef4444"/>
+<rect data-model="openai/gpt-5.5" data-row="4" x="901.25" y="348" width="30.10" height="26" fill="#64748b"/>
+<text class="value" data-model="openai/gpt-5.5" data-row="4" x="940.3" y="367">72.3</text>
+<text class="label" data-model="deepseek/deepseek-v4-flash" data-row="5" x="344" y="421" text-anchor="end">DeepSeek: DeepSeek V4 Fl…</text>
+<rect data-model="deepseek/deepseek-v4-flash" data-row="5" x="360.00" y="403" width="135.79" height="26" fill="#22c55e"/>
+<rect data-model="deepseek/deepseek-v4-flash" data-row="5" x="495.79" y="403" width="171.61" height="26" fill="#3b82f6"/>
+<rect data-model="deepseek/deepseek-v4-flash" data-row="5" x="667.40" y="403" width="74.71" height="26" fill="#8b5cf6"/>
+<rect data-model="deepseek/deepseek-v4-flash" data-row="5" x="742.11" y="403" width="63.73" height="26" fill="#06b6d4"/>
+<rect data-model="deepseek/deepseek-v4-flash" data-row="5" x="805.84" y="403" width="57.96" height="26" fill="#f59e0b"/>
+<rect data-model="deepseek/deepseek-v4-flash" data-row="5" x="863.80" y="403" width="37.49" height="26" fill="#ef4444"/>
+<rect data-model="deepseek/deepseek-v4-flash" data-row="5" x="901.28" y="403" width="22.57" height="26" fill="#64748b"/>
+<text class="value" data-model="deepseek/deepseek-v4-flash" data-row="5" x="932.9" y="422">71.4</text>
+<text class="label" data-model="openai/gpt-5.6-luna" data-row="6" x="344" y="476" text-anchor="end">OpenAI: GPT-5.6 Luna</text>
+<rect data-model="openai/gpt-5.6-luna" data-row="6" x="360.00" y="458" width="149.31" height="26" fill="#22c55e"/>
+<rect data-model="openai/gpt-5.6-luna" data-row="6" x="509.31" y="458" width="154.84" height="26" fill="#3b82f6"/>
+<rect data-model="openai/gpt-5.6-luna" data-row="6" x="664.15" y="458" width="65.05" height="26" fill="#8b5cf6"/>
+<rect data-model="openai/gpt-5.6-luna" data-row="6" x="729.20" y="458" width="44.65" height="26" fill="#06b6d4"/>
+<rect data-model="openai/gpt-5.6-luna" data-row="6" x="773.85" y="458" width="74.14" height="26" fill="#f59e0b"/>
+<rect data-model="openai/gpt-5.6-luna" data-row="6" x="847.99" y="458" width="38.38" height="26" fill="#ef4444"/>
+<rect data-model="openai/gpt-5.6-luna" data-row="6" x="886.37" y="458" width="33.86" height="26" fill="#64748b"/>
+<text class="value" data-model="openai/gpt-5.6-luna" data-row="6" x="929.2" y="477">70.9</text>
+<text class="label" data-model="google/gemma-4-31b-it" data-row="7" x="344" y="531" text-anchor="end">Google: Gemma 4 31B</text>
+<rect data-model="google/gemma-4-31b-it" data-row="7" x="360.00" y="513" width="135.28" height="26" fill="#22c55e"/>
+<rect data-model="google/gemma-4-31b-it" data-row="7" x="495.28" y="513" width="167.78" height="26" fill="#3b82f6"/>
+<rect data-model="google/gemma-4-31b-it" data-row="7" x="663.06" y="513" width="71.49" height="26" fill="#8b5cf6"/>
+<rect data-model="google/gemma-4-31b-it" data-row="7" x="734.55" y="513" width="38.93" height="26" fill="#06b6d4"/>
+<rect data-model="google/gemma-4-31b-it" data-row="7" x="773.48" y="513" width="72.52" height="26" fill="#f59e0b"/>
+<rect data-model="google/gemma-4-31b-it" data-row="7" x="846.00" y="513" width="35.58" height="26" fill="#ef4444"/>
+<rect data-model="google/gemma-4-31b-it" data-row="7" x="881.58" y="513" width="31.98" height="26" fill="#64748b"/>
+<text class="value" data-model="google/gemma-4-31b-it" data-row="7" x="922.6" y="532">70.1</text>
+<text class="label" data-model="x-ai/grok-4.5" data-row="8" x="344" y="586" text-anchor="end">SpaceXAI: Grok 4.5</text>
+<rect data-model="x-ai/grok-4.5" data-row="8" x="360.00" y="568" width="126.77" height="26" fill="#22c55e"/>
+<rect data-model="x-ai/grok-4.5" data-row="8" x="486.77" y="568" width="171.61" height="26" fill="#3b82f6"/>
+<rect data-model="x-ai/grok-4.5" data-row="8" x="658.38" y="568" width="74.71" height="26" fill="#8b5cf6"/>
+<rect data-model="x-ai/grok-4.5" data-row="8" x="733.09" y="568" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="x-ai/grok-4.5" data-row="8" x="783.46" y="568" width="64.43" height="26" fill="#f59e0b"/>
+<rect data-model="x-ai/grok-4.5" data-row="8" x="847.89" y="568" width="39.50" height="26" fill="#ef4444"/>
+<rect data-model="x-ai/grok-4.5" data-row="8" x="887.39" y="568" width="24.45" height="26" fill="#64748b"/>
+<text class="value" data-model="x-ai/grok-4.5" data-row="8" x="920.8" y="587">69.9</text>
+<text class="label" data-model="anthropic/claude-sonnet-5" data-row="9" x="344" y="641" text-anchor="end">Anthropic: Claude Sonnet…</text>
+<rect data-model="anthropic/claude-sonnet-5" data-row="9" x="360.00" y="623" width="126.77" height="26" fill="#22c55e"/>
+<rect data-model="anthropic/claude-sonnet-5" data-row="9" x="486.77" y="623" width="168.74" height="26" fill="#3b82f6"/>
+<rect data-model="anthropic/claude-sonnet-5" data-row="9" x="655.50" y="623" width="71.49" height="26" fill="#8b5cf6"/>
+<rect data-model="anthropic/claude-sonnet-5" data-row="9" x="726.99" y="623" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="anthropic/claude-sonnet-5" data-row="9" x="777.37" y="623" width="57.96" height="26" fill="#f59e0b"/>
+<rect data-model="anthropic/claude-sonnet-5" data-row="9" x="835.32" y="623" width="38.38" height="26" fill="#ef4444"/>
+<rect data-model="anthropic/claude-sonnet-5" data-row="9" x="873.70" y="623" width="31.98" height="26" fill="#64748b"/>
+<text class="value" data-model="anthropic/claude-sonnet-5" data-row="9" x="914.7" y="642">69.1</text>
+<text class="label" data-model="tencent/hy3" data-row="10" x="344" y="696" text-anchor="end">Tencent: Hy3</text>
+<rect data-model="tencent/hy3" data-row="10" x="360.00" y="678" width="126.77" height="26" fill="#22c55e"/>
+<rect data-model="tencent/hy3" data-row="10" x="486.77" y="678" width="174.97" height="26" fill="#3b82f6"/>
+<rect data-model="tencent/hy3" data-row="10" x="661.74" y="678" width="68.27" height="26" fill="#8b5cf6"/>
+<rect data-model="tencent/hy3" data-row="10" x="730.00" y="678" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="tencent/hy3" data-row="10" x="780.38" y="678" width="54.72" height="26" fill="#f59e0b"/>
+<rect data-model="tencent/hy3" data-row="10" x="835.10" y="678" width="37.49" height="26" fill="#ef4444"/>
+<rect data-model="tencent/hy3" data-row="10" x="872.58" y="678" width="27.27" height="26" fill="#64748b"/>
+<text class="value" data-model="tencent/hy3" data-row="10" x="908.9" y="697">68.3</text>
+<text class="label" data-model="qwen3.6-27b-heretic-neo-code" data-row="11" x="344" y="751" text-anchor="end">Qwen 27B Heretic</text>
+<rect data-model="qwen3.6-27b-heretic-neo-code" data-row="11" x="360.00" y="733" width="104.22" height="26" fill="#22c55e"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" data-row="11" x="464.22" y="733" width="161.55" height="26" fill="#3b82f6"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" data-row="11" x="625.77" y="733" width="68.27" height="26" fill="#8b5cf6"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" data-row="11" x="694.03" y="733" width="63.73" height="26" fill="#06b6d4"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" data-row="11" x="757.77" y="733" width="66.05" height="26" fill="#f59e0b"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" data-row="11" x="823.82" y="733" width="37.49" height="26" fill="#ef4444"/>
+<rect data-model="qwen3.6-27b-heretic-neo-code" data-row="11" x="861.30" y="733" width="31.04" height="26" fill="#64748b"/>
+<text class="value" data-model="qwen3.6-27b-heretic-neo-code" data-row="11" x="901.3" y="752">67.4</text>
+<text class="label" data-model="qwen/qwen3.8-max" data-row="12" x="344" y="806" text-anchor="end">Qwen: Qwen3.8 Max</text>
+<rect data-model="qwen/qwen3.8-max" data-row="12" x="360.00" y="788" width="94.20" height="26" fill="#22c55e"/>
+<rect data-model="qwen/qwen3.8-max" data-row="12" x="454.20" y="788" width="171.61" height="26" fill="#3b82f6"/>
+<rect data-model="qwen/qwen3.8-max" data-row="12" x="625.81" y="788" width="61.83" height="26" fill="#8b5cf6"/>
+<rect data-model="qwen/qwen3.8-max" data-row="12" x="687.64" y="788" width="79.00" height="26" fill="#06b6d4"/>
+<rect data-model="qwen/qwen3.8-max" data-row="12" x="766.64" y="788" width="57.96" height="26" fill="#f59e0b"/>
+<rect data-model="qwen/qwen3.8-max" data-row="12" x="824.59" y="788" width="37.49" height="26" fill="#ef4444"/>
+<rect data-model="qwen/qwen3.8-max" data-row="12" x="862.08" y="788" width="28.21" height="26" fill="#64748b"/>
+<text class="value" data-model="qwen/qwen3.8-max" data-row="12" x="899.3" y="807">67.1</text>
+<text class="label" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" data-row="13" x="344" y="861" text-anchor="end">Unsloth Qwen 35B A3B</text>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" data-row="13" x="360.00" y="843" width="99.21" height="26" fill="#22c55e"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" data-row="13" x="459.21" y="843" width="168.74" height="26" fill="#3b82f6"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" data-row="13" x="627.95" y="843" width="71.49" height="26" fill="#8b5cf6"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" data-row="13" x="699.43" y="843" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" data-row="13" x="749.81" y="843" width="64.43" height="26" fill="#f59e0b"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" data-row="13" x="814.24" y="843" width="37.49" height="26" fill="#ef4444"/>
+<rect data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" data-row="13" x="851.73" y="843" width="30.10" height="26" fill="#64748b"/>
+<text class="value" data-model="unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s" data-row="13" x="890.8" y="862">66.1</text>
+<text class="label" data-model="google/gemma-4-26b-a4b-it" data-row="14" x="344" y="916" text-anchor="end">Google: Gemma 4 26B A4B </text>
+<rect data-model="google/gemma-4-26b-a4b-it" data-row="14" x="360.00" y="898" width="128.27" height="26" fill="#22c55e"/>
+<rect data-model="google/gemma-4-26b-a4b-it" data-row="14" x="488.27" y="898" width="166.34" height="26" fill="#3b82f6"/>
+<rect data-model="google/gemma-4-26b-a4b-it" data-row="14" x="654.61" y="898" width="45.73" height="26" fill="#8b5cf6"/>
+<rect data-model="google/gemma-4-26b-a4b-it" data-row="14" x="700.34" y="898" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="google/gemma-4-26b-a4b-it" data-row="14" x="750.71" y="898" width="57.96" height="26" fill="#f59e0b"/>
+<rect data-model="google/gemma-4-26b-a4b-it" data-row="14" x="808.67" y="898" width="37.49" height="26" fill="#ef4444"/>
+<rect data-model="google/gemma-4-26b-a4b-it" data-row="14" x="846.16" y="898" width="29.15" height="26" fill="#64748b"/>
+<text class="value" data-model="google/gemma-4-26b-a4b-it" data-row="14" x="884.3" y="917">65.2</text>
+<text class="label" data-model="deepseek/deepseek-v4-pro" data-row="15" x="344" y="971" text-anchor="end">DeepSeek: DeepSeek V4 Pro</text>
+<rect data-model="deepseek/deepseek-v4-pro" data-row="15" x="360.00" y="953" width="106.73" height="26" fill="#22c55e"/>
+<rect data-model="deepseek/deepseek-v4-pro" data-row="15" x="466.73" y="953" width="174.97" height="26" fill="#3b82f6"/>
+<rect data-model="deepseek/deepseek-v4-pro" data-row="15" x="641.70" y="953" width="68.27" height="26" fill="#8b5cf6"/>
+<rect data-model="deepseek/deepseek-v4-pro" data-row="15" x="709.96" y="953" width="42.74" height="26" fill="#06b6d4"/>
+<rect data-model="deepseek/deepseek-v4-pro" data-row="15" x="752.71" y="953" width="57.96" height="26" fill="#f59e0b"/>
+<rect data-model="deepseek/deepseek-v4-pro" data-row="15" x="810.66" y="953" width="35.25" height="26" fill="#ef4444"/>
+<rect data-model="deepseek/deepseek-v4-pro" data-row="15" x="845.91" y="953" width="23.51" height="26" fill="#64748b"/>
+<text class="value" data-model="deepseek/deepseek-v4-pro" data-row="15" x="878.4" y="972">64.5</text>
+<text class="label" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" data-row="16" x="344" y="1026" text-anchor="end">Qwythos 9B</text>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" data-row="16" x="360.00" y="1008" width="89.69" height="26" fill="#22c55e"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" data-row="16" x="449.69" y="1008" width="168.74" height="26" fill="#3b82f6"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" data-row="16" x="618.43" y="1008" width="58.61" height="26" fill="#8b5cf6"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" data-row="16" x="677.03" y="1008" width="46.56" height="26" fill="#06b6d4"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" data-row="16" x="723.60" y="1008" width="66.05" height="26" fill="#f59e0b"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" data-row="16" x="789.64" y="1008" width="35.81" height="26" fill="#ef4444"/>
+<rect data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" data-row="16" x="825.45" y="1008" width="31.04" height="26" fill="#64748b"/>
+<text class="value" data-model="empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m" data-row="16" x="865.5" y="1027">62.8</text>
+<text class="label" data-model="qwen/qwen3.7-plus" data-row="17" x="344" y="1081" text-anchor="end">Qwen: Qwen3.7 Plus</text>
+<rect data-model="qwen/qwen3.7-plus" data-row="17" x="360.00" y="1063" width="78.16" height="26" fill="#22c55e"/>
+<rect data-model="qwen/qwen3.7-plus" data-row="17" x="438.16" y="1063" width="168.74" height="26" fill="#3b82f6"/>
+<rect data-model="qwen/qwen3.7-plus" data-row="17" x="606.90" y="1063" width="74.71" height="26" fill="#8b5cf6"/>
+<rect data-model="qwen/qwen3.7-plus" data-row="17" x="681.61" y="1063" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="qwen/qwen3.7-plus" data-row="17" x="731.99" y="1063" width="54.72" height="26" fill="#f59e0b"/>
+<rect data-model="qwen/qwen3.7-plus" data-row="17" x="786.70" y="1063" width="37.49" height="26" fill="#ef4444"/>
+<rect data-model="qwen/qwen3.7-plus" data-row="17" x="824.19" y="1063" width="29.15" height="26" fill="#64748b"/>
+<text class="value" data-model="qwen/qwen3.7-plus" data-row="17" x="862.3" y="1082">62.4</text>
+<text class="label" data-model="x-ai/grok-4.3" data-row="18" x="344" y="1136" text-anchor="end">SpaceXAI: Grok 4.3</text>
+<rect data-model="x-ai/grok-4.3" data-row="18" x="360.00" y="1118" width="88.19" height="26" fill="#22c55e"/>
+<rect data-model="x-ai/grok-4.3" data-row="18" x="448.19" y="1118" width="150.52" height="26" fill="#3b82f6"/>
+<rect data-model="x-ai/grok-4.3" data-row="18" x="598.71" y="1118" width="45.73" height="26" fill="#8b5cf6"/>
+<rect data-model="x-ai/grok-4.3" data-row="18" x="644.43" y="1118" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="x-ai/grok-4.3" data-row="18" x="694.81" y="1118" width="72.52" height="26" fill="#f59e0b"/>
+<rect data-model="x-ai/grok-4.3" data-row="18" x="767.33" y="1118" width="39.50" height="26" fill="#ef4444"/>
+<rect data-model="x-ai/grok-4.3" data-row="18" x="806.83" y="1118" width="32.92" height="26" fill="#64748b"/>
+<text class="value" data-model="x-ai/grok-4.3" data-row="18" x="848.8" y="1137">60.7</text>
+<text class="label" data-model="qwen3.6-35b-hauhaucs-aggressive" data-row="19" x="344" y="1191" text-anchor="end">Qwen 35B HauhauCS</text>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" data-row="19" x="360.00" y="1173" width="104.22" height="26" fill="#22c55e"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" data-row="19" x="464.22" y="1173" width="168.74" height="26" fill="#3b82f6"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" data-row="19" x="632.96" y="1173" width="45.73" height="26" fill="#8b5cf6"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" data-row="19" x="678.68" y="1173" width="38.93" height="26" fill="#06b6d4"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" data-row="19" x="717.61" y="1173" width="62.81" height="26" fill="#f59e0b"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" data-row="19" x="780.42" y="1173" width="33.57" height="26" fill="#ef4444"/>
+<rect data-model="qwen3.6-35b-hauhaucs-aggressive" data-row="19" x="813.99" y="1173" width="25.39" height="26" fill="#64748b"/>
+<text class="value" data-model="qwen3.6-35b-hauhaucs-aggressive" data-row="19" x="848.4" y="1192">60.7</text>
+<text class="label" data-model="stepfun/step-3.7-flash" data-row="20" x="344" y="1246" text-anchor="end">StepFun: Step 3.7 Flash</text>
+<rect data-model="stepfun/step-3.7-flash" data-row="20" x="360.00" y="1228" width="89.19" height="26" fill="#22c55e"/>
+<rect data-model="stepfun/step-3.7-flash" data-row="20" x="449.19" y="1228" width="166.82" height="26" fill="#3b82f6"/>
+<rect data-model="stepfun/step-3.7-flash" data-row="20" x="616.01" y="1228" width="55.39" height="26" fill="#8b5cf6"/>
+<rect data-model="stepfun/step-3.7-flash" data-row="20" x="671.39" y="1228" width="31.30" height="26" fill="#06b6d4"/>
+<rect data-model="stepfun/step-3.7-flash" data-row="20" x="702.69" y="1228" width="57.96" height="26" fill="#f59e0b"/>
+<rect data-model="stepfun/step-3.7-flash" data-row="20" x="760.64" y="1228" width="38.38" height="26" fill="#ef4444"/>
+<rect data-model="stepfun/step-3.7-flash" data-row="20" x="799.03" y="1228" width="32.92" height="26" fill="#64748b"/>
+<text class="value" data-model="stepfun/step-3.7-flash" data-row="20" x="840.9" y="1247">59.7</text>
+<text class="label" data-model="gemma-4-e4b-it" data-row="21" x="344" y="1301" text-anchor="end">Gemma E4B</text>
+<rect data-model="gemma-4-e4b-it" data-row="21" x="360.00" y="1283" width="80.67" height="26" fill="#22c55e"/>
+<rect data-model="gemma-4-e4b-it" data-row="21" x="440.67" y="1283" width="127.51" height="26" fill="#3b82f6"/>
+<rect data-model="gemma-4-e4b-it" data-row="21" x="568.18" y="1283" width="55.39" height="26" fill="#8b5cf6"/>
+<rect data-model="gemma-4-e4b-it" data-row="21" x="623.57" y="1283" width="54.19" height="26" fill="#06b6d4"/>
+<rect data-model="gemma-4-e4b-it" data-row="21" x="677.76" y="1283" width="72.52" height="26" fill="#f59e0b"/>
+<rect data-model="gemma-4-e4b-it" data-row="21" x="750.29" y="1283" width="38.38" height="26" fill="#ef4444"/>
+<rect data-model="gemma-4-e4b-it" data-row="21" x="788.67" y="1283" width="35.74" height="26" fill="#64748b"/>
+<text class="value" data-model="gemma-4-e4b-it" data-row="21" x="833.4" y="1302">58.8</text>
+<text class="label" data-model="nvidia/nemotron-3-ultra-550b-a55b" data-row="22" x="344" y="1356" text-anchor="end">NVIDIA: Nemotron 3 Ultra</text>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" data-row="22" x="360.00" y="1338" width="104.72" height="26" fill="#22c55e"/>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" data-row="22" x="464.72" y="1338" width="167.78" height="26" fill="#3b82f6"/>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" data-row="22" x="632.50" y="1338" width="32.84" height="26" fill="#8b5cf6"/>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" data-row="22" x="665.34" y="1338" width="40.84" height="26" fill="#06b6d4"/>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" data-row="22" x="706.18" y="1338" width="51.48" height="26" fill="#f59e0b"/>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" data-row="22" x="757.66" y="1338" width="38.38" height="26" fill="#ef4444"/>
+<rect data-model="nvidia/nemotron-3-ultra-550b-a55b" data-row="22" x="796.04" y="1338" width="27.27" height="26" fill="#64748b"/>
+<text class="value" data-model="nvidia/nemotron-3-ultra-550b-a55b" data-row="22" x="832.3" y="1357">58.6</text>
+<text class="label" data-model="google/gemini-3.5-flash-lite" data-row="23" x="344" y="1411" text-anchor="end">Google: Gemini 3.5 Flash…</text>
+<rect data-model="google/gemini-3.5-flash-lite" data-row="23" x="360.00" y="1393" width="113.24" height="26" fill="#22c55e"/>
+<rect data-model="google/gemini-3.5-flash-lite" data-row="23" x="473.24" y="1393" width="136.62" height="26" fill="#3b82f6"/>
+<rect data-model="google/gemini-3.5-flash-lite" data-row="23" x="609.86" y="1393" width="48.30" height="26" fill="#8b5cf6"/>
+<rect data-model="google/gemini-3.5-flash-lite" data-row="23" x="658.16" y="1393" width="31.30" height="26" fill="#06b6d4"/>
+<rect data-model="google/gemini-3.5-flash-lite" data-row="23" x="689.46" y="1393" width="49.86" height="26" fill="#f59e0b"/>
+<rect data-model="google/gemini-3.5-flash-lite" data-row="23" x="739.32" y="1393" width="36.37" height="26" fill="#ef4444"/>
+<rect data-model="google/gemini-3.5-flash-lite" data-row="23" x="775.68" y="1393" width="37.62" height="26" fill="#64748b"/>
+<text class="value" data-model="google/gemini-3.5-flash-lite" data-row="23" x="822.3" y="1412">57.4</text>
+<text class="label" data-model="google/gemini-3.6-flash" data-row="24" x="344" y="1466" text-anchor="end">Google: Gemini 3.6 Flash</text>
+<rect data-model="google/gemini-3.6-flash" data-row="24" x="360.00" y="1448" width="70.65" height="26" fill="#22c55e"/>
+<rect data-model="google/gemini-3.6-flash" data-row="24" x="430.65" y="1448" width="170.18" height="26" fill="#3b82f6"/>
+<rect data-model="google/gemini-3.6-flash" data-row="24" x="600.83" y="1448" width="52.17" height="26" fill="#8b5cf6"/>
+<rect data-model="google/gemini-3.6-flash" data-row="24" x="652.99" y="1448" width="31.30" height="26" fill="#06b6d4"/>
+<rect data-model="google/gemini-3.6-flash" data-row="24" x="684.29" y="1448" width="54.72" height="26" fill="#f59e0b"/>
+<rect data-model="google/gemini-3.6-flash" data-row="24" x="739.00" y="1448" width="36.37" height="26" fill="#ef4444"/>
+<rect data-model="google/gemini-3.6-flash" data-row="24" x="775.37" y="1448" width="29.15" height="26" fill="#64748b"/>
+<text class="value" data-model="google/gemini-3.6-flash" data-row="24" x="813.5" y="1467">56.3</text>
+<text class="label" data-model="openai/gpt-4.1" data-row="25" x="344" y="1521" text-anchor="end">OpenAI: GPT-4.1</text>
+<rect data-model="openai/gpt-4.1" data-row="25" x="360.00" y="1503" width="67.14" height="26" fill="#22c55e"/>
+<rect data-model="openai/gpt-4.1" data-row="25" x="427.14" y="1503" width="133.74" height="26" fill="#3b82f6"/>
+<rect data-model="openai/gpt-4.1" data-row="25" x="560.89" y="1503" width="32.84" height="26" fill="#8b5cf6"/>
+<rect data-model="openai/gpt-4.1" data-row="25" x="593.73" y="1503" width="40.84" height="26" fill="#06b6d4"/>
+<rect data-model="openai/gpt-4.1" data-row="25" x="634.57" y="1503" width="74.14" height="26" fill="#f59e0b"/>
+<rect data-model="openai/gpt-4.1" data-row="25" x="708.71" y="1503" width="36.70" height="26" fill="#ef4444"/>
+<rect data-model="openai/gpt-4.1" data-row="25" x="745.41" y="1503" width="33.86" height="26" fill="#64748b"/>
+<text class="value" data-model="openai/gpt-4.1" data-row="25" x="788.3" y="1522">53.1</text>
+<text class="label" data-model="deepseek/deepseek-v3.2" data-row="26" x="344" y="1576" text-anchor="end">DeepSeek: DeepSeek V3.2</text>
+<rect data-model="deepseek/deepseek-v3.2" data-row="26" x="360.00" y="1558" width="85.68" height="26" fill="#22c55e"/>
+<rect data-model="deepseek/deepseek-v3.2" data-row="26" x="445.68" y="1558" width="161.55" height="26" fill="#3b82f6"/>
+<rect data-model="deepseek/deepseek-v3.2" data-row="26" x="607.23" y="1558" width="22.54" height="26" fill="#8b5cf6"/>
+<rect data-model="deepseek/deepseek-v3.2" data-row="26" x="629.77" y="1558" width="50.38" height="26" fill="#06b6d4"/>
+<rect data-model="deepseek/deepseek-v3.2" data-row="26" x="680.15" y="1558" width="36.91" height="26" fill="#f59e0b"/>
+<rect data-model="deepseek/deepseek-v3.2" data-row="26" x="717.05" y="1558" width="39.50" height="26" fill="#ef4444"/>
+<rect data-model="deepseek/deepseek-v3.2" data-row="26" x="756.55" y="1558" width="22.57" height="26" fill="#64748b"/>
+<text class="value" data-model="deepseek/deepseek-v3.2" data-row="26" x="788.1" y="1577">53.1</text>
+<text class="label" data-model="gemma-4-12b-obliterated" data-row="27" x="344" y="1631" text-anchor="end">Gemma 12B</text>
+<rect data-model="gemma-4-12b-obliterated" data-row="27" x="360.00" y="1613" width="43.59" height="26" fill="#22c55e"/>
+<rect data-model="gemma-4-12b-obliterated" data-row="27" x="403.59" y="1613" width="134.70" height="26" fill="#3b82f6"/>
+<rect data-model="gemma-4-12b-obliterated" data-row="27" x="538.29" y="1613" width="42.51" height="26" fill="#8b5cf6"/>
+<rect data-model="gemma-4-12b-obliterated" data-row="27" x="580.80" y="1613" width="31.30" height="26" fill="#06b6d4"/>
+<rect data-model="gemma-4-12b-obliterated" data-row="27" x="612.10" y="1613" width="46.62" height="26" fill="#f59e0b"/>
+<rect data-model="gemma-4-12b-obliterated" data-row="27" x="658.72" y="1613" width="38.38" height="26" fill="#ef4444"/>
+<rect data-model="gemma-4-12b-obliterated" data-row="27" x="697.10" y="1613" width="34.80" height="26" fill="#64748b"/>
+<text class="value" data-model="gemma-4-12b-obliterated" data-row="27" x="740.9" y="1632">47.1</text>
+<text class="label" data-model="cydonia-24b-v4.3" data-row="28" x="344" y="1686" text-anchor="end">Cydonia 24B</text>
+<rect data-model="cydonia-24b-v4.3" data-row="28" x="360.00" y="1668" width="40.08" height="26" fill="#22c55e"/>
+<rect data-model="cydonia-24b-v4.3" data-row="28" x="400.08" y="1668" width="21.57" height="26" fill="#3b82f6"/>
+<rect data-model="cydonia-24b-v4.3" data-row="28" x="421.65" y="1668" width="32.84" height="26" fill="#8b5cf6"/>
+<rect data-model="cydonia-24b-v4.3" data-row="28" x="454.50" y="1668" width="31.30" height="26" fill="#06b6d4"/>
+<rect data-model="cydonia-24b-v4.3" data-row="28" x="485.79" y="1668" width="66.05" height="26" fill="#f59e0b"/>
+<rect data-model="cydonia-24b-v4.3" data-row="28" x="551.84" y="1668" width="36.70" height="26" fill="#ef4444"/>
+<rect data-model="cydonia-24b-v4.3" data-row="28" x="588.55" y="1668" width="39.50" height="26" fill="#64748b"/>
+<text class="value" data-model="cydonia-24b-v4.3" data-row="28" x="637.0" y="1687">33.9</text>
+<text class="label" data-model="dolphin-mistral-24b-venice" data-row="29" x="344" y="1741" text-anchor="end">Dolphin Mistral 24B</text>
+<rect data-model="dolphin-mistral-24b-venice" data-row="29" x="360.00" y="1723" width="32.57" height="26" fill="#22c55e"/>
+<rect data-model="dolphin-mistral-24b-venice" data-row="29" x="392.57" y="1723" width="21.57" height="26" fill="#3b82f6"/>
+<rect data-model="dolphin-mistral-24b-venice" data-row="29" x="414.14" y="1723" width="23.18" height="26" fill="#8b5cf6"/>
+<rect data-model="dolphin-mistral-24b-venice" data-row="29" x="437.32" y="1723" width="31.30" height="26" fill="#06b6d4"/>
+<rect data-model="dolphin-mistral-24b-venice" data-row="29" x="468.62" y="1723" width="69.29" height="26" fill="#f59e0b"/>
+<rect data-model="dolphin-mistral-24b-venice" data-row="29" x="537.91" y="1723" width="36.70" height="26" fill="#ef4444"/>
+<rect data-model="dolphin-mistral-24b-venice" data-row="29" x="574.61" y="1723" width="39.50" height="26" fill="#64748b"/>
+<text class="value" data-model="dolphin-mistral-24b-venice" data-row="29" x="623.1" y="1742">32.2</text>
+<text class="label" data-model="google/gemma-3-12b-it" data-row="30" x="344" y="1796" text-anchor="end">Google: Gemma 3 12B</text>
+<rect data-model="google/gemma-3-12b-it" data-row="30" x="360.00" y="1778" width="22.55" height="26" fill="#22c55e"/>
+<rect data-model="google/gemma-3-12b-it" data-row="30" x="382.55" y="1778" width="21.57" height="26" fill="#3b82f6"/>
+<rect data-model="google/gemma-3-12b-it" data-row="30" x="404.12" y="1778" width="23.18" height="26" fill="#8b5cf6"/>
+<rect data-model="google/gemma-3-12b-it" data-row="30" x="427.30" y="1778" width="31.30" height="26" fill="#06b6d4"/>
+<rect data-model="google/gemma-3-12b-it" data-row="30" x="458.60" y="1778" width="79.00" height="26" fill="#f59e0b"/>
+<rect data-model="google/gemma-3-12b-it" data-row="30" x="537.60" y="1778" width="34.69" height="26" fill="#ef4444"/>
+<rect data-model="google/gemma-3-12b-it" data-row="30" x="572.29" y="1778" width="39.50" height="26" fill="#64748b"/>
+<text class="value" data-model="google/gemma-3-12b-it" data-row="30" x="620.8" y="1797">31.9</text>
+<text class="label" data-model="openai/gpt-5.6-sol" data-row="31" x="344" y="1851" text-anchor="end">OpenAI: GPT-5.6 Sol</text>
+<rect data-model="openai/gpt-5.6-sol" data-row="31" x="360.00" y="1833" width="36.08" height="26" fill="#22c55e"/>
+<rect data-model="openai/gpt-5.6-sol" data-row="31" x="396.08" y="1833" width="28.28" height="26" fill="#3b82f6"/>
+<rect data-model="openai/gpt-5.6-sol" data-row="31" x="424.36" y="1833" width="41.86" height="26" fill="#8b5cf6"/>
+<rect data-model="openai/gpt-5.6-sol" data-row="31" x="466.22" y="1833" width="0.00" height="26" fill="#06b6d4"/>
+<rect data-model="openai/gpt-5.6-sol" data-row="31" x="466.22" y="1833" width="9.71" height="26" fill="#f59e0b"/>
+<rect data-model="openai/gpt-5.6-sol" data-row="31" x="475.93" y="1833" width="4.92" height="26" fill="#ef4444"/>
+<rect data-model="openai/gpt-5.6-sol" data-row="31" x="480.86" y="1833" width="3.76" height="26" fill="#64748b"/>
+<text class="value" data-model="openai/gpt-5.6-sol" data-row="31" x="493.6" y="1852">15.8</text>
 </svg>
