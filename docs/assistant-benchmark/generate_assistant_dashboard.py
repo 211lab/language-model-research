@@ -40,24 +40,37 @@ PLOT_NAMES = {
     "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl": "Unsloth Qwen 27B",
     "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s": "Unsloth Qwen 35B A3B",
 }
-PROVIDERS = (
-    ("Google", ("gemma-4-12b-obliterated", "gemma-4-e4b-it")),
-    ("Qwen fine-tunes", ("qwen3.6-27b-heretic-neo-code", "qwen3.6-35b-hauhaucs-aggressive")),
-    ("Unsloth", ("unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl", "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s")),
-    ("Community publishers", ("cydonia-24b-v4.3", "dolphin-mistral-24b-venice", "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m")),
-)
+LOCAL_PROVIDERS = {
+    "gemma-4-12b-obliterated": "Google local",
+    "gemma-4-e4b-it": "Google local",
+    "qwen3.6-27b-heretic-neo-code": "Qwen fine-tunes",
+    "qwen3.6-35b-hauhaucs-aggressive": "Qwen fine-tunes",
+    "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-ud-q4-k-xl": "Unsloth",
+    "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl": "Unsloth",
+    "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s": "Unsloth",
+    "cydonia-24b-v4.3": "Community local",
+    "dolphin-mistral-24b-venice": "Community local",
+    "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m": "Community local",
+}
 
 
 def load_dataset(root: Path) -> dict[str, Any]:
     rows: list[dict[str, Any]] = []
-    with (root / "model-results.csv").open(encoding="utf-8", newline="") as handle:
-        for raw in csv.DictReader(handle):
+    source_files = [root / "model-results.csv"]
+    cross_run = root / "openrouter-model-results.csv"
+    if cross_run.exists():
+        source_files.append(cross_run)
+    for source_file in source_files:
+        with source_file.open(encoding="utf-8", newline="") as handle:
+          for raw in csv.DictReader(handle):
             row: dict[str, Any] = dict(raw)
             for key in NUMERIC_FIELDS:
-                row[key] = float(row[key])
+                row[key] = float(row.get(key) or 0)
             for key in INTEGER_FIELDS:
-                row[key] = int(row[key])
-            row["tool_call_detected"] = row["tool_call_detected"].lower() == "true"
+                row[key] = int(float(row.get(key) or 0))
+            row["tool_call_detected"] = str(row.get("tool_call_detected", "false")).lower() == "true"
+            row["provider"] = row.get("provider") or LOCAL_PROVIDERS.get(row["model"], "Local models")
+            row["benchmark_track"] = row.get("benchmark_track") or "local"
             rows.append(row)
     rows.sort(key=lambda item: item["assistant_score"], reverse=True)
     return {
@@ -71,6 +84,10 @@ def load_dataset(root: Path) -> dict[str, Any]:
         "max_tokens_per_turn": 768,
         "task_count_per_model": 21,
         "model_count": len(rows),
+        "cohort_counts": {
+            "local": sum(row["benchmark_track"] == "local" for row in rows),
+            "openrouter": sum(row["benchmark_track"] == "openrouter" for row in rows),
+        },
         "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
         "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
         "dimensions": [{"id": key, "label": label, "weight_percent": weight} for key, label, weight, _ in DIMENSIONS],
@@ -214,6 +231,9 @@ def dashboard_html(
         for model in data["models"]
     )
     by_id = {model["model"]: model for model in data["models"]}
+    provider_models: dict[str, list[str]] = {}
+    for model in data["models"]:
+        provider_models.setdefault(model["provider"], []).append(model["model"])
     groups = "".join(
         '<section class="provider-group"><label class="provider-toggle"><input type="checkbox" data-provider="{name}" checked> {name}</label>{items}</section>'.format(
             name=esc(name),
@@ -222,12 +242,12 @@ def dashboard_html(
                 for model_id in model_ids
             ),
         )
-        for name, model_ids in PROVIDERS
+        for name, model_ids in provider_models.items()
     )
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Personal-assistant model benchmark</title><style>
 body{{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}}main{{max-width:1280px;margin:auto;padding:28px}}a{{color:#7dd3fc}}h1{{margin-bottom:6px}}h2{{margin-top:38px}}.muted{{color:#a5b4c7;max-width:900px}}.chart{{overflow-x:auto;margin:14px 0}}.chart svg{{display:block;width:100%;height:auto;min-width:820px}}table{{width:100%;border-collapse:collapse}}th,td{{padding:10px;border-bottom:1px solid #263349;text-align:right}}th:first-child,td:first-child{{text-align:left}}th{{color:#a5b4c7}}code{{font-size:.85em}}.site-nav{{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}}.site-brand{{color:#f8fafc;text-decoration:none;font-weight:750}}.menu-button{{margin-left:auto;border:1px solid #38506f;background:#111a2d;color:#e5e7eb;border-radius:8px;padding:8px 11px;font:inherit;cursor:pointer}}.menu-links{{display:flex;gap:14px;align-items:center}}.menu-links a{{text-decoration:none}}.model-selector{{margin:24px 0;padding:14px 16px;border:1px solid #263349;border-radius:12px;background:#0d1424}}.model-selector summary{{cursor:pointer;font-weight:700}}.model-selector[open] summary{{margin-bottom:14px}}.selection-actions{{display:flex;gap:10px;margin:0 0 14px}}.selection-actions button{{border:1px solid #38506f;background:#18243a;color:#e5e7eb;border-radius:7px;padding:6px 10px;cursor:pointer}}.provider-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}}.provider-group{{border-left:2px solid #38bdf8;padding-left:10px;display:grid;gap:7px}}.provider-group label{{cursor:pointer}}.provider-toggle{{font-weight:700}}@media(max-width:680px){{main{{padding:18px}}.site-nav{{position:relative}}.menu-links{{display:none;position:absolute;right:0;top:42px;z-index:10;min-width:230px;flex-direction:column;align-items:stretch;padding:12px;border:1px solid #263349;border-radius:10px;background:#111a2d;box-shadow:0 12px 28px #0008}}.menu-links.is-open{{display:flex}}.menu-links a{{padding:7px}}}}@media(min-width:681px){{.menu-button{{display:none}}}}
 </style></head><body><main><nav class="site-nav" aria-label="Primary"><a class="site-brand" href="{home_href}">Language model research</a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu">Menu ☰</button><div class="menu-links" id="site-menu"><a href="{home_href}">Editorial research</a><a href="{editorial_href}">Model comparison</a><a href="{methodology_href}">Methodology</a></div></nav><h1>Personal-assistant model benchmark</h1><p class="muted">Nine local GGUF models, 21 synthetic information-worker tasks each, temperature 0 and seed 42. Intelligence and timing remain separate measurements. A <code>partial</code> run hit a tool-turn ceiling or API error; all scheduled tasks remain represented.</p>
-<details class="model-selector"><summary>Choose models by provider</summary><div class="selection-actions"><button type="button" data-selection="all">Select all</button><button type="button" data-selection="none">Clear all</button></div><div class="provider-grid">{groups}</div></details>
+<details class="model-selector"><summary>Choose models by provider</summary><div class="selection-actions"><button type="button" data-selection="all">Select all</button><button type="button" data-selection="none">Clear all</button></div><div class="provider-grid">{groups}</div></details><p class="muted">The local cohort and the OpenRouter cohort use the same assistant task suite. Their scores are comparable on task quality; latency is only reported where the companion measurement exists.</p>
 <h2>Weighted assistant intelligence</h2><div class="chart">{charts["score"]}</div>
 <h2>Speed–quality decision view</h2><div class="chart">{charts["tradeoff"]}</div>
 <h2>Cold-load and agent latency</h2><div class="chart">{charts["latency"]}</div>
