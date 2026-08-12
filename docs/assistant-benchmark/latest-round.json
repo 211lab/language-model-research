@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-12T10:11:41.451188+00:00",
+  "cohort": "local",
+  "seed": 42,
+  "model_count": 9,
+  "task_count_per_model": 21,
+  "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+  "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+  "steadyburn_seed_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+  "assistant_protocol": "unload; wait; warm one model; run every selected task with fresh fixture and conversation; unload; repeat",
+  "latency_protocol": "all resident models unloaded through llama-swap before each model",
+  "primer": "One fixed READY primer request is sent after each model switch before the assistant workload."
+}
