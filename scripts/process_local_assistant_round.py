@@ -18,6 +18,10 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CSV = REPO_ROOT / "docs" / "assistant-benchmark" / "model-results.csv"
 DEFAULT_MANIFEST = REPO_ROOT / "docs" / "assistant-benchmark" / "latest-round.json"
 WORKSPACE_ROOT = REPO_ROOT.parent
+STEADYBURN_SEED = (
+    REPO_ROOT / "docs" / "model-comparisons" / "google-gemini-3-5-flash-lite"
+    / "2026-08-07-master-your-tasks-prioritization-and-time-management" / "SEED.md"
+)
 FIELDS = [
     "model", "display_name", "run_status", "assistant_score", "outcome", "tool_use",
     "grounding", "state", "english", "safety", "efficiency", "tasks_passed",
@@ -43,6 +47,11 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def normalized_text_sha256(path: Path) -> str:
+    """Match the latency runner's canonicalized text hash."""
+    return hashlib.sha256(path.read_text(encoding="utf-8").strip().encode("utf-8")).hexdigest()
+
+
 def build_rows(assistant: dict[str, Any], latency: dict[str, Any], seed: int) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     assistant_meta = assistant["metadata"]
     latency_meta = latency["metadata"]
@@ -57,6 +66,12 @@ def build_rows(assistant: dict[str, Any], latency: dict[str, Any], seed: int) ->
         "task-suite hash", assistant_meta.get("tasks_sha256"),
         sha256(WORKSPACE_ROOT / "assistant_benchmark_fixtures" / "tasks.json"),
     )
+    # The assistant runner records the file-byte hash, whereas the latency runner
+    # records its newline-normalized prompt-content hash. Validate both against
+    # the same canonical SteadyBurn seed file rather than falsely comparing hash
+    # encodings that intentionally differ.
+    require_equal("assistant canonical SteadyBurn seed hash", assistant_meta.get("steadyburn_seed_sha256"), sha256(STEADYBURN_SEED))
+    require_equal("latency canonical SteadyBurn seed hash", latency_meta.get("steadyburn_seed_sha256"), normalized_text_sha256(STEADYBURN_SEED))
 
     assistant_models = assistant_meta.get("selected_models", [])
     latency_models = latency_meta.get("selected_models", [])
@@ -101,6 +116,7 @@ def build_rows(assistant: dict[str, Any], latency: dict[str, Any], seed: int) ->
         "task_count_per_model": len(assistant_meta["selected_tasks"]),
         "fixture_sha256": assistant_meta["fixture_sha256"],
         "tasks_sha256": assistant_meta["tasks_sha256"],
+        "steadyburn_seed_sha256": assistant_meta["steadyburn_seed_sha256"],
         "assistant_protocol": assistant_meta["protocol"],
         "latency_protocol": latency_meta["cold_start_control"],
         "primer": "One fixed READY primer request is sent after each model switch before the assistant workload.",
@@ -121,7 +137,7 @@ def main() -> int:
     rows, manifest = build_rows(load(args.assistant_results), load(args.latency_results), args.seed)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=FIELDS)
+        writer = csv.DictWriter(handle, fieldnames=FIELDS, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     args.manifest.parent.mkdir(parents=True, exist_ok=True)

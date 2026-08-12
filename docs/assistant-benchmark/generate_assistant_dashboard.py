@@ -160,11 +160,14 @@ def tradeoff_svg(data: dict[str, Any]) -> str:
         if model["median_task_seconds"] <= 0:
             continue
         xx, yy = x(model["median_task_seconds"]), y(model["assistant_score"])
-        dx, dy = offsets[model["model"]]
+        # Keep charts publishable when a newly discovered local model joins a
+        # round. Known points have hand-tuned offsets; unknown ones get a
+        # readable, deterministic default.
+        dx, dy = offsets.get(model["model"], (10, -12))
         anchor = "end" if dx < 0 else "start"
         attr = model_attr(model)
         body += [f'<circle{attr} cx="{xx:.1f}" cy="{yy:.1f}" r="7" fill="#38bdf8"><title>{esc(model["display_name"])}: {model["assistant_score"]:.2f}, {model["median_task_seconds"]:.2f}s median</title></circle>', f'<text class="label"{attr} x="{xx+dx:.1f}" y="{yy+dy:.1f}" text-anchor="{anchor}">{esc(plot_name(model))}</text>']
-    body.append(f'<text class="sub" x="{left}" y="{height-4}">Qwythos is omitted: 12 HTTP 502 errors make its recorded median task time invalid.</text>')
+    body.append(f'<text class="sub" x="{left}" y="{height-4}">Each point uses the recorded median task duration from the same fixed-seed local round.</text>')
     return svg_shell("Assistant quality versus task speed", "Upper-left is better: higher intelligence with lower median task time.", width, height, body)
 
 
