@@ -52,7 +52,7 @@
   <text class="legend" x="776" y="400">GPT 5.6 Sol — $1.158257</text>
   <polygon points="430.0,173.8 550.5,202.5 627.6,299.8 667.0,424.1 581.8,521.6 483.7,572.8 363.3,617.2 278.9,520.9 190.5,424.4 203.6,286.6 304.8,195.3" fill="#22c55e" fill-opacity="0.16" stroke="#22c55e" stroke-width="2.5"/>
   <circle cx="760" cy="437" r="6" fill="#22c55e"/>
-  <text class="legend" x="776" y="442">Local model (Qwen3.6 35B Hauhaucs Aggressive) — $0.000000 local baseline</text>
+  <text class="legend" x="776" y="442">Qwen3.6 35B Hauhaucs Aggressive (Local) — $0.000000 local baseline</text>
   <polygon points="430.0,135.0 565.4,179.4 647.7,290.6 682.4,426.3 622.7,557.0 473.2,537.0 364.9,611.8 247.1,548.4 181.6,425.7 198.0,284.1 295.3,180.3" fill="#e879f9" fill-opacity="0.16" stroke="#e879f9" stroke-width="2.5"/>
   <circle cx="760" cy="479" r="6" fill="#e879f9"/>
   <text class="legend" x="776" y="484">Nemotron 3 Ultra 550B A55B — $0.129313</text>
@@ -67,7 +67,7 @@
   <text class="legend" x="776" y="610">Claude Opus 5 — $1.312679</text>
   <polygon points="430.0,188.0 525.1,242.1 569.4,326.4 661.7,423.3 590.0,528.7 492.3,602.1 368.7,598.9 278.9,520.9 232.1,418.4 235.6,301.2 323.0,223.4" fill="#2dd4bf" fill-opacity="0.16" stroke="#2dd4bf" stroke-width="2.5"/>
   <circle cx="760" cy="647" r="6" fill="#2dd4bf"/>
-  <text class="legend" x="776" y="652">Local model (Gemma 4 E4B) — $0.000000 local baseline</text>
+  <text class="legend" x="776" y="652">Gemma 4 E4B (Local) — $0.000000 local baseline</text>
   <polygon points="430.0,139.9 564.0,181.4 640.6,293.8 671.9,424.8 616.6,551.7 492.3,602.1 363.3,617.2 256.5,540.4 278.4,411.8 213.4,291.1 307.2,198.9" fill="#c084fc" fill-opacity="0.16" stroke="#c084fc" stroke-width="2.5"/>
   <circle cx="760" cy="689" r="6" fill="#c084fc"/>
   <text class="legend" x="776" y="694">Step 3.7 Flash — $0.145134</text>
@@ -85,7 +85,7 @@
   <text class="legend" x="776" y="862">Grok 4.3 — $0.078433</text>
   <polygon points="430.0,157.7 559.6,188.3 650.9,289.1 649.1,421.5 575.3,515.9 496.2,615.3 361.8,622.1 268.5,530.0 190.5,424.4 213.4,291.1 307.2,198.9" fill="#facc15" fill-opacity="0.16" stroke="#facc15" stroke-width="2.5"/>
   <circle cx="760" cy="899" r="6" fill="#facc15"/>
-  <text class="legend" x="776" y="904">Local model (Qwen3.6 27B Heretic Neo Code) — $0.000000 local baseline</text>
+  <text class="legend" x="776" y="904">Qwen3.6 27B Heretic Neo Code (Local) — $0.000000 local baseline</text>
   <polygon points="430.0,213.3 554.5,196.3 653.9,287.8 641.6,420.4 592.4,530.7 500.6,630.4 363.3,617.2 237.3,557.0 243.7,416.8 255.9,310.5 309.8,202.9" fill="#fb7185" fill-opacity="0.16" stroke="#fb7185" stroke-width="2.5"/>
   <circle cx="760" cy="941" r="6" fill="#fb7185"/>
   <text class="legend" x="776" y="946">Deepseek V3.2 — $0.022567</text>
@@ -106,28 +106,28 @@
   <text class="legend" x="776" y="1156">Qwen3.8 Max — $0.314284</text>
   <polygon points="430.0,170.8 558.0,190.8 632.3,297.6 637.4,419.8 567.6,509.2 487.1,584.5 363.3,617.2 285.4,515.3 207.5,422.0 248.2,307.0 332.7,238.6" fill="#2dd4bf" fill-opacity="0.16" stroke="#2dd4bf" stroke-width="2.5"/>
   <circle cx="760" cy="1193" r="6" fill="#2dd4bf"/>
-  <text class="legend" x="776" y="1198">Local model (Cydonia 24B V4.3) — $0.000000 local baseline</text>
+  <text class="legend" x="776" y="1198">Cydonia 24B V4.3 (Local) — $0.000000 local baseline</text>
   <polygon points="430.0,167.9 552.6,199.3 616.6,304.8 645.5,421.0 563.1,505.3 497.8,620.8 361.8,622.1 285.4,515.3 190.5,424.4 209.9,289.5 315.6,212.0" fill="#c084fc" fill-opacity="0.16" stroke="#c084fc" stroke-width="2.5"/>
   <circle cx="760" cy="1235" r="6" fill="#c084fc"/>
-  <text class="legend" x="776" y="1240">Local Qwen3.8 27B UD Q4_K_XL — $0.000000 local baseline</text>
+  <text class="legend" x="776" y="1240">Qwen3.8 27B UD Q4_K_XL (Local) — $0.000000 local baseline</text>
   <polygon points="430.0,160.1 556.3,193.4 602.6,311.2 658.8,422.9 552.4,496.0 492.3,602.1 361.8,622.1 273.4,525.7 195.6,423.7 209.9,289.5 312.5,207.2" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-width="2.5"/>
   <circle cx="760" cy="1277" r="6" fill="#38bdf8"/>
-  <text class="legend" x="776" y="1282">Local model (Unsloth Qwen3 6 27B Mtp Gguf Qwen3 6 27B Ud Q4 K Xl) — $0.000000 local baseline</text>
+  <text class="legend" x="776" y="1282">Unsloth Qwen3 6 27B Mtp Gguf Qwen3 6 27B Ud Q4 K Xl (Local) — $0.000000 local baseline</text>
   <polygon points="430.0,220.0 543.3,213.8 644.2,292.2 616.3,416.8 587.5,526.4 496.2,615.3 366.7,605.7 250.0,545.9 201.2,422.9 225.5,296.6 302.7,191.9" fill="#f97316" fill-opacity="0.16" stroke="#f97316" stroke-width="2.5"/>
   <circle cx="760" cy="1319" r="6" fill="#f97316"/>
   <text class="legend" x="776" y="1324">Gemma 4 26B A4B — $0.014510</text>
   <polygon points="430.0,184.1 550.5,202.5 616.6,304.8 632.8,419.2 545.8,490.3 489.9,594.0 361.8,622.1 302.3,500.7 195.6,423.7 213.4,291.1 332.7,238.6" fill="#a78bfa" fill-opacity="0.16" stroke="#a78bfa" stroke-width="2.5"/>
   <circle cx="760" cy="1361" r="6" fill="#a78bfa"/>
-  <text class="legend" x="776" y="1366">Local model (Unsloth Qwen3 6 35B A3B Mtp Gguf Qwen3 6 35B A3B Ud Q4 K S) — $0.000000 local baseline</text>
+  <text class="legend" x="776" y="1366">Unsloth Qwen3 6 35B A3B Mtp Gguf Qwen3 6 35B A3B Ud Q4 K S (Local) — $0.000000 local baseline</text>
   <polygon points="430.0,236.8 512.8,261.1 656.7,286.5 601.7,414.7 584.7,524.1 494.3,609.1 377.0,570.6 250.0,545.9 243.7,416.8 265.1,314.7 339.1,248.5" fill="#34d399" fill-opacity="0.16" stroke="#34d399" stroke-width="2.5"/>
   <circle cx="760" cy="1403" r="6" fill="#34d399"/>
   <text class="legend" x="776" y="1408">Gemma 3 12B — $0.027780</text>
   <polygon points="430.0,196.8 519.6,250.6 583.0,320.1 581.6,411.8 571.6,512.7 479.3,557.9 381.1,556.4 293.0,508.7 214.5,421.0 230.3,298.8 332.7,238.6" fill="#facc15" fill-opacity="0.16" stroke="#facc15" stroke-width="2.5"/>
   <circle cx="760" cy="1445" r="6" fill="#facc15"/>
-  <text class="legend" x="776" y="1450">Local model (Gemma 4 12B Obliterated) — $0.000000 local baseline</text>
+  <text class="legend" x="776" y="1450">Gemma 4 12B Obliterated (Local) — $0.000000 local baseline</text>
   <polygon points="430.0,227.8 533.7,228.6 593.8,315.2 592.6,413.4 558.1,501.0 487.1,584.5 373.7,581.8 314.2,490.3 222.6,419.8 290.6,326.4 347.2,261.1" fill="#fb7185" fill-opacity="0.16" stroke="#fb7185" stroke-width="2.5"/>
   <circle cx="760" cy="1487" r="6" fill="#fb7185"/>
-  <text class="legend" x="776" y="1492">Local model (Dolphin Mistral 24B Venice) — $0.000000 local baseline</text>
+  <text class="legend" x="776" y="1492">Dolphin Mistral 24B Venice (Local) — $0.000000 local baseline</text>
   <text class="note" x="48" y="708">Cost burden is relative: the local baseline is 0 and the most expensive recorded bundle is 100.</text>
   <text class="note" x="48" y="734">Source: CONTENT_SCORE.json and OPENROUTER_USAGE.jsonl in each case-study directory.</text>
 </svg>

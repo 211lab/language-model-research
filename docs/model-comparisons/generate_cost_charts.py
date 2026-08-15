@@ -54,11 +54,13 @@ def company_for(model: str) -> str:
     return "Other"
 
 
-def display_name(model: str) -> str:
+def display_name(model: str, *, local: bool = False) -> str:
     if model in DISPLAY_NAMES:
-        return DISPLAY_NAMES[model]
-    words = model.split("/", 1)[-1].replace("-it", "").replace("-", " ").split()
-    return " ".join(word.upper() if word in {"gpt", "v"} else word.capitalize() for word in words)
+        name = DISPLAY_NAMES[model]
+    else:
+        words = model.split("/", 1)[-1].replace("-it", "").replace("-", " ").split()
+        name = " ".join(word.upper() if word in {"gpt", "v"} else word.capitalize() for word in words)
+    return f"{name} (Local)" if local else name
 
 
 def model_from_comparison(path: Path) -> str:
@@ -120,7 +122,7 @@ def discover_runs(root: Path) -> list[Run]:
         runs.append(Run(
             model=model,
             company=company_for(model),
-            display_name=display_name(model),
+            display_name=display_name(model, local=True),
             case_study=study_root.relative_to(root).as_posix(),
             calls=0,
             total_cost=0.0,

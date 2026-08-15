@@ -30,16 +30,16 @@ NUMERIC_FIELDS = {
 }
 INTEGER_FIELDS = {"tasks_passed", "tasks_total"}
 PLOT_NAMES = {
-    "cydonia-24b-v4.3": "Cydonia 24B",
-    "dolphin-mistral-24b-venice": "Dolphin Mistral 24B",
-    "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m": "Qwythos 9B",
-    "gemma-4-12b-obliterated": "Gemma 12B",
-    "gemma-4-e4b-it": "Gemma E4B",
-    "qwen3.6-27b-heretic-neo-code": "Qwen 27B Heretic",
-    "qwen3.6-35b-hauhaucs-aggressive": "Qwen 35B HauhauCS",
-    "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl": "Unsloth Qwen 27B",
-    "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s": "Unsloth Qwen 35B A3B",
-    "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl": "Unsloth Qwen 3.8 27B",
+    "cydonia-24b-v4.3": "Cydonia 24B (Local)",
+    "dolphin-mistral-24b-venice": "Dolphin Mistral 24B (Local)",
+    "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m": "Qwythos 9B (Local)",
+    "gemma-4-12b-obliterated": "Gemma 12B (Local)",
+    "gemma-4-e4b-it": "Gemma E4B (Local)",
+    "qwen3.6-27b-heretic-neo-code": "Qwen 27B Heretic (Local)",
+    "qwen3.6-35b-hauhaucs-aggressive": "Qwen 35B HauhauCS (Local)",
+    "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl": "Unsloth Qwen 27B (Local)",
+    "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s": "Unsloth Qwen 35B A3B (Local)",
+    "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl": "Unsloth Qwen 3.8 27B (Local)",
 }
 LOCAL_PROVIDERS = {
     "gemma-4-12b-obliterated": "Google local",
@@ -54,6 +54,11 @@ LOCAL_PROVIDERS = {
     "dolphin-mistral-24b-venice": "Community local",
     "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m": "Community local",
 }
+
+
+def local_display_name(value: str) -> str:
+    """Label self-hosted results consistently without duplicating the suffix."""
+    return value if value.endswith(" (Local)") else f"{value} (Local)"
 
 
 def load_dataset(root: Path) -> dict[str, Any]:
@@ -73,6 +78,8 @@ def load_dataset(root: Path) -> dict[str, Any]:
             row["tool_call_detected"] = str(row.get("tool_call_detected", "false")).lower() == "true"
             row["provider"] = row.get("provider") or LOCAL_PROVIDERS.get(row["model"], "Local models")
             row["benchmark_track"] = row.get("benchmark_track") or "local"
+            if row["benchmark_track"] == "local":
+                row["display_name"] = local_display_name(row["display_name"])
             rows.append(row)
     rows.sort(key=lambda item: item["assistant_score"], reverse=True)
     return {

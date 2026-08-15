@@ -89,9 +89,9 @@ def company_for(model: str) -> str:
 
 def display_name(model: str, case_study: str | None = None, local: bool = False) -> str:
     if model == "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl":
-        return "Local Qwen3.8 27B UD Q4_K_XL"
+        return "Qwen3.8 27B UD Q4_K_XL (Local)"
     name = model.split("/", 1)[-1].replace("-it", "").replace("-", " ").title().replace("Gpt", "GPT")
-    return f"Local model ({name})" if local or (case_study and case_study.startswith("local-models/")) else name
+    return f"{name} (Local)" if local or (case_study and case_study.startswith("local-models/")) else name
 
 
 def paid_cost(usage_path: Path) -> float | None:

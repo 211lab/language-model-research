@@ -73,16 +73,16 @@
   <text class="label" x="90" y="1281">Claude Sonnet 5</text>
   <rect fill="#d1d5db" x="420" y="1260" width="375" height="27" rx="4"/>
   <text class="value" x="1130" y="1281">$0.454952</text>
-  <text class="label" x="90" y="1336">Cydonia 24b V4.3</text>
+  <text class="label" x="90" y="1336">Cydonia 24b V4.3 (Local)</text>
   <rect fill="#d1d5db" x="420" y="1315" width="4" height="27" rx="4"/>
   <text class="value" x="1130" y="1336">$0.000000 local baseline</text>
-  <text class="label" x="90" y="1391">Dolphin Mistral 24b Venice</text>
+  <text class="label" x="90" y="1391">Dolphin Mistral 24b Venice (Local)</text>
   <rect fill="#d1d5db" x="420" y="1370" width="4" height="27" rx="4"/>
   <text class="value" x="1130" y="1391">$0.000000 local baseline</text>
-  <text class="label" x="90" y="1446">Gemma 4 12b Obliterated</text>
+  <text class="label" x="90" y="1446">Gemma 4 12b Obliterated (Local)</text>
   <rect fill="#d1d5db" x="420" y="1425" width="4" height="27" rx="4"/>
   <text class="value" x="1130" y="1446">$0.000000 local baseline</text>
-  <text class="label" x="90" y="1501">Gemma 4 E4b</text>
+  <text class="label" x="90" y="1501">Gemma 4 E4b (Local)</text>
   <rect fill="#d1d5db" x="420" y="1480" width="4" height="27" rx="4"/>
   <text class="value" x="1130" y="1501">$0.000000 local baseline</text>
   <text class="label" x="90" y="1556">Grok 4.3</text>
@@ -97,10 +97,10 @@
   <text class="label" x="90" y="1721">Nemotron 3 Ultra 550b A55b</text>
   <rect fill="#d1d5db" x="420" y="1700" width="251" height="27" rx="4"/>
   <text class="value" x="1130" y="1721">$0.129313</text>
-  <text class="label" x="90" y="1776">Qwen3.6 27b Heretic Neo Code</text>
+  <text class="label" x="90" y="1776">Qwen3.6 27b Heretic Neo Code (Local)</text>
   <rect fill="#d1d5db" x="420" y="1755" width="4" height="27" rx="4"/>
   <text class="value" x="1130" y="1776">$0.000000 local baseline</text>
-  <text class="label" x="90" y="1831">Qwen3.6 35b Hauhaucs Aggressive</text>
+  <text class="label" x="90" y="1831">Qwen3.6 35b Hauhaucs Aggressive (Local)</text>
   <rect fill="#d1d5db" x="420" y="1810" width="4" height="27" rx="4"/>
   <text class="value" x="1130" y="1831">$0.000000 local baseline</text>
   <text class="label" x="90" y="1886">Qwen3.7 Plus</text>
@@ -112,13 +112,13 @@
   <text class="label" x="90" y="1996">Step 3.7 Flash</text>
   <rect fill="#d1d5db" x="420" y="1975" width="263" height="27" rx="4"/>
   <text class="value" x="1130" y="1996">$0.145134</text>
-  <text class="label" x="90" y="2051">Unsloth Qwen3 6 27b Mtp Gguf Qwen3 6 27b Ud Q4 K Xl</text>
+  <text class="label" x="90" y="2051">Unsloth Qwen3 6 27b Mtp Gguf Qwen3 6 27b Ud Q4 K Xl (Local)</text>
   <rect fill="#d1d5db" x="420" y="2030" width="4" height="27" rx="4"/>
   <text class="value" x="1130" y="2051">$0.000000 local baseline</text>
-  <text class="label" x="90" y="2106">Unsloth Qwen3 6 35b A3b Mtp Gguf Qwen3 6 35b A3b Ud Q4 K S</text>
+  <text class="label" x="90" y="2106">Unsloth Qwen3 6 35b A3b Mtp Gguf Qwen3 6 35b A3b Ud Q4 K S (Local)</text>
   <rect fill="#d1d5db" x="420" y="2085" width="4" height="27" rx="4"/>
   <text class="value" x="1130" y="2106">$0.000000 local baseline</text>
-  <text class="label" x="90" y="2161">Unsloth Qwen3 8 27b Gguf Qwen3 8 27b Ud Q4 K Xl</text>
+  <text class="label" x="90" y="2161">Unsloth Qwen3 8 27b Gguf Qwen3 8 27b Ud Q4 K Xl (Local)</text>
   <rect fill="#d1d5db" x="420" y="2140" width="4" height="27" rx="4"/>
   <text class="value" x="1130" y="2161">$0.000000 local baseline</text>
   <line class="grid" x1="60" y1="2030" x2="1140" y2="2030"/>
