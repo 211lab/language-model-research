@@ -1,6 +1,6 @@
 {
   "schema_version": "personal-assistant-benchmark-v1",
-  "generated_at": "2026-08-15T14:26:08.771614+00:00",
+  "generated_at": "2026-08-15T16:26:00.266091+00:00",
   "run_date": "2026-08-02",
   "runtime": "llama.cpp via llama-swap",
   "protocol": "unload; wait 10 seconds; warm one model; run 21 fresh-fixture tasks; unload; repeat",

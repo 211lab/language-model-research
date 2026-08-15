@@ -57,6 +57,23 @@ LOCAL_PROVIDERS = {
 }
 
 
+def write_text_lf(path: Path, content: str) -> None:
+    """Write generated research assets with LF endings on every host platform."""
+    with path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(content)
+
+
+def genericize_editorial_language(content: str) -> str:
+    """Keep the public research framing client-neutral without rewriting evidence."""
+    return (
+        content
+        .replace("This test measures SteadyBurn content.", "This test measures a client content bundle.")
+        .replace("one SteadyBurn weekly content bundle per model", "one client content bundle per model")
+        .replace("same SteadyBurn weekly-content job", "same client content-bundle job")
+        .replace("The rubric is versioned as SteadyBurn v1.", "The editorial rubric is versioned and fixed for this round.")
+    )
+
+
 def local_display_name(value: str) -> str:
     """Label self-hosted results consistently without duplicating the suffix."""
     return value if value.endswith(" (Local)") else f"{value} (Local)"
@@ -263,20 +280,28 @@ def dashboard_html(
     provider_models: dict[str, list[str]] = {}
     for model in data["models"]:
         provider_models.setdefault(model["provider"], []).append(model["model"])
+
+    def model_checked(model_id: str) -> str:
+        return " checked" if by_id[model_id].get("benchmark_track") == "local" else ""
+
+    def provider_checked(model_ids: list[str]) -> str:
+        return " checked" if model_ids and all(by_id[model_id].get("benchmark_track") == "local" for model_id in model_ids) else ""
+
     groups = "".join(
-        '<section class="provider-group"><label class="provider-toggle"><input type="checkbox" data-provider="{name}" checked> {name}</label>{items}</section>'.format(
+        '<section class="provider-group"><label class="provider-toggle"><input type="checkbox" data-provider="{name}"{provider_checked}> {name}</label>{items}</section>'.format(
             name=esc(name),
+            provider_checked=provider_checked(model_ids),
             items="".join(
-                f'<label><input type="checkbox" data-model-control="{esc(model_id)}" data-provider-name="{esc(name)}" checked> {esc(plot_name(by_id[model_id]))}</label>'
+                f'<label><input type="checkbox" data-model-control="{esc(model_id)}" data-provider-name="{esc(name)}" data-track="{esc(str(by_id[model_id].get("benchmark_track") or ""))}"{model_checked(model_id)}> {esc(plot_name(by_id[model_id]))}</label>'
                 for model_id in model_ids
             ),
         )
         for name, model_ids in provider_models.items()
     )
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Personal-assistant model benchmark</title><style>
-body{{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}}main{{max-width:1280px;margin:auto;padding:28px}}a{{color:#7dd3fc}}h1{{margin-bottom:6px}}h2{{margin-top:38px}}.muted{{color:#a5b4c7;max-width:900px}}.chart{{overflow-x:auto;margin:14px 0}}.chart svg{{display:block;width:100%;height:auto;min-width:820px}}table{{width:100%;border-collapse:collapse}}th,td{{padding:10px;border-bottom:1px solid #263349;text-align:right}}th:first-child,td:first-child{{text-align:left}}th{{color:#a5b4c7}}code{{font-size:.85em}}.site-nav{{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}}.site-brand{{color:#f8fafc;text-decoration:none;font-weight:750}}.menu-button{{margin-left:auto;border:1px solid #38506f;background:#111a2d;color:#e5e7eb;border-radius:8px;padding:8px 11px;font:inherit;cursor:pointer}}.menu-links{{display:flex;gap:14px;align-items:center}}.menu-links a{{text-decoration:none}}.model-selector{{margin:24px 0;padding:14px 16px;border:1px solid #263349;border-radius:12px;background:#0d1424}}.model-selector summary{{cursor:pointer;font-weight:700}}.model-selector[open] summary{{margin-bottom:14px}}.selection-actions{{display:flex;gap:10px;margin:0 0 14px}}.selection-actions button{{border:1px solid #38506f;background:#18243a;color:#e5e7eb;border-radius:7px;padding:6px 10px;cursor:pointer}}.provider-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}}.provider-group{{border-left:2px solid #38bdf8;padding-left:10px;display:grid;gap:7px}}.provider-group label{{cursor:pointer}}.provider-toggle{{font-weight:700}}@media(max-width:680px){{main{{padding:18px}}.site-nav{{position:relative}}.menu-links{{display:none;position:absolute;right:0;top:42px;z-index:10;min-width:230px;flex-direction:column;align-items:stretch;padding:12px;border:1px solid #263349;border-radius:10px;background:#111a2d;box-shadow:0 12px 28px #0008}}.menu-links.is-open{{display:flex}}.menu-links a{{padding:7px}}}}@media(min-width:681px){{.menu-button{{display:none}}}}
+body{{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}}main{{max-width:1280px;margin:auto;padding:28px}}a{{color:#7dd3fc}}h1{{margin-bottom:6px}}h2{{margin-top:38px}}.muted{{color:#a5b4c7;max-width:900px}}.chart{{overflow-x:auto;margin:14px 0}}.chart svg{{display:block;width:100%;height:auto;min-width:820px}}table{{width:100%;border-collapse:collapse}}th,td{{padding:10px;border-bottom:1px solid #263349;text-align:right}}th:first-child,td:first-child{{text-align:left}}th{{color:#a5b4c7}}code{{font-size:.85em}}.site-nav{{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}}.site-brand{{color:#f8fafc;text-decoration:none;font-weight:750}}.menu-button{{margin-left:auto;border:1px solid #38506f;background:#111a2d;color:#e5e7eb;border-radius:8px;padding:8px 11px;font:inherit;cursor:pointer}}.menu-links{{display:flex;gap:14px;align-items:center}}.menu-links a{{text-decoration:none}}.model-selector{{margin:24px 0;padding:18px;border:1px solid #263349;border-radius:12px;background:#0d1424}}.model-selector h2{{margin:0 0 5px}}.model-selector__copy{{margin:0 0 16px}}.selection-actions{{display:flex;gap:10px;margin:0 0 14px}}.selection-actions button{{border:1px solid #38506f;background:#18243a;color:#e5e7eb;border-radius:7px;padding:6px 10px;cursor:pointer}}.provider-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}}.provider-group{{border-left:2px solid #38bdf8;padding-left:10px;display:grid;gap:7px}}.provider-group label{{cursor:pointer}}.provider-toggle{{font-weight:700}}@media(max-width:680px){{main{{padding:18px}}.site-nav{{position:relative}}.menu-links{{display:none;position:absolute;right:0;top:42px;z-index:10;min-width:230px;flex-direction:column;align-items:stretch;padding:12px;border:1px solid #263349;border-radius:10px;background:#111a2d;box-shadow:0 12px 28px #0008}}.menu-links.is-open{{display:flex}}.menu-links a{{padding:7px}}}}@media(min-width:681px){{.menu-button{{display:none}}}}
 </style></head><body><main><nav class="site-nav" aria-label="Primary"><a class="site-brand" href="{home_href}">Language model research</a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu">Menu ☰</button><div class="menu-links" id="site-menu"><a href="{home_href}">Editorial research</a><a href="{editorial_href}">Model comparison</a><a href="{methodology_href}">Methodology</a></div></nav><h1>Personal-assistant model benchmark</h1><p class="muted">Nine local GGUF models, 21 synthetic information-worker tasks each, temperature 0 and seed 42. Intelligence and timing remain separate measurements. A <code>partial</code> run hit a tool-turn ceiling or API error; all scheduled tasks remain represented.</p>
-<details class="model-selector"><summary>Choose models by provider</summary><div class="selection-actions"><button type="button" data-selection="all">Select all</button><button type="button" data-selection="none">Clear all</button></div><div class="provider-grid">{groups}</div></details><p class="muted">The local cohort and the OpenRouter cohort use the same assistant task suite. Their scores are comparable on task quality; latency is only reported where the companion measurement exists.</p>
+<section class="model-selector" aria-labelledby="model-selector-title"><h2 id="model-selector-title">Models</h2><p class="muted model-selector__copy">Start by choosing the models. This single selection controls every assistant chart, table, and capability view below. Local models are selected by default.</p><div class="selection-actions"><button type="button" data-selection="all">Select all</button><button type="button" data-selection="none">Clear all</button></div><div class="provider-grid">{groups}</div></section><p class="muted">The local cohort and the OpenRouter cohort use the same assistant task suite. Their scores are comparable on task quality; latency is only reported where the companion measurement exists.</p>
 <h2>Weighted assistant intelligence</h2><div class="chart">{charts["score"]}</div>
 <h2>Speed–quality decision view</h2><div class="chart">{charts["tradeoff"]}</div>
 <h2>Cold-load and agent latency</h2><div class="chart">{charts["latency"]}</div>
@@ -347,7 +372,7 @@ def build(root: Path, repo_root: Path) -> dict[str, Any]:
     }
     for directory in (root, repo_root):
         for name, content in outputs.items():
-            (directory / name).write_text(content, encoding="utf-8")
+            write_text_lf(directory / name, content)
     cohort_text = f'{data["model_count"]} models across local and OpenRouter cohorts'
     root_dashboard = dashboard_html(data, charts, "", "../model-comparisons/model-comparison.html", "../../index.html", "../../methodology.html")
     repo_dashboard = dashboard_html(data, charts, "docs/assistant-benchmark/", "index.html", "index.html", "methodology.html")
@@ -355,10 +380,10 @@ def build(root: Path, repo_root: Path) -> dict[str, Any]:
     repo_dashboard = repo_dashboard.replace('href="docs/assistant-benchmark/model-results.csv"', 'href="docs/assistant-benchmark/assistant-model-results.csv"')
     root_dashboard = root_dashboard.replace("Nine local GGUF models", cohort_text)
     repo_dashboard = repo_dashboard.replace("Nine local GGUF models", cohort_text)
-    methodology = methodology_html(data).replace(f'{data["model_count"]} local GGUF models served through llama.cpp via llama-swap', cohort_text)
-    (root / "assistant-benchmark.html").write_text(root_dashboard, encoding="utf-8")
-    (repo_root / "assistant-benchmark.html").write_text(repo_dashboard, encoding="utf-8")
-    (repo_root / "methodology.html").write_text(methodology, encoding="utf-8")
+    methodology = genericize_editorial_language(methodology_html(data)).replace(f'{data["model_count"]} local GGUF models served through llama.cpp via llama-swap', cohort_text)
+    write_text_lf(root / "assistant-benchmark.html", root_dashboard)
+    write_text_lf(repo_root / "assistant-benchmark.html", repo_dashboard)
+    write_text_lf(repo_root / "methodology.html", methodology)
     return data
 
 

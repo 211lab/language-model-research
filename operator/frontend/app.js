@@ -1,5 +1,6 @@
 const state = {
-  filter: "local",
+  selectedModels: new Set(),
+  modelSelectionInitialized: false,
   overview: { editorial: { models: [] }, assistant: { models: [] } },
   jobs: [],
   runtime: null,
@@ -34,8 +35,7 @@ function isLocal(record) {
 }
 
 function filtered(records) {
-  if (state.filter === "all") return records;
-  return records.filter((record) => (state.filter === "local" ? isLocal(record) : !isLocal(record)));
+  return records.filter((record) => state.selectedModels.has(comparisonKey(record)));
 }
 
 function formatNumber(value, decimals = 1) {
@@ -58,6 +58,124 @@ function formatAssistantCost(record) {
 function comparisonKey(record) {
   if (record.identity_key) return record.identity_key;
   return `${isLocal(record) ? "local" : "openrouter"}:${record.model || "unknown"}`;
+}
+
+function modelInventory() {
+  const inventory = new Map();
+  const add = (record, cohort) => {
+    const key = comparisonKey(record);
+    const current = inventory.get(key) || {
+      key,
+      model: record.model || "Unknown model",
+      display_name: record.display_name || record.model || "Unknown model",
+      local: isLocal(record),
+      cohorts: new Set(),
+      source_file: record.source_file || "",
+      source_snapshot: record.source_snapshot || "",
+    };
+    current.display_name = current.display_name || record.display_name || record.model || "Unknown model";
+    current.model = current.model || record.model || "Unknown model";
+    current.local = current.local || isLocal(record);
+    current.source_file = current.source_file || record.source_file || "";
+    current.source_snapshot = current.source_snapshot || record.source_snapshot || "";
+    current.cohorts.add(cohort);
+    inventory.set(key, current);
+  };
+  (state.overview.editorial.models || []).forEach((record) => add(record, "Editorial"));
+  (state.overview.assistant.models || []).forEach((record) => add(record, "Assistant"));
+  return [...inventory.values()].sort((left, right) => (
+    Number(right.local) - Number(left.local)
+    || left.display_name.localeCompare(right.display_name)
+    || left.key.localeCompare(right.key)
+  ));
+}
+
+function synchronizeModelSelection(inventory) {
+  if (!inventory.length) return;
+  const available = new Set(inventory.map((item) => item.key));
+  if (!state.modelSelectionInitialized) {
+    const local = inventory.filter((item) => item.local);
+    state.selectedModels = new Set((local.length ? local : inventory).map((item) => item.key));
+    state.modelSelectionInitialized = true;
+    return;
+  }
+  state.selectedModels = new Set([...state.selectedModels].filter((key) => available.has(key)));
+}
+
+function selectionMatches(inventory, kind) {
+  const candidates = inventory.filter((item) => (
+    kind === "all" || (kind === "local" ? item.local : !item.local)
+  ));
+  return candidates.length > 0 && candidates.every((item) => state.selectedModels.has(item.key));
+}
+
+function updateModelSelectionButtons(inventory) {
+  document.querySelectorAll("[data-model-selection]").forEach((button) => {
+    const active = selectionMatches(inventory, button.dataset.modelSelection);
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+}
+
+function renderModelPicker(inventory) {
+  const picker = $("#model-picker");
+  picker.replaceChildren();
+  if (!inventory.length) {
+    const empty = document.createElement("p");
+    empty.className = "model-picker__empty";
+    empty.textContent = "No published model records are available yet.";
+    picker.append(empty);
+    return;
+  }
+  inventory.forEach((item) => {
+    const label = document.createElement("label");
+    label.className = "model-picker__item";
+    label.classList.toggle("model-picker__item--selected", state.selectedModels.has(item.key));
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.checked = state.selectedModels.has(item.key);
+    input.setAttribute("aria-label", `Include ${item.display_name} in all dashboards`);
+    input.addEventListener("change", () => {
+      if (input.checked) state.selectedModels.add(item.key);
+      else state.selectedModels.delete(item.key);
+      renderOverview();
+    });
+    const copy = document.createElement("span");
+    copy.className = "model-picker__copy";
+    const name = document.createElement("strong");
+    name.className = "model-picker__name";
+    name.textContent = item.display_name;
+    const identity = document.createElement("small");
+    identity.className = "model-picker__identity";
+    identity.textContent = item.source_file
+      ? `${item.model} · ${item.source_file}${item.source_snapshot ? ` · ${short(item.source_snapshot, 13)}` : ""}`
+      : item.model;
+    const tags = document.createElement("span");
+    tags.className = "model-picker__tags";
+    const provider = document.createElement("span");
+    provider.className = `model-tag${item.local ? " model-tag--local" : ""}`;
+    provider.textContent = item.local ? "Local" : "OpenRouter";
+    tags.append(provider);
+    [...item.cohorts].sort().forEach((cohort) => {
+      const tag = document.createElement("span");
+      tag.className = "model-tag";
+      tag.textContent = cohort;
+      tags.append(tag);
+    });
+    copy.append(name, identity, tags);
+    label.append(input, copy);
+    picker.append(label);
+  });
+}
+
+function selectModels(kind) {
+  const inventory = modelInventory();
+  const selected = inventory.filter((item) => (
+    kind === "all" || (kind === "local" ? item.local : !item.local)
+  ));
+  state.selectedModels = new Set(selected.map((item) => item.key));
+  state.modelSelectionInitialized = true;
+  renderOverview();
 }
 
 function formatDate(value) {
@@ -94,7 +212,7 @@ function drawEditorialChart() {
   clearSvg(svg, width, height);
   const models = filtered(state.overview.editorial.models || []).filter((model) => isNumber(model.content_score));
   if (!models.length) {
-    chartText(svg, width / 2, height / 2, "No editorial scores match this filter.", "chart-empty", "middle");
+    chartText(svg, width / 2, height / 2, "No selected model has editorial quality data.", "chart-empty", "middle");
     return;
   }
   const left = 58;
@@ -149,7 +267,7 @@ function drawReadabilityChart() {
     }))
     .filter((model) => isNumber(model.ease) && isNumber(model.grade));
   if (!models.length) {
-    chartText(svg, width / 2, height / 2, "No readability records match this filter.", "chart-empty", "middle");
+    chartText(svg, width / 2, height / 2, "No selected model has readability data.", "chart-empty", "middle");
     return;
   }
   const left = 58;
@@ -197,7 +315,7 @@ function drawAssistantChart() {
   const height = Math.max(260, top + models.length * rowHeight + 32);
   clearSvg(svg, width, height);
   if (!models.length) {
-    chartText(svg, width / 2, height / 2, "No assistant results match this filter.", "chart-empty", "middle");
+    chartText(svg, width / 2, height / 2, "No selected model has assistant results.", "chart-empty", "middle");
     return;
   }
   const sorted = models.slice().sort((a, b) => b.assistant_score - a.assistant_score);
@@ -242,7 +360,7 @@ function renderComparisonTable() {
     const key = comparisonKey(item);
     const row = merged.get(key) || { key, model: item.model, display_name: item.display_name };
     row.assistant = item;
-    row.display_name ||= item.display_name;
+    row.display_name = row.display_name || item.display_name;
     // Keep the exact artifact identity as the map key. A local display/model
     // reference can be shared by more than one quant, while identity_key
     // includes the repository revision and GGUF filename.
@@ -253,10 +371,10 @@ function renderComparisonTable() {
     const bScore = b.editorial?.content_score ?? b.assistant?.assistant_score ?? -1;
     return bScore - aScore;
   });
-  $("#result-filter-note").textContent = `${rows.length} model${rows.length === 1 ? "" : "s"} shown`;
+  $("#result-filter-note").textContent = `${rows.length} selected model${rows.length === 1 ? "" : "s"} with published evidence`;
   if (!rows.length) {
     const tr = document.createElement("tr");
-    const empty = cell("No model results match this filter.", "empty-cell");
+    const empty = cell("No selected model has published results in this view.", "empty-cell");
     empty.colSpan = 7;
     tr.append(empty);
     body.append(tr);
@@ -471,6 +589,10 @@ async function submitRun(event) {
 function renderOverview() {
   const editorial = state.overview.editorial || { models: [] };
   const assistant = state.overview.assistant || { models: [] };
+  const inventory = modelInventory();
+  synchronizeModelSelection(inventory);
+  renderModelPicker(inventory);
+  updateModelSelectionButtons(inventory);
   $("#editorial-count").textContent = editorial.model_count ?? editorial.models.length;
   $("#assistant-count").textContent = assistant.model_count ?? assistant.models.length;
   $("#editorial-updated").textContent = editorial.generated_at ? `Updated ${formatDate(editorial.generated_at)}` : "No compiled data";
@@ -522,11 +644,9 @@ async function refreshAll() {
   }
 }
 
-document.querySelectorAll(".segmented__button").forEach((button) => {
+document.querySelectorAll("[data-model-selection]").forEach((button) => {
   button.addEventListener("click", () => {
-    state.filter = button.dataset.filter;
-    document.querySelectorAll(".segmented__button").forEach((item) => item.classList.toggle("is-active", item === button));
-    renderOverview();
+    selectModels(button.dataset.modelSelection);
   });
 });
 document.querySelectorAll('input[name="provider"]').forEach((input) => input.addEventListener("change", refreshFormMode));

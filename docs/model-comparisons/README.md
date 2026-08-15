@@ -1,6 +1,6 @@
-# SteadyBurn Weekly Bundle Model Comparisons
+# Client Content Bundle Model Comparisons
 
-These case studies measure the practical cost of producing one complete SteadyBurn weekly content bundle with models that were active and available at the time of each run.
+These case studies measure the practical cost of producing one complete client content bundle with models that were active and available at the time of each run.
 
 The local-model run is the baseline. It represents the capability already available on this machine: local text generation through llama-swap and a local hero-image model. The OpenRouter runs use the same seed, pipeline structure, and optional-track settings so their outputs and provider-reported costs can be compared against that baseline.
 
@@ -90,7 +90,7 @@ the full metric views, and inspect the complete table and source measurements.
 ## Content scoring
 
 The root uv command content-score evaluates index.md and INSTRUCTIONS.md using
-the versioned SteadyBurn rubric. It combines deterministic measurements with
+the versioned editorial rubric. It combines deterministic measurements with
 structured OpenRouter evidence extraction, repeated adjudication, and an
 independent uncertainty tie-breaker. Evidence extraction uses DeepSeek V4 Flash;
 all adjudication and tie-break calls use DeepSeek V4 Pro.

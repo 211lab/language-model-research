@@ -60,19 +60,20 @@
 
       <section class="dashboard-layout">
         <div class="review-column">
-          <section class="panel filter-panel">
+          <section class="panel model-context-panel" aria-labelledby="model-context-title">
             <div class="panel-heading panel-heading--inline">
               <div>
-                <p class="eyebrow">RESULT REVIEW</p>
-                <h2>Decision views</h2>
+                <p class="eyebrow">MODELS</p>
+                <h2 id="model-context-title">Start with the models</h2>
               </div>
-              <div class="segmented" role="group" aria-label="Provider filter">
-                <button class="segmented__button is-active" data-filter="local" type="button">Local only</button>
-                <button class="segmented__button" data-filter="all" type="button">All models</button>
-                <button class="segmented__button" data-filter="remote" type="button">OpenRouter</button>
+              <div class="segmented" role="group" aria-label="Model selection presets">
+                <button class="segmented__button is-active" data-model-selection="local" type="button">Local models</button>
+                <button class="segmented__button" data-model-selection="all" type="button">All models</button>
+                <button class="segmented__button" data-model-selection="remote" type="button">OpenRouter</button>
               </div>
             </div>
-            <p class="muted">The default focuses on self-hosted models. Switch the filter to weigh them against the paid frontier.</p>
+            <p class="muted">Choose the model set first. The same selection carries into editorial quality, readability, assistant capability, and the combined evidence table; each cohort simply shows the evidence available for that model.</p>
+            <div id="model-picker" class="model-picker" aria-live="polite"></div>
           </section>
 
           <section class="chart-grid">
@@ -115,7 +116,7 @@
             <div class="panel-heading panel-heading--inline">
               <div>
                 <p class="eyebrow">CROSS-COHORT SUMMARY</p>
-                <h2>Evidence by model</h2>
+                <h2>Evidence by selected model</h2>
               </div>
               <span id="result-filter-note" class="muted"></span>
             </div>
