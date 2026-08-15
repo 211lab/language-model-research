@@ -1,0 +1,50 @@
+name: Dashboard browser tests
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/dashboard-playwright.yml'
+      - 'assistant-benchmark.html'
+      - 'assistant-benchmark.json'
+      - 'docs/**'
+      - 'index.html'
+      - 'methodology.html'
+      - 'model-comparison.json'
+      - 'operator/frontend/**'
+      - 'package.json'
+      - 'playwright.config.mjs'
+      - 'scripts/build_radar.py'
+      - 'tests/dashboard/**'
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/dashboard-playwright.yml'
+      - 'assistant-benchmark.html'
+      - 'assistant-benchmark.json'
+      - 'docs/**'
+      - 'index.html'
+      - 'methodology.html'
+      - 'model-comparison.json'
+      - 'operator/frontend/**'
+      - 'package.json'
+      - 'playwright.config.mjs'
+      - 'scripts/build_radar.py'
+      - 'tests/dashboard/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dashboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:dashboard
