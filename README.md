@@ -3,12 +3,14 @@
 Research data, scoring artifacts, and comparisons of language models used in the
 SteadyBurn content pipeline.
 
-## Interactive radar
+## Model-first interactive research
 
-Open the [interactive model comparison radar](./) to compare readability,
-quality, and cost across the recorded model runs. The dashboard is a static
-HTML page with the comparison data embedded in the page; it does not require a
-server or an API key.
+Open the [interactive model comparison](./) to start with a searchable model
+browser, then compare readability, quality, and cost across the selected runs.
+The Local, API, observed-frontier, and Local + frontier shortcuts make it easy
+to review a self-hosted baseline against the strongest measured alternatives.
+The dashboard is a static HTML page with the comparison data embedded in the
+page; it does not require a server or an API key.
 
 The first chart is the decision view: a cost-versus-quality scatter plot with
 the observed Pareto frontier. Models without captured usage logs remain in the

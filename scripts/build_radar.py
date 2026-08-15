@@ -39,7 +39,7 @@ def main() -> None:
     base_html = dashboard_html(data)
     html = add_site_navigation(base_html, "index.html", "assistant-benchmark.html", "methodology.html", True)
     docs_html = add_site_navigation(base_html, "../../index.html", "../../assistant-benchmark.html", "../../methodology.html", False)
-    if not all(marker in html for marker in ("id=\"tradeoff\"", "id=\"overview-radar\"", "id=\"readability-radar\"", "id=\"quality-values\"", "id=\"price-summary\"")):
+    if not all(marker in html for marker in ("id=\"model-browser-title\"", "id=\"model-search\"", "data-selection-preset=\"local-frontier\"", "id=\"tradeoff\"", "id=\"overview-radar\"", "id=\"readability-radar\"", "id=\"quality-values\"", "id=\"price-summary\"")):
         raise RuntimeError("Dashboard output is missing a required visualization")
     radar = radar_svg(data)
     json_output = json.dumps(data, indent=2) + "\n"
