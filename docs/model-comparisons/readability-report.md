@@ -22,7 +22,6 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | google/gemma-3-12b-it | 1995 | 136 | 14.67 | 48.19 | 10.18 | 13.71 | 12.60 | 10.27 | 12.82 | 0.27 |
 | google/gemma-4-26b-a4b-it | 2559 | 187 | 13.68 | 63.28 | 7.83 | 11.18 | 9.62 | 7.51 | 11.11 | 0.26 |
 | google/gemma-4-31b-it | 2475 | 170 | 14.56 | 64.18 | 7.92 | 10.98 | 9.02 | 7.36 | 10.95 | 0.28 |
-| gemma-4-e4b-it | 2366 | 152 | 15.57 | 57.99 | 9.04 | 12.16 | 9.78 | 8.37 | 11.81 | 0.26 |
 | nvidia/nemotron-3-ultra-550b-a55b | 4110 | 458 | 8.97 | 67.35 | 6.09 | 8.76 | 9.03 | 5.59 | 9.28 | 0.23 |
 | openai/gpt-4.1 | 2687 | 260 | 10.33 | 70.66 | 5.97 | 9.06 | 8.89 | 5.81 | 9.57 | 0.22 |
 | openai/gpt-5.4 | 6852 | 757 | 9.05 | 79.18 | 4.46 | 7.13 | 6.99 | 3.97 | 8.22 | 0.17 |
@@ -88,9 +87,6 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | google/gemma-4-31b-it | LESSON.md | 833 | 62 | 17 | 13.44 | 66.25 | 7.36 | 10.22 |
 | google/gemma-4-31b-it | index.md | 989 | 64 | 17 | 15.45 | 64.72 | 8.07 | 10.99 |
 | google/gemma-4-31b-it | INSTRUCTIONS.md | 653 | 44 | 4 | 14.84 | 60.53 | 8.50 | 12.00 |
-| gemma-4-e4b-it | LESSON.md | 714 | 46 | 7 | 15.52 | 56.36 | 9.25 | 12.32 |
-| gemma-4-e4b-it | index.md | 897 | 63 | 16 | 14.24 | 61.85 | 8.17 | 11.36 |
-| gemma-4-e4b-it | INSTRUCTIONS.md | 755 | 43 | 8 | 17.56 | 54.55 | 10.01 | 13.12 |
 | nvidia/nemotron-3-ultra-550b-a55b | LESSON.md | 1070 | 127 | 19 | 8.43 | 68.22 | 5.84 | 8.68 |
 | nvidia/nemotron-3-ultra-550b-a55b | index.md | 927 | 125 | 21 | 7.42 | 68.35 | 5.57 | 8.32 |
 | nvidia/nemotron-3-ultra-550b-a55b | INSTRUCTIONS.md | 2113 | 206 | 64 | 10.26 | 66.14 | 6.58 | 9.12 |
