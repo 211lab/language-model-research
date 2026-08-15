@@ -28,7 +28,6 @@
 | qwen/qwen3.8-max | 74.77 | 0.722 |
 | cydonia-24b-v4.3 | 73.72 | 0.953 |
 | unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl | 73.25 | 0.923 |
-| gemma-4-e4b-it | 69.17 | 0.968 |
 | unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl | 65.32 | 0.952 |
 | google/gemma-4-26b-a4b-it | 61.94 | 0.972 |
 | unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s | 53.86 | 0.968 |

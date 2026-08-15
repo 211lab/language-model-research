@@ -1,29 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1240" viewBox="0 0 1200 1240" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2175" viewBox="0 0 1200 2175" role="img" aria-labelledby="title description">
   <title id="title">SteadyBurn weekly bundle: recorded model cost</title>
   <desc id="description">Costs are calculated from OpenRouter usage JSONL records for each completed weekly SteadyBurn case study.</desc>
   <style>.bg{fill:#111827}.title{fill:#f9fafb;font:700 30px Arial,sans-serif}.subtitle,.axis,.note{fill:#9ca3af;font:16px Arial,sans-serif}.group{fill:#f9fafb;font:700 19px Arial,sans-serif}.label{fill:#e5e7eb;font:16px Arial,sans-serif}.value{fill:#f9fafb;font:700 16px Arial,sans-serif;text-anchor:end}.axis{font-size:13px;text-anchor:middle}.note{font-size:14px}.grid{stroke:#374151;stroke-width:1}</style>
-  <rect class="bg" width="1200" height="1240" rx="18"/>
+  <rect class="bg" width="1200" height="2175" rx="18"/>
   <text class="title" x="60" y="62">SteadyBurn weekly bundle: recorded model cost</text>
   <text class="subtitle" x="60" y="91">Complete text bundle plus one hero cover · linear scale in USD</text>
-  <line class="grid" x1="420" y1="145" x2="420" y2="1090"/>
+  <line class="grid" x1="420" y1="145" x2="420" y2="2025"/>
   <text class="axis" x="420" y="132">$0.000000</text>
-  <line class="grid" x1="524" y1="145" x2="524" y2="1090"/>
+  <line class="grid" x1="524" y1="145" x2="524" y2="2025"/>
   <text class="axis" x="524" y="132">$0.400000</text>
-  <line class="grid" x1="628" y1="145" x2="628" y2="1090"/>
+  <line class="grid" x1="628" y1="145" x2="628" y2="2025"/>
   <text class="axis" x="628" y="132">$0.800000</text>
-  <line class="grid" x1="732" y1="145" x2="732" y2="1090"/>
+  <line class="grid" x1="732" y1="145" x2="732" y2="2025"/>
   <text class="axis" x="732" y="132">$1.200000</text>
-  <line class="grid" x1="836" y1="145" x2="836" y2="1090"/>
+  <line class="grid" x1="836" y1="145" x2="836" y2="2025"/>
   <text class="axis" x="836" y="132">$1.600000</text>
-  <line class="grid" x1="940" y1="145" x2="940" y2="1090"/>
+  <line class="grid" x1="940" y1="145" x2="940" y2="2025"/>
   <text class="axis" x="940" y="132">$2.000000</text>
   <text class="group" x="60" y="187">OpenAI</text>
   <text class="label" x="90" y="228">GPT 5.6 Sol</text>
-  <rect fill="#10b981" x="420" y="207" width="4" height="27" rx="4"/>
-  <text class="value" x="1130" y="228">$0.000000 local baseline</text>
+  <rect fill="#10b981" x="420" y="207" width="301" height="27" rx="4"/>
+  <text class="value" x="1130" y="228">$1.158257</text>
   <text class="label" x="90" y="283">GPT 5.6 Terra</text>
-  <rect fill="#10b981" x="420" y="262" width="4" height="27" rx="4"/>
-  <text class="value" x="1130" y="283">$0.000000 local baseline</text>
+  <rect fill="#10b981" x="420" y="262" width="49" height="27" rx="4"/>
+  <text class="value" x="1130" y="283">$0.189846</text>
   <text class="label" x="90" y="338">GPT-4.1</text>
   <rect fill="#10b981" x="420" y="317" width="55" height="27" rx="4"/>
   <text class="value" x="1130" y="338">$0.209664</text>
@@ -63,11 +63,62 @@
   <rect fill="#c084fc" x="420" y="1074" width="6" height="27" rx="4"/>
   <text class="value" x="1130" y="1095">$0.024889</text>
   <text class="group" x="60" y="1185">Other</text>
-  <text class="label" x="90" y="1226">Gemma 4 E4b</text>
-  <rect fill="#d1d5db" x="420" y="1205" width="4" height="27" rx="4"/>
-  <text class="value" x="1130" y="1226">$0.000000 local baseline</text>
-  <line class="grid" x1="60" y1="1095" x2="1140" y2="1095"/>
-  <text class="note" x="60" y="1128">Local baseline is $0.000000. On log scale it is shown as a labelled zero-length bar.</text>
-  <text class="note" x="60" y="1156">† Gemma 3 was an earlier, non-equivalent comparison.</text>
-  <text class="note" x="60" y="1184">Source: each completed case study’s OPENROUTER_USAGE.jsonl.</text>
+  <text class="label" x="90" y="1226">Claude Opus 5</text>
+  <rect fill="#d1d5db" x="420" y="1205" width="341" height="27" rx="4"/>
+  <text class="value" x="1130" y="1226">$1.312679</text>
+  <text class="label" x="90" y="1281">Claude Sonnet 5</text>
+  <rect fill="#d1d5db" x="420" y="1260" width="118" height="27" rx="4"/>
+  <text class="value" x="1130" y="1281">$0.454952</text>
+  <text class="label" x="90" y="1336">Cydonia 24b V4.3 (Local)</text>
+  <rect fill="#d1d5db" x="420" y="1315" width="4" height="27" rx="4"/>
+  <text class="value" x="1130" y="1336">$0.000000 local baseline</text>
+  <text class="label" x="90" y="1391">Dolphin Mistral 24b Venice (Local)</text>
+  <rect fill="#d1d5db" x="420" y="1370" width="4" height="27" rx="4"/>
+  <text class="value" x="1130" y="1391">$0.000000 local baseline</text>
+  <text class="label" x="90" y="1446">Gemma 4 12b Obliterated (Local)</text>
+  <rect fill="#d1d5db" x="420" y="1425" width="4" height="27" rx="4"/>
+  <text class="value" x="1130" y="1446">$0.000000 local baseline</text>
+  <text class="label" x="90" y="1501">Gemma 4 E4b (Local)</text>
+  <rect fill="#d1d5db" x="420" y="1480" width="4" height="27" rx="4"/>
+  <text class="value" x="1130" y="1501">$0.000000 local baseline</text>
+  <text class="label" x="90" y="1556">Grok 4.3</text>
+  <rect fill="#d1d5db" x="420" y="1535" width="20" height="27" rx="4"/>
+  <text class="value" x="1130" y="1556">$0.078433</text>
+  <text class="label" x="90" y="1611">Grok 4.5</text>
+  <rect fill="#d1d5db" x="420" y="1590" width="66" height="27" rx="4"/>
+  <text class="value" x="1130" y="1611">$0.254640</text>
+  <text class="label" x="90" y="1666">Hy3</text>
+  <rect fill="#d1d5db" x="420" y="1645" width="13" height="27" rx="4"/>
+  <text class="value" x="1130" y="1666">$0.049429</text>
+  <text class="label" x="90" y="1721">Nemotron 3 Ultra 550b A55b</text>
+  <rect fill="#d1d5db" x="420" y="1700" width="34" height="27" rx="4"/>
+  <text class="value" x="1130" y="1721">$0.129313</text>
+  <text class="label" x="90" y="1776">Qwen3.6 27b Heretic Neo Code (Local)</text>
+  <rect fill="#d1d5db" x="420" y="1755" width="4" height="27" rx="4"/>
+  <text class="value" x="1130" y="1776">$0.000000 local baseline</text>
+  <text class="label" x="90" y="1831">Qwen3.6 35b Hauhaucs Aggressive (Local)</text>
+  <rect fill="#d1d5db" x="420" y="1810" width="4" height="27" rx="4"/>
+  <text class="value" x="1130" y="1831">$0.000000 local baseline</text>
+  <text class="label" x="90" y="1886">Qwen3.7 Plus</text>
+  <rect fill="#d1d5db" x="420" y="1865" width="25" height="27" rx="4"/>
+  <text class="value" x="1130" y="1886">$0.095815</text>
+  <text class="label" x="90" y="1941">Qwen3.8 Max</text>
+  <rect fill="#d1d5db" x="420" y="1920" width="82" height="27" rx="4"/>
+  <text class="value" x="1130" y="1941">$0.314284</text>
+  <text class="label" x="90" y="1996">Step 3.7 Flash</text>
+  <rect fill="#d1d5db" x="420" y="1975" width="38" height="27" rx="4"/>
+  <text class="value" x="1130" y="1996">$0.145134</text>
+  <text class="label" x="90" y="2051">Unsloth Qwen3 6 27b Mtp Gguf Qwen3 6 27b Ud Q4 K Xl (Local)</text>
+  <rect fill="#d1d5db" x="420" y="2030" width="4" height="27" rx="4"/>
+  <text class="value" x="1130" y="2051">$0.000000 local baseline</text>
+  <text class="label" x="90" y="2106">Unsloth Qwen3 6 35b A3b Mtp Gguf Qwen3 6 35b A3b Ud Q4 K S (Local)</text>
+  <rect fill="#d1d5db" x="420" y="2085" width="4" height="27" rx="4"/>
+  <text class="value" x="1130" y="2106">$0.000000 local baseline</text>
+  <text class="label" x="90" y="2161">Unsloth Qwen3 8 27b Gguf Qwen3 8 27b Ud Q4 K Xl (Local)</text>
+  <rect fill="#d1d5db" x="420" y="2140" width="4" height="27" rx="4"/>
+  <text class="value" x="1130" y="2161">$0.000000 local baseline</text>
+  <line class="grid" x1="60" y1="2030" x2="1140" y2="2030"/>
+  <text class="note" x="60" y="2063">Local baseline is $0.000000. On log scale it is shown as a labelled zero-length bar.</text>
+  <text class="note" x="60" y="2091">† Gemma 3 was an earlier, non-equivalent comparison.</text>
+  <text class="note" x="60" y="2119">Source: each completed case study’s OPENROUTER_USAGE.jsonl.</text>
 </svg>

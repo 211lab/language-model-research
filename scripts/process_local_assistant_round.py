@@ -52,6 +52,11 @@ def normalized_text_sha256(path: Path) -> str:
     return hashlib.sha256(path.read_text(encoding="utf-8").strip().encode("utf-8")).hexdigest()
 
 
+def local_display_name(value: str) -> str:
+    """Keep self-hosted result labels explicit in merged research data."""
+    return value if value.endswith(" (Local)") else f"{value} (Local)"
+
+
 def build_rows(assistant: dict[str, Any], latency: dict[str, Any], seed: int) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     assistant_meta = assistant["metadata"]
     latency_meta = latency["metadata"]
@@ -90,7 +95,7 @@ def build_rows(assistant: dict[str, Any], latency: dict[str, Any], seed: int) ->
         category = score["category_scores"]
         rows.append({
             "model": model,
-            "display_name": score["display_name"],
+            "display_name": local_display_name(str(score["display_name"])),
             "run_status": score["status"],
             "assistant_score": score["overall_score"],
             "outcome": category["outcome"], "tool_use": category["tool_use"],
