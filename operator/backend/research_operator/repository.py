@@ -191,6 +191,58 @@ class Repository:
             "preflight_reused": preflight_reused,
         }
 
+    def enqueue_discovered_local_run(
+        self, submission: ModelSubmission, *, harness_contract_id: str, details: dict[str, Any]
+    ) -> dict[str, Any]:
+        """Record a discovered exact GGUF and queue it once per harness contract."""
+        with self._connection() as connection, connection.transaction():
+            with connection.cursor() as cursor:
+                cursor.execute("SELECT pg_advisory_xact_lock(hashtext(%s))", (submission.identity_key,))
+                cursor.execute(
+                    """
+                    SELECT COUNT(*) AS count
+                    FROM jobs
+                    JOIN research_runs ON research_runs.id = jobs.run_id
+                    JOIN models ON models.id = research_runs.model_id
+                    WHERE models.identity_key = %s
+                      AND jobs.job_kind = 'research'
+                      AND jobs.payload ->> 'harness_contract_id' = %s
+                      AND jobs.status IN ('queued', 'running', 'succeeded')
+                    """,
+                    (submission.identity_key, harness_contract_id),
+                )
+                complete = int(cursor.fetchone()["count"]) >= len(submission.cohorts)
+                if complete:
+                    cursor.execute(
+                        """
+                        INSERT INTO discovered_local_models (
+                            identity_key, model_ref, display_name, source_repo, source_file,
+                            source_revision, eligibility, details
+                        ) VALUES (%s, %s, %s, %s, %s, %s, 'already-scheduled-or-published', %s)
+                        ON CONFLICT (identity_key) DO UPDATE SET last_seen_at = NOW(), details = EXCLUDED.details
+                        """,
+                        (submission.identity_key, submission.model_ref, submission.display_name,
+                         submission.source_repo, submission.source_file, submission.source_revision, Jsonb(details)),
+                    )
+                    return {"queued": False, "reason": "already-scheduled-or-published"}
+        created = self.create_run(submission, luna_model="", harness_contract_id=harness_contract_id)
+        with self._connection() as connection, connection.transaction():
+            connection.execute(
+                """
+                INSERT INTO discovered_local_models (
+                    identity_key, model_ref, display_name, source_repo, source_file,
+                    source_revision, source_snapshot, eligibility, run_id, details
+                ) VALUES (%s, %s, %s, %s, %s, %s, %s, 'eligible', %s, %s)
+                ON CONFLICT (identity_key) DO UPDATE SET
+                    last_seen_at = NOW(), run_id = EXCLUDED.run_id, source_snapshot = EXCLUDED.source_snapshot,
+                    eligibility = 'eligible', details = EXCLUDED.details
+                """,
+                (submission.identity_key, submission.model_ref, submission.display_name,
+                 submission.source_repo, submission.source_file, submission.source_revision,
+                 str(details.get("source_snapshot") or ""), created["run_id"], Jsonb(details)),
+            )
+        return {"queued": True, **created}
+
     def claim_next(self, queue: str, worker_id: str) -> dict[str, Any] | None:
         """Atomically claim one ready job, with a persistent local-endpoint lock."""
         with self._connection() as connection, connection.transaction():
@@ -313,6 +365,17 @@ class Repository:
                     )
                 message = "Completed successfully." if status == "succeeded" else f"Failed: {error}"
                 self._event_cursor(cursor, job_id, "info" if status == "succeeded" else "error", message)
+                if status == "succeeded" and job.get("job_kind") == "research" and result is not None:
+                    publication_id = _new_id()
+                    cursor.execute(
+                        """
+                        INSERT INTO publication_jobs (id, research_job_id, run_id, cohort, artifact)
+                        VALUES (%s, %s, %s, %s, %s)
+                        ON CONFLICT (research_job_id) DO NOTHING
+                        """,
+                        (publication_id, job_id, run_id, str(job["cohort"]), Jsonb(result)),
+                    )
+                    self._event_cursor(cursor, job_id, "info", "Validated suite queued for isolated publication.")
                 if status != "succeeded" and job.get("job_kind") == "luna_preflight":
                     self._block_dependents(cursor, job_id)
                 self._refresh_run_status(cursor, run_id)
@@ -391,14 +454,60 @@ class Repository:
         with self._connection() as connection:
             rows = connection.execute(
                 """
-                SELECT jobs.*, models.display_name, models.model_ref, models.identity_key
+                SELECT jobs.*, models.display_name, models.model_ref, models.identity_key,
+                       publication_jobs.status AS publication_status,
+                       publication_jobs.commit_sha AS publication_commit_sha,
+                       publication_jobs.error AS publication_error
                 FROM jobs
                 JOIN research_runs ON research_runs.id = jobs.run_id
                 JOIN models ON models.id = research_runs.model_id
+                LEFT JOIN publication_jobs ON publication_jobs.research_job_id = jobs.id
                 ORDER BY jobs.created_at DESC
                 LIMIT %s
                 """,
                 (limit,),
+            ).fetchall()
+        return [_plain(dict(row)) for row in rows]
+
+    def claim_publication(self, worker_id: str) -> dict[str, Any] | None:
+        with self._connection() as connection, connection.transaction():
+            with connection.cursor() as cursor:
+                cursor.execute(
+                    """
+                    SELECT id FROM publication_jobs WHERE status = 'queued'
+                    ORDER BY created_at ASC FOR UPDATE SKIP LOCKED LIMIT 1
+                    """
+                )
+                row = cursor.fetchone()
+                if row is None:
+                    return None
+                cursor.execute(
+                    """
+                    UPDATE publication_jobs SET status = 'running', started_at = NOW()
+                    WHERE id = %s RETURNING *
+                    """,
+                    (str(row["id"]),),
+                )
+                return _plain(dict(cursor.fetchone()))
+
+    def finish_publication(self, publication_id: str, *, commit_sha: str) -> None:
+        with self._connection() as connection, connection.transaction():
+            connection.execute(
+                "UPDATE publication_jobs SET status = 'succeeded', commit_sha = %s, finished_at = NOW() WHERE id = %s",
+                (commit_sha, publication_id),
+            )
+
+    def fail_publication(self, publication_id: str, error: str) -> None:
+        with self._connection() as connection, connection.transaction():
+            connection.execute(
+                "UPDATE publication_jobs SET status = 'blocked', error = %s, finished_at = NOW() WHERE id = %s",
+                (error[:2000], publication_id),
+            )
+
+    def list_publications(self, *, limit: int = 100) -> list[dict[str, Any]]:
+        with self._connection() as connection:
+            rows = connection.execute(
+                "SELECT * FROM publication_jobs ORDER BY created_at DESC LIMIT %s", (limit,)
             ).fetchall()
         return [_plain(dict(row)) for row in rows]
 

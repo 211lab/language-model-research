@@ -8,8 +8,10 @@ This directory turns the research repository into one operator-focused monorepo:
 - `worker-remote` runs OpenRouter research only after a small Luna harness preflight succeeds.
 - `harness` is the versioned editorial pipeline, prompts, and scoring rubric used by the worker. It is kept beside the assistant fixture harness already in this repository.
 - `db` is the durable job, event, and run-record database.
+- `discovery` checks the existing local provider daily for eligible text GGUFs.
+- `publisher` copies each completed cohort into an isolated clone, rebuilds the static pages, and pushes a focused commit to `main`.
 
-The generated research pages remain the repository root's `index.html`, `assistant-benchmark.html`, and supporting data files. A completed worker merges validated output, recalculates readability and cost data, and runs `scripts/build_radar.py`. It does **not** commit or push generated research: that remains an explicit review step.
+The generated research pages remain the repository root's `index.html`, `assistant-benchmark.html`, and supporting data files. A completed worker creates a durable publication job. The publisher then copies the validated cohort output into an isolated clone, rebuilds the static pages, and pushes its own focused commit to `main`.
 
 ## Start the platform from WSL
 
@@ -23,6 +25,14 @@ docker compose --env-file .env -f compose.yaml up --build
 Open `http://localhost:8090`. The API is also available on `http://localhost:8088` by default.
 
 The default local endpoint remains `http://localhost:11434`. `worker-local` uses host networking specifically so the existing endpoint and the operator's existing activity view remain unchanged; it does not publish or remap port `11434`.
+
+## Daily discovery and publication
+
+`discovery` reads only `GET /v1/models` from the configured local endpoint. It ignores embeddings and image-only models, records each exact GGUF repository/file/revision, and skips identities already measured for the current harness. It never changes the endpoint, port, or provider configuration.
+
+Set `DISCOVERY_IDLE_ACKNOWLEDGED=true` only after confirming the endpoint is idle in the existing activity view. This is deliberately false by default: a model list cannot prove that llama.cpp is not actively processing tokens. With the acknowledgement enabled, eligible local models are queued for both editorial and assistant cohorts one at a time through the existing local-inference lease. The worker still has no force-stop operation.
+
+Every successful cohort creates a publication job. `publisher` uses `PUBLISH_REPOSITORY_URL`, the read-only `PUBLISH_SSH_DIR`, and the existing WSL `PUBLISH_GIT_CONFIG` to make a shallow isolated clone, rebuild the static outputs, and push one commit using the existing configured Git author identity. It retries once after rebasing if `main` moved. A failed publication is marked blocked for review; it never reruns inference. If direct publication is disabled, completed publication jobs remain queued and can resume later without repeating a test.
 
 ## Queue behavior
 

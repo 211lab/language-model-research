@@ -45,8 +45,8 @@ services:
       - ..:/workspace
       - ${LLAMA_SWITCHER_ROOT:-/home/wsl/llama-model-switcher}:/switcher:ro
     depends_on:
-      db:
-        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
     ports:
       - "${OPERATOR_API_PORT:-8088}:8080"
 
@@ -69,8 +69,8 @@ services:
       EDITORIAL_TIE_BREAK_MODEL: ${EDITORIAL_TIE_BREAK_MODEL:-openai/gpt-5.6-luna}
       EDITORIAL_REMOTE_IMAGE_MODEL: ${EDITORIAL_REMOTE_IMAGE_MODEL:-openai/gpt-5.4-image-2}
     depends_on:
-      db:
-        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
 
   worker-local:
     <<: *backend
@@ -103,6 +103,61 @@ services:
       - ${LLAMA_SWITCHER_ROOT:-/home/wsl/llama-model-switcher}:/switcher
       - ${HF_CACHE_ROOT:-/home/wsl/.cache/huggingface/hub}:/models
       - ${DOCKER_SOCKET:-/var/run/docker.sock}:/var/run/docker.sock
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+  discovery:
+    <<: *backend
+    command: ["python", "-m", "research_operator.discovery"]
+    working_dir: /workspace/operator/backend
+    env_file:
+      - path: .env
+        required: false
+    network_mode: host
+    environment:
+      POSTGRES_DSN: postgresql://research:research@127.0.0.1:${OPERATOR_DB_PORT:-55432}/research
+      RESEARCH_ROOT: /workspace
+      OPERATOR_ROOT: /workspace/operator
+      LOCAL_AI_BASE_URL: ${LOCAL_AI_BASE_URL:-http://localhost:11434}
+      DISCOVERY_INTERVAL_SECONDS: ${DISCOVERY_INTERVAL_SECONDS:-86400}
+      DISCOVERY_LOCAL_MODEL_MAX_GIB: ${DISCOVERY_LOCAL_MODEL_MAX_GIB:-32}
+      DISCOVERY_IDLE_ACKNOWLEDGED: ${DISCOVERY_IDLE_ACKNOWLEDGED:-false}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+  publisher:
+    <<: *backend
+    command: ["python", "-m", "research_operator.publisher"]
+    working_dir: /workspace/operator/backend
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      POSTGRES_DSN: postgresql://research:research@db:5432/research
+      RESEARCH_ROOT: /workspace
+      OPERATOR_ROOT: /workspace/operator
+      AUTO_PUBLISH_MAIN: ${AUTO_PUBLISH_MAIN:-true}
+      PUBLISH_REPOSITORY_URL: ${PUBLISH_REPOSITORY_URL:-}
+      PUBLISH_REMOTE: ${PUBLISH_REMOTE:-origin}
+      PUBLISH_BRANCH: ${PUBLISH_BRANCH:-main}
+    volumes:
+      - ..:/workspace
+      - ${PUBLISH_SSH_DIR:-/home/wsl/.ssh}:/root/.ssh:ro
+      - ${PUBLISH_GIT_CONFIG:-/home/wsl/.gitconfig}:/root/.gitconfig:ro
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+  migrate:
+    <<: *backend
+    restart: "no"
+    command: ["python", "-m", "research_operator.migrate"]
+    working_dir: /workspace/operator/backend
+    environment:
+      POSTGRES_DSN: postgresql://research:research@db:5432/research
+      OPERATOR_ROOT: /workspace/operator
     depends_on:
       db:
         condition: service_healthy

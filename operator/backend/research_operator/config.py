@@ -53,6 +53,13 @@ class Settings:
     editorial_slug: str
     editorial_date: str
     editorial_seed_path: Path
+    discovery_interval_seconds: float
+    discovery_local_model_max_gib: float
+    discovery_idle_acknowledged: bool
+    auto_publish_main: bool
+    publish_repository_url: str
+    publish_remote: str
+    publish_branch: str
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -126,4 +133,13 @@ class Settings:
             ),
             editorial_date=os.environ.get("EDITORIAL_DATE", "2026-08-07"),
             editorial_seed_path=_path(os.environ.get("EDITORIAL_SEED_PATH"), seed_default),
+            discovery_interval_seconds=_number("DISCOVERY_INTERVAL_SECONDS", 86400.0),
+            discovery_local_model_max_gib=_number("DISCOVERY_LOCAL_MODEL_MAX_GIB", 32.0),
+            discovery_idle_acknowledged=os.environ.get(
+                "DISCOVERY_IDLE_ACKNOWLEDGED", "false"
+            ).lower() in {"1", "true", "yes"},
+            auto_publish_main=os.environ.get("AUTO_PUBLISH_MAIN", "true").lower() in {"1", "true", "yes"},
+            publish_repository_url=os.environ.get("PUBLISH_REPOSITORY_URL", "").strip(),
+            publish_remote=os.environ.get("PUBLISH_REMOTE", "origin"),
+            publish_branch=os.environ.get("PUBLISH_BRANCH", "main"),
         )

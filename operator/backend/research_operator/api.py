@@ -69,6 +69,10 @@ def create_app(settings: Settings | None = None, repository: Repository | None =
     def jobs(limit: int = 100) -> dict[str, Any]:
         return {"jobs": store.list_jobs(limit=max(1, min(limit, 500)))}
 
+    @app.get("/api/publications")
+    def publications(limit: int = 100) -> dict[str, Any]:
+        return {"publications": store.list_publications(limit=max(1, min(limit, 500)))}
+
     @app.get("/api/jobs/{job_id}")
     def job(job_id: str) -> dict[str, Any]:
         found = store.get_job(job_id)

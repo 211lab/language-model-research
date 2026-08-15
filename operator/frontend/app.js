@@ -423,7 +423,7 @@ function renderJobs() {
   if (!jobs.length) {
     const row = document.createElement("tr");
     const empty = cell("No queued or recorded operator jobs yet.", "empty-cell");
-    empty.colSpan = 6;
+    empty.colSpan = 7;
     row.append(empty);
     body.append(row);
     return;
@@ -436,6 +436,7 @@ function renderJobs() {
     row.append(cell(job.display_name || job.model_ref || "Unknown model"));
     row.append(cell(job.cohort));
     row.append(cell(job.queue));
+    row.append(cell(job.publication_status || (job.status === "succeeded" ? "awaiting publication" : "â€”")));
     row.append(cell(formatDate(job.created_at)));
     const actions = document.createElement("td");
     const view = document.createElement("button");
