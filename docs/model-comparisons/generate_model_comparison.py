@@ -55,6 +55,7 @@ LOCAL_MODEL_IDS = {
     "qwen3.6-35b-hauhaucs-aggressive",
     "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl",
     "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s",
+    "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl",
 }
 
 
@@ -87,6 +88,8 @@ def company_for(model: str) -> str:
 
 
 def display_name(model: str, case_study: str | None = None, local: bool = False) -> str:
+    if model == "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl":
+        return "Local Qwen3.8 27B UD Q4_K_XL"
     name = model.split("/", 1)[-1].replace("-it", "").replace("-", " ").title().replace("Gpt", "GPT")
     return f"Local model ({name})" if local or (case_study and case_study.startswith("local-models/")) else name
 
@@ -324,7 +327,8 @@ def dashboard_html_v3(data: dict[str, Any]) -> str:
 <h2>Model and price summary</h2><div id="price-summary"></div><div id="awaiting"></div>
 <script>
 const comparison=__DATA__, colors=["#38bdf8","#f97316","#a78bfa","#34d399","#facc15","#fb7185","#22c55e","#e879f9","#f43f5e","#60a5fa","#f59e0b","#2dd4bf","#c084fc"];
-const selected=new Set(comparison.models.filter(m=>m.cost_source==='local').map(m=>m.case_study));
+const defaultModel=comparison.models.find(m=>m.model==='unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl')||comparison.models.find(m=>m.cost_source==='local');
+const selected=new Set(defaultModel?[defaultModel.case_study]:[]);
 const NS='http://www.w3.org/2000/svg';
 function chosen(){return comparison.models.filter(m=>selected.has(m.case_study))}
 function el(parent,name,attrs={},text=''){const node=document.createElementNS(NS,name);Object.entries(attrs).forEach(([key,value])=>node.setAttribute(key,value));if(text)node.textContent=text;parent.appendChild(node);return node}

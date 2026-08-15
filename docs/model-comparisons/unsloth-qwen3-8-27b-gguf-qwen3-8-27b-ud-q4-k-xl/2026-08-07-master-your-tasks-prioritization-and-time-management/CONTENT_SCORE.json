@@ -1,0 +1,481 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/language-model-research/docs/model-comparisons/unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 73.25,
+  "confidence": 0.923,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 84.76,
+      "penalties": 6.0,
+      "final_score": 78.76,
+      "confidence": 0.977,
+      "metrics": {
+        "fk_grade": 2.33,
+        "words": 1690,
+        "sentences": 236,
+        "average_sentence_words": 7.16,
+        "sentence_length_stddev": 3.82,
+        "concrete_opening": true,
+        "action_signals": 25,
+        "framework_signals": 11,
+        "late_you_ratio": 0.6,
+        "repeated_sentence_ratio": 0.007
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The problem is not that you are lazy. The problem is that you are reacting.",
+            "You feel like you are working, but you are not moving forward."
+          ],
+          "reason": "Reframes the problem from personal laziness to a reactive work pattern."
+        },
+        {
+          "id": "argument_progression",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "The answer is not willpower. Willpower is a finite resource. It burns out. The answer is structure.",
+            "You need to stop reacting. You need to start sorting."
+          ],
+          "reason": "Moves from observed problem, to psychological cause, to a structural solution and then a procedure."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The coffee mug sits on the corner of the desk. It is half full, the surface of the liquid still and dark.",
+            "Around it, the desk is a landscape of small, scattered items."
+          ],
+          "reason": "The opening begins with specific physical objects and a recognizable end-of-day scene."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Attention follows the easiest path.",
+            "This is a survival mechanism. In the wild, the loud noise is the predator."
+          ],
+          "reason": "Explains reactive attention through a behavioral and evolutionary interpretation, though the survival analogy is somewhat broad."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You check your phone every five minutes.",
+            "Turn off your phone. Close other tabs. Work on this one thing only."
+          ],
+          "reason": "Connects the argument to observable habits and specific behavior changes."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Efficiency without direction is just fast chaos.",
+            "It is not about doing more. It is about doing the right things first."
+          ],
+          "reason": "The piece offers a usable principle for deciding what work deserves priority."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 76.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "Discipline is not a trait. It is a mechanism. It is a system.",
+            "The urgent is a mask for the important."
+          ],
+          "reason": "Makes a substantive distinction between character-based discipline and system-based discipline, though the extended fire metaphor limits complexity."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "I am not convinced this explains everything. There are days when the urgent is truly urgent.",
+            "But for the vast majority of days, the urgent is a mask for the important."
+          ],
+          "reason": "Acknowledges exceptions before preserving the main claim."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "You let the loudest voice in the room set your schedule.",
+            "You can choose to take control."
+          ],
+          "reason": "The reader is given agency and responsibility without being reduced to laziness or moral failure."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "This is the trap of the urgent.",
+            "This is where things become strange.",
+            "The answer is in the SORTING model. It is a simple, mechanical process."
+          ],
+          "reason": "Progresses from diagnosis, to conceptual complication, to a named operating model."
+        },
+        {
+          "id": "decision",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The choice is simple. You can keep reacting to whatever shouts the loudest.",
+            "Or, you can choose to take control."
+          ],
+          "reason": "The article presents a clear behavioral decision between continued reactivity and deliberate prioritization."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Scan your list. Look at every task you have.",
+            "Mark these as your \"Big Rocks.\" Put them at the top of your list.",
+            "Prepare your list for tomorrow night. Pick your top three for the next day."
+          ],
+          "reason": "It prescribes a detailed, sequential method with concrete actions."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You must identify your \"Big Rocks.\" These are the three tasks that, if you finish them, make the day a success.",
+            "The urgent request. The small, trivial task that demands immediate attention."
+          ],
+          "reason": "Abstract distinctions are consistently connected to tasks, lists, email, phones, and time blocks."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You answered every email. You helped the coworker with the report. You ran the errands.",
+            "When a small, urgent thing pops up, like a quick email, do not stop."
+          ],
+          "reason": "The examples reflect ordinary work and household demands rather than idealized productivity scenarios."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "It is a simple, mechanical process. It does not require inspiration. It requires action.",
+            "First, you scan your list."
+          ],
+          "reason": "The central model is reduced to clear stages without sacrificing the main conceptual distinction."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You drift. You react. You let the fire die down to embers.",
+            "You can stay busy. You can stay stressed. You can stay behind."
+          ],
+          "reason": "Short, varied sentences create pace and emphasis, especially in diagnostic and decision passages."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 70.0,
+          "passed": true,
+          "confidence": 0.91,
+          "evidence": [
+            "It is not about doing more. It is about doing the right things first.",
+            "The urgent is the sand. The important is the rock."
+          ],
+          "reason": "Several formulations are concise and memorable, but the Blower System, furnace, fire, air, smoke, sand, and rocks metaphors recur enough to reduce economy."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "This is not about doing more. It is not about working harder.",
+            "You are not waiting for motivation. You are not waiting for the perfect moment."
+          ],
+          "reason": "The piece rejects hustle and inspiration as solutions and emphasizes structure. A few phrases such as \"Feel the win\" slightly soften this control."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "Do not blame yourself. Just look at the facts.",
+            "The problem is not that you are lazy."
+          ],
+          "reason": "It avoids diagnosing the reader or using therapeutic disclosure, while redirecting attention to observable behavior."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 68.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "I am not convinced this explains everything.",
+            "There are days when the urgent is truly urgent.",
+            "Do not blame yourself. Just look at the facts.",
+            "The smaller claim is actually more interesting."
+          ],
+          "reason": "The piece materially limits its claims, acknowledges exceptions, and avoids a pure blame frame. However, the tone often shifts into directive instruction and certainty: \u201cYou need to stop reacting,\u201d \u201cYou must identify your \u2018Big Rocks,\u2019\u201d and \u201cThe choice is simple.\u201d These commands keep it from scoring higher, but the qualifications and non-moralizing framing are sufficient to pass."
+        },
+        {
+          "id": "anti_guru",
+          "score": 83.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "The answer is not willpower. Willpower is a finite resource. It burns out.",
+            "It does not require inspiration. It requires action."
+          ],
+          "reason": "It rejects exceptional willpower and inspiration in favor of an ordinary system, without claiming special authority."
+        },
+        {
+          "id": "closing_strength",
+          "score": 12.0,
+          "passed": false,
+          "confidence": 0.99,
+          "evidence": [
+            "Prepare your list for tomorrow night.",
+            "Go to bed knowing exactly what you will do first thing in the morning.",
+            "The coffee mug is still on the desk. But it is different now. It is not"
+          ],
+          "reason": "The actionable section provides a usable near-ending, but the actual closing is incomplete: the source ends mid-sentence. It does not deliver a finished final image, synthesis, or decisive last line, so closing strength is materially weak."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 82.75,
+      "penalties": 15.0,
+      "final_score": 67.75,
+      "confidence": 0.87,
+      "metrics": {
+        "fk_grade": 4.02,
+        "words": 1440,
+        "sentences": 168,
+        "average_sentence_words": 8.57,
+        "sentence_length_stddev": 4.04,
+        "concrete_opening": true,
+        "action_signals": 21,
+        "framework_signals": 4,
+        "late_you_ratio": 0.3,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The problem is not that you are lazy. The problem is that you are reacting.",
+            "You need to stop reacting. You need to start sorting."
+          ],
+          "reason": "Clearly reframes the problem from personal laziness to a reactive task-management pattern, then supplies a new operating perspective."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "This is the trap of the urgent.",
+            "You must identify your \"Big Rocks.\"",
+            "This step is where you reclaim your time.",
+            "This is the core of the Blower System: consistent, uninterrupted action."
+          ],
+          "reason": "The piece moves coherently from problem diagnosis, to prioritization, to filtering, to protected execution and review."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 79.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "If a task is floating in your mind, it is consuming energy.",
+            "This causes mental fog. It causes stress.",
+            "The urgent will try to intrude. It will shout. It will feel important."
+          ],
+          "reason": "It interprets cognitive load, stress, attentional capture, and the felt urgency of interruptions without adopting a therapeutic voice."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "It is not about doing more. It is about doing the right things first.",
+            "The important is quiet. It waits.",
+            "If you do not sort your tasks, your life will sort them for you."
+          ],
+          "reason": "The operational advice rests on a clear philosophy: importance must be deliberately protected from urgency."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 74.0,
+          "passed": true,
+          "confidence": 0.651,
+          "evidence": [],
+          "reason": "The artifact presents a useful distinction between urgency and impact, then develops tradeoffs around limited attention, delegation, delay, and task definition. The reasoning is practical rather than especially original, but it is materially deeper than a list of productivity tips. (evidence could not be verified)"
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "You must take control.",
+            "Your job here is to ruthlessly reduce the noise.",
+            "You must protect the time to do it."
+          ],
+          "reason": "The reader is assigned clear responsibility for choosing, removing, and protecting priorities rather than waiting for circumstances to improve."
+        },
+        {
+          "id": "framework_lands",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "The SORT sequence is explicit, memorable, and operationalized with concrete behaviors, examples, avoid/works-better contrasts, and follow-through. The Big Rocks, Sand Pile, and focus-block concepts consistently support the model. (evidence could not be verified)"
+        },
+        {
+          "id": "unique_action",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "Explicitly marking items as \"Delegate,\" \"Delay,\" or \"Drop.\"",
+            "Having a \"Parking Lot\" note ready.",
+            "Treating this block as an unmissable appointment with yourself."
+          ],
+          "reason": "The action set is specific and distinctive, especially the Parking Lot and Delegate/Delay/Drop handling of interruptions and residual work."
+        },
+        {
+          "id": "action_relevance",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Pick a block of time for your first Big Rock.",
+            "This is your Blower System in action."
+          ],
+          "reason": "The actions directly enact the argument: identify important work, protect it from urgency, and preserve uninterrupted execution."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "Assigning a specific start and end time (e.g., 9:00 AM \u2013 10:30 AM).",
+            "Physically removing distractions: phone in another room, notifications off, browser tabs closed.",
+            "Physically checking off the item on your list."
+          ],
+          "reason": "The advice is operationalized through observable actions, timing, environmental changes, and completion cues."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "These are the three tasks that, if you finish them, make the day a success. Everything else is sand.",
+            "If it is not a Big Rock, it is sand."
+          ],
+          "reason": "The Big Rocks/Sand distinction compresses the main idea into a memorable, usable rule without losing the core argument."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "The urgent shouts. It demands attention. It feels like work. But the important is quiet. It waits.",
+            "Look at every task you have. Do not judge them yet. Just look."
+          ],
+          "reason": "Short sentences, controlled repetition, and imperative pacing create strong forward movement and emphasis."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "If it is not a Big Rock, it is sand.",
+            "The urgent thing can wait. The important thing cannot."
+          ],
+          "reason": "Several lines compress the central distinctions effectively. Some later sections restate the same concepts, limiting the score."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 56.0,
+          "passed": false,
+          "confidence": 0.6579999999999999,
+          "evidence": [],
+          "reason": "The procedural content is substantial, but the piece repeatedly uses motivational framing, emotional reward language, and inflated certainty. Those lines shift the tone from an exacting operating model toward encouragement and performance rhetoric. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_therapy",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 0.637,
+          "evidence": [],
+          "reason": "The artifact mentions cognitive load and stress, but it does not adopt a therapeutic voice, invite emotional disclosure, diagnose the reader, or present itself as psychological care. The psychological claims mainly support task procedures. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_preacher",
+          "score": 32.0,
+          "passed": false,
+          "confidence": 0.6859999999999999,
+          "evidence": [],
+          "reason": "The dominant address is directive and moralizing. Repeated imperatives and categorical commands tell the reader what they must do, with little qualification or acknowledgment of context. This materially creates a preaching tone. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_guru",
+          "score": 47.0,
+          "passed": false,
+          "confidence": 0.6719999999999999,
+          "evidence": [],
+          "reason": "The framework is usable, but branding it as a proprietary-sounding system and presenting its claims with high certainty produces guru-like authority. The repeated system language and broad claims exceed what the simple method itself establishes. (evidence could not be verified)"
+        }
+      ]
+    }
+  },
+  "evaluator": {
+    "evidence_model": "openai/gpt-5.6-luna",
+    "judge_model": "openai/gpt-5.6-luna",
+    "tie_break_model": "openai/gpt-5.6-luna"
+  },
+  "evaluator_cost": 0.011733
+}

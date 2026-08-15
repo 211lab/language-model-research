@@ -131,10 +131,22 @@ def main() -> int:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--output", type=Path, default=DEFAULT_CSV)
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
+    parser.add_argument(
+        "--merge", action="store_true",
+        help="Replace or add the validated rows in an existing local-results CSV instead of replacing the cohort.",
+    )
     parser.add_argument("--build", action="store_true", help="Regenerate the published dashboard after validation")
     args = parser.parse_args()
 
     rows, manifest = build_rows(load(args.assistant_results), load(args.latency_results), args.seed)
+    if args.merge and args.output.exists():
+        with args.output.open(encoding="utf-8", newline="") as handle:
+            existing = list(csv.DictReader(handle))
+        by_model = {row["model"]: row for row in existing}
+        by_model.update({row["model"]: row for row in rows})
+        rows = [by_model[model] for model in sorted(by_model)]
+        manifest["published_model_count"] = len(rows)
+        manifest["merge_mode"] = True
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=FIELDS, lineterminator="\n")
