@@ -180,7 +180,7 @@ def relative_radar_axes(models: list[dict[str, Any]], mode: str) -> None:
     Raw measurements remain in ``radar_raw``.  The visual scale intentionally
     privileges within-axis ranking over an artificial shared zero point.
     """
-    axis_ids = {axis_id for model in models for axis_id in model["radar_raw"][mode]}
+    axis_ids = sorted({axis_id for model in models for axis_id in model["radar_raw"][mode]})
     for axis_id in axis_ids:
         values = sorted({float(model["radar_raw"][mode][axis_id]) for model in models if isinstance(model["radar_raw"][mode].get(axis_id), (int, float))})
         positions = {value: index for index, value in enumerate(values)}
@@ -404,7 +404,38 @@ def dashboard_html_v4(data: dict[str, Any]) -> str:
     return page
 
 
-dashboard_html = dashboard_html_v4
+def dashboard_html_v5(data: dict[str, Any]) -> str:
+    """Build a model-first static browser without hiding the comparison views."""
+    page = dashboard_html_v4(data)
+    page = page.replace(
+        "</style>",
+        ".model-browser{margin:24px 0;padding:18px;border:1px solid #31425f;border-radius:14px;background:#0d1424}.model-browser h2{margin:0 0 6px}.browser-toolbar{display:flex;flex-wrap:wrap;align-items:end;gap:10px;margin:16px 0}.model-search{display:grid;gap:5px;min-width:min(100%,280px);color:#cbd5e1;font-size:13px}.model-search input{box-sizing:border-box;width:100%;padding:9px 11px;border:1px solid #41506d;border-radius:8px;background:#111a2d;color:#f8fafc;font:inherit}.browser-actions{display:flex;flex-wrap:wrap;gap:8px}.browser-actions button{border:1px solid #38506f;border-radius:8px;padding:8px 10px;background:#18243a;color:#e5e7eb;font:inherit;cursor:pointer}.browser-actions button:hover,.browser-actions button:focus-visible{border-color:#7dd3fc;background:#213554}.selection-summary{margin:4px 0 0;color:#cbd5e1;font-size:13px}.model-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:9px;max-height:430px;overflow:auto;padding:2px}.model-card{display:block;border:1px solid #31425f;border-radius:10px;background:#111a2d;padding:10px;cursor:pointer}.model-card.is-selected{border-color:#38bdf8;background:#152941}.model-card[hidden]{display:none}.model-card input{float:right;margin:3px 0 0 8px}.model-card strong{display:block;color:#f8fafc;font-size:14px}.model-card .model-meta{display:block;margin-top:5px;color:#a5b4c7;font-size:12px;line-height:1.35}.comparison-shortcut{color:#94a3b8;font-size:13px;margin:0}.comparison-shortcut strong{color:#e5e7eb}</style>",
+        1,
+    )
+    old_context = '<section class="model-context" aria-labelledby="model-context-title"><h2 id="model-context-title">Models</h2><p class="muted">Start by choosing the models. This same selection controls every chart, hard-value table, and cost summary below. Local models are selected by default.</p><div id="controls" class="controls"></div></section>'
+    new_context = '''<section class="model-browser" aria-labelledby="model-browser-title"><h2 id="model-browser-title">Model browser</h2><p class="muted">Choose models first, then review the same selection throughout the cost, quality, readability, and hard-value views. Local results are the default starting point.</p><div class="browser-toolbar"><label class="model-search" for="model-search">Find a model<input id="model-search" type="search" placeholder="Search model or provider" autocomplete="off"></label><div class="browser-actions" aria-label="Comparison shortcuts"><button type="button" data-selection-preset="local">Local results</button><button type="button" data-selection-preset="frontier">Observed frontier</button><button type="button" data-selection-preset="local-frontier">Local + frontier</button><button type="button" data-selection-preset="remote">API results</button><button type="button" data-selection-preset="all">All results</button><button type="button" data-selection-preset="none">Clear</button></div></div><p class="comparison-shortcut"><strong>Fast review:</strong> use Local + frontier to see the zero-direct-cost baseline against the best observed paid tradeoffs.</p><p id="selection-summary" class="selection-summary" aria-live="polite"></p><div id="controls" class="model-grid"></div></section>'''
+    if old_context not in page:
+        raise RuntimeError("Dashboard model context marker is missing")
+    page = page.replace(old_context, new_context, 1)
+
+    def replace_between(source: str, start: str, end: str, replacement: str) -> str:
+        start_at = source.index(start)
+        end_at = source.index(end, start_at)
+        return source[:start_at] + replacement + source[end_at:]
+
+    browser_script = '''function frontierModels(){const priced=comparison.models.filter(model=>typeof model.content_score==='number'&&typeof model.cost_usd==='number').sort((a,b)=>a.cost_usd-b.cost_usd||a.content_score-b.content_score);let highest=-Infinity;return priced.filter(model=>{if(model.content_score>highest){highest=model.content_score;return true}return false})}
+function choosePreset(preset){const frontier=new Set(frontierModels().map(model=>model.case_study));selected.clear();comparison.models.forEach(model=>{const local=model.cost_source==='local',remote=!local;if(preset==='all'||(preset==='local'&&local)||(preset==='remote'&&remote)||(preset==='frontier'&&frontier.has(model.case_study))||(preset==='local-frontier'&&(local||frontier.has(model.case_study))))selected.add(model.case_study)});draw()}
+function syncControls(){const selectedModels=chosen(),localCount=selectedModels.filter(model=>model.cost_source==='local').length,remoteCount=selectedModels.length-localCount;document.querySelectorAll('[data-model-card]').forEach(card=>{const isSelected=selected.has(card.dataset.modelCard);card.classList.toggle('is-selected',isSelected);card.querySelector('input').checked=isSelected});document.getElementById('selection-summary').textContent=selectedModels.length+' selected · '+localCount+' local · '+remoteCount+' API'}
+function filterCards(){const query=document.getElementById('model-search').value.trim().toLowerCase();document.querySelectorAll('[data-model-card]').forEach(card=>{card.hidden=Boolean(query)&&!card.dataset.search.includes(query)})}
+function drawControls(){const node=clear('controls');comparison.models.forEach(model=>{const card=document.createElement('label'),input=document.createElement('input'),name=document.createElement('strong'),meta=document.createElement('span'),score=typeof model.content_score==='number'?'quality '+model.content_score.toFixed(2):'quality awaiting',cost=typeof model.cost_usd==='number'?(model.cost_usd===0?'local direct-cost baseline':'$'+model.cost_usd.toFixed(4)+' bundle'):'price unavailable';card.className='model-card';card.dataset.modelCard=model.case_study;card.dataset.search=(model.display_name+' '+model.company+' '+model.model).toLowerCase();input.type='checkbox';input.checked=selected.has(model.case_study);input.setAttribute('aria-label','Include '+model.display_name);input.addEventListener('change',()=>{input.checked?selected.add(model.case_study):selected.delete(model.case_study);draw()});name.textContent=model.display_name;meta.className='model-meta';meta.textContent=(model.cost_source==='local'?'Local':'OpenRouter')+' · '+score+' · '+cost;card.append(input,name,meta);node.appendChild(card)});document.getElementById('model-search').addEventListener('input',filterCards);document.querySelectorAll('[data-selection-preset]').forEach(button=>button.addEventListener('click',()=>choosePreset(button.dataset.selectionPreset))}
+'''
+    page = replace_between(page, "function drawControls(){", "\nfunction drawTradeoff", browser_script + "function drawTradeoff")
+    page = page.replace("function draw(){drawControls();drawTradeoff();", "function draw(){syncControls();drawTradeoff();", 1)
+    page = page.replace("}draw();\n</script>", "}drawControls();draw();\n</script>", 1)
+    return page
+
+
+dashboard_html = dashboard_html_v5
 
 
 def radar_svg(data: dict[str, Any]) -> str:
