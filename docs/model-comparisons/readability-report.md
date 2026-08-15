@@ -38,6 +38,7 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | tencent/hy3 | 2396 | 263 | 9.11 | 80.04 | 4.36 | 6.80 | 6.70 | 3.75 | 7.97 | 0.28 |
 | unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl | 3914 | 466 | 8.40 | 78.67 | 4.37 | 7.59 | 6.34 | 3.33 | 8.51 | 0.19 |
 | unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s | 4611 | 577 | 7.99 | 83.15 | 3.65 | 6.55 | 5.90 | 2.92 | 7.81 | 0.14 |
+| unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl | 4734 | 639 | 7.41 | 88.86 | 2.71 | 5.45 | 4.24 | 1.52 | 7.00 | 0.15 |
 | x-ai/grok-4.3 | 1456 | 94 | 15.49 | 66.25 | 7.87 | 10.18 | 9.07 | 7.77 | 10.22 | 0.32 |
 | x-ai/grok-4.5 | 4923 | 396 | 12.43 | 76.14 | 5.73 | 8.30 | 7.49 | 5.35 | 8.93 | 0.18 |
 
@@ -135,6 +136,9 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s | LESSON.md | 1350 | 178 | 39 | 7.58 | 85.33 | 3.24 | 6.26 |
 | unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s | index.md | 1664 | 197 | 42 | 8.45 | 81.28 | 4.02 | 6.79 |
 | unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s | INSTRUCTIONS.md | 1597 | 203 | 41 | 7.87 | 83.26 | 3.60 | 6.55 |
+| unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl | LESSON.md | 1604 | 237 | 39 | 6.77 | 92.90 | 1.98 | 4.50 |
+| unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl | index.md | 1690 | 236 | 24 | 7.16 | 91.14 | 2.33 | 5.18 |
+| unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl | INSTRUCTIONS.md | 1440 | 168 | 19 | 8.57 | 81.52 | 4.02 | 6.87 |
 | x-ai/grok-4.3 | LESSON.md | 369 | 28 | 7 | 13.18 | 72.18 | 6.47 | 8.52 |
 | x-ai/grok-4.3 | index.md | 485 | 33 | 8 | 14.70 | 66.33 | 7.66 | 10.17 |
 | x-ai/grok-4.3 | INSTRUCTIONS.md | 602 | 33 | 9 | 18.24 | 61.84 | 9.17 | 11.48 |

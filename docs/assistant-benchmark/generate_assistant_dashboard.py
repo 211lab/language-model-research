@@ -39,6 +39,7 @@ PLOT_NAMES = {
     "qwen3.6-35b-hauhaucs-aggressive": "Qwen 35B HauhauCS",
     "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl": "Unsloth Qwen 27B",
     "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s": "Unsloth Qwen 35B A3B",
+    "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl": "Unsloth Qwen 3.8 27B",
 }
 LOCAL_PROVIDERS = {
     "gemma-4-12b-obliterated": "Google local",
@@ -48,6 +49,7 @@ LOCAL_PROVIDERS = {
     "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-ud-q4-k-xl": "Unsloth",
     "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl": "Unsloth",
     "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s": "Unsloth",
+    "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl": "Unsloth",
     "cydonia-24b-v4.3": "Community local",
     "dolphin-mistral-24b-venice": "Community local",
     "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m": "Community local",
