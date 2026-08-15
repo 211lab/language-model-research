@@ -432,6 +432,7 @@ def openai_chat(
     api_key: str | None,
     timeout: float,
     seed: int,
+    disable_thinking: bool,
 ) -> RequestTiming:
     payload: dict[str, Any] = {
         "model": model,
@@ -441,6 +442,8 @@ def openai_chat(
         "seed": seed,
         "max_tokens": max_tokens,
     }
+    if disable_thinking:
+        payload["chat_template_kwargs"] = {"enable_thinking": False}
     if tools:
         payload["tools"] = tools
         payload["tool_choice"] = "auto"
@@ -463,6 +466,7 @@ def ollama_chat(
     api_key: str | None,
     timeout: float,
     seed: int,
+    disable_thinking: bool,
 ) -> RequestTiming:
     payload: dict[str, Any] = {
         "model": model,
@@ -592,6 +596,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
         "order": "lexicographic",
         "temperature": 0,
         "seed": args.seed,
+        "thinking_mode": "disabled" if args.disable_thinking else "provider default",
         "steadyburn_seed_path": str(args.steadyburn_seed.resolve()),
         "steadyburn_seed_sha256": steadyburn_seed_sha256,
         "cold_prompt": COLD_MESSAGES,
@@ -648,6 +653,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
                 api_key=args.api_key,
                 timeout=args.timeout,
                 seed=args.seed,
+                disable_thinking=args.disable_thinking,
             )
             result.cold_start_seconds = cold.elapsed_seconds
             result.cold_ttft_seconds = cold.ttft_seconds
@@ -668,6 +674,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
                 api_key=args.api_key,
                 timeout=args.timeout,
                 seed=args.seed,
+                disable_thinking=args.disable_thinking,
             )
             result.openclaw_seconds = agent.elapsed_seconds
             result.openclaw_ttft_seconds = agent.ttft_seconds
@@ -885,6 +892,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--cold-max-tokens", type=int, default=8)
     parser.add_argument("--openclaw-max-tokens", type=int, default=128)
     parser.add_argument("--seed", type=int, default=42, help="Sampling seed used for every model")
+    parser.add_argument(
+        "--disable-thinking",
+        action="store_true",
+        help="Send chat_template_kwargs.enable_thinking=false with every request.",
+    )
     parser.add_argument(
         "--steadyburn-seed", type=Path, default=DEFAULT_STEADYBURN_SEED,
         help="Canonical SteadyBurn seed document included in the measured workload",

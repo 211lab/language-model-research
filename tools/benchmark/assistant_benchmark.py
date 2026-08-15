@@ -816,6 +816,7 @@ def chat_completion(
     timeout: float,
     api_key: str | None,
     seed: int,
+    disable_thinking: bool,
 ) -> Completion:
     payload: dict[str, Any] = {
         "model": model,
@@ -825,6 +826,8 @@ def chat_completion(
         "seed": seed,
         "max_tokens": max_tokens,
     }
+    if disable_thinking:
+        payload["chat_template_kwargs"] = {"enable_thinking": False}
     if tools:
         payload["tools"] = tools
         payload["tool_choice"] = "auto"
@@ -883,6 +886,7 @@ def run_task(
     api_key: str | None,
     seed: int,
     system_prompt: str,
+    disable_thinking: bool,
 ) -> TaskResult:
     env = ToolEnvironment(fixture)
     messages: list[dict[str, Any]] = [
@@ -906,6 +910,7 @@ def run_task(
                 timeout=timeout,
                 api_key=api_key,
                 seed=seed,
+                disable_thinking=disable_thinking,
             )
             elapsed += completion.elapsed_seconds
             assistant_message = normalize_message_for_history(completion.message)
@@ -1382,6 +1387,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelS
         "category_weights": CATEGORY_WEIGHTS,
         "temperature": 0,
         "seed": args.seed,
+        "thinking_mode": "disabled" if args.disable_thinking else "provider default",
         "steadyburn_seed_path": str(args.steadyburn_seed.resolve()),
         "steadyburn_seed_sha256": steadyburn_seed_sha256,
         "max_tokens_per_model_turn": args.max_tokens,
@@ -1416,6 +1422,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelS
                 timeout=args.timeout,
                 api_key=args.api_key,
                 seed=args.seed,
+                disable_thinking=args.disable_thinking,
             )
             for task_index, task in enumerate(tasks, start=1):
                 print(f"  [{task_index}/{len(tasks)}] {task['id']}", end="", flush=True)
@@ -1429,6 +1436,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelS
                     api_key=args.api_key,
                     seed=args.seed,
                     system_prompt=benchmark_system_prompt,
+                    disable_thinking=args.disable_thinking,
                 )
                 model_results.append(result)
                 all_task_results.append(result)
@@ -1713,6 +1721,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--settle-seconds", type=float, default=10.0)
     parser.add_argument("--max-tokens", type=int, default=768)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--disable-thinking",
+        action="store_true",
+        help="Send chat_template_kwargs.enable_thinking=false with every request.",
+    )
     parser.add_argument("--no-unload", action="store_true")
     parser.add_argument("--output-dir", type=Path)
     parser.add_argument("--validate", action="store_true", help="Validate fixtures and exit")
