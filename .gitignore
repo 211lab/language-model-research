@@ -1,3 +1,6 @@
 __pycache__/
 *.py[cod]
 .venv/
+operator/.env
+operator/runs/
+operator/.research-publish.lock

@@ -2,8 +2,8 @@
 
 This dataset compares 32 models from the perspective of a tool-using personal
 assistant and information worker: nine local GGUF models and 23 OpenRouter
-models. It is intentionally separate from the repository's SteadyBurn
-editorial-content score: the two scores measure different work and must not be
+models. It is intentionally separate from the repository's client content bundle
+editorial score: the two scores measure different work and must not be
 merged or treated as equivalent.
 
 ## Protocol

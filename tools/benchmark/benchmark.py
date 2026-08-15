@@ -26,6 +26,8 @@ import urllib.request
 from pathlib import Path
 from typing import Any, Iterable
 
+from cost_budget import CostBudget, CostBudgetExceeded
+
 
 USER_AGENT = "local-ai-apples-to-apples-benchmark/1.0"
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -433,6 +435,7 @@ def openai_chat(
     timeout: float,
     seed: int,
     disable_thinking: bool,
+    include_usage: bool = False,
 ) -> RequestTiming:
     payload: dict[str, Any] = {
         "model": model,
@@ -444,6 +447,8 @@ def openai_chat(
     }
     if disable_thinking:
         payload["chat_template_kwargs"] = {"enable_thinking": False}
+    if include_usage:
+        payload["stream_options"] = {"include_usage": True}
     if tools:
         payload["tools"] = tools
         payload["tool_choice"] = "auto"
@@ -467,6 +472,7 @@ def ollama_chat(
     timeout: float,
     seed: int,
     disable_thinking: bool,
+    include_usage: bool = False,
 ) -> RequestTiming:
     payload: dict[str, Any] = {
         "model": model,
@@ -576,6 +582,11 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
         discovered = get_models(effective_base, api_kind, args.api_key, probe_timeout)
 
     models = apply_model_filters(discovered, args.model, args.include, args.exclude)
+    cost_budget = CostBudget(
+        max_cost_usd=args.max_cost_usd,
+        usage_log=args.usage_log,
+        require_reported_cost=args.require_reported_cost,
+    )
     llama_swap = (
         api_kind == "openai"
         and not args.no_unload
@@ -604,6 +615,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
         "openclaw_prompt": openclaw_messages,
         "openclaw_tools": OPENCLAW_TOOLS,
         "openclaw_max_tokens": args.openclaw_max_tokens,
+        "cost_budget": cost_budget.metadata(),
         "settle_seconds": args.settle_seconds,
         "cold_start_control": (
             "disabled by --no-unload"
@@ -644,6 +656,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
                 time.sleep(args.settle_seconds)
 
             chat = ollama_chat if api_kind == "ollama" else openai_chat
+            cost_budget.authorize_request(model=model, workload="latency:cold")
             cold = chat(
                 effective_base,
                 model,
@@ -654,6 +667,10 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
                 timeout=args.timeout,
                 seed=args.seed,
                 disable_thinking=args.disable_thinking,
+                include_usage=args.require_reported_cost,
+            )
+            cost_budget.record_response(
+                cold.response_metadata.get("usage"), model=model, workload="latency:cold"
             )
             result.cold_start_seconds = cold.elapsed_seconds
             result.cold_ttft_seconds = cold.ttft_seconds
@@ -665,6 +682,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
                 f"{cold.ttft_seconds:.3f}s first event"
             )
 
+            cost_budget.authorize_request(model=model, workload="latency:openclaw")
             agent = chat(
                 effective_base,
                 model,
@@ -675,6 +693,10 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
                 timeout=args.timeout,
                 seed=args.seed,
                 disable_thinking=args.disable_thinking,
+                include_usage=args.require_reported_cost,
+            )
+            cost_budget.record_response(
+                agent.response_metadata.get("usage"), model=model, workload="latency:openclaw"
             )
             result.openclaw_seconds = agent.elapsed_seconds
             result.openclaw_ttft_seconds = agent.ttft_seconds
@@ -688,7 +710,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
                 f"{agent.ttft_seconds:.3f}s first event, "
                 f"tool call: {'yes' if agent.tool_call_detected else 'no'}"
             )
-        except BenchmarkError as exc:
+        except (BenchmarkError, CostBudgetExceeded) as exc:
             result.status = "error"
             result.error = str(exc)
             if result.cold_start_seconds is not None and result.openclaw_seconds is not None:
@@ -696,6 +718,8 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
             print(f"  ERROR: {exc}")
         results.append(result)
 
+    metadata["cost_budget"] = cost_budget.metadata()
+    metadata["provider_reported_cost_usd"] = cost_budget.spent_usd
     metadata["finished_at"] = dt.datetime.now(dt.timezone.utc).astimezone().isoformat()
     return metadata, results
 
@@ -869,8 +893,8 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     )
     parser.add_argument(
         "--api-key",
-        default=os.environ.get("LOCAL_AI_API_KEY"),
-        help="Bearer key; preferably set LOCAL_AI_API_KEY instead of using this argument",
+        default=os.environ.get("LOCAL_AI_API_KEY") or os.environ.get("OPENROUTER_API_KEY"),
+        help="Bearer key; preferably set LOCAL_AI_API_KEY or OPENROUTER_API_KEY instead of using this argument",
     )
     parser.add_argument(
         "--model", action="append", default=[], help="Benchmark only this exact model; repeat as needed"
@@ -891,6 +915,21 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     )
     parser.add_argument("--cold-max-tokens", type=int, default=8)
     parser.add_argument("--openclaw-max-tokens", type=int, default=128)
+    parser.add_argument(
+        "--max-cost-usd",
+        type=float,
+        help="Stop before any later request after provider-reported cost reaches this shared USD ceiling.",
+    )
+    parser.add_argument(
+        "--usage-log",
+        type=Path,
+        help="Append provider usage records here; use the same path across sequential stages.",
+    )
+    parser.add_argument(
+        "--require-reported-cost",
+        action="store_true",
+        help="Fail closed after a response without usage.cost (for paid provider runs).",
+    )
     parser.add_argument("--seed", type=int, default=42, help="Sampling seed used for every model")
     parser.add_argument(
         "--disable-thinking",
@@ -911,6 +950,8 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         parser.error("--timeout must be positive and --settle-seconds cannot be negative")
     if args.cold_max_tokens <= 0 or args.openclaw_max_tokens <= 0:
         parser.error("token limits must be positive")
+    if args.max_cost_usd is not None and args.max_cost_usd <= 0:
+        parser.error("--max-cost-usd must be positive")
     return args
 
 
@@ -922,7 +963,7 @@ def main(argv: list[str] | None = None) -> int:
     try:
         metadata, results = run_benchmark(args)
         write_outputs(args.output_dir, metadata, results)
-    except (BenchmarkError, OSError) as exc:
+    except (BenchmarkError, CostBudgetExceeded, OSError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
 

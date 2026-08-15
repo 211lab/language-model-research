@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Language Model Research Operator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#overview" aria-label="Language Model Research Operator home">
+        <span class="brand-mark">LM</span>
+        <span>Research Operator</span>
+      </a>
+      <div class="topbar-actions">
+        <span id="api-status" class="connection connection--pending">Connecting</span>
+        <button class="button button--quiet" type="button" id="refresh-button">Refresh</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="overview">
+        <div>
+          <p class="eyebrow">MODEL EVALUATION CONTROL ROOM</p>
+          <h1>Choose capacity with the cost and evidence in view.</h1>
+          <p class="hero-copy">
+            Review the fixed editorial and assistant cohorts, then queue an exact local GGUF or OpenRouter model. Results only publish after the same versioned research contract completes.
+          </p>
+        </div>
+        <div class="policy-card" aria-label="Run policy">
+          <span class="policy-card__label">Safety policy</span>
+          <strong>Active inference is never force-stopped.</strong>
+          <span>Paid tasks receive a small Luna harness preflight before the selected model runs.</span>
+        </div>
+      </section>
+
+      <section class="stat-grid" aria-label="Research summary">
+        <article class="stat-card">
+          <span>Editorial records</span>
+          <strong id="editorial-count">—</strong>
+          <small id="editorial-updated">Loading results</small>
+        </article>
+        <article class="stat-card">
+          <span>Assistant records</span>
+          <strong id="assistant-count">—</strong>
+          <small id="assistant-updated">Loading results</small>
+        </article>
+        <article class="stat-card">
+          <span>Queued or running</span>
+          <strong id="active-job-count">—</strong>
+          <small>Each cohort is its own durable job.</small>
+        </article>
+        <article class="stat-card stat-card--policy">
+          <span>Assistant cap</span>
+          <strong id="token-cap">768</strong>
+          <small>Fixed tokens per model turn for comparable scores.</small>
+        </article>
+      </section>
+
+      <section class="dashboard-layout">
+        <div class="review-column">
+          <section class="panel model-context-panel" aria-labelledby="model-context-title">
+            <div class="panel-heading panel-heading--inline">
+              <div>
+                <p class="eyebrow">MODELS</p>
+                <h2 id="model-context-title">Start with the models</h2>
+              </div>
+              <div class="segmented" role="group" aria-label="Model selection presets">
+                <button class="segmented__button is-active" data-model-selection="local" type="button">Local models</button>
+                <button class="segmented__button" data-model-selection="all" type="button">All models</button>
+                <button class="segmented__button" data-model-selection="remote" type="button">OpenRouter</button>
+              </div>
+            </div>
+            <p class="muted">Choose the model set first. The same selection carries into editorial quality, readability, assistant capability, and the combined evidence table; each cohort simply shows the evidence available for that model.</p>
+            <div id="model-picker" class="model-picker" aria-live="polite"></div>
+          </section>
+
+          <section class="chart-grid">
+            <article class="panel chart-card">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">EDITORIAL TRADE-OFF</p>
+                  <h2>Quality against bundle cost</h2>
+                </div>
+                <span class="badge">Fixed seed</span>
+              </div>
+              <svg id="editorial-chart" class="chart" viewBox="0 0 720 360" role="img" aria-label="Editorial quality compared with cost"></svg>
+              <p class="chart-note">Local generation is shown at the zero-cost provider baseline. Paid bundle cost comes from the saved provider usage ledger.</p>
+            </article>
+            <article class="panel chart-card">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">READER EFFORT</p>
+                  <h2>Readability comparison</h2>
+                </div>
+                <span class="badge">Bundle total</span>
+              </div>
+              <svg id="readability-chart" class="chart" viewBox="0 0 720 360" role="img" aria-label="Editorial readability comparison"></svg>
+              <p class="chart-note">Right and higher is easier: Flesch reading ease increases to the right, while a lower Flesch-Kincaid grade is plotted higher.</p>
+            </article>
+            <article class="panel chart-card">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">ASSISTANT CAPACITY</p>
+                  <h2>Weighted task intelligence</h2>
+                </div>
+                <span class="badge">21 tasks</span>
+              </div>
+              <svg id="assistant-chart" class="chart" viewBox="0 0 720 360" role="img" aria-label="Assistant benchmark scores"></svg>
+              <p class="chart-note">Outcome, tool use, grounding, state, English, safety, and efficiency are weighted into this score. Time remains separate.</p>
+            </article>
+          </section>
+
+          <section class="panel table-panel">
+            <div class="panel-heading panel-heading--inline">
+              <div>
+                <p class="eyebrow">CROSS-COHORT SUMMARY</p>
+                <h2>Evidence by selected model</h2>
+              </div>
+              <span id="result-filter-note" class="muted"></span>
+            </div>
+            <div class="table-scroll">
+              <table id="comparison-table">
+                <thead>
+                  <tr>
+                    <th>Model</th>
+                    <th>Editorial quality</th>
+                    <th>Bundle cost</th>
+                    <th>Assistant score</th>
+                    <th>Assistant run cost</th>
+                    <th>Median task</th>
+                    <th>Evidence</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <aside class="queue-column">
+          <section class="panel queue-form-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">NEW RESEARCH RUN</p>
+                <h2>Add a model to the queue</h2>
+              </div>
+            </div>
+            <form id="run-form" novalidate>
+              <fieldset class="provider-switch">
+                <legend>Provider</legend>
+                <label><input type="radio" name="provider" value="local" checked /> Local GGUF</label>
+                <label><input type="radio" name="provider" value="openrouter" /> OpenRouter</label>
+              </fieldset>
+
+              <div id="local-fields" class="form-mode">
+                <label>
+                  Registered local model
+                  <select id="local-catalog"><option value="">Manual source details</option></select>
+                </label>
+                <p class="inline-note" id="local-source-identity">Choose a registered entry to review its exact GGUF and cached snapshot.</p>
+                <label>
+                  Hugging Face repository
+                  <input id="source-repo" name="source_repo" autocomplete="off" placeholder="owner/model-GGUF" />
+                </label>
+                <label>
+                  Exact GGUF file <span class="optional">optional</span>
+                  <input id="source-file" name="source_file" autocomplete="off" placeholder="Leave blank to select the best fit" />
+                </label>
+                <label>
+                  Source revision
+                  <input id="source-revision" name="source_revision" value="main" autocomplete="off" />
+                </label>
+                <label>
+                  Local results ID <span class="optional">optional</span>
+                  <input id="local-model-ref" name="local_model_ref" autocomplete="off" placeholder="Switcher ID or a readable identifier" />
+                </label>
+                <label>
+                  GGUF size budget (GiB)
+                  <input id="local-model-max-gib" name="local_model_max_gib" type="number" min="1" step="0.1" />
+                </label>
+                <label class="check-row">
+                  <input id="capacity-override" type="checkbox" />
+                  <span>I explicitly approve a GGUF above the normal safe budget.</span>
+                </label>
+                <p class="inline-note" id="local-endpoint-note">The configured endpoint is loading.</p>
+                <label class="check-row check-row--required">
+                  <input id="idle-ack" type="checkbox" />
+                  <span>I verified the local endpoint is idle. This request must not interrupt active token processing.</span>
+                </label>
+              </div>
+
+              <div id="remote-fields" class="form-mode is-hidden">
+                <label>
+                  Exact OpenRouter model ID
+                  <input id="remote-model-ref" name="remote_model_ref" autocomplete="off" placeholder="provider/model-name" />
+                </label>
+                <p class="inline-note">A successful, fresh Luna preflight is required before paid jobs begin. The queue reuses a matching in-progress or recent check instead of repeating it. Its small cost cap is separate; target work stops after the next provider-reported cost would exceed the stated ceiling.</p>
+                <label>
+                  Paid cost ceiling per selected cohort (USD)
+                  <input id="target-cost-cap" type="number" min="0.01" step="0.01" placeholder="Required" />
+                </label>
+                <label id="judge-cost-wrap">
+                  Editorial judge ceiling (USD)
+                  <input id="judge-cost-cap" type="number" min="0.01" step="0.01" placeholder="Required for editorial" />
+                </label>
+                <label class="check-row check-row--required">
+                  <input id="paid-ack" type="checkbox" />
+                  <span>I approve this paid OpenRouter run and its stated ceiling.</span>
+                </label>
+              </div>
+
+              <label>
+                Display name
+                <input id="display-name" name="display_name" autocomplete="off" placeholder="Shown in the operator UI" />
+              </label>
+
+              <fieldset class="cohort-picker">
+                <legend>Research cohorts</legend>
+                <label><input id="cohort-editorial" type="checkbox" checked /> Editorial fixed-seed bundle</label>
+                <label><input id="cohort-assistant" type="checkbox" checked /> Assistant tools and latency</label>
+              </fieldset>
+              <p id="queue-form-message" class="form-message" aria-live="polite"></p>
+              <button id="queue-submit" class="button button--primary" type="submit">Queue research</button>
+            </form>
+          </section>
+        </aside>
+      </section>
+
+      <section class="panel jobs-panel" id="jobs">
+        <div class="panel-heading panel-heading--inline">
+          <div>
+            <p class="eyebrow">DURABLE QUEUE</p>
+            <h2>Research jobs</h2>
+          </div>
+          <span class="muted">Select a job to review its worker events.</span>
+        </div>
+        <div class="table-scroll">
+          <table id="jobs-table">
+            <thead>
+              <tr>
+                <th>Status</th>
+                <th>Model</th>
+                <th>Cohort</th>
+                <th>Worker queue</th>
+                <th>Created</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="events-dialog" class="events-dialog">
+      <form method="dialog" class="dialog-heading">
+        <div>
+          <p class="eyebrow">WORKER EVENTS</p>
+          <h2 id="events-title">Job events</h2>
+        </div>
+        <button class="button button--quiet" value="close">Close</button>
+      </form>
+      <pre id="events-log" class="events-log">Loading…</pre>
+    </dialog>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

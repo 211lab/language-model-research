@@ -1,6 +1,6 @@
 {
   "schema_version": "personal-assistant-benchmark-v1",
-  "generated_at": "2026-08-15T02:02:53.362151+00:00",
+  "generated_at": "2026-08-15T16:26:00.266091+00:00",
   "run_date": "2026-08-02",
   "runtime": "llama.cpp via llama-swap",
   "protocol": "unload; wait 10 seconds; warm one model; run 21 fresh-fixture tasks; unload; repeat",
@@ -79,7 +79,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "openai/gpt-5.4",
@@ -107,7 +109,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl",
@@ -133,6 +137,8 @@
       "openclaw_ttft_seconds": 4.807563656999264,
       "latency_total_seconds": 70.99611833199742,
       "tool_call_detected": true,
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null,
       "provider": "Unsloth",
       "benchmark_track": "local"
     },
@@ -162,7 +168,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "openai/gpt-5.5",
@@ -190,7 +198,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "deepseek/deepseek-v4-flash",
@@ -218,7 +228,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "openai/gpt-5.6-luna",
@@ -246,7 +258,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "google/gemma-4-31b-it",
@@ -274,7 +288,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "x-ai/grok-4.5",
@@ -302,7 +318,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "anthropic/claude-sonnet-5",
@@ -330,7 +348,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "tencent/hy3",
@@ -358,7 +378,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "qwen3.6-27b-heretic-neo-code",
@@ -384,6 +406,8 @@
       "openclaw_ttft_seconds": 4.8704243960019085,
       "latency_total_seconds": 58.47550867299287,
       "tool_call_detected": true,
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null,
       "provider": "Qwen fine-tunes",
       "benchmark_track": "local"
     },
@@ -413,7 +437,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s",
@@ -439,6 +465,8 @@
       "openclaw_ttft_seconds": 1.556977263004228,
       "latency_total_seconds": 32.30965048400685,
       "tool_call_detected": true,
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null,
       "provider": "Unsloth",
       "benchmark_track": "local"
     },
@@ -468,7 +496,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "deepseek/deepseek-v4-pro",
@@ -496,7 +526,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m",
@@ -522,6 +554,8 @@
       "openclaw_ttft_seconds": 0.03919271699851379,
       "latency_total_seconds": 252.81302465000044,
       "tool_call_detected": true,
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null,
       "provider": "Community local",
       "benchmark_track": "local"
     },
@@ -551,7 +585,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "x-ai/grok-4.3",
@@ -579,7 +615,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "qwen3.6-35b-hauhaucs-aggressive",
@@ -605,6 +643,8 @@
       "openclaw_ttft_seconds": 1.4488617530005286,
       "latency_total_seconds": 32.04796034100582,
       "tool_call_detected": true,
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null,
       "provider": "Qwen fine-tunes",
       "benchmark_track": "local"
     },
@@ -634,7 +674,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "gemma-4-e4b-it",
@@ -660,6 +702,8 @@
       "openclaw_ttft_seconds": 0.7556925419994514,
       "latency_total_seconds": 11.286321885003417,
       "tool_call_detected": true,
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null,
       "provider": "Google local",
       "benchmark_track": "local"
     },
@@ -689,7 +733,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "google/gemini-3.5-flash-lite",
@@ -717,7 +763,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "google/gemini-3.6-flash",
@@ -745,7 +793,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "openai/gpt-4.1",
@@ -773,7 +823,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "deepseek/deepseek-v3.2",
@@ -801,7 +853,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "gemma-4-12b-obliterated",
@@ -827,6 +881,8 @@
       "openclaw_ttft_seconds": 0.9312468170028296,
       "latency_total_seconds": 14.151008578010078,
       "tool_call_detected": true,
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null,
       "provider": "Google local",
       "benchmark_track": "local"
     },
@@ -854,6 +910,8 @@
       "openclaw_ttft_seconds": 2.350872294999135,
       "latency_total_seconds": 37.18300954499864,
       "tool_call_detected": false,
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null,
       "provider": "Community local",
       "benchmark_track": "local"
     },
@@ -881,6 +939,8 @@
       "openclaw_ttft_seconds": 0.6275144590035779,
       "latency_total_seconds": 18.672622177997255,
       "tool_call_detected": false,
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null,
       "provider": "Community local",
       "benchmark_track": "local"
     },
@@ -910,7 +970,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     },
     {
       "model": "openai/gpt-5.6-sol",
@@ -938,7 +1000,9 @@
       "tool_call_detected": false,
       "provider": "OpenRouter",
       "benchmark_track": "openrouter",
-      "error": ""
+      "error": "",
+      "provider_reported_cost_usd": null,
+      "provider_cost_limit_usd": null
     }
   ]
 }

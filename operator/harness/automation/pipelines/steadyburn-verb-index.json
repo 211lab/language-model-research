@@ -1,0 +1,301 @@
+{
+  "entries": [
+    {
+      "sequence": 1,
+      "date": "2026-01-02",
+      "folder": "2026-01-02-you-can-t-fix-what-you-haven-t-named",
+      "title": "You Can't Fix What You Haven't Named",
+      "slug": "you-cant-fix-what-you-havent-named",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 2,
+      "date": "2026-01-09",
+      "folder": "2026-01-09-the-quiet-compromise",
+      "title": "The Quiet Compromise",
+      "slug": "the-quiet-compromise",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 3,
+      "date": "2026-01-16",
+      "folder": "2026-01-16-the-man-who-tries-to-fix-everything",
+      "title": "The Man Who Tries to Fix Everything",
+      "slug": "the-man-who-tries-to-fix-everything",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 4,
+      "date": "2026-01-23",
+      "folder": "2026-01-23-the-slow-cooling-of-a-man",
+      "title": "The Slow Cooling of a Man",
+      "slug": "the-slow-cooling-of-a-man",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 5,
+      "date": "2026-01-30",
+      "folder": "2026-01-30-the-sentence-before-the-step",
+      "title": "The Sentence Before the Step",
+      "slug": "the-sentence-before-the-step",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 6,
+      "date": "2026-02-06",
+      "folder": "2026-02-06-the-quiet-script-behind-ordinary-days",
+      "title": "The Quiet Script Behind Ordinary Days",
+      "slug": "the-quiet-script-behind-ordinary-days",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 7,
+      "date": "2026-02-13",
+      "folder": "2026-02-13-the-man-who-almost-always-starts-over",
+      "title": "The Man Who Almost Always Starts Over",
+      "slug": "the-man-who-almost-always-starts-over",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 8,
+      "date": "2026-02-20",
+      "folder": "2026-02-20-the-strength-to-be-a-beginner",
+      "title": "The Strength to Be a Beginner",
+      "slug": "the-strength-to-be-a-beginner",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 9,
+      "date": "2026-02-28",
+      "folder": "2026-02-28-win-the-morning-own-the-day",
+      "title": "Win the Morning. Own the Day.",
+      "slug": "win-the-morning-own-the-day",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 10,
+      "date": "2026-03-04",
+      "folder": "2026-03-04-the-body-as-the-foundation-of-authority",
+      "title": "The Body as the Foundation of Authority",
+      "slug": "the-body-as-the-foundation-of-authority",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 11,
+      "date": "2026-03-11",
+      "folder": "2026-03-11-train-the-mind-command-the-response",
+      "title": "Train Your Mind Before Pressure Tests It",
+      "slug": "train-your-mind-before-pressure-tests-it",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 12,
+      "date": "2026-03-19",
+      "folder": "2026-03-19-make-progress-automatic",
+      "title": "Make Progress Automatic",
+      "slug": "make-progress-automatic",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 13,
+      "date": "2026-03-27",
+      "folder": "2026-03-27-do-it-regardless",
+      "title": "Do It Regardless",
+      "slug": "do-it-regardless",
+      "verb": "COMMAND",
+      "status": "inferred",
+      "evidence_path": "content\\letters\\2026-03-27-do-it-regardless\\sb13-crusher.md",
+      "note": "Inline Actionable VERB reference"
+    },
+    {
+      "sequence": 14,
+      "date": "2026-04-03",
+      "folder": "2026-04-03-learn-from-the-masters",
+      "title": "Model the Masters",
+      "slug": "model-the-masters",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 15,
+      "date": "2026-04-10",
+      "folder": "2026-04-10-stop-guessing",
+      "title": "Stop Guessing If You\u2019re Improving",
+      "slug": "stop-guessing",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 16,
+      "date": "2026-04-17",
+      "folder": "2026-04-17-do-the-thing-you-ve-been-avoiding",
+      "title": "Do the Thing You\u2019ve Been Avoiding",
+      "slug": "do-the-thing-you-ve-been-avoiding",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 17,
+      "date": "2026-04-24",
+      "folder": "2026-04-24-stand-your-ground",
+      "title": "Stand Your Ground",
+      "slug": "stand-your-ground",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 18,
+      "date": "2026-05-01",
+      "folder": "2026-05-01-stay-calm-under-pressure-without-losing-your-edge",
+      "title": "Stay Calm Under Pressure Without Losing Your Edge",
+      "slug": "stay-calm-under-pressure-without-losing-your-edge",
+      "verb": "CALIBRATE",
+      "status": "inferred",
+      "evidence_path": "content\\letters\\2026-05-01-stay-calm-under-pressure-without-losing-your-edge\\CALIBRATE-instructions.md",
+      "note": "Filename token"
+    },
+    {
+      "sequence": 19,
+      "date": "2026-05-08",
+      "folder": "2026-05-08-the-hard-things-that-make-life-easier",
+      "title": "The Hard Things That Make Life Easier",
+      "slug": "the-hard-things-that-make-life-easier",
+      "verb": "FORGED",
+      "status": "confirmed",
+      "evidence_path": "content\\letters\\2026-05-08-the-hard-things-that-make-life-easier\\SB19-context.md",
+      "note": "Actionable VERB heading"
+    },
+    {
+      "sequence": 20,
+      "date": "2026-05-15",
+      "folder": "2026-05-15-learn-from-the-burns",
+      "title": "Learn From the Burns",
+      "slug": "learn-from-the-burns",
+      "verb": "REFINE",
+      "status": "inferred",
+      "evidence_path": "content\\letters\\2026-05-15-learn-from-the-burns\\REFINE.pdf",
+      "note": "Filename token"
+    },
+    {
+      "sequence": 21,
+      "date": "2026-05-22",
+      "folder": "2026-05-22-the-men-who-adapt-win-faster",
+      "title": "The Men Who Adapt Win Faster",
+      "slug": "the-men-who-adapt-win-faster",
+      "verb": "PIVOTS",
+      "status": "confirmed",
+      "evidence_path": "content\\letters\\2026-05-22-the-men-who-adapt-win-faster\\CONTEXT.md",
+      "note": "Actionable VERB heading"
+    },
+    {
+      "sequence": 22,
+      "date": "2026-05-29",
+      "folder": "2026-05-29-inspecting-the-forge",
+      "title": "Inspecting the Forge",
+      "slug": "inspecting-the-forge",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 23,
+      "date": "2026-05-29",
+      "folder": "2026-05-29-what-breaks-first-when-life-gets-heavy",
+      "title": "The Furnace That Refuses to Go Out",
+      "slug": "the-furnace-that-refuses-to-go-out",
+      "verb": "GRITSTONE",
+      "status": "confirmed",
+      "evidence_path": "content\\letters\\2026-05-29-what-breaks-first-when-life-gets-heavy\\CONTEXT.md",
+      "note": "Actionable VERB heading"
+    },
+    {
+      "sequence": 24,
+      "date": "2026-06-05",
+      "folder": "2026-06-05-the-story-you-re-still-living",
+      "title": "The Story You're Still Living",
+      "slug": "the-story-you-re-still-living",
+      "verb": "",
+      "status": "missing",
+      "evidence_path": "",
+      "note": "No verb evidence found"
+    },
+    {
+      "sequence": 25,
+      "date": "2026-06-12",
+      "folder": "2026-06-12-your-space-is-training-you",
+      "title": "Your Space Is Training You",
+      "slug": "your-space-is-training-you",
+      "verb": "ANCHOR",
+      "status": "confirmed",
+      "evidence_path": "content\\letters\\2026-06-12-your-space-is-training-you\\CONTEXT.md",
+      "note": "Actionable VERB heading"
+    },
+    {
+      "sequence": 26,
+      "date": "2026-06-19",
+      "folder": "2026-06-19-the-people-shaping-your-future",
+      "title": "The People Shaping Your Future",
+      "slug": "the-people-shaping-your-future",
+      "verb": "REFINE",
+      "status": "confirmed",
+      "evidence_path": "content\\letters\\2026-06-19-the-people-shaping-your-future\\CONTEXT.md",
+      "note": "Actionable VERB heading"
+    },
+    {
+      "sequence": 27,
+      "date": "2026-06-26",
+      "folder": "2026-06-26-your-day-is-training-you-even-when-you-are-not-paying-attention",
+      "title": "Your Day Is Training You, Even When You Are Not Paying Attention",
+      "slug": "your-day-is-training-you-even-when-you-are-not-paying-attention",
+      "verb": "STRIKE",
+      "status": "confirmed",
+      "evidence_path": "content\\letters\\2026-06-26-your-day-is-training-you-even-when-you-are-not-paying-attention\\CONTEXT.md",
+      "note": "Actionable VERB heading"
+    }
+  ]
+}

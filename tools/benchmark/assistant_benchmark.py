@@ -29,6 +29,7 @@ from pathlib import Path
 from typing import Any, Callable
 
 import benchmark as latency_benchmark
+from cost_budget import CostBudget, CostBudgetExceeded
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -817,7 +818,11 @@ def chat_completion(
     api_key: str | None,
     seed: int,
     disable_thinking: bool,
+    cost_budget: CostBudget | None = None,
+    workload: str = "assistant",
 ) -> Completion:
+    if cost_budget is not None:
+        cost_budget.authorize_request(model=model, workload=workload)
     payload: dict[str, Any] = {
         "model": model,
         "messages": messages,
@@ -846,7 +851,10 @@ def chat_completion(
         raise AssistantBenchmarkError(f"Malformed chat-completions response: {response!r}") from exc
     if not isinstance(message, dict):
         raise AssistantBenchmarkError("The chat-completions message is not an object")
-    return Completion(message=message, elapsed_seconds=elapsed, usage=response.get("usage") or {})
+    completion = Completion(message=message, elapsed_seconds=elapsed, usage=response.get("usage") or {})
+    if cost_budget is not None:
+        cost_budget.record_response(completion.usage, model=model, workload=workload)
+    return completion
 
 
 def parse_tool_arguments(raw: Any) -> dict[str, Any]:
@@ -887,6 +895,7 @@ def run_task(
     seed: int,
     system_prompt: str,
     disable_thinking: bool,
+    cost_budget: CostBudget | None = None,
 ) -> TaskResult:
     env = ToolEnvironment(fixture)
     messages: list[dict[str, Any]] = [
@@ -911,6 +920,8 @@ def run_task(
                 api_key=api_key,
                 seed=seed,
                 disable_thinking=disable_thinking,
+                cost_budget=cost_budget,
+                workload=f"assistant:{task['id']}:turn-{turn + 1}",
             )
             elapsed += completion.elapsed_seconds
             assistant_message = normalize_message_for_history(completion.message)
@@ -953,6 +964,10 @@ def run_task(
         else:
             status = "max_turns"
             error = "Model exhausted the allowed tool turns without a final answer"
+    except CostBudgetExceeded:
+        # A paid run must stop completely once the cost guard cannot authorize
+        # another request; recording a scored partial task would be misleading.
+        raise
     except AssistantBenchmarkError as exc:
         status = "error"
         error = str(exc)
@@ -1355,6 +1370,11 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelS
     all_models, excluded_models = discover_chat_models(base_url, args.api_key, probe_timeout)
     models = filter_models(all_models, args)
     tasks = filter_tasks(suite["tasks"], args)
+    cost_budget = CostBudget(
+        max_cost_usd=args.max_cost_usd,
+        usage_log=args.usage_log,
+        require_reported_cost=args.require_reported_cost,
+    )
     llama_swap = (
         not args.no_unload
         and latency_benchmark.is_llama_swap(base_url, args.api_key, probe_timeout)
@@ -1391,6 +1411,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelS
         "steadyburn_seed_path": str(args.steadyburn_seed.resolve()),
         "steadyburn_seed_sha256": steadyburn_seed_sha256,
         "max_tokens_per_model_turn": args.max_tokens,
+        "cost_budget": cost_budget.metadata(),
         "settle_seconds_between_models": args.settle_seconds,
         "lifecycle_control": "llama-swap explicit unload" if llama_swap else "disabled",
         "protocol": (
@@ -1423,6 +1444,8 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelS
                 api_key=args.api_key,
                 seed=args.seed,
                 disable_thinking=args.disable_thinking,
+                cost_budget=cost_budget,
+                workload="assistant:warm-up",
             )
             for task_index, task in enumerate(tasks, start=1):
                 print(f"  [{task_index}/{len(tasks)}] {task['id']}", end="", flush=True)
@@ -1437,6 +1460,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelS
                     seed=args.seed,
                     system_prompt=benchmark_system_prompt,
                     disable_thinking=args.disable_thinking,
+                    cost_budget=cost_budget,
                 )
                 model_results.append(result)
                 all_task_results.append(result)
@@ -1444,7 +1468,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelS
                     f" -> {result.score:.1f} ({'pass' if result.passed else 'fail'}), "
                     f"{result.tool_call_count} calls, {result.elapsed_seconds:.2f}s"
                 )
-        except (AssistantBenchmarkError, latency_benchmark.BenchmarkError) as exc:
+        except (AssistantBenchmarkError, CostBudgetExceeded, latency_benchmark.BenchmarkError) as exc:
             model_error = str(exc)
             print(f"  MODEL ERROR: {model_error}")
         finally:
@@ -1455,6 +1479,8 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelS
                 model_error = f"{model_error}; {cleanup_error}" if model_error else cleanup_error
         summaries.append(summarize_model(model, display_name, model_results, model_error))
 
+    metadata["cost_budget"] = cost_budget.metadata()
+    metadata["provider_reported_cost_usd"] = cost_budget.spent_usd
     metadata["finished_at"] = dt.datetime.now(dt.timezone.utc).astimezone().isoformat()
     return metadata, summaries, all_task_results
 
@@ -1720,6 +1746,21 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--timeout", type=float, default=900.0)
     parser.add_argument("--settle-seconds", type=float, default=10.0)
     parser.add_argument("--max-tokens", type=int, default=768)
+    parser.add_argument(
+        "--max-cost-usd",
+        type=float,
+        help="Stop before any later request after provider-reported cost reaches this shared USD ceiling.",
+    )
+    parser.add_argument(
+        "--usage-log",
+        type=Path,
+        help="Append provider usage records here; use the same path across sequential stages.",
+    )
+    parser.add_argument(
+        "--require-reported-cost",
+        action="store_true",
+        help="Fail closed after a response without usage.cost (for paid provider runs).",
+    )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument(
         "--disable-thinking",
@@ -1735,6 +1776,8 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         parser.error("timeouts/token limits must be positive and settle time cannot be negative")
     if args.max_tasks is not None and args.max_tasks <= 0:
         parser.error("--max-tasks must be positive")
+    if args.max_cost_usd is not None and args.max_cost_usd <= 0:
+        parser.error("--max-cost-usd must be positive")
     return args
 
 
@@ -1761,7 +1804,11 @@ def main(argv: list[str] | None = None) -> int:
 
         if args.output_dir is None:
             args.output_dir = Path("results") / f"assistant-{dt.datetime.now().strftime('%Y%m%d-%H%M%S')}"
-        lock_path = SCRIPT_DIR / ".assistant_benchmark.lock"
+        # Keep the lock with this isolated result bundle. Remote workers can
+        # safely process different models in parallel, while the operator
+        # queue still serializes local endpoint work at a higher level.
+        args.output_dir.mkdir(parents=True, exist_ok=True)
+        lock_path = args.output_dir / ".assistant_benchmark.lock"
         lock_descriptor = acquire_lock(lock_path)
         try:
             metadata, summaries, task_results = run_benchmark(args)
@@ -1772,7 +1819,7 @@ def main(argv: list[str] | None = None) -> int:
                 lock_path.unlink()
             except FileNotFoundError:
                 pass
-    except (AssistantBenchmarkError, latency_benchmark.BenchmarkError, OSError) as exc:
+    except (AssistantBenchmarkError, CostBudgetExceeded, latency_benchmark.BenchmarkError, OSError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
 

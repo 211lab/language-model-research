@@ -1,0 +1,122 @@
+name: language-model-research-operator
+
+x-backend: &backend
+  build:
+    context: .
+    dockerfile: services/backend/Dockerfile
+  volumes:
+    - ..:/workspace
+  restart: unless-stopped
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: research
+      POSTGRES_USER: research
+      POSTGRES_PASSWORD: research
+    ports:
+      - "${OPERATOR_DB_PORT:-55432}:5432"
+    volumes:
+      - operator-postgres:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/001-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U research -d research"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  api:
+    <<: *backend
+    command: ["python", "-m", "research_operator.api"]
+    working_dir: /workspace/operator/backend
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      POSTGRES_DSN: postgresql://research:research@db:5432/research
+      RESEARCH_ROOT: /workspace
+      OPERATOR_ROOT: /workspace/operator
+      LLAMA_SWITCHER_CONFIG: /switcher/config.yaml
+      LLAMA_SWITCHER_ENV: /switcher/current-model.env
+      FRONTEND_ORIGIN: http://localhost:${OPERATOR_UI_PORT:-8090}
+    volumes:
+      - ..:/workspace
+      - ${LLAMA_SWITCHER_ROOT:-/home/wsl/llama-model-switcher}:/switcher:ro
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${OPERATOR_API_PORT:-8088}:8080"
+
+  worker-remote:
+    <<: *backend
+    command: ["python", "-m", "research_operator.worker", "--queue", "remote"]
+    working_dir: /workspace/operator/backend
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      POSTGRES_DSN: postgresql://research:research@db:5432/research
+      RESEARCH_ROOT: /workspace
+      OPERATOR_ROOT: /workspace/operator
+      OPENROUTER_BASE_URL: ${OPENROUTER_BASE_URL:-https://openrouter.ai/api/v1}
+      LUNA_MODEL: ${LUNA_MODEL:-openai/gpt-5.6-luna}
+      ASSISTANT_MAX_TOKENS: ${ASSISTANT_MAX_TOKENS:-768}
+      EDITORIAL_JUDGE_MODEL: ${EDITORIAL_JUDGE_MODEL:-openai/gpt-5.6-luna}
+      EDITORIAL_EVIDENCE_MODEL: ${EDITORIAL_EVIDENCE_MODEL:-deepseek/deepseek-v4-flash}
+      EDITORIAL_TIE_BREAK_MODEL: ${EDITORIAL_TIE_BREAK_MODEL:-openai/gpt-5.6-luna}
+      EDITORIAL_REMOTE_IMAGE_MODEL: ${EDITORIAL_REMOTE_IMAGE_MODEL:-openai/gpt-5.4-image-2}
+    depends_on:
+      db:
+        condition: service_healthy
+
+  worker-local:
+    <<: *backend
+    command: ["python", "-m", "research_operator.worker", "--queue", "local"]
+    working_dir: /workspace/operator/backend
+    env_file:
+      - path: .env
+        required: false
+    # Host networking lets the existing localhost:11434 service remain exactly
+    # where the operator already monitors it. Do not publish or remap this port.
+    network_mode: host
+    environment:
+      POSTGRES_DSN: postgresql://research:research@127.0.0.1:${OPERATOR_DB_PORT:-55432}/research
+      RESEARCH_ROOT: /workspace
+      OPERATOR_ROOT: /workspace/operator
+      LOCAL_AI_BASE_URL: ${LOCAL_AI_BASE_URL:-http://localhost:11434}
+      LOCAL_MODEL_MAX_GIB: ${LOCAL_MODEL_MAX_GIB:-20}
+      LOCAL_IDLE_BUFFER_SECONDS: ${LOCAL_IDLE_BUFFER_SECONDS:-10}
+      LOCAL_SETTLE_SECONDS: ${LOCAL_SETTLE_SECONDS:-10}
+      ASSISTANT_MAX_TOKENS: ${ASSISTANT_MAX_TOKENS:-768}
+      LLAMA_SWITCHER_SCRIPT: /switcher/switch-llama-model.sh
+      LLAMA_SWITCHER_CONFIG: /switcher/config.yaml
+      LLAMA_SWITCHER_ENV: /switcher/current-model.env
+      LLAMA_MODEL_CACHE_DIR: /models
+      EDITORIAL_JUDGE_MODEL: ${EDITORIAL_JUDGE_MODEL:-openai/gpt-5.6-luna}
+      EDITORIAL_EVIDENCE_MODEL: ${EDITORIAL_EVIDENCE_MODEL:-deepseek/deepseek-v4-flash}
+      EDITORIAL_TIE_BREAK_MODEL: ${EDITORIAL_TIE_BREAK_MODEL:-openai/gpt-5.6-luna}
+    volumes:
+      - ..:/workspace
+      - ${LLAMA_SWITCHER_ROOT:-/home/wsl/llama-model-switcher}:/switcher
+      - ${HF_CACHE_ROOT:-/home/wsl/.cache/huggingface/hub}:/models
+      - ${DOCKER_SOCKET:-/var/run/docker.sock}:/var/run/docker.sock
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: .
+      dockerfile: services/frontend/Dockerfile
+    depends_on:
+      api:
+        condition: service_started
+    ports:
+      - "${OPERATOR_UI_PORT:-8090}:80"
+    restart: unless-stopped
+
+volumes:
+  operator-postgres:

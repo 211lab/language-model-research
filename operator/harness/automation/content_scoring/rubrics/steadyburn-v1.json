@@ -1,0 +1,54 @@
+{
+  "version": "steadyburn-v1",
+  "artifacts": {
+    "index.md": {
+      "categories": {"argument": 40, "grounding": 15, "action": 15, "readability": 15, "closure": 15},
+      "criteria": [
+        {"id":"perspective_shift","label":"Perspective Shift","category":"argument","required":true},
+        {"id":"argument_progression","label":"Argument Progression","category":"argument","required":true},
+        {"id":"concrete_opening","label":"Concrete Opening","category":"grounding","required":true},
+        {"id":"psychological_interpretation","label":"Psychological Interpretation","category":"argument","required":true},
+        {"id":"behavioral_grounding","label":"Behavioral Grounding","category":"grounding","required":false},
+        {"id":"practical_philosophy","label":"Practical Philosophy","category":"argument","required":true},
+        {"id":"intellectual_depth","label":"Intellectual Depth","category":"argument","required":true},
+        {"id":"qualification_nuance","label":"Qualification and Nuance","category":"closure","required":false},
+        {"id":"personal_responsibility","label":"Personal Responsibility","category":"action","required":true},
+        {"id":"perspective_progression","label":"Perspective Progression","category":"argument","required":true},
+        {"id":"decision","label":"Decision","category":"action","required":true},
+        {"id":"prescribed_action","label":"Prescribed Action","category":"action","required":true},
+        {"id":"concrete_abstract_balance","label":"Concrete and Abstract Balance","category":"grounding","required":true},
+        {"id":"everyday_realism","label":"Everyday Realism","category":"grounding","required":true},
+        {"id":"intellectual_simplicity","label":"Intellectual Simplicity Control","category":"readability","required":true},
+        {"id":"sentence_rhythm","label":"Sentence Rhythm","category":"readability","required":true},
+        {"id":"semantic_economy","label":"Semantic Economy","category":"readability","required":true},
+        {"id":"anti_motivational","label":"Anti-Motivational Tone","category":"closure","required":true,"penalty_group":"tone"},
+        {"id":"anti_therapy","label":"Anti-Therapy Tone","category":"closure","required":true,"penalty_group":"tone"},
+        {"id":"anti_preacher","label":"Anti-Preacher Tone","category":"closure","required":true,"penalty_group":"tone"},
+        {"id":"anti_guru","label":"Anti-Guru Tone","category":"closure","required":true,"penalty_group":"tone"},
+        {"id":"closing_strength","label":"Closing Strength","category":"closure","required":false}
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "categories": {"argument": 40, "framework": 30, "readability": 15, "voice": 15},
+      "criteria": [
+        {"id":"perspective_shift","label":"Perspective Shift","category":"argument","required":true},
+        {"id":"argument_progression","label":"Argument Progression","category":"argument","required":true},
+        {"id":"psychological_interpretation","label":"Psychological Interpretation","category":"argument","required":true},
+        {"id":"practical_philosophy","label":"Practical Philosophy","category":"argument","required":true},
+        {"id":"intellectual_depth","label":"Intellectual Depth","category":"argument","required":true},
+        {"id":"personal_responsibility","label":"Personal Responsibility","category":"argument","required":true},
+        {"id":"framework_lands","label":"Model or Framework Lands","category":"framework","required":true},
+        {"id":"unique_action","label":"Unique Letter-Specific Action","category":"framework","required":true},
+        {"id":"action_relevance","label":"Argument to Framework to Action","category":"framework","required":true},
+        {"id":"behavioral_grounding","label":"Behavioral Grounding","category":"framework","required":false},
+        {"id":"intellectual_simplicity","label":"Intellectual Simplicity Control","category":"readability","required":true},
+        {"id":"sentence_rhythm","label":"Sentence Rhythm","category":"readability","required":true},
+        {"id":"semantic_economy","label":"Semantic Economy","category":"readability","required":true},
+        {"id":"anti_motivational","label":"Anti-Motivational Tone","category":"voice","required":true,"penalty_group":"tone"},
+        {"id":"anti_therapy","label":"Anti-Therapy Tone","category":"voice","required":true,"penalty_group":"tone"},
+        {"id":"anti_preacher","label":"Anti-Preacher Tone","category":"voice","required":true,"penalty_group":"tone"},
+        {"id":"anti_guru","label":"Anti-Guru Tone","category":"voice","required":true,"penalty_group":"tone"}
+      ]
+    }
+  }
+}

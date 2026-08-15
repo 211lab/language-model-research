@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760" role="img" aria-labelledby="title description">
-  <title id="title">SteadyBurn model quality and cost comparison</title>
-  <desc id="description">A radar chart summarizing the scored, priced case studies. The interactive dashboard contains the complete comparison.</desc>
+  <title id="title">Client content bundle model quality and cost comparison</title>
+  <desc id="description">A radar chart summarizing the scored, priced client content bundle case studies. The interactive dashboard contains the complete comparison.</desc>
   <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 28px Arial,sans-serif}.sub,.axis-label,.note{fill:#a5b4c7;font:15px Arial,sans-serif}.grid{fill:none;stroke:#41506d;stroke-width:1}.spoke{stroke:#41506d;stroke-width:1}.legend{fill:#e2e8f0;font:16px Arial,sans-serif}</style>
   <rect class="bg" width="1100" height="760" rx="18"/>
-  <text class="title" x="48" y="58">SteadyBurn model quality and cost</text>
+  <text class="title" x="48" y="58">Client content bundle model quality and cost</text>
   <text class="sub" x="48" y="86">Each axis is a 15–100 within-dimension rank; raw values remain in JSON.</text>
   <polygon class="grid" points="430.0,351.7 450.7,357.8 464.8,374.1 467.9,395.5 458.9,415.1 440.8,426.7 419.2,426.7 401.1,415.1 392.1,395.5 395.2,374.1 409.3,357.8"/>
   <polygon class="grid" points="430.0,291.0 483.5,306.7 520.1,348.9 528.0,404.1 504.8,454.8 457.9,485.0 402.1,485.0 355.2,454.8 332.0,404.1 339.9,348.9 376.5,306.7"/>

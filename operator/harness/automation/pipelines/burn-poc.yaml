@@ -1,0 +1,9 @@
+context:
+  title: Harness POC
+  slug: harness-poc
+  date: '2026-06-26'
+steps:
+- id: poc
+  format: markdown
+  prompt_file: prompts/burn/poc-markdown.md
+  output: tmp/codex-burn-poc/POC.md

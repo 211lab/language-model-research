@@ -59,6 +59,12 @@ LOCAL_MODEL_IDS = {
 }
 
 
+def write_text_lf(path: Path, content: str) -> None:
+    """Write generated research assets with LF endings on every host platform."""
+    with path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(content)
+
+
 def radial_fraction(value: float) -> float:
     """Map the user-facing 0–100 metric to a zero-safe logarithmic radius."""
     bounded = min(100.0, max(0.0, float(value)))
@@ -222,10 +228,28 @@ def compile_comparison(root: Path) -> dict[str, Any]:
             or model in LOCAL_MODEL_IDS
         )
         recorded_cost = paid_cost(usage_path) if usage_path.exists() else None
+        source_repo = str(metadata.get("sourceRepo") or "")
+        source_file = str(metadata.get("sourceFile") or "")
+        source_revision = str(metadata.get("sourceRevision") or "main")
+        source_snapshot = str(metadata.get("sourceSnapshot") or "")
+        configured_name = str(metadata.get("displayName") or "").strip()
+        model_name = configured_name or display_name(model, case_study, local_baseline)
+        if local_baseline and not model_name.endswith(" (Local)"):
+            model_name = f"{model_name} (Local)"
+        identity_key = (
+            f"local:{source_repo}@{source_snapshot or source_revision}:{source_file}"
+            if local_baseline and source_repo and source_file
+            else (f"local:{model}" if local_baseline else f"openrouter:{model}")
+        )
         models.append({
             "model": model,
-            "display_name": display_name(model, case_study, local_baseline),
+            "display_name": model_name,
             "company": "Local" if local_baseline else company_for(model),
+            "identity_key": identity_key,
+            "source_repo": source_repo,
+            "source_file": source_file,
+            "source_revision": source_revision,
+            "source_snapshot": source_snapshot,
             "case_study": case_study,
             "content_score": float(report["content_score"]) if report else None,
             "confidence": float(report["confidence"]) if report else None,
@@ -266,7 +290,7 @@ def compile_comparison(root: Path) -> dict[str, Any]:
 
 def dashboard_html(data: dict[str, Any]) -> str:
     embedded = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    title = "SteadyBurn model comparison"
+    title = "Client content bundle model comparison"
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{html.escape(title)}</title><script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
@@ -286,7 +310,7 @@ d3.select('#mode').on('change',event=>{{mode=event.target.value;draw()}});d3.sel
 
 def dashboard_html_v2(data: dict[str, Any]) -> str:
     embedded = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    title = "SteadyBurn model comparison"
+    title = "Client content bundle model comparison"
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{html.escape(title)}</title><script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
@@ -349,6 +373,20 @@ function draw(){drawControls();drawTradeoff();drawRadar('overview-radar','overvi
 def dashboard_html_v4(data: dict[str, Any]) -> str:
     """Harden the static renderer around unknown prices and the cost-quality decision."""
     page = dashboard_html_v3(data)
+    page = page.replace("SteadyBurn model comparison", "Client content bundle model comparison")
+    page = page.replace(
+        "</style>",
+        ".model-context{margin:24px 0;padding:16px;border:1px solid #31425f;border-radius:14px;background:#0d1424}.model-context h2{margin:0 0 6px}.model-context p{margin:0 0 14px}.model-context .controls{margin:0}",
+        1,
+    ).replace(".model-context .controls{margin:0}", ".model-context .controls{margin:0}</style>", 1)
+    page = page.replace(
+        '<div id="controls" class="controls"></div>',
+        '<section class="model-context" aria-labelledby="model-context-title"><h2 id="model-context-title">Models</h2><p class="muted">Start by choosing the models. This same selection controls every chart, hard-value table, and cost summary below. Local models are selected by default.</p><div id="controls" class="controls"></div></section>',
+    )
+    page = page.replace(
+        "const defaultModel=comparison.models.find(m=>m.model==='unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl')||comparison.models.find(m=>m.cost_source==='local');\nconst selected=new Set(defaultModel?[defaultModel.case_study]:[]);",
+        "const localModels=comparison.models.filter(m=>m.cost_source==='local');\nconst selected=new Set(localModels.map(m=>m.case_study));",
+    )
 
     def replace_between(source: str, start: str, end: str, replacement: str) -> str:
         start_at = source.index(start)
@@ -385,11 +423,11 @@ def radar_svg(data: dict[str, Any]) -> str:
 
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title description">',
-        '  <title id="title">SteadyBurn model quality and cost comparison</title>',
-        '  <desc id="description">A radar chart summarizing the scored, priced case studies. The interactive dashboard contains the complete comparison.</desc>',
+        '  <title id="title">Client content bundle model quality and cost comparison</title>',
+        '  <desc id="description">A radar chart summarizing the scored, priced client content bundle case studies. The interactive dashboard contains the complete comparison.</desc>',
         '  <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 28px Arial,sans-serif}.sub,.axis-label,.note{fill:#a5b4c7;font:15px Arial,sans-serif}.grid{fill:none;stroke:#41506d;stroke-width:1}.spoke{stroke:#41506d;stroke-width:1}.legend{fill:#e2e8f0;font:16px Arial,sans-serif}</style>',
         f'  <rect class="bg" width="{width}" height="{height}" rx="18"/>',
-        '  <text class="title" x="48" y="58">SteadyBurn model quality and cost</text>',
+        '  <text class="title" x="48" y="58">Client content bundle model quality and cost</text>',
         '  <text class="sub" x="48" y="86">Each axis is a 15–100 within-dimension rank; raw values remain in JSON.</text>',
     ]
     for ring in RADAR_LOG_TICKS:
@@ -431,9 +469,9 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     root = args.root.resolve()
     data = compile_comparison(root)
-    (root / "model-comparison.json").write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
-    (root / "model-comparison.html").write_text(dashboard_html(data), encoding="utf-8")
-    (root / "model-comparison-radar.svg").write_text(radar_svg(data), encoding="utf-8")
+    write_text_lf(root / "model-comparison.json", json.dumps(data, indent=2) + "\n")
+    write_text_lf(root / "model-comparison.html", dashboard_html(data))
+    write_text_lf(root / "model-comparison-radar.svg", radar_svg(data))
     print(f"Compiled {len(data['models'])} case studies; {len(data['awaiting_score'])} await LLM quality scoring.")
     return 0
 

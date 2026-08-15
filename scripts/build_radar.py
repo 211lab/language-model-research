@@ -14,7 +14,7 @@ ASSISTANT_ROOT = REPO_ROOT / "docs" / "assistant-benchmark"
 sys.path.insert(0, str(COMPARISON_ROOT))
 sys.path.insert(0, str(ASSISTANT_ROOT))
 
-from generate_model_comparison import compile_comparison, dashboard_html, radar_svg  # noqa: E402
+from generate_model_comparison import compile_comparison, dashboard_html, radar_svg, write_text_lf  # noqa: E402
 from generate_assistant_dashboard import build as build_assistant_dashboard  # noqa: E402
 
 
@@ -28,7 +28,7 @@ def add_site_navigation(html: str, home_href: str, assistant_href: str, methodol
     html = html.replace("</style>", styles + "</style>", 1)
     html = html.replace("<main><h1>", "<main>" + nav + "<h1>", 1)
     if card:
-        html = html.replace('</p>\n<div id="controls"', '</p>' + card + '\n<div id="controls"', 1)
+        html = html.replace('</section>\n<h2>Cost versus quality', '</section>' + card + '\n<h2>Cost versus quality', 1)
     return html.replace("</body>", menu_script + "</body>", 1)
 
 
@@ -43,12 +43,12 @@ def main() -> None:
         raise RuntimeError("Dashboard output is missing a required visualization")
     radar = radar_svg(data)
     json_output = json.dumps(data, indent=2) + "\n"
-    (REPO_ROOT / "index.html").write_text(html, encoding="utf-8")
-    (REPO_ROOT / "model-comparison.json").write_text(json_output, encoding="utf-8")
-    (REPO_ROOT / "model-comparison-radar.svg").write_text(radar, encoding="utf-8")
-    (COMPARISON_ROOT / "model-comparison.html").write_text(docs_html, encoding="utf-8")
-    (COMPARISON_ROOT / "model-comparison.json").write_text(json_output, encoding="utf-8")
-    (COMPARISON_ROOT / "model-comparison-radar.svg").write_text(radar, encoding="utf-8")
+    write_text_lf(REPO_ROOT / "index.html", html)
+    write_text_lf(REPO_ROOT / "model-comparison.json", json_output)
+    write_text_lf(REPO_ROOT / "model-comparison-radar.svg", radar)
+    write_text_lf(COMPARISON_ROOT / "model-comparison.html", docs_html)
+    write_text_lf(COMPARISON_ROOT / "model-comparison.json", json_output)
+    write_text_lf(COMPARISON_ROOT / "model-comparison-radar.svg", radar)
     assistant_data = build_assistant_dashboard(ASSISTANT_ROOT, REPO_ROOT)
     print(
         f"Built editorial dashboard for {len(data['models'])} models and "
