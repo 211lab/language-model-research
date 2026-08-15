@@ -1,0 +1,1 @@
+"""Burn content generation pipeline."""

@@ -222,10 +222,28 @@ def compile_comparison(root: Path) -> dict[str, Any]:
             or model in LOCAL_MODEL_IDS
         )
         recorded_cost = paid_cost(usage_path) if usage_path.exists() else None
+        source_repo = str(metadata.get("sourceRepo") or "")
+        source_file = str(metadata.get("sourceFile") or "")
+        source_revision = str(metadata.get("sourceRevision") or "main")
+        source_snapshot = str(metadata.get("sourceSnapshot") or "")
+        configured_name = str(metadata.get("displayName") or "").strip()
+        model_name = configured_name or display_name(model, case_study, local_baseline)
+        if local_baseline and not model_name.endswith(" (Local)"):
+            model_name = f"{model_name} (Local)"
+        identity_key = (
+            f"local:{source_repo}@{source_snapshot or source_revision}:{source_file}"
+            if local_baseline and source_repo and source_file
+            else (f"local:{model}" if local_baseline else f"openrouter:{model}")
+        )
         models.append({
             "model": model,
-            "display_name": display_name(model, case_study, local_baseline),
+            "display_name": model_name,
             "company": "Local" if local_baseline else company_for(model),
+            "identity_key": identity_key,
+            "source_repo": source_repo,
+            "source_file": source_file,
+            "source_revision": source_revision,
+            "source_snapshot": source_snapshot,
             "case_study": case_study,
             "content_score": float(report["content_score"]) if report else None,
             "confidence": float(report["confidence"]) if report else None,

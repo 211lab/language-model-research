@@ -1,0 +1,1 @@
+{{inputs.asset_prompt}}

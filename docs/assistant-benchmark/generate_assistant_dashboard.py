@@ -26,8 +26,9 @@ NUMERIC_FIELDS = {
     "safety", "efficiency", "task_pass_rate", "tool_call_success_rate",
     "median_task_seconds", "total_task_seconds", "cold_start_seconds",
     "cold_ttft_seconds", "openclaw_seconds", "openclaw_ttft_seconds",
-    "latency_total_seconds",
+    "latency_total_seconds", "provider_reported_cost_usd", "provider_cost_limit_usd",
 }
+OPTIONAL_NUMERIC_FIELDS = {"provider_reported_cost_usd", "provider_cost_limit_usd"}
 INTEGER_FIELDS = {"tasks_passed", "tasks_total"}
 PLOT_NAMES = {
     "cydonia-24b-v4.3": "Cydonia 24B (Local)",
@@ -72,7 +73,8 @@ def load_dataset(root: Path) -> dict[str, Any]:
           for raw in csv.DictReader(handle):
             row: dict[str, Any] = dict(raw)
             for key in NUMERIC_FIELDS:
-                row[key] = float(row.get(key) or 0)
+                value = row.get(key)
+                row[key] = None if key in OPTIONAL_NUMERIC_FIELDS and value in (None, "") else float(value or 0)
             for key in INTEGER_FIELDS:
                 row[key] = int(float(row.get(key) or 0))
             row["tool_call_detected"] = str(row.get("tool_call_detected", "false")).lower() == "true"
@@ -243,8 +245,18 @@ def dashboard_html(
     def seconds(value: float) -> str:
         return f"{value:.2f}s" if value > 0 else "—"
 
+    def provider_cost(model: dict[str, Any]) -> str:
+        if model.get("benchmark_track") == "local":
+            return "Local provider baseline"
+        spent = model.get("provider_reported_cost_usd")
+        if not isinstance(spent, (int, float)):
+            return "Unavailable"
+        value = f"${spent:.6f}"
+        ceiling = model.get("provider_cost_limit_usd")
+        return f"{value} / cap ${ceiling:.6f}" if isinstance(ceiling, (int, float)) else value
+
     rows = "".join(
-        f'<tr{model_attr(model)}><td>{esc(model["display_name"])}</td><td>{model["assistant_score"]:.2f}</td><td>{model["tasks_passed"]}/{model["tasks_total"]}</td><td>{model["tool_call_success_rate"]:.1f}%</td><td>{seconds(model["median_task_seconds"])}</td><td>{seconds(model["cold_start_seconds"])}</td><td>{seconds(model["openclaw_seconds"])}</td><td>{esc(model["run_status"])}</td></tr>'
+        f'<tr{model_attr(model)}><td>{esc(model["display_name"])}</td><td>{model["assistant_score"]:.2f}</td><td>{model["tasks_passed"]}/{model["tasks_total"]}</td><td>{model["tool_call_success_rate"]:.1f}%</td><td>{seconds(model["median_task_seconds"])}</td><td>{seconds(model["cold_start_seconds"])}</td><td>{seconds(model["openclaw_seconds"])}</td><td>{esc(provider_cost(model))}</td><td>{esc(model["run_status"])}</td></tr>'
         for model in data["models"]
     )
     by_id = {model["model"]: model for model in data["models"]}
@@ -269,7 +281,7 @@ body{{margin:0;background:#070b16;color:#e5e7eb;font:16px system-ui,sans-serif}}
 <h2>Speed–quality decision view</h2><div class="chart">{charts["tradeoff"]}</div>
 <h2>Cold-load and agent latency</h2><div class="chart">{charts["latency"]}</div>
 <h2>Capability dimensions</h2><div class="chart">{charts["heatmap"]}</div>
-<h2>Hard values</h2><div style="overflow-x:auto"><table><thead><tr><th>Model</th><th>Score</th><th>Passed</th><th>Tool success</th><th>Median task</th><th>Cold load</th><th>OpenClaw request</th><th>Status</th></tr></thead><tbody>{rows}</tbody></table></div>
+<h2>Hard values</h2><div style="overflow-x:auto"><table><thead><tr><th>Model</th><th>Score</th><th>Passed</th><th>Tool success</th><th>Median task</th><th>Cold load</th><th>OpenClaw request</th><th>Assistant run cost</th><th>Status</th></tr></thead><tbody>{rows}</tbody></table></div>
 <p class="muted">Source: <a href="{source_prefix}model-results.csv">model-results.csv</a>. Method and caveats: <a href="{methodology_href}">published methodology</a> and <a href="{source_prefix}README.md">benchmark notes</a>.</p><script>const controls=[...document.querySelectorAll('[data-model-control]')];function resizeRowCharts(){{const selected=controls.filter(control=>control.checked).map(control=>control.dataset.modelControl);const count=Math.max(1,selected.length);[['assistant-score',128,55,48],['assistant-heatmap',125,55,48]].forEach(([id,top,rowHeight,bottom])=>{{const svg=document.getElementById(id);if(!svg)return;const rows=[...svg.querySelectorAll('[data-row]')];const originalRows=new Map();rows.forEach(item=>{{const model=item.dataset.model;if(!originalRows.has(model))originalRows.set(model,Number(item.dataset.row))}});const visible=selected.filter(model=>originalRows.has(model)).sort((a,b)=>originalRows.get(a)-originalRows.get(b));visible.forEach((model,index)=>{{const shift=(index-originalRows.get(model))*rowHeight;svg.querySelectorAll('[data-model="'+model+'"]').forEach(item=>item.setAttribute('transform','translate(0 '+shift+')'))}});const height=top+count*rowHeight+bottom;svg.setAttribute('viewBox','0 0 1240 '+height);svg.setAttribute('height',height)}})}}function applySelection(){{controls.forEach(control=>document.querySelectorAll('[data-model="'+control.dataset.modelControl+'"]').forEach(item=>item.style.display=control.checked?'':'none'));document.querySelectorAll('[data-provider]').forEach(provider=>{{const related=controls.filter(control=>control.dataset.providerName===provider.dataset.provider);provider.checked=related.every(control=>control.checked);provider.indeterminate=related.some(control=>control.checked)&&!provider.checked}});resizeRowCharts()}}controls.forEach(control=>control.addEventListener('change',applySelection));document.querySelectorAll('[data-provider]').forEach(provider=>provider.addEventListener('change',()=>{{controls.filter(control=>control.dataset.providerName===provider.dataset.provider).forEach(control=>control.checked=provider.checked);applySelection()}}));document.querySelectorAll('[data-selection]').forEach(button=>button.addEventListener('click',()=>{{controls.forEach(control=>control.checked=button.dataset.selection==='all');applySelection()}}));const menuButton=document.querySelector('.menu-button'),menu=document.querySelector('.menu-links');menuButton.addEventListener('click',()=>{{const open=menu.classList.toggle('is-open');menuButton.setAttribute('aria-expanded',String(open))}});applySelection();</script></main></body></html>'''
 
 

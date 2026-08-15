@@ -19,6 +19,9 @@ timeout=900
 no_unload=false
 publish_local=false
 disable_thinking=false
+max_cost_usd=
+usage_log=
+require_reported_cost=false
 
 usage() {
   cat <<'EOF'
@@ -36,6 +39,9 @@ Options:
   --output-dir DIR        Default: results/<cohort>-<model>-<timestamp>.
   --settle-seconds N      Default: 10. Use 0 for remote APIs.
   --timeout N             Per request timeout in seconds (default: 900).
+  --max-cost-usd N        Shared provider-reported USD ceiling across both stages.
+  --usage-log PATH        Shared JSONL provider-cost ledger for both stages.
+  --require-reported-cost Stop if a paid response omits usage.cost.
   --no-unload             Required for remote providers without a lifecycle API.
   --disable-thinking      Send enable_thinking=false (needed by Qwen3.8 on this endpoint).
   --publish-local         Validate, merge, and rebuild the local research dashboard.
@@ -45,16 +51,18 @@ EOF
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --model|--base-url|--api|--api-key|--cohort|--mode|--output-dir|--settle-seconds|--timeout)
+    --model|--base-url|--api|--api-key|--cohort|--mode|--output-dir|--settle-seconds|--timeout|--max-cost-usd|--usage-log)
       [[ $# -ge 2 ]] || { echo "Missing value for $1" >&2; exit 2; }
       case "$1" in
         --model) model=$2 ;; --base-url) base_url=$2 ;; --api) api=$2 ;; --api-key) api_key=$2 ;;
         --cohort) cohort=$2 ;; --mode) mode=$2 ;; --output-dir) output_dir=$2 ;;
         --settle-seconds) settle_seconds=$2 ;; --timeout) timeout=$2 ;;
+        --max-cost-usd) max_cost_usd=$2 ;; --usage-log) usage_log=$2 ;;
       esac
       shift 2 ;;
     --no-unload) no_unload=true; shift ;;
     --disable-thinking) disable_thinking=true; shift ;;
+    --require-reported-cost) require_reported_cost=true; shift ;;
     --publish-local) publish_local=true; shift ;;
     --help|-h) usage; exit 0 ;;
     *) echo "Unknown option: $1" >&2; usage >&2; exit 2 ;;
@@ -80,14 +88,18 @@ thinking=()
 [[ "$disable_thinking" == true ]] && thinking=(--disable-thinking)
 key=()
 [[ -n "$api_key" ]] && key=(--api-key "$api_key")
+budget=()
+[[ -n "$max_cost_usd" ]] && budget+=(--max-cost-usd "$max_cost_usd")
+[[ -n "$usage_log" ]] && budget+=(--usage-log "$usage_log")
+[[ "$require_reported_cost" == true ]] && budget+=(--require-reported-cost)
 
 printf 'Model: %s\nCohort: %s\nEndpoint: %s\nSeed: 42\nOutput: %s\n' "$model" "$cohort" "$base_url" "$round_root"
 
 if [[ "$mode" == latency || "$mode" == both ]]; then
-  python3 "$tool_root/benchmark.py" "${common[@]}" --api "$api" --settle-seconds "$settle_seconds" "${unload[@]}" "${thinking[@]}" "${key[@]}" --output-dir "$latency_dir"
+  python3 "$tool_root/benchmark.py" "${common[@]}" --api "$api" --settle-seconds "$settle_seconds" "${unload[@]}" "${thinking[@]}" "${key[@]}" "${budget[@]}" --output-dir "$latency_dir"
 fi
 if [[ "$mode" == assistant || "$mode" == both ]]; then
-  python3 "$tool_root/assistant_benchmark.py" "${common[@]}" --run-label "$cohort" --settle-seconds "$settle_seconds" "${unload[@]}" "${thinking[@]}" "${key[@]}" --output-dir "$assistant_dir"
+  python3 "$tool_root/assistant_benchmark.py" "${common[@]}" --run-label "$cohort" --settle-seconds "$settle_seconds" "${unload[@]}" "${thinking[@]}" "${key[@]}" "${budget[@]}" --output-dir "$assistant_dir"
 fi
 if [[ "$publish_local" == true ]]; then
   [[ "$mode" == both ]] || { echo "--publish-local requires --mode both" >&2; exit 2; }
