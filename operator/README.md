@@ -10,6 +10,8 @@ This directory turns the research repository into one operator-focused monorepo:
 - `db` is the durable job, event, and run-record database.
 - `discovery` checks the existing local provider daily for eligible text GGUFs.
 - `publisher` copies each completed cohort into an isolated clone, rebuilds the static pages, and pushes a focused commit to `main`.
+- `command-dispatcher` accepts durable asynchronous write commands; `orchestration-policy` turns completed facts into idempotent follow-up commands; `projection-worker` builds query models from immutable events.
+- `event-history` is a separate read-only container for live event replay at `http://localhost:8091`.
 
 The generated research pages remain the repository root's `index.html`, `assistant-benchmark.html`, and supporting data files. A completed worker creates a durable publication job. The publisher then copies the validated cohort output into an isolated clone, rebuilds the static pages, and pushes its own focused commit to `main`.
 
@@ -23,6 +25,12 @@ docker compose --env-file .env -f compose.yaml up --build
 ```
 
 Open `http://localhost:8090`. The API is also available on `http://localhost:8088` by default.
+
+## CQRS event history
+
+All operator writes now enter the durable command queue. The dispatcher validates a command and records immutable PostgreSQL domain events; the projection worker independently rebuilds read models from the global event cursor. The current queue tables remain compatibility projections while the CQRS read models are introduced. PostgreSQL notifications only wake consumers: replay always reads the stored event sequence, so a container restart cannot lose history.
+
+Use `http://localhost:8091` for live event history. It supports cursor replay through `/api/events`, live Server-Sent Events at `/api/events/stream`, per-run timelines, and projection checkpoint health. Events are retained indefinitely. The history container is read-only and has no inference-provider, switcher, Docker-socket, or model-cache access.
 
 The default local endpoint remains `http://localhost:11434`. `worker-local` uses host networking specifically so the existing endpoint and the operator's existing activity view remain unchanged; it does not publish or remap port `11434`.
 

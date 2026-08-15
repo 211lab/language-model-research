@@ -60,6 +60,8 @@ class Settings:
     publish_repository_url: str
     publish_remote: str
     publish_branch: str
+    event_history_port: int
+    cqrs_poll_seconds: float
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -142,4 +144,6 @@ class Settings:
             publish_repository_url=os.environ.get("PUBLISH_REPOSITORY_URL", "").strip(),
             publish_remote=os.environ.get("PUBLISH_REMOTE", "origin"),
             publish_branch=os.environ.get("PUBLISH_BRANCH", "main"),
+            event_history_port=int(os.environ.get("EVENT_HISTORY_PORT", "8091")),
+            cqrs_poll_seconds=_number("CQRS_POLL_SECONDS", 1.0),
         )

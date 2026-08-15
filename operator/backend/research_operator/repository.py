@@ -99,6 +99,10 @@ class Repository:
                     """,
                     (run_id, stored_model_id, submission.provider, Jsonb(submission.as_payload())),
                 )
+                self._domain_event_cursor(
+                    cursor, "run", run_id, "run.requested", submission.as_payload(),
+                    correlation_id=run_id, producer="command-dispatcher",
+                )
 
                 if submission.provider == "openrouter":
                     # Serialize the reusable preflight lookup/creation. Without
@@ -156,6 +160,10 @@ class Repository:
                             """,
                             (preflight_id, run_id, Jsonb(preflight_payload)),
                         )
+                        self._domain_event_cursor(
+                            cursor, "job", preflight_id, "preflight.queued", preflight_payload,
+                            correlation_id=run_id, producer="command-dispatcher",
+                        )
                         self._event_cursor(cursor, preflight_id, "info", "Queued Luna preflight before paid work.")
 
                 for cohort in submission.cohorts:
@@ -181,6 +189,10 @@ class Repository:
                         job_id,
                         "info",
                         f"Queued {cohort} research for {submission.display_name}.",
+                    )
+                    self._domain_event_cursor(
+                        cursor, "job", job_id, "job.queued", payload,
+                        correlation_id=run_id, producer="command-dispatcher",
                     )
                     job_ids.append(job_id)
         return {
@@ -296,6 +308,10 @@ class Repository:
                     )
                 cursor.execute("UPDATE research_runs SET status = 'running' WHERE id = %s", (job["run_id"],))
                 self._event_cursor(cursor, job_id, "info", f"Claimed by {worker_id}.")
+                self._domain_event_cursor(
+                    cursor, "job", job_id, "job.claimed", {"queue": queue, "worker_id": worker_id},
+                    correlation_id=str(job["run_id"]), producer=worker_id,
+                )
                 return _plain(job)
 
     def heartbeat(self, job_id: str) -> None:
@@ -365,17 +381,11 @@ class Repository:
                     )
                 message = "Completed successfully." if status == "succeeded" else f"Failed: {error}"
                 self._event_cursor(cursor, job_id, "info" if status == "succeeded" else "error", message)
-                if status == "succeeded" and job.get("job_kind") == "research" and result is not None:
-                    publication_id = _new_id()
-                    cursor.execute(
-                        """
-                        INSERT INTO publication_jobs (id, research_job_id, run_id, cohort, artifact)
-                        VALUES (%s, %s, %s, %s, %s)
-                        ON CONFLICT (research_job_id) DO NOTHING
-                        """,
-                        (publication_id, job_id, run_id, str(job["cohort"]), Jsonb(result)),
-                    )
-                    self._event_cursor(cursor, job_id, "info", "Validated suite queued for isolated publication.")
+                self._domain_event_cursor(
+                    cursor, "job", job_id, f"job.{status}",
+                    {"status": status, "cohort": str(job.get("cohort") or ""), "error": error, "result": result or {}},
+                    correlation_id=run_id, producer="worker",
+                )
                 if status != "succeeded" and job.get("job_kind") == "luna_preflight":
                     self._block_dependents(cursor, job_id)
                 self._refresh_run_status(cursor, run_id)
@@ -442,12 +452,46 @@ class Repository:
         else:
             run_status = "failed"
         cursor.execute("UPDATE research_runs SET status = %s WHERE id = %s", (run_status, run_id))
+        self._domain_event_cursor(
+            cursor, "run", run_id, "run.completed",
+            {"status": run_status}, correlation_id=run_id, producer="orchestration-policy",
+        )
 
     @staticmethod
     def _event_cursor(cursor: Any, job_id: str, level: str, message: str, details: dict[str, Any] | None = None) -> None:
         cursor.execute(
             "INSERT INTO job_events (job_id, level, message, details) VALUES (%s, %s, %s, %s)",
             (job_id, level, message, Jsonb(details or {})),
+        )
+        # Stream every worker log through the immutable bus as well as keeping
+        # the compact legacy event table used by the existing job modal.
+        cursor.execute("SELECT run_id FROM jobs WHERE id = %s", (job_id,))
+        job = cursor.fetchone()
+        if job is not None:
+            Repository._domain_event_cursor(
+                cursor, "job", job_id, "job.progressed",
+                {"level": level, "message": message, "details": details or {}},
+                correlation_id=str(job["run_id"]), producer="worker",
+            )
+
+    @staticmethod
+    def _domain_event_cursor(
+        cursor: Any, aggregate_type: str, aggregate_id: str, event_type: str, payload: dict[str, Any], *,
+        correlation_id: str, producer: str, causation_id: str | None = None,
+    ) -> None:
+        """Append an immutable event in the same transaction as its state change."""
+        cursor.execute(
+            """INSERT INTO aggregate_versions (aggregate_type, aggregate_id, version) VALUES (%s, %s, 1)
+               ON CONFLICT (aggregate_type, aggregate_id) DO UPDATE SET version = aggregate_versions.version + 1
+               RETURNING version""",
+            (aggregate_type, aggregate_id),
+        )
+        sequence = int(cursor.fetchone()["version"])
+        cursor.execute(
+            """INSERT INTO domain_events (aggregate_type, aggregate_id, aggregate_sequence, event_type,
+                payload, correlation_id, causation_id, producer)
+               VALUES (%s,%s,%s,%s,%s,%s,%s,%s)""",
+            (aggregate_type, aggregate_id, sequence, event_type, Jsonb(payload), correlation_id, causation_id, producer),
         )
 
     def list_jobs(self, *, limit: int = 100) -> list[dict[str, Any]]:
@@ -488,7 +532,43 @@ class Repository:
                     """,
                     (str(row["id"]),),
                 )
-                return _plain(dict(cursor.fetchone()))
+                publication = dict(cursor.fetchone())
+                self._domain_event_cursor(
+                    cursor, "publication", str(publication["id"]), "publication.claimed",
+                    {"research_job_id": str(publication["research_job_id"])},
+                    correlation_id=str(publication["run_id"]), producer=worker_id,
+                )
+                return _plain(publication)
+
+    def enqueue_publication(self, research_job_id: str) -> dict[str, Any]:
+        """Policy-owned command handler that turns a successful suite into publication work."""
+        with self._connection() as connection, connection.transaction():
+            with connection.cursor() as cursor:
+                cursor.execute(
+                    "SELECT id, run_id, cohort, job_kind, status, result FROM jobs WHERE id = %s FOR UPDATE",
+                    (research_job_id,),
+                )
+                job = cursor.fetchone()
+                if job is None or job["job_kind"] != "research" or job["status"] != "succeeded":
+                    raise ValueError("Only a successful research suite can be published")
+                publication_id = _new_id()
+                cursor.execute(
+                    """INSERT INTO publication_jobs (id, research_job_id, run_id, cohort, artifact)
+                       VALUES (%s,%s,%s,%s,%s) ON CONFLICT (research_job_id) DO NOTHING RETURNING id""",
+                    (publication_id, research_job_id, job["run_id"], job["cohort"], Jsonb(job["result"] or {})),
+                )
+                existing = cursor.fetchone()
+                if existing is None:
+                    cursor.execute("SELECT id FROM publication_jobs WHERE research_job_id = %s", (research_job_id,))
+                    publication_id = str(cursor.fetchone()["id"])
+                    return {"publication_id": publication_id, "created": False}
+                self._event_cursor(cursor, research_job_id, "info", "Validated suite queued for isolated publication.")
+                self._domain_event_cursor(
+                    cursor, "publication", publication_id, "publication.queued",
+                    {"research_job_id": research_job_id, "cohort": str(job["cohort"])},
+                    correlation_id=str(job["run_id"]), producer="orchestration-policy",
+                )
+                return {"publication_id": publication_id, "created": True}
 
     def finish_publication(self, publication_id: str, *, commit_sha: str) -> None:
         with self._connection() as connection, connection.transaction():
@@ -496,6 +576,11 @@ class Repository:
                 "UPDATE publication_jobs SET status = 'succeeded', commit_sha = %s, finished_at = NOW() WHERE id = %s",
                 (commit_sha, publication_id),
             )
+            row = connection.execute("SELECT run_id FROM publication_jobs WHERE id = %s", (publication_id,)).fetchone()
+            if row:
+                with connection.cursor() as cursor:
+                    self._domain_event_cursor(cursor, "publication", publication_id, "publication.published",
+                        {"commit_sha": commit_sha}, correlation_id=str(row["run_id"]), producer="publisher")
 
     def fail_publication(self, publication_id: str, error: str) -> None:
         with self._connection() as connection, connection.transaction():
@@ -503,6 +588,11 @@ class Repository:
                 "UPDATE publication_jobs SET status = 'blocked', error = %s, finished_at = NOW() WHERE id = %s",
                 (error[:2000], publication_id),
             )
+            row = connection.execute("SELECT run_id FROM publication_jobs WHERE id = %s", (publication_id,)).fetchone()
+            if row:
+                with connection.cursor() as cursor:
+                    self._domain_event_cursor(cursor, "publication", publication_id, "publication.blocked",
+                        {"error": error[:2000]}, correlation_id=str(row["run_id"]), producer="publisher")
 
     def list_publications(self, *, limit: int = 100) -> list[dict[str, Any]]:
         with self._connection() as connection:
@@ -554,6 +644,10 @@ class Repository:
                 if row is None:
                     return False
                 self._event_cursor(cursor, job_id, "warning", "Cancelled before execution.")
+                self._domain_event_cursor(
+                    cursor, "job", job_id, "job.cancelled", {"status": "cancelled"},
+                    correlation_id=str(row["run_id"]), producer="command-dispatcher",
+                )
                 if row["job_kind"] == "luna_preflight":
                     self._block_dependents(cursor, job_id)
                 self._refresh_run_status(cursor, str(row["run_id"]))

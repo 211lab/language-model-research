@@ -473,7 +473,8 @@ async function showEvents(job) {
 async function cancelJob(job) {
   if (!window.confirm(`Cancel the queued ${job.cohort} job for ${job.display_name || job.model_ref}?`)) return;
   try {
-    await request(`/api/jobs/${job.id}`, { method: "DELETE" });
+    const accepted = await request(`/api/commands/jobs/${job.id}/cancel`, { method: "POST" });
+    await waitForCommand(accepted.command.id);
     await refreshJobs();
   } catch (error) {
     window.alert(error.message);
@@ -572,19 +573,26 @@ async function submitRun(event) {
   button.disabled = true;
   formMessage("Validating and queuing the selected cohort jobs…");
   try {
-    const created = await request("/api/runs", { method: "POST", body: JSON.stringify(payload) });
-    const preflight = created.preflight_job_id
-      ? created.preflight_reused
-        ? " The selected jobs will wait for the already-queued Luna preflight."
-        : " Luna preflight was added first."
-      : "";
-    formMessage(`Queued ${created.job_ids.length} research job(s).${preflight}`, "success");
+    const accepted = await request("/api/commands/runs", { method: "POST", body: JSON.stringify(payload) });
+    formMessage(`Command ${accepted.command.id.slice(0, 8)} accepted. Scheduling the selected researchâ€¦`, "success");
+    await waitForCommand(accepted.command.id);
+    formMessage("Research jobs were scheduled.", "success");
     await refreshJobs();
   } catch (error) {
     formMessage(error.message, "error");
   } finally {
     button.disabled = false;
   }
+}
+
+async function waitForCommand(commandId) {
+  for (let attempt = 0; attempt < 45; attempt += 1) {
+    const command = await request(`/api/commands/${commandId}`);
+    if (command.status === "succeeded") return command.result || {};
+    if (["rejected", "failed"].includes(command.status)) throw new Error(command.error || "Command was not accepted");
+    await new Promise((resolve) => window.setTimeout(resolve, 1000));
+  }
+  throw new Error("Command remains queued. Follow its progress in event history.");
 }
 
 function renderOverview() {

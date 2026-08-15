@@ -5,12 +5,13 @@ from __future__ import annotations
 import os
 from typing import Any
 
-from fastapi import FastAPI, HTTPException, Response
+from fastapi import FastAPI, Header, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
 from .config import Settings
 from .contracts import ContractError, parse_model_submission
+from .cqrs import CommandStore
 from .local_switcher import local_catalog
 from .overview import build_overview
 from .repository import Repository
@@ -19,6 +20,7 @@ from .repository import Repository
 def create_app(settings: Settings | None = None, repository: Repository | None = None) -> FastAPI:
     runtime = settings or Settings.from_env()
     store = repository or Repository(runtime.database_dsn)
+    commands = CommandStore(runtime.database_dsn)
     app = FastAPI(title="Language Model Research Operator", version="0.1.0")
     frontend_origin = os.environ.get("FRONTEND_ORIGIN", "http://localhost:8090")
     app.add_middleware(
@@ -69,9 +71,31 @@ def create_app(settings: Settings | None = None, repository: Repository | None =
     def jobs(limit: int = 100) -> dict[str, Any]:
         return {"jobs": store.list_jobs(limit=max(1, min(limit, 500)))}
 
+    @app.get("/api/query/jobs")
+    def query_jobs(limit: int = 100) -> dict[str, Any]:
+        return {"jobs": store.list_jobs(limit=max(1, min(limit, 500))), "projection": "legacy-queue"}
+
+    @app.get("/api/query/runs")
+    def query_runs(limit: int = 100) -> dict[str, Any]:
+        from psycopg import connect
+        from psycopg.rows import dict_row
+        from .repository import _plain
+        with connect(runtime.database_dsn, row_factory=dict_row) as connection:
+            rows = connection.execute(
+                "SELECT * FROM run_summary_read ORDER BY requested_at DESC NULLS LAST LIMIT %s", (max(1, min(limit, 500)),)
+            ).fetchall()
+        return {"runs": [_plain(dict(row)) for row in rows], "projection": "operator-read-models"}
+
     @app.get("/api/publications")
     def publications(limit: int = 100) -> dict[str, Any]:
         return {"publications": store.list_publications(limit=max(1, min(limit, 500)))}
+
+    @app.get("/api/commands/{command_id}")
+    def command(command_id: str) -> dict[str, Any]:
+        found = commands.get(command_id)
+        if found is None:
+            raise HTTPException(status_code=404, detail="Command not found")
+        return found
 
     @app.get("/api/jobs/{job_id}")
     def job(job_id: str) -> dict[str, Any]:
@@ -86,8 +110,9 @@ def create_app(settings: Settings | None = None, repository: Repository | None =
             raise HTTPException(status_code=404, detail="Job not found")
         return {"events": store.list_events(job_id, limit=max(1, min(limit, 1000)))}
 
-    @app.post("/api/runs", status_code=201)
-    def create_run(payload: dict[str, Any]) -> dict[str, Any]:
+    @app.post("/api/commands/runs", status_code=202)
+    @app.post("/api/runs", status_code=202, deprecated=True)
+    def create_run(payload: dict[str, Any], idempotency_key: str | None = Header(default=None, alias="Idempotency-Key")) -> dict[str, Any]:
         try:
             submission = parse_model_submission(payload)
         except ContractError as exc:
@@ -97,14 +122,14 @@ def create_app(settings: Settings | None = None, repository: Repository | None =
                 status_code=409,
                 detail="OPENROUTER_API_KEY is not configured in the worker environment; no paid work was queued.",
             )
-        return store.create_run(
-            submission,
-            luna_model=runtime.luna_model,
-            harness_contract_id=runtime.harness_contract_id,
+        command = commands.submit(
+            "run.submit", submission.as_payload(), idempotency_key=idempotency_key,
         )
+        return {"command": command}
 
-    @app.delete("/api/jobs/{job_id}", status_code=204)
-    def cancel_job(job_id: str) -> Response:
+    @app.post("/api/commands/jobs/{job_id}/cancel", status_code=202)
+    @app.delete("/api/jobs/{job_id}", status_code=202, deprecated=True)
+    def cancel_job(job_id: str, idempotency_key: str | None = Header(default=None, alias="Idempotency-Key")) -> Response | dict[str, Any]:
         found = store.get_job(job_id)
         if found is None:
             raise HTTPException(status_code=404, detail="Job not found")
@@ -113,9 +138,8 @@ def create_app(settings: Settings | None = None, repository: Repository | None =
                 status_code=409,
                 detail="A running job is never force-stopped. Wait for it to finish or investigate the worker log.",
             )
-        if not store.cancel_queued(job_id):
-            raise HTTPException(status_code=409, detail="Only queued jobs can be cancelled")
-        return Response(status_code=204)
+        command = commands.submit("job.cancel", {"job_id": job_id}, idempotency_key=idempotency_key)
+        return {"command": command}
 
     return app
 

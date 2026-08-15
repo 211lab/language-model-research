@@ -11,10 +11,9 @@ from .config import Settings
 
 def main() -> int:
     settings = Settings.from_env()
-    migration = settings.operator_root / "db" / "migrations" / "002-discovery-publication.sql"
-    statements = migration.read_text(encoding="utf-8")
     with connect(settings.database_dsn) as connection, connection.transaction():
-        connection.execute(statements)
+        for migration in sorted((settings.operator_root / "db" / "migrations").glob("*.sql")):
+            connection.execute(migration.read_text(encoding="utf-8"))
     return 0
 
 

@@ -150,6 +150,54 @@ services:
       migrate:
         condition: service_completed_successfully
 
+  command-dispatcher:
+    <<: *backend
+    command: ["python", "-m", "research_operator.cqrs_worker", "--role", "dispatcher"]
+    working_dir: /workspace/operator/backend
+    environment:
+      POSTGRES_DSN: postgresql://research:research@db:5432/research
+      RESEARCH_ROOT: /workspace
+      OPERATOR_ROOT: /workspace/operator
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+  projection-worker:
+    <<: *backend
+    command: ["python", "-m", "research_operator.cqrs_worker", "--role", "projector"]
+    working_dir: /workspace/operator/backend
+    environment:
+      POSTGRES_DSN: postgresql://research:research@db:5432/research
+      OPERATOR_ROOT: /workspace/operator
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+  orchestration-policy:
+    <<: *backend
+    command: ["python", "-m", "research_operator.cqrs_worker", "--role", "policy"]
+    working_dir: /workspace/operator/backend
+    environment:
+      POSTGRES_DSN: postgresql://research:research@db:5432/research
+      OPERATOR_ROOT: /workspace/operator
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+  event-history:
+    <<: *backend
+    command: ["python", "-m", "research_operator.history"]
+    working_dir: /workspace/operator/backend
+    environment:
+      POSTGRES_DSN: postgresql://research:research@db:5432/research
+      OPERATOR_ROOT: /workspace/operator
+      EVENT_HISTORY_PORT: ${EVENT_HISTORY_PORT:-8091}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    ports:
+      - "${EVENT_HISTORY_PORT:-8091}:${EVENT_HISTORY_PORT:-8091}"
+
   migrate:
     <<: *backend
     restart: "no"
