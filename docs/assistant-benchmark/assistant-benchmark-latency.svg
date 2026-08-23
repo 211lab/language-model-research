@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="690" viewBox="0 0 1240 690" role="img" aria-labelledby="title desc">
-<title id="title">Cold-load and OpenClaw latency</title><desc id="desc">Only cohorts with recorded latency telemetry are plotted; unavailable provider timing is omitted.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="690" viewBox="0 0 1240 690" role="img" aria-labelledby="cold-load-and-openclaw-latency-title cold-load-and-openclaw-latency-desc">
+<title id="cold-load-and-openclaw-latency-title">Cold-load and OpenClaw latency</title><desc id="cold-load-and-openclaw-latency-desc">Only cohorts with recorded latency telemetry are plotted; unavailable provider timing is omitted.</desc>
 <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 27px Arial,sans-serif}.sub,.tick{fill:#94a3b8;font:14px Arial,sans-serif}.label{fill:#e2e8f0;font:15px Arial,sans-serif}.value{fill:#f8fafc;font:700 15px Arial,sans-serif}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.5}</style>
 <rect class="bg" width="1240" height="690" rx="18"/>
 <text class="title" x="32" y="46">Cold-load and OpenClaw latency</text>

@@ -1,0 +1,1 @@
+{"primer": {"answer": "", "seconds": 29.923409277005703, "ttft_seconds": 0.003349618003994692}, "run_id": "20260812t015120-latency-qwen3-6-35b-hauhaucs-aggressive-r1", "sequence": 1, "task_id": "cold-and-agent-sequence", "workload": {"answer": "", "seconds": 2.1245510640001157, "ttft_seconds": 1.4488617530005286}}

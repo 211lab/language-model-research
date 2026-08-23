@@ -1,0 +1,39 @@
+{
+  "dimensions": {
+    "efficiency": 78.571,
+    "english": 83.607,
+    "grounding": 49.457,
+    "outcome": 37.844,
+    "safety": 90.652,
+    "state": 58.937,
+    "tool_use": 85.437
+  },
+  "efficiency": {
+    "median_task_seconds": 107.6179,
+    "tasks_per_minute": 0.4976,
+    "total_seconds": 2291.1681
+  },
+  "exactness": {
+    "contract": 11,
+    "core": 15,
+    "strict": 11,
+    "total": 21
+  },
+  "failure_counts": {
+    "harness_error": 2,
+    "model_failure": 8,
+    "pass": 11
+  },
+  "model": "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m",
+  "reliability": {
+    "evaluated": 19,
+    "evaluated_pass_rate": 57.895,
+    "scheduled": 21,
+    "scheduled_pass_rate": 52.381
+  },
+  "run_id": "20260812t020233-assistant-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1",
+  "schema_version": 1,
+  "score": 68.792,
+  "status": "partial",
+  "suite": "assistant"
+}

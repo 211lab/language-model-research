@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 267,
+      "path": "README.md",
+      "sha256": "f8db8442051715231c0a2cecb16fe1e07bae286e2506b5eccdd37b7b67f5a512"
+    },
+    {
+      "bytes": 302,
+      "path": "configuration.json",
+      "sha256": "3ef20da83f3ecdc5fd4588144eab9de0f1554f2e8a48cea467db9de1621386a7"
+    },
+    {
+      "bytes": 440,
+      "path": "lineage.json",
+      "sha256": "9543667ec2dc517aa165c4384acf25ae9b560f6ed68b9620bd08d47e83380e39"
+    },
+    {
+      "bytes": 12052,
+      "path": "raw/results.json",
+      "sha256": "1d65e56fe1408e2bf76524908a7e81ab01df4123be0d7bed98bc9be08d33f4e2"
+    },
+    {
+      "bytes": 784,
+      "path": "summary.json",
+      "sha256": "8a158a4f4c3ebba6efc69424ead3c2b93d0cdb5b34ba5ce2aac0eb5a1f28891e"
+    },
+    {
+      "bytes": 657,
+      "path": "task-results.jsonl",
+      "sha256": "baf9cde21bf1ab1d811f72b78512728ce40347f4adb17276618076831e30e369"
+    },
+    {
+      "bytes": 313,
+      "path": "trajectory.jsonl",
+      "sha256": "2541b47cd2dda46a8775ce533945e81dcf33721754b72eb34bfceba2d4bae562"
+    }
+  ],
+  "caveats": [
+    "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+    "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+  ],
+  "counts": {
+    "completed": 1,
+    "expected": 1,
+    "infrastructure_failures": 0,
+    "passed": 1
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp",
+    "lifecycle_control": "all resident models unloaded through llama-swap before each model",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "serial": true
+  },
+  "finished_at": "2026-08-12T02:02:33.654075-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": null,
+    "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+    "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+    "runner_dirty": true,
+    "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+    "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+    "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+  },
+  "run_id": "20260812t015120-latency-qwen3-6-27b-heretic-neo-code-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-12T01:51:20.432340-04:00",
+  "status": "ok",
+  "suite": "latency",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "latency-benchmark-v1",
+    "display_name": "qwen3.6-27b-heretic-neo-code",
+    "model": "qwen3.6-27b-heretic-neo-code",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp"
+  }
+}

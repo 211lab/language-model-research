@@ -1,0 +1,1158 @@
+{
+  "generated_at": "2026-08-23T03:37:24.316276+00:00",
+  "run_count": 18,
+  "runs": [
+    {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "cydonia-24b-v4.3",
+      "efficiency": {
+        "cold_start_seconds": 27.967421191999165,
+        "cold_ttft_seconds": 0.005088760997750796,
+        "median_task_seconds": 37.183,
+        "tasks_per_minute": 1.6136,
+        "total_seconds": 37.183,
+        "workload_seconds": 9.215588352999475,
+        "workload_ttft_seconds": 2.350872294999135
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 0,
+        "core": 1,
+        "strict": 0,
+        "total": 1
+      },
+      "failure_counts": {
+        "tool_protocol_failure": 1
+      },
+      "manifest_path": "runs/20260812t015120-latency-cydonia-24b-v4-3-r1/manifest.json",
+      "model": "cydonia-24b-v4.3",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 0.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 0.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260812t015120-latency-cydonia-24b-v4-3-r1",
+      "score": 50.0,
+      "started_at": "2026-08-12T01:51:20.432340-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t015120-latency-cydonia-24b-v4-3-r1/summary.json",
+      "task_results_path": "runs/20260812t015120-latency-cydonia-24b-v4-3-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "dolphin-mistral-24b-venice",
+      "efficiency": {
+        "cold_start_seconds": 17.65202158899774,
+        "cold_ttft_seconds": 0.0032104339989018627,
+        "median_task_seconds": 18.6726,
+        "tasks_per_minute": 3.2133,
+        "total_seconds": 18.6726,
+        "workload_seconds": 1.020600588999514,
+        "workload_ttft_seconds": 0.6275144590035779
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 0,
+        "core": 1,
+        "strict": 0,
+        "total": 1
+      },
+      "failure_counts": {
+        "tool_protocol_failure": 1
+      },
+      "manifest_path": "runs/20260812t015120-latency-dolphin-mistral-24b-venice-r1/manifest.json",
+      "model": "dolphin-mistral-24b-venice",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 0.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 0.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260812t015120-latency-dolphin-mistral-24b-venice-r1",
+      "score": 50.0,
+      "started_at": "2026-08-12T01:51:20.432340-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t015120-latency-dolphin-mistral-24b-venice-r1/summary.json",
+      "task_results_path": "runs/20260812t015120-latency-dolphin-mistral-24b-venice-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m",
+      "efficiency": {
+        "cold_start_seconds": 97.61175223300233,
+        "cold_ttft_seconds": 0.0014789390043006279,
+        "median_task_seconds": 252.813,
+        "tasks_per_minute": 0.2373,
+        "total_seconds": 252.813,
+        "workload_seconds": 155.2012724169981,
+        "workload_ttft_seconds": 0.03919271699851379
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 1,
+        "core": 1,
+        "strict": 1,
+        "total": 1
+      },
+      "failure_counts": {
+        "pass": 1
+      },
+      "manifest_path": "runs/20260812t015120-latency-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1/manifest.json",
+      "model": "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 100.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 100.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260812t015120-latency-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1",
+      "score": 100.0,
+      "started_at": "2026-08-12T01:51:20.432340-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t015120-latency-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1/summary.json",
+      "task_results_path": "runs/20260812t015120-latency-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "gemma-4-12b-obliterated",
+      "efficiency": {
+        "cold_start_seconds": 11.65942994600482,
+        "cold_ttft_seconds": 0.004682411999965552,
+        "median_task_seconds": 14.151,
+        "tasks_per_minute": 4.24,
+        "total_seconds": 14.151,
+        "workload_seconds": 2.4915786320052575,
+        "workload_ttft_seconds": 0.9312468170028296
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 1,
+        "core": 1,
+        "strict": 1,
+        "total": 1
+      },
+      "failure_counts": {
+        "pass": 1
+      },
+      "manifest_path": "runs/20260812t015120-latency-gemma-4-12b-obliterated-r1/manifest.json",
+      "model": "gemma-4-12b-obliterated",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 100.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 100.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260812t015120-latency-gemma-4-12b-obliterated-r1",
+      "score": 100.0,
+      "started_at": "2026-08-12T01:51:20.432340-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t015120-latency-gemma-4-12b-obliterated-r1/summary.json",
+      "task_results_path": "runs/20260812t015120-latency-gemma-4-12b-obliterated-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "gemma-4-e4b-it",
+      "efficiency": {
+        "cold_start_seconds": 9.733592305005004,
+        "cold_ttft_seconds": 0.005922943004406989,
+        "median_task_seconds": 11.2863,
+        "tasks_per_minute": 5.3162,
+        "total_seconds": 11.2863,
+        "workload_seconds": 1.552729579998413,
+        "workload_ttft_seconds": 0.7556925419994514
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 1,
+        "core": 1,
+        "strict": 1,
+        "total": 1
+      },
+      "failure_counts": {
+        "pass": 1
+      },
+      "manifest_path": "runs/20260812t015120-latency-gemma-4-e4b-it-r1/manifest.json",
+      "model": "gemma-4-e4b-it",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 100.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 100.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260812t015120-latency-gemma-4-e4b-it-r1",
+      "score": 100.0,
+      "started_at": "2026-08-12T01:51:20.432340-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t015120-latency-gemma-4-e4b-it-r1/summary.json",
+      "task_results_path": "runs/20260812t015120-latency-gemma-4-e4b-it-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "qwen3.6-27b-heretic-neo-code",
+      "efficiency": {
+        "cold_start_seconds": 35.27423781199468,
+        "cold_ttft_seconds": 0.0023845429968787357,
+        "median_task_seconds": 58.4755,
+        "tasks_per_minute": 1.0261,
+        "total_seconds": 58.4755,
+        "workload_seconds": 23.201270860998193,
+        "workload_ttft_seconds": 4.8704243960019085
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 1,
+        "core": 1,
+        "strict": 1,
+        "total": 1
+      },
+      "failure_counts": {
+        "pass": 1
+      },
+      "manifest_path": "runs/20260812t015120-latency-qwen3-6-27b-heretic-neo-code-r1/manifest.json",
+      "model": "qwen3.6-27b-heretic-neo-code",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 100.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 100.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260812t015120-latency-qwen3-6-27b-heretic-neo-code-r1",
+      "score": 100.0,
+      "started_at": "2026-08-12T01:51:20.432340-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t015120-latency-qwen3-6-27b-heretic-neo-code-r1/summary.json",
+      "task_results_path": "runs/20260812t015120-latency-qwen3-6-27b-heretic-neo-code-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "qwen3.6-35b-hauhaucs-aggressive",
+      "efficiency": {
+        "cold_start_seconds": 29.923409277005703,
+        "cold_ttft_seconds": 0.003349618003994692,
+        "median_task_seconds": 32.048,
+        "tasks_per_minute": 1.8722,
+        "total_seconds": 32.048,
+        "workload_seconds": 2.1245510640001157,
+        "workload_ttft_seconds": 1.4488617530005286
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 1,
+        "core": 1,
+        "strict": 1,
+        "total": 1
+      },
+      "failure_counts": {
+        "pass": 1
+      },
+      "manifest_path": "runs/20260812t015120-latency-qwen3-6-35b-hauhaucs-aggressive-r1/manifest.json",
+      "model": "qwen3.6-35b-hauhaucs-aggressive",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 100.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 100.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260812t015120-latency-qwen3-6-35b-hauhaucs-aggressive-r1",
+      "score": 100.0,
+      "started_at": "2026-08-12T01:51:20.432340-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t015120-latency-qwen3-6-35b-hauhaucs-aggressive-r1/summary.json",
+      "task_results_path": "runs/20260812t015120-latency-qwen3-6-35b-hauhaucs-aggressive-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl",
+      "efficiency": {
+        "cold_start_seconds": 42.776272613999026,
+        "cold_ttft_seconds": 0.00373033599316841,
+        "median_task_seconds": 70.9961,
+        "tasks_per_minute": 0.8451,
+        "total_seconds": 70.9961,
+        "workload_seconds": 28.219845717998396,
+        "workload_ttft_seconds": 4.807563656999264
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 1,
+        "core": 1,
+        "strict": 1,
+        "total": 1
+      },
+      "failure_counts": {
+        "pass": 1
+      },
+      "manifest_path": "runs/20260812t015120-latency-unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl-r1/manifest.json",
+      "model": "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 100.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 100.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260812t015120-latency-unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl-r1",
+      "score": 100.0,
+      "started_at": "2026-08-12T01:51:20.432340-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t015120-latency-unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl-r1/summary.json",
+      "task_results_path": "runs/20260812t015120-latency-unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s",
+      "efficiency": {
+        "cold_start_seconds": 29.948987545001728,
+        "cold_ttft_seconds": 0.0035129169991705567,
+        "median_task_seconds": 32.3097,
+        "tasks_per_minute": 1.857,
+        "total_seconds": 32.3097,
+        "workload_seconds": 2.360662939005124,
+        "workload_ttft_seconds": 1.556977263004228
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 1,
+        "core": 1,
+        "strict": 1,
+        "total": 1
+      },
+      "failure_counts": {
+        "pass": 1
+      },
+      "manifest_path": "runs/20260812t015120-latency-unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s-r1/manifest.json",
+      "model": "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 100.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 100.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260812t015120-latency-unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s-r1",
+      "score": 100.0,
+      "started_at": "2026-08-12T01:51:20.432340-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t015120-latency-unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s-r1/summary.json",
+      "task_results_path": "runs/20260812t015120-latency-unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 100.0,
+        "english": 83.607,
+        "grounding": 27.717,
+        "outcome": 16.913,
+        "safety": 92.918,
+        "state": 39.614,
+        "tool_use": 10.922
+      },
+      "display_name": "Cydonia 24B v4.3 Q4_K_M",
+      "efficiency": {
+        "median_task_seconds": 24.6922,
+        "tasks_per_minute": 1.4671,
+        "total_seconds": 858.8454
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 3,
+        "core": 8,
+        "strict": 3,
+        "total": 21
+      },
+      "failure_counts": {
+        "model_failure": 18,
+        "pass": 3
+      },
+      "manifest_path": "runs/20260812t020233-assistant-cydonia-24b-v4-3-r1/manifest.json",
+      "model": "cydonia-24b-v4.3",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 21,
+        "evaluated_pass_rate": 14.286,
+        "scheduled": 21,
+        "scheduled_pass_rate": 14.286
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260812t020233-assistant-cydonia-24b-v4-3-r1",
+      "score": 47.941,
+      "started_at": "2026-08-12T02:02:33.983968-04:00",
+      "status": "ok",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t020233-assistant-cydonia-24b-v4-3-r1/summary.json",
+      "task_results_path": "runs/20260812t020233-assistant-cydonia-24b-v4-3-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 100.0,
+        "english": 87.705,
+        "grounding": 19.565,
+        "outcome": 13.742,
+        "safety": 92.918,
+        "state": 39.614,
+        "tool_use": 10.922
+      },
+      "display_name": "Dolphin Mistral 24B Venice Edition Q4_K_M",
+      "efficiency": {
+        "median_task_seconds": 1.9142,
+        "tasks_per_minute": 19.3627,
+        "total_seconds": 65.0736
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 2,
+        "core": 8,
+        "strict": 2,
+        "total": 21
+      },
+      "failure_counts": {
+        "model_failure": 19,
+        "pass": 2
+      },
+      "manifest_path": "runs/20260812t020233-assistant-dolphin-mistral-24b-venice-r1/manifest.json",
+      "model": "dolphin-mistral-24b-venice",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 21,
+        "evaluated_pass_rate": 9.524,
+        "scheduled": 21,
+        "scheduled_pass_rate": 9.524
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260812t020233-assistant-dolphin-mistral-24b-venice-r1",
+      "score": 46.989,
+      "started_at": "2026-08-12T02:02:33.983968-04:00",
+      "status": "ok",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t020233-assistant-dolphin-mistral-24b-venice-r1/summary.json",
+      "task_results_path": "runs/20260812t020233-assistant-dolphin-mistral-24b-venice-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 78.571,
+        "english": 83.607,
+        "grounding": 49.457,
+        "outcome": 37.844,
+        "safety": 90.652,
+        "state": 58.937,
+        "tool_use": 85.437
+      },
+      "display_name": "Qwythos-9B-Claude-Mythos-5-1M-MTP-Q4_K_M",
+      "efficiency": {
+        "median_task_seconds": 107.6179,
+        "tasks_per_minute": 0.4976,
+        "total_seconds": 2291.1681
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 11,
+        "core": 15,
+        "strict": 11,
+        "total": 21
+      },
+      "failure_counts": {
+        "harness_error": 2,
+        "model_failure": 8,
+        "pass": 11
+      },
+      "manifest_path": "runs/20260812t020233-assistant-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1/manifest.json",
+      "model": "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 19,
+        "evaluated_pass_rate": 57.895,
+        "scheduled": 21,
+        "scheduled_pass_rate": 52.381
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260812t020233-assistant-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1",
+      "score": 68.792,
+      "started_at": "2026-08-12T02:02:33.983968-04:00",
+      "status": "partial",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t020233-assistant-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1/summary.json",
+      "task_results_path": "runs/20260812t020233-assistant-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 88.095,
+        "english": 59.016,
+        "grounding": 35.87,
+        "outcome": 18.393,
+        "safety": 97.167,
+        "state": 39.614,
+        "tool_use": 68.204
+      },
+      "display_name": "Gemma 4 12B Obliterated Q4_K_M",
+      "efficiency": {
+        "median_task_seconds": 11.0058,
+        "tasks_per_minute": 5.6594,
+        "total_seconds": 222.6403
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 6,
+        "core": 11,
+        "strict": 6,
+        "total": 21
+      },
+      "failure_counts": {
+        "model_failure": 13,
+        "pass": 6,
+        "tool_protocol_failure": 2
+      },
+      "manifest_path": "runs/20260812t020233-assistant-gemma-4-12b-obliterated-r1/manifest.json",
+      "model": "gemma-4-12b-obliterated",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 21,
+        "evaluated_pass_rate": 28.571,
+        "scheduled": 21,
+        "scheduled_pass_rate": 28.571
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260812t020233-assistant-gemma-4-12b-obliterated-r1",
+      "score": 57.036,
+      "started_at": "2026-08-12T02:02:33.983968-04:00",
+      "status": "ok",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t020233-assistant-gemma-4-12b-obliterated-r1/summary.json",
+      "task_results_path": "runs/20260812t020233-assistant-gemma-4-12b-obliterated-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 90.476,
+        "english": 91.803,
+        "grounding": 46.739,
+        "outcome": 34.038,
+        "safety": 97.167,
+        "state": 68.599,
+        "tool_use": 64.563
+      },
+      "display_name": "Gemma 4 E4B IT UD-Q4_K_XL",
+      "efficiency": {
+        "median_task_seconds": 4.5186,
+        "tasks_per_minute": 10.8379,
+        "total_seconds": 110.7228
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 9,
+        "core": 13,
+        "strict": 9,
+        "total": 21
+      },
+      "failure_counts": {
+        "harness_error": 1,
+        "model_failure": 10,
+        "pass": 9,
+        "tool_protocol_failure": 1
+      },
+      "manifest_path": "runs/20260812t020233-assistant-gemma-4-e4b-it-r1/manifest.json",
+      "model": "gemma-4-e4b-it",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 20,
+        "evaluated_pass_rate": 45.0,
+        "scheduled": 21,
+        "scheduled_pass_rate": 42.857
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260812t020233-assistant-gemma-4-e4b-it-r1",
+      "score": 67.561,
+      "started_at": "2026-08-12T02:02:33.983968-04:00",
+      "status": "partial",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t020233-assistant-gemma-4-e4b-it-r1/summary.json",
+      "task_results_path": "runs/20260812t020233-assistant-gemma-4-e4b-it-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 78.571,
+        "english": 83.607,
+        "grounding": 57.609,
+        "outcome": 43.975,
+        "safety": 94.901,
+        "state": 80.676,
+        "tool_use": 81.796
+      },
+      "display_name": "Qwen3.6 27B Heretic NEO CODE Q4_K_M",
+      "efficiency": {
+        "median_task_seconds": 173.5874,
+        "tasks_per_minute": 0.2597,
+        "total_seconds": 4158.3172
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 13,
+        "core": 16,
+        "strict": 12,
+        "total": 21
+      },
+      "failure_counts": {
+        "harness_error": 3,
+        "model_failure": 6,
+        "pass": 12
+      },
+      "manifest_path": "runs/20260812t020233-assistant-qwen3-6-27b-heretic-neo-code-r1/manifest.json",
+      "model": "qwen3.6-27b-heretic-neo-code",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 18,
+        "evaluated_pass_rate": 66.667,
+        "scheduled": 21,
+        "scheduled_pass_rate": 57.143
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260812t020233-assistant-qwen3-6-27b-heretic-neo-code-r1",
+      "score": 73.083,
+      "started_at": "2026-08-12T02:02:33.983968-04:00",
+      "status": "partial",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t020233-assistant-qwen3-6-27b-heretic-neo-code-r1/summary.json",
+      "task_results_path": "runs/20260812t020233-assistant-qwen3-6-27b-heretic-neo-code-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 64.286,
+        "english": 79.508,
+        "grounding": 38.587,
+        "outcome": 43.975,
+        "safety": 84.986,
+        "state": 49.275,
+        "tool_use": 85.437
+      },
+      "display_name": "Qwen3.6 35B A3B Uncensored HauhauCS Aggressive Q4_K_M",
+      "efficiency": {
+        "median_task_seconds": 9.0143,
+        "tasks_per_minute": 4.7202,
+        "total_seconds": 216.0944
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 9,
+        "core": 14,
+        "strict": 9,
+        "total": 21
+      },
+      "failure_counts": {
+        "harness_error": 4,
+        "model_failure": 8,
+        "pass": 9
+      },
+      "manifest_path": "runs/20260812t020233-assistant-qwen3-6-35b-hauhaucs-aggressive-r1/manifest.json",
+      "model": "qwen3.6-35b-hauhaucs-aggressive",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 17,
+        "evaluated_pass_rate": 52.941,
+        "scheduled": 21,
+        "scheduled_pass_rate": 42.857
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260812t020233-assistant-qwen3-6-35b-hauhaucs-aggressive-r1",
+      "score": 65.436,
+      "started_at": "2026-08-12T02:02:33.983968-04:00",
+      "status": "partial",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t020233-assistant-qwen3-6-35b-hauhaucs-aggressive-r1/summary.json",
+      "task_results_path": "runs/20260812t020233-assistant-qwen3-6-35b-hauhaucs-aggressive-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 78.571,
+        "english": 83.607,
+        "grounding": 65.761,
+        "outcome": 61.311,
+        "safety": 100.0,
+        "state": 63.768,
+        "tool_use": 83.981
+      },
+      "display_name": "Qwen3.6-27B-UD-Q4_K_XL",
+      "efficiency": {
+        "median_task_seconds": 258.8873,
+        "tasks_per_minute": 0.2193,
+        "total_seconds": 5470.9727
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 13,
+        "core": 16,
+        "strict": 13,
+        "total": 21
+      },
+      "failure_counts": {
+        "harness_error": 1,
+        "model_failure": 7,
+        "pass": 13
+      },
+      "manifest_path": "runs/20260812t020233-assistant-unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl-r1/manifest.json",
+      "model": "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 20,
+        "evaluated_pass_rate": 65.0,
+        "scheduled": 21,
+        "scheduled_pass_rate": 61.905
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260812t020233-assistant-unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl-r1",
+      "score": 77.268,
+      "started_at": "2026-08-12T02:02:33.983968-04:00",
+      "status": "partial",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t020233-assistant-unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl-r1/summary.json",
+      "task_results_path": "runs/20260812t020233-assistant-unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+        "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 76.19,
+        "english": 81.557,
+        "grounding": 60.326,
+        "outcome": 41.86,
+        "safety": 94.901,
+        "state": 63.768,
+        "tool_use": 85.437
+      },
+      "display_name": "Qwen3.6-35B-A3B-UD-Q4_K_S",
+      "efficiency": {
+        "median_task_seconds": 11.4967,
+        "tasks_per_minute": 5.0627,
+        "total_seconds": 237.0257
+      },
+      "endpoint_class": "llama.cpp",
+      "exactness": {
+        "contract": 11,
+        "core": 15,
+        "strict": 11,
+        "total": 21
+      },
+      "failure_counts": {
+        "harness_error": 1,
+        "model_failure": 9,
+        "pass": 11
+      },
+      "manifest_path": "runs/20260812t020233-assistant-unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s-r1/manifest.json",
+      "model": "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": null,
+      "reliability": {
+        "evaluated": 20,
+        "evaluated_pass_rate": 55.0,
+        "scheduled": 21,
+        "scheduled_pass_rate": 52.381
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260812t020233-assistant-unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s-r1",
+      "score": 71.354,
+      "started_at": "2026-08-12T02:02:33.983968-04:00",
+      "status": "partial",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260812t020233-assistant-unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s-r1/summary.json",
+      "task_results_path": "runs/20260812t020233-assistant-unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s-r1/task-results.jsonl"
+    }
+  ],
+  "schema_version": 1
+}

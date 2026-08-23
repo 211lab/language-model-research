@@ -1,0 +1,1 @@
+{"primer": {"answer": "READY.", "seconds": 9.733592305005004, "ttft_seconds": 0.005922943004406989}, "run_id": "20260812t015120-latency-gemma-4-e4b-it-r1", "sequence": 1, "task_id": "cold-and-agent-sequence", "workload": {"answer": "", "seconds": 1.552729579998413, "ttft_seconds": 0.7556925419994514}}

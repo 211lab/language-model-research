@@ -1,0 +1,40 @@
+{
+  "dimensions": {
+    "efficiency": 90.476,
+    "english": 91.803,
+    "grounding": 46.739,
+    "outcome": 34.038,
+    "safety": 97.167,
+    "state": 68.599,
+    "tool_use": 64.563
+  },
+  "efficiency": {
+    "median_task_seconds": 4.5186,
+    "tasks_per_minute": 10.8379,
+    "total_seconds": 110.7228
+  },
+  "exactness": {
+    "contract": 9,
+    "core": 13,
+    "strict": 9,
+    "total": 21
+  },
+  "failure_counts": {
+    "harness_error": 1,
+    "model_failure": 10,
+    "pass": 9,
+    "tool_protocol_failure": 1
+  },
+  "model": "gemma-4-e4b-it",
+  "reliability": {
+    "evaluated": 20,
+    "evaluated_pass_rate": 45.0,
+    "scheduled": 21,
+    "scheduled_pass_rate": 42.857
+  },
+  "run_id": "20260812t020233-assistant-gemma-4-e4b-it-r1",
+  "schema_version": 1,
+  "score": 67.561,
+  "status": "partial",
+  "suite": "assistant"
+}

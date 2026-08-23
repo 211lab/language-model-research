@@ -1193,7 +1193,8 @@ def discover_chat_models(
         output_modalities = architecture.get("output_modalities") or []
         capabilities = item.get("capabilities") or {}
         image_only = capabilities.get("image_generation") and "text" not in output_modalities
-        if image_only:
+        embedding_only = bool(capabilities.get("embedding")) or "embedding" in item["id"].casefold()
+        if image_only or embedding_only:
             excluded.append(item)
         else:
             chat_models.append(item)
@@ -1480,7 +1481,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelS
         summaries.append(summarize_model(model, display_name, model_results, model_error))
 
     metadata["cost_budget"] = cost_budget.metadata()
-    metadata["provider_reported_cost_usd"] = cost_budget.spent_usd
+    metadata["provider_reported_cost_usd"] = cost_budget.session_spent_usd
     metadata["finished_at"] = dt.datetime.now(dt.timezone.utc).astimezone().isoformat()
     return metadata, summaries, all_task_results
 

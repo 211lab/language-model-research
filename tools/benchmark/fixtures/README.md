@@ -12,3 +12,10 @@ carry across tasks or models.
 Fixture dates are pinned to August 2, 2026. Web results are snapshots rather
 than live searches. This is intentional: every model must receive identical
 facts, tool results, and starting state.
+
+`editorial_sources.json` is a separate fictional source package with approved
+briefs, results, finance notes, interviews, and an explicitly untrusted
+prompt-injection record. `editorial_tasks.json` contains isolated work plus a
+five-stage cumulative article workflow. Later stages receive the prior artifact
+so revision quality, correction under pressure, and fact preservation can be
+measured rather than inferred from disconnected prompts.

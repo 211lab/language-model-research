@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 271,
+      "path": "README.md",
+      "sha256": "04e8feb4d2ff526ae01f2273169162b61d0d432c92eadc12c5b5a3d92b74d1cf"
+    },
+    {
+      "bytes": 978,
+      "path": "configuration.json",
+      "sha256": "6a7bf23382d5faa0d23a07da86f30c0ad8af75035b5d311a07ed43d55e34d119"
+    },
+    {
+      "bytes": 442,
+      "path": "lineage.json",
+      "sha256": "2ab74ef4b664bf692a3da99518f0c30618863d5bd82c8b3ace9b7257195530f9"
+    },
+    {
+      "bytes": 405417,
+      "path": "raw/results.json",
+      "sha256": "47ea2ca56bb81e462c77335355599007322a449c56907ecb92a77bcfb80b9663"
+    },
+    {
+      "bytes": 834,
+      "path": "summary.json",
+      "sha256": "45d57e53045b4582377518812f84a900d992a9e4e2e297db67f01cd9fef2ad92"
+    },
+    {
+      "bytes": 57465,
+      "path": "task-results.jsonl",
+      "sha256": "61b7504828adeb361a83248278003af031343bbb7a0cfa78963ed4530b82137d"
+    },
+    {
+      "bytes": 280385,
+      "path": "trajectory.jsonl",
+      "sha256": "8a7b5fc23498f2a88ba668dec0cbb1672b26543b643b44d4424999e06fd07a51"
+    }
+  ],
+  "caveats": [
+    "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+    "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+  ],
+  "counts": {
+    "completed": 21,
+    "expected": 21,
+    "infrastructure_failures": 3,
+    "passed": 12
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp",
+    "lifecycle_control": "llama-swap explicit unload",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "serial": true
+  },
+  "finished_at": "2026-08-12T06:10:54.782037-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+    "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+    "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+    "runner_dirty": true,
+    "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+    "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+    "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+  },
+  "run_id": "20260812t020233-assistant-qwen3-6-27b-heretic-neo-code-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-12T02:02:33.983968-04:00",
+  "status": "partial",
+  "suite": "assistant",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "assistant-benchmark-v1",
+    "display_name": "Qwen3.6 27B Heretic NEO CODE Q4_K_M",
+    "model": "qwen3.6-27b-heretic-neo-code",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp"
+  }
+}

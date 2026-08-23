@@ -1,0 +1,39 @@
+{
+  "dimensions": {
+    "efficiency": 64.286,
+    "english": 79.508,
+    "grounding": 38.587,
+    "outcome": 43.975,
+    "safety": 84.986,
+    "state": 49.275,
+    "tool_use": 85.437
+  },
+  "efficiency": {
+    "median_task_seconds": 9.0143,
+    "tasks_per_minute": 4.7202,
+    "total_seconds": 216.0944
+  },
+  "exactness": {
+    "contract": 9,
+    "core": 14,
+    "strict": 9,
+    "total": 21
+  },
+  "failure_counts": {
+    "harness_error": 4,
+    "model_failure": 8,
+    "pass": 9
+  },
+  "model": "qwen3.6-35b-hauhaucs-aggressive",
+  "reliability": {
+    "evaluated": 17,
+    "evaluated_pass_rate": 52.941,
+    "scheduled": 21,
+    "scheduled_pass_rate": 42.857
+  },
+  "run_id": "20260812t020233-assistant-qwen3-6-35b-hauhaucs-aggressive-r1",
+  "schema_version": 1,
+  "score": 65.436,
+  "status": "partial",
+  "suite": "assistant"
+}

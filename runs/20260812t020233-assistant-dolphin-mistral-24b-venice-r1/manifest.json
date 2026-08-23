@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 267,
+      "path": "README.md",
+      "sha256": "9b36c449b58167f6aa057cd425ef22083f16f6814b23b5f6981bc0c337eb2d07"
+    },
+    {
+      "bytes": 976,
+      "path": "configuration.json",
+      "sha256": "1ded2861ff4c42ca7a4c0487bedd7a011d0831b3ce78e79bfb5aa547696fc082"
+    },
+    {
+      "bytes": 442,
+      "path": "lineage.json",
+      "sha256": "8337a73b2085819a0793a34b81d59be0bec6d7d8deea5ddfb79509c2d854ba3a"
+    },
+    {
+      "bytes": 228688,
+      "path": "raw/results.json",
+      "sha256": "3d90fc9a471b1e441b672a043eacb6638782bc217378a9bdf25eddc3afd86f47"
+    },
+    {
+      "bytes": 792,
+      "path": "summary.json",
+      "sha256": "776b5c5dfc6964cf9c75f2cf56e3304610e490d85e8e34036ed6645fe12bc14c"
+    },
+    {
+      "bytes": 63928,
+      "path": "task-results.jsonl",
+      "sha256": "a06e11d1263b5edda1e22973cbb97815f8477808c15a64a225198cca6d2b1b42"
+    },
+    {
+      "bytes": 153753,
+      "path": "trajectory.jsonl",
+      "sha256": "fd0cc0a5fc07cb056ff39fe5960b7af36326525cdab842b398cb5c08c2354024"
+    }
+  ],
+  "caveats": [
+    "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+    "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+  ],
+  "counts": {
+    "completed": 21,
+    "expected": 21,
+    "infrastructure_failures": 0,
+    "passed": 2
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp",
+    "lifecycle_control": "llama-swap explicit unload",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "serial": true
+  },
+  "finished_at": "2026-08-12T06:10:54.782037-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+    "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+    "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+    "runner_dirty": true,
+    "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+    "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+    "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+  },
+  "run_id": "20260812t020233-assistant-dolphin-mistral-24b-venice-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-12T02:02:33.983968-04:00",
+  "status": "ok",
+  "suite": "assistant",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "assistant-benchmark-v1",
+    "display_name": "Dolphin Mistral 24B Venice Edition Q4_K_M",
+    "model": "dolphin-mistral-24b-venice",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp"
+  }
+}

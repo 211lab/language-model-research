@@ -1,0 +1,33 @@
+{
+  "dimensions": {},
+  "efficiency": {
+    "cold_start_seconds": 17.65202158899774,
+    "cold_ttft_seconds": 0.0032104339989018627,
+    "median_task_seconds": 18.6726,
+    "tasks_per_minute": 3.2133,
+    "total_seconds": 18.6726,
+    "workload_seconds": 1.020600588999514,
+    "workload_ttft_seconds": 0.6275144590035779
+  },
+  "exactness": {
+    "contract": 0,
+    "core": 1,
+    "strict": 0,
+    "total": 1
+  },
+  "failure_counts": {
+    "tool_protocol_failure": 1
+  },
+  "model": "dolphin-mistral-24b-venice",
+  "reliability": {
+    "evaluated": 1,
+    "evaluated_pass_rate": 0.0,
+    "scheduled": 1,
+    "scheduled_pass_rate": 0.0
+  },
+  "run_id": "20260812t015120-latency-dolphin-mistral-24b-venice-r1",
+  "schema_version": 1,
+  "score": 50.0,
+  "status": "ok",
+  "suite": "latency"
+}

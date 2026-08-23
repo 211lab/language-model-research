@@ -1,0 +1,39 @@
+{
+  "dimensions": {
+    "efficiency": 78.571,
+    "english": 83.607,
+    "grounding": 65.761,
+    "outcome": 61.311,
+    "safety": 100.0,
+    "state": 63.768,
+    "tool_use": 83.981
+  },
+  "efficiency": {
+    "median_task_seconds": 258.8873,
+    "tasks_per_minute": 0.2193,
+    "total_seconds": 5470.9727
+  },
+  "exactness": {
+    "contract": 13,
+    "core": 16,
+    "strict": 13,
+    "total": 21
+  },
+  "failure_counts": {
+    "harness_error": 1,
+    "model_failure": 7,
+    "pass": 13
+  },
+  "model": "unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl",
+  "reliability": {
+    "evaluated": 20,
+    "evaluated_pass_rate": 65.0,
+    "scheduled": 21,
+    "scheduled_pass_rate": 61.905
+  },
+  "run_id": "20260812t020233-assistant-unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl-r1",
+  "schema_version": 1,
+  "score": 77.268,
+  "status": "partial",
+  "suite": "assistant"
+}

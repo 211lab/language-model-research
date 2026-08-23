@@ -4,3 +4,4 @@ __pycache__/
 operator/.env
 operator/runs/
 operator/.research-publish.lock
+.benchmark-work/

@@ -1,0 +1,1 @@
+{"primer": {"answer": "", "seconds": 97.61175223300233, "ttft_seconds": 0.0014789390043006279}, "run_id": "20260812t015120-latency-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1", "sequence": 1, "task_id": "cold-and-agent-sequence", "workload": {"answer": "", "seconds": 155.2012724169981, "ttft_seconds": 0.03919271699851379}}

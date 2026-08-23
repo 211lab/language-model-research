@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 331,
+      "path": "README.md",
+      "sha256": "670159cf994553036c0d781b76f550d51d093946b01499cd176fa1dda198b2a6"
+    },
+    {
+      "bytes": 1008,
+      "path": "configuration.json",
+      "sha256": "f9133bae39d9302485891a7b16e4abfa0f7c24db48603447045cf3ef9520da9c"
+    },
+    {
+      "bytes": 442,
+      "path": "lineage.json",
+      "sha256": "8bb3fa9cacd072a3f2ae3ef23bb1338c55f6e7656d7f2f59e4ef629032bba02d"
+    },
+    {
+      "bytes": 428671,
+      "path": "raw/results.json",
+      "sha256": "25c2d5d30216092e277b52b8a31d196018b3ab21c4123359b5fd01099ceec60d"
+    },
+    {
+      "bytes": 888,
+      "path": "summary.json",
+      "sha256": "310456d3f61a39a01f678d78212c1ddd872c4168f50fce6222c4cb4e548e65e5"
+    },
+    {
+      "bytes": 60756,
+      "path": "task-results.jsonl",
+      "sha256": "62bef4bbb532fa7af7a25c55d587ab4f03059f7499365873b3d2d739cd4c74a4"
+    },
+    {
+      "bytes": 297240,
+      "path": "trajectory.jsonl",
+      "sha256": "92f063b9cf5029fb927db511494bc0f4fb7499c0ab3bd11432eb36bd072c0e5c"
+    }
+  ],
+  "caveats": [
+    "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+    "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+  ],
+  "counts": {
+    "completed": 21,
+    "expected": 21,
+    "infrastructure_failures": 1,
+    "passed": 11
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp",
+    "lifecycle_control": "llama-swap explicit unload",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "serial": true
+  },
+  "finished_at": "2026-08-12T06:10:54.782037-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+    "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+    "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+    "runner_dirty": true,
+    "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+    "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+    "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+  },
+  "run_id": "20260812t020233-assistant-unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-12T02:02:33.983968-04:00",
+  "status": "partial",
+  "suite": "assistant",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "assistant-benchmark-v1",
+    "display_name": "Qwen3.6-35B-A3B-UD-Q4_K_S",
+    "model": "unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp"
+  }
+}

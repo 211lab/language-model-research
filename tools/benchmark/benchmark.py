@@ -719,7 +719,7 @@ def run_benchmark(args: argparse.Namespace) -> tuple[dict[str, Any], list[ModelR
         results.append(result)
 
     metadata["cost_budget"] = cost_budget.metadata()
-    metadata["provider_reported_cost_usd"] = cost_budget.spent_usd
+    metadata["provider_reported_cost_usd"] = cost_budget.session_spent_usd
     metadata["finished_at"] = dt.datetime.now(dt.timezone.utc).astimezone().isoformat()
     return metadata, results
 

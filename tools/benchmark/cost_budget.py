@@ -38,29 +38,40 @@ class CostBudget:
     require_reported_cost: bool = False
     spent_usd: float = field(init=False, default=0.0)
     recorded_requests: int = field(init=False, default=0)
+    initial_spent_usd: float = field(init=False, default=0.0)
+    initial_recorded_requests: int = field(init=False, default=0)
 
     def __post_init__(self) -> None:
         if self.max_cost_usd is not None and self.max_cost_usd <= 0:
             raise ValueError("max_cost_usd must be greater than zero")
-        if self.usage_log is None:
-            return
-        self.usage_log.parent.mkdir(parents=True, exist_ok=True)
-        if not self.usage_log.exists():
-            return
-        for raw in self.usage_log.read_text(encoding="utf-8").splitlines():
-            if not raw.strip():
-                continue
-            try:
-                record = json.loads(raw)
-                cost = float(record.get("cost_usd", 0.0) or 0.0)
-            except (json.JSONDecodeError, TypeError, ValueError) as exc:
-                raise CostBudgetExceeded(
-                    f"Cannot safely resume with malformed provider-cost ledger: {self.usage_log}"
-                ) from exc
-            if cost < 0:
-                raise CostBudgetExceeded(f"Provider-cost ledger contains a negative cost: {self.usage_log}")
-            self.spent_usd += cost
-            self.recorded_requests += 1
+        if self.usage_log is not None:
+            self.usage_log.parent.mkdir(parents=True, exist_ok=True)
+            if self.usage_log.exists():
+                for raw in self.usage_log.read_text(encoding="utf-8").splitlines():
+                    if not raw.strip():
+                        continue
+                    try:
+                        record = json.loads(raw)
+                        cost = float(record.get("cost_usd", 0.0) or 0.0)
+                    except (json.JSONDecodeError, TypeError, ValueError) as exc:
+                        raise CostBudgetExceeded(
+                            f"Cannot safely resume with malformed provider-cost ledger: {self.usage_log}"
+                        ) from exc
+                    if cost < 0:
+                        raise CostBudgetExceeded(f"Provider-cost ledger contains a negative cost: {self.usage_log}")
+                    self.spent_usd += cost
+                    self.recorded_requests += 1
+        self.initial_spent_usd = self.spent_usd
+        self.initial_recorded_requests = self.recorded_requests
+
+    @property
+    def session_spent_usd(self) -> float:
+        """Provider-reported cost added by this runner invocation."""
+        return self.spent_usd - self.initial_spent_usd
+
+    @property
+    def session_recorded_requests(self) -> int:
+        return self.recorded_requests - self.initial_recorded_requests
 
     def authorize_request(self, *, model: str, workload: str) -> None:
         if self.max_cost_usd is not None and self.spent_usd >= self.max_cost_usd:
@@ -106,8 +117,10 @@ class CostBudget:
     def metadata(self) -> dict[str, Any]:
         return {
             "max_cost_usd": self.max_cost_usd,
-            "provider_reported_cost_usd": round(self.spent_usd, 8),
-            "recorded_requests": self.recorded_requests,
+            "provider_reported_cost_usd": round(self.session_spent_usd, 8),
+            "recorded_requests": self.session_recorded_requests,
+            "cumulative_provider_reported_cost_usd": round(self.spent_usd, 8),
+            "cumulative_recorded_requests": self.recorded_requests,
             "require_reported_cost": self.require_reported_cost,
             "usage_log": str(self.usage_log) if self.usage_log is not None else "",
         }

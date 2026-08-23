@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 263,
+      "path": "README.md",
+      "sha256": "d6aa5c9bb9653e8b31ec5af589e7e2a3de498375ea5961af291da8033e0caa56"
+    },
+    {
+      "bytes": 300,
+      "path": "configuration.json",
+      "sha256": "87f155f3166ba14be6f9cb05b875223a2b6b3c06812ef9beb3212e1cafdc679d"
+    },
+    {
+      "bytes": 440,
+      "path": "lineage.json",
+      "sha256": "f8b3c669bce8fbed5d079974f90f754b89348b131674cc58d31d4167690b7eee"
+    },
+    {
+      "bytes": 12130,
+      "path": "raw/results.json",
+      "sha256": "39fc1f41f7694ac81111f1339b410058ef9055cd5ec1e631112d383dd805638d"
+    },
+    {
+      "bytes": 791,
+      "path": "summary.json",
+      "sha256": "53bffdda349db150b31e7d43d340a5396fa8df632cfe0533fa80160d5824da81"
+    },
+    {
+      "bytes": 751,
+      "path": "task-results.jsonl",
+      "sha256": "06e6bf9ca77b439e85a84bd65f722c2b2e0b943bc4e053079d9d444e5a9f2eef"
+    },
+    {
+      "bytes": 389,
+      "path": "trajectory.jsonl",
+      "sha256": "9f9584a33c8a01e2b7ca77db26d2adef277742a227280f023905b8d34c4b91a8"
+    }
+  ],
+  "caveats": [
+    "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+    "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+  ],
+  "counts": {
+    "completed": 1,
+    "expected": 1,
+    "infrastructure_failures": 0,
+    "passed": 0
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp",
+    "lifecycle_control": "all resident models unloaded through llama-swap before each model",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "serial": true
+  },
+  "finished_at": "2026-08-12T02:02:33.654075-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": null,
+    "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+    "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+    "runner_dirty": true,
+    "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+    "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+    "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+  },
+  "run_id": "20260812t015120-latency-dolphin-mistral-24b-venice-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-12T01:51:20.432340-04:00",
+  "status": "ok",
+  "suite": "latency",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "latency-benchmark-v1",
+    "display_name": "dolphin-mistral-24b-venice",
+    "model": "dolphin-mistral-24b-venice",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp"
+  }
+}
