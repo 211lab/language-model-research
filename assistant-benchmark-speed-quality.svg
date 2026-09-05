@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="650" viewBox="0 0 1240 650" role="img" aria-labelledby="title desc">
-<title id="title">Assistant quality versus task speed</title><desc id="desc">Upper-left is better: higher intelligence with lower median task time.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="650" viewBox="0 0 1240 650" role="img" aria-labelledby="assistant-quality-versus-task-speed-title assistant-quality-versus-task-speed-desc">
+<title id="assistant-quality-versus-task-speed-title">Assistant quality versus task speed</title><desc id="assistant-quality-versus-task-speed-desc">Upper-left is better: higher intelligence with lower median task time.</desc>
 <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 27px Arial,sans-serif}.sub,.tick{fill:#94a3b8;font:14px Arial,sans-serif}.label{fill:#e2e8f0;font:15px Arial,sans-serif}.value{fill:#f8fafc;font:700 15px Arial,sans-serif}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.5}</style>
 <rect class="bg" width="1240" height="650" rx="18"/>
 <text class="title" x="32" y="46">Assistant quality versus task speed</text>

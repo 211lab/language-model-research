@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://3f-mindset.github.io/language-model-research/schemas/task-result.schema.json",
+  "title": "Normalized task result",
+  "type": "object",
+  "required": ["run_id", "suite", "model", "task_id", "status", "failure_type", "score", "core_passed", "contract_passed", "strict_passed", "elapsed_seconds"],
+  "properties": {
+    "run_id": {"type": "string"},
+    "suite": {"enum": ["assistant", "editorial", "latency"]},
+    "model": {"type": "string"},
+    "task_id": {"type": "string"},
+    "status": {"enum": ["ok", "partial", "error"]},
+    "failure_type": {"enum": ["pass", "model_failure", "tool_protocol_failure", "timeout", "provider_error", "harness_error", "invalid_output", "not_run"]},
+    "score": {"type": "number", "minimum": 0, "maximum": 100},
+    "core_passed": {"type": "boolean"},
+    "contract_passed": {"type": "boolean"},
+    "strict_passed": {"type": "boolean"},
+    "elapsed_seconds": {"type": "number", "minimum": 0}
+  }
+}

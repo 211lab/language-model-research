@@ -8,7 +8,6 @@ import html
 import json
 import math
 from collections import defaultdict
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -203,6 +202,12 @@ def compile_comparison(root: Path) -> dict[str, Any]:
     if rubric_path is None:
         raise FileNotFoundError("Could not find steadyburn-v1.json rubric")
     rubric = load_json(rubric_path)
+    source_dates = [
+        load_json(path).get("generated_at")
+        for path in (root / "cost-chart-data.json", root / "readability-report.json")
+        if path.exists()
+    ]
+    generated_at = max((value for value in source_dates if isinstance(value, str)), default="unknown")
     readability = readability_by_case(root)
     models, awaiting_score = [], []
     for comparison_path in sorted(root.rglob("MODEL_COMPARISON.md")):
@@ -275,7 +280,7 @@ def compile_comparison(root: Path) -> dict[str, Any]:
         relative_radar_axes(models, mode)
     return {
         "schema_version": "model-comparison-v2",
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": generated_at,
         "rubric_version": rubric["version"],
         "axis_sets": {
             "overview": ([{"id": axis_id, "label": label} for axis_id, label, _sources in OVERVIEW_AXES if axis_id != "cost_burden"]

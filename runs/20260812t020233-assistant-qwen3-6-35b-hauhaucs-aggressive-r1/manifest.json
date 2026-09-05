@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 277,
+      "path": "README.md",
+      "sha256": "44040680b62381d8abd521f20777b3dab38ac1d8c38cf841adc3d02c9987ec1d"
+    },
+    {
+      "bytes": 981,
+      "path": "configuration.json",
+      "sha256": "3bfb4385da8e9f4c646e054435d8b1b16108def024e6174f44a5c7fb300dda75"
+    },
+    {
+      "bytes": 442,
+      "path": "lineage.json",
+      "sha256": "4262d57a3f947487dc6ca66061e8d31537b6b6dcfcf0e85a2ac0901b4e0402f8"
+    },
+    {
+      "bytes": 446284,
+      "path": "raw/results.json",
+      "sha256": "1ef3ab61f9f9d0df69ced8aca3a319e4a068822b162256321f5a435951124e48"
+    },
+    {
+      "bytes": 834,
+      "path": "summary.json",
+      "sha256": "8b114b60ce1c392bfb085a10db276645ffdbda17fa57e23a8b5f4ee8cf5d5fe8"
+    },
+    {
+      "bytes": 57081,
+      "path": "task-results.jsonl",
+      "sha256": "12881992a760591e5239deeafacf48377549f8300a651f7ca8f6564de785b230"
+    },
+    {
+      "bytes": 308388,
+      "path": "trajectory.jsonl",
+      "sha256": "f6e12fed6ce36faf016d8a3a34517095afaccda754b8cbcc34a519bbfab2eb6d"
+    }
+  ],
+  "caveats": [
+    "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+    "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+  ],
+  "counts": {
+    "completed": 21,
+    "expected": 21,
+    "infrastructure_failures": 4,
+    "passed": 9
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp",
+    "lifecycle_control": "llama-swap explicit unload",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "serial": true
+  },
+  "finished_at": "2026-08-12T06:10:54.782037-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+    "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+    "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+    "runner_dirty": true,
+    "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+    "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+    "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+  },
+  "run_id": "20260812t020233-assistant-qwen3-6-35b-hauhaucs-aggressive-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-12T02:02:33.983968-04:00",
+  "status": "partial",
+  "suite": "assistant",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "assistant-benchmark-v1",
+    "display_name": "Qwen3.6 35B A3B Uncensored HauhauCS Aggressive Q4_K_M",
+    "model": "qwen3.6-35b-hauhaucs-aggressive",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp"
+  }
+}

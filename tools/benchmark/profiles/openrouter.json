@@ -1,0 +1,14 @@
+{
+  "name": "OpenRouter hosted models",
+  "provider": "OpenRouter",
+  "provider_kind": "remote",
+  "endpoint_class": "OpenRouter/OpenAI-compatible",
+  "base_url": "https://openrouter.ai/api/v1",
+  "api": "openai",
+  "api_key_env": "OPENROUTER_API_KEY",
+  "cohort": "openrouter",
+  "serial": true,
+  "unload_between_models": false,
+  "settle_seconds": 0,
+  "timeout_seconds": 900
+}

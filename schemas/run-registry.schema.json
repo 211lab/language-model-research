@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://3f-mindset.github.io/language-model-research/schemas/run-registry.schema.json",
+  "title": "Run registry",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "run_count", "runs"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "generated_at": {"type": "string"},
+    "run_count": {"type": "integer", "minimum": 0},
+    "runs": {"type": "array", "items": {"type": "object", "required": ["run_id", "suite", "model", "status", "manifest_path", "summary_path"]}}
+  }
+}

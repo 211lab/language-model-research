@@ -1,0 +1,14 @@
+{
+  "endpoint": "http://titan:11434/v1",
+  "model": "qwen3.6-35b-hauhaucs-aggressive",
+  "primer_required": true,
+  "schema_version": 1,
+  "seed": 42,
+  "selected_tasks": [
+    "cold-and-agent-sequence"
+  ],
+  "serial_execution": true,
+  "settle_seconds": 10.0,
+  "suite": "latency",
+  "temperature": 0
+}

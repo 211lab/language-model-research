@@ -1,0 +1,1 @@
+{"primer": {"answer": "", "seconds": 42.776272613999026, "ttft_seconds": 0.00373033599316841}, "run_id": "20260812t015120-latency-unsloth-qwen3-6-27b-mtp-gguf-qwen3-6-27b-ud-q4-k-xl-r1", "sequence": 1, "task_id": "cold-and-agent-sequence", "workload": {"answer": "", "seconds": 28.219845717998396, "ttft_seconds": 4.807563656999264}}

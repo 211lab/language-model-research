@@ -29,13 +29,29 @@ SteadyBurn editorial-content score because the two suites measure different
 capabilities. Source data and methodology live in
 [`docs/assistant-benchmark`](docs/assistant-benchmark).
 
+## Evidence explorer
+
+The [run explorer](research-runs.html) is the audit-oriented view of this
+research. Each displayed result is backed by an immutable per-model bundle in
+[`runs/`](runs), containing the raw result, normalized task records, ordered
+trajectory, configuration, lineage, manifest, and SHA-256 artifact hashes.
+The explorer labels comparisons as directly comparable, directional, or not
+comparable from their benchmark-contract and execution metadata.
+
+The benchmark batteries and synthetic fixtures are versioned in
+[`tools/benchmark`](tools/benchmark). They support local llama.cpp endpoints
+and OpenRouter through provider profiles, run strictly serially, and issue a
+primer after each local model switch before measured work begins.
+
 ## Rebuild
 
 From the repository root, run:
 
-```powershell
-python scripts/build_radar.py
+```bash
+# Run from WSL.
+python3 scripts/build_radar.py
 ```
 
 The GitHub Pages workflow rebuilds and publishes the root dashboard whenever
-the comparison data, generator, rubric, or build script changes.
+the comparison data, evidence bundles, generator, rubric, or build script
+changes.

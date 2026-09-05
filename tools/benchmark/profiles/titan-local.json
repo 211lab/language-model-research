@@ -1,0 +1,17 @@
+{
+  "name": "Titan local llama.cpp",
+  "provider": "Titan",
+  "provider_kind": "local",
+  "endpoint_class": "llama.cpp/OpenAI-compatible",
+  "base_url": "http://titan:11434",
+  "api": "openai",
+  "api_key_env": "LOCAL_AI_API_KEY",
+  "cohort": "titan-local",
+  "serial": true,
+  "unload_between_models": true,
+  "settle_seconds": 10,
+  "timeout_seconds": 900,
+  "disable_thinking_models": [
+    "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 371,
+      "path": "README.md",
+      "sha256": "307b83a524ca4f8edbb2bdd90666bfaf077f850e96af479b3232a1d4ebedffe2"
+    },
+    {
+      "bytes": 1035,
+      "path": "configuration.json",
+      "sha256": "edbad5fbddacb4e81b4653b0e46305dd9b35b2afb367527f0efe327c512a7c4e"
+    },
+    {
+      "bytes": 442,
+      "path": "lineage.json",
+      "sha256": "b2a02cd2bc8298be18a046916cb9b2accf864e3fbca7c950b22056c8b121ca08"
+    },
+    {
+      "bytes": 378406,
+      "path": "raw/results.json",
+      "sha256": "91fbc4ad7288df1cc091e1c173b77a7fe38c587dc7d20cf7db464fb6d62682d2"
+    },
+    {
+      "bytes": 934,
+      "path": "summary.json",
+      "sha256": "70aa52850acb22e94ae72d94ec76b67640507c3633b498dbc64cfbfb4e1081ed"
+    },
+    {
+      "bytes": 56182,
+      "path": "task-results.jsonl",
+      "sha256": "fdc8ad9e0e64e458852160716f45158a1c2b78e8c49d0077b894863277b37dab"
+    },
+    {
+      "bytes": 255188,
+      "path": "trajectory.jsonl",
+      "sha256": "85c67154882ca1b9ea06673421fc755482681fa48fccc824a04024dbb00dbe70"
+    }
+  ],
+  "caveats": [
+    "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+    "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+  ],
+  "counts": {
+    "completed": 21,
+    "expected": 21,
+    "infrastructure_failures": 2,
+    "passed": 11
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp",
+    "lifecycle_control": "llama-swap explicit unload",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "serial": true
+  },
+  "finished_at": "2026-08-12T06:10:54.782037-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+    "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+    "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+    "runner_dirty": true,
+    "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+    "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+    "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+  },
+  "run_id": "20260812t020233-assistant-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-12T02:02:33.983968-04:00",
+  "status": "partial",
+  "suite": "assistant",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "assistant-benchmark-v1",
+    "display_name": "Qwythos-9B-Claude-Mythos-5-1M-MTP-Q4_K_M",
+    "model": "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 243,
+      "path": "README.md",
+      "sha256": "fb67bbf59521f8c2ea07f3943697ae54c5886f19e444355cab1c2c43b7821a6b"
+    },
+    {
+      "bytes": 290,
+      "path": "configuration.json",
+      "sha256": "1fbaa3096fa64462a1b766df1cb2ee1d7ba438167bc8ab3730a15d5a997634d0"
+    },
+    {
+      "bytes": 440,
+      "path": "lineage.json",
+      "sha256": "f166e87ee2287209b93a37dfd1c4ff17ffd6bcd90d72fb9de48cb58fe42fdaea"
+    },
+    {
+      "bytes": 12219,
+      "path": "raw/results.json",
+      "sha256": "6076d2b21330190ff230da801b0fe432b165a2280a88e3361c494e8f6a266ef0"
+    },
+    {
+      "bytes": 768,
+      "path": "summary.json",
+      "sha256": "a6a8abb5ca2e66bbc36e19209e67d4ab3f858b054bc1827b24a688ec8e75fd43"
+    },
+    {
+      "bytes": 830,
+      "path": "task-results.jsonl",
+      "sha256": "2205d0ef1c03266f8d4ce527f6d22d40a21f9b8cf70b26bf024a95af3a4051c7"
+    },
+    {
+      "bytes": 479,
+      "path": "trajectory.jsonl",
+      "sha256": "cbc0f785a7bc0b71ff37f4984a5742eb7883833d47bc13772e133b229dfd063a"
+    }
+  ],
+  "caveats": [
+    "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+    "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+  ],
+  "counts": {
+    "completed": 1,
+    "expected": 1,
+    "infrastructure_failures": 0,
+    "passed": 0
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp",
+    "lifecycle_control": "all resident models unloaded through llama-swap before each model",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "serial": true
+  },
+  "finished_at": "2026-08-12T02:02:33.654075-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": null,
+    "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+    "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+    "runner_dirty": true,
+    "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+    "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+    "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+  },
+  "run_id": "20260812t015120-latency-cydonia-24b-v4-3-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-12T01:51:20.432340-04:00",
+  "status": "ok",
+  "suite": "latency",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "latency-benchmark-v1",
+    "display_name": "cydonia-24b-v4.3",
+    "model": "cydonia-24b-v4.3",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp"
+  }
+}

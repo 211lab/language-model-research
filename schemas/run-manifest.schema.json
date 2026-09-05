@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://3f-mindset.github.io/language-model-research/schemas/run-manifest.schema.json",
+  "title": "Language model research run manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "suite", "suite_version", "status", "started_at", "finished_at", "system", "execution", "replicate", "reproducibility", "counts", "artifacts", "caveats"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "run_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$"},
+    "suite": {"enum": ["assistant", "editorial", "latency"]},
+    "suite_version": {"type": "string", "minLength": 1},
+    "status": {"enum": ["ok", "partial", "error"]},
+    "started_at": {"type": "string", "format": "date-time"},
+    "finished_at": {"type": "string", "format": "date-time"},
+    "system": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["model", "display_name", "provider", "runtime", "agent"],
+      "properties": {
+        "model": {"type": "string"},
+        "display_name": {"type": "string"},
+        "provider": {"type": "string"},
+        "runtime": {"type": "string"},
+        "agent": {"type": "string"},
+        "quantization": {"type": ["string", "null"]}
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["cohort", "provider_kind", "endpoint_class", "serial"],
+      "properties": {
+        "cohort": {"type": "string"},
+        "provider_kind": {"enum": ["local", "remote"]},
+        "endpoint_class": {"type": "string"},
+        "serial": {"type": "boolean"}
+      }
+    },
+    "replicate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["index", "count", "seed"],
+      "properties": {
+        "index": {"type": "integer", "minimum": 1},
+        "count": {"type": "integer", "minimum": 1},
+        "seed": {"type": "integer"}
+      }
+    },
+    "reproducibility": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["runner_commit", "runner_dirty", "fixture_sha256", "tasks_sha256", "seed_document_sha256", "prompt_sha256", "tool_schema_sha256"],
+      "properties": {
+        "runner_commit": {"type": "string"},
+        "runner_dirty": {"type": "boolean"},
+        "fixture_sha256": {"type": ["string", "null"]},
+        "tasks_sha256": {"type": "string"},
+        "seed_document_sha256": {"type": "string"},
+        "prompt_sha256": {"type": "string"},
+        "tool_schema_sha256": {"type": ["string", "null"]}
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expected", "completed", "passed", "infrastructure_failures"],
+      "properties": {
+        "expected": {"type": "integer", "minimum": 0},
+        "completed": {"type": "integer", "minimum": 0},
+        "passed": {"type": "integer", "minimum": 0},
+        "infrastructure_failures": {"type": "integer", "minimum": 0}
+      }
+    },
+    "artifacts": {"type": "array", "items": {"type": "object", "required": ["path", "sha256", "bytes"], "properties": {"path": {"type": "string"}, "sha256": {"type": "string"}, "bytes": {"type": "integer", "minimum": 0}}}},
+    "caveats": {"type": "array", "items": {"type": "string"}}
+  }
+}

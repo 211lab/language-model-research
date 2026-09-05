@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://3f-mindset.github.io/language-model-research/schemas/run-summary.schema.json",
+  "title": "Derived run summary",
+  "type": "object",
+  "required": ["schema_version", "run_id", "suite", "model", "status", "score", "exactness", "reliability", "efficiency", "failure_counts"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "run_id": {"type": "string"},
+    "suite": {"enum": ["assistant", "editorial", "latency"]},
+    "model": {"type": "string"},
+    "status": {"enum": ["ok", "partial", "error"]},
+    "score": {"type": "number"},
+    "exactness": {"type": "object", "required": ["core", "contract", "strict", "total"]},
+    "reliability": {"type": "object", "required": ["scheduled_pass_rate", "evaluated_pass_rate"]},
+    "efficiency": {"type": "object"},
+    "failure_counts": {"type": "object"}
+  }
+}

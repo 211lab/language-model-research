@@ -8,7 +8,7 @@ merged or treated as equivalent.
 
 ## Protocol
 
-- Run date: 2026-08-02
+- Published local evidence run date: 2026-08-12
 - Runtime: local models used llama.cpp behind llama-swap; OpenRouter models
   used the recorded OpenRouter run
 - Models: 32 chat models; the discovered image-only model was excluded
@@ -30,6 +30,12 @@ returned an API error. Every scheduled task is retained in the aggregate. The
 Qwythos run returned HTTP 502 for its final 12 tasks, so its aggregate is useful
 as a reliability result but not as a clean capability estimate.
 
+The nine-model local cohort also retains full raw responses, normalized task
+records, trajectories, hashes, and caveats as per-model bundles in
+[`../../runs`](../../runs). The 23 OpenRouter rows predate that evidence
+contract and remain summary-level records until they are rerun; the site does
+not imply that both evidence depths are equivalent.
+
 ## Latency companion test
 
 The same models were also tested sequentially with a tiny cold-load request and
@@ -40,13 +46,16 @@ the sum of those two full request durations. TTFT is preserved separately.
 
 From the repository root:
 
-```powershell
-python scripts/build_radar.py
+```bash
+python3 tools/benchmark/evidence.py validate
+python3 tools/benchmark/evidence.py registry --check
+python3 scripts/build_radar.py
 ```
 
-The build writes the compiled JSON, dashboard, and four SVG snapshots both here
-and at the repository root. `assistant-model-results.csv` is the combined
-published source. `model-results.csv` is the local-round input.
+The build writes the combined summary dashboard and four SVG snapshots, plus
+the run explorer and per-run audit pages. Immutable bundles are the source of
+truth where present; `assistant-model-results.csv` is the combined compatibility
+dataset and `model-results.csv` is the local-round input.
 
 ## Next local round
 
@@ -63,3 +72,19 @@ latency test sends its fixed tiny primer and the assistant test sends `READY`
 before its 21-task workload. The processing step rejects mismatched model sets
 or seeds, writes `latest-round.json`, updates `model-results.csv`, and rebuilds
 the published dashboard only after validation succeeds.
+
+## Next evidence round
+
+Use the evidence runner when the result should include assistant, latency, and
+cumulative editorial bundles:
+
+```bash
+bash scripts/run_local_evidence_round.sh
+```
+
+It discovers Titan chat models, excludes embedding and image models, and runs
+one model at a time. The `titan-local` profile fixes the Titan endpoint,
+lifecycle unloading, a 10-second empty buffer, and seed 42. Every suite sends a
+primer after model loading and before its workload. Progress includes model,
+replicate, suite, and overall positions. Publication remains a separate
+validation/build step, so a run cannot silently overwrite evidence.

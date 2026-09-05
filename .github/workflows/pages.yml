@@ -6,8 +6,13 @@ on:
     paths:
       - "docs/model-comparisons/**"
       - "docs/assistant-benchmark/**"
+      - "runs/**"
+      - "schemas/**"
+      - "tools/benchmark/**"
       - "automation/content_scoring/rubrics/**"
-      - "scripts/build_radar.py"
+      - "scripts/**"
+      - "research-runs.html"
+      - "run-pages/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -33,7 +38,10 @@ jobs:
           python-version: "3.12"
 
       - name: Build static dashboard
-        run: python scripts/build_radar.py
+        run: |
+          python tools/benchmark/evidence.py validate
+          python tools/benchmark/evidence.py registry --check
+          python scripts/build_radar.py
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

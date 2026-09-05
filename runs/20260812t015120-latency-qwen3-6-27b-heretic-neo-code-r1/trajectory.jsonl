@@ -1,0 +1,1 @@
+{"primer": {"answer": "", "seconds": 35.27423781199468, "ttft_seconds": 0.0023845429968787357}, "run_id": "20260812t015120-latency-qwen3-6-27b-heretic-neo-code-r1", "sequence": 1, "task_id": "cold-and-agent-sequence", "workload": {"answer": "", "seconds": 23.201270860998193, "ttft_seconds": 4.8704243960019085}}

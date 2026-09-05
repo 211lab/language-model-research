@@ -1,0 +1,13 @@
+{
+  "derivations": [
+    "per-model split",
+    "failure taxonomy",
+    "core/contract/strict exactness funnel",
+    "summary metrics"
+  ],
+  "normalized_at": "2026-08-23T03:17:26.497222+00:00",
+  "normalizer": "tools/benchmark/evidence.py",
+  "schema_version": 1,
+  "source": "external://results/local-assistant-20260812-015120/assistant/results.json",
+  "source_sha256": "ae7303b369e128651c91022c127ac942694b4ab07bfdeefc1ca96b964596b6db"
+}

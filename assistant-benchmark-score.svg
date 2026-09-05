@@ -1,5 +1,5 @@
-<svg id="assistant-score" xmlns="http://www.w3.org/2000/svg" width="1240" height="1936" viewBox="0 0 1240 1936" role="img" aria-labelledby="title desc">
-<title id="title">Personal-assistant intelligence</title><desc id="desc">Weighted score; higher is better. Timing is excluded from this score.</desc>
+<svg id="assistant-score" xmlns="http://www.w3.org/2000/svg" width="1240" height="1936" viewBox="0 0 1240 1936" role="img" aria-labelledby="personal-assistant-intelligence-title personal-assistant-intelligence-desc">
+<title id="personal-assistant-intelligence-title">Personal-assistant intelligence</title><desc id="personal-assistant-intelligence-desc">Weighted score; higher is better. Timing is excluded from this score.</desc>
 <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 27px Arial,sans-serif}.sub,.tick{fill:#94a3b8;font:14px Arial,sans-serif}.label{fill:#e2e8f0;font:15px Arial,sans-serif}.value{fill:#f8fafc;font:700 15px Arial,sans-serif}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.5}</style>
 <rect class="bg" width="1240" height="1936" rx="18"/>
 <text class="title" x="32" y="46">Personal-assistant intelligence</text>

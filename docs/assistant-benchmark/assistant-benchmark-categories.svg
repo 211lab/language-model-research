@@ -1,5 +1,5 @@
-<svg id="assistant-heatmap" xmlns="http://www.w3.org/2000/svg" width="1240" height="1933" viewBox="0 0 1240 1933" role="img" aria-labelledby="title desc">
-<title id="title">Assistant capability heatmap</title><desc id="desc">Hard 0–100 category scores; green is higher and red is lower.</desc>
+<svg id="assistant-heatmap" xmlns="http://www.w3.org/2000/svg" width="1240" height="1933" viewBox="0 0 1240 1933" role="img" aria-labelledby="assistant-capability-heatmap-title assistant-capability-heatmap-desc">
+<title id="assistant-capability-heatmap-title">Assistant capability heatmap</title><desc id="assistant-capability-heatmap-desc">Hard 0–100 category scores; green is higher and red is lower.</desc>
 <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 27px Arial,sans-serif}.sub,.tick{fill:#94a3b8;font:14px Arial,sans-serif}.label{fill:#e2e8f0;font:15px Arial,sans-serif}.value{fill:#f8fafc;font:700 15px Arial,sans-serif}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.5}</style>
 <rect class="bg" width="1240" height="1933" rx="18"/>
 <text class="title" x="32" y="46">Assistant capability heatmap</text>

@@ -1,0 +1,33 @@
+{
+  "dimensions": {},
+  "efficiency": {
+    "cold_start_seconds": 9.733592305005004,
+    "cold_ttft_seconds": 0.005922943004406989,
+    "median_task_seconds": 11.2863,
+    "tasks_per_minute": 5.3162,
+    "total_seconds": 11.2863,
+    "workload_seconds": 1.552729579998413,
+    "workload_ttft_seconds": 0.7556925419994514
+  },
+  "exactness": {
+    "contract": 1,
+    "core": 1,
+    "strict": 1,
+    "total": 1
+  },
+  "failure_counts": {
+    "pass": 1
+  },
+  "model": "gemma-4-e4b-it",
+  "reliability": {
+    "evaluated": 1,
+    "evaluated_pass_rate": 100.0,
+    "scheduled": 1,
+    "scheduled_pass_rate": 100.0
+  },
+  "run_id": "20260812t015120-latency-gemma-4-e4b-it-r1",
+  "schema_version": 1,
+  "score": 100.0,
+  "status": "ok",
+  "suite": "latency"
+}

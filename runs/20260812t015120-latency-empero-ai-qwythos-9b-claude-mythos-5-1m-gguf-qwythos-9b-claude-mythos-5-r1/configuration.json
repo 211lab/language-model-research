@@ -1,0 +1,14 @@
+{
+  "endpoint": "http://titan:11434/v1",
+  "model": "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m",
+  "primer_required": true,
+  "schema_version": 1,
+  "seed": 42,
+  "selected_tasks": [
+    "cold-and-agent-sequence"
+  ],
+  "serial_execution": true,
+  "settle_seconds": 10.0,
+  "suite": "latency",
+  "temperature": 0
+}

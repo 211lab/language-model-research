@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 367,
+      "path": "README.md",
+      "sha256": "8dad4628a7b8538615997df55694951fbc72bc4a03beda241ac10426afdb5783"
+    },
+    {
+      "bytes": 359,
+      "path": "configuration.json",
+      "sha256": "63d21ce201e62cbc2c4c5ce5049f89d7bcab6cf32321904e9783baa2ada9bcdb"
+    },
+    {
+      "bytes": 440,
+      "path": "lineage.json",
+      "sha256": "b920d58259a370cbe0514ad92f3b6a658d4dd7a570b0c274a91f8e2427066dba"
+    },
+    {
+      "bytes": 12110,
+      "path": "raw/results.json",
+      "sha256": "5cb60bc27e692562b6a550183b258b4d4abab6998c9386f64d4b839bfab97f28"
+    },
+    {
+      "bytes": 884,
+      "path": "summary.json",
+      "sha256": "a1eddf796fae8667722a0a10b7d9bc17b7175c0ea3956252847715b5642b2267"
+    },
+    {
+      "bytes": 758,
+      "path": "task-results.jsonl",
+      "sha256": "4a231ef979ab47dfdbfef1647b6283ead048ce5c7f4b6ff358be578e28be2195"
+    },
+    {
+      "bytes": 356,
+      "path": "trajectory.jsonl",
+      "sha256": "0b7ed66cf2567e4804d6ef6c18c3ed11d02191b113a66f8676d9382860fddd10"
+    }
+  ],
+  "caveats": [
+    "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent.",
+    "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+  ],
+  "counts": {
+    "completed": 1,
+    "expected": 1,
+    "infrastructure_failures": 0,
+    "passed": 1
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp",
+    "lifecycle_control": "all resident models unloaded through llama-swap before each model",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "serial": true
+  },
+  "finished_at": "2026-08-12T02:02:33.654075-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": null,
+    "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+    "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+    "runner_dirty": true,
+    "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+    "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+    "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+  },
+  "run_id": "20260812t015120-latency-empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-12T01:51:20.432340-04:00",
+  "status": "ok",
+  "suite": "latency",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "latency-benchmark-v1",
+    "display_name": "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m",
+    "model": "empero-ai-qwythos-9b-claude-mythos-5-1m-gguf-qwythos-9b-claude-mythos-5-1m-mtp-q4-k-m",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp"
+  }
+}

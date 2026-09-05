@@ -36,8 +36,11 @@ class CostBudgetTests(unittest.TestCase):
             latency.record_response({"cost": 0.02}, model="provider/model", workload="latency:cold")
             assistant = CostBudget(max_cost_usd=0.05, usage_log=ledger, require_reported_cost=True)
             self.assertAlmostEqual(assistant.spent_usd, 0.02)
+            self.assertAlmostEqual(assistant.session_spent_usd, 0.0)
             assistant.record_response({"cost": 0.02}, model="provider/model", workload="assistant:task")
             self.assertAlmostEqual(assistant.spent_usd, 0.04)
+            self.assertAlmostEqual(assistant.session_spent_usd, 0.02)
+            self.assertAlmostEqual(assistant.metadata()["provider_reported_cost_usd"], 0.02)
 
 
 if __name__ == "__main__":

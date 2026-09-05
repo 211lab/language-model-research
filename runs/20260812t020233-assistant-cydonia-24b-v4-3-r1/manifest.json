@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 247,
+      "path": "README.md",
+      "sha256": "9a2bc88f1fcaa4878f0d497998b27739d4855304066e0c0b0871292db0d5c7e4"
+    },
+    {
+      "bytes": 966,
+      "path": "configuration.json",
+      "sha256": "a940b1413cbbdaf731b8404d7264fd7ebfbd8a3d0017f4942fff3bf08f72a1f3"
+    },
+    {
+      "bytes": 442,
+      "path": "lineage.json",
+      "sha256": "6786f5f748335bd0edbce32c8b854c95691521b6cd935ce7812a95dc28a728ab"
+    },
+    {
+      "bytes": 238033,
+      "path": "raw/results.json",
+      "sha256": "bc78ffe97ba3c573ea018b5f533099216b2bcb54662490d2c1a8aaf60b835393"
+    },
+    {
+      "bytes": 775,
+      "path": "summary.json",
+      "sha256": "931ef851a53913db87e4532d604fd452e16984e8d60ded85d5ce0f9b80095dfb"
+    },
+    {
+      "bytes": 68304,
+      "path": "task-results.jsonl",
+      "sha256": "da2d735a2faaccbbd4d9009b7d773f162aca7d660efd81de6f3d64cd3f1a942a"
+    },
+    {
+      "bytes": 163095,
+      "path": "trajectory.jsonl",
+      "sha256": "4f83ab5d193236d3c83e9ef85869af74ddf1b96fe9802f88fe14f48a2bdf5cb9"
+    }
+  ],
+  "caveats": [
+    "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+    "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+  ],
+  "counts": {
+    "completed": 21,
+    "expected": 21,
+    "infrastructure_failures": 0,
+    "passed": 3
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp",
+    "lifecycle_control": "llama-swap explicit unload",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "serial": true
+  },
+  "finished_at": "2026-08-12T06:10:54.782037-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+    "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+    "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+    "runner_dirty": true,
+    "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+    "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+    "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+  },
+  "run_id": "20260812t020233-assistant-cydonia-24b-v4-3-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-12T02:02:33.983968-04:00",
+  "status": "ok",
+  "suite": "assistant",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "assistant-benchmark-v1",
+    "display_name": "Cydonia 24B v4.3 Q4_K_M",
+    "model": "cydonia-24b-v4.3",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp"
+  }
+}

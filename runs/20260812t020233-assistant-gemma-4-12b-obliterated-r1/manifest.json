@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 261,
+      "path": "README.md",
+      "sha256": "9012de9e4650e0ce6e75d849464c9aaab0975649d85e63dfbe525884f399f852"
+    },
+    {
+      "bytes": 973,
+      "path": "configuration.json",
+      "sha256": "5adf0eb1664bc9e4c652d921b4a812c1d238ca0cb779cb8576cd6717f0b5a57e"
+    },
+    {
+      "bytes": 442,
+      "path": "lineage.json",
+      "sha256": "ca3a919de2bb51ebc9f5d183c78790a62bb5e51cd77d6d7b1f63e5530ad5a5ed"
+    },
+    {
+      "bytes": 278813,
+      "path": "raw/results.json",
+      "sha256": "c9f95c442e27f39c9a781a5d1b8bef1964d2cee01dc6a40c9258e78da023b030"
+    },
+    {
+      "bytes": 822,
+      "path": "summary.json",
+      "sha256": "8209d28e9ec13592da574398dcbc7a163102758dfc7a386c7f8f5abe12181205"
+    },
+    {
+      "bytes": 52163,
+      "path": "task-results.jsonl",
+      "sha256": "c64e88f60a05ecbf8202150ba01c74691b4c1a8d7543c2acb242d806bf84eeed"
+    },
+    {
+      "bytes": 182694,
+      "path": "trajectory.jsonl",
+      "sha256": "446cf6748678886fd2987c12270daaa2e31863b501a926c80800034210f5ba6f"
+    }
+  ],
+  "caveats": [
+    "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result.",
+    "Imported from a historical cohort result; the bundle is normalized evidence, not a rerun."
+  ],
+  "counts": {
+    "completed": 21,
+    "expected": 21,
+    "infrastructure_failures": 0,
+    "passed": 6
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp",
+    "lifecycle_control": "llama-swap explicit unload",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "serial": true
+  },
+  "finished_at": "2026-08-12T06:10:54.782037-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+    "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+    "runner_commit": "7362428bf3ca09c95423d2c2c1c5dd11bea534d8",
+    "runner_dirty": true,
+    "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+    "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+    "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+  },
+  "run_id": "20260812t020233-assistant-gemma-4-12b-obliterated-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-12T02:02:33.983968-04:00",
+  "status": "ok",
+  "suite": "assistant",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "assistant-benchmark-v1",
+    "display_name": "Gemma 4 12B Obliterated Q4_K_M",
+    "model": "gemma-4-12b-obliterated",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp"
+  }
+}

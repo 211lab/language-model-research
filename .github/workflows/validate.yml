@@ -1,0 +1,44 @@
+name: Validate research evidence
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile benchmark and build code
+        run: python -m compileall -q tools/benchmark scripts docs/assistant-benchmark docs/model-comparisons
+
+      - name: Validate suite fixtures
+        run: |
+          python tools/benchmark/assistant_benchmark.py --validate
+          python tools/benchmark/editorial_benchmark.py --validate
+
+      - name: Validate schemas and immutable bundles
+        run: |
+          for schema in schemas/*.json; do python -m json.tool "$schema" >/dev/null; done
+          python tools/benchmark/evidence.py validate
+          python tools/benchmark/evidence.py registry --check
+          python -m unittest discover -s tools/benchmark/tests -v
+
+      - name: Rebuild static research site
+        run: |
+          python scripts/build_radar.py
+          python scripts/validate_site.py
+
+      - name: Verify generated assets are committed
+        run: git diff --exit-code

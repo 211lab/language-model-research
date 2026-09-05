@@ -1,0 +1,38 @@
+{
+  "dimensions": {
+    "efficiency": 100.0,
+    "english": 83.607,
+    "grounding": 27.717,
+    "outcome": 16.913,
+    "safety": 92.918,
+    "state": 39.614,
+    "tool_use": 10.922
+  },
+  "efficiency": {
+    "median_task_seconds": 24.6922,
+    "tasks_per_minute": 1.4671,
+    "total_seconds": 858.8454
+  },
+  "exactness": {
+    "contract": 3,
+    "core": 8,
+    "strict": 3,
+    "total": 21
+  },
+  "failure_counts": {
+    "model_failure": 18,
+    "pass": 3
+  },
+  "model": "cydonia-24b-v4.3",
+  "reliability": {
+    "evaluated": 21,
+    "evaluated_pass_rate": 14.286,
+    "scheduled": 21,
+    "scheduled_pass_rate": 14.286
+  },
+  "run_id": "20260812t020233-assistant-cydonia-24b-v4-3-r1",
+  "schema_version": 1,
+  "score": 47.941,
+  "status": "ok",
+  "suite": "assistant"
+}

@@ -1,0 +1,39 @@
+{
+  "dimensions": {
+    "efficiency": 78.571,
+    "english": 83.607,
+    "grounding": 57.609,
+    "outcome": 43.975,
+    "safety": 94.901,
+    "state": 80.676,
+    "tool_use": 81.796
+  },
+  "efficiency": {
+    "median_task_seconds": 173.5874,
+    "tasks_per_minute": 0.2597,
+    "total_seconds": 4158.3172
+  },
+  "exactness": {
+    "contract": 13,
+    "core": 16,
+    "strict": 12,
+    "total": 21
+  },
+  "failure_counts": {
+    "harness_error": 3,
+    "model_failure": 6,
+    "pass": 12
+  },
+  "model": "qwen3.6-27b-heretic-neo-code",
+  "reliability": {
+    "evaluated": 18,
+    "evaluated_pass_rate": 66.667,
+    "scheduled": 21,
+    "scheduled_pass_rate": 57.143
+  },
+  "run_id": "20260812t020233-assistant-qwen3-6-27b-heretic-neo-code-r1",
+  "schema_version": 1,
+  "score": 73.083,
+  "status": "partial",
+  "suite": "assistant"
+}
