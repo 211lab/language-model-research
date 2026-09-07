@@ -1,0 +1,40 @@
+{
+  "dimensions": {
+    "efficiency": 64.286,
+    "english": 73.361,
+    "grounding": 71.196,
+    "outcome": 51.374,
+    "safety": 97.167,
+    "state": 63.768,
+    "tool_use": 86.893
+  },
+  "efficiency": {
+    "median_task_seconds": 9.1904,
+    "tasks_per_minute": 5.3611,
+    "total_seconds": 212.6447
+  },
+  "exactness": {
+    "contract": 12,
+    "core": 16,
+    "strict": 12,
+    "total": 21
+  },
+  "failure_counts": {
+    "harness_error": 2,
+    "model_failure": 7,
+    "pass": 12
+  },
+  "model": "orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+  "provider_reported_cost_usd": 0.0,
+  "reliability": {
+    "evaluated": 19,
+    "evaluated_pass_rate": 63.158,
+    "scheduled": 21,
+    "scheduled_pass_rate": 57.143
+  },
+  "run_id": "20260906t212223-assistant-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1",
+  "schema_version": 1,
+  "score": 72.963,
+  "status": "partial",
+  "suite": "assistant"
+}

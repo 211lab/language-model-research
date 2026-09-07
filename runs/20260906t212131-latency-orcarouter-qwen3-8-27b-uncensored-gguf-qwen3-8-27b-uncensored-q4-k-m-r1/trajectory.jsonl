@@ -1,0 +1,1 @@
+{"primer": {"answer": "READY", "seconds": 31.96425466798246, "ttft_seconds": 0.007055675960145891}, "run_id": "20260906t212131-latency-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1", "sequence": 1, "task_id": "cold-and-agent-sequence", "workload": {"answer": "", "seconds": 2.296047699986957, "ttft_seconds": 1.8848411400103942}}

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T01:20:23.500878+00:00",
-  "run_count": 24,
+  "generated_at": "2026-09-07T01:29:04.512641+00:00",
+  "run_count": 27,
   "runs": [
     {
       "caveats": [
@@ -1406,6 +1406,132 @@
       "task_results_path": "runs/20260906t211514-assistant-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/task-results.jsonl"
     },
     {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+      "efficiency": {
+        "cold_start_seconds": 31.96425466798246,
+        "cold_ttft_seconds": 0.007055675960145891,
+        "median_task_seconds": 34.2603,
+        "tasks_per_minute": 1.7513,
+        "total_seconds": 34.2603,
+        "workload_seconds": 2.296047699986957,
+        "workload_ttft_seconds": 1.8848411400103942
+      },
+      "endpoint_class": "llama.cpp/OpenAI-compatible",
+      "exactness": {
+        "contract": 1,
+        "core": 1,
+        "strict": 1,
+        "total": 1
+      },
+      "failure_counts": {
+        "pass": 1
+      },
+      "manifest_path": "runs/20260906t212131-latency-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1/manifest.json",
+      "model": "orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": 0.0,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 100.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 100.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "fe22f57391fc8ab837b86140919dae84c131abd6",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260906t212131-latency-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1",
+      "score": 100.0,
+      "started_at": "2026-09-06T21:21:31.365986-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260906t212131-latency-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1/summary.json",
+      "task_results_path": "runs/20260906t212131-latency-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 64.286,
+        "english": 73.361,
+        "grounding": 71.196,
+        "outcome": 51.374,
+        "safety": 97.167,
+        "state": 63.768,
+        "tool_use": 86.893
+      },
+      "display_name": "Qwen3.8 27B Uncensored OrcaRouter Q4_K_M — RTX 3090 MTP",
+      "efficiency": {
+        "median_task_seconds": 9.1904,
+        "tasks_per_minute": 5.3611,
+        "total_seconds": 212.6447
+      },
+      "endpoint_class": "llama.cpp/OpenAI-compatible",
+      "exactness": {
+        "contract": 12,
+        "core": 16,
+        "strict": 12,
+        "total": 21
+      },
+      "failure_counts": {
+        "harness_error": 2,
+        "model_failure": 7,
+        "pass": 12
+      },
+      "manifest_path": "runs/20260906t212223-assistant-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1/manifest.json",
+      "model": "orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": 0.0,
+      "reliability": {
+        "evaluated": 19,
+        "evaluated_pass_rate": 63.158,
+        "scheduled": 21,
+        "scheduled_pass_rate": 57.143
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "fe22f57391fc8ab837b86140919dae84c131abd6",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260906t212223-assistant-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1",
+      "score": 72.963,
+      "started_at": "2026-09-06T21:22:23.313691-04:00",
+      "status": "partial",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260906t212223-assistant-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1/summary.json",
+      "task_results_path": "runs/20260906t212223-assistant-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1/task-results.jsonl"
+    },
+    {
       "caveats": [],
       "cohort": "titan-local",
       "dimensions": {
@@ -1530,6 +1656,69 @@
       "suite_version": "editorial-v1",
       "summary_path": "runs/20260907t011837-editorial-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/summary.json",
       "task_results_path": "runs/20260907t011837-editorial-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 100.0,
+        "english": 100.0,
+        "factuality": 88.889,
+        "outcome": 75.0,
+        "safety": 66.667,
+        "sourcing": 100.0,
+        "structure": 50.0
+      },
+      "display_name": "Qwen3.8 27B Uncensored OrcaRouter Q4_K_M — RTX 3090 MTP",
+      "efficiency": {
+        "median_task_seconds": 8.7499,
+        "tasks_per_minute": 8.7156,
+        "total_seconds": 61.9578
+      },
+      "endpoint_class": "llama.cpp/OpenAI-compatible",
+      "exactness": {
+        "contract": 5,
+        "core": 6,
+        "strict": 4,
+        "total": 9
+      },
+      "failure_counts": {
+        "model_failure": 5,
+        "pass": 4
+      },
+      "manifest_path": "runs/20260907t012701-editorial-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1/manifest.json",
+      "model": "orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": 0.0,
+      "reliability": {
+        "evaluated": 9,
+        "evaluated_pass_rate": 44.444,
+        "scheduled": 9,
+        "scheduled_pass_rate": 44.444
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ce0a515b76b4550ed87f12183ef2f89eeedfb0bdd13dc4151253fdfea35f53ed",
+        "prompt_sha256": "8db0b61683a69b744028f7fc249c67476d815233ed537a868c57e0aef6586ccf",
+        "runner_commit": "fe22f57391fc8ab837b86140919dae84c131abd6",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "d6aa0c592f3ca85be4fb193e41aa88bbde928532f2b71b4cdd965c2bec1e1d68",
+        "tool_schema_sha256": null
+      },
+      "run_id": "20260907t012701-editorial-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1",
+      "score": 81.667,
+      "started_at": "2026-09-07T01:27:01.711567+00:00",
+      "status": "ok",
+      "suite": "editorial",
+      "suite_version": "editorial-v1",
+      "summary_path": "runs/20260907t012701-editorial-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1/summary.json",
+      "task_results_path": "runs/20260907t012701-editorial-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1/task-results.jsonl"
     }
   ],
   "schema_version": 1

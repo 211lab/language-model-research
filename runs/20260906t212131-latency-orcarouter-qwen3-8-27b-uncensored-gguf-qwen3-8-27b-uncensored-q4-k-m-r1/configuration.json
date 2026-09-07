@@ -1,0 +1,24 @@
+{
+  "cost_budget": {
+    "cumulative_provider_reported_cost_usd": 0.0,
+    "cumulative_recorded_requests": 2,
+    "max_cost_usd": null,
+    "provider_reported_cost_usd": 0.0,
+    "recorded_requests": 2,
+    "require_reported_cost": false,
+    "usage_log": ""
+  },
+  "endpoint": "http://titan:11434/v1",
+  "model": "orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+  "primer_required": true,
+  "schema_version": 1,
+  "seed": 42,
+  "selected_tasks": [
+    "cold-and-agent-sequence"
+  ],
+  "serial_execution": true,
+  "settle_seconds": 10.0,
+  "suite": "latency",
+  "temperature": 0,
+  "thinking_mode": "disabled"
+}

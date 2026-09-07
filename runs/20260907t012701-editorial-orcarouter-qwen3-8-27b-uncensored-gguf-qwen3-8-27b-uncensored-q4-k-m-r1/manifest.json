@@ -1,0 +1,85 @@
+{
+  "artifacts": [
+    {
+      "bytes": 351,
+      "path": "README.md",
+      "sha256": "e29c84c66d7ba3251d437b985f7373604106c4e53cae10782b22d72552237c31"
+    },
+    {
+      "bytes": 887,
+      "path": "configuration.json",
+      "sha256": "ccfe7e944061fa0712bde855aa3b70a02bad72d23072594bcf9fbdd5420798e8"
+    },
+    {
+      "bytes": 521,
+      "path": "lineage.json",
+      "sha256": "3bf7022a2ec935a56c6a906fb9b96909c7ed97c678e832590a0209984c17023d"
+    },
+    {
+      "bytes": 58005,
+      "path": "raw/results.json",
+      "sha256": "81036bd9c7ad9035c43fdf0233d0d412c3775e443052db43ea7ab126d4fa19da"
+    },
+    {
+      "bytes": 909,
+      "path": "summary.json",
+      "sha256": "97c43ecc0b11934cd91b7cb638ab7b0d5c75556068c4f7dcfe5d8a5842d58cf3"
+    },
+    {
+      "bytes": 35629,
+      "path": "task-results.jsonl",
+      "sha256": "37ada826415d69757949c8a7dbd464e5e8fc4ae48c5271452130107b189c9e7d"
+    },
+    {
+      "bytes": 36113,
+      "path": "trajectory.jsonl",
+      "sha256": "fb9f8a5bf376deb886a24051a4cf2f998e5caa3763cd9895e0defc1b31c8ba04"
+    }
+  ],
+  "caveats": [],
+  "counts": {
+    "completed": 9,
+    "expected": 9,
+    "infrastructure_failures": 0,
+    "passed": 4
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp/OpenAI-compatible",
+    "lifecycle_control": null,
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "provider_reported_cost_usd": 0.0,
+    "serial": true
+  },
+  "finished_at": "2026-09-07T01:29:01.234276+00:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": "ce0a515b76b4550ed87f12183ef2f89eeedfb0bdd13dc4151253fdfea35f53ed",
+    "prompt_sha256": "8db0b61683a69b744028f7fc249c67476d815233ed537a868c57e0aef6586ccf",
+    "runner_commit": "fe22f57391fc8ab837b86140919dae84c131abd6",
+    "runner_dirty": true,
+    "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+    "tasks_sha256": "d6aa0c592f3ca85be4fb193e41aa88bbde928532f2b71b4cdd965c2bec1e1d68",
+    "tool_schema_sha256": null
+  },
+  "run_id": "20260907t012701-editorial-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1",
+  "schema_version": 1,
+  "started_at": "2026-09-07T01:27:01.711567+00:00",
+  "status": "ok",
+  "suite": "editorial",
+  "suite_version": "editorial-v1",
+  "system": {
+    "agent": "research-pipeline",
+    "display_name": "Qwen3.8 27B Uncensored OrcaRouter Q4_K_M — RTX 3090 MTP",
+    "model": "orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp/OpenAI-compatible"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "derivations": [
+    "per-model split",
+    "failure taxonomy",
+    "core/contract/strict exactness funnel",
+    "summary metrics"
+  ],
+  "normalized_at": "2026-09-07T01:26:58.408850+00:00",
+  "normalizer": "tools/benchmark/evidence.py",
+  "schema_version": 1,
+  "source": ".benchmark-work/2026-09-07t01-21-31-226221-00-00/orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m/replicate-1/assistant/results.json",
+  "source_sha256": "067c3a39302f6a8cf762470698840dfa3d2d3c07c36abb17b259fc45a533c863"
+}

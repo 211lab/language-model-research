@@ -1,0 +1,39 @@
+{
+  "dimensions": {
+    "efficiency": 100.0,
+    "english": 100.0,
+    "factuality": 88.889,
+    "outcome": 75.0,
+    "safety": 66.667,
+    "sourcing": 100.0,
+    "structure": 50.0
+  },
+  "efficiency": {
+    "median_task_seconds": 8.7499,
+    "tasks_per_minute": 8.7156,
+    "total_seconds": 61.9578
+  },
+  "exactness": {
+    "contract": 5,
+    "core": 6,
+    "strict": 4,
+    "total": 9
+  },
+  "failure_counts": {
+    "model_failure": 5,
+    "pass": 4
+  },
+  "model": "orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+  "provider_reported_cost_usd": 0.0,
+  "reliability": {
+    "evaluated": 9,
+    "evaluated_pass_rate": 44.444,
+    "scheduled": 9,
+    "scheduled_pass_rate": 44.444
+  },
+  "run_id": "20260907t012701-editorial-orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m-r1",
+  "schema_version": 1,
+  "score": 81.667,
+  "status": "ok",
+  "suite": "editorial"
+}

@@ -1,0 +1,32 @@
+{
+  "cost_budget": {
+    "cumulative_provider_reported_cost_usd": 0.0,
+    "cumulative_recorded_requests": 10,
+    "max_cost_usd": null,
+    "provider_reported_cost_usd": 0.0,
+    "recorded_requests": 10,
+    "require_reported_cost": false,
+    "usage_log": ""
+  },
+  "endpoint": "http://titan:11434/v1",
+  "model": "orcarouter-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+  "primer_required": true,
+  "schema_version": 1,
+  "seed": 42,
+  "selected_tasks": [
+    "editorial_executive_summary",
+    "editorial_claim_audit",
+    "editorial_customer_rewrite",
+    "editorial_metadata_pack",
+    "editorial_arc_brief",
+    "editorial_arc_outline",
+    "editorial_arc_draft",
+    "editorial_arc_correction",
+    "editorial_arc_final_package"
+  ],
+  "serial_execution": true,
+  "settle_seconds": 10.0,
+  "suite": "editorial",
+  "temperature": 0,
+  "thinking_mode": "disabled"
+}
