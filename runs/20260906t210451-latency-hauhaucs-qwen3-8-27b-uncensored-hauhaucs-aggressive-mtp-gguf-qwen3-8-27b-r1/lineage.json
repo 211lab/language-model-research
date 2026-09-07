@@ -1,0 +1,13 @@
+{
+  "derivations": [
+    "per-model split",
+    "failure taxonomy",
+    "core/contract/strict exactness funnel",
+    "summary metrics"
+  ],
+  "normalized_at": "2026-09-07T01:05:58.688494+00:00",
+  "normalizer": "tools/benchmark/evidence.py",
+  "schema_version": 1,
+  "source": ".benchmark-work/2026-09-07t01-04-51-572190-00-00/hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b/replicate-1/latency/results.json",
+  "source_sha256": "55da145093cabc3f73693ed6ab992d64962dfa10d03cd918c54407b9fbd2c8aa"
+}

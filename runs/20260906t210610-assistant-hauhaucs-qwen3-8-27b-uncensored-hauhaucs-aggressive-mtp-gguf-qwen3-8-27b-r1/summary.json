@@ -1,0 +1,40 @@
+{
+  "dimensions": {
+    "efficiency": 71.429,
+    "english": 69.262,
+    "grounding": 63.043,
+    "outcome": 42.918,
+    "safety": 100.0,
+    "state": 63.768,
+    "tool_use": 86.893
+  },
+  "efficiency": {
+    "median_task_seconds": 7.1695,
+    "tasks_per_minute": 5.4802,
+    "total_seconds": 164.2264
+  },
+  "exactness": {
+    "contract": 10,
+    "core": 14,
+    "strict": 10,
+    "total": 21
+  },
+  "failure_counts": {
+    "harness_error": 6,
+    "model_failure": 5,
+    "pass": 10
+  },
+  "model": "hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-uncensored-hauhaucs-aggressive-q4-k-p",
+  "provider_reported_cost_usd": 0.0,
+  "reliability": {
+    "evaluated": 15,
+    "evaluated_pass_rate": 66.667,
+    "scheduled": 21,
+    "scheduled_pass_rate": 47.619
+  },
+  "run_id": "20260906t210610-assistant-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1",
+  "schema_version": 1,
+  "score": 70.97,
+  "status": "partial",
+  "suite": "assistant"
+}

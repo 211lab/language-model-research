@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T03:37:24.316276+00:00",
-  "run_count": 18,
+  "generated_at": "2026-09-07T01:12:00.026882+00:00",
+  "run_count": 21,
   "runs": [
     {
       "caveats": [
@@ -1152,6 +1152,195 @@
       "suite_version": "1.0",
       "summary_path": "runs/20260812t020233-assistant-unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s-r1/summary.json",
       "task_results_path": "runs/20260812t020233-assistant-unsloth-qwen3-6-35b-a3b-mtp-gguf-qwen3-6-35b-a3b-ud-q4-k-s-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-uncensored-hauhaucs-aggressive-q4-k-p",
+      "efficiency": {
+        "cold_start_seconds": 52.09204200201202,
+        "cold_ttft_seconds": 0.0017128739855252206,
+        "median_task_seconds": 54.7107,
+        "tasks_per_minute": 1.0967,
+        "total_seconds": 54.7107,
+        "workload_seconds": 2.6186941580381244,
+        "workload_ttft_seconds": 2.1793475979939103
+      },
+      "endpoint_class": "llama.cpp/OpenAI-compatible",
+      "exactness": {
+        "contract": 1,
+        "core": 1,
+        "strict": 1,
+        "total": 1
+      },
+      "failure_counts": {
+        "pass": 1
+      },
+      "manifest_path": "runs/20260906t210451-latency-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/manifest.json",
+      "model": "hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-uncensored-hauhaucs-aggressive-q4-k-p",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": 0.0,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 100.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 100.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "6b41b1d2ee7c0f681837e03ec4f9b2e2f6b1339a",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260906t210451-latency-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1",
+      "score": 100.0,
+      "started_at": "2026-09-06T21:04:51.741961-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260906t210451-latency-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/summary.json",
+      "task_results_path": "runs/20260906t210451-latency-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 71.429,
+        "english": 69.262,
+        "grounding": 63.043,
+        "outcome": 42.918,
+        "safety": 100.0,
+        "state": 63.768,
+        "tool_use": 86.893
+      },
+      "display_name": "Qwen3.8 27B Uncensored HauhauCS Aggressive Q4_K_P — RTX 3090 MTP",
+      "efficiency": {
+        "median_task_seconds": 7.1695,
+        "tasks_per_minute": 5.4802,
+        "total_seconds": 164.2264
+      },
+      "endpoint_class": "llama.cpp/OpenAI-compatible",
+      "exactness": {
+        "contract": 10,
+        "core": 14,
+        "strict": 10,
+        "total": 21
+      },
+      "failure_counts": {
+        "harness_error": 6,
+        "model_failure": 5,
+        "pass": 10
+      },
+      "manifest_path": "runs/20260906t210610-assistant-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/manifest.json",
+      "model": "hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-uncensored-hauhaucs-aggressive-q4-k-p",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": 0.0,
+      "reliability": {
+        "evaluated": 15,
+        "evaluated_pass_rate": 66.667,
+        "scheduled": 21,
+        "scheduled_pass_rate": 47.619
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "6b41b1d2ee7c0f681837e03ec4f9b2e2f6b1339a",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260906t210610-assistant-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1",
+      "score": 70.97,
+      "started_at": "2026-09-06T21:06:10.019751-04:00",
+      "status": "partial",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260906t210610-assistant-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/summary.json",
+      "task_results_path": "runs/20260906t210610-assistant-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 100.0,
+        "english": 100.0,
+        "factuality": 66.667,
+        "outcome": 87.5,
+        "safety": 66.667,
+        "sourcing": 100.0,
+        "structure": 50.0
+      },
+      "display_name": "Qwen3.8 27B Uncensored HauhauCS Aggressive Q4_K_P — RTX 3090 MTP",
+      "efficiency": {
+        "median_task_seconds": 7.1874,
+        "tasks_per_minute": 8.3984,
+        "total_seconds": 64.2976
+      },
+      "endpoint_class": "llama.cpp/OpenAI-compatible",
+      "exactness": {
+        "contract": 4,
+        "core": 5,
+        "strict": 3,
+        "total": 9
+      },
+      "failure_counts": {
+        "model_failure": 6,
+        "pass": 3
+      },
+      "manifest_path": "runs/20260907t011004-editorial-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/manifest.json",
+      "model": "hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-uncensored-hauhaucs-aggressive-q4-k-p",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": 0.0,
+      "reliability": {
+        "evaluated": 9,
+        "evaluated_pass_rate": 33.333,
+        "scheduled": 9,
+        "scheduled_pass_rate": 33.333
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ce0a515b76b4550ed87f12183ef2f89eeedfb0bdd13dc4151253fdfea35f53ed",
+        "prompt_sha256": "8db0b61683a69b744028f7fc249c67476d815233ed537a868c57e0aef6586ccf",
+        "runner_commit": "6b41b1d2ee7c0f681837e03ec4f9b2e2f6b1339a",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "d6aa0c592f3ca85be4fb193e41aa88bbde928532f2b71b4cdd965c2bec1e1d68",
+        "tool_schema_sha256": null
+      },
+      "run_id": "20260907t011004-editorial-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1",
+      "score": 76.111,
+      "started_at": "2026-09-07T01:10:04.163438+00:00",
+      "status": "ok",
+      "suite": "editorial",
+      "suite_version": "editorial-v1",
+      "summary_path": "runs/20260907t011004-editorial-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/summary.json",
+      "task_results_path": "runs/20260907t011004-editorial-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/task-results.jsonl"
     }
   ],
   "schema_version": 1

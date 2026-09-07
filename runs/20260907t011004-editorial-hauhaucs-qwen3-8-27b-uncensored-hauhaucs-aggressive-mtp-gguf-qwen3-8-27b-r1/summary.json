@@ -1,0 +1,39 @@
+{
+  "dimensions": {
+    "efficiency": 100.0,
+    "english": 100.0,
+    "factuality": 66.667,
+    "outcome": 87.5,
+    "safety": 66.667,
+    "sourcing": 100.0,
+    "structure": 50.0
+  },
+  "efficiency": {
+    "median_task_seconds": 7.1874,
+    "tasks_per_minute": 8.3984,
+    "total_seconds": 64.2976
+  },
+  "exactness": {
+    "contract": 4,
+    "core": 5,
+    "strict": 3,
+    "total": 9
+  },
+  "failure_counts": {
+    "model_failure": 6,
+    "pass": 3
+  },
+  "model": "hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-uncensored-hauhaucs-aggressive-q4-k-p",
+  "provider_reported_cost_usd": 0.0,
+  "reliability": {
+    "evaluated": 9,
+    "evaluated_pass_rate": 33.333,
+    "scheduled": 9,
+    "scheduled_pass_rate": 33.333
+  },
+  "run_id": "20260907t011004-editorial-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1",
+  "schema_version": 1,
+  "score": 76.111,
+  "status": "ok",
+  "suite": "editorial"
+}
