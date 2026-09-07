@@ -1,0 +1,1 @@
+{"primer": {"answer": "READY", "seconds": 35.12104332103627, "ttft_seconds": 0.0016259429976344109}, "run_id": "20260906t211419-latency-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1", "sequence": 1, "task_id": "cold-and-agent-sequence", "workload": {"answer": "", "seconds": 2.3660284419893287, "ttft_seconds": 1.9589812509948388}}

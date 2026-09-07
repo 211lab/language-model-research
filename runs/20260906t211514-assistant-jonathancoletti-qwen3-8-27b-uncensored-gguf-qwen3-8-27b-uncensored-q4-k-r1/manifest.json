@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 359,
+      "path": "README.md",
+      "sha256": "ee22c2c0b7c888af7396fe6af6c39d69f9dee670a6c95e1fd6fcebc66d106cc1"
+    },
+    {
+      "bytes": 1318,
+      "path": "configuration.json",
+      "sha256": "452182cc7c881266e1e4f858138942829d7a52a76698a229856f8af24c936272"
+    },
+    {
+      "bytes": 524,
+      "path": "lineage.json",
+      "sha256": "170bc37bc5ef523afe4379d9e615e18cc349f2a132e0e8f449a389a4f33688c4"
+    },
+    {
+      "bytes": 481903,
+      "path": "raw/results.json",
+      "sha256": "8cb632e3054d1573fea10a92fc6d71968c95c8923c4b69e6fe38caf940b679c8"
+    },
+    {
+      "bytes": 954,
+      "path": "summary.json",
+      "sha256": "3cbabf4be96b45a9919118e6958eab9b85edcdf76272d7a0a2817780592486d8"
+    },
+    {
+      "bytes": 59703,
+      "path": "task-results.jsonl",
+      "sha256": "6f3ec0946917e308f1091a47f29b8d71b6d2875ccb6b0b27b2ff556c64aa4788"
+    },
+    {
+      "bytes": 335936,
+      "path": "trajectory.jsonl",
+      "sha256": "b176825fe19de1d9eaf57ee5ebcbc5a6341ca548da1e46e51d6522c87e1641c4"
+    }
+  ],
+  "caveats": [
+    "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result."
+  ],
+  "counts": {
+    "completed": 21,
+    "expected": 21,
+    "infrastructure_failures": 6,
+    "passed": 11
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp/OpenAI-compatible",
+    "lifecycle_control": "llama-swap explicit unload",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "provider_reported_cost_usd": 0.0,
+    "serial": true
+  },
+  "finished_at": "2026-09-06T21:18:34.252477-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+    "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+    "runner_commit": "04f0f5d7825fe81f700b1f3c52966022a07a4c85",
+    "runner_dirty": true,
+    "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+    "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+    "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+  },
+  "run_id": "20260906t211514-assistant-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1",
+  "schema_version": 1,
+  "started_at": "2026-09-06T21:15:14.814539-04:00",
+  "status": "partial",
+  "suite": "assistant",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "research-pipeline",
+    "display_name": "Qwen3.8-27B Uncensored Q4_K_M — RTX 3090 MTP",
+    "model": "jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp/OpenAI-compatible"
+  }
+}

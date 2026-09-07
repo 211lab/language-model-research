@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 355,
+      "path": "README.md",
+      "sha256": "3b1db29ccde263e90af0caf00e0c511cb78f125f5f7848513f3f49f3fda9c46c"
+    },
+    {
+      "bytes": 640,
+      "path": "configuration.json",
+      "sha256": "9dff844f7ebdd3d879f215741cde62c42e3cbdc8ed1c9ee17e8b821f03a75606"
+    },
+    {
+      "bytes": 522,
+      "path": "lineage.json",
+      "sha256": "496347e8608580a44d40cfef5c5355a507b6929a0dedfbe802d06d140a766395"
+    },
+    {
+      "bytes": 12279,
+      "path": "raw/results.json",
+      "sha256": "f05ce0788d4c7cc3f4a9470937e0076934918b8d0c311b98fb70e4ee221885f0"
+    },
+    {
+      "bytes": 909,
+      "path": "summary.json",
+      "sha256": "8077ccd4052d7e81a38c5c91e4600cdc2ca4ade6196b1f06225a5eaeff028744"
+    },
+    {
+      "bytes": 749,
+      "path": "task-results.jsonl",
+      "sha256": "bf9b7798c02e224a488648aa6815d0917df7925fad764858628dfc170f61de6b"
+    },
+    {
+      "bytes": 361,
+      "path": "trajectory.jsonl",
+      "sha256": "6d44db32bbea68480eb05d4623da3569ee20d11287d789732a1ff32ccf7a7894"
+    }
+  ],
+  "caveats": [
+    "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent."
+  ],
+  "counts": {
+    "completed": 1,
+    "expected": 1,
+    "infrastructure_failures": 0,
+    "passed": 1
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp/OpenAI-compatible",
+    "lifecycle_control": "all resident models unloaded through llama-swap before each model",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "provider_reported_cost_usd": 0.0,
+    "serial": true
+  },
+  "finished_at": "2026-09-06T21:15:09.524493-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": null,
+    "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+    "runner_commit": "04f0f5d7825fe81f700b1f3c52966022a07a4c85",
+    "runner_dirty": true,
+    "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+    "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+    "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+  },
+  "run_id": "20260906t211419-latency-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1",
+  "schema_version": 1,
+  "started_at": "2026-09-06T21:14:19.975824-04:00",
+  "status": "ok",
+  "suite": "latency",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "research-pipeline",
+    "display_name": "jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+    "model": "jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp/OpenAI-compatible"
+  }
+}

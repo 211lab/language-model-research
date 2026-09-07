@@ -1,0 +1,13 @@
+{
+  "derivations": [
+    "per-model split",
+    "failure taxonomy",
+    "core/contract/strict exactness funnel",
+    "summary metrics"
+  ],
+  "normalized_at": "2026-09-07T01:15:09.603541+00:00",
+  "normalizer": "tools/benchmark/evidence.py",
+  "schema_version": 1,
+  "source": ".benchmark-work/2026-09-07t01-14-19-829919-00-00/jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k/replicate-1/latency/results.json",
+  "source_sha256": "4bf191b253f8b2bd2e4ce42694890e9237603785e1870142b2d78d61cdd5de94"
+}

@@ -1,0 +1,13 @@
+{
+  "derivations": [
+    "per-model split",
+    "failure taxonomy",
+    "core/contract/strict exactness funnel",
+    "summary metrics"
+  ],
+  "normalized_at": "2026-09-07T01:20:20.658587+00:00",
+  "normalizer": "tools/benchmark/evidence.py",
+  "schema_version": 1,
+  "source": ".benchmark-work/2026-09-07t01-14-19-829919-00-00/jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k/replicate-1/editorial/results.json",
+  "source_sha256": "e43c8f2eacf369c7f780c39ca0f562e62bcc43e473b1939f44d84d3fe7402678"
+}

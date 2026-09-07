@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T01:12:00.026882+00:00",
-  "run_count": 21,
+  "generated_at": "2026-09-07T01:20:23.500878+00:00",
+  "run_count": 24,
   "runs": [
     {
       "caveats": [
@@ -1280,6 +1280,132 @@
       "task_results_path": "runs/20260906t210610-assistant-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/task-results.jsonl"
     },
     {
+      "caveats": [
+        "Cold-load control is available only for local lifecycle-managed runtimes; hosted-provider latency is directional, not equivalent."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {},
+      "display_name": "jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+      "efficiency": {
+        "cold_start_seconds": 35.12104332103627,
+        "cold_ttft_seconds": 0.0016259429976344109,
+        "median_task_seconds": 37.4871,
+        "tasks_per_minute": 1.6006,
+        "total_seconds": 37.4871,
+        "workload_seconds": 2.3660284419893287,
+        "workload_ttft_seconds": 1.9589812509948388
+      },
+      "endpoint_class": "llama.cpp/OpenAI-compatible",
+      "exactness": {
+        "contract": 1,
+        "core": 1,
+        "strict": 1,
+        "total": 1
+      },
+      "failure_counts": {
+        "pass": 1
+      },
+      "manifest_path": "runs/20260906t211419-latency-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/manifest.json",
+      "model": "jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": 0.0,
+      "reliability": {
+        "evaluated": 1,
+        "evaluated_pass_rate": 100.0,
+        "scheduled": 1,
+        "scheduled_pass_rate": 100.0
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": null,
+        "prompt_sha256": "1424e431a5061a12479bc53fcec60050baa8009840d27007c9109813c29fcbbb",
+        "runner_commit": "04f0f5d7825fe81f700b1f3c52966022a07a4c85",
+        "runner_dirty": true,
+        "seed_document_sha256": "56994618c221c496c6c7e812d4a8605158836880e554c9ff23ae0b09e52060c4",
+        "tasks_sha256": "f417029b6283e23974e4a1f58a8b0f44294af6ba28e421b272dc2edf752f0aea",
+        "tool_schema_sha256": "ff9794396f5cd5d59d82b27fad8325f2fac2df7a647eda762261a1c02cad3e55"
+      },
+      "run_id": "20260906t211419-latency-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1",
+      "score": 100.0,
+      "started_at": "2026-09-06T21:14:19.975824-04:00",
+      "status": "ok",
+      "suite": "latency",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260906t211419-latency-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/summary.json",
+      "task_results_path": "runs/20260906t211419-latency-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [
+        "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result."
+      ],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 73.81,
+        "english": 73.361,
+        "grounding": 63.043,
+        "outcome": 49.26,
+        "safety": 92.068,
+        "state": 80.676,
+        "tool_use": 91.748
+      },
+      "display_name": "Qwen3.8-27B Uncensored Q4_K_M — RTX 3090 MTP",
+      "efficiency": {
+        "median_task_seconds": 6.8359,
+        "tasks_per_minute": 5.7006,
+        "total_seconds": 157.8782
+      },
+      "endpoint_class": "llama.cpp/OpenAI-compatible",
+      "exactness": {
+        "contract": 11,
+        "core": 16,
+        "strict": 11,
+        "total": 21
+      },
+      "failure_counts": {
+        "harness_error": 6,
+        "model_failure": 4,
+        "pass": 11
+      },
+      "manifest_path": "runs/20260906t211514-assistant-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/manifest.json",
+      "model": "jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": 0.0,
+      "reliability": {
+        "evaluated": 15,
+        "evaluated_pass_rate": 73.333,
+        "scheduled": 21,
+        "scheduled_pass_rate": 52.381
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+        "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+        "runner_commit": "04f0f5d7825fe81f700b1f3c52966022a07a4c85",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+        "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+      },
+      "run_id": "20260906t211514-assistant-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1",
+      "score": 74.549,
+      "started_at": "2026-09-06T21:15:14.814539-04:00",
+      "status": "partial",
+      "suite": "assistant",
+      "suite_version": "1.0",
+      "summary_path": "runs/20260906t211514-assistant-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/summary.json",
+      "task_results_path": "runs/20260906t211514-assistant-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/task-results.jsonl"
+    },
+    {
       "caveats": [],
       "cohort": "titan-local",
       "dimensions": {
@@ -1341,6 +1467,69 @@
       "suite_version": "editorial-v1",
       "summary_path": "runs/20260907t011004-editorial-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/summary.json",
       "task_results_path": "runs/20260907t011004-editorial-hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf-qwen3-8-27b-r1/task-results.jsonl"
+    },
+    {
+      "caveats": [],
+      "cohort": "titan-local",
+      "dimensions": {
+        "efficiency": 66.667,
+        "english": 100.0,
+        "factuality": 100.0,
+        "outcome": 100.0,
+        "safety": 66.667,
+        "sourcing": 100.0,
+        "structure": 50.0
+      },
+      "display_name": "Qwen3.8-27B Uncensored Q4_K_M — RTX 3090 MTP",
+      "efficiency": {
+        "median_task_seconds": 7.7556,
+        "tasks_per_minute": 8.4275,
+        "total_seconds": 64.0758
+      },
+      "endpoint_class": "llama.cpp/OpenAI-compatible",
+      "exactness": {
+        "contract": 7,
+        "core": 9,
+        "strict": 4,
+        "total": 9
+      },
+      "failure_counts": {
+        "model_failure": 5,
+        "pass": 4
+      },
+      "manifest_path": "runs/20260907t011837-editorial-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/manifest.json",
+      "model": "jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+      "provider": "Titan",
+      "provider_kind": "local",
+      "provider_reported_cost_usd": 0.0,
+      "reliability": {
+        "evaluated": 9,
+        "evaluated_pass_rate": 44.444,
+        "scheduled": 9,
+        "scheduled_pass_rate": 44.444
+      },
+      "replicate": {
+        "count": 1,
+        "index": 1,
+        "seed": 42
+      },
+      "reproducibility": {
+        "fixture_sha256": "ce0a515b76b4550ed87f12183ef2f89eeedfb0bdd13dc4151253fdfea35f53ed",
+        "prompt_sha256": "8db0b61683a69b744028f7fc249c67476d815233ed537a868c57e0aef6586ccf",
+        "runner_commit": "04f0f5d7825fe81f700b1f3c52966022a07a4c85",
+        "runner_dirty": true,
+        "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+        "tasks_sha256": "d6aa0c592f3ca85be4fb193e41aa88bbde928532f2b71b4cdd965c2bec1e1d68",
+        "tool_schema_sha256": null
+      },
+      "run_id": "20260907t011837-editorial-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1",
+      "score": 89.444,
+      "started_at": "2026-09-07T01:18:37.682025+00:00",
+      "status": "ok",
+      "suite": "editorial",
+      "suite_version": "editorial-v1",
+      "summary_path": "runs/20260907t011837-editorial-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/summary.json",
+      "task_results_path": "runs/20260907t011837-editorial-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1/task-results.jsonl"
     }
   ],
   "schema_version": 1

@@ -1,0 +1,40 @@
+{
+  "dimensions": {
+    "efficiency": 73.81,
+    "english": 73.361,
+    "grounding": 63.043,
+    "outcome": 49.26,
+    "safety": 92.068,
+    "state": 80.676,
+    "tool_use": 91.748
+  },
+  "efficiency": {
+    "median_task_seconds": 6.8359,
+    "tasks_per_minute": 5.7006,
+    "total_seconds": 157.8782
+  },
+  "exactness": {
+    "contract": 11,
+    "core": 16,
+    "strict": 11,
+    "total": 21
+  },
+  "failure_counts": {
+    "harness_error": 6,
+    "model_failure": 4,
+    "pass": 11
+  },
+  "model": "jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-m",
+  "provider_reported_cost_usd": 0.0,
+  "reliability": {
+    "evaluated": 15,
+    "evaluated_pass_rate": 73.333,
+    "scheduled": 21,
+    "scheduled_pass_rate": 52.381
+  },
+  "run_id": "20260906t211514-assistant-jonathancoletti-qwen3-8-27b-uncensored-gguf-qwen3-8-27b-uncensored-q4-k-r1",
+  "schema_version": 1,
+  "score": 74.549,
+  "status": "partial",
+  "suite": "assistant"
+}
