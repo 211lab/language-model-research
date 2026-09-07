@@ -1,0 +1,34 @@
+{
+  "dimensions": {},
+  "efficiency": {
+    "cold_start_seconds": 35.0803113830043,
+    "cold_ttft_seconds": 0.001716608996503055,
+    "median_task_seconds": 37.4224,
+    "tasks_per_minute": 1.6033,
+    "total_seconds": 37.4224,
+    "workload_seconds": 2.3421120359562337,
+    "workload_ttft_seconds": 1.9254901659442112
+  },
+  "exactness": {
+    "contract": 1,
+    "core": 1,
+    "strict": 1,
+    "total": 1
+  },
+  "failure_counts": {
+    "pass": 1
+  },
+  "model": "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl",
+  "provider_reported_cost_usd": 0.0,
+  "reliability": {
+    "evaluated": 1,
+    "evaluated_pass_rate": 100.0,
+    "scheduled": 1,
+    "scheduled_pass_rate": 100.0
+  },
+  "run_id": "20260906t213243-latency-unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl-r1",
+  "schema_version": 1,
+  "score": 100.0,
+  "status": "ok",
+  "suite": "latency"
+}

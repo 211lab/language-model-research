@@ -1,0 +1,85 @@
+{
+  "artifacts": [
+    {
+      "bytes": 309,
+      "path": "README.md",
+      "sha256": "d0abe65e4b8d544bfddf4ee6041b01be329a737f32b04b8459d6be06e64ddeec"
+    },
+    {
+      "bytes": 866,
+      "path": "configuration.json",
+      "sha256": "14e56a9ce56179b23d5e9e56bbea864b8da6b9276d63f103d3add3bfd9698fa3"
+    },
+    {
+      "bytes": 500,
+      "path": "lineage.json",
+      "sha256": "6f9398b2d8fa49c9977a5ecaf264065dab0a5e9f51f78c16bab1ec0422984068"
+    },
+    {
+      "bytes": 58050,
+      "path": "raw/results.json",
+      "sha256": "de79331905b17cdb36220e1549eec13b8eb06bb4e32f66b9d042d6ba46409cd3"
+    },
+    {
+      "bytes": 866,
+      "path": "summary.json",
+      "sha256": "ed7d9b5b5bc92921d572867b6b5d18ac165c52f24312be6fa8e31b5e7d23e92b"
+    },
+    {
+      "bytes": 35349,
+      "path": "task-results.jsonl",
+      "sha256": "d5dcce5dfb3330a73b836daa6ba22558e1fc765febccccb81bcba59f3331d602"
+    },
+    {
+      "bytes": 36209,
+      "path": "trajectory.jsonl",
+      "sha256": "e2d212dd66a62b671c3eef3c385cb68a351815994c1ec0fecd7a58a5e57a570b"
+    }
+  ],
+  "caveats": [],
+  "counts": {
+    "completed": 9,
+    "expected": 9,
+    "infrastructure_failures": 0,
+    "passed": 3
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp/OpenAI-compatible",
+    "lifecycle_control": null,
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "provider_reported_cost_usd": 0.0,
+    "serial": true
+  },
+  "finished_at": "2026-09-07T01:40:01.420739+00:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": "ce0a515b76b4550ed87f12183ef2f89eeedfb0bdd13dc4151253fdfea35f53ed",
+    "prompt_sha256": "8db0b61683a69b744028f7fc249c67476d815233ed537a868c57e0aef6586ccf",
+    "runner_commit": "6b1792b1eac3afefdd409b123770c533f09dffc7",
+    "runner_dirty": true,
+    "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+    "tasks_sha256": "d6aa0c592f3ca85be4fb193e41aa88bbde928532f2b71b4cdd965c2bec1e1d68",
+    "tool_schema_sha256": null
+  },
+  "run_id": "20260907t013750-editorial-unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl-r1",
+  "schema_version": 1,
+  "started_at": "2026-09-07T01:37:50.911007+00:00",
+  "status": "ok",
+  "suite": "editorial",
+  "suite_version": "editorial-v1",
+  "system": {
+    "agent": "research-pipeline",
+    "display_name": "Qwen3.8 27B UD Q4_K_XL (tuned)",
+    "model": "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp/OpenAI-compatible"
+  }
+}

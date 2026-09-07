@@ -1,0 +1,87 @@
+{
+  "artifacts": [
+    {
+      "bytes": 309,
+      "path": "README.md",
+      "sha256": "1786a6e75613584362017b3874fa81bbd7562fda991cc51b3edf11ee2c9c64d8"
+    },
+    {
+      "bytes": 1292,
+      "path": "configuration.json",
+      "sha256": "d99321263443f7a36f5457c41554f2146f0a87a1c2843962e6362e492e0095be"
+    },
+    {
+      "bytes": 500,
+      "path": "lineage.json",
+      "sha256": "99c9e3bbf99878a46356c15978f94a5610c0aa793f70115a285022a9110668ba"
+    },
+    {
+      "bytes": 475025,
+      "path": "raw/results.json",
+      "sha256": "300cfdd57c6e2db78473e40f8ea8673d0cebb5302e5acbd2028ccbea89f42068"
+    },
+    {
+      "bytes": 906,
+      "path": "summary.json",
+      "sha256": "55578f9eb4a3d35c98ccd12aea6970312428df934d9d5e9e15d6c4a14cd68fa7"
+    },
+    {
+      "bytes": 64240,
+      "path": "task-results.jsonl",
+      "sha256": "cf5f23035515545948b93bb09fb43ff4df89382e385dce9d10e98480ba4f6672"
+    },
+    {
+      "bytes": 333810,
+      "path": "trajectory.jsonl",
+      "sha256": "02bb8b39da298da54da61bf25f0ebb2cab2d3aa88f8a2f2c671c1a6ef795bc24"
+    }
+  ],
+  "caveats": [
+    "Core and contract exactness are derived from legacy assistant-v1 score thresholds (50 and 70); strict preserves the original task pass result."
+  ],
+  "counts": {
+    "completed": 21,
+    "expected": 21,
+    "infrastructure_failures": 3,
+    "passed": 12
+  },
+  "execution": {
+    "cohort": "titan-local",
+    "endpoint": "http://titan:11434/v1",
+    "endpoint_class": "llama.cpp/OpenAI-compatible",
+    "lifecycle_control": "llama-swap explicit unload",
+    "primer": "One fixed primer request after model switch and before measured workload.",
+    "provider_kind": "local",
+    "provider_reported_cost_usd": 0.0,
+    "serial": true
+  },
+  "finished_at": "2026-09-06T21:37:45.487213-04:00",
+  "replicate": {
+    "count": 1,
+    "index": 1,
+    "seed": 42
+  },
+  "reproducibility": {
+    "fixture_sha256": "ea2601bcb637a9c66563e91015f15a007a0a06f7d88532ec218c8c178903efb9",
+    "prompt_sha256": "be032d2eb70ed8bd9486cdb34502b0aecc7d108f2912c2acc53567bacbcfbc27",
+    "runner_commit": "6b1792b1eac3afefdd409b123770c533f09dffc7",
+    "runner_dirty": true,
+    "seed_document_sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44",
+    "tasks_sha256": "907017aa0d29639967cd0c0702764b73e7cc8ebbf254625fcc07b63e13b4428e",
+    "tool_schema_sha256": "5f50178d6b57bf3e4b395d941772f3cba613a17d065a7c9161a09c5617ca0d17"
+  },
+  "run_id": "20260906t213340-assistant-unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl-r1",
+  "schema_version": 1,
+  "started_at": "2026-09-06T21:33:40.027386-04:00",
+  "status": "partial",
+  "suite": "assistant",
+  "suite_version": "1.0",
+  "system": {
+    "agent": "research-pipeline",
+    "display_name": "Qwen3.8 27B UD Q4_K_XL (tuned)",
+    "model": "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl",
+    "provider": "Titan",
+    "quantization": null,
+    "runtime": "llama.cpp/OpenAI-compatible"
+  }
+}

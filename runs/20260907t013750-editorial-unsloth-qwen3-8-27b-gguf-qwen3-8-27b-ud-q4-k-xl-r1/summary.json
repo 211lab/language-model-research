@@ -1,0 +1,39 @@
+{
+  "dimensions": {
+    "efficiency": 100.0,
+    "english": 100.0,
+    "factuality": 77.778,
+    "outcome": 62.5,
+    "safety": 66.667,
+    "sourcing": 100.0,
+    "structure": 50.0
+  },
+  "efficiency": {
+    "median_task_seconds": 8.515,
+    "tasks_per_minute": 8.8623,
+    "total_seconds": 60.9323
+  },
+  "exactness": {
+    "contract": 4,
+    "core": 4,
+    "strict": 3,
+    "total": 9
+  },
+  "failure_counts": {
+    "model_failure": 6,
+    "pass": 3
+  },
+  "model": "unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl",
+  "provider_reported_cost_usd": 0.0,
+  "reliability": {
+    "evaluated": 9,
+    "evaluated_pass_rate": 33.333,
+    "scheduled": 9,
+    "scheduled_pass_rate": 33.333
+  },
+  "run_id": "20260907t013750-editorial-unsloth-qwen3-8-27b-gguf-qwen3-8-27b-ud-q4-k-xl-r1",
+  "schema_version": 1,
+  "score": 74.444,
+  "status": "ok",
+  "suite": "editorial"
+}
