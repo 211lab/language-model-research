@@ -34,10 +34,12 @@ class BurnPipeline:
         registry: ModelRegistry | None = None,
         registry_path: Path | None = None,
         providers: dict[GenerationModality, ProviderConfig] | None = None,
+        batch_mode: bool = False,
     ) -> None:
         self._files = files
         self._inference_factory = inference_factory
         self._providers = providers or {}
+        self._batch_mode = batch_mode
         self._inference_cache: dict[GenerationModality, InferencePort] = {}
         self._registry = registry or ModelRegistry()
         self._registry_path = registry_path
@@ -69,13 +71,23 @@ class BurnPipeline:
                 named_inputs=named_inputs,
             )
         )
-        artifact = self._inference_for_step(step).generate(
-            InferenceRequest(
-                prompt=prompt,
-                output_format=step.format,
-                model=self._model_for_step(step),
-            )
-        )
+        request = InferenceRequest(prompt=prompt, output_format=step.format, model=self._model_for_step(step))
+        inference = self._inference_for_step(step)
+        provider = self._providers.get(step.modality)
+        if (
+            self._batch_mode
+            and step.modality == GenerationModality.TEXT
+            and step.format.is_text
+            and provider is not None
+            and provider.kind.value == "openrouter"
+            and callable(getattr(inference, "generate_batch", None))
+        ):
+            artifact = inference.generate_batch([(step.id, request)])[step.id]
+        else:
+            artifact = inference.generate(request)
+        return self._materialize_artifact(step, context, output_path, artifact, force)
+
+    def _materialize_artifact(self, step, context, output_path, artifact, force) -> str:
         if step.format.is_text:
             content = sanitize_generated_content(artifact.text or "", step.format)
             validate_generated_content(content, step.format)
@@ -125,6 +137,42 @@ class BurnPipeline:
                 raise ValueError(f"Unknown dependency step(s): {', '.join(sorted(set(unknown_dependencies)))}")
 
             step = self._choose_next_step(ready, current_provider_key=current_provider_key, step_order=step_order)
+            inference = self._inference_for_step(step)
+            provider = self._providers.get(step.modality)
+            batch_steps = []
+            if (
+                self._batch_mode
+                and step.modality == GenerationModality.TEXT
+                and step.format.is_text
+                and provider is not None
+                and provider.kind.value == "openrouter"
+                and callable(getattr(inference, "generate_batch", None))
+            ):
+                key = self._provider_key_for_step(step)
+                batch_steps = [
+                    candidate for candidate in ready
+                    if candidate.modality == GenerationModality.TEXT
+                    and candidate.format.is_text
+                    and self._provider_key_for_step(candidate) == key
+                ]
+            if batch_steps:
+                requests = []
+                for candidate in batch_steps:
+                    prompt = self._render_generation_request(
+                        candidate, spec.context, spec.variables, state, steps_by_id
+                    )
+                    requests.append((candidate.id, prompt))
+                print(f"OpenRouter batch wave: requests={len(requests)} steps={','.join(item[0] for item in requests)}", flush=True)
+                artifacts = inference.generate_batch(requests)
+                if set(artifacts) != {candidate.id for candidate in batch_steps}:
+                    raise RuntimeError("Batch generation did not return exactly one artifact per requested step")
+                for candidate in batch_steps:
+                    pending.remove(candidate)
+                    output_path = self._resolve_output_path(step=candidate, steps_by_id=steps_by_id)
+                    content = self._materialize_artifact(candidate, spec.context, output_path, artifacts[candidate.id], force)
+                    state[candidate.id] = {"content": content, "path": str(output_path)}
+                current_provider_key = key
+                continue
             pending.remove(step)
             missing = [step_id for step_id in step.depends_on if step_id not in state]
             unknown = [step_id for step_id in step.depends_on if step_id not in steps_by_id]
@@ -199,6 +247,25 @@ class BurnPipeline:
             },
         }
         return render_prompt_template(prompt_template, render_data)
+
+    def _render_generation_request(self, step, context, variables, state, steps_by_id):
+        from .domain import GenerateCommand, build_generation_prompt
+
+        rendered_prompt = self.render_step_prompt(
+            step=step, context=context, variables=variables, state=state, steps_by_id=steps_by_id
+        )
+        return InferenceRequest(
+            prompt=build_generation_prompt(
+                GenerateCommand(
+                    step=step.model_copy(update={"output": self._resolve_output_path(step=step, steps_by_id=steps_by_id)}),
+                    context=context,
+                    prompt_template=rendered_prompt,
+                    named_inputs=self._load_inputs(step, state=state, steps_by_id=steps_by_id),
+                )
+            ),
+            output_format=step.format,
+            model=self._model_for_step(step),
+        )
 
     def _build_registry_render_data(self) -> dict[str, Any]:
         verbs = self._registry.used_verbs()

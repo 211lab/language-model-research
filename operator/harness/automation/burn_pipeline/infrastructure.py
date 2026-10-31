@@ -29,6 +29,9 @@ from .domain import (
     extract_actionable_verb,
 )
 
+OPENROUTER_BATCH_POLL_INTERVAL_ENV = "BURN_OPENROUTER_BATCH_POLL_INTERVAL_SECONDS"
+OPENROUTER_BATCH_POLL_INTERVAL_SECONDS = 60.0
+
 
 class LocalFileStore:
     def __init__(self, root: Path) -> None:
@@ -127,6 +130,7 @@ class ChatCompletionsAdapter:
         timeout_seconds: float = 300.0,
         retry_attempts: int = 4,
         retry_wait_seconds: float = 75.0,
+        batch_enabled: bool = False,
     ) -> None:
         self._provider_url = normalize_provider_url(providerUrl)
         self._api_key = apiKey
@@ -140,6 +144,7 @@ class ChatCompletionsAdapter:
         self._timeout_seconds = timeout_seconds
         self._retry_attempts = max(1, retry_attempts)
         self._retry_wait_seconds = max(0.0, retry_wait_seconds)
+        self._batch_enabled = batch_enabled
 
     def generate(self, request: InferenceRequest) -> GeneratedArtifact:
         headers = {"Content-Type": "application/json"}
@@ -176,6 +181,165 @@ class ChatCompletionsAdapter:
             raise RuntimeError(f"Unexpected LLM content type: {type(content).__name__}")
         record_usage(data, endpoint="chat/completions", requested_model=model)
         return GeneratedArtifact(text=content)
+
+    def generate_batch(self, requests: list[tuple[str, InferenceRequest]]) -> dict[str, GeneratedArtifact]:
+        if not self._batch_enabled:
+            raise RuntimeError("OpenRouter batch mode is not enabled for this provider")
+        if not requests:
+            return {}
+        headers = {"Content-Type": "application/json"}
+        if self._api_key:
+            headers["Authorization"] = f"Bearer {self._api_key}"
+        model = requests[0][1].model or self._model
+        if not model or any((request.model or self._model) != model for _, request in requests):
+            raise ValueError("All requests in an OpenRouter batch must use the same model")
+        entries = [
+            {
+                "custom_id": custom_id,
+                "body": self._chat_payload(request, model),
+            }
+            for custom_id, request in requests
+        ]
+        evidence_path = os.environ.get("BURN_BATCH_EVIDENCE")
+        with httpx.Client(timeout=self._timeout_seconds) as client:
+            try:
+                response = client.post(
+                    f"{self._provider_url}/batches",
+                    headers=headers,
+                    json={"endpoint": "/v1/chat/completions", "model": model, "requests": entries},
+                )
+            except (httpx.TimeoutException, httpx.TransportError) as exc:
+                self._write_batch_evidence(evidence_path, {"status": "ambiguous", "request_count": len(entries), "error": type(exc).__name__})
+                raise RuntimeError("OpenRouter batch submission outcome is ambiguous; manual review required, not resubmitted") from exc
+            try:
+                response.raise_for_status()
+                submitted = response.json()
+            except Exception as exc:
+                self._write_batch_evidence(evidence_path, {"status": "submit_failed", "request_count": len(entries), "error": type(exc).__name__})
+                raise RuntimeError(f"OpenRouter batch submission failed: {type(exc).__name__}") from exc
+            batch_id = submitted.get("id") if isinstance(submitted, dict) else None
+            if not isinstance(batch_id, str) or not batch_id:
+                self._write_batch_evidence(evidence_path, {"status": "submit_failed", "request_count": len(entries), "error": "missing_batch_id"})
+                raise RuntimeError("OpenRouter batch submission response did not include an ID")
+            status = str(submitted.get("status") or "queued")
+            current = submitted
+            self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "request_count": len(entries)})
+            print(f"OpenRouter batch {batch_id}: status={status} requests={len(entries)}", flush=True)
+            terminal = {"completed", "failed", "expired", "cancelled"}
+            poll_attempt = 0
+            poll_interval = float(os.environ.get(
+                OPENROUTER_BATCH_POLL_INTERVAL_ENV,
+                str(OPENROUTER_BATCH_POLL_INTERVAL_SECONDS),
+            ))
+            if poll_interval <= 0:
+                raise ValueError(f"{OPENROUTER_BATCH_POLL_INTERVAL_ENV} must be greater than zero")
+            while status not in terminal:
+                time.sleep(poll_interval)
+                try:
+                    polled = client.get(f"{self._provider_url}/batches/{batch_id}", headers=headers)
+                    polled.raise_for_status()
+                    current = polled.json()
+                except (httpx.TimeoutException, httpx.TransportError, httpx.HTTPStatusError) as exc:
+                    if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code != 429 and exc.response.status_code < 500:
+                        self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "error": "poll_non_retryable_http_status", "http_status": exc.response.status_code})
+                        raise RuntimeError(f"OpenRouter batch {batch_id} polling failed with non-retryable HTTP {exc.response.status_code}") from exc
+                    poll_attempt += 1
+                    if poll_attempt >= self._retry_attempts:
+                        self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "error": "poll_failed", "error_type": type(exc).__name__})
+                        raise RuntimeError(f"OpenRouter batch {batch_id} polling failed after bounded retries") from exc
+                    time.sleep(min(30.0, 2.0 ** poll_attempt))
+                    continue
+                if not isinstance(current, dict):
+                    raise RuntimeError(f"OpenRouter batch {batch_id} returned an invalid status response")
+                status = str(current.get("status") or "unknown")
+                self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "request_count": len(entries)})
+                counts = current.get("request_counts") if isinstance(current.get("request_counts"), dict) else {}
+                total = counts.get("total", len(entries))
+                completed = counts.get("completed", 0)
+                failed = counts.get("failed", 0)
+                print(f"OpenRouter batch {batch_id}: status={status} completed={completed}/{total} failed={failed}", flush=True)
+                if status == "unknown":
+                    raise RuntimeError(f"OpenRouter batch {batch_id} response omitted status")
+            self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "request_count": len(entries), "error": current.get("error")})
+            batch_status_error = None
+            if status != "completed":
+                batch_status_error = f"batch ended with status={status}: {current.get('error') or 'no provider error details'}"
+            results = current.get("data") or current.get("results")
+        if not isinstance(results, list):
+            if batch_status_error:
+                raise RuntimeError(f"OpenRouter batch {batch_id} {batch_status_error}")
+            raise RuntimeError(f"OpenRouter batch {batch_id} completed without result entries")
+        expected = {custom_id for custom_id, _ in requests}
+        mapped: dict[str, dict[str, Any]] = {}
+        errors: list[str] = [batch_status_error] if batch_status_error else []
+        for result in results:
+            if not isinstance(result, dict) or not isinstance(result.get("custom_id"), str):
+                self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "error": "result_missing_custom_id"})
+                errors.append(f"result missing custom_id")
+                continue
+            custom_id = result["custom_id"]
+            if custom_id not in expected or custom_id in mapped:
+                self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "error": "unknown_or_duplicate_custom_id", "custom_id": custom_id})
+                errors.append(f"unknown or duplicate custom_id: {custom_id}")
+                continue
+            mapped[custom_id] = result
+        missing = expected - mapped.keys()
+        if missing:
+            self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "error": "missing_custom_id", "custom_ids": sorted(missing)})
+            errors.append(f"missing custom_id(s): {', '.join(sorted(missing))}")
+        artifacts: dict[str, GeneratedArtifact] = {}
+        for custom_id, _ in requests:
+            if custom_id not in mapped:
+                continue
+            result = mapped[custom_id]
+            reply = result.get("response") or result.get("body") or {}
+            if not isinstance(reply, dict) or result.get("error") or int(reply.get("status_code", 200)) >= 400:
+                self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "error": "request_failed", "custom_id": custom_id})
+                errors.append(f"request {custom_id} failed: {result.get('error') or (reply.get('error') if isinstance(reply, dict) else None) or 'provider response error'}")
+                continue
+            data = reply.get("body") if isinstance(reply.get("body"), dict) else reply
+            record_usage(data, endpoint="chat/completions", requested_model=model, enforce_cost_cap=False)
+            try:
+                content = data["choices"][0]["message"]["content"]
+            except (KeyError, IndexError, TypeError) as exc:
+                self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "error": "invalid_response_shape", "custom_id": custom_id})
+                errors.append(f"request {custom_id} returned an unexpected response")
+                continue
+            if not isinstance(content, str):
+                self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "error": "non_text_response", "custom_id": custom_id})
+                errors.append(f"request {custom_id} returned non-text content")
+                continue
+            artifacts[custom_id] = GeneratedArtifact(text=content)
+        try:
+            enforce_usage_cost_cap()
+        except RuntimeError as exc:
+            errors.append(str(exc))
+        if errors:
+            self._write_batch_evidence(evidence_path, {"batch_id": batch_id, "status": status, "error": "; ".join(errors)})
+            raise RuntimeError(f"OpenRouter batch {batch_id} result processing failed: {'; '.join(errors)}")
+        return artifacts
+
+    def _chat_payload(self, request: InferenceRequest, model: str) -> dict[str, Any]:
+        payload: dict[str, Any] = {
+            "model": model,
+            "messages": [{"role": "user", "content": request.prompt}],
+            "temperature": 0,
+        }
+        max_tokens = os.environ.get("BURN_MAX_TOKENS")
+        if max_tokens:
+            payload["max_tokens"] = int(max_tokens)
+        if os.environ.get("BURN_DISABLE_THINKING", "").strip().lower() in {"1", "true", "yes"}:
+            payload["chat_template_kwargs"] = {"enable_thinking": False}
+        return payload
+
+    @staticmethod
+    def _write_batch_evidence(path_value: str | None, evidence: dict[str, Any]) -> None:
+        if not path_value:
+            return
+        path = Path(path_value)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open("a", encoding="utf-8") as handle:
+            handle.write(json.dumps({"recorded_at": datetime.now(timezone.utc).isoformat(), **evidence}, ensure_ascii=True) + "\n")
 
     def _resolve_model(self, client: httpx.Client, headers: dict[str, str]) -> str:
         response = client.get(f"{self._provider_url}/models", headers=headers)
@@ -308,7 +472,13 @@ class ImageGenerationAdapter:
         raise RuntimeError("Unexpected retry state")
 
 
-def record_usage(data: dict[str, Any], *, endpoint: str, requested_model: str) -> None:
+def record_usage(
+    data: dict[str, Any],
+    *,
+    endpoint: str,
+    requested_model: str,
+    enforce_cost_cap: bool = True,
+) -> None:
     """Append provider-reported usage when a comparison run requests it."""
     destination = os.environ.get("BURN_USAGE_LOG")
     usage = data.get("usage")
@@ -324,8 +494,14 @@ def record_usage(data: dict[str, Any], *, endpoint: str, requested_model: str) -
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as handle:
         handle.write(json.dumps(entry, ensure_ascii=True) + "\n")
+    if enforce_cost_cap:
+        enforce_usage_cost_cap()
+
+
+def enforce_usage_cost_cap() -> None:
+    destination = os.environ.get("BURN_USAGE_LOG")
     cap_value = os.environ.get("BURN_MAX_COST_USD")
-    if not cap_value:
+    if not destination or not cap_value:
         return
     try:
         cap = float(cap_value)
@@ -334,6 +510,9 @@ def record_usage(data: dict[str, Any], *, endpoint: str, requested_model: str) -
     if cap <= 0:
         raise ValueError("BURN_MAX_COST_USD must be greater than zero")
     observed = 0.0
+    path = Path(destination)
+    if not path.exists():
+        return
     for line in path.read_text(encoding="utf-8").splitlines():
         if not line.strip():
             continue
@@ -634,7 +813,13 @@ def render_steadyburn_verb_index_markdown(index: SteadyBurnVerbIndex) -> str:
     return "\n".join(lines) + "\n"
 
 
-def build_inference(config: ProviderConfig, cwd: Path, modality: GenerationModality = GenerationModality.TEXT):
+def build_inference(
+    config: ProviderConfig,
+    cwd: Path,
+    modality: GenerationModality = GenerationModality.TEXT,
+    *,
+    batch_enabled: bool = False,
+):
     if config.kind.value == "codex-cli":
         if modality == GenerationModality.IMAGE:
             raise ValueError("codex-cli is not supported for binary image generation")
@@ -660,6 +845,7 @@ def build_inference(config: ProviderConfig, cwd: Path, modality: GenerationModal
             timeout_seconds=config.timeout_seconds or 300.0,
             retry_attempts=config.retry_attempts,
             retry_wait_seconds=config.retry_wait_seconds,
+            batch_enabled=config.kind == ProviderKind.OPENROUTER and batch_enabled,
         )
 
     raise ValueError(f"Unsupported provider: {config.kind}")

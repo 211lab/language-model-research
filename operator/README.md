@@ -60,6 +60,8 @@ For OpenRouter, the UI requires an exact `provider/model` ID, an explicit paid-r
 
 The assistant suite keeps seed `42` and the fixed 768-token per-turn cap. The editorial scorer records the evidence model, Luna judge, and tie-break model with the result. The Luna preflight is capped separately by `LUNA_PREFLIGHT_MAX_COST_USD` (default `$0.10`) and exercises both the streaming latency probes plus one assistant task. Target assistant work writes one provider-usage ledger across latency and every task turn; if a reply lacks `usage.cost` or crosses the selected ceiling, no later paid request is sent and the incomplete result is not published. Remote editorial generation uses the same fail-closed rule through `BURN_MAX_COST_USD`.
 
+OpenRouter editorial batch polling is opt-in. Poll requests wait 60 seconds by default; set `BURN_OPENROUTER_BATCH_POLL_INTERVAL_SECONDS` to a positive number of seconds to override the interval for the worker process. Batch outcomes with unknown request success require review and are not automatically resubmitted.
+
 ## Scale workers
 
 Remote jobs have no shared local inference state, so they can scale horizontally:

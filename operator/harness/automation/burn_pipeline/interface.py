@@ -288,6 +288,7 @@ def build_parser() -> argparse.ArgumentParser:
     step.add_argument("--output", required=True)
     step.add_argument("--force", action="store_true")
     step.add_argument("--dry-run", action="store_true")
+    step.add_argument("--openrouter-batch-mode", action="store_true")
 
     run = subparsers.add_parser("run", help="Run a YAML pipeline plan.")
     add_context_args(run)
@@ -302,6 +303,7 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--target-dir", default="")
     run.add_argument("--force", action="store_true")
     run.add_argument("--dry-run", action="store_true")
+    run.add_argument("--openrouter-batch-mode", action="store_true")
 
     render_prompt = subparsers.add_parser(
         "render-prompt",
@@ -379,10 +381,16 @@ def build_pipeline(
     registry = load_model_registry(files, registry_path)
     return BurnPipeline(
         files=files,
-        inference_factory=lambda provider, modality: build_inference(provider, cwd, modality),
+        inference_factory=lambda provider, modality: build_inference(
+            provider,
+            cwd,
+            modality,
+            batch_enabled=bool(getattr(args, "openrouter_batch_mode", False)),
+        ),
         providers=providers,
         registry=registry,
         registry_path=registry_path,
+        batch_mode=bool(getattr(args, "openrouter_batch_mode", False)),
     )
 
 
