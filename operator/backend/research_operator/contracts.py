@@ -90,6 +90,7 @@ class ModelSubmission:
     target_cost_ceiling_usd: float | None = None
     judge_cost_ceiling_usd: float | None = None
     assistant_max_tokens: int = DEFAULT_ASSISTANT_MAX_TOKENS
+    openrouter_batch_mode: bool = False
 
     @property
     def identity_key(self) -> str:
@@ -134,6 +135,9 @@ def parse_model_submission(payload: dict[str, Any]) -> ModelSubmission:
         payload.get("operator_acknowledged_idle", False), "operator_acknowledged_idle"
     )
     confirm_paid_run = _bool(payload.get("confirm_paid_run", False), "confirm_paid_run")
+    openrouter_batch_mode = _bool(payload.get("openrouter_batch_mode", False), "openrouter_batch_mode")
+    if openrouter_batch_mode and (provider != OPENROUTER_PROVIDER or "editorial" not in cohorts):
+        raise ContractError("openrouter_batch_mode is only valid for OpenRouter submissions including editorial")
     target_cost_ceiling_usd = _positive_number(
         payload.get("target_cost_ceiling_usd"), "target_cost_ceiling_usd"
     )
@@ -194,13 +198,17 @@ def parse_model_submission(payload: dict[str, Any]) -> ModelSubmission:
         target_cost_ceiling_usd=target_cost_ceiling_usd,
         judge_cost_ceiling_usd=judge_cost_ceiling_usd,
         assistant_max_tokens=assistant_max_tokens,
+        openrouter_batch_mode=openrouter_batch_mode,
     )
 
 
 def make_job_payload(submission: ModelSubmission, cohort: str) -> dict[str, Any]:
     if cohort not in submission.cohorts:
         raise ContractError(f"{cohort} was not selected for this submission")
-    return submission.as_payload() | {"cohort": cohort}
+    return submission.as_payload() | {
+        "cohort": cohort,
+        "openrouter_batch_mode": submission.openrouter_batch_mode and cohort == "editorial",
+    }
 
 
 def model_labels_for_identity(rows: Iterable[dict[str, Any]]) -> dict[str, str]:

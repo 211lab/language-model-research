@@ -189,6 +189,9 @@ def run_editorial_benchmark(
     }
     if provider == "openrouter":
         environment["BURN_USAGE_LOG"] = str(usage_log)
+        if payload.get("openrouter_batch_mode") is True:
+            environment["BURN_OPENROUTER_BATCH_MODE"] = "1"
+            environment["BURN_BATCH_EVIDENCE"] = str(settings.runs_root / str(job["id"]) / "openrouter-batches.jsonl")
         if payload.get("target_cost_ceiling_usd"):
             environment["BURN_MAX_COST_USD"] = str(payload["target_cost_ceiling_usd"])
     if _disable_thinking(effective_model_ref):
@@ -212,6 +215,8 @@ def run_editorial_benchmark(
         "--date", settings.editorial_date,
         "--force",
     ]
+    if provider == "openrouter" and payload.get("openrouter_batch_mode") is True:
+        context_command.append("--openrouter-batch-mode")
     run_streaming(context_command, cwd=workspace, environment=environment, on_line=log)
     pipeline = workspace / "tmp" / "operator-pipelines" / f"{job['id']}.yaml"
     _configure_pipeline(
@@ -222,8 +227,11 @@ def run_editorial_benchmark(
         text_model=effective_model_ref,
         image_model=image_model,
     )
+    pipeline_command = ["python", "scripts/burn-pipeline.py", "run", "--pipeline", str(pipeline), "--force"]
+    if provider == "openrouter" and payload.get("openrouter_batch_mode") is True:
+        pipeline_command.append("--openrouter-batch-mode")
     run_streaming(
-        ["python", "scripts/burn-pipeline.py", "run", "--pipeline", str(pipeline), "--force"],
+        pipeline_command,
         cwd=workspace,
         environment=environment,
         on_line=log,

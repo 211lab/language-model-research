@@ -527,6 +527,8 @@ function refreshFormMode() {
   $("#remote-fields").classList.toggle("is-hidden", local);
   const editorial = $("#cohort-editorial").checked;
   $("#judge-cost-wrap").classList.toggle("is-hidden", local || !editorial);
+  $("#batch-mode-wrap").classList.toggle("is-hidden", local || !editorial);
+  if (local || !editorial) $("#openrouter-batch-mode").checked = false;
 }
 
 function formMessage(text = "", kind = "") {
@@ -568,6 +570,7 @@ async function submitRun(event) {
     payload.confirm_paid_run = $("#paid-ack").checked;
     payload.target_cost_ceiling_usd = numberValue("#target-cost-cap");
     payload.judge_cost_ceiling_usd = cohorts.includes("editorial") ? numberValue("#judge-cost-cap") : null;
+    payload.openrouter_batch_mode = cohorts.includes("editorial") && $("#openrouter-batch-mode").checked;
   }
   const button = $("#queue-submit");
   button.disabled = true;

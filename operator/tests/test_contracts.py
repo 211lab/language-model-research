@@ -77,6 +77,56 @@ class ModelSubmissionContractTests(unittest.TestCase):
         self.assertEqual(submission.target_cost_ceiling_usd, 4.0)
         self.assertIsNone(submission.judge_cost_ceiling_usd)
 
+    def test_batch_mode_defaults_false_and_is_serialized(self) -> None:
+        payload = {
+            "provider": "openrouter",
+            "model_ref": "tencent/hy3",
+            "display_name": "Tencent HY3",
+            "cohorts": ["editorial"],
+            "confirm_paid_run": True,
+            "target_cost_ceiling_usd": 3.0,
+            "judge_cost_ceiling_usd": 1.0,
+        }
+        submission = parse_model_submission(payload)
+        self.assertFalse(submission.openrouter_batch_mode)
+        self.assertFalse(submission.as_payload()["openrouter_batch_mode"])
+        self.assertFalse(make_job_payload(submission, "editorial")["openrouter_batch_mode"])
+
+    def test_batch_mode_requires_openrouter_editorial_cohort(self) -> None:
+        local_payload = self.local_payload()
+        local_payload["openrouter_batch_mode"] = True
+        with self.assertRaisesRegex(ContractError, "OpenRouter.*editorial"):
+            parse_model_submission(local_payload)
+        payload = {
+            "provider": "openrouter",
+            "model_ref": "tencent/hy3",
+            "display_name": "Tencent HY3",
+            "cohorts": ["assistant"],
+            "confirm_paid_run": True,
+            "target_cost_ceiling_usd": 3.0,
+            "openrouter_batch_mode": True,
+        }
+        with self.assertRaisesRegex(ContractError, "OpenRouter.*editorial"):
+            parse_model_submission(payload)
+        payload["cohorts"] = ["editorial"]
+        payload["judge_cost_ceiling_usd"] = 1.0
+        self.assertTrue(parse_model_submission(payload).openrouter_batch_mode)
+
+    def test_batch_mode_isolated_to_editorial_job(self) -> None:
+        payload = {
+            "provider": "openrouter",
+            "model_ref": "tencent/hy3",
+            "display_name": "Tencent HY3",
+            "cohorts": ["editorial", "assistant"],
+            "confirm_paid_run": True,
+            "target_cost_ceiling_usd": 3.0,
+            "judge_cost_ceiling_usd": 1.0,
+            "openrouter_batch_mode": True,
+        }
+        submission = parse_model_submission(payload)
+        self.assertTrue(make_job_payload(submission, "editorial")["openrouter_batch_mode"])
+        self.assertFalse(make_job_payload(submission, "assistant")["openrouter_batch_mode"])
+
     def test_editorial_remote_work_requires_judge_budget(self) -> None:
         payload = {
             "provider": "openrouter",

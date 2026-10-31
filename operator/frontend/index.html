@@ -205,6 +205,13 @@
                   Editorial judge ceiling (USD)
                   <input id="judge-cost-cap" type="number" min="0.01" step="0.01" placeholder="Required for editorial" />
                 </label>
+                <div id="batch-mode-wrap">
+                  <label class="check-row" for="openrouter-batch-mode">
+                    <input id="openrouter-batch-mode" type="checkbox" />
+                    <span>Use OpenRouter batch mode for editorial text generation.</span>
+                  </label>
+                  <p id="batch-mode-note" class="inline-note">Images, assistant runs, and evaluation are not batched. Batch processing may take longer than synchronous generation.</p>
+                </div>
                 <label class="check-row check-row--required">
                   <input id="paid-ack" type="checkbox" />
                   <span>I approve this paid OpenRouter run and its stated ceiling.</span>
