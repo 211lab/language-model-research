@@ -24,6 +24,8 @@ cp .env.example .env
 docker compose --env-file .env -f compose.yaml up --build
 ```
 
+Compose loads `operator/.env` into the API and worker environments through `env_file`. Gutenberg runs as a worker subprocess and inherits those values, so no shell exports are required. Keep `OPENROUTER_API_KEY` and `OPENAI_API_KEY` in this secret, local-only file; keys are never passed as command arguments or written to logs or evidence. The UI-selected candidate provider/model remain explicit Gutenberg command options for each candidate, rather than defaults from `.env`.
+
 Open `http://localhost:8090`. The API is also available on `http://localhost:8088` by default.
 
 ## CQRS event history
