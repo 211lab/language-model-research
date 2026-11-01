@@ -1,22 +1,16 @@
-"""Fixed-seed editorial benchmark runner and publisher.
-
-The runner uses the same versioned prompts, seed, output bundle, rubric, and
-readability compiler as the published research. It creates an isolated harness
-copy per job instead of a Git worktree, so Docker workers never mutate source
-files while generating an artifact.
-"""
+"""Generate editorial assessment bundles through pinned Gutenberg, then score and publish them."""
 
 from __future__ import annotations
 
 from datetime import datetime, timezone
+import hashlib
 import json
 import os
 from pathlib import Path
 import re
 import shutil
+import subprocess
 from typing import Any, Callable
-
-import yaml
 
 from .assistant import _publish_lock
 from .config import Settings
@@ -32,60 +26,14 @@ def _disable_thinking(model_ref: str) -> bool:
     return any(marker in value for marker in ("qwen", "qwythos", "gemma-4-12b"))
 
 
-def _provider_configuration(settings: Settings, provider: str, model_ref: str) -> tuple[str, str, str]:
+GENERATOR_COMMIT = "7db89c344ea63af62998eeb10f58a2397b8c0f03"
+GENERATOR_PROFILE = "steadyburn-profile-v1"
+
+
+def _provider_configuration(settings: Settings, provider: str) -> tuple[str, str, str, str]:
     if provider == "local":
-        return "openai-compatible", settings.local_ai_base_url, settings.editorial_local_image_model
-    return "openrouter", settings.openrouter_base_url, settings.editorial_remote_image_model
-
-
-def _copy_harness(settings: Settings, job_id: str) -> Path:
-    if not (settings.harness_root / "scripts" / "burn-pipeline.py").exists():
-        raise RuntimeError(f"Editorial harness is incomplete: {settings.harness_root}")
-    workspace = settings.runs_root / job_id / "editorial-workspace"
-    if workspace.exists():
-        shutil.rmtree(workspace)
-    shutil.copytree(
-        settings.harness_root,
-        workspace,
-        ignore=shutil.ignore_patterns("__pycache__", "*.pyc"),
-    )
-    return workspace
-
-
-def _configure_pipeline(
-    source: Path,
-    destination: Path,
-    *,
-    provider_kind: str,
-    endpoint: str,
-    text_model: str,
-    image_model: str,
-) -> None:
-    data = yaml.safe_load(source.read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or not isinstance(data.get("providers"), dict):
-        raise RuntimeError(f"Editorial pipeline has no providers block: {source}")
-    data["providers"]["text"] = {
-        "kind": provider_kind,
-        "providerUrl": endpoint,
-        "model": text_model,
-        "timeout_seconds": 1800,
-        "retry_attempts": 3,
-        "retry_wait_seconds": 10,
-    }
-    data["providers"]["image"] = {
-        "kind": provider_kind,
-        "providerUrl": endpoint,
-        "model": image_model,
-        "timeout_seconds": 1800,
-        "retry_attempts": 3,
-        "retry_wait_seconds": 10,
-    }
-    for step in data.get("steps", []):
-        if not isinstance(step, dict):
-            continue
-        step["model"] = image_model if step.get("modality") == "image" else text_model
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=False), encoding="utf-8")
+        return "openai-compatible", settings.local_ai_base_url, "openai-compatible", settings.editorial_local_image_model
+    return "openrouter", settings.openrouter_base_url, "openrouter", settings.editorial_remote_image_model
 
 
 def _usage_total(path: Path) -> float:
@@ -100,6 +48,32 @@ def _usage_total(path: Path) -> float:
     return total
 
 
+def _write_compatibility_usage(bundle: Path, provider: str, model_ref: str) -> None:
+    if provider != "openrouter":
+        return
+    usage = json.loads((bundle / "usage.json").read_text(encoding="utf-8"))
+    lines = []
+    for item in usage.get("usage", []):
+        artifact = str(item.get("artifact", "")).lower()
+        endpoint = "images/generations" if "image" in artifact or artifact.endswith(".png") else "chat/completions"
+        lines.append(json.dumps({
+            "recorded_at": datetime.now(timezone.utc).isoformat(),
+            "endpoint": endpoint,
+            "model": item.get("model") or model_ref,
+            "usage": item.get("usage") or {},
+        }))
+    (bundle / "OPENROUTER_USAGE.jsonl").write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
+
+
+def _generator_revision(generator_root: Path) -> str:
+    revision = subprocess.check_output(
+        ["git", "-C", str(generator_root), "rev-parse", "HEAD"], text=True
+    ).strip()
+    if revision != GENERATOR_COMMIT:
+        raise RuntimeError(f"Gutenberg checkout revision {revision} does not match pinned {GENERATOR_COMMIT}")
+    return revision
+
+
 def _write_manifest(
     target: Path,
     *,
@@ -112,6 +86,11 @@ def _write_manifest(
     display_name: str,
     endpoint: str,
     run_id: str,
+    generator_commit: str,
+    generator_manifest: dict[str, Any],
+    generator_usage: dict[str, Any],
+    source_sha256: str,
+    assessment_brief: str,
 ) -> None:
     usage_log = target / "OPENROUTER_USAGE.jsonl"
     total = _usage_total(usage_log)
@@ -127,6 +106,20 @@ def _write_manifest(
         "operatorRunId": run_id,
         "fixedSeed": "2026-08-07-master-your-tasks-prioritization-and-time-management",
         "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "purpose": "candidate-assessment",
+        "generator": {
+            "commit": generator_commit,
+            "profile": generator_manifest.get("profile"),
+            "source_sha256": source_sha256,
+            "brief": assessment_brief,
+            "title": generator_manifest.get("title"),
+            "slug": generator_manifest.get("slug"),
+            "date": generator_manifest.get("date"),
+            "manifest": generator_manifest,
+            "usage": generator_usage,
+            "batch": generator_usage.get("batch", False),
+            "batch_events": generator_usage.get("batch_events", []),
+        },
     }
     (target / "MODEL_COMPARISON.json").write_text(
         json.dumps(metadata, indent=2) + "\n", encoding="utf-8"
@@ -143,11 +136,37 @@ def _write_manifest(
         f"- Resolved source snapshot: `{source_snapshot or 'not recorded'}`",
         "- Workload: fixed 2026-08-07 editorial seed and full text pipeline",
         f"- Run at (UTC): `{metadata['generatedAt']}`",
+        f"- Purpose: `{metadata['purpose']}`",
+        f"- Gutenberg commit: `{generator_commit}`",
+        f"- Gutenberg profile: `{generator_manifest.get('profile')}`",
+        f"- Assessment source SHA-256: `{source_sha256}`",
+        f"- Assessment brief: {assessment_brief}",
+        f"- Selected tracks: `{', '.join(generator_manifest.get('selected_tracks', []))}`",
+        f"- Batch enabled: `{str(generator_usage.get('batch', False)).lower()}`",
+        f"- Generator source manifest: `{json.dumps(generator_manifest.get('sources', []), sort_keys=True)}`",
     ]
+    for artifact in generator_manifest.get("artifacts", []):
+        lines.append(f"- Artifact `{artifact.get('path')}` SHA-256 `{artifact.get('sha256')}`; dependencies: `{', '.join(artifact.get('depends_on', []))}`")
+    lines.append(f"- Batch evidence: `{json.dumps(generator_usage.get('batch_events', []), sort_keys=True)}`")
+    lines.append(f"- Provider token/cost usage: `{json.dumps(generator_usage.get('usage', []), sort_keys=True)}`")
     if provider == "openrouter":
         lines.append(f"- Provider-reported total cost: `${total:.6f}`")
     else:
         lines.append("- Provider-reported generation cost: `$0.000000 local baseline`")
+    lines.extend([
+        "",
+        "## Gutenberg manifest",
+        "",
+        "```json",
+        json.dumps(generator_manifest, indent=2, sort_keys=True),
+        "```",
+        "",
+        "## Gutenberg usage",
+        "",
+        "```json",
+        json.dumps(generator_usage, indent=2, sort_keys=True),
+        "```",
+    ])
     (target / "MODEL_COMPARISON.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -167,75 +186,55 @@ def run_editorial_benchmark(
     provider = str(payload["provider"])
     if not settings.editorial_seed_path.is_file():
         raise RuntimeError(f"Fixed editorial seed is missing: {settings.editorial_seed_path}")
-    workspace = _copy_harness(settings, str(job["id"]))
-    content_dir = workspace / "content" / "letters" / f"{settings.editorial_date}-{settings.editorial_slug}"
-    provider_kind, endpoint, image_model = _provider_configuration(settings, provider, effective_model_ref)
-    run_streaming(
-        [
-            "python", "scripts/burn-pipeline.py", "init-production",
-            "--title", settings.editorial_title,
-            "--slug", settings.editorial_slug,
-            "--date", settings.editorial_date,
-            "--force",
-        ],
-        cwd=workspace,
-        on_line=log,
-    )
-    shutil.copy2(settings.editorial_seed_path, content_dir / "SEED.md")
-    usage_log = content_dir / "OPENROUTER_USAGE.jsonl"
+    job_root = settings.runs_root / str(job["id"])
+    job_root.mkdir(parents=True, exist_ok=True)
+    content_dir = job_root / "editorial-candidate"
+    if content_dir.exists():
+        shutil.rmtree(content_dir)
+    generator_root = settings.research_root / "tools" / "gutenberg"
+    generator_revision = _generator_revision(generator_root)
+    provider_name, endpoint, image_provider, image_model = _provider_configuration(settings, provider)
+    brief = "Assess this fixed editorial seed as a complete SteadyBurn bundle. Preserve the seed's intent and produce clear, actionable, audience-ready content."
     environment: dict[str, str] = {
         "BURN_MAX_TOKENS": str(settings.editorial_max_tokens),
         "BURN_TIMEOUT_SECONDS": "1800",
     }
     if provider == "openrouter":
-        environment["BURN_USAGE_LOG"] = str(usage_log)
-        if payload.get("openrouter_batch_mode") is True:
-            environment["BURN_OPENROUTER_BATCH_MODE"] = "1"
-            environment["BURN_BATCH_EVIDENCE"] = str(settings.runs_root / str(job["id"]) / "openrouter-batches.jsonl")
         if payload.get("target_cost_ceiling_usd"):
             environment["BURN_MAX_COST_USD"] = str(payload["target_cost_ceiling_usd"])
     if _disable_thinking(effective_model_ref):
         environment["BURN_DISABLE_THINKING"] = "1"
-    registry_path = f"tmp/operator-registry/{job['id']}.json"
-    relative = content_dir.relative_to(workspace)
-    context_command = [
-        "python", "scripts/burn-pipeline.py",
-        "--provider", provider_kind,
-        "--provider-url", endpoint,
-        "--model", effective_model_ref,
-        "--registry-file", registry_path,
-        "generate-step",
-        "--step-id", "context",
-        "--format", "markdown",
-        "--prompt-file", "automation/prompts/burn/context.md",
-        "--input", str(relative / "SEED.md"),
-        "--output", str(relative / "CONTEXT.md"),
+    environment["PYTHONPATH"] = str(generator_root / "ralph")
+    pipeline_command = [
+        "python", "-m", "gutenberg_ralph.interface", "generate",
+        "--profile", GENERATOR_PROFILE,
+        "--source", str(settings.editorial_seed_path),
+        "--brief", brief,
         "--title", settings.editorial_title,
         "--slug", settings.editorial_slug,
         "--date", settings.editorial_date,
-        "--force",
+        "--provider", provider_name,
+        "--model", effective_model_ref,
+        "--provider-url", endpoint,
+        "--image-provider", image_provider,
+        "--image-model", image_model,
+        "--image-provider-url", endpoint,
+        "--output", str(content_dir),
+        "--purpose", "candidate-assessment",
     ]
     if provider == "openrouter" and payload.get("openrouter_batch_mode") is True:
-        context_command.append("--openrouter-batch-mode")
-    run_streaming(context_command, cwd=workspace, environment=environment, on_line=log)
-    pipeline = workspace / "tmp" / "operator-pipelines" / f"{job['id']}.yaml"
-    _configure_pipeline(
-        content_dir / "pipeline.yaml",
-        pipeline,
-        provider_kind=provider_kind,
-        endpoint=endpoint,
-        text_model=effective_model_ref,
-        image_model=image_model,
-    )
-    pipeline_command = ["python", "scripts/burn-pipeline.py", "run", "--pipeline", str(pipeline), "--force"]
-    if provider == "openrouter" and payload.get("openrouter_batch_mode") is True:
-        pipeline_command.append("--openrouter-batch-mode")
+        pipeline_command.append("--batch")
     run_streaming(
         pipeline_command,
-        cwd=workspace,
+        cwd=settings.research_root,
         environment=environment,
         on_line=log,
     )
+    generator_manifest = json.loads((content_dir / "manifest.json").read_text(encoding="utf-8"))
+    generator_usage = json.loads((content_dir / "usage.json").read_text(encoding="utf-8"))
+    if generator_manifest.get("purpose") != "candidate-assessment":
+        raise RuntimeError("Gutenberg output is not labeled as candidate assessment")
+    _write_compatibility_usage(content_dir, provider, effective_model_ref)
 
     model_dir = _safe_model_dir(effective_model_ref)
     research_root = settings.research_root / "docs" / "model-comparisons"
@@ -256,10 +255,15 @@ def run_editorial_benchmark(
         display_name=str(payload.get("display_name") or effective_model_ref),
         endpoint=endpoint,
         run_id=str(job["run_id"]),
+        generator_commit=generator_revision,
+        generator_manifest=generator_manifest,
+        generator_usage=generator_usage,
+        source_sha256=hashlib.sha256(settings.editorial_seed_path.read_bytes()).hexdigest(),
+        assessment_brief=brief,
     )
     judge_cap = float(payload.get("judge_cost_ceiling_usd") or 1.0)
     scoring_env = {
-        "PYTHONPATH": str(workspace / "automation"),
+        "PYTHONPATH": str(settings.harness_root / "automation"),
         "CONTENT_SCORING_EVIDENCE_MODEL": settings.editorial_evidence_model,
         "CONTENT_SCORING_JUDGE_MODEL": settings.editorial_judge_model,
         "CONTENT_SCORING_TIE_BREAK_MODEL": settings.editorial_tie_break_model,
@@ -273,7 +277,7 @@ def run_editorial_benchmark(
             "--max-cost", str(judge_cap),
             "--force",
         ],
-        cwd=workspace,
+        cwd=settings.research_root,
         environment=scoring_env,
         on_line=log,
     )
@@ -297,7 +301,7 @@ def run_editorial_benchmark(
                     "--root", str(research_root),
                     "--aggregate-existing",
                 ],
-                cwd=workspace,
+                cwd=settings.research_root,
                 environment=scoring_env,
                 on_line=log,
             )
