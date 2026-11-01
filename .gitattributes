@@ -11,3 +11,6 @@
 *.svg text eol=lf
 *.yaml text eol=lf
 *.yml text eol=lf
+
+# Historical model-comparison outputs are preserved byte-for-byte, including Markdown hard-break spaces.
+runs/legacy-website-model-comparisons/corpus/** whitespace=-blank-at-eol

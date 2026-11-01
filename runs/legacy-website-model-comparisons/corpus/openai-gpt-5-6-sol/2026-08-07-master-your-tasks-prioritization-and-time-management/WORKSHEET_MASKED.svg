@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the TRIAGE action model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #cccccc; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 26px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #cccccc; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <rect x="40" y="24" width="32" height="12" fill="#d0d0d0"/>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS: PRIORITIZATION AND TIME MANAGEMENT</text>
+  <text class="sub" x="40" y="96">Triage Your Focus</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <rect x="720" y="48" width="58" height="14" fill="#c8c8c8"/>
+  <rect x="720" y="68" width="290" height="12" fill="#d4d4d4"/>
+  <rect x="720" y="84" width="270" height="12" fill="#e0e0e0"/>
+
+  <text class="verb" x="444" y="142">TRIAGE</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="320" height="185"/>
+  <text class="letter" x="60" y="222">T</text>
+  <rect x="105" y="194" width="145" height="14" fill="#d0d0d0"/>
+  <rect x="105" y="214" width="210" height="12" fill="#c8c8c8"/>
+  <rect x="105" y="232" width="225" height="10" fill="#d4d4d4"/>
+  <rect class="fillline" x="60" y="268" width="270" height="2" fill="#cccccc" stroke="none"/>
+  <rect class="fillline" x="60" y="298" width="270" height="2" fill="#cccccc" stroke="none"/>
+  <rect class="fillline" x="60" y="328" width="270" height="2" fill="#cccccc" stroke="none"/>
+
+  <rect class="box" x="390" y="180" width="320" height="185"/>
+  <text class="letter" x="410" y="222">R</text>
+  <rect x="455" y="194" width="135" height="14" fill="#d0d0d0"/>
+  <rect x="455" y="214" width="225" height="12" fill="#c8c8c8"/>
+  <rect x="455" y="232" width="245" height="10" fill="#d4d4d4"/>
+  <rect x="410" y="258" width="15" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="430" y="266" width="250" height="2" fill="#cccccc" stroke="none"/>
+  <rect x="410" y="282" width="15" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="430" y="290" width="250" height="2" fill="#cccccc" stroke="none"/>
+  <rect x="410" y="306" width="15" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="430" y="314" width="250" height="2" fill="#cccccc" stroke="none"/>
+  <rect x="410" y="330" width="15" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="430" y="338" width="250" height="2" fill="#cccccc" stroke="none"/>
+
+  <rect class="box" x="740" y="180" width="320" height="185"/>
+  <text class="letter" x="760" y="222">I</text>
+  <rect x="805" y="194" width="185" height="14" fill="#d0d0d0"/>
+  <rect x="805" y="214" width="215" height="12" fill="#c8c8c8"/>
+  <rect x="805" y="232" width="225" height="10" fill="#d4d4d4"/>
+  <rect x="760" y="258" width="15" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="780" y="266" width="250" height="2" fill="#cccccc" stroke="none"/>
+  <rect x="760" y="282" width="15" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="780" y="290" width="250" height="2" fill="#cccccc" stroke="none"/>
+  <rect x="760" y="306" width="15" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="780" y="314" width="250" height="2" fill="#cccccc" stroke="none"/>
+
+  <rect class="box" x="40" y="395" width="320" height="185"/>
+  <text class="letter" x="60" y="437">A</text>
+  <rect x="105" y="409" width="175" height="14" fill="#d0d0d0"/>
+  <rect x="105" y="429" width="225" height="12" fill="#c8c8c8"/>
+  <rect x="105" y="447" width="195" height="10" fill="#d4d4d4"/>
+  <rect x="60" y="475" width="38" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="105" y="483" width="225" height="2" fill="#cccccc" stroke="none"/>
+  <rect x="60" y="505" width="38" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="105" y="513" width="225" height="2" fill="#cccccc" stroke="none"/>
+  <rect x="60" y="535" width="38" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="105" y="543" width="225" height="2" fill="#cccccc" stroke="none"/>
+
+  <rect class="box" x="390" y="395" width="320" height="185"/>
+  <text class="letter" x="410" y="437">G</text>
+  <rect x="455" y="409" width="225" height="14" fill="#d0d0d0"/>
+  <rect x="455" y="429" width="215" height="12" fill="#c8c8c8"/>
+  <rect x="455" y="447" width="235" height="10" fill="#d4d4d4"/>
+  <rect class="fillline" x="410" y="480" width="270" height="2" fill="#cccccc" stroke="none"/>
+  <rect class="fillline" x="410" y="510" width="270" height="2" fill="#cccccc" stroke="none"/>
+  <rect class="fillline" x="410" y="540" width="270" height="2" fill="#cccccc" stroke="none"/>
+
+  <rect class="box" x="740" y="395" width="320" height="185"/>
+  <text class="letter" x="760" y="437">E</text>
+  <rect x="805" y="409" width="155" height="14" fill="#d0d0d0"/>
+  <rect x="805" y="429" width="205" height="12" fill="#c8c8c8"/>
+  <rect x="805" y="447" width="215" height="10" fill="#d4d4d4"/>
+  <rect x="760" y="475" width="15" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="780" y="483" width="250" height="2" fill="#cccccc" stroke="none"/>
+  <rect x="760" y="505" width="15" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="780" y="513" width="250" height="2" fill="#cccccc" stroke="none"/>
+  <rect x="760" y="535" width="15" height="10" fill="#d0d0d0"/>
+  <rect class="fillline" x="780" y="543" width="250" height="2" fill="#cccccc" stroke="none"/>
+
+  <rect class="mini" x="40" y="610" width="1020" height="88"/>
+  <rect x="60" y="626" width="135" height="14" fill="#d0d0d0"/>
+  <rect x="60" y="650" width="460" height="12" fill="#c8c8c8"/>
+  <rect class="fillline" x="60" y="680" width="970" height="2" fill="#cccccc" stroke="none"/>
+
+  <rect class="mini" x="40" y="725" width="315" height="82"/>
+  <text class="num" x="60" y="760">1</text>
+  <rect x="95" y="740" width="95" height="14" fill="#d0d0d0"/>
+  <rect x="95" y="760" width="185" height="12" fill="#c8c8c8"/>
+  <rect x="95" y="776" width="195" height="12" fill="#d4d4d4"/>
+
+  <rect class="mini" x="392" y="725" width="315" height="82"/>
+  <text class="num" x="412" y="760">2</text>
+  <rect x="447" y="740" width="85" height="14" fill="#d0d0d0"/>
+  <rect x="447" y="760" width="195" height="12" fill="#c8c8c8"/>
+  <rect x="447" y="776" width="185" height="12" fill="#d4d4d4"/>
+
+  <rect class="mini" x="745" y="725" width="315" height="82"/>
+  <text class="num" x="765" y="760">3</text>
+  <rect x="800" y="740" width="105" height="14" fill="#d0d0d0"/>
+  <rect x="800" y="760" width="195" height="12" fill="#c8c8c8"/>
+  <rect x="800" y="776" width="185" height="12" fill="#d4d4d4"/>
+</svg>

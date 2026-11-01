@@ -1,0 +1,436 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "deepseek/deepseek-v4-pro",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-final-quality-scores/docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 81.72,
+  "confidence": 0.939,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 94.55,
+      "penalties": 0.0,
+      "final_score": 94.55,
+      "confidence": 0.877,
+      "metrics": {
+        "fk_grade": 6.61,
+        "words": 1407,
+        "sentences": 108,
+        "average_sentence_words": 13.03,
+        "sentence_length_stddev": 7.78,
+        "concrete_opening": true,
+        "action_signals": 12,
+        "framework_signals": 4,
+        "late_you_ratio": 0.61,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This is not a time problem. It is a prioritization problem disguised as a time problem."
+          ],
+          "reason": "Reframes the core issue from time scarcity to misallocation of attention, plainly stated and central to the argument."
+        },
+        {
+          "id": "argument_progression",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The only way out is to choose a small number of high-impact tasks and hit them with full, uninterrupted force before the day steals your attention."
+          ],
+          "reason": "Moves logically from concrete scenario, through diagnosis, to a system, challenge, and reflection; the supplied quote captures the key strategic pivot."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Opens with a specific, time\u2011stamped scenario that places the reader immediately inside a relatable work situation. Not abstract; it names objects, times, and the exact sequence of distractions. (evidence could not be verified)"
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Partial work delivers only guilt."
+          ],
+          "reason": "Interprets internal consequences (guilt, knot in stomach, neurochemical reward) not just external behavior."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Provides clear, discrete, measurable actions: circling three tasks, setting a 25\u2011minute timer, guarding a 90\u2011minute block. The behaviors are spelled out with precise durations and constraints, not left as vague advice. (evidence could not be verified)"
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "It is the willingness to say no to the loud but unimportant so you can say yes to the quiet but essential."
+          ],
+          "reason": "Elevates the practice to a principle of selective refusal, linking daily action to intentional living."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Reframes the problem from a surface \u201clack of time\u201d to a deeper prioritisation failure, using the forge/hammer metaphor to explain the mechanism of concentration versus scattering. The insight that partial work delivers only guilt and that energy leaks into busywork shows conceptual understanding beyond simple tips. (evidence could not be verified)"
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Acknowledges the emotional difficulty (the cost of disappointing the responsive self) and builds in a practical failure\u2011handling rule (three\u2011day carry\u2011forward with a split\u2011or\u2011cut clause). This avoids a simplistic \u201cjust do it\u201d stance and shows the system can self\u2011correct. (evidence could not be verified)"
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Positions the reader as the sole agent who decides whether the Hammer is used or shelved. Uses direct second\u2011person phrasing that frames avoidance as an active choice, never externalising blame onto tools or circumstances. (evidence could not be verified)"
+        },
+        {
+          "id": "perspective_progression",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The Hammer is in your hand. The metal is hot. You can keep tapping everything lightly and wondering why nothing changes, or you can pick your target, clear the space, and swing."
+          ],
+          "reason": "Takes the reader from scattered reactivity to a forceful, tool-empowered vantage point, culminating in a vivid choice."
+        },
+        {
+          "id": "decision",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Makes an unambiguous, binary call to action: commit to the block now or remain scattered. The language is imperative and framed as a deliberate choice, not a suggestion. (evidence could not be verified)"
+        },
+        {
+          "id": "prescribed_action",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Delivers a complete, step\u2011by\u2011step protocol (brain\u2011dump, circle three, block time, sprint, break, repeat) with explicit parameters. The actions are precise and leave no ambiguity about what to do. (evidence could not be verified)"
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The Hammer is the practice of selecting the most important task and applying sustained, undistracted effort until it reaches a defensible stopping point."
+          ],
+          "reason": "Anchors an abstract metaphor (Hammer) in a clear, practical definition; the text weaves abstractions with concrete steps throughout."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Depicts the exact cascade of interruptions a knowledge worker faces\u2014chat, email, walk\u2011up boss\u2014without exaggeration. The detail (8:04, all\u2011caps subject, slide deck, status update) is granular enough to be instantly recognised as true. (evidence could not be verified)"
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The Hammer in practice: choose the target, protect the time, strike until done."
+          ],
+          "reason": "Reduces the concept to its essential three-part mantra, avoiding unnecessary complexity."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You can keep tapping everything lightly and wondering why nothing changes, or you can pick your target, clear the space, and swing."
+          ],
+          "reason": "Uses parallel phrasing, varied sentence lengths, and a decisive cadence that mimics the swing itself."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Partial work delivers only guilt."
+          ],
+          "reason": "Compresses a large idea into a short, punchy sentence; overall text has zero verbatim repetition."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You already know what it feels like to end the day with a blur of activity and a knot in your stomach."
+          ],
+          "reason": "Opens with the negative emotional cost rather than aspirational cheer; stark and unsentimental."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The Hammer does not care about your intentions. It only cares where you land the blow."
+          ],
+          "reason": "Rejects emotional soothing or validation; tool-oriented, impersonal, and outcome-focused."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This is not a suggestion. It is a test."
+          ],
+          "reason": "Commands without moralizing or inspirational language; frames the task as an objective trial."
+        },
+        {
+          "id": "anti_guru",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Explicitly rejects technology panaceas, complex systems, and hype\u2011filled language. The tone is blunt, authoritative but not self\u2011aggrandising; it avoids motivational fluff and presents the method as a test, not a magic formula. (evidence could not be verified)"
+        },
+        {
+          "id": "closing_strength",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The choice is yours, and it is made or unmade tomorrow morning before 8:04."
+          ],
+          "reason": "Brings the reader full circle to the opening time stamp, compresses agency and urgency into a sharp final line."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 83.89,
+      "penalties": 15.0,
+      "final_score": 68.89,
+      "confidence": 1.0,
+      "metrics": {
+        "fk_grade": 8.48,
+        "words": 2643,
+        "sentences": 155,
+        "average_sentence_words": 17.05,
+        "sentence_length_stddev": 9.06,
+        "concrete_opening": true,
+        "action_signals": 19,
+        "framework_signals": 5,
+        "late_you_ratio": 0.47,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This is not a shortage of time. It is a prioritization problem that disguises itself as a time problem."
+          ],
+          "reason": "Reframes the common time-scarcity complaint as a hidden prioritization failure, prompting a mindset change from external lack to internal choice."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Each letter of the model takes you from scattered pressure to finished work. Work through each step in order"
+          ],
+          "reason": "Organizational progression from problem diagnosis to model introduction and then sequential letter-by-letter execution, creating a clear build from argument to structured instruction."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "That small act signals your brain that the loop is closed, freeing mental RAM for the next strike.",
+            "Completion gives you a dopamine hit that fuels the next effort, while partial work delivers only guilt and a cluttered mental workspace."
+          ],
+          "reason": "The text includes explicit psychological explanations of how task completion affects cognitive load and motivation, not just instruction."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "you cannot do everything, and trying to do everything guarantees that nothing important gets finished. The only way out is to choose a small number of high-impact tasks and hit them with full, uninterrupted force"
+          ],
+          "reason": "States a guiding principle that underpins the entire method: accept finite capacity, concentrate force on a few high-impact tasks."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 0.0,
+          "passed": false,
+          "confidence": 1.0,
+          "evidence": [
+            "The truth you are about to install is simple and uncomfortable: you cannot do everything, and trying to do everything guarantees that nothing important gets finished. The only way out is to choose a small number of high-impact tasks and hit them with full, uninterrupted force before the day steals your attention."
+          ],
+          "reason": "The artifact operates entirely at the level of practical, low-reading-level instruction and motivational metaphor (forge, hammer) without nuanced analysis, conceptual complexity, or sustained intellectual exploration. The core claim is a surface-level productivity maxim, not a depth of thought."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "once written, it becomes a promise you keep to yourself."
+          ],
+          "reason": "Emphasizes self-commitment and ownership: the worksheet becomes a personal contract, not an external imposition."
+        },
+        {
+          "id": "framework_lands",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Each letter of the model takes you from scattered pressure to finished work. Work through each step in order"
+          ],
+          "reason": "The EXECUTE acronym is embedded in a concrete worksheet with step\u2011specific sections, making the framework tangible and immediately usable."
+        },
+        {
+          "id": "unique_action",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "E \u2013 Eliminate the noise",
+            "X \u2013 eXamine your list with a hard filter",
+            "E \u2013 Engage one priority at a time",
+            "C \u2013 Complete before you switch",
+            "U \u2013 Use time blocks as unmissable appointments",
+            "T \u2013 Track what actually got done",
+            "E \u2013 Evaluate and adjust daily"
+          ],
+          "reason": "Each letter of EXECUTE maps to a distinctly named, non\u2011overlapping action verb with a clear behavioral mandate."
+        },
+        {
+          "id": "action_relevance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Pick your target, clear the space, and swing."
+          ],
+          "reason": "The initial argument (prioritization failure) leads into the framework (EXECUTE) which cascades directly into specific, ordered actions, culminating in the swing metaphor."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "When it rings, note in the log whether you stayed on the task or drifted. If you drifted, capture exactly what pulled you",
+            "This is data, not guilt."
+          ],
+          "reason": "Advice is anchored in specific, observable behaviors\u2014logging drift, writing exact distractions, marking completions as they happen\u2014not just mindsets."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The truth you are about to install is simple and uncomfortable: you cannot do everything"
+          ],
+          "reason": "Despite low reading difficulty (FK 8.48), the text retains serious thought via plain, uncompromising statements that avoid dumbing-down."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You already know the feeling. You open your laptop with a clear intention to work on something that matters\u2014a project that moves a goal forward, a proposal that opens an account, a fix that saves your team ten hours a week. Within minutes, a chat notification blinks, an email with a shouting subject line lands, and your boss walks over with a request you hadn\u2019t planned to touch."
+          ],
+          "reason": "The text varies sentence length effectively (stddev 9.06), mixing short, punchy directives with longer, cumulative descriptions to maintain momentum."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Noise is not just sound; it is anything that can steal your attention",
+            "If everything is a priority, nothing is.",
+            "Carrying dead weight erodes trust in your own system."
+          ],
+          "reason": "Key ideas are delivered in compact, memorable statements; no sentence wastes words on padding or elaboration."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This is not a productivity hack. It is a way of relating to your own effort.",
+            "You are not chasing a feeling of productivity; you are installing the Hammer."
+          ],
+          "reason": "Explicitly disclaims being a hack or emotional productivity rush, and names the alternative as a mechanical system."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This is data, not guilt."
+          ],
+          "reason": "Rejects emotional self-diagnosis and replaces it with factual, adjustable variables, refusing a therapeutic voice."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This is not aspirational. This is a checklist you will execute"
+          ],
+          "reason": "Frames instructions as operational commitments rather than moral imperatives, avoiding exhortation."
+        },
+        {
+          "id": "anti_guru",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The worksheet you are holding is not a collection of tips. It is a forge."
+          ],
+          "reason": "Rejects the role of a wisdom-dispensing authority, presenting itself as a tool that does work rather than a source of insight."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.044401
+}

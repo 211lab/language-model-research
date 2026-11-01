@@ -1,0 +1,461 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "google/gemini-3.6-flash",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-final-quality-scores/docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 88.41,
+  "confidence": 0.976,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 90.39,
+      "penalties": 0.0,
+      "final_score": 90.39,
+      "confidence": 0.986,
+      "metrics": {
+        "fk_grade": 9.93,
+        "words": 1475,
+        "sentences": 103,
+        "average_sentence_words": 14.32,
+        "sentence_length_stddev": 5.41,
+        "concrete_opening": true,
+        "action_signals": 7,
+        "framework_signals": 5,
+        "late_you_ratio": 0.35,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Checking off five easy tasks releases a quick burst of satisfaction while leaving your ultimate goals completely abandoned. That dynamic is the trap of fake movement.",
+            "Your brain defaults to low-friction chores when it lacks strict direction. You feel active, yet you remain entirely stationary.",
+            "Most urgent requests arriving in your inbox represent someone else's lack of planning."
+          ],
+          "reason": "The artifact reframes busywork as 'fake movement' and external urgency as others\u2019 poor planning. It materially shifts the reader\u2019s view from equating activity with productivity to recognizing hidden cost and stalled progress. The perspective is developed through concrete behavioral details, not merely named."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Real growth requires transitioning from raw heat to structured execution. You must build a systematic anvil where your effort lands with deliberate, concentrated weight."
+          ],
+          "reason": "Problem of reactive chaos diagnosed, underlying psychology exposed, solution logic built through the forge metaphor, then operationalized in FILTER and a seven-day protocol."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You sit down at your desk early, work straight through the day, and leave your workspace completely exhausted. Your hands move across the keyboard for ten relentless hours."
+          ],
+          "reason": "Vivid, sensory opening scene with specific physical details establishes relatable exhaustion."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your brain defaults to low-friction chores when it lacks strict direction."
+          ],
+          "reason": "Offers a psychological mechanism for fake productivity, not just description."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You answer every message, sign off on minor decisions, and clear twenty trivial items off your list."
+          ],
+          "reason": "Preferred: Specific, observable behaviors are listed, grounding the abstract in daily action."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Saying no to non-essential requests will feel awkward at first."
+          ],
+          "reason": "Distills a practical principle (boundaries cause discomfort) into a guiding truth."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You spend your prime hours firefighting small blazes that do not belong to you.",
+            "Cutting out busywork feels difficult because small chores provide a false sense of safety."
+          ],
+          "reason": "Exposes the hidden trade-off between comforting micro-wins and genuine leverage, and why people choose the easy busyness."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Implementing this structure requires tactical discipline and a willingness to accept short-term discomfort.",
+            "Saying no to non-essential requests will feel awkward at first. Colleagues may expect instant replies, and turning off notifications might trigger a brief fear of missing out."
+          ],
+          "reason": "The piece acknowledges genuine friction: social awkwardness, fear of missing out, short-term discomfort, and the false safety of busywork. It does not pretend boundaries are costless."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Alternatively, you can take total ownership of your schedule today.",
+            "Stepping into your morning without a clear rank of priorities surrenders the steering wheel of your life to whoever shouts the loudest."
+          ],
+          "reason": "Blame is placed solely on the individual's choice to remain unstructured; no victim narrative."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You feel active, yet you remain entirely stationary.",
+            "Real growth requires transitioning from raw heat to structured execution.",
+            "Execute this protocol for seven consecutive days without deviation."
+          ],
+          "reason": "Reader is moved from unconscious busyness to seeing the void, then to the forge framework, and finally to a committed trial."
+        },
+        {
+          "id": "decision",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "The text presents an unambiguous, binary choice between the default reactive state and proactive ownership. The decision is framed with immediate stakes and is materially present as the climactic turning point of the article, not just a vague call to action. (evidence could not be verified)"
+        },
+        {
+          "id": "prescribed_action",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Lock dedicated, unyielding focus blocks into your calendar early in the day."
+          ],
+          "reason": "Specific, sequenced tactical instructions form the core of the piece."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You can burn with a fierce desire to succeed, yet without a structural framework to direct that energy, your effort scatters into random movement.",
+            "A blacksmith does not strike a piece of white-hot iron in fifty random spots."
+          ],
+          "reason": "Physical, tactile imagery (forge, anvil, iron) carries the abstract principle of structured effort without losing grip."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You arrive at the dinner table mentally absent, replaying unfinished tasks in your head.",
+            "Your inbox floods with red flags, urgent tags, and incoming requests. You answer every message, sign off on minor decisions, and clear twenty trivial items off your list."
+          ],
+          "reason": "Scenes are drawn from recognizable daily life\\u2014dinner table absence, inbox red flags, trivial task clearing, late-night catch-up\\u2014without exaggeration or dramatization."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The FILTER framework transforms chaos into an orderly, aggressive line of attack.",
+            "If you could only accomplish three things today to make the day an unmistakable victory, which tasks would they be?"
+          ],
+          "reason": "Complex ideas (priority filtering, cognitive offloading, deep-work timing) are rendered through a single mnemonic acronym and plain language without dumbing down the underlying thought."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You sit down at your desk early, work straight through the day, and leave your workspace completely exhausted.",
+            "You feel active, yet you remain entirely stationary."
+          ],
+          "reason": "Long, accumulating sentences punctuated by short, staccato truths create a deliberate cadence."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You feel active, yet you remain entirely stationary.",
+            "Desire alone cannot save your day."
+          ],
+          "reason": "Key insights are compressed into tight, memorable constructions with no padding. The piece does not restate points in multiple ways or pad with redundant examples."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Desire alone cannot save your day."
+          ],
+          "reason": "Explicitly denies the power of raw motivation, rejecting hype."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You must step past that psychological resistance.",
+            "Checking off five easy tasks releases a quick burst of satisfaction while leaving your ultimate goals completely abandoned."
+          ],
+          "reason": "Psychological comfort is treated as a trap to be overcome, not a state to be cultivated. No validation of feelings, no exploration of emotional roots\\u2014only identification of the pattern and a directive to move past it."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Alternatively, you can take total ownership of your schedule today.",
+            "The structural framework is in front of you. Build the habit, finish what matters, and claim the clarity you deserve."
+          ],
+          "reason": "No moral indictment, no language of sin or salvation, no call to a higher purpose. Ownership is presented as a practical choice with concrete outcomes, not a moral imperative."
+        },
+        {
+          "id": "anti_guru",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A blacksmith does not strike a piece of white-hot iron in fifty random spots."
+          ],
+          "reason": "Uses a grounded, craft-based analogy instead of mystical or guru-like secrecy."
+        },
+        {
+          "id": "closing_strength",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Filter out the overwhelming noise, lock in your daily priorities, and strike the hot metal where it counts. The structural framework is in front of you. Build the habit, finish what matters, and claim the clarity you deserve."
+          ],
+          "reason": "Closing returns to the forge image with a decisive, repeatable call to action\u2014compact and free of new information."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 86.44,
+      "penalties": 0.0,
+      "final_score": 86.44,
+      "confidence": 0.965,
+      "metrics": {
+        "fk_grade": 11.74,
+        "words": 1132,
+        "sentences": 66,
+        "average_sentence_words": 17.15,
+        "sentence_length_stddev": 5.86,
+        "concrete_opening": true,
+        "action_signals": 5,
+        "framework_signals": 2,
+        "late_you_ratio": 0.75,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "That rush of checking off ten small, meaningless errands is a trap\u2014it trades high-value momentum for cheap dopamine while your core priorities sit untouched.",
+            "Most shouting demands are simply other people managing their own panic."
+          ],
+          "reason": "Reframes busywork as a dopamine trap and urgency as others' panic, breaking the default view. The shift is concrete and operational, not merely claimed."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Real progress requires ending the habit of treating every incoming request like an emergency.",
+            "Use this guide to complete your daily prioritization worksheet using the FILTER model."
+          ],
+          "reason": "The piece moves logically from problem (exhaustion without progress) to diagnosis (emergency habit, dopamine trap) to the FILTER framework and step-by-step actions."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "If a thought is trapped in working memory, it drains cognitive bandwidth and creates silent background anxiety."
+          ],
+          "reason": "Open loops are explained in terms of cognitive load and anxiety; the allure of quick checks is linked to dopamine, providing an inner mechanism reading of behavior."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A plan on paper is useless until struck with deliberate, sustained effort.",
+            "Complete your worksheet now, set your focus block for tomorrow morning, and strike where it counts."
+          ],
+          "reason": "The text distills wisdom into actionable truth (plan vs. effort) and closes with an uncompromising call to execute, blending philosophy with practice."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most shouting demands are simply other people managing their own panic.",
+            "That rush of checking off ten small, meaningless errands is a trap\u2014it trades high-value momentum for cheap dopamine while your core priorities sit untouched."
+          ],
+          "reason": "The piece moves beyond superficial advice by dissecting psychological traps\u2014false urgency, cheap dopamine from trivial tasks, and panic-driven demands\u2014showing insight into why busy work feels satisfying but hollow. The ideas are substantive, not merely named. However, depth remains bounded within a productivity framework; it does not explore broader philosophical or systemic implications, so it earns a high but not maximum score."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "you must take firm control of your attention"
+          ],
+          "reason": "Continually places agency on the reader: you must control, you must hold. No external savior or system is invoked."
+        },
+        {
+          "id": "framework_lands",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use this guide to complete your daily prioritization worksheet using the FILTER model."
+          ],
+          "reason": "The FILTER mnemonic is named, each letter directly anchors a titled section with explicit steps, and the framework remains the dominant structure throughout."
+        },
+        {
+          "id": "unique_action",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "The FILTER acronym is directly broken into letter-specific actions\u2014Fast Brain Dump (F), Identify Big Rocks (I), Label Urgency vs Importance (L), Time Block Priorities (T), Eliminate Distractions (E), Review and Reset Daily (R)\u2014each named explicitly and then operationalized with concrete steps. The mapping is structural, not merely named, and forms a complete, unambiguous sequence distinct from generic advice. (evidence could not be verified)"
+        },
+        {
+          "id": "action_relevance",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "The opening argument diagnoses the core problem (reactive work, false urgency, exhausted evenings with no real progress) and then directly pivots to the FILTER framework as the solution. The transition is explicit: the argument for change is immediately followed by the actionable model, and every subsequent section delivers a concrete step from that model. The relevance of actions to the argument is demonstrable and unbroken. (evidence could not be verified)"
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Write down every open project, pending task, nagging chore, and unread communication loop currently occupying space in your mind.",
+            "Close unnecessary browser tabs, silence notifications, and lock away temptation"
+          ],
+          "reason": "Instructions are specific, observable, and situationally concrete, meeting the preferred criterion robustly."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Empty your head completely onto paper or screen.",
+            "Select two or three tasks from your brain dump that carry the absolute highest impact for your day."
+          ],
+          "reason": "Concepts like cognitive offloading and priority selection are expressed in plain, imperative language without jargon or intellectual pretension. The FK grade (11.74) reflects a reading level that remains accessible while preserving serious thought\u2014no cheerleading, guru epigrams, or therapy voice intrudes. The simplicity is a deliberate control, not a lack of substance."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You can work ten hours a day, collapse on the couch completely exhausted, and still realize that not a single project moving your career or life forward was finished.",
+            "A plan on paper is useless until struck with deliberate, sustained effort."
+          ],
+          "reason": "Long, cumulative sentences contrast with short, punchy declarations (e.g., \u201cComplete your worksheet now\u201d), creating a rhythmic push that mirrors the call to sustained focus."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most shouting demands are simply other people managing their own panic.",
+            "A plan on paper is useless until struck with deliberate, sustained effort."
+          ],
+          "reason": "Ideas are condensed into tight, complete statements; no fillers or redundant expansions. Each sentence earns its place."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Complete every field on your worksheet with total honesty and zero fluff.",
+            "Strip away the low-value chores that swallow your days, lock in your primary focus blocks, and execute your work with unrelenting discipline."
+          ],
+          "reason": "The tone is flatly directive and demanding, entirely free of cheerleading, enthusiasm pumping, or 'you can do it' language."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Execute your work with unrelenting discipline.",
+            "Strip away the low-value chores that swallow your days, lock in your primary focus blocks, and execute your work with unrelenting discipline."
+          ],
+          "reason": "No therapeutic voice, processing of emotions, or self-compassion framing. Focus is on action and discipline."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 83.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Do not filter, organize, or judge items while capturing them; the sole objective is complete mental extraction."
+          ],
+          "reason": "The text refrains from moral judgment or sermonizing; imperatives are functional, not righteous."
+        },
+        {
+          "id": "anti_guru",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use this guide to complete your daily prioritization worksheet using the FILTER model."
+          ],
+          "reason": "The text presents itself as a practical guide, not as revealed wisdom; the model is offered as a tool, not a mystical path, with zero inflated authority or cultish language."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.054566
+}

@@ -1,0 +1,3 @@
+[submodule "tools/gutenberg"]
+	path = tools/gutenberg
+	url = https://github.com/3f-mindset/3f-gutenberg.git

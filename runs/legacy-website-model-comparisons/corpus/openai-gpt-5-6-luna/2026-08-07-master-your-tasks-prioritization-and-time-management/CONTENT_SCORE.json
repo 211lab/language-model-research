@@ -1,0 +1,460 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "openai/gpt-5.6-luna",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-final-quality-scores/docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 89.16,
+  "confidence": 0.978,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 91.95,
+      "penalties": 0.0,
+      "final_score": 91.95,
+      "confidence": 0.986,
+      "metrics": {
+        "fk_grade": 5.7,
+        "words": 2215,
+        "sentences": 236,
+        "average_sentence_words": 9.39,
+        "sentence_length_stddev": 4.92,
+        "concrete_opening": true,
+        "action_signals": 17,
+        "framework_signals": 2,
+        "late_you_ratio": 0.58,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "I think this is why people often say they need better time management when what they need first is better judgment."
+          ],
+          "reason": "The article reframes time management as a judgment problem, not a scheduling failure. This shift is materially present, directly stated, and sustains the essay."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The smaller claim is actually more interesting: many small tasks become dangerous when they are allowed to lead simply because they are visible."
+          ],
+          "reason": "The argument moves from the concrete opening through diagnosis (visibility leads, lack of order), to the heat/contaiment analogy, and then to practical steps and a larger contribution. The progression is clear and cumulative."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A coffee mug sits on the corner of a workbench.",
+            "It is cold now. The person who filled it meant to drink it while finishing a report, making a few calls, and checking the week\u2019s numbers."
+          ],
+          "reason": "The opening is immediate, sensory, and situates the reader in a specific, observable moment without abstract preamble."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "It may carry the risk of being judged. It may expose the fact that you are not yet sure how to do the work."
+          ],
+          "reason": "Explores fear of judgment and uncertainty underlying avoidance."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Papers have moved. Messages have been answered. A few small tasks are complete."
+          ],
+          "reason": "Shows observable signs of busywork vs. neglected important work."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The purpose of a short list is not to make your responsibilities smaller. It is to make the order visible."
+          ],
+          "reason": "Presents a philosophical reasoning for a practical method."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The failure is not always that you have too much to do. The failure may be that your pressure has no ranked path."
+          ],
+          "reason": "Deep insight reframes failure as structural rather than quantitative."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This does not mean every small task is pointless. Some small tasks are urgent.",
+            "Before going further, I want to be careful here. The goal is not to control every minute. Life will interrupt you. Emergencies will appear. Other people will need you. A good system does not pretend otherwise.",
+            "You will still make mistakes. You will sometimes choose poorly. That is part of the work."
+          ],
+          "reason": "The writing consistently bounds its claims with exceptions, limitations, and acknowledgements of real-world messiness, avoiding absolutism."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The choice is whether you will rank them before they compete."
+          ],
+          "reason": "Places agency on the individual to order tasks proactively."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "That is where task management becomes more than a personal efficiency trick. It becomes a question of contribution."
+          ],
+          "reason": "Progresses from personal productivity to broader impact."
+        },
+        {
+          "id": "decision",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The choice is not between handling every responsibility and handling none of them. The choice is whether you will rank them before they compete."
+          ],
+          "reason": "A clear, explicit binary decision is posed as the central fork in the reader\u2019s approach, making choice the pivot of the entire piece."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "A numbered, time-bound, step-by-step set of instructions is given, forming a concrete prescription the reader can act upon immediately. (evidence could not be verified)"
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The mug will cool whether you choose or not. The question is what receives your attention before the day is gone."
+          ],
+          "reason": "Returns to the concrete mug to anchor an abstract challenge."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A small problem needed an answer. A meeting ran long. Someone asked for a quick favor."
+          ],
+          "reason": "Lists typical daily disruptions."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Three is not a magic number. It is a limit that forces a decision.",
+            "Urgency and importance are not the same thing.",
+            "The first task will show which choice you made."
+          ],
+          "reason": "Complex ideas are expressed in short, plain sentences without oversimplifying the thought. The low reading level carries serious content without condescension."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A short task gives an immediate result. You can see it disappear from the list. A major project does not offer that same reward."
+          ],
+          "reason": "Uses varied sentence lengths to mirror contrast between quick and slow tasks."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Urgency and importance are not the same thing."
+          ],
+          "reason": "Expresses a pivotal distinction in one tight sentence."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You will still make mistakes. You will sometimes choose poorly. That is part of the work.",
+            "The point is not perfect prediction. The point is to stop letting visibility make every decision for you."
+          ],
+          "reason": "The tone avoids cheerleading, empty encouragement, or emotional hype. It acknowledges imperfection and frames mistakes as normal rather than unacceptable."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A man who protects his best hours is not ignoring his duties. He is giving important duties a fair chance to be completed."
+          ],
+          "reason": "Reframes boundary-setting as responsibility, not self-care rhetoric."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A coffee mug sits on the corner of a workbench.",
+            "Before going further, there is no need to make this grand. Tomorrow may involve nothing more dramatic than writing a page, making three calls, reviewing five accounts, or preparing for a meeting.",
+            "Three is not a magic number. It is a limit that forces a decision."
+          ],
+          "reason": "Tone is observational and permission-oriented, not commanding. It deflates grandiosity, avoids guilt and hype, and frames instructions as options rather than moral imperatives."
+        },
+        {
+          "id": "anti_guru",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Before going further, there is no need to make this grand. Tomorrow may involve nothing more dramatic than writing a page, making three calls, reviewing five accounts, or preparing for a meeting."
+          ],
+          "reason": "Explicitly rejects mystique and grandiose framing."
+        },
+        {
+          "id": "closing_strength",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The mug will cool whether you choose or not. The question is what receives your attention before the day is gone.",
+            "Rank your responsibilities, then act on that order. Or let every request outrank your goals. The first task will show which choice you made."
+          ],
+          "reason": "The ending returns to the opening image, crystallizes the core decision, and leaves the reader with a testable action without adding new information. It is tight and resonant."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 86.37,
+      "penalties": 0.0,
+      "final_score": 86.37,
+      "confidence": 0.97,
+      "metrics": {
+        "fk_grade": 8.51,
+        "words": 2692,
+        "sentences": 217,
+        "average_sentence_words": 12.41,
+        "sentence_length_stddev": 4.93,
+        "concrete_opening": false,
+        "action_signals": 25,
+        "framework_signals": 0,
+        "late_you_ratio": 0.56,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The central problem is often not a lack of time. It is a lack of order.",
+            "If you do not rank your responsibilities, your environment will rank them for you."
+          ],
+          "reason": "The article directly reframes time management as an order and ranking problem, not a time-scarcity problem. The shift is materially present, distinct, and drives the entire framework."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The FILTER process will help you see every demand, identify what deserves priority, remove what does not belong, assign your best hours to meaningful work, execute without automatically reacting, and review the results honestly."
+          ],
+          "reason": "The FILTER acronym creates a clear sequential argument: capture, evaluate, limit, schedule, execute, review. Each section progressively builds on the previous, and the final call to action follows logically."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 71.0,
+          "passed": true,
+          "confidence": 0.92,
+          "evidence": [
+            "Important work requires deliberate attention, while minor work offers quick relief and visible completion.",
+            "A crowded list makes every request look equal, so the loudest message, easiest chore, or newest interruption takes control."
+          ],
+          "reason": "The text identifies cognitive and behavioral patterns behind poor prioritization, providing causal psychosocial insight rather than merely naming the issue. These interpretations appear in the introduction and resurface in later sections, making them materially present. The observations are lucid and avoid therapeutic or guru\u2011language."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your goal is not to finish everything. Your goal is to complete the work that earns its place.",
+            "You will either rank your responsibilities and act on that order, or you will let every request compete for the top position."
+          ],
+          "reason": "Advances a practical philosophy of earned attention and deliberate ranking, not just task tips. The framework rests on a value\u2011based filtering principle."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 35.0,
+          "passed": true,
+          "confidence": 0.89,
+          "evidence": [
+            "Visibility is not the same as importance.",
+            "Some are important without being urgent, which is often why they are delayed."
+          ],
+          "reason": "The source makes the classic urgent-important distinction and separates visibility from significance, demonstrating a minimal conceptual framework. However, the distinctions remain surface\u2011level throughout the procedural instruction; there is no sustained analysis, counter\u2011argument, or philosophical expansion. The material is intellectually honest but not deep."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You will either rank your responsibilities and act on that order, or you will let every request compete for the top position.",
+            "Use it to decide what you will do, what you will delay, what you will delegate, and what you will remove."
+          ],
+          "reason": "Places the burden entirely on the individual to rank, decide, and act, with clear ownership of outcomes rather than blaming external factors."
+        },
+        {
+          "id": "framework_lands",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.6719999999999999,
+          "evidence": [],
+          "reason": "The FILTER acronym constitutes a clear, sequential model. Each step is operationalized with specific actions, boundary conditions, and examples of what to avoid. The framework is not merely named but fully fleshed out across the entire document, making it immediately usable. No hollow motivation or pseudo\u2011guru phrasing dilutes its concreteness. (evidence could not be verified)"
+        },
+        {
+          "id": "unique_action",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Choose three priorities, complete at least two before lesser tasks, and use your review to make tomorrow\u2019s plan more accurate.",
+            "Put each big rock into a specific time block, preferably during your best work hours."
+          ],
+          "reason": "The combination of three-priority limit, time-blocking big rocks, and daily factual review is a distinctive, letter-driven action set."
+        },
+        {
+          "id": "action_relevance",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "For seven days, use the worksheet before lower-priority work takes over. Choose three priorities, complete at least two before lesser tasks, and use your review to make tomorrow\u2019s plan more accurate."
+          ],
+          "reason": "The argument that order creates earned completion leads directly to the FILTER framework, which translates into concrete daily actions. The worksheet, priority count, and seven-day practice are inseparable from the reasoning."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Each time you begin important work before easy work, you prove that your responsibilities\u2014not every interruption\u2014control your attention.",
+            "Review the day using facts. Mark which of the three big rocks were completed, which were partially advanced, and which did not receive meaningful attention."
+          ],
+          "reason": "Preferred criterion is satisfied. The text specifies observable actions (marking completions, recording what was started, naming the cause of delay) and links them to evidence of self-control rather than vague feelings."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A complete list may look crowded at first. That is useful information, not failure.",
+            "A limited list is not an admission that you are incapable of doing more."
+          ],
+          "reason": "Uses direct, unpretentious language to convey nuanced ideas\u2014crowded lists as data, limitation as focus\u2014without oversimplifying the underlying concepts."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Important work requires deliberate attention, while minor work offers quick relief and visible completion."
+          ],
+          "reason": "The prose alternates between crisp parallel structures and balanced contrasts. Short imperative sequences provide rhythm without monotony; sentence-length variance is controlled (stddev 4.93)."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The central problem is often not a lack of time. It is a lack of order.",
+            "Your goal is not to finish everything. Your goal is to complete the work that earns its place."
+          ],
+          "reason": "Core claims are expressed in minimal, cut-to-the-bone sentences. No filler; every clause carries the argument forward. The piece avoids verbose persuasion."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The purpose of review is not to criticize yourself. It is to make the next plan more truthful and usable.",
+            "A useful review keeps the list short, ranked, and connected to reality."
+          ],
+          "reason": "Rejects hype and cheerleading; emphasizes truthfulness, usable plans, and reality-connected review, not self\u2011encouragement or empty positivity."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Do not wait to feel ready, and do not reward yourself with low-value work before beginning.",
+            "If a task is large, write the next visible action beside it rather than pretending the entire project can be completed in one sitting."
+          ],
+          "reason": "Commands action without exploring emotional states; treats emotions as irrelevant to starting, avoiding probing, validating, or soothing therapeutic language."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You will either rank your responsibilities and act on that order, or you will let every request compete for the top position.",
+            "The worksheet should show what deserves your best effort, not merely what happens to be on your mind."
+          ],
+          "reason": "Presents choices and consequences as factual, not moral imperatives; avoids exhortations or sermonizing, staying descriptive and practical."
+        },
+        {
+          "id": "anti_guru",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You will either rank your responsibilities and act on that order, or you will let every request compete for the top position. Let the completed worksheet make the choice visible, then prove it with the first priority."
+          ],
+          "reason": "No mystical, esoteric, or personal\u2011enlightenment language; the method relies on a transparent worksheet and simple proof\u2011of\u2011action, not privileged insight."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.251853
+}

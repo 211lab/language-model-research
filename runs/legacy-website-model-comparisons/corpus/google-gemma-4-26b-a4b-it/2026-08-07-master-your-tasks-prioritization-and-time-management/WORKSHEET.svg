@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the ORDER action model, and a summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS: PRIORITIZATION AND TIME MANAGEMENT</text>
+  <text class="sub" x="40" y="96">Move from reactive firefighter to proactive architect.</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <text class="label" x="720" y="58">THE TRAP OF THE URGENT</text>
+  <text class="small" x="720" y="78">Don't let the loudest demands steal your agency.</text>
+  <text class="small" x="720" y="94">Distinguish between what is loud and what is significant.</text>
+
+  <text class="verb" x="444" y="142">ORDER</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <!-- Row 1: O and R -->
+  <rect class="box" x="40" y="180" width="500" height="200"/>
+  <text class="letter" x="60" y="222">O</text>
+  <text class="label" x="105" y="204">OUTLAY EVERYTHING</text>
+  <text class="small" x="105" y="224">Perform a total brain dump. No polishing.</text>
+  <text class="tiny" x="105" y="242">Include everything from big projects to small errands.</text>
+  <line class="fillline" x1="60" y1="260" x2="520" y2="260"/>
+  <line class="fillline" x1="60" y1="285" x2="520" y2="285"/>
+  <line class="fillline" x1="60" y1="310" x2="520" y2="310"/>
+  <line class="fillline" x1="60" y1="335" x2="520" y2="335"/>
+  <line class="fillline" x1="60" y1="360" x2="520" y2="360"/>
+
+  <rect class="box" x="540" y="180" width="520" height="200"/>
+  <text class="letter" x="560" y="222">R</text>
+  <text class="label" x="605" y="204">RANK BY IMPACT</text>
+  <text class="small" x="605" y="224">Identify your "Big Rocks" (A-priority tasks).</text>
+  <text class="tiny" x="605" y="242">What 2-3 things would move the needle most today?</text>
+  <text class="tiny" x="560" y="268">1.</text><line class="fillline" x1="580" y1="268" x2="1040" y2="268"/>
+  <text class="tiny" x="560" y="292">2.</text><line class="fillline" x1="580" y1="292" x2="1040" y2="292"/>
+  <text class="tiny" x="560" y="316">3.</text><line class="fillline" x1="580" y1="316" x2="1040" y2="316"/>
+  <text class="tiny" x="560" y="340">4.</text><line class="fillline" x1="580" y1="340" x2="1040" y2="340"/>
+
+  <!-- Row 2: D and E -->
+  <rect class="box" x="40" y="395" width="500" height="200"/>
+  <text class="letter" x="60" y="437">D</text>
+  <text class="label" x="105" y="419">DESIGNATE TIME BLOCKS</text>
+  <text class="small" x="105" y="439">Give your Big Rocks a home in your calendar.</text>
+  <text class="tiny" x="105" y="457">Avoid vague scheduling. Use specific windows.</text>
+  <text class="tiny" x="60" y="485">Block 1:</text><line class="fillline" x1="110" y1="485" x2="520" y2="485"/>
+  <text class="tiny" x="60" y="515">Block 2:</text><line class="fillline" x1="110" y1="515" x2="520" y2="515"/>
+  <text class="tiny" x="60" y="545">Block 3:</text><line class="fillline" x1="110" y1="545" x2="520" y2="545"/>
+
+  <rect class="box" x="540" y="395" width="520" height="200"/>
+  <text class="letter" x="560" y="437">E</text>
+  <text class="label" x="605" y="419">ELIMINATE DISTRACTIONS</text>
+  <text class="small" x="605" y="439">Create physical and digital barriers.</text>
+  <text class="tiny" x="605" y="457">Phone in another room, tabs closed, focus mode on.</text>
+  <text class="tiny" x="560" y="485">Barrier 1:</text><line class="fillline" x1="620" y1="485" x2="1040" y2="485"/>
+  <text class="tiny" x="560" y="515">Barrier 2:</text><line class="fillline" x1="620" y1="515" x2="1040" y2="515"/>
+  <text class="tiny" x="560" y="545">Barrier 3:</text><line class="fillline" x1="620" y1="545" x2="1040" y2="545"/>
+
+  <!-- Row 3: R (Sprints) and Footer -->
+  <rect class="box" x="40" y="610" width="1020" height="100"/>
+  <text class="letter" x="60" y="652">R</text>
+  <text class="label" x="105" y="634">RUN SPRINTS</text>
+  <text class="small" x="105" y="654">Execute with intensity using focused intervals.</text>
+  <text class="tiny" x="105" y="672">Commit to the timer. One task per sprint.</text>
+  <text class="tiny" x="60" y="695">My chosen sprint method (e.g., Pomodoro):</text><line class="fillline" x1="220" y1="695" x2="1040" y2="695"/>
+
+  <rect class="mini" x="40" y="730" width="330" height="100"/>
+  <text class="label" x="60" y="755">THE BIG ROCKS</text>
+  <text class="tiny" x="60" y="775">List your top 3 non-negotiables for today:</text>
+  <text class="tiny" x="60" y="795">1.</text><line class="fillline" x1="80" y1="795" x2="350" y2="795"/>
+  <text class="tiny" x="60" y="815">2.</text><line class="fillline" x1="80" y1="815" x2="350" y2="815"/>
+
+  <rect class="mini" x="385" y="730" width="330" height="100"/>
+  <text class="label" x="405" y="755">PROTECTION PLAN</text>
+  <text class="tiny" x="405" y="775">How will you defend your time blocks?</text>
+  <line class="fillline" x1="405" y1="795" x2="700" y2="795"/>
+  <line class="fillline" x1="405" y1="815" x2="700" y2="815"/>
+
+  <rect class="mini" x="730" y="730" width="330" height="100"/>
+  <text class="label" x="750" y="755">SPRINT LOG</text>
+  <text class="tiny" x="750" y="775">Track your high-intensity bursts:</text>
+  <text class="tiny" x="750" y="795">Sprint 1: [ ]</text>
+  <text class="tiny" x="750" y="815">Sprint 2: [ ]</text>
+</svg>

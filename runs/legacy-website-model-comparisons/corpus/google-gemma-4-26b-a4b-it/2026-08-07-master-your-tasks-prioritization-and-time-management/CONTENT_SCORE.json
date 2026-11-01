@@ -1,0 +1,454 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "google/gemma-4-26b-a4b-it",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-final-quality-scores/docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 61.94,
+  "confidence": 0.972,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 91.19,
+      "penalties": 0.0,
+      "final_score": 91.19,
+      "confidence": 0.986,
+      "metrics": {
+        "fk_grade": 7.2,
+        "words": 931,
+        "sentences": 70,
+        "average_sentence_words": 13.3,
+        "sentence_length_stddev": 5.99,
+        "concrete_opening": true,
+        "action_signals": 8,
+        "framework_signals": 4,
+        "late_you_ratio": 0.75,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "We must stop seeing our day as a series of openings to be filled and start seeing it as a structure to be built.",
+            "The choice is between being a servant to the urgent and being the architect of the important."
+          ],
+          "reason": "Explicitly reorients the reader from reactive filling of time to proactive architectural design. The servant/architect dichotomy is clear and material throughout."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This happens because we have mistaken urgency for importance.",
+            "The smaller claim is actually more interesting: productivity is not about doing more things. It is about the structural integrity of your choices."
+          ],
+          "reason": "The essay moves logically from symptom (inbox distraction) to cause (urgency vs. importance) to metaphor (furnace) to solution (ORDER model), with each step building on the last."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A smartphone sits on a bedside table, its screen glowing in the dim light of early morning.",
+            "Before the eyes are even fully open, a notification arrives."
+          ],
+          "reason": "Opens with a vivid, specific scene\u2014a smartphone, glow, notification before waking\u2014fully concrete, not abstract preamble."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "I think we have all experienced this specific kind of surrender. We wake up and immediately hand over the keys to our attention.",
+            "they feel a deep, bone-weary exhaustion by 6:00 PM. Yet, when they look back at the day, there is a hollow sensation.",
+            "When we allow the urgent to dictate our schedule, we are choosing to be tools used by others to solve their problems."
+          ],
+          "reason": "The text interprets inner states (surrender, hollow sensation, choosing subservience) rather than merely describing external behaviors."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The thumb reaches out, the screen is swiped, and the day has begun.",
+            "We spend the first hour of our day responding to the world's demands rather than setting our own direction."
+          ],
+          "reason": "Prefers concrete behaviors: thumb swipe, spending first hour on others' demands, later the specific steps of Dump and Sort, Block and Protect, Execute and Review."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "To reclaim your day, you must implement the ORDER model.",
+            "Treat these blocks as unmissable appointments."
+          ],
+          "reason": "Balances the furnace metaphor and the philosophy of structural integrity with a concrete actionable model (ORDER) that directly applies the abstract idea."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "productivity is not about doing more things. It is about the structural integrity of your choices.",
+            "A furnace is a system of containment. It takes raw, chaotic energy and directs it toward a specific purpose."
+          ],
+          "reason": "The furnace metaphor is developed into a conceptual framework about energy containment and choice architecture, moving beyond superficial tips to a coherent model."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "I want to be careful here. It is easy to blame the world for these interruptions. But the truth is more uncomfortable.",
+            "The smaller claim is actually more interesting: productivity is not about doing more things. It is about the structural integrity of your choices."
+          ],
+          "reason": "The text resists oversimplification, acknowledges uncomfortable personal agency, and refines its central argument with a more precise claim."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "When we allow the urgent to dictate our schedule, we are choosing to be tools used by others to solve their problems.",
+            "The day is yours to build, or yours to lose. The responsibility is yours."
+          ],
+          "reason": "Central thrust: the choice and fault are ours, not the world's. Phrased as 'choosing to be tools' and the closing 'responsibility is yours'\u2014unequivocal agency."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "To move from a reactive firefighter to a proactive architect"
+          ],
+          "reason": "The shift from firefighter to architect is explicitly named and tied to the broader progression of the essay, providing a clear trajectory for the reader's mental model."
+        },
+        {
+          "id": "decision",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The choice is not between being busy and being idle. The choice is between being a servant to the urgent and being the architect of the important."
+          ],
+          "reason": "Presents a clear, binary fork that demands a decision, framed repeatedly and reinforced at the close."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "The ORDER model provides explicit, sequenced steps (dump, sort, block, protect, execute, review) that the reader can immediately follow. (evidence could not be verified)"
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A smartphone sits on a bedside table, its screen glowing in the dim light of early morning.",
+            "If you fill your furnace with sand first, there will be no room for the heavy stones that actually build the foundation."
+          ],
+          "reason": "Concrete sensory details (smartphone, glow) ground abstract metaphors (furnace, sand, Big Rocks) consistently throughout, making the ideas tangible without losing conceptual depth."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "an email about a meeting change, a message in a group chat, a news alert"
+          ],
+          "reason": "Every interruption and reactive task named is drawn directly from common professional life, with no hypothetical or extreme examples."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "productivity is not about doing more things. It is about the structural integrity of your choices."
+          ],
+          "reason": "Expresses a deep concept (structural integrity of choices) in accessible language and a simple, physical analogy. FK grade 7.2 confirms low reading level with genuine thought preserved."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "It is not a crisis, but it is loud.",
+            "We are not building anything; we are merely reacting to the noise."
+          ],
+          "reason": "Short, punchy sentences mixed with longer ones; parallel structures ('It is not a crisis, but it is loud'; 'We are not building anything; we are merely reacting') create readable cadence."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "We are not building anything; we are merely reacting to the noise."
+          ],
+          "reason": "Each sentence carries its weight; the writing cuts unnecessary qualifiers and packs meaning into compact, direct statements."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most people do not suffer from a lack of effort. They suffer from a lack of containment."
+          ],
+          "reason": "Rejects hype and empty motivation; reframes the problem as structural, not a deficit of effort. No cheering slogans, only sober diagnosis."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The truth is more uncomfortable. When we allow the urgent to dictate our schedule, we are choosing to be tools used by others to solve their problems."
+          ],
+          "reason": "No therapeutic language (healing, safety, trauma, process your feelings). The uncomfortable truth is framed as a matter of agency and choice, not emotional processing."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "I want to be careful here. It is easy to blame the world for these interruptions. But the truth is more uncomfortable."
+          ],
+          "reason": "The author steps back from moralizing by including themselves in the pattern ('we'), and cautions against superficial blame before delivering the hard point."
+        },
+        {
+          "id": "anti_guru",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "I think we have all experienced this specific kind of surrender.",
+            "What I've started noticing is that most people do not suffer from a lack of effort."
+          ],
+          "reason": "The stance is observational and inclusive ('I think we have all experienced\u2026'), not that of an enlightened expert dispensing secrets, which defuses guru posturing."
+        },
+        {
+          "id": "closing_strength",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The smartphone sits on the table, silent for a moment. The screen is dark. The day is yours to build, or yours to lose. The responsibility is yours."
+          ],
+          "reason": "Preferred. Returns to the opening image, now silent and dark, then delivers a tight, forceful, and personal closing line that crystallizes the core message without fluff."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 77.69,
+      "penalties": 45.0,
+      "final_score": 32.69,
+      "confidence": 0.959,
+      "metrics": {
+        "fk_grade": 7.64,
+        "words": 790,
+        "sentences": 61,
+        "average_sentence_words": 12.95,
+        "sentence_length_stddev": 6.23,
+        "concrete_opening": true,
+        "action_signals": 7,
+        "framework_signals": 1,
+        "late_you_ratio": 0.57,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "To move from a reactive firefighter to a proactive architect"
+          ],
+          "reason": "The source explicitly and materially shifts the reader's view from reactive urgency-handling to intentional architecting, not simply naming it but framing the entire worksheet around that new stance."
+        },
+        {
+          "id": "argument_progression",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.85,
+          "evidence": [
+            "You must learn to ignore the sand so that you can place the big rocks first."
+          ],
+          "reason": "The argument moves from diagnosing the trap of urgency to a prioritization solution (big rocks vs. sand), then structures itself into the ORDER framework that enacts that solution."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 25.0,
+          "passed": false,
+          "confidence": 1.0,
+          "evidence": [
+            "This is the trap of the urgent. Urgency is a siren song that mimics importance."
+          ],
+          "reason": "Source describes a common productivity metaphor but offers no genuine psychological analysis (e.g., cognitive biases, emotional drivers, or evidence-based mechanisms). The interpretation remains a surface-level narrative."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "True productivity is not about doing more things; it is about doing the right things in the right order."
+          ],
+          "reason": "The artifact distills a clear philosophical principle\u2014effectiveness is about right ordering, not volume\u2014then translates it immediately into an implementable worksheet process. Practical philosophy is firmly present."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 20.0,
+          "passed": false,
+          "confidence": 1.0,
+          "evidence": [
+            "True productivity is not about doing more things; it is about doing the right things in the right order."
+          ],
+          "reason": "The statement is a well-worn platitude. The article avoids complex reasoning, original insight, or substantive engagement with philosophy, ethics, or systems thinking."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "you stop being a servant to the trivial and start becoming the architect of your own life."
+          ],
+          "reason": "The entire text places the burden of change on the individual: you surrender agency, you must ignore the sand, you block your own time. The closing line makes personal responsibility unmistakable."
+        },
+        {
+          "id": "framework_lands",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "The ORDER acronym is explicitly defined and each step is elaborated with actionable guidance, making the model land with clear, material presence. (evidence could not be verified)"
+        },
+        {
+          "id": "unique_action",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Perform a total brain dump."
+          ],
+          "reason": "Each letter in the framework is paired with a unique, specific action\u2014brain dump, rank by impact, designate defended time blocks, etc.\u2014not generic advice."
+        },
+        {
+          "id": "action_relevance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "Once you have identified your Big Rocks and blocked their time, you stop being a servant to the trivial and start becoming the architect of your own life."
+          ],
+          "reason": "The closing sentence explicitly connects the shift in identity (argument) to the completed framework steps (framework) and the resulting action of blocking time, showing a clean chain from premise to practice."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use focused work intervals\u2014such as the Pomodoro technique\u2014to maintain momentum."
+          ],
+          "reason": "The method is anchored in a concrete, named behavioral technique (Pomodoro) with specific durations and a sprint/break cadence. This moves the advice from abstract principle to observable practice."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "True productivity is not about doing more things; it is about doing the right things in the right order."
+          ],
+          "reason": "Complex ideas are compressed into a single, declarative sentence without jargon; the reading level remains low (FK ~7.6) while preserving serious thought."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A ringing phone or a flashing notification demands your attention, but it does not demand your respect."
+          ],
+          "reason": "Varies sentence length (stddev 6.23) and uses parallel structures, creating a readable, cadenced flow that avoids monotony."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Ruthless filtering.",
+            "If it is in your head, it belongs on this list.",
+            "Treat this block with the same respect you would a meeting with your CEO."
+          ],
+          "reason": "Phrases are compressed and functional; there is no padding, and each bullet point delivers maximum instruction in minimal words."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 15.0,
+          "passed": false,
+          "confidence": 1.0,
+          "evidence": [
+            "Once you have identified your Big Rocks and blocked their time, you stop being a servant to the trivial and start becoming the architect of your own life."
+          ],
+          "reason": "The closing line is pure aspirational motivation\u2014transformative language, emotional appeal, and a call to personal empowerment\u2014directly contradicting an anti-motivational tone required by the criterion."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "You must learn to ignore the sand so that you can place the big rocks first."
+          ],
+          "reason": "The language stays practical and task\u2011focused; it does not invite the reader to explore feelings, past wounds, or psychological states as a therapeutic exercise."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This is the trap of the urgent."
+          ],
+          "reason": "The text diagnoses a trap without moralizing or calling the reader to a higher path. It describes a pattern and offers a method, not a sermon. No 'you should, you must' beyond functional necessity."
+        },
+        {
+          "id": "anti_guru",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Treat this block with the same respect you would a meeting with your CEO."
+          ],
+          "reason": "The author does not position themselves as a special source of wisdom. The advice is framed as a practical process anyone can execute, using relatable analogies (CEO meeting) rather than mystical insight. No guru persona."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.128526
+}

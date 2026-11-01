@@ -6,7 +6,7 @@ This directory turns the research repository into one operator-focused monorepo:
 - `backend` is the API and PostgreSQL-backed durable queue.
 - `worker-local` selects/downloads a GGUF with the existing llama switcher, then runs the selected editorial and/or assistant cohorts.
 - `worker-remote` runs OpenRouter research only after a small Luna harness preflight succeeds.
-- `harness` is the versioned editorial pipeline, prompts, and scoring rubric used by the worker. It is kept beside the assistant fixture harness already in this repository.
+- `harness` retains the editorial assessment scorer/rubric and assistant fixtures. Editorial candidates are generated for assessment through the pinned Gutenberg submodule; all generated bundles and run evidence stay under this repository's `runs/` workspace before research scoring/publication.
 - `db` is the durable job, event, and run-record database.
 - `discovery` checks the existing local provider daily for eligible text GGUFs.
 - `publisher` copies each completed cohort into an isolated clone, rebuilds the static pages, and pushes a focused commit to `main`.
@@ -58,9 +58,9 @@ If a model is above the normal GGUF budget, the UI requires an explicit capacity
 
 For OpenRouter, the UI requires an exact `provider/model` ID, an explicit paid-run confirmation, and a cost ceiling per selected cohort. Every fresh versioned harness contract first queues a single-task Luna validation job. The paid editorial and/or assistant jobs are dependent on that validation; they become blocked if Luna does not complete it. A matching successful Luna validation is reused for 24 hours, and concurrent paid submissions wait on the same queued or running validation instead of buying duplicate diagnostics.
 
-The assistant suite keeps seed `42` and the fixed 768-token per-turn cap. The editorial scorer records the evidence model, Luna judge, and tie-break model with the result. The Luna preflight is capped separately by `LUNA_PREFLIGHT_MAX_COST_USD` (default `$0.10`) and exercises both the streaming latency probes plus one assistant task. Target assistant work writes one provider-usage ledger across latency and every task turn; if a reply lacks `usage.cost` or crosses the selected ceiling, no later paid request is sent and the incomplete result is not published. Remote editorial generation uses the same fail-closed rule through `BURN_MAX_COST_USD`.
+The assistant suite keeps seed `42` and the fixed 768-token per-turn cap. The editorial scorer records the evidence model, Luna judge, and tie-break model with the result. The Luna preflight is capped separately by `LUNA_PREFLIGHT_MAX_COST_USD` (default `$0.10`) and exercises both the streaming latency probes plus one assistant task. Target assistant work writes one provider-usage ledger across latency and every task turn; if a reply lacks `usage.cost` or crosses the selected ceiling, no later paid request is sent and the incomplete result is not published. Remote editorial candidate generation uses the pinned Gutenberg CLI and the existing per-candidate cost ceiling through `BURN_MAX_COST_USD`; generated `manifest.json` and `usage.json` provenance are copied into research comparison evidence.
 
-OpenRouter editorial batch polling is opt-in. Poll requests wait 60 seconds by default; set `BURN_OPENROUTER_BATCH_POLL_INTERVAL_SECONDS` to a positive number of seconds to override the interval for the worker process. Batch outcomes with unknown request success require review and are not automatically resubmitted.
+OpenRouter editorial batch polling is opt-in. Poll requests wait 60 seconds by default; set `GUTENBERG_OPENROUTER_BATCH_POLL_INTERVAL_SECONDS` to a positive number of seconds to override the interval for the worker process. Batch outcomes with unknown request success require review and are not automatically resubmitted.
 
 ## Scale workers
 
