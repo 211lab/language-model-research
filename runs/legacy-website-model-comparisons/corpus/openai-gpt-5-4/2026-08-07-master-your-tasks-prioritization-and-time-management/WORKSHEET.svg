@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the RANKED action model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS: PRIORITIZATION AND TIME MANAGEMENT</text>
+  <text class="sub" x="40" y="96">Turn one messy list into a clear daily plan you can actually execute.</text>
+
+  <rect class="mini" x="710" y="34" width="350" height="78"/>
+  <text class="label" x="730" y="58">RECORD EVERYTHING</text>
+  <text class="small" x="730" y="78">Put every task in one place first. Do not sort while</text>
+  <text class="small" x="730" y="94">you capture. Full visibility comes before priorities.</text>
+
+  <text class="verb" x="444" y="142">RANKED</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="330" height="255"/>
+  <text class="letter" x="60" y="222">R</text>
+  <text class="label" x="105" y="204">RECORD EVERYTHING</text>
+  <text class="small" x="105" y="224">Capture every task as a clear action, not a vague topic.</text>
+  <text class="tiny" x="105" y="242">Write work, home, calls, errands, follow-ups, promises, and reminders.</text>
+  <text class="tiny" x="60" y="270">1.</text><line class="fillline" x1="80" y1="270" x2="340" y2="270"/>
+  <text class="tiny" x="60" y="294">2.</text><line class="fillline" x1="80" y1="294" x2="340" y2="294"/>
+  <text class="tiny" x="60" y="318">3.</text><line class="fillline" x1="80" y1="318" x2="340" y2="318"/>
+  <text class="tiny" x="60" y="342">4.</text><line class="fillline" x1="80" y1="342" x2="340" y2="342"/>
+  <text class="tiny" x="60" y="366">5.</text><line class="fillline" x1="80" y1="366" x2="340" y2="366"/>
+  <text class="tiny" x="60" y="390">6.</text><line class="fillline" x1="80" y1="390" x2="340" y2="390"/>
+  <text class="tiny" x="60" y="414">7.</text><line class="fillline" x1="80" y1="414" x2="340" y2="414"/>
+
+  <rect class="box" x="385" y="180" width="330" height="255"/>
+  <text class="letter" x="405" y="222">A</text>
+  <text class="label" x="450" y="204">ASSIGN VALUE</text>
+  <text class="small" x="450" y="224">Label each task: A, B, C, Delay, Delegate, or Delete.</text>
+  <text class="tiny" x="450" y="242">Force ranking creates clarity. Do not make everything A-level.</text>
+  <text class="tiny" x="405" y="272">A = truly matters today</text>
+  <text class="tiny" x="405" y="290">B = important, but not first</text>
+  <text class="tiny" x="405" y="308">C = minor or maintenance</text>
+  <text class="tiny" x="405" y="326">Dly / Del / Dlt = delay, delegate, delete</text>
+  <line class="soft" x1="405" y1="338" x2="685" y2="338"/>
+  <text class="tiny" x="405" y="360">Task:</text><line class="fillline" x1="438" y1="360" x2="620" y2="360"/><text class="tiny" x="632" y="360">Mark:</text><line class="fillline" x1="660" y1="360" x2="685" y2="360"/>
+  <text class="tiny" x="405" y="386">Task:</text><line class="fillline" x1="438" y1="386" x2="620" y2="386"/><text class="tiny" x="632" y="386">Mark:</text><line class="fillline" x1="660" y1="386" x2="685" y2="386"/>
+  <text class="tiny" x="405" y="412">Task:</text><line class="fillline" x1="438" y1="412" x2="620" y2="412"/><text class="tiny" x="632" y="412">Mark:</text><line class="fillline" x1="660" y1="412" x2="685" y2="412"/>
+
+  <rect class="box" x="730" y="180" width="330" height="255"/>
+  <text class="letter" x="750" y="222">N</text>
+  <text class="label" x="795" y="204">NAME THE BIG 3</text>
+  <text class="small" x="795" y="224">Choose the 2 to 3 tasks that would make today count.</text>
+  <text class="tiny" x="795" y="242">Pick by consequence, not convenience. Keep each one concrete.</text>
+  <rect class="mini" x="750" y="266" width="290" height="44"/>
+  <text class="num" x="765" y="294">1</text>
+  <line class="fillline" x1="805" y1="292" x2="1020" y2="292"/>
+  <rect class="mini" x="750" y="322" width="290" height="44"/>
+  <text class="num" x="765" y="350">2</text>
+  <line class="fillline" x1="805" y1="348" x2="1020" y2="348"/>
+  <rect class="mini" x="750" y="378" width="290" height="44"/>
+  <text class="num" x="765" y="406">3</text>
+  <line class="fillline" x1="805" y1="404" x2="1020" y2="404"/>
+
+  <rect class="box" x="40" y="455" width="500" height="220"/>
+  <text class="letter" x="60" y="497">K</text>
+  <text class="label" x="105" y="479">KEEP TIME FOR WHAT MATTERS</text>
+  <text class="small" x="105" y="499">Schedule A-tasks and the big 3 first with real start and end times.</text>
+  <text class="tiny" x="105" y="517">Treat priority blocks like appointments. Name the task, not just “work.”</text>
+  <line class="soft" x1="60" y1="536" x2="520" y2="536"/>
+  <text class="tiny" x="60" y="558">Time</text>
+  <text class="tiny" x="165" y="558">Task block</text>
+  <line class="fillline" x1="60" y1="572" x2="145" y2="572"/><line class="fillline" x1="165" y1="572" x2="510" y2="572"/>
+  <line class="fillline" x1="60" y1="600" x2="145" y2="600"/><line class="fillline" x1="165" y1="600" x2="510" y2="600"/>
+  <line class="fillline" x1="60" y1="628" x2="145" y2="628"/><line class="fillline" x1="165" y1="628" x2="510" y2="628"/>
+  <line class="fillline" x1="60" y1="656" x2="145" y2="656"/><line class="fillline" x1="165" y1="656" x2="510" y2="656"/>
+
+  <rect class="box" x="560" y="455" width="500" height="220"/>
+  <text class="letter" x="580" y="497">E</text>
+  <text class="label" x="625" y="479">ELIMINATE SWITCHES</text>
+  <text class="small" x="625" y="499">Name what breaks focus and decide how you will block it.</text>
+  <text class="tiny" x="625" y="517">Batch low-value work together. Make each protection visible and enforceable.</text>
+  <text class="tiny" x="580" y="548">Usual switch:</text><line class="fillline" x1="650" y1="548" x2="1030" y2="548"/>
+  <text class="tiny" x="580" y="576">Protection:</text><line class="fillline" x1="650" y1="576" x2="1030" y2="576"/>
+  <text class="tiny" x="580" y="608">Batch block:</text><line class="fillline" x1="650" y1="608" x2="1030" y2="608"/>
+  <text class="tiny" x="580" y="636">Rule during A-work:</text><line class="fillline" x1="670" y1="636" x2="1030" y2="636"/>
+
+  <rect class="mini" x="40" y="695" width="1020" height="64"/>
+  <text class="label" x="60" y="720">D — DECIDE DAILY</text>
+  <text class="small" x="60" y="739">What stalled today, why, and what is the next clean decision: cut it, shrink it, rewrite it, delegate it, or assign it a real slot?</text>
+  <line class="fillline" x1="60" y1="748" x2="1030" y2="748"/>
+
+  <rect class="mini" x="40" y="775" width="315" height="58"/>
+  <text class="num" x="60" y="809">1</text>
+  <text class="label" x="95" y="797">LIST IT</text>
+  <text class="tiny" x="95" y="814">Capture every task in one place.</text>
+  <text class="tiny" x="95" y="826">Get it out of your head.</text>
+
+  <rect class="mini" x="392" y="775" width="315" height="58"/>
+  <text class="num" x="412" y="809">2</text>
+  <text class="label" x="447" y="797">RANK IT</text>
+  <text class="tiny" x="447" y="814">Assign value and choose the big 3.</text>
+  <text class="tiny" x="447" y="826">Not everything deserves first place.</text>
+
+  <rect class="mini" x="745" y="775" width="315" height="58"/>
+  <text class="num" x="765" y="809">3</text>
+  <text class="label" x="800" y="797">PROTECT IT</text>
+  <text class="tiny" x="800" y="814">Schedule the work, block switches, review daily.</text>
+  <text class="tiny" x="800" y="826">Aim for top 3 completed on 5 of 7 days.</text>
+</svg>

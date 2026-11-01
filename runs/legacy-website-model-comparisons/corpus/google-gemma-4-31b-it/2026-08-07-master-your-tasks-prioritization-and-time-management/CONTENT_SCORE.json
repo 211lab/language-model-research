@@ -1,0 +1,497 @@
+{
+  "schema_version": "content-score-v3",
+  "rubric_version": "steadyburn-v1",
+  "model": "google/gemma-4-31b-it",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-main-publish/docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 75.71,
+  "confidence": 0.875,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 86.32,
+      "penalties": 0.0,
+      "final_score": 86.32,
+      "confidence": 0.901,
+      "metrics": {
+        "fk_grade": 8.07,
+        "words": 989,
+        "sentences": 64,
+        "average_sentence_words": 15.45,
+        "sentence_length_stddev": 7.25,
+        "concrete_opening": true,
+        "action_signals": 5,
+        "framework_signals": 2,
+        "late_you_ratio": 1.0,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "\u201cthis isn't a productivity problem. It is a prioritization problem.\u201d"
+          ],
+          "reason": "The central reframe is explicit, consequential, and carried into the scheduling solution."
+        },
+        {
+          "id": "argument_progression",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "\u201cWe mistake frantic motion for progress.\u201d",
+            "\u201cThe obvious question becomes: how do we build this structure?\u201d"
+          ],
+          "reason": "The piece moves coherently from observed problem, to mechanism, to stakes, to choice, to procedure."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "\u201cA single coffee mug sits on the edge of a workbench, half-full and cold.\u201d",
+            "\u201ca stray screw, a crumpled receipt, a handheld flashlight\u201d"
+          ],
+          "reason": "It opens with specific, ordinary physical details before making its abstract claim."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "\u201cWe bargain with ourselves\u201d",
+            "\u201cavoiding the friction of the difficult work.\u201d"
+          ],
+          "reason": "It identifies avoidance, self-justification, and urgency bias. The blanket claim that the brain is \u201cwired\u201d this way is too broad and underqualified."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "\u201cresponding to every ping and clearing out every inbox\u201d",
+            "\u201cGroup all low-value tasks, such as emails and chores, into one single block\u201d"
+          ],
+          "reason": "The diagnosis and prescription are grounded in observable routines: notifications, inboxes, calendars, and task batching."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "\u201cIntegrity, in this sense, is structural.\u201d",
+            "\u201cResponsibility begins with the calendar.\u201d"
+          ],
+          "reason": "It ties values such as integrity and responsibility to a concrete way of organizing daily conduct."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 74.0,
+          "passed": true,
+          "confidence": 0.88,
+          "evidence": [
+            "\u201cSaying yes to a trivial favor is, in practice, saying no to your most important goal.\u201d",
+            "\u201ca \u2018to-do\u2019 list... and a \u2018when-to-do\u2019 schedule.\u201d"
+          ],
+          "reason": "There is a real account of tradeoffs and structure, not just productivity slogans. Depth is capped by a single repeated metaphor and several broad claims that are asserted rather than examined."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 55.0,
+          "passed": true,
+          "confidence": 0.6,
+          "evidence": [
+            "I want to be careful here: this isn't about a lack of willpower.",
+            "The noise of the world can still happen, but it cannot move the surface.",
+            "I'm not convinced that \"hacks\" or \"tips\" solve this."
+          ],
+          "reason": "The piece contains a few genuine hedges/qualifications (disclaiming willpower failure, acknowledging that noise still exists) that show some care in framing the argument. However, these moments are sparse and surrounded by unqualified, declarative claims ('It is a structural failure.', 'This isn't a productivity problem. It is a prioritization problem.') that assert without nuance. The qualification present is real but thin relative to the overall assertive register, so it merits a moderate rather than strong score."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "\u201ckeeping the appointment you made with yourself.\u201d",
+            "\u201cThe choice is yours\u201d"
+          ],
+          "reason": "The reader is clearly positioned as responsible for choosing, protecting, and honoring priorities."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "\u201ca clutter of small, urgent distractions\u201d",
+            "\u201cthe mug is no longer a symbol of distraction, but a tool used in the service of a deliberate plan.\u201d"
+          ],
+          "reason": "The opening image is meaningfully revised by the end, carrying the reader from reactive clutter to deliberate use."
+        },
+        {
+          "id": "decision",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "\u201cwe must be willing to let the low-value requests wait.\u201d",
+            "\u201cyou can continue to play whack-a-mole with your life ... or you can build an Anvil.\u201d"
+          ],
+          "reason": "A specific decision is demanded: protect high-value work by declining or delaying lower-value demands."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "\u201cFirst, flush the system.\u201d",
+            "\u201cSecond, lock the calendar.\u201d",
+            "\u201cThird, execute the batch.\u201d"
+          ],
+          "reason": "The article gives a specific three-step protocol with actionable substeps."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "\u201cA notification on a phone is urgent\u201d",
+            "\u201cWhen we scatter our attention across a hundred small tasks\u201d"
+          ],
+          "reason": "Concrete examples anchor abstractions effectively, though the forge metaphor is extended enough to become somewhat dominant."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "\u201cresponding to every ping and clearing out every inbox\u201d",
+            "\u201cemails and chores\u201d"
+          ],
+          "reason": "The pressures described\u2014notifications, email, errands, tabs, and scheduling\u2014are recognizable daily conditions."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "\u201cIf everything is a priority, nothing is.\u201d",
+            "\u201cYou cannot prioritize what you cannot see.\u201d"
+          ],
+          "reason": "The prose makes a serious claim about prioritization in accessible language. A few terms, such as \u201chigh-leverage\u201d and \u201cswitching cost,\u201d are introduced without much explanation but remain understandable in context."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 0.91,
+          "evidence": [
+            "\u201cFirst, flush the system.\u201d",
+            "\u201cIt becomes a campfire\u2014pleasant to look at, but useless for shaping metal.\u201d"
+          ],
+          "reason": "Short directives and longer explanatory sentences create useful variation. The recurring declarative cadence can become formulaic."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 0.89,
+          "evidence": [
+            "\u201cWe feel busy, but we are actually stagnant.\u201d",
+            "\u201cthe noise from the needle-movers.\u201d"
+          ],
+          "reason": "Most sentences advance the argument, but the same clutter, noise, heat, forge, and Anvil idea is restated across several sections."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 76.0,
+          "passed": true,
+          "confidence": 0.88,
+          "evidence": [
+            "\u201cI'm not convinced that \u2018hacks\u2019 or \u2018tips\u2019 solve this.\u201d",
+            "\u201cThis isn't about a lack of willpower.\u201d"
+          ],
+          "reason": "It rejects hack culture and willpower rhetoric. However, \u201cThe choice is yours\u201d and the burn-out-or-Anvil binary introduce motivational pressure."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "\u201cIt is a structural failure.\u201d",
+            "\u201cThe solution is a mechanical process of filtering.\u201d"
+          ],
+          "reason": "The article treats distress as a problem of task design and attention management, not healing, validation, or emotional processing."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 62.0,
+          "passed": true,
+          "confidence": 0.65,
+          "evidence": [
+            "I think many of us start our careers believing that productivity is a matter of speed.",
+            "I'm not convinced that \"hacks\" or \"tips\" solve this.",
+            "The choice is yours: you can continue to play whack-a-mole with your life until you burn out, or you can build an Anvil."
+          ],
+          "reason": "Most of the essay speaks in a reflective, first-person-plural 'we' voice ('I think many of us...', 'What I've started noticing...') rather than issuing moral commands, which keeps it largely free of overt preaching. The instructional 'Building the Anvil' section reads as mechanical steps ('Perform a total brain dump...', 'Assign these Big Rocks...') rather than sermonizing. However, the closing binary ('you can continue to play whack-a-mole with your life until you burn out, or you can build an Anvil') and the terse moral coda ('Responsibility begins with the calendar.') edge toward preachy ultimatum framing, which slightly undercuts an otherwise measured tone."
+        },
+        {
+          "id": "anti_guru",
+          "score": 70.0,
+          "passed": true,
+          "confidence": 0.65,
+          "evidence": [
+            "The solution is a mechanical process of filtering.",
+            "The obvious question becomes: how do we build this structure?",
+            "In the language of the forge, this is a failure of containment."
+          ],
+          "reason": "The author avoids claiming special insider wisdom or hype-driven authority; language stays mechanical and structural ('a mechanical process of filtering', 'the Anvil is the non-negotiable structure of your time') rather than positioning the writer as an enlightened guide with secret knowledge. The forge/Anvil metaphor is used as an explanatory device rather than a branded guru concept, and claims are framed as personal observation ('What I've started noticing...') rather than proclaimed truth, supporting a passing, non-guru tone."
+        },
+        {
+          "id": "closing_strength",
+          "score": 75.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "\u201cResponsibility begins with the calendar.\u201d",
+            "\u201cyou can build an Anvil.\u201d"
+          ],
+          "reason": "The ending is memorable and returns to the governing metaphor. Its force is weakened by the clich\u00e9-like \u201cThe choice is yours\u201d and the overdrawn \u201cuntil you burn out\u201d binary."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 80.1,
+      "penalties": 15.0,
+      "final_score": 65.1,
+      "confidence": 0.849,
+      "metrics": {
+        "fk_grade": 8.5,
+        "words": 653,
+        "sentences": 44,
+        "average_sentence_words": 14.84,
+        "sentence_length_stddev": 6.38,
+        "concrete_opening": false,
+        "action_signals": 10,
+        "framework_signals": 4,
+        "late_you_ratio": 0.5,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "\u201cMost people do not have a productivity problem; they have a prioritization problem.\u201d",
+            "\u201cyour brain is wired to respond to urgency rather than importance.\u201d"
+          ],
+          "reason": "It reframes the problem from effort or productivity volume to prioritization and reactivity."
+        },
+        {
+          "id": "argument_progression",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 0.98,
+          "evidence": [
+            "\u201cTo stop reacting and start controlling\u201d",
+            "\u201cimplement the FILTER model\u201d",
+            "\u201cR - Review and Reset\u201d"
+          ],
+          "reason": "The piece moves coherently from diagnosis to a sequenced operating method and maintenance loop."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 62.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [
+            "your brain is wired to respond to urgency rather than importance.",
+            "Your mental RAM is currently cluttered with open loops, worries, and errands. You cannot prioritize what you cannot see.",
+            "Execution fails when you succumb to the \"switching cost\" of jumping between tasks."
+          ],
+          "reason": "The text repeatedly grounds its advice in cognitive mechanics\u2014urgency bias, mental clutter, switching costs\u2014rather than stating rules as arbitrary. This is genuine, if compressed, psychological framing woven into the instructions, not a decorative aside."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 83.0,
+          "passed": true,
+          "confidence": 0.94,
+          "evidence": [
+            "\u201cA to-do list is a wish list of burdens; a schedule is a plan for execution.\u201d",
+            "\u201cThese are no longer \u2018tasks to get to\u2019\u2014they are non-negotiable appointments with yourself.\u201d"
+          ],
+          "reason": "The piece advances an actionable philosophy: priorities become real only when protected by time and attention."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 38.0,
+          "passed": false,
+          "confidence": 0.72,
+          "evidence": [
+            "A to-do list is a wish list of burdens; a schedule is a plan for execution.",
+            "implement the FILTER model to separate the noise from the needle-movers",
+            "apply the Eisenhower Matrix to separate the Urgent from the Important"
+          ],
+          "reason": "The piece leans on borrowed frameworks (Eisenhower Matrix, Pomodoro) and a mnemonic acronym without extending them\u2014no tension, tradeoff, or counter-case is explored. The aphorism about to-do lists vs schedules is the single moment of real conceptual bite; the rest is procedural restatement, so depth is asserted more than demonstrated."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 0.96,
+          "evidence": [
+            "\u201cYou cannot prioritize what you cannot see.\u201d",
+            "\u201cComplete every section of the worksheet with absolute honesty.\u201d",
+            "\u201cIf you are vague, your plan will fail.\u201d"
+          ],
+          "reason": "It places planning quality and follow-through with the reader, not external circumstances."
+        },
+        {
+          "id": "framework_lands",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "\u201cimplement the FILTER model\u201d",
+            "\u201cF - Flush the System\u201d",
+            "\u201cR - Review and Reset\u201d"
+          ],
+          "reason": "FILTER is fully named, mnemonic, sequential, and explained with concrete instructions for every letter."
+        },
+        {
+          "id": "unique_action",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "\u201cperform a total brain dump.\u201d",
+            "\u201cAssign your Big Rocks to specific time blocks on your calendar.\u201d",
+            "\u201cPhone in other room, Slack closed, 25-minute timer set.\u201d",
+            "\u201cgroup all similar low-energy tasks\u201d",
+            "\u201cset your top 3 Big Rocks for tomorrow\u201d"
+          ],
+          "reason": "Every framework section supplies a distinct action. The actions are more specific than generic advice to focus or plan."
+        },
+        {
+          "id": "action_relevance",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 0.99,
+          "evidence": [
+            "\u201cseparate the noise from the needle-movers\u201d",
+            "\u201cAssign your Big Rocks to specific time blocks on your calendar.\u201d",
+            "\u201cdefine your focus protocol.\u201d"
+          ],
+          "reason": "The diagnosis of reactive work directly becomes prioritization, calendar protection, distraction controls, batching, and review."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 0.97,
+          "evidence": [
+            "\u201cPhone in other room, Slack closed, 25-minute timer set.\u201d",
+            "\u201c9:00 AM \u2013 11:00 AM: Draft Project X Proposal.\u201d"
+          ],
+          "reason": "Actions are observable, time-bound, and environmentally specific rather than merely aspirational."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 76.0,
+          "passed": true,
+          "confidence": 0.75,
+          "evidence": [
+            "Selecting 3 specific, high-impact tasks that move you closer to a long-term goal.",
+            "Phone in other room, Slack closed, 25-minute timer set.",
+            "Blocking \"9:00 AM \u2013 11:00 AM: Draft Project X Proposal.\""
+          ],
+          "reason": "Sentences stay short (avg 14.84 words) and concrete, using paired Avoid/Works Better examples that keep the underlying idea (prioritization over reaction) intact rather than diluting it into vague slogans."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 78.0,
+          "passed": true,
+          "confidence": 0.89,
+          "evidence": [
+            "\u201cYou cannot prioritize what you cannot see.\u201d",
+            "\u201cA to-do list is a wish list of burdens; a schedule is a plan for execution.\u201d",
+            "\u201cBe specific, be disciplined, and stop apologizing for ignoring the noise.\u201d"
+          ],
+          "reason": "Short declaratives, contrast sentences, and examples create workable variation. The repeated imperative construction becomes mechanical near the close."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 76.0,
+          "passed": true,
+          "confidence": 0.9,
+          "evidence": [
+            "\u201cAvoid:\u201d",
+            "\u201cWorks Better:\u201d",
+            "\u201cA to-do list is a wish list of burdens; a schedule is a plan for execution.\u201d"
+          ],
+          "reason": "The recurring contrast format is efficient and actionable. Some phrases repeat the same control-and-discipline claim without adding much precision."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 68.0,
+          "passed": true,
+          "confidence": 0.65,
+          "evidence": [
+            "Low-value tasks (B and C level) are energy leaks.",
+            "If you are vague, your plan will fail."
+          ],
+          "reason": "Most directives are mechanical and consequence-based rather than inspirational; failure is framed as a functional outcome ('your plan will fail') not an emotional shortfall. The closing line trends toward exhortation but stays short and doesn't escalate into hype."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.8,
+          "evidence": [
+            "stop apologizing for ignoring the noise.",
+            "Complete every section of the worksheet with absolute honesty."
+          ],
+          "reason": "No validating, feelings-centered, or comforting language appears; commands are blunt and behavioral, the opposite of therapeutic softening."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 74.0,
+          "passed": true,
+          "confidence": 0.65,
+          "evidence": [
+            "Be specific, be disciplined, and stop apologizing for ignoring the noise.",
+            "Fill out the worksheet now and execute your Big Rocks before 2:00 PM tomorrow."
+          ],
+          "reason": "Commands stay tied to procedure and deadlines rather than moralizing about character or virtue; there is no appeal to higher purpose or guilt beyond task completion."
+        },
+        {
+          "id": "anti_guru",
+          "score": 72.0,
+          "passed": true,
+          "confidence": 0.6,
+          "evidence": [
+            "implement the FILTER model to separate the noise from the needle-movers",
+            "This is the \"whack-a-mole\" existence."
+          ],
+          "reason": "The acronym system and coined phrase edge toward branded-framework style, but there's no first-person authority claim, no mystique, and no promise of transformation\u2014just an instructional label attached to a checklist."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.137361
+}

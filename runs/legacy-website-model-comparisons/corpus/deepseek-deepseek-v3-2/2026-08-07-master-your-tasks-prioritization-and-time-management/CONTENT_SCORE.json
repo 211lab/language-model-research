@@ -1,0 +1,445 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "deepseek/deepseek-v3.2",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-final-quality-scores/docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 78.11,
+  "confidence": 0.958,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 91.79,
+      "penalties": 0.0,
+      "final_score": 91.79,
+      "confidence": 0.986,
+      "metrics": {
+        "fk_grade": 5.08,
+        "words": 1305,
+        "sentences": 131,
+        "average_sentence_words": 9.96,
+        "sentence_length_stddev": 6.44,
+        "concrete_opening": true,
+        "action_signals": 10,
+        "framework_signals": 2,
+        "late_you_ratio": 0.57,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You are letting the urgent dictate your day instead of letting the important design it."
+          ],
+          "reason": "Reframes the familiar experience of busyness as a problem of order, not effort, forcing a shift from being a victim of demands to an architect of priorities."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You know the feeling. You start the day with a clear idea of what needs to be done. By mid-morning, you\u2019re answering emails. By lunch, you\u2019re putting out a small fire for a colleague. By five o\u2019clock, the one thing you promised yourself you\u2019d finish is still untouched.",
+            "This isn\u2019t a problem of effort. It\u2019s a problem of order.",
+            "The lesson is not to work harder or longer. The lesson is to work first."
+          ],
+          "reason": "The text moves from a vivid problem scenario, to root\u2011cause analysis (order vs. effort), to a mechanical metaphor, and finally to concrete operational steps, creating a clear, unbroken logical sequence."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You know the feeling. You start the day with a clear idea of what needs to be done. By mid-morning, you\u2019re answering emails. By lunch, you\u2019re putting out a small fire for a colleague. By five o\u2019clock, the one thing you promised yourself you\u2019d finish is still untouched."
+          ],
+          "reason": "Opens with a universally recognisable, detailed moment-by-moment account of a derailed workday, anchoring the entire argument in lived experience."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The urgent creates the illusion of control while it steals the reality of progress."
+          ],
+          "reason": "The line interprets the psychological mechanism behind procrastination and busyness, revealing the false sense of control that urgent tasks provide."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Specific, repeatable behaviors are prescribed: silencing devices, closing irrelevant applications, a scripted deflection phrase, and an end\u2011of\u2011day diagnostic review with concrete questions. (evidence could not be verified)"
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The lesson is not to work harder or longer. The lesson is to work first. Before the world makes its demands, you must make your claim."
+          ],
+          "reason": "Distils the method into a principle (work first, claim your time) that is both immediately usable and philosophically deeper than a simple productivity tip."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your daily to-do list is the physical manifestation of your Furnace Stack. A chaotic list, where everything has equal weight, means your stack is clogged. The heat and pressure have nowhere to go, so they swirl and stagnate."
+          ],
+          "reason": "The furnace stack metaphor is not window dressing; it is systematically extended to diagnose the exact mechanics of daily failure (clogging, back-pressure, stagnation) and maps them to concrete list management."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 84.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Not the easiest three. Not the loudest three. The three that represent real forward motion."
+          ],
+          "reason": "Guards against common misapplications (picking easy or noisy tasks) and frames failure as diagnostic data rather than personal defect, adding crucial refinement to the prescription."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You either command the draft, or you choke on the smoke. The choice is made at dawn, with a pen and a blank page."
+          ],
+          "reason": "Places the entire outcome on the reader\u2019s deliberate, early-morning choice of action, with no allowance for blaming circumstances or other people."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 86.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Do this for one day. Not for a week, not as a new philosophy. For one day, operate your Furnace Stack as a mechanic would. See if the draft changes."
+          ],
+          "reason": "Shifts the perspective from \u2018learn a new system\u2019 to \u2018run a one-day mechanical experiment\u2019, lowering the barrier and progressing the reader from theory to testable observation."
+        },
+        {
+          "id": "decision",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Circle those three. They are your Furnace Stack for today."
+          ],
+          "reason": "A specific choice is required of the reader\u2014selecting the three highest\u2011impact tasks out of the full brain dump\u2014which is the pivot point of the method."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Now, draw a box around the entire list."
+          ],
+          "reason": "The piece provides an explicit, step\u2011by\u2011step protocol from the physical act of writing a brain dump to blocking calendar time, executing deep work, and performing a fact\u2011based evening review. Every required action is stated plainly."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your daily to-do list is the physical manifestation of your Furnace Stack."
+          ],
+          "reason": "The abstract metaphor of a furnace stack and draft is consistently anchored to concrete artifacts: the physical to\u2011do list, the act of drawing a box, circling three tasks, and a locked 90\u2011minute calendar block. Abstract concept and concrete action are interwoven without losing grounding."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You worked hard. You were busy. But you didn\u2019t move forward. The important work got pushed to tomorrow, again, and the treadmill keeps spinning."
+          ],
+          "reason": "Acknowledges the genuine effort and exhaustion of the reader without romanticizing the struggle, and refuses to pretend the solution is effort-free."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The lesson is not to work harder or longer. The lesson is to work first."
+          ],
+          "reason": "The core idea is reduced to a single, memorable distinction ('work first') without complex jargon or multi-step theory, matching the low reading-level metric."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The urgent is loud, insistent, and feels like progress\u2014a cleared inbox, a resolved complaint, a checked-off list of minor chores. The important is quiet, patient, and often difficult."
+          ],
+          "reason": "The sentences contrast long, flowing clauses for urgent busyness with short, staccato descriptors for the important, creating a deliberate rhythm that mirrors their natures."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You burn fuel but generate no thrust."
+          ],
+          "reason": "Seven words convey the entire waste of misdirected effort, using the furnace metaphor with maximal efficiency and zero filler."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The world will always provide the urgent. It is a factory of distraction, and it never closes."
+          ],
+          "reason": "States a harsh, permanent reality without cushioning it in hope, cheerleading, or any easy reassurance that good intentions will win."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use the answer to build a better stack tomorrow."
+          ],
+          "reason": "Treats a failed day as an engineering problem to be fixed with a better designed stack, entirely sidestepping emotional processing or validation language."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You are not being rude. You are being mechanical."
+          ],
+          "reason": "Moral framing ('rude') is explicitly dismissed and replaced with a functional, amoral operational mode, avoiding any righteous or preachy tone."
+        },
+        {
+          "id": "anti_guru",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "What comes next is just mechanics."
+          ],
+          "reason": "The closing line eliminates any mystique or enlightened persona, reducing the entire method to repeatable, impersonal mechanics."
+        },
+        {
+          "id": "closing_strength",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "What comes next is just mechanics."
+          ],
+          "reason": "Ends on a blunt, definitive, and actionable line that demystifies the entire process into straightforward steps, leaving a memorable, empowering final impression."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 79.43,
+      "penalties": 15.0,
+      "final_score": 64.43,
+      "confidence": 0.929,
+      "metrics": {
+        "fk_grade": 8.3,
+        "words": 932,
+        "sentences": 69,
+        "average_sentence_words": 13.51,
+        "sentence_length_stddev": 6.72,
+        "concrete_opening": false,
+        "action_signals": 3,
+        "framework_signals": 1,
+        "late_you_ratio": 0.44,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 65.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "transform your task management from chaotic to commanding",
+            "replacing it with a concrete inventory"
+          ],
+          "reason": "A perspective shift is named but delivered only as a surface metaphor. The shift from scattered anxiety to concrete inventory is asserted rather than deeply developed."
+        },
+        {
+          "id": "argument_progression",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "The argument moves cleanly from problem statement through a named multi-step framework to a call for immediate execution. Each step builds on the last without gaps. (evidence could not be verified)"
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 70.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You know the feeling of working hard all day only to find the most important work untouched.",
+            "the tension is real: you have the energy and desire to achieve, but it gets spent on whatever is shouting loudest"
+          ],
+          "reason": "Common emotional states are named (frustration, diffuse anxiety, exhaustion) and reframed as signals of broken order rather than personal failing. Interpretation is present but stays at a surface diagnostic level."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 75.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "effort without order is wasted",
+            "The desired outcome is to end each day with clear evidence of progress on what matters most"
+          ],
+          "reason": "Presents a functional ethos: effort requires deliberate ordering; meaningful daily evidence defines success. It is a practical, not speculative, philosophy."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 25.0,
+          "passed": false,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "The piece is a plain-spoken task-management protocol. A single pattern-recognition question is the closest thing to a deeper idea; otherwise the thinking is resolutely straightforward and unlayered. (evidence could not be verified)"
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Act on what you write.",
+            "Write with specificity and honesty."
+          ],
+          "reason": "Direct, repeated imperatives place all agency on the reader. There is no accommodation for external blame; the entire system collapses unless the individual executes with honesty."
+        },
+        {
+          "id": "framework_lands",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "your Furnace Stack"
+          ],
+          "reason": "A named metaphor (Furnace Stack) and an explicit, memorable acronym (TRIAGE) form a complete, teachable model. Every element is defined and operationally connected to the next."
+        },
+        {
+          "id": "unique_action",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Circle these three.",
+            "Block out a specific, uninterrupted period"
+          ],
+          "reason": "Each step prescribes a letter-specific, distinct behavioral instruction tightly coupled to the framework. The actions are non-generic."
+        },
+        {
+          "id": "action_relevance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Circle these three.",
+            "Block out a specific, uninterrupted period"
+          ],
+          "reason": "The initial argument sets up the need for a structure; the framework provides the structure; concrete, immediate actions (circling tasks, blocking time) follow directly and are demanded in the worksheet."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Silence your phone, close every browser tab and application not required for the task",
+            "Write \u201cSchedule for Friday PM\u201d next to it"
+          ],
+          "reason": "(Preferred) Nearly every step contains observable, physical behaviours\u2014closing tabs, writing calendar labels, crossing out items. The guidance avoids abstractions."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "T - Take Inventory",
+            "Your job now is to impose a ruthless hierarchy."
+          ],
+          "reason": "The prose stays at a low reading level (FK 8.3) while retaining conceptual weight: 'impose a ruthless hierarchy' is blunt and clear, not condescending. Serious thought is preserved without jargon."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "where you command the draft, rather than choke on the smoke",
+            "You know the feeling of working hard all day only to find the most important work untouched."
+          ],
+          "reason": "The text varies sentence structure and uses parallel rhythm ('command the draft, rather than choke on the smoke'), creating a cadence that supports the instructional tone without monotony."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Get everything out of your head and onto the page.",
+            "Circle these three."
+          ],
+          "reason": "Instructions are stripped to essential meaning with no filler words. Commands are direct and immediately comprehensible."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 75.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "The piece explicitly forbids emotional self-criticism and cheerleading, framing evaluation as data collection. Some residual motivating metaphor ('command the draft') keeps it from being fully clinical. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_therapy",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 0.7,
+          "evidence": [],
+          "reason": "Review is treated as an engineering feedback loop, not a session of emotional exploration. No processing of feelings is invited; only detached observation and process tweaking. (evidence could not be verified)"
+        },
+        {
+          "id": "anti_preacher",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The value is not in thinking about the system, but in executing it."
+          ],
+          "reason": "No moral high ground is claimed; the instruction rejects passive contemplation in favor of execution. The tone remains pragmatic, not proselytising."
+        },
+        {
+          "id": "anti_guru",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Act on what you write."
+          ],
+          "reason": "Devoid of personal myth-making, secret knowledge, or dependence on the author. The final instruction places authority back in the reader's action."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.014692
+}

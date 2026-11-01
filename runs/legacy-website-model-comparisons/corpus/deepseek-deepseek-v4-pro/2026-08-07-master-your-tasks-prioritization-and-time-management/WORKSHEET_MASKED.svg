@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet: Master Your Tasks - Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the EXECUTE action model, and a three-step process summary footer, now masked with grayscale blocks.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <!-- Branding and Header -->
+  <rect x="38" y="20" width="35" height="18" rx="4" fill="#d1d1d1"/> <!-- SBXX -->
+  <text class="title" x="40" y="70">MASTER YOUR TASKS</text>
+  <text class="sub" x="40" y="96">Prioritization &amp; Time Management</text>
+
+  <!-- Top Right Context Box -->
+  <rect class="mini" x="650" y="34" width="410" height="78"/>
+  <rect x="668" y="44" width="130" height="16" rx="4" fill="#d3d3d3"/> <!-- MOMENT OF TRUTH -->
+  <rect x="668" y="66" width="340" height="12" rx="2" fill="#d5d5d5"/> <!-- The choice... -->
+  <rect x="668" y="82" width="340" height="12" rx="2" fill="#d7d7d7"/> <!-- high-impact tasks... -->
+
+  <!-- Center Verb Process Title -->
+  <text class="verb" x="460" y="142">EXECUTE</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <!-- ROW 1: E, X, E -->
+  <!-- Box 1: E - Eliminate -->
+  <rect class="box" x="40" y="180" width="310" height="185"/>
+  <text class="letter" x="60" y="222">E</text>
+  <rect x="103" y="190" width="180" height="18" rx="4" fill="#d1d1d1"/> <!-- ELIMINATE THE NOISE -->
+  <rect x="103" y="210" width="230" height="14" rx="2" fill="#d3d3d3"/> <!-- List exact distractions... -->
+  <rect x="103" y="228" width="230" height="14" rx="2" fill="#d5d5d5"/> <!-- Mute, close tabs... -->
+  <line class="fillline" x1="60" y1="270" x2="320" y2="270"/>
+  <line class="fillline" x1="60" y1="300" x2="320" y2="300"/>
+  <line class="fillline" x1="60" y1="330" x2="320" y2="330"/>
+
+  <!-- Box 2: X - eXamine -->
+  <rect class="box" x="395" y="180" width="310" height="185"/>
+  <text class="letter" x="415" y="222">X</text>
+  <rect x="458" y="190" width="180" height="18" rx="4" fill="#d1d1d1"/> <!-- eXAMINE YOUR LIST -->
+  <rect x="458" y="210" width="230" height="14" rx="2" fill="#d3d3d3"/> <!-- Brain dump tasks... -->
+  <rect x="458" y="228" width="230" height="14" rx="2" fill="#d5d5d5"/> <!-- If everything is a priority... -->
+  <rect x="413" y="258" width="30" height="14" rx="2" fill="#d7d7d7"/> <!-- A1 -->
+  <line class="fillline" x1="445" y1="268" x2="675" y2="268"/>
+  <rect x="413" y="288" width="30" height="14" rx="2" fill="#d7d7d7"/> <!-- A2 -->
+  <line class="fillline" x1="445" y1="298" x2="675" y2="298"/>
+  <rect x="413" y="318" width="30" height="14" rx="2" fill="#d7d7d7"/> <!-- A3 -->
+  <line class="fillline" x1="445" y1="328" x2="675" y2="328"/>
+
+  <!-- Box 3: E - Engage -->
+  <rect class="box" x="750" y="180" width="310" height="185"/>
+  <text class="letter" x="770" y="222">E</text>
+  <rect x="813" y="190" width="180" height="18" rx="4" fill="#d1d1d1"/> <!-- ENGAGE ONE PRIORITY -->
+  <rect x="813" y="210" width="230" height="14" rx="2" fill="#d3d3d3"/> <!-- Sprint log: 25-min block... -->
+  <rect x="813" y="228" width="230" height="14" rx="2" fill="#d5d5d5"/> <!-- Mark stayed or drifted... -->
+  <rect x="768" y="260" width="20" height="14" rx="2" fill="#d7d7d7"/> <!-- 1 -->
+  <line class="fillline" x1="790" y1="270" x2="1030" y2="270"/>
+  <rect x="768" y="290" width="20" height="14" rx="2" fill="#d7d7d7"/> <!-- 2 -->
+  <line class="fillline" x1="790" y1="300" x2="1030" y2="300"/>
+  <rect x="768" y="320" width="20" height="14" rx="2" fill="#d7d7d7"/> <!-- 3 -->
+  <line class="fillline" x1="790" y1="330" x2="1030" y2="330"/>
+
+  <!-- ROW 2: C, U, T -->
+  <!-- Box 4: C - Complete -->
+  <rect class="box" x="40" y="395" width="310" height="185"/>
+  <text class="letter" x="60" y="437">C</text>
+  <rect x="103" y="405" width="200" height="18" rx="4" fill="#d1d1d1"/> <!-- COMPLETE BEFORE SWITCHING -->
+  <rect x="103" y="425" width="230" height="14" rx="2" fill="#d3d3d3"/> <!-- Define a defensible... -->
+  <rect x="103" y="443" width="230" height="14" rx="2" fill="#d5d5d5"/> <!-- Don't leave work... -->
+  <line class="fillline" x1="60" y1="485" x2="320" y2="485"/>
+  <line class="fillline" x1="60" y1="515" x2="320" y2="515"/>
+  <line class="fillline" x1="60" y1="545" x2="320" y2="545"/>
+
+  <!-- Box 5: U - Use Time Blocks -->
+  <rect class="box" x="395" y="395" width="310" height="185"/>
+  <text class="letter" x="415" y="437">U</text>
+  <rect x="458" y="405" width="160" height="18" rx="4" fill="#d1d1d1"/> <!-- USE TIME BLOCKS -->
+  <rect x="458" y="425" width="230" height="14" rx="2" fill="#d3d3d3"/> <!-- Transfer A-tasks... -->
+  <rect x="458" y="443" width="230" height="14" rx="2" fill="#d5d5d5"/> <!-- Treat them like... -->
+  <rect x="413" y="475" width="40" height="14" rx="2" fill="#d7d7d7"/> <!-- Time: -->
+  <line class="fillline" x1="455" y1="485" x2="675" y2="485"/>
+  <rect x="413" y="505" width="40" height="14" rx="2" fill="#d7d7d7"/> <!-- Task: -->
+  <line class="fillline" x1="455" y1="515" x2="675" y2="515"/>
+  <rect x="413" y="535" width="40" height="14" rx="2" fill="#d7d7d7"/> <!-- Time: -->
+  <line class="fillline" x1="455" y1="545" x2="675" y2="545"/>
+
+  <!-- Box 6: T - Track -->
+  <rect class="box" x="750" y="395" width="310" height="185"/>
+  <text class="letter" x="770" y="437">T</text>
+  <rect x="813" y="405" width="170" height="18" rx="4" fill="#d1d1d1"/> <!-- TRACK WHAT GOT DONE -->
+  <rect x="813" y="425" width="230" height="14" rx="2" fill="#d3d3d3"/> <!-- Check off wins... -->
+  <rect x="813" y="443" width="230" height="14" rx="2" fill="#d5d5d5"/> <!-- If incomplete, write ONE... -->
+  <rect x="768" y="475" width="45" height="14" rx="2" fill="#d7d7d7"/> <!-- Done: -->
+  <line class="fillline" x1="815" y1="485" x2="1030" y2="485"/>
+  <rect x="768" y="505" width="45" height="14" rx="2" fill="#d7d7d7"/> <!-- Reason: -->
+  <line class="fillline" x1="815" y1="515" x2="1030" y2="515"/>
+  <rect x="768" y="535" width="45" height="14" rx="2" fill="#d7d7d7"/> <!-- Done: -->
+  <line class="fillline" x1="815" y1="545" x2="1030" y2="545"/>
+
+  <!-- Full Width Box: E - Evaluate & Adjust -->
+  <rect class="box" x="40" y="610" width="1020" height="130"/>
+  <text class="letter" x="60" y="652">E</text>
+  <rect x="103" y="622" width="200" height="18" rx="4" fill="#d1d1d1"/> <!-- EVALUATE &amp; ADJUST DAILY -->
+  <rect x="103" y="642" width="360" height="14" rx="2" fill="#d3d3d3"/> <!-- 5-minute review... -->
+  <rect x="103" y="668" width="280" height="14" rx="2" fill="#d5d5d5"/> <!-- 1. My 3 A-tasks were... -->
+  <line class="fillline" x1="105" y1="690" x2="1030" y2="690"/>
+  <rect x="103" y="696" width="280" height="14" rx="2" fill="#d7d7d7"/> <!-- 2. I was pulled off course... -->
+  <line class="fillline" x1="105" y1="718" x2="1030" y2="718"/>
+  <rect x="103" y="724" width="280" height="14" rx="2" fill="#d9d9d9"/> <!-- 3. Tomorrow's single adjustment... -->
+  <line class="fillline" x1="105" y1="746" x2="1030" y2="746"/>
+
+  <!-- Footer: Three-Step Process Summary -->
+  <rect class="mini" x="40" y="765" width="310" height="82"/>
+  <text class="num" x="60" y="800">1</text>
+  <rect x="93" y="774" width="120" height="16" rx="4" fill="#d1d1d1"/> <!-- SET THE FORGE -->
+  <rect x="93" y="794" width="240" height="12" rx="2" fill="#d3d3d3"/> <!-- Eliminate noise... -->
+  <rect x="93" y="810" width="240" height="12" rx="2" fill="#d5d5d5"/> <!-- high-impact A-tasks... -->
+
+  <rect class="mini" x="395" y="765" width="310" height="82"/>
+  <text class="num" x="415" y="800">2</text>
+  <rect x="448" y="774" width="140" height="16" rx="4" fill="#d1d1d1"/> <!-- SWING THE HAMMER -->
+  <rect x="448" y="794" width="240" height="12" rx="2" fill="#d3d3d3"/> <!-- Protect time... -->
+  <rect x="448" y="810" width="240" height="12" rx="2" fill="#d5d5d5"/> <!-- and close the loop... -->
+
+  <rect class="mini" x="750" y="765" width="310" height="82"/>
+  <text class="num" x="770" y="800">3</text>
+  <rect x="803" y="774" width="140" height="16" rx="4" fill="#d1d1d1"/> <!-- REFINE THE BLADE -->
+  <rect x="803" y="794" width="240" height="12" rx="2" fill="#d3d3d3"/> <!-- Track real completion... -->
+  <rect x="803" y="810" width="240" height="12" rx="2" fill="#d5d5d5"/> <!-- adjust one variable... -->
+</svg>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the SEQUENCE action model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS</text>
+  <text class="sub" x="40" y="96">Prioritization and Time Management</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <text class="label" x="720" y="58">DUMP THE LIST</text>
+  <text class="small" x="720" y="78">Transfer every task, errand, and reminder to one place.</text>
+  <text class="tiny" x="720" y="94">Avoid categories. List exact actions only.</text>
+
+  <text class="verb" x="444" y="142">SEQUENCE</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="240" height="150"/>
+  <text class="letter" x="60" y="222">S</text>
+  <text class="label" x="105" y="204">SPILL THE LIST</text>
+  <text class="small" x="105" y="224">Transfer every task, errand, and reminder to one place.</text>
+  <text class="tiny" x="105" y="242">Avoid categories. List exact actions only.</text>
+  <line class="fillline" x1="60" y1="270" x2="260" y2="270"/>
+  <line class="fillline" x1="60" y1="300" x2="260" y2="300"/>
+  <line class="fillline" x1="60" y1="330" x2="260" y2="330"/>
+
+  <rect class="box" x="300" y="180" width="240" height="150"/>
+  <text class="letter" x="320" y="222">E</text>
+  <text class="label" x="365" y="204">EVALUATE IMPACT</text>
+  <text class="small" x="365" y="224">Mark tasks that protect deadlines or move major goals.</text>
+  <text class="tiny" x="365" y="242">Distinguish motion from real progress.</text>
+  <line class="fillline" x1="320" y1="270" x2="520" y2="270"/>
+  <line class="fillline" x1="320" y1="300" x2="520" y2="300"/>
+  <line class="fillline" x1="320" y1="330" x2="520" y2="330"/>
+
+  <rect class="box" x="560" y="180" width="240" height="150"/>
+  <text class="letter" x="580" y="222">Q</text>
+  <text class="label" x="625" y="204">QUESTION URGENCY</text>
+  <text class="small" x="625" y="224">Separate true urgency from loud notifications.</text>
+  <text class="tiny" x="625" y="242">Assign status: today, week, delegate, delete.</text>
+  <text class="tiny" x="580" y="268">1.</text><line class="fillline" x1="600" y1="268" x2="780" y2="268"/>
+  <text class="tiny" x="580" y="292">2.</text><line class="fillline" x1="600" y1="292" x2="780" y2="292"/>
+  <text class="tiny" x="580" y="316">3.</text><line class="fillline" x1="600" y1="316" x2="780" y2="316"/>
+  <text class="tiny" x="580" y="340">4.</text><line class="fillline" x1="600" y1="340" x2="780" y2="340"/>
+
+  <rect class="box" x="820" y="180" width="240" height="150"/>
+  <text class="letter" x="840" y="222">U</text>
+  <text class="label" x="885" y="204">THREE BIG ROCKS</text>
+  <text class="small" x="885" y="224">Pick exactly three A-level tasks for the day.</text>
+  <text class="tiny" x="885" y="242">Tie each to a major goal or hard deadline.</text>
+  <text class="tiny" x="840" y="268">1.</text><line class="fillline" x1="860" y1="268" x2="1040" y2="268"/>
+  <text class="tiny" x="840" y="292">2.</text><line class="fillline" x1="860" y1="292" x2="1040" y2="292"/>
+  <text class="tiny" x="840" y="316">3.</text><line class="fillline" x1="860" y1="316" x2="1040" y2="316"/>
+
+  <rect class="box" x="40" y="350" width="240" height="150"/>
+  <text class="letter" x="60" y="392">E</text>
+  <text class="label" x="105" y="374">ENTER PRIORITY BLOCKS</text>
+  <text class="small" x="105" y="394">Put each big rock on the calendar with start/end times.</text>
+  <text class="tiny" x="105" y="412">Match blocks to your peak focus hours.</text>
+  <text class="tiny" x="60" y="440">Block 1:</text><line class="fillline" x1="125" y1="440" x2="260" y2="440"/>
+  <text class="tiny" x="60" y="464">Block 2:</text><line class="fillline" x1="125" y1="464" x2="260" y2="464"/>
+  <text class="tiny" x="60" y="488">Block 3:</text><line class="fillline" x1="125" y1="488" x2="260" y2="488"/>
+
+  <rect class="box" x="300" y="350" width="240" height="150"/>
+  <text class="letter" x="320" y="392">N</text>
+  <text class="label" x="365" y="374">NARROW ATTENTION</text>
+  <text class="small" x="365" y="394">Silence alerts and close unrelated tabs during blocks.</text>
+  <text class="tiny" x="365" y="412">List only the tools needed for the current rock.</text>
+  <line class="fillline" x1="320" y1="440" x2="520" y2="440"/>
+  <line class="fillline" x1="320" y1="464" x2="520" y2="464"/>
+  <line class="fillline" x1="320" y1="488" x2="520" y2="488"/>
+
+  <rect class="box" x="560" y="350" width="240" height="150"/>
+  <text class="letter" x="580" y="392">C</text>
+  <text class="label" x="625" y="374">CONTAIN NOISE</text>
+  <text class="small" x="625" y="394">Batch emails, calls, and small errands into one window.</text>
+  <text class="tiny" x="625" y="412">Protect high-value time by isolating administrative tasks.</text>
+  <line class="fillline" x1="580" y1="440" x2="780" y2="440"/>
+  <line class="fillline" x1="580" y1="464" x2="780" y2="464"/>
+  <line class="fillline" x1="580" y1="488" x2="780" y2="488"/>
+
+  <rect class="box" x="820" y="350" width="240" height="150"/>
+  <text class="letter" x="840" y="392">E</text>
+  <text class="label" x="885" y="374">EVALUATE &amp; CARRY FORWARD</text>
+  <text class="small" x="885" y="394">Review completed work and decide the fate of unfinished items.</text>
+  <text class="tiny" x="885" y="412">Reprioritize, break down, delegate, or delete.</text>
+  <line class="fillline" x1="840" y1="440" x2="1040" y2="440"/>
+  <line class="fillline" x1="840" y1="464" x2="1040" y2="464"/>
+  <line class="fillline" x1="840" y1="488" x2="1040" y2="488"/>
+
+  <rect class="mini" x="40" y="530" width="1020" height="80"/>
+  <text class="label" x="60" y="556">DAILY EXECUTION CONTRACT</text>
+  <text class="small" x="60" y="580">The calendar is the contract. I will protect my focus blocks and execute my three rocks.</text>
+  <line class="fillline" x1="60" y1="604" x2="1030" y2="604"/>
+
+  <rect class="mini" x="40" y="630" width="315" height="82"/>
+  <text class="num" x="60" y="665">1</text>
+  <text class="label" x="95" y="653">GUARD THE BLOCKS</text>
+  <text class="tiny" x="95" y="673">Treat priority time as unmissable appointments.</text>
+  <text class="tiny" x="95" y="689">Silence distractions before starting.</text>
+
+  <rect class="mini" x="392" y="630" width="315" height="82"/>
+  <text class="num" x="412" y="665">2</text>
+  <text class="label" x="447" y="653">BATCH THE NOISE</text>
+  <text class="tiny" x="447" y="673">Group low-value tasks into a single later window.</text>
+  <text class="tiny" x="447" y="689">Prevent context switching from breaking flow.</text>
+
+  <rect class="mini" x="745" y="630" width="315" height="82"/>
+  <text class="num" x="765" y="665">3</text>
+  <text class="label" x="800" y="653">REVIEW WITHOUT JUDGMENT</text>
+  <text class="tiny" x="800" y="673">Move unfinished work only after deciding its fate.</text>
+  <text class="tiny" x="800" y="689">Keep tomorrow’s list lean and clear.</text>
+</svg>

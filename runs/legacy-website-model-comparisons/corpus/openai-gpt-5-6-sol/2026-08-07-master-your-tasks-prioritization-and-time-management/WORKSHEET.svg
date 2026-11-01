@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the TRIAGE action model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 26px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS: PRIORITIZATION AND TIME MANAGEMENT</text>
+  <text class="sub" x="40" y="96">Triage Your Focus</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <text class="label" x="720" y="58">CHOICE</text>
+  <text class="small" x="720" y="78">Keep answering pings and clearing inboxes, or choose</text>
+  <text class="small" x="720" y="94">your three highest-impact tasks and protect time for them.</text>
+
+  <text class="verb" x="444" y="142">TRIAGE</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="320" height="185"/>
+  <text class="letter" x="60" y="222">T</text>
+  <text class="label" x="105" y="204">TAKE INVENTORY</text>
+  <text class="small" x="105" y="224">Capture every open task in one place.</text>
+  <text class="tiny" x="105" y="242">List work, calls, errands, and duties. Do not rank yet.</text>
+  <line class="fillline" x1="60" y1="270" x2="330" y2="270"/>
+  <line class="fillline" x1="60" y1="300" x2="330" y2="300"/>
+  <line class="fillline" x1="60" y1="330" x2="330" y2="330"/>
+
+  <rect class="box" x="390" y="180" width="320" height="185"/>
+  <text class="letter" x="410" y="222">R</text>
+  <text class="label" x="455" y="204">RANK BY IMPACT</text>
+  <text class="small" x="455" y="224">Mark tasks A, B, or C based on importance and urgency.</text>
+  <text class="tiny" x="455" y="242">Delegate, delay, or delete anything that does not deserve time.</text>
+  <text class="tiny" x="410" y="268">1.</text><line class="fillline" x1="430" y1="268" x2="680" y2="268"/>
+  <text class="tiny" x="410" y="292">2.</text><line class="fillline" x1="430" y1="292" x2="680" y2="292"/>
+  <text class="tiny" x="410" y="316">3.</text><line class="fillline" x1="430" y1="316" x2="680" y2="316"/>
+  <text class="tiny" x="410" y="340">4.</text><line class="fillline" x1="430" y1="340" x2="680" y2="340"/>
+
+  <rect class="box" x="740" y="180" width="320" height="185"/>
+  <text class="letter" x="760" y="222">I</text>
+  <text class="label" x="805" y="204">IDENTIFY THE BIG THREE</text>
+  <text class="small" x="805" y="224">Choose the three A-level tasks that create the most result.</text>
+  <text class="tiny" x="805" y="242">Make each one clear enough to finish or measure today.</text>
+  <text class="tiny" x="760" y="268">1.</text><line class="fillline" x1="780" y1="268" x2="1030" y2="268"/>
+  <text class="tiny" x="760" y="292">2.</text><line class="fillline" x1="780" y1="292" x2="1030" y2="292"/>
+  <text class="tiny" x="760" y="316">3.</text><line class="fillline" x1="780" y1="316" x2="1030" y2="316"/>
+
+  <rect class="box" x="40" y="395" width="320" height="185"/>
+  <text class="letter" x="60" y="437">A</text>
+  <text class="label" x="105" y="419">ASSIGN PROTECTED TIME</text>
+  <text class="small" x="105" y="439">Place each Big Three into a real, non-negotiable time block.</text>
+  <text class="tiny" x="105" y="457">Use your best energy for the hardest task.</text>
+  <text class="tiny" x="60" y="485">Time:</text><line class="fillline" x1="105" y1="485" x2="330" y2="485"/>
+  <text class="tiny" x="60" y="515">Time:</text><line class="fillline" x1="105" y1="515" x2="330" y2="515"/>
+  <text class="tiny" x="60" y="545">Time:</text><line class="fillline" x1="105" y1="545" x2="330" y2="545"/>
+
+  <rect class="box" x="390" y="395" width="320" height="185"/>
+  <text class="letter" x="410" y="437">G</text>
+  <text class="label" x="455" y="419">GUARD FOCUS &amp; GROUP SMALL WORK</text>
+  <text class="small" x="455" y="439">Silence alerts, close tabs, and batch minor tasks later.</text>
+  <text class="tiny" x="455" y="457">Only break focus if a new request is urgent and important.</text>
+  <line class="fillline" x1="410" y1="485" x2="680" y2="485"/>
+  <line class="fillline" x1="410" y1="515" x2="680" y2="515"/>
+  <line class="fillline" x1="410" y1="545" x2="680" y2="545"/>
+
+  <rect class="box" x="740" y="395" width="320" height="185"/>
+  <text class="letter" x="760" y="437">E</text>
+  <text class="label" x="805" y="419">EVALUATE AND RESET</text>
+  <text class="small" x="805" y="439">Record completed tasks and review unfinished work.</text>
+  <text class="tiny" x="805" y="457">Break down large tasks, reschedule, or delete them.</text>
+  <text class="tiny" x="760" y="485">1.</text><line class="fillline" x1="780" y1="485" x2="1030" y2="485"/>
+  <text class="tiny" x="760" y="515">2.</text><line class="fillline" x1="780" y1="515" x2="1030" y2="515"/>
+  <text class="tiny" x="760" y="545">3.</text><line class="fillline" x1="780" y1="545" x2="1030" y2="545"/>
+
+  <rect class="mini" x="40" y="610" width="1020" height="88"/>
+  <text class="label" x="60" y="636">DAILY COMMITMENT</text>
+  <text class="small" x="60" y="660">The list will always grow. I control the draft. I will pick my three, guard the time, and execute without deviation.</text>
+  <line class="fillline" x1="60" y1="684" x2="1030" y2="684"/>
+
+  <rect class="mini" x="40" y="725" width="315" height="82"/>
+  <text class="num" x="60" y="760">1</text>
+  <text class="label" x="95" y="748">PICK THREE</text>
+  <text class="tiny" x="95" y="768">Select your highest-impact tasks.</text>
+  <text class="tiny" x="95" y="784">Stop treating everything as equal.</text>
+
+  <rect class="mini" x="392" y="725" width="315" height="82"/>
+  <text class="num" x="412" y="760">2</text>
+  <text class="label" x="447" y="748">BLOCK TIME</text>
+  <text class="tiny" x="447" y="768">Schedule non-negotiable focus rounds.</text>
+  <text class="tiny" x="447" y="784">Protect your energy for real work.</text>
+
+  <rect class="mini" x="745" y="725" width="315" height="82"/>
+  <text class="num" x="765" y="760">3</text>
+  <text class="label" x="800" y="748">REVIEW DAILY</text>
+  <text class="tiny" x="800" y="768">Check progress and reset tomorrow.</text>
+  <text class="tiny" x="800" y="784">Turn triage into a habit.</text>
+</svg>

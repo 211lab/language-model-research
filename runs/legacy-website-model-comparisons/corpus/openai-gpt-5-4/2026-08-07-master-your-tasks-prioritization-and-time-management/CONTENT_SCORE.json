@@ -1,0 +1,464 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "openai/gpt-5.4",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-final-quality-scores/docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 93.09,
+  "confidence": 1.0,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 93.44,
+      "penalties": 0.0,
+      "final_score": 93.44,
+      "confidence": 1.0,
+      "metrics": {
+        "fk_grade": 3.73,
+        "words": 3240,
+        "sentences": 414,
+        "average_sentence_words": 7.83,
+        "sentence_length_stddev": 5.56,
+        "concrete_opening": false,
+        "action_signals": 34,
+        "framework_signals": 5,
+        "late_you_ratio": 0.5,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most men do not have a work ethic problem. They have an order problem."
+          ],
+          "reason": "Reframes the productivity problem from effort to ordering, shifting the entire diagnosis."
+        },
+        {
+          "id": "argument_progression",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A task list without rank becomes a pile. A pile creates friction. Friction creates delay. Delay invites distraction."
+          ],
+          "reason": "The chain of consequences logically connects cause (lack of rank) to effect (distraction)."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You can still end the day with the one task that mattered most sitting there untouched, heavier than it was that morning."
+          ],
+          "reason": "Opening paragraph introduces a vivid, relatable scenario of a man who works all day yet leaves his most important task undone, providing a tangible entry point rather than an abstract claim."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "That kind of day drains you in a specific way. It does not just make you tired. It makes you doubt yourself."
+          ],
+          "reason": "Directly names the emotional/self\u2011worth damage of a poorly ordered day, not just the fatigue."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "An email comes in. A message buzzes. A small request appears. A bill needs paying.",
+            "For the next seven days, complete your top 3 priority tasks on 5 of those 7 days without working later, checking your phone more often, or adding a new app."
+          ],
+          "reason": "Ubiquitous concrete actions, environmental cues, and a precise behavioral challenge anchor every abstract point in observable reality."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A simple system wins here. Simple survives pressure.",
+            "Order is intelligent force."
+          ],
+          "reason": "Pithy maxims that fuse actionable advice with deeper principle."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The break happens between decision and movement.",
+            "You are not failing from lack of effort. You are failing at the point of selection."
+          ],
+          "reason": "Goes beyond surface-level productivity advice to reframe the core problem as a failure of ordering rather than effort, and pinpoints the precise cognitive gap between knowing and doing."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You will sometimes. That is normal.",
+            "Sometimes that is true. Life can hit hard."
+          ],
+          "reason": "Acknowledges that the method isn't perfect and external disruptions happen."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "If a task does not require you, stop gripping it so hard."
+          ],
+          "reason": "Calls out the pride behind unnecessary overload and puts the onus on the reader to release."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "So what changes? Not your effort. Your method.",
+            "Most men do not have a work ethic problem. They have an order problem."
+          ],
+          "reason": "Explicitly moves the reader from the initial belief that more willpower is needed to the understanding that the real issue is method and ordering, then develops that insight into a full system."
+        },
+        {
+          "id": "decision",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Make one list. Rank it. Name the big three. Put them on the clock. Work them before the noise.",
+            "Take the ground back. Finish the right tasks first, five days out of the next seven, and let that become proof that your day belongs in your hands again."
+          ],
+          "reason": "The closing issues a direct, unequivocal command to decide a specific daily practice, framing the choice as reclaiming agency over one\u2019s own time."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "For the next seven days, complete your top 3 priority tasks on 5 of those 7 days without working later, checking your phone more often, or adding a new app."
+          ],
+          "reason": "A concrete, time-boxed, measurable action plan is laid out as the direct follow-through."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Think of your ranked task list like molten metal. It has force. It can be shaped.",
+            "A task list without rank becomes a pile. A pile creates friction. Friction creates delay. Delay invites distraction."
+          ],
+          "reason": "Moves fluidly between sensory metaphors (molten metal, pile) and conceptual chains (friction\u2192delay\u2192distraction), grounding abstract principles in physical imagery without losing momentum."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "An email comes in. A message buzzes. A small request appears. A bill needs paying."
+          ],
+          "reason": "Lists mundane, recognizable interruptions that derail focus."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A simple system wins here. Simple survives pressure."
+          ],
+          "reason": "Complex notion reduced to four\u2011word sentences with monosyllabic words."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A task list without rank becomes a pile. A pile creates friction. Friction creates delay. Delay invites distraction."
+          ],
+          "reason": "Short, parallel clauses create a cadenced, staccato rhythm that reinforces the message."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Simple survives pressure.",
+            "Order is intelligent force."
+          ],
+          "reason": "Each phrase carries maximum weight with minimal syllables."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Confidence does not come from hype. It comes from evidence."
+          ],
+          "reason": "Explicitly rejects empty motivation in favor of concrete proof."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You are not failing from lack of effort. You are failing at the point of selection."
+          ],
+          "reason": "Direct, diagnostic language without therapeutic cushioning or emotional validation."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most men do not have a work ethic problem. They have an order problem."
+          ],
+          "reason": "States a fact, not a moral judgment; no sermonizing."
+        },
+        {
+          "id": "anti_guru",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The answer is usually simple, and that is good news.",
+            "You already know this. You have felt it."
+          ],
+          "reason": "Democratizes the insight, positioning the reader as already in possession of the knowledge, not receiving secret wisdom."
+        },
+        {
+          "id": "closing_strength",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Take the ground back. Finish the right tasks first, five days out of the next seven, and let that become proof that your day belongs in your hands again."
+          ],
+          "reason": "Ends on a commanding, actionable metaphor that ties the entire argument into a single final decision."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 92.74,
+      "penalties": 0.0,
+      "final_score": 92.74,
+      "confidence": 1.0,
+      "metrics": {
+        "fk_grade": 7.27,
+        "words": 1759,
+        "sentences": 131,
+        "average_sentence_words": 13.43,
+        "sentence_length_stddev": 16.34,
+        "concrete_opening": false,
+        "action_signals": 29,
+        "framework_signals": 3,
+        "late_you_ratio": 0.31,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most days do not fall apart because you are lazy. They fall apart because your tasks have no order."
+          ],
+          "reason": "Reframes failure from character flaw to structural absence of ordering. Shift is direct, immediately actionable, and not merely named."
+        },
+        {
+          "id": "argument_progression",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most days do not fall apart because you are lazy. They fall apart because your tasks have no order.",
+            "A captured list without ranking is stress. Ranking without scheduling is wishful thinking. Scheduling without protection is self-deception."
+          ],
+          "reason": "Opens with a core problem, builds stepwise through record -> assign -> name -> keep time -> eliminate switches -> decide daily, and closes with a chained summary that shows each step logically depends on the prior. The argument is cleanly structured and each section advances the case."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "If you keep tasks in your head, you create pressure before you create order.",
+            "Many people sabotage prioritization by making too many things A-level.",
+            "Every switch carries a cost. The interruption may take 30 seconds, but the recovery can take far longer."
+          ],
+          "reason": "Interprets mental load, cognitive cost of context switching, self-sabotage in prioritization, and the gap between feeling organized and being organized. These are concrete psychological observations, not just tips."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your target is not to feel organized. Your target is to complete your top 3 priority tasks on 5 of the next 7 days without working later, checking your phone more often, or adding a new app.",
+            "Write like someone who intends to use the page, not admire it."
+          ],
+          "reason": "It embeds a clear philosophy: action over feeling, concrete outcomes over appearance. Repeated emphasis on using the worksheet honestly."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your brain is a poor storage system.",
+            "Every switch carries a cost. The interruption may take 30 seconds, but the recovery can take far longer.",
+            "If everything is critical, nothing is."
+          ],
+          "reason": "Presents non-obvious mental models (brain as unreliable storage, cost of task switching, forced ranking as clarity) in tight, unpretentious language. The ideas are substantive and avoid shallow self-help clich\u00e9s."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This section requires honesty.",
+            "Do not hide behind vague excuses. Identify the real reason."
+          ],
+          "reason": "Entire worksheet demands honest self-assessment and personal ownership. The D section specifically forces truthful diagnosis of stalled tasks."
+        },
+        {
+          "id": "framework_lands",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use the worksheet to label every item clearly: A, B, or C."
+          ],
+          "reason": "The RANKED acronym lands fully through repeated operational instructions, not just a memorable label. Each letter triggers a distinct, practiced move."
+        },
+        {
+          "id": "unique_action",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Write start times, end times, and the specific task attached to each block."
+          ],
+          "reason": "Each letter demands a distinct, concrete action \u2014 recording, valuing, naming, time-blocking, distraction removal, daily review \u2014 not generic advice."
+        },
+        {
+          "id": "action_relevance",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A captured list without ranking is stress. Ranking without scheduling is wishful thinking. Scheduling without protection is self-deception. Protection without review breaks down by tomorrow."
+          ],
+          "reason": "The closing paragraph directly links each stage of the framework to a failure mode, showing why each action matters and making the chain explicit."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Phone on silent in another room from 8:00 to 9:30",
+            "Inbox closed until 11:30 a.m."
+          ],
+          "reason": "Abundant specific, observable behaviors (silence phone, close inbox, one browser tab) replace vague intentions. Preferred criterion fully met."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The truth is simple.",
+            "You do not need a more complicated system. You need a cleaner decision process."
+          ],
+          "reason": "Explicitly asserts simplicity and leans on clear, direct explanations without psychological jargon or over-explanation. The low FK grade (7.27) is a natural result of purposeful clarity, not dumbing down."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Most days do not fall apart because you are lazy. They fall apart because your tasks have no order.",
+            "A captured list without ranking is stress. Ranking without scheduling is wishful thinking. Scheduling without protection is self-deception."
+          ],
+          "reason": "Uses parallelism, short punctuated sentences, and cadenced repetition (stress, wishful thinking, self-deception) that create an audible rhythm. Varied sentence length is controlled and intentional, not singsong."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Write each task as a clear action, not a vague topic.",
+            "\u201cEmail Sarah the revised numbers\u201d is usable. \u201cSarah\u201d is not."
+          ],
+          "reason": "Consistently cuts fluff; every instruction directs toward concrete, action-oriented language. No wasted words."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your target is not to feel organized. Your target is to complete your top 3 priority tasks on 5 of the next 7 days without working later, checking your phone more often, or adding a new app."
+          ],
+          "reason": "Explicitly rejects feeling as a goal. Sets measurable, behavior-based success criteria instead of rah-rah inspiration."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Do not hide behind vague excuses.",
+            "If it was not important, cut it."
+          ],
+          "reason": "Confronts excuses directly, rejects emotional processing or exploration of feelings, and forces concrete decisions (cut, shrink, delegate). The voice is analytical and pragmatic, not warm, validating, or healing-focused."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Write like someone who intends to use the page, not admire it."
+          ],
+          "reason": "No moral elevation, no 'thou shalt', no appeals to virtue or guilt. Imperatives are practical and action-oriented ('Write start times', 'Identify the real reason'), not sermonizing. The tone treats the reader as capable, not as a congregant."
+        },
+        {
+          "id": "anti_guru",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You do not need a more complicated system. You need a cleaner decision process."
+          ],
+          "reason": "Shuns mystique, secret methods, and complicated frameworks; positions the advice as simple, transparent decision-making, not esoteric wisdom."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.194539
+}

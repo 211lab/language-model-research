@@ -1,0 +1,477 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "openai/gpt-5.5",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-final-quality-scores/docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 93.4,
+  "confidence": 1.0,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 88.92,
+      "penalties": 0.0,
+      "final_score": 88.92,
+      "confidence": 1.0,
+      "metrics": {
+        "fk_grade": 3.71,
+        "words": 4362,
+        "sentences": 557,
+        "average_sentence_words": 7.83,
+        "sentence_length_stddev": 4.71,
+        "concrete_opening": false,
+        "action_signals": 45,
+        "framework_signals": 7,
+        "late_you_ratio": 0.52,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "motion starts to feel like progress"
+          ],
+          "reason": "The core distinction between futile motion and true progress reframes the reader's view of task management."
+        },
+        {
+          "id": "argument_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your Day Needs an Anvil"
+          ],
+          "reason": "Central turning point where diagnosis becomes structural solution; argument builds from problem to concrete method."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "One email comes in. A text pops up. Someone asks for a quick favor."
+          ],
+          "reason": "Opens with a vivid, immediate scenario of a task list falling apart under real-world interruptions, not abstract theory."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "That is the quiet frustration many men carry."
+          ],
+          "reason": "The text repeatedly names the internal state behind scattered effort\u2014frustration, pressure, guilt\u2014without drifting into therapy-speak."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Attack one priority at a time"
+          ],
+          "reason": "Advice is consistently tied to specific, actionable behaviors (e.g., single-tasking, choosing three priorities) rather than vague motivation."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The forge does not insult the metal. It applies heat, pressure, and form until strength shows up."
+          ],
+          "reason": "Practical metaphor that conveys discipline without preaching."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A clear man can serve better, work better, lead better, and rest better."
+          ],
+          "reason": "Insights like linking clarity to serving, leading, and resting provide a non-superficial understanding of how a daily plan integrates with life roles."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Flexibility is useful. Drift is not."
+          ],
+          "reason": "The text concedes that flexibility and occasional late work have a place, drawing a line between adaptive exceptions and a broken default pattern."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A man cannot do everything. A disciplined man decides what he will do first."
+          ],
+          "reason": "Responsibility is placed squarely on the reader to rank, protect, and execute, with rejection of blame-shifting toward external demands."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "motion starts to feel like progress",
+            "The forge does not insult the metal. It applies heat, pressure, and form until strength shows up."
+          ],
+          "reason": "Moves from diagnosing the motion/progress trap, through the anvil framework, triage method, resistance, and onto the transformative forge metaphor, showing a clear shift in viewpoint."
+        },
+        {
+          "id": "decision",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "If I only finished three things today, which three would create the biggest result or prevent the biggest problem?"
+          ],
+          "reason": "The whole system rests on this explicit, repeatable decision question that forces trade-offs."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Attack one priority at a time"
+          ],
+          "reason": "Clear, executable instruction; not abstract."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A clear daily plan is the Anvil for your tasks"
+          ],
+          "reason": "Metaphor grounded in a concrete daily action; neither list nor theory."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "One email comes in. A text pops up."
+          ],
+          "reason": "Undeniably common, unvarnished moment."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your daily plan does not need to be perfect. It needs to be clear."
+          ],
+          "reason": "Deep ideas are reduced to accessible, actionable statements without dumbing-down."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The forge does not insult the metal. It applies heat, pressure, and form until strength shows up."
+          ],
+          "reason": "Pacing and parallel structure create rhythm without decoration."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A task list is not a plan."
+          ],
+          "reason": "Maximal meaning in minimal words; zero fluff."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This does not remove pressure. It gives pressure a job."
+          ],
+          "reason": "Honest about difficulty; weaponizes pressure instead of glitter."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Do not turn the answer into shame. Turn it into structure."
+          ],
+          "reason": "Emotional states are acknowledged but immediately redirected toward structural action, avoiding therapeutic processing."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Do not wait for the perfect planner, the perfect app, the perfect morning, or the perfect week."
+          ],
+          "reason": "No moralizing or idealized commands; the voice is relentlessly pragmatic about tools and timing."
+        },
+        {
+          "id": "anti_guru",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use what you have tonight."
+          ],
+          "reason": "No secret systems or charismatic authority; the method is presented as simple, immediate, and tool-agnostic."
+        },
+        {
+          "id": "closing_strength",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Now the pressure has somewhere to land."
+          ],
+          "reason": "The closing line returns to the central metaphor with finality and weight, leaving a memorable, actionable image."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 97.88,
+      "penalties": 0.0,
+      "final_score": 97.88,
+      "confidence": 1.0,
+      "metrics": {
+        "fk_grade": 5.49,
+        "words": 2421,
+        "sentences": 240,
+        "average_sentence_words": 10.09,
+        "sentence_length_stddev": 5.97,
+        "concrete_opening": false,
+        "action_signals": 42,
+        "framework_signals": 5,
+        "late_you_ratio": 0.39,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your task list is not a plan. It is a pile until you force order onto it."
+          ],
+          "reason": "Flips the familiar 'task list as plan' into a disordered pile that must be shaped, materially shifting the reader's view."
+        },
+        {
+          "id": "argument_progression",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "That is the main tension of this lesson: you can work hard all day and still lose the day because the loudest task, easiest chore, or newest request set the order for you.",
+            "Use TRIAGE to turn your task pile into a clear daily plan."
+          ],
+          "reason": "Moves cleanly from problem (pile) to core insight (wasted effort) to required structure and finally to the TRIAGE method, forming a coherent chain of reasoning."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Memory is for thinking, not storage.",
+            "The danger is self-interruption: checking messages, organizing files, cleaning your desk, answering one quick email, or doing a small chore because the main task feels heavy."
+          ],
+          "reason": "Diagnoses why people fail, naming mental habits like using memory as storage and self-interruption as avoidance under cognitive load."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Effort without priority gets wasted.",
+            "The goal is simple: finish the right work without sacrificing your health, training, family, or evening because you let the loudest task own the day."
+          ],
+          "reason": "Embeds a working philosophy of disciplined priority over busyness, not just productivity tricks."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "A priority that is not scheduled is still vulnerable.",
+            "The reset is where you protect tomorrow from today\u2019s leftovers."
+          ],
+          "reason": "Ideas like unscheduled priorities remaining vulnerable and daily reset as protection contain substantive, transferable insight beyond surface advice."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Be honest about what you are tempted to rank high just because it is easy.",
+            "Your worksheet should make that avoidance visible and set rules against it."
+          ],
+          "reason": "Directly demands honest self-assessment and personal rules, refusing to let the reader off the hook."
+        },
+        {
+          "id": "framework_lands",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use TRIAGE to turn your task pile into a clear daily plan.",
+            "T \u2014 Trap every task in one place",
+            "R \u2014 Rank by impact, not noise",
+            "I \u2014 Install the big rocks first",
+            "A \u2014 Attack one priority at a time",
+            "G \u2014 Group the smaller work",
+            "E \u2014 Evaluate and reset daily"
+          ],
+          "reason": "The TRIAGE acronym is a fully unpacked, step-wise model with distinct functions, and it is the central architecture of the lesson."
+        },
+        {
+          "id": "unique_action",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Trap every task in one place",
+            "Rank by impact, not noise",
+            "Install the big rocks first",
+            "Attack one priority at a time",
+            "Group the smaller work",
+            "Evaluate and reset daily"
+          ],
+          "reason": "Each letter maps to a discrete, non-ambiguous action verb, and the actions are operationalized in detail."
+        },
+        {
+          "id": "action_relevance",
+          "score": 96.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use TRIAGE to turn your task pile into a clear daily plan."
+          ],
+          "reason": "The opening diagnosis directly feeds the TRIAGE prescription, and each step maintains that line from argument to specific worksheet actions."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Write answers you can act on today, not ideas that sound organized but do not change your behavior.",
+            "Write the specific rules you will use when the priority block starts.",
+            "Phone on Do Not Disturb and placed across the room.",
+            "Close email, Slack, news tabs, and calendar alerts."
+          ],
+          "reason": "Demands concrete, observable rules and physical environment changes, not abstract intentions, with explicit examples of blocking distractions."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Memory is for thinking, not storage.",
+            "A messy captured list is better than a clean-looking memory system that drops tasks.",
+            "A plan that treats every task as equal is not a plan."
+          ],
+          "reason": "The language stays in short, declarative statements while preserving conceptual weight; the Flesch-Kincaid grade of 5.49 and mean sentence length of 10.09 words confirm strict simplicity."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your task list is not a plan. It is a pile until you force order onto it.",
+            "When a priority block starts, remove distractions. Silence your phone. Close extra tabs."
+          ],
+          "reason": "Alternates between punchy declaratives, clipped imperatives, and slightly longer instructional sentences, creating a cadence that reinforces the call to order."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 98.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Effort without priority gets wasted.",
+            "Memory is for thinking, not storage.",
+            "A priority that is not scheduled is still vulnerable.",
+            "The reset is where you protect tomorrow from today\u2019s leftovers."
+          ],
+          "reason": "Every clause carries a distinct, necessary idea; no padding, no filler phrases typical of motivational writing."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Do not write a fantasy plan that assumes no interruptions, unlimited energy, and perfect discipline.",
+            "You do not need a longer day. You need a clearer structure.",
+            "That means the worksheet is not asking for vague goals or a motivational list."
+          ],
+          "reason": "Explicitly rejects feel-good language, fantasy planning, and rah-rah slogans in favor of sober structural demands."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Your worksheet should force a decision instead of letting the same task drift for another day.",
+            "Do not reward yourself with small chores while the main task is still untouched.",
+            "This is where you stop confusing preparation with progress."
+          ],
+          "reason": "Confronts avoidance directly with commands and distinctions; no permission-slip language, no accommodating self-talk, no therapeutic softening."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The desired outcome is not to become busier. The outcome is to complete at least 10 of your 15 top priority tasks this week without working late, skipping workouts, or ignoring family time.",
+            "Use TRIAGE to turn your task pile into a clear daily plan. Be specific. Be honest.",
+            "Finish the worksheet with answers that can survive contact with a real day."
+          ],
+          "reason": "The text prescribes without moralizing, delivers conditional outcomes rather than absolute promises, and avoids any sermon-like elevation."
+        },
+        {
+          "id": "anti_guru",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Use TRIAGE to turn your task pile into a clear daily plan. Be specific. Be honest.",
+            "Write answers you can act on today, not ideas that sound organized but do not change your behavior.",
+            "A messy captured list is better than a clean-looking memory system that drops tasks."
+          ],
+          "reason": "No invocation of the author\u2019s persona, no secret system, no tribal language. The method is presented as self-verifying, not reliant on a charismatic figure."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.223236
+}

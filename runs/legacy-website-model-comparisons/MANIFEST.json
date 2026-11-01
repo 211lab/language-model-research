@@ -1,0 +1,1622 @@
+{
+  "schema_version": "steadyburn-model-comparisons-archive-v1",
+  "kind": "historical-evidence-not-current-results",
+  "provenance": {
+    "repository": "3f-mindset/website-3fmindset.com",
+    "source_path": "docs/model-comparisons/"
+  },
+  "excluded": [
+    {
+      "source_path": "docs/model-comparisons/analyze_readability.py",
+      "reason": "executable report-generation utility excluded by migration contract"
+    },
+    {
+      "source_path": "docs/model-comparisons/generate_cost_charts.py",
+      "reason": "executable report-generation utility excluded by migration contract"
+    },
+    {
+      "source_path": "docs/model-comparisons/generate_model_comparison.py",
+      "reason": "executable report-generation utility excluded by migration contract"
+    }
+  ],
+  "file_count": 266,
+  "total_size_bytes": 43272472,
+  "files": [
+    {
+      "source_path": "docs/model-comparisons/.gitignore",
+      "archive_path": "corpus/.gitignore",
+      "size_bytes": 36,
+      "sha256": "5abb488d4e14abd1fe165f45781db141154d7e7cc1f2899dfee467619ff23127"
+    },
+    {
+      "source_path": "docs/model-comparisons/README.md",
+      "archive_path": "corpus/README.md",
+      "size_bytes": 4976,
+      "sha256": "5894a5deabb4cada5d2f14a60dd49a7311bfe45b68fe7f1f1e7854eadf01e7b4"
+    },
+    {
+      "source_path": "docs/model-comparisons/content-score-report.json",
+      "archive_path": "corpus/content-score-report.json",
+      "size_bytes": 56064,
+      "sha256": "102e77c8d189fd9613977ee23cae50c2a487904d327f2c2a73d3efe8e1c14029"
+    },
+    {
+      "source_path": "docs/model-comparisons/content-score-report.md",
+      "archive_path": "corpus/content-score-report.md",
+      "size_bytes": 157,
+      "sha256": "22c979c246bfbb08024ce7b099f96de9ec2de2b51fc685485a6c6b53767361d0"
+    },
+    {
+      "source_path": "docs/model-comparisons/cost-chart-data.json",
+      "archive_path": "corpus/cost-chart-data.json",
+      "size_bytes": 7228,
+      "sha256": "82fa614b95dd8b9eee462eec44e3959f37f5d18e93e98401e6d189f0150fcf86"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 1753,
+      "sha256": "5cf38645dd057eff38aefce7aea511e8dd0e67a547bc6081e6fdb6781b818165"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 20411,
+      "sha256": "ee8749d4d8ca36ecd22f8a9c40682a7cfc63245227fdaa15052e71bd222057a1"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 313,
+      "sha256": "af8cbbffce81e9c00b3902bcf039148c898bd32550cd9b4c8245bb5e3095041c"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 5593,
+      "sha256": "a6e1b9cda65ed4017e327513aa6b757fae7bc615c29b113f6ea247d3339a0b4a"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 3534,
+      "sha256": "92e0b7bccd6f4819f43256e3e1010e00a41273dd8607ea34de9c137d032fd814"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 4783,
+      "sha256": "33b1161279db3e88b15dfd77e6f55dff3085a616fd2bf957a2258c7d8ae1c87f"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 5838,
+      "sha256": "1cf4e3b661979b50b6dd7e7f528f570e4ed7e35a10ae9da3b1e06b59c4cedc47"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 7579,
+      "sha256": "1983a4699f02842ae9f2d13e438a368e9f2b14192b0f062d4b0bd7190a760beb"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 1286,
+      "sha256": "0c7215e06e0bb38cda35d866d53a02f01ced3fd77e1e20c75ce3a77ec8f8e628"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 2320,
+      "sha256": "4706aa4215d80dc3ba785d18b80c86a413b7a10df02022bfffcae988a2a0b4a0"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6523,
+      "sha256": "221000d4b9a4a3d7734f29d9b6b11fbdb2dd82e49b719bddffda279409d29e92"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 8094,
+      "sha256": "a7d725bcc234b6bb65363029dbb5e67219f814d22117caa0a21e7229387cc79d"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 7731,
+      "sha256": "10d26034306131b3c3ada0c7cac9f099556d7e23716bcf3fea3a78ca456bd657"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2596345,
+      "sha256": "a6e27b844f9cc37ddffa8275fe6528db68293b60280da804a7c7d06840d72640"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 8028,
+      "sha256": "d52917b56b629213204b3a02c9cdfdadd0122e9ceaeb9756e38ce631a274f132"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 9040,
+      "sha256": "36da8657146ca8c487580f491781181391278aff4ac25e5c6d6143650dd7306a"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 1956,
+      "sha256": "e6744329da4d02fbdabaf2fddac067fc73c7c3e87a49ec38530c9b6edd3ec148"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 22413,
+      "sha256": "f1ca3dd1a3ca37e9c8fbb2a6e5281894ec01692282c341448af2158d425ba7eb"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 317,
+      "sha256": "7354d94a83061dba525822e4caa82c46c09c3246854c2191e57ac70ef16dfb44"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 6461,
+      "sha256": "8699a0a4eaafea352b7669c16a26eaf28cccc52bc6efb8b8fc0bced51938e0ed"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 3659,
+      "sha256": "c3595eb78f0447db1fb47fd4b5cfef4d1a78b80d96042e2585ebdd34f36057a3"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 6066,
+      "sha256": "b14d930861963e6b326bca68d5b86f4d481be783eceee98ba9314b5d73aeb673"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 7686,
+      "sha256": "fc60288cea00c0055a31b90663494f1a20f9b67d8863344e02f2e9982dd69d2c"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 8163,
+      "sha256": "9671a5242e23b9f639a6ee17413eb0e27c576a1d9cc0ae320b5bedfac85e2df5"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 1333,
+      "sha256": "d1177efdec9efcc5272c7b927a03df359ae1712c9aaeaf6852edc11fee841191"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 3622,
+      "sha256": "dd30a85b2791ab0993ed239725560e986874cb782bd17b22369315d9902d6c9d"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6636,
+      "sha256": "e3b28d98fbf9c0d51d91d1117352658f3ebdb274bd75ce7ea4ca1b46a21b046f"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 8351,
+      "sha256": "4e6100956a1935b5dbdc53cd05e771ba87481b1d1ea72a4797402f3dc2c1d49b"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 10657,
+      "sha256": "798edef8e43004e977e10b51024166aea41be336604fa6562276f94f06ed225b"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2593457,
+      "sha256": "94f0b04d078fe780e630813536091c77a911f0d9de8bd17cd5d26f84db5057b8"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 11859,
+      "sha256": "7d53bd190a8d02f9f262c09f94be24730fa0f24294d13571a9a8343db4d740e6"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 9176,
+      "sha256": "758c186ec4978bb986b02b90aa589103cb9505186e59cecb5dd98e57165b37c3"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 3037,
+      "sha256": "fcb2d5b4732cef249146f0a58236f6fbd5783945a5ae523fa5c0edf13fc3dec7"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 19901,
+      "sha256": "7c53a7a882755a36ec6d6825d17934d07a6156e70d7c0ca1e95a61781cb26fc1"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 316,
+      "sha256": "2783f7631dbec510c04e307aa23a9ad4373555cb0374f3c225262ce48a641af9"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 7317,
+      "sha256": "666b35aceadf30433f1f7dd907b8091b29154278803c68bb077af3ffaa2c591d"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 3805,
+      "sha256": "e68cc0bc62f2758f15ab1cf6255d81c51da53bee08e671dcc0ccd0671a04daa1"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 8267,
+      "sha256": "c433aae4206960541552bc026fbb12abd42f49e04eb5c1c029590a666bc00eef"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 15879,
+      "sha256": "858aab0f7a1f481c801e3060329a16a953c58a1d2cffed6c7a182c6e1e3a7727"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 7901,
+      "sha256": "6a431f15acafbd3994da1815b000bf76a15390e90d3e05081e3190bfa6aaecce"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 1311,
+      "sha256": "8bff74ddb05e4f8b08b7191c83537b1d7c21a6ae1f5da139ed70b80a5dcaf0b6"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 2679,
+      "sha256": "134adc0b81f53b9a4df4c9e57634e919a32faad2cb6176f3044d23a277e30d29"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6662,
+      "sha256": "e9ae5c1c2bbb12d09a0b6091a4a3964f21a3833be88401095df2a3c1b283aac2"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 8448,
+      "sha256": "14f2f4d6041995a7f75620bd7c29337ca3a84c3f0809750d23c8075b4bf588dc"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 9756,
+      "sha256": "b6b6366473cafb86163f6b0098681b44f2a86989c9bfadb2197c9e5dc22e3353"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2874378,
+      "sha256": "3b8d9e14ce3908d853e8efe47536a05e0b4bf048e46132762a01f12c940b2e20"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 8479,
+      "sha256": "5cbc3633b501afa8698c94b6e96f9f65a6ff96bee8c21cfc874a9dd502449f1c"
+    },
+    {
+      "source_path": "docs/model-comparisons/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 9108,
+      "sha256": "ebcbafcfb6a6a8f0be95822f670e8ebd7e439d722ca5d02cbb01e7d48f209ca0"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 1642,
+      "sha256": "3d5032099365b51fb7bf4b0178e0e4f1e535fac9ef6ecc2669551373512ae138"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 20279,
+      "sha256": "e0a396db9157c4f59d0c7d96b84d811b17f8e1f7559ecb0e09ddcf4b57ee9620"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 320,
+      "sha256": "6485a569f20aaa534b0b293c24cf1a7962c36d76501398b9eda71b9087b9d1e7"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 5438,
+      "sha256": "fb5e49f6a7628ffde03aeae427bd5091d24a53fc83195dd82a3d9a2ae5291ddc"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 2333,
+      "sha256": "dd1b937e4a60b29a82663138dfc947a50a09659a0dbdc8400656bc81cb7cd633"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 4388,
+      "sha256": "763cdbac3f7d80d31a759a0c172bd204cc96be5d795be148a382aed78fd688c5"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 4537,
+      "sha256": "92ca09d4ff6aaff88099a35fa358f23f25595bc0272c2c9da85245906c55c307"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 7900,
+      "sha256": "3425b9b5d72389e37cd4a5c0973dc473db81c34409aeb1b6410ce9254a2958d0"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 1351,
+      "sha256": "e764c195ab5d4a4c3ebefbf1352dce23872cbf103ae82712a16d273cade40346"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 3517,
+      "sha256": "aabb3c30e742c156bec8cb12399639c5db1478d56898701d6e4683deab10e58b"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6473,
+      "sha256": "0457a52a6dd7ea3ffe20e173f2d365a4fb63a77c66756d9d0c1034cea5928d60"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 8692,
+      "sha256": "2c48ccb18b6fc60230a15b18ee88e28c14be3dbb914c9b4d99bb141788d25164"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 10183,
+      "sha256": "7f51a8474177813c4b65b22a17e5a57c7faff1f7b64d4dfea1f388235d249b84"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2618812,
+      "sha256": "078992273fc4dda9588d000e67b8586af3389fa646c24a498a72476f0ad424fe"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 8136,
+      "sha256": "24593395361f1bff512b672317ffefe35bf16f2b1a7e78a49b6e54a08a6fe6eb"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 9244,
+      "sha256": "06d31b7d6d0eee36f087f4689bc9ac42d25d5646e2bc8980aed17208acf87036"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 1749,
+      "sha256": "062fba6c7d891c7fd1cde4afdcc7b5187b45f85e80e29b6d22304fa561ed9d3f"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 22725,
+      "sha256": "3b78774e0190cbc83231621ba406e2ab75017b22ca9be739a5b90a53b1084439"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 315,
+      "sha256": "8e72a98b4af192fd62cefe768a01491a336f9dc216d200c89bd16ff617805976"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 5043,
+      "sha256": "956f576b61fe1debe4602978916fcc8e5587ee2f2ad83805a5851366b748eda2"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 2993,
+      "sha256": "53c4856bfbf0b6e9b59286b51dee87e6015665e9f71bd9e17dc9af49ab80269c"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 7754,
+      "sha256": "96b800b7651a03a05c86daff7c1d7b5e0a86eec699c6facc4a8d1d506b3798c8"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 7750,
+      "sha256": "98c9ab3ac9f3ef69c77e793823352d6ec2438224699895174f3ab8d45ea02337"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 6387,
+      "sha256": "85fdcf71ae2b2bbea5604fc64a4e549e5621047c47edd7d1700a491709bb920e"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 1302,
+      "sha256": "982a5a6590b26cd1ef893de202ca963f06f0c356b6fd5b42dd82199c1e233870"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 2964,
+      "sha256": "12d7d6c8a532a41ebe8b79e538210dac942a15f9d81f65e20458f7d0f2e07da5"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6454,
+      "sha256": "c6e31a461b6f62e1a1cd577caa03c175ee1e809deeda28ed6533516bd977a890"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 8920,
+      "sha256": "b78c8024a1be6afe72ada363915de44ab9108def8ac1677685cfe347b6fb307f"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 8861,
+      "sha256": "8bfafa82b3c8019089225fbb3bbf9c078aa9a9aeb7549b9f178fba0ffe1e3bf1"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2588728,
+      "sha256": "adaaf1c7985c994fecb56d172b9062b7994a08472a51d9a1fefaac2353998a1f"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 10125,
+      "sha256": "9e72e305a93cf1ff614629c909d4d2cea85e4895213e25dc410b8e9c0080df1c"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 9074,
+      "sha256": "381e986c2b1670f11e225afbb2a22556cec00706b6c004db95e092ff1318b524"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 1406,
+      "sha256": "ca2035b16198872fc2024c1224bb3f7b2119a850ca110bb3d3449b331f2ea4b2"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 16752,
+      "sha256": "d053a1869860bd9610a45c816a537b905757befd07781a5fe8c5ba33ca1d9b02"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 315,
+      "sha256": "bac4f2421d97d04db7cce88c0462ef6f5a9387f5a581bea5f1517dacc1b856f1"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 4373,
+      "sha256": "5d4c391590603aaeaebb8ed46c793fcf57a61c8a9ed133b7cfbf342acf73910b"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 1504,
+      "sha256": "5c7bf292072e5c2020c322f2f1865a66475538b16771cefd479fd37940217085"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 683,
+      "sha256": "bcc93f60dd7c7b7d7280e1cff9cd41d0a23a6f5237efb55453a3e0c55b9a58e9"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 5394,
+      "sha256": "9687a1f5717714c5d4921a691a16576d852bfe7673b27674964f138ea1cf54b4"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 3475,
+      "sha256": "ebbc3f4ac0df768591d68bbfc6bdae075adaf7c7747b826001566af65fbf2ff7"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 1244,
+      "sha256": "cb421b14ab7351596e6c5196414fddf22f6d681874701d75a797b39f8a1d6f45"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 2052,
+      "sha256": "5891715e5929e84322ed9784cbaac8877920d1b04c1ffda8238c3e69feca878b"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6415,
+      "sha256": "26e5d76e73f55ebab01a0015ce1199375b65b3141fffe4b935de560902a19217"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 6627,
+      "sha256": "8768bf3d87371e397495288891e2600b2686ead20f88812fd522f7f4ec836bee"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 6627,
+      "sha256": "8768bf3d87371e397495288891e2600b2686ead20f88812fd522f7f4ec836bee"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 3102221,
+      "sha256": "af3f02114a709b03ae24ceccbe95c4c8f571df45c815bd95ef99527595134378"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 4248,
+      "sha256": "722dab67b4c41688401455b85c016f28c0031ce8029248b18f33687a15852bf7"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 8696,
+      "sha256": "97903c16b275e2dc2e49920187db8c681f1f3b6daa2cf9fed35492ad9622ac1e"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 1629,
+      "sha256": "d3325e35f94672a355daea9e97ba321391aea905b6176c32ce4177984d2c7797"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 21361,
+      "sha256": "a23614ef631c36f06de6af7792414aacd4c53305d332594f1b18e173f9f224ac"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 316,
+      "sha256": "313e532342b3c6cfb4eae8c6979c5611e941707f19ae9fe17b899178ae159dc5"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 5027,
+      "sha256": "6e852c8436b57604d5ef5607dc3b1dd8fcb403bf8b8c32c53939da92161b86c2"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 2042,
+      "sha256": "0666e17cdd2f577e000581ea6ace8a64e562bbf08f8bc1fcc724560fe05fe5e8"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 3513,
+      "sha256": "00d7747aaff9909ca8838924452b95dadec6e220611d1c51ec16164fbfa6ef98"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 4879,
+      "sha256": "124eb2a2b03e725414c292abbafda4c8f55f0f2312f873766fca3c5e1de6217c"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 5100,
+      "sha256": "93f2ab85dc19193d58da7bb926fa9c511519ea5322e5ab3f9740b119ef6353bc"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 1291,
+      "sha256": "c105847f2318a385e7a12f0f4754f3df60fdc57c70397cfa1dec8a9e06f69d49"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 2408,
+      "sha256": "e13d0c071270621611732193bd7bf88783bbd238533de379bb15a124a46ffd36"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6481,
+      "sha256": "3f85e6e848fc543d95f85eeb279697c8c9a91c719a730137fcce5d35f75904c8"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 6981,
+      "sha256": "082530ec31e359c55e20ef522139604bba7ea59a70d83c9b05eb0a7b7b7a4799"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 7087,
+      "sha256": "e8dc64ba74600f592b2af00200f97e84dd578b61a5087dc8282ebb1aeb6569eb"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2665482,
+      "sha256": "88ea0b4bd0e5080c91c2a21619dc4c0611f7c9f71efa023e330dfac0f0091501"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 5359,
+      "sha256": "70e2019c641f5c5e0d8fda0a9cb440c83650ef266649dedbc3e6d260080e2c78"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 8828,
+      "sha256": "77847e8084a7bdf0efb2d11735313c0713b2e4050efec8655918360de1024363"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 1814,
+      "sha256": "2052f80e096de1d03798b4f2c906c883d0efefa74a241751f253dff2fd1d8044"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 23379,
+      "sha256": "b3c5bc749b6a50df9d6a253f10ff06f93db563abcf9b3678e2184bd57ed267c4"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 312,
+      "sha256": "78d9d66107790832086541065d8e6b33b7e9061e77ec0119f1c44bca55252b00"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 4991,
+      "sha256": "9dd1dd16d7441b801a6ef614b348a2096312284a8e6f7d6e4e480c8acee7d4f9"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 2053,
+      "sha256": "2039fcf80e848b38d5fd73d54dc68619e4ec575080dc0bf3a1529b98b44938e1"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 1590,
+      "sha256": "bd80744283c7f3d6d5b649e65f9abae51355489fcccaf10ad86c812cea270fa6"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 4085,
+      "sha256": "c54425176411063c0b371a7db01f8a5d9f10e8e17424f3e5c772e017ba47d5b4"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 4859,
+      "sha256": "31ab70986fa150f5a3c7640fb96af7f90fd8b1c6f60fd398f96f81fd37bf16e3"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 587,
+      "sha256": "47e90012120b2b3435863963c7de77d0bdf53892fd73070c54e713e5c185d89b"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 2135,
+      "sha256": "7688df7abf56a226798575e102db032a3c32c9f73b5d2d259d5ad975e746e3ea"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6445,
+      "sha256": "f4635c07a8afc2ba3eeb6a703babebcf1973af17a767d5372d8706e87bd9660d"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 7054,
+      "sha256": "deb4fadb57ac5317fccdd60351f11e495fd6b9e4a66b784292bdfe3684b2a479"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 6854,
+      "sha256": "4b6a59c0759205d0cac314b97d88203d82bf552a7a3569e617556cdf8ee1a3f4"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2875074,
+      "sha256": "e7e7c42b5202f300213f51c2226e70b81c2fd5124c477957700a3b7ea38a98a6"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 5638,
+      "sha256": "a56d474cc0ef13b11e52aac4b600f4c1562d9462b9fa7ea2502c75a26db4fbfb"
+    },
+    {
+      "source_path": "docs/model-comparisons/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 8696,
+      "sha256": "7de0ec95bfa42c3b20a24bb3400bfb9bde32a92de56280ed00e28b9b19ad4168"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 1708,
+      "sha256": "b1797edef2fb268aa2aa310aabcaa1d2a80f3d881af4043425f062e08b6ab0e9"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 20408,
+      "sha256": "7203c8f6bbeaec292c2de87f2f4f9d2f5da5dee251b851636ef2dfc2c137bd5f"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 307,
+      "sha256": "c7b1be7b093ae344cc67793225fab0c155d2be73e743d99646b418a19255ab9f"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 5326,
+      "sha256": "b322292e6e2818678d8ef2023798d9495753ef91b0142240fdaa9664616a5b0c"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 2104,
+      "sha256": "9c540edd7bae2ad737331026896dacea8be3e89fe04b093a9e302025d34ffe89"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 3732,
+      "sha256": "10df80379113dc433a71c54e4c29465613265137a655e5077a63c98414260bac"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 4647,
+      "sha256": "c277fbf3d16d48e477d8c100d87d63f9f7e090d86bf1f156c1ccd39641a13ca1"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 4242,
+      "sha256": "c08fba0351e0f07db5c6b47824225d3fe8d154cfe50d9a0dc0ca5e19cdabaa8d"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 627,
+      "sha256": "7228b792743a5cf756db6dff4a3ff1c4e67936eb27bf07f7501af65c775ed1be"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 2239,
+      "sha256": "d16da0749a41a5548cdfc841a33dc128dbb2e00c0fab07b43547f96aba7e1e78"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 6707,
+      "sha256": "050b680f88fb4a1e0f85ae1be5bf90e6bea364a79259add27684808c7a3e9423"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 6538,
+      "sha256": "f2c29857870b1af07819e44465a9646f7691edae8f4fa5dd5f0a1b885033e18f"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2211238,
+      "sha256": "d96177d3ad9dc1f2666cebdd61c2bd432e4e46d4bc1ba1e87c64855214bf1cbb"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 5215,
+      "sha256": "98fe4bf840be9fdab8bfe9a501b5d16c091848eb8be9d18bc94828159405b3b8"
+    },
+    {
+      "source_path": "docs/model-comparisons/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 8432,
+      "sha256": "c733b3fde4e66af3badb4be005db5d885d062434c7e24c9af2e5add1268e713c"
+    },
+    {
+      "source_path": "docs/model-comparisons/model-comparison-radar.svg",
+      "archive_path": "corpus/model-comparison-radar.svg",
+      "size_bytes": 8661,
+      "sha256": "87b43e6f9922eda630238a299b9f6c8c5f7ba95d23c45183ee01b1fd3d5cff36"
+    },
+    {
+      "source_path": "docs/model-comparisons/model-comparison.html",
+      "archive_path": "corpus/model-comparison.html",
+      "size_bytes": 137630,
+      "sha256": "8773e7a7c99b8fe83ca9cda643fc6d7d6f55541aaef4a59da005fdae0d1a919e"
+    },
+    {
+      "source_path": "docs/model-comparisons/model-comparison.json",
+      "archive_path": "corpus/model-comparison.json",
+      "size_bytes": 182049,
+      "sha256": "06fca6eb95467c598dc5bf259a1918ce54efe4800fde8314126bdd87db40aeaf"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 1687,
+      "sha256": "7d339a6bd343496e0e61209b71989182083c0cd4e2eebc1aad5ad699cd56906e"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 23148,
+      "sha256": "4e24dda75b5704aa50fd935359558dd9e28e25deb9e116e6ea1af14bb8d90444"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 306,
+      "sha256": "b39b9dd65bd4fff276f516092b329be7d8ae0a60e1a295cadc7b144055b8b1d9"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 4262,
+      "sha256": "d499f93c9b53bd4c8529096399124065363764b19975059ade0fbefe20932cd5"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 2571,
+      "sha256": "55d76a0c3f203cd5afaa8f22e30a05b2b500e5a8ca213435e4e285526880662b"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 5881,
+      "sha256": "f6ade7be5bedf339d309c9a7b531af33851440b92cd001ba2dc0ccb0e13ac2e5"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 5423,
+      "sha256": "60a302d50207657bb1e11ba9f223c98af2a3c44e410b2a95dc6683306f8dec11"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 4610,
+      "sha256": "132b0df7e1d35bdc09c55fb38d54b29a26c77c08e10f961eebeca3a23eea815b"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 1197,
+      "sha256": "40d7e6515265cc7dff7db6b6242b9ce56a9f7c51a64b3c2fa4ee97f1c08f2696"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 2526,
+      "sha256": "9ef84d58cd55a634a5ba38999fe9cc993f1b92a15b60151ad47cdd9fbebcbede"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6295,
+      "sha256": "bada89e7404fde0ce8736aea141606856d470bbed3c56da10cd73c7951732841"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 9728,
+      "sha256": "bd1a2af15b685fa0bc3425aaf5a23c503d64e585a89894773601d9741fec5867"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 8508,
+      "sha256": "74f44b07d566e499ec723ae0c66acbb23c65d2004815d18ab7a50f7d85187707"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2974394,
+      "sha256": "e6b73bd331aaa4c5ca6637a6ece4c51b092a52c5908022fa090b992725332ee0"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 7058,
+      "sha256": "a1f7432b0378c92e09746870325dcbdcb1ef239a5ee7f8ab220967338a87ce77"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 8768,
+      "sha256": "6d1e2a5cc02ed66583834c0178653a6743bd87defd6a02cf5e57b79e2f4cbaae"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 2822,
+      "sha256": "0e293f92c4231b5970c8f163fd131f8fc54d44ec16e8a82f7b96a279275e1550"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 20338,
+      "sha256": "4ee3dbd0709bbc711286cfe163f2f983542a9ac987da19427f7ca49588ddc911"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 305,
+      "sha256": "38bf232b79b90ece8dd29ce27f69f8a8929dc917ca5cc004ea6cdb600d7a172e"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 5050,
+      "sha256": "817b91e103826f10ebd3a132fa269f923ce4d73c9efac90b67ef55b0c48eb342"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 3637,
+      "sha256": "4882a8c92c3dffb224ca2585f9a3f6526121b65c52f9381cd232b100682e8a3c"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 12729,
+      "sha256": "27a2d9c0ba9685926431424e7758c426ba9322c81472527ac17c9f2ca1a2236d"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 10972,
+      "sha256": "051002923c21f3df1b8f705c9dd1ed6460f500318570845453702b58ac3ef93a"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 10886,
+      "sha256": "628853ee5e36d54f80d85e61bcc38da56b3a20a72cb34e3c47feeefe5c81ff3e"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 1199,
+      "sha256": "5f8e65e3858727cec0158e6f8d3e619982644fd670de577dfedbf6e885385b8d"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 3679,
+      "sha256": "81c922e08dc699ac55ac2737af2485e66a6ae0c1c90b7aabb9d906c7708f4f11"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6305,
+      "sha256": "db90001c99a918a82e94feaa7593465488b41075a7242f9eec9250498a334990"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 9205,
+      "sha256": "74d578b41d36fdf01f34bf3b0029dd9c59c8d61918f3e48347c47f737fb5b09f"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 8450,
+      "sha256": "3e92af886ed3174c2d16ad74532f9a9ff18294037ca799dd44fc444233f4b641"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2449746,
+      "sha256": "4d256a2d675462f10d30c862f4efe1963f589bae46a023d6f91a37a6d7183511"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 18789,
+      "sha256": "c7db3b5c677e75f9b8189c2bf10f1ba20eaa6316b9a3bced585e56adaf614239"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 8768,
+      "sha256": "e476f48a85e0053be91ccae90e0241d1e4c6ae570f0f79dc9c80ca5476b8ad9e"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 2237,
+      "sha256": "496c43b868c37273173d215ca33f0e12086eeb9704c028004f989b83d6375772"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 19544,
+      "sha256": "6b9fa7c01b0820d1eb8cf145dc63d4dd4fc14a8a00f7d8886cb1f1fc4cf32a55"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 305,
+      "sha256": "4bf9ef7ce16022b0e1b49ea47bb9298c4e3aa237bd59057e8fa2daa3491692ee"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 5238,
+      "sha256": "af5880ba31074f7bcb59e6bc3c9d45838a205e7bbc26b07d1a5ad5dac9a20cc7"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 4763,
+      "sha256": "1349804600ac3a1efc8476f5137c7243f0439a355308ad491682000ea4fa85b1"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 14313,
+      "sha256": "88d2761bc050df72153d3728e63a9510d73e96e2f15cb634f7e7b1528369019a"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 14926,
+      "sha256": "59cade8b1072ea460be41da6f13a087733cbda6a3484489e293a49077a03674e"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 9408,
+      "sha256": "4eba1d4d7145a2f6d9e937daead2e083ed7ed10b079efba0770e127cc41e5c14"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 1200,
+      "sha256": "574957b1d42c840df5189ebd045dd918fe44e947ceda3e8b8fe8696d76843658"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 3316,
+      "sha256": "c7a1e1ed767b762388c2f9a0279156a2788ff62c135e908ad2dd8cde05ff2bd9"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6300,
+      "sha256": "395e982d51e16896338698ffcf2a4a9debe494f30d508f657f15682195d1d848"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 9421,
+      "sha256": "37a6ce59e25af8a51d996c2915c70f7c8873a04a68aa55046af8a3a8f9fa39fc"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 9925,
+      "sha256": "19c3398fd32064281682fa6f6bcd92ec643ee1d34685794ad06253a1150adeaf"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2803287,
+      "sha256": "a65cfabbfc13abe0724edce56486e0ad293d56ce56375970e5b750288a733552"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 25030,
+      "sha256": "9d4e1a7beab0638a2641d8846947a63dcbde5544c92aed77e6196a5520c675b8"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 8615,
+      "sha256": "971a9b10b8dd93b7557732bdb7b6539cc5c7904061c743006395368e4f70bf49"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 1418,
+      "sha256": "b20d745c3de58347441c4c99f752f9de10581e567c52efeb6d8ffd3d3af717d0"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 22294,
+      "sha256": "c441eaf4fe61ff2956cb46c4d6db2c5ee5af6b91ef3119d3aa120cd34f0c8851"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 309,
+      "sha256": "857b12166b01fad8b28f3fa2c18c1eba1267825ae1dd83d7b3276434da6d9b88"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 5268,
+      "sha256": "0f6462551b59fe178cd85b6de338149f4c7512c4262670bfe9b34f7f54d04c4a"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 5517,
+      "sha256": "3c9f2448df0b38b0aebd32739fd78885159aac43390086f5781dee725ac9d0ef"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 6824,
+      "sha256": "566b584cd26a4afba7f5934668e8005877ecefc87e7a6f4f5332c79b84689113"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 17066,
+      "sha256": "b989dce7ec1895228bbad04385d2383807f396c8af25db64b09b25a4e2724343"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 8377,
+      "sha256": "a909b588f9c9ce55a3951d3f68c2de5c7f1ced9af7b2e0f90d568395bf9300d2"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 1297,
+      "sha256": "31d43c367d3c3fd545281691364c6efdbd1da27329e47526071a198b2a44e225"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 3750,
+      "sha256": "380e53003ea6057f402712b0dedb0fa3d9b2d31edf472658398968296d5cdd7e"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/OPENROUTER_USAGE.jsonl",
+      "size_bytes": 6484,
+      "sha256": "0a4a829be8a7eb2788dc25795ad0ce75e4bcdbf04469827032c3b8f809f71d0e"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 8356,
+      "sha256": "0fb6fb2a72df758ac925e0d491dc10df4020dc63f2b7733fb2fa38d0978c4ce7"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 7479,
+      "sha256": "068fecbdb38f505af185a5279c22bb366af705cbd7df28730402262456a11bca"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 4264513,
+      "sha256": "10c6585c8629e13118b3ce6eedd02eb29f0a5082f6bc0b510ade191fce9ed771"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 12991,
+      "sha256": "4417f67c7bf09c9a1f44a877bbd11ffc095351fb9cb0372b8892f1576eb8b9c1"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 8630,
+      "sha256": "75948651dac3207bad168bf206ef6a105bd1e13219609b1708688a79032f3606"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 1541,
+      "sha256": "b469768eab3aa84e2cc4ba400958ff078326f11b7c45b28cf5b6c4d2b9a10d30"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 24171,
+      "sha256": "aef8d79d868243c3f2e26e4eacec8f174ccbae18384d49664a15aecc80babbac"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 309,
+      "sha256": "febacee40697728380fa5e72f10b73609ef1371f98fa04f8684d66b97ea444d3"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 5051,
+      "sha256": "563f161e272e14d4de41e3229f74e93e70c92111ef958f5b0d2ee6ad7cffa789"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 4076,
+      "sha256": "42b7b54440882b2b4807d18c62d32372c35f0ff13a8e04fcbcc9da4167ff8018"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 2979,
+      "sha256": "b056c2cb31a090d6f76dbdb8c5323ba418fa2515fb554bb063922b6a7ea43897"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 6378,
+      "sha256": "994451241578e51a89d007272b90047285fa9d4738029155903d59629fc6b239"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 5284,
+      "sha256": "674177a6e96f89db98a30bc3b555e0fa365fa28b606f078681747569866c2da7"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 185,
+      "sha256": "438827c6b3db4d8ba962e8582625b8c703b36f3b663136945f6843fa7d7db30d"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 2896,
+      "sha256": "be8d34ed3c9de76ca3ebae56b05e8b580d6a261bccdb5d58d7fc81e07576d118"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 7810,
+      "sha256": "19db1057a6a32cb72ed47517cdc71a91a2af0750c63b0fc151af9862f5402a49"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 8087,
+      "sha256": "b53111b76b78a1261ea33d2818bd4aad658e77d812c634ead53fb37a10c86c70"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2376965,
+      "sha256": "e09a64fdfa97e566f6076126f616ce0a848119b8bf4f54f3b2fc48b90555f545"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 5866,
+      "sha256": "7e6fd3e49d115a8f6cc4191a12c21c1cc299e4c1b312c236244ad8c94c4337f2"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/openai-gpt-5-6-sol/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 8616,
+      "sha256": "0d6331caa48ce158b3c9636d5c04ae59c3776df5a238d2bc1503da95dcb33424"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md",
+      "size_bytes": 2069,
+      "sha256": "2f95ea66746f85beb1c9c718f036e396070a1e487a875966eae6b4cf79eb8bb1"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.json",
+      "size_bytes": 27899,
+      "sha256": "9841249f8e16daf6cb3eefb36bb26e4d3059a808288aa61900066fac3f200616"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTENT_SCORE.md",
+      "size_bytes": 311,
+      "sha256": "d6b825311149f8a4260102af44025491ddd49b4994585d4ca3d6e3d831643a0c"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md",
+      "size_bytes": 5240,
+      "sha256": "c81d45a8a8d01412b0c9a0c12974915450d8cdf666f964a9833c2f38b1af020b"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md",
+      "size_bytes": 4344,
+      "sha256": "79f6b917c6e4ac06c0888b7c0dd5802d841a5183d35fac97a0984dc6fb033c1f"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md",
+      "size_bytes": 3342,
+      "sha256": "d2c2cf395f8961e6ef18b651f2dd20f94de840e5c42312ec7ca86b23b62e7698"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md",
+      "size_bytes": 7486,
+      "sha256": "ec27c7f2986bf91b22387ea4207143e8701258e4ff5f00670199cf8036653986"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md",
+      "size_bytes": 5061,
+      "sha256": "8ddd2a23179fafdd92855a7c8ca26b453dfba57dc3f6dfba66fa4a0c012132e4"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/MODEL_COMPARISON.md",
+      "size_bytes": 187,
+      "sha256": "86c0c4cc46f376375e0041c65b0642d29ce49b5ff102c7a3aad6af8810968fa8"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md",
+      "size_bytes": 3140,
+      "sha256": "57461aeee602cdc56a29fa948ced2ce6efe4f7c45250051ae3bed93293d2d49f"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md",
+      "size_bytes": 3786,
+      "sha256": "0dccd3175f37e10e978c3937f5aed91d2c482652f99a2842c4d18a5ab7713a44"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg",
+      "size_bytes": 8771,
+      "sha256": "1992aefc3400943690d596b1d47a31caa285c242f7c77e409962ef69a37868ca"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg",
+      "size_bytes": 8666,
+      "sha256": "f4466c42e16392fae910168a1d531bf71c03585005b714b08d558d1f1845f26a"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png",
+      "size_bytes": 2298766,
+      "sha256": "9b8577f67f4a5b7a2f8486d58a848fa2231f7e33d37b7df5bdd65ef28b1bf7d3"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md",
+      "size_bytes": 5940,
+      "sha256": "f72cafb6e811d354705b7d37c8ab1b88ce64b4ddec116206303bc80562c80075"
+    },
+    {
+      "source_path": "docs/model-comparisons/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "archive_path": "corpus/openai-gpt-5-6-terra/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml",
+      "size_bytes": 8680,
+      "sha256": "b8595538ab4e779cc17ee5ef2a3c2f3e6fde6dfe749b9b11cff61cd2e0598e4e"
+    },
+    {
+      "source_path": "docs/model-comparisons/pyproject.toml",
+      "archive_path": "corpus/pyproject.toml",
+      "size_bytes": 223,
+      "sha256": "0e172b6e9e2b695dc38fa7e9d2c652a753f566466d126853507ecde2a187d123"
+    },
+    {
+      "source_path": "docs/model-comparisons/readability-report.json",
+      "archive_path": "corpus/readability-report.json",
+      "size_bytes": 52371,
+      "sha256": "53bdcc86e9d72040c8358d41a721fc4d37f2bd53e2e015b00ca80ad19d844a8a"
+    },
+    {
+      "source_path": "docs/model-comparisons/readability-report.md",
+      "archive_path": "corpus/readability-report.md",
+      "size_bytes": 6394,
+      "sha256": "84ef63b9fced1b30f59e4ed2055f48a57b93c5191f2dce70b61c8f4f9f05c4d6"
+    },
+    {
+      "source_path": "docs/model-comparisons/uv.lock",
+      "archive_path": "corpus/uv.lock",
+      "size_bytes": 140,
+      "sha256": "239f7affb483e01ae0c4363fbd7abc741f7c30330bab5999475e11b703430e26"
+    },
+    {
+      "source_path": "docs/model-comparisons/weekly-bundle-costs-log.svg",
+      "archive_path": "corpus/weekly-bundle-costs-log.svg",
+      "size_bytes": 5401,
+      "sha256": "82a126494212627cd4c7c3bb47b7e5ab8cca2d156793bc78d4f2f3b786b56858"
+    },
+    {
+      "source_path": "docs/model-comparisons/weekly-bundle-costs.svg",
+      "archive_path": "corpus/weekly-bundle-costs.svg",
+      "size_bytes": 5125,
+      "sha256": "b34678839d9d119b57c3c72b46727b4330ba51a35994f5bf3dde38cd986c257a"
+    }
+  ]
+}

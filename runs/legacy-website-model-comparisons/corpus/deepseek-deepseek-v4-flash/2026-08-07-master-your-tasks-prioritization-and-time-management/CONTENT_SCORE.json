@@ -1,0 +1,491 @@
+{
+  "schema_version": "content-score-v4",
+  "rubric_version": "steadyburn-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-final-quality-scores/docs/model-comparisons/deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management",
+  "content_score": 90.64,
+  "confidence": 0.989,
+  "artifacts": {
+    "index.md": {
+      "artifact": "index.md",
+      "base_score": 90.49,
+      "penalties": 0.0,
+      "final_score": 90.49,
+      "confidence": 0.978,
+      "metrics": {
+        "fk_grade": 4.43,
+        "words": 2012,
+        "sentences": 234,
+        "average_sentence_words": 8.6,
+        "sentence_length_stddev": 5.13,
+        "concrete_opening": true,
+        "action_signals": 28,
+        "framework_signals": 15,
+        "late_you_ratio": 0.52,
+        "repeated_sentence_ratio": 0.012
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You stop being a puppet on the string of every incoming demand.",
+            "You are not a firefighter rushing from one blaze to the next. You are a builder."
+          ],
+          "reason": "Reframes day from reactive firefighting to intentional building."
+        },
+        {
+          "id": "argument_progression",
+          "score": 93.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The reason you keep getting pulled into reactive work is not that you are lazy. It is that your internal engine has no blower.",
+            "The FOCUS method is your blower."
+          ],
+          "reason": "Starts with concrete scenario, diagnoses root cause (no blower), introduces solution, and walks through each component."
+        },
+        {
+          "id": "concrete_opening",
+          "score": 100.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You wake up with good intentions. You have a list of things you want to do. By noon, you have answered fifteen emails, put out two fires for other people, and somehow the one project that would actually move your career forward has not been touched."
+          ],
+          "reason": "Extremely concrete, vivid scenario. Specific numbers (fifteen emails, two fires), relatable frustration. No abstraction until the diagnosis."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 91.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The cost is not just lost productivity. It is the slow erosion of your sense of control. You start to believe that you are just not capable of finishing important things. That belief becomes a habit. That habit becomes your identity."
+          ],
+          "reason": "Explains the internal collapse\u2014identity distortion from chronic overwhelm."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 0.88,
+          "evidence": [
+            "You will cancel your own focus block for the same reason. That has to stop.",
+            "If someone tries to pull you away, tell them you are in a focus block and will respond in thirty minutes.",
+            "You end the day exhausted, wondering where the time went, and feeling guilty that you are busy but not effective."
+          ],
+          "reason": "Grounded in specific observable behaviors: canceling focus blocks, reacting to interruptions, exhaustion guilt, telling someone you'll respond later. Not abstract advice."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.93,
+          "evidence": [
+            "You do not need more discipline. You need a system that forces the right tasks to the top and keeps the noise out.",
+            "The blower does not create the fire. It regulates it."
+          ],
+          "reason": "Philosophy is systems-thinking applied to personal productivity, not willpower. The blower metaphor embodies a practical, non-moralistic stance."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 82.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The blower does not create the fire. It regulates it. It ensures that the fire burns hot enough to do work but not so hot that it destroys the furnace.",
+            "Each valve is a discipline. Together, they form a blower system that turns your chaotic pressure into a steady, powerful burn."
+          ],
+          "reason": "Sustains a multi-layered blower/furnace metaphor that models pressure, regulation, and output; not a surface-level tip list."
+        },
+        {
+          "id": "qualification_nuance",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The question is not \u201cCan I do all of this?\u201d The question is \u201cWhat matters most right now?\u201d",
+            "If it keeps slipping, break it into smaller steps or cut it."
+          ],
+          "reason": "Qualifiers like breaking a task down or dropping it entirely, and accepting that not everything gets done, show pragmatic limits are acknowledged."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You are reacting to whatever screams loudest instead of choosing what matters most.",
+            "The only thing missing is your decision."
+          ],
+          "reason": "The text repeatedly locates agency in the reader\u2014choice, decision\u2014and frames the current state as a result of reactive habits, not external fate."
+        },
+        {
+          "id": "perspective_progression",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You stop reacting. You start directing."
+          ],
+          "reason": "The piece moves the reader from a disempowered, reactive viewpoint to one of control and intentionality, culminating in a clear fork-in-the-road."
+        },
+        {
+          "id": "decision",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Decide now. Not later. Now.",
+            "The system is here. The method is clear. The only thing missing is your decision."
+          ],
+          "reason": "A sharp, unambiguous call to commit sits at the close, with no hedging or delay permitted."
+        },
+        {
+          "id": "prescribed_action",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Tonight, before you go to bed, do a brain dump.",
+            "From that list, pick your top three impact tasks for tomorrow. Write them down as your A-tasks.",
+            "Tomorrow morning, block time for your first A-task during your peak energy hours.",
+            "Work on that one task until it is done or your time block ends.",
+            "At the end of the day, review."
+          ],
+          "reason": "Gives a complete sequenced protocol, not vague advice."
+        },
+        {
+          "id": "concrete_abstract_balance",
+          "score": 89.0,
+          "passed": true,
+          "confidence": 0.89,
+          "evidence": [
+            "The blower feeds oxygen to the fire at a controlled rate. Without it, the fire either smothers or burns out of control."
+          ],
+          "reason": "Abstract metaphor (blower, oxygen, fire) is consistently anchored to concrete steps (brain dump, filter, block time). Balance prevents drift into pure metaphor or dry instruction."
+        },
+        {
+          "id": "everyday_realism",
+          "score": 87.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "If someone tries to pull you away, tell them you are in a focus block and will respond in thirty minutes. Most things can wait.",
+            "If you miss a day, do not punish yourself. Just start again the next day. The goal is progress, not perfection."
+          ],
+          "reason": "Scripts real-world interruptions and recovery, not idealized perfection."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 0.95,
+          "evidence": [
+            "This is not a time problem. You have enough hours. This is a prioritization problem disguised as a busy schedule.",
+            "Multitasking is a myth.",
+            "Single-tasking is the fastest path to completion."
+          ],
+          "reason": "FK grade 4.43 confirmed. Complex ideas (cognitive task-switching, opportunity cost) are compressed into short, declarative sentences without losing rigor. No dumbing down."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 0.87,
+          "evidence": [
+            "You wake up with good intentions. You have a list of things you want to do. By noon, you have answered fifteen emails, put out two fires for other people, and somehow the one project that would actually move your career forward has not been touched.",
+            "You stop reacting. You start directing.",
+            "Feed it the right tasks, and it will forge something real. Feed it noise, and you will get nothing but ash."
+          ],
+          "reason": "Variety of lengths, from the long cumulative opening sentence to very short punchy lines. Standard deviation 5.13 confirms variability. Rhythm drives pace."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Loud does not equal valuable.",
+            "The first brick determines the strength of the wall."
+          ],
+          "reason": "Key points are delivered in minimal clauses with no filler; each word earns its place."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You do not need more discipline. You need a system that forces the right tasks to the top and keeps the noise out.",
+            "Your problem is not that you lack motivation. Your problem is that you lack a blower system."
+          ],
+          "reason": "The text repeatedly rejects the need for motivation or discipline as a solution, instead framing the issue as a missing system. It avoids hype and empty pep talk, instead grounding the argument in actionable mechanisms."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This is not a time problem. You have enough hours. This is a prioritization problem disguised as a busy schedule.",
+            "Your problem is not that you lack motivation. Your problem is that you lack a blower system."
+          ],
+          "reason": "The article defines the core issue as a practical prioritization failure, not an emotional or psychological one. It uses no therapy\u2011voice, emotional processing language, or introspective healing prompts. The framing stays firmly on action and system design."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 80.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "No excuses. No \u201cI will start Monday.\u201d Tomorrow.",
+            "The system is not rigid. It is a tool. You sharpen it by using it."
+          ],
+          "reason": "While some sentences carry a directive edge, the piece avoids moralizing, guilt\u2011driven harangues, and religious\u2011sounding imperatives. It frames the approach as a tool, not a moral obligation, and there is no condemnation of the reader\u2019s character."
+        },
+        {
+          "id": "anti_guru",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The truth is simpler than you think.",
+            "That system exists. It is called FOCUS. It works because it does not ask you to be perfect. It asks you to be intentional."
+          ],
+          "reason": "The text explicitly declines guru mystique by calling the truth simple and the method transparent. It does not position the author as a privileged source of secret knowledge, and there is no dependency on personality or exclusive insight."
+        },
+        {
+          "id": "closing_strength",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The fire is waiting. It will burn whatever you feed it. Feed it the right tasks, and it will forge something real. Feed it noise, and you will get nothing but ash.",
+            "The blower is in your hands. Use it."
+          ],
+          "reason": "The closing metaphor is vivid, complete, and returns agency to the reader with a terse imperative, making the ending resonant and actionable."
+        }
+      ]
+    },
+    "INSTRUCTIONS.md": {
+      "artifact": "INSTRUCTIONS.md",
+      "base_score": 90.8,
+      "penalties": 0.0,
+      "final_score": 90.8,
+      "confidence": 1.0,
+      "metrics": {
+        "fk_grade": 7.77,
+        "words": 1302,
+        "sentences": 80,
+        "average_sentence_words": 16.27,
+        "sentence_length_stddev": 22.05,
+        "concrete_opening": true,
+        "action_signals": 6,
+        "framework_signals": 6,
+        "late_you_ratio": 0.44,
+        "repeated_sentence_ratio": 0.0
+      },
+      "criteria": [
+        {
+          "id": "perspective_shift",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This is not a time problem. You have enough hours. This is a prioritization problem disguised as a busy schedule."
+          ],
+          "reason": "Clear reframe from time scarcity to prioritization failure."
+        },
+        {
+          "id": "argument_progression",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Work through each section below in order.",
+            "Take your three A-tasks and rank them by long-term value."
+          ],
+          "reason": "Problem \u2192 system introduction \u2192 step-by-step F-O-C-U-S method \u2192 execution call; sequential and cumulative, each stage building on the prior."
+        },
+        {
+          "id": "psychological_interpretation",
+          "score": 85.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You are reacting to whatever screams loudest instead of choosing what matters most.",
+            "You end the day exhausted, wondering where the time went, and feeling guilty that you\u2019re busy but not effective."
+          ],
+          "reason": "Diagnoses the internal state causing ineffectiveness."
+        },
+        {
+          "id": "practical_philosophy",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You don\u2019t need more discipline. You need a system that forces the right tasks to the top and keeps the noise out.",
+            "It works because it doesn\u2019t ask you to be perfect. It asks you to be intentional."
+          ],
+          "reason": "Source promotes a tangible, actionable philosophy\u2014system over willpower, intentionality over perfection\u2014woven directly into the method."
+        },
+        {
+          "id": "intellectual_depth",
+          "score": 75.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Multitasking is a myth. Single-tasking is the fastest path to completion.",
+            "switching tasks costs you 15-20 minutes of lost momentum each time"
+          ],
+          "reason": "Surfaces the cognitive cost of task-switching with a concrete metric and challenges common myths, adding analytical substance without pretension."
+        },
+        {
+          "id": "personal_responsibility",
+          "score": 92.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The only thing missing is your decision to act. Decide now. Not later. Now.",
+            "Be honest. Be specific.",
+            "Trusting your own judgment about what matters, even if no one is demanding it"
+          ],
+          "reason": "Places agency squarely on the reader repeatedly."
+        },
+        {
+          "id": "framework_lands",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "That system is called FOCUS.",
+            "the FOCUS method, one step at a time"
+          ],
+          "reason": "Framework is explicitly named and sustains the entire document."
+        },
+        {
+          "id": "unique_action",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Circle those three. Label them as your A-tasks.",
+            "Write the exact start and end time for each A-task block.",
+            "take three deep breaths and return to the task",
+            "Check it off physically"
+          ],
+          "reason": "Each letter dictates a distinct, non-generic action."
+        },
+        {
+          "id": "action_relevance",
+          "score": 95.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "This is not a time problem. You have enough hours. This is a prioritization problem disguised as a busy schedule.",
+            "That system is called FOCUS.",
+            "Take the plan and execute it. Protect your blocks. Work one task at a time. Review at the end of the day. Repeat tomorrow."
+          ],
+          "reason": "Clear argument \u2192 framework (FOCUS) \u2192 explicit calls to immediate action, forming a complete progression from diagnosis to execution."
+        },
+        {
+          "id": "behavioral_grounding",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "If your mind wanders, gently bring it back.",
+            "Write down the distraction on a notepad and deal with it later.",
+            "If you use the Pomodoro technique, commit to at least two cycles"
+          ],
+          "reason": "Offers specific in-the-moment behavioral fallback routines."
+        },
+        {
+          "id": "intellectual_simplicity",
+          "score": 97.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The truth is simpler than you think.",
+            "Multitasking is a myth.",
+            "Order determines your outcome.",
+            "Decide now. Not later. Now."
+          ],
+          "reason": "Core ideas are expressed in short, concrete declarations without jargon or layered abstraction; a grade-level of 7.77 confirms accessible complexity."
+        },
+        {
+          "id": "sentence_rhythm",
+          "score": 88.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "You wake up with good intentions. You have a list of things you want to do. By noon, you\u2019ve answered fifteen emails, put out two fires for other people, and somehow the one project that would actually move your career forward hasn\u2019t been touched.",
+            "Protect your blocks. Work one task at a time. Review at the end of the day. Repeat tomorrow."
+          ],
+          "reason": "Long, detail-rich sentences build narrative pressure, then short imperative bursts release it; the variation creates deliberate pacing and memorability."
+        },
+        {
+          "id": "semantic_economy",
+          "score": 94.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Multitasking is a myth.",
+            "Order determines your outcome.",
+            "Decide now. Not later. Now."
+          ],
+          "reason": "Multiple high-density sentences pack a complete directive into three to five words, eliminating filler while retaining full meaning."
+        },
+        {
+          "id": "anti_motivational",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The goal is not to fill out a perfect worksheet \u2013 it is to produce a plan you will actually follow.",
+            "Feeling guilty about unfinished tasks instead of learning from the pattern"
+          ],
+          "reason": "Shuns feel-good language, favors realistic follow-through."
+        },
+        {
+          "id": "anti_therapy",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "Be honest. Be specific.",
+            "This is not a time problem."
+          ],
+          "reason": "Instructional and diagnostic, never therapeutic; no processing of feelings, inner-child work, or emotional validation language."
+        },
+        {
+          "id": "anti_preacher",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "The goal is not to fill out a perfect worksheet \u2013 it is to produce a plan you will actually follow.",
+            "Be honest. Be specific.",
+            "The system is here. The method is clear. The only thing missing is your decision to act."
+          ],
+          "reason": "Tone remains pragmatic and instructional, never moralistic; imperatives are grounded in utility, not elevated 'shoulds' or spiritual appeals."
+        },
+        {
+          "id": "anti_guru",
+          "score": 90.0,
+          "passed": true,
+          "confidence": 1.0,
+          "evidence": [
+            "It works because it doesn\u2019t ask you to be perfect."
+          ],
+          "reason": "Rejects personal magic, demystifies productivity."
+        }
+      ]
+    }
+  },
+  "evaluator_cost": 0.028441
+}
