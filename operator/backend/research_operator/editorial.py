@@ -26,7 +26,7 @@ def _disable_thinking(model_ref: str) -> bool:
     return any(marker in value for marker in ("qwen", "qwythos", "gemma-4-12b"))
 
 
-GENERATOR_COMMIT = "7db89c344ea63af62998eeb10f58a2397b8c0f03"
+GENERATOR_COMMIT = "36babafd4efab0eb91ee1d2538ac3377a198e87e"
 GENERATOR_PROFILE = "steadyburn-profile-v1"
 
 
